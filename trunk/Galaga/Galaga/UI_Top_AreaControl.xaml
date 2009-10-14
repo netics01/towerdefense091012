@@ -1,0 +1,30 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="Galaga.UI_Top_AreaControl"
+	x:Name="UserControl"
+	d:DesignWidth="1080" d:DesignHeight="48">
+	<UserControl.Resources>
+		<Storyboard x:Key="OnClick1"/>
+	</UserControl.Resources>
+	<UserControl.Triggers>
+		<EventTrigger RoutedEvent="Mouse.MouseEnter"/>
+	</UserControl.Triggers>
+
+	<Grid x:Name="LayoutRoot">
+		<Rectangle x:Name="UI_Top_Area" d:IsLocked="True"/>
+		<Button x:Name="Bt_START" HorizontalAlignment="Right" Margin="0,8,16,8" Width="112" Content="START!!" Cursor="Hand" FontSize="18.667" FontWeight="SemiBold" FontStretch="UltraExpanded" BorderBrush="#FF282525" Foreground="#FFA16F68" OpacityMask="#FF392E2E">
+			<Button.Background>
+				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="#FF516086" Offset="0"/>
+					<GradientStop Color="#FF1B2226" Offset="0.474"/>
+					<GradientStop Color="#FF231A17" Offset="1"/>
+				</LinearGradientBrush>
+			</Button.Background>
+		</Button>
+		<TextBlock x:Name="t_NumberOfTimes" HorizontalAlignment="Right" Margin="0,13,136,11" Width="152" Text="10/50" TextWrapping="Wrap" Foreground="#FFCD9C9C" TextAlignment="Right" TextDecorations="{DynamicResource {x:Static SystemFonts.CaptionFontTextDecorationsKey}}" Cursor="No"/>
+	</Grid>
+</UserControl>
