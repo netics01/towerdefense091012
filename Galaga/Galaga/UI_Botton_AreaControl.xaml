@@ -8,8 +8,104 @@
 	x:Name="UserControl"
 	d:DesignWidth="1080" d:DesignHeight="80">
 	<UserControl.Resources>
-		<Storyboard x:Key="OnMouseEnter1"/>
+		<Storyboard x:Key="OnMouseEnter1">
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="mc_Towermenu_001" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFD29D71"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#FF392F26"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="t_Towermenu_001" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF4D3A3A"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#FFE2D6C4"/>
+			</ColorAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Rectangle.RadiusX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Rectangle.RadiusY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(FrameworkElement.Height)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="6"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ThicknessAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+				<SplineThicknessKeyFrame KeyTime="00:00:00" Value="0,8,0,0"/>
+			</ThicknessAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="OnMouseEnter2">
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF681414"/>
+				<SplineColorKeyFrame KeyTime="00:00:01" Value="#FFB72F1B"/>
+			</ColorAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.011"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-173"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="-1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="OnMouseEnter3">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="mc_Towermenu_2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="2.2"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="mc_Towermenu_2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="96"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="mc_Towermenu_2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="mc_Towermenu_2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="mc_Towermenu_2" Storyboard.TargetProperty="(Rectangle.RadiusX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="16"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="3"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="mc_Towermenu_2" Storyboard.TargetProperty="(Rectangle.RadiusY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="16"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="3"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="mc_Towermenu_2" Storyboard.TargetProperty="(Shape.StrokeThickness)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="mc_Towermenu_2" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFD29D71"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#FFD2B771"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="OnMouseLeave1"/>
 	</UserControl.Resources>
+	<UserControl.Triggers>
+		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="menu_Towermenu_001">
+			<BeginStoryboard x:Name="OnMouseEnter1_BeginStoryboard" Storyboard="{StaticResource OnMouseEnter1}"/>
+			<RemoveStoryboard BeginStoryboardName="OnMouseEnter3_BeginStoryboard"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="menu_Towermenu_003">
+			<BeginStoryboard x:Name="OnMouseEnter3_BeginStoryboard" Storyboard="{StaticResource OnMouseEnter3}"/>
+			<RemoveStoryboard BeginStoryboardName="OnMouseEnter1_BeginStoryboard"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="menu_Towermenu_002">
+			<BeginStoryboard x:Name="OnMouseLeave1_BeginStoryboard" Storyboard="{StaticResource OnMouseEnter2}"/>
+			<RemoveStoryboard BeginStoryboardName="OnMouseEnter1_BeginStoryboard"/>
+			<RemoveStoryboard BeginStoryboardName="OnMouseEnter3_BeginStoryboard"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="gage">
+			<BeginStoryboard x:Name="OnMouseEnter2_BeginStoryboard" Storyboard="{StaticResource OnMouseEnter2}"/>
+		</EventTrigger>
+	</UserControl.Triggers>
 
 	<Grid x:Name="LayoutRoot">
 		<VisualStateManager.VisualStateGroups>
@@ -34,18 +130,49 @@
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
 		<Rectangle x:Name="UI_Botton_Area" d:LayoutOverrides="HorizontalMargin" d:IsLocked="True"/>
-		<ProgressBar x:Name="Gage" Margin="364,8,364,0" VerticalAlignment="Top" Height="8" ToolTip="적을 죽이면 필살기가 차오릅니다." Cursor="Arrow">
-			<ProgressBar.Foreground>
-				<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-					<GradientStop Color="#FF376925"/>
-					<GradientStop Color="#FFE08F2C" Offset="1"/>
-				</LinearGradientBrush>
-			</ProgressBar.Foreground>
-		</ProgressBar>
+		<Grid x:Name="gage" Margin="364,8,364,0" VerticalAlignment="Top" Height="8">
+			<ProgressBar x:Name="Gage" ToolTip="적을 죽이면 필살기가 차오릅니다." Cursor="Arrow" d:IsLocked="True">
+				<ProgressBar.Foreground>
+					<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+						<GradientStop Color="#FF376925"/>
+						<GradientStop Color="#FFE08F2C" Offset="1"/>
+					</LinearGradientBrush>
+				</ProgressBar.Foreground>
+			</ProgressBar>
+			<Rectangle x:Name="rectangle" Fill="White" Stroke="{x:Null}" RadiusX="2" RadiusY="2" Margin="0" VerticalAlignment="Bottom" Height="6" RenderTransformOrigin="0.5,0.5">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
+			</Rectangle>
+		</Grid>
 		<Grid x:Name="menu_Towermenu_001" HorizontalAlignment="Left" Margin="272,32,0,16" Width="160" Cursor="Hand">
-			<Rectangle x:Name="mc_Towermenu_001" Fill="#FFD29D71" RadiusX="16" RadiusY="16" Cursor="Hand"/>
+			<Rectangle x:Name="mc_Towermenu_001" Fill="#FFD29D71" RadiusX="16" RadiusY="16" Cursor="Hand" Stroke="{x:Null}"/>
 			<TextBlock x:Name="t_Towermenu_001" Margin="16,5,48,3" Text="Tower_001" TextWrapping="Wrap" FontFamily="Tahoma" FontWeight="Bold" FontSize="16" Foreground="#FF4D3A3A"/>
 			<Image x:Name="img_Towermenu_001" HorizontalAlignment="Right" Width="48" Source="Tower_001_Botton.png" d:IsLocked="True"/>
+		</Grid>
+		<Grid x:Name="menu_Towermenu_002" Margin="448,32,472,16" Cursor="Hand">
+			<Rectangle x:Name="mc_Towermenu_1" Fill="#FFD29D71" RadiusX="16" RadiusY="16" Cursor="Hand" Stroke="{x:Null}"/>
+			<TextBlock x:Name="t_Towermenu_1" Margin="16,5,48,3" TextWrapping="Wrap" FontFamily="Tahoma" FontWeight="Bold" FontSize="16" Foreground="#FF4D3A3A"><Run Text="Tower_00"/><Run Text="2"/></TextBlock>
+			<Image x:Name="img_Towermenu_1" HorizontalAlignment="Right" Width="48" Source="Tower_003_Botton.png"/>
+		</Grid>
+		<Grid x:Name="menu_Towermenu_003" HorizontalAlignment="Right" Margin="0,32,296,16" Width="160" Cursor="Hand">
+			<Rectangle x:Name="mc_Towermenu_2" Fill="#FFD29D71" RadiusX="16" RadiusY="16" Cursor="Hand" Stroke="{x:Null}" RenderTransformOrigin="0.5,0.5">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
+			</Rectangle>
+			<TextBlock x:Name="t_Towermenu_2" Margin="16,5,48,3" TextWrapping="Wrap" FontFamily="Tahoma" FontWeight="Bold" FontSize="16" Foreground="#FF4D3A3A"><Run Text="Tower_00"/><Run Text="3"/><LineBreak/><Run Text=""/></TextBlock>
+			<Image x:Name="img_Towermenu_2" HorizontalAlignment="Right" Width="48" Source="Tower_002_Botton.png"/>
 		</Grid>
 	</Grid>
 </UserControl>

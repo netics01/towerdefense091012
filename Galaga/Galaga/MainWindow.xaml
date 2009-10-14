@@ -9,9 +9,14 @@
 
 	<Grid x:Name="LayoutRoot" Background="#FF292E2E">
 		<Image x:Name="BG" Margin="0" d:IsLocked="True"/>
-		<local:UI_Botton_AreaControl Margin="0,0,-8,0" VerticalAlignment="Bottom" Height="80" d:IsLocked="True"/>
+		<local:UI_Botton_AreaControl Margin="0,0,-8,0" VerticalAlignment="Bottom" Height="80"/>
 		<local:UI_Top_AreaControl Margin="0,0,-8,0" VerticalAlignment="Top" Height="48" d:IsLocked="True"/>
 		<local:Tower_1_areaControl x:Name="Tower_1_areaControl" HorizontalAlignment="Right" Margin="0,0,416,226" VerticalAlignment="Bottom" Width="72" Height="84"/>
 		<local:Tower_1_areaControl x:Name="Tower_2_areaControl" Margin="480,0,520,226" VerticalAlignment="Bottom" Height="84"/>
+		<Grid HorizontalAlignment="Left" Margin="224,304,0,0" VerticalAlignment="Top" Width="32" Height="32">
+			<Ellipse x:Name="Boom" Fill="#FFD2B771"/>
+			<Ellipse x:Name="Boom1" Fill="#00D2B771" Margin="0,-64,-64,0"/>
+			<Ellipse x:Name="Boom2" Fill="#00BD4B2B" Margin="0,0,-32,-32"/>
+		</Grid>
 	</Grid>
 </Window>
