@@ -1,0 +1,17 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Galaga"
+	x:Class="Galaga.MainWindow"
+	x:Name="Window"
+	Title="MainWindow"
+	Width="1080" Height="900" mc:Ignorable="d">
+
+	<Grid x:Name="LayoutRoot" Background="#FF292E2E">
+		<Image x:Name="BG" Margin="0" d:IsLocked="True"/>
+		<local:UI_Botton_AreaControl Margin="0,0,-8,0" VerticalAlignment="Bottom" Height="80" d:IsLocked="True"/>
+		<local:UI_Top_AreaControl Margin="0,0,-8,0" VerticalAlignment="Top" Height="48" d:IsLocked="True"/>
+		<local:Tower_1_areaControl x:Name="Tower_1_areaControl" HorizontalAlignment="Right" Margin="0,0,416,226" VerticalAlignment="Bottom" Width="72" Height="84"/>
+		<local:Tower_1_areaControl x:Name="Tower_2_areaControl" Margin="480,0,520,226" VerticalAlignment="Bottom" Height="84"/>
+	</Grid>
+</Window>
