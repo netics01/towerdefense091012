@@ -1,0 +1,548 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:ic="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" xmlns:local="clr-namespace:Galaga_9"
+	x:Class="Galaga_9.MainWindow"
+	x:Name="Window"
+	Title="MainWindow"
+	Width="1080" Height="900" Background="#FF161414">
+	<Window.Resources>
+		<Storyboard x:Key="Tower_11_4_over">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Tower_over" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Duration="00:00:00.0010000">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="587"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Tower_over" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Duration="00:00:00.0010000">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="404"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Tower_11_4" Storyboard.TargetProperty="(UIElement.Visibility)" Duration="00:00:00.0010000">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Tower_11_4" Storyboard.TargetProperty="(UIElement.Opacity)" Duration="00:00:00.0010000">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.6"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="Tower_11_4_Leave">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Tower_11_4" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="16"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="8"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="Tower_11_3_over">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_11_3" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_11_3" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="610"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="985"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="Tower_11_3_Leave">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="8"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_11_3" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_11_3" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="Tower_11_2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_11_2" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="Tower_11_11">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_11_1" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</Window.Resources>
+	<Window.Triggers>
+		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="Tower_11_4">
+			<BeginStoryboard Storyboard="{StaticResource Tower_11_4_over}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="Tower_11_4">
+			<BeginStoryboard x:Name="Tower_11_4_Leave_BeginStoryboard" Storyboard="{StaticResource Tower_11_4_Leave}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="Tower_11_3">
+			<BeginStoryboard x:Name="Tower_11_3_over_BeginStoryboard" Storyboard="{StaticResource Tower_11_3_over}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="Tower_11_3">
+			<BeginStoryboard x:Name="Tower_11_3_Leave_BeginStoryboard" Storyboard="{StaticResource Tower_11_3_Leave}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="Tower_11_2">
+			<BeginStoryboard Storyboard="{StaticResource Tower_11_2}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="Tower_11_1">
+			<BeginStoryboard Storyboard="{StaticResource Tower_11_11}"/>
+		</EventTrigger>
+	</Window.Triggers>
+
+	<Grid x:Name="LayoutRoot">
+		<VisualStateManager.CustomVisualStateManager>
+			<ic:ExtendedVisualStateManager/>
+		</VisualStateManager.CustomVisualStateManager>
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="UI_talk1">
+				<VisualState x:Name="UI_talk_visible">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="UI" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.095"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="UI" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="2.667"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="UI" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.095"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="UI" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="UI" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="UI_talk_hidden">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="UI" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="UI" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.048"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="UI" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="5.333"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="UI" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.048"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="UI" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-4"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="t_good" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-3"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+			<VisualStateGroup x:Name="cannon1">
+				<VisualState x:Name="cannon_creation"/>
+				<VisualState x:Name="cannon_remove"/>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+		<Image x:Name="BG" Margin="0" Source="BG.png" Width="1080" Height="900"/>
+		<Grid x:Name="UI" Margin="24,0,24,2" VerticalAlignment="Bottom" Height="80" RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<Grid x:Name="Progress" Margin="375.5,18.5,376.5,0" VerticalAlignment="Top" Height="8">
+				<Rectangle Stroke="#FF2FD486" RadiusX="4" RadiusY="4" Margin="0" Height="8" d:IsLocked="True"/>
+				<Rectangle Fill="#FF44F0A6" RadiusX="3" RadiusY="3" Margin="2" RenderTransformOrigin="0.5,0.5" Width="268" Height="4">
+					<Rectangle.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleY="-1"/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Rectangle.RenderTransform>
+				</Rectangle>
+			</Grid>
+			<Grid x:Name="Gold" HorizontalAlignment="Right" Margin="0,8,9,0" Width="112" VerticalAlignment="Top" Height="32">
+				<Image HorizontalAlignment="Left" Width="32" Source="Gold.png"/>
+				<TextBlock Margin="39,6,0,2" Text="12000" TextWrapping="Wrap" Foreground="#FFECB33B" FontFamily="kroeger 05_53" FontSize="18.667"/>
+			</Grid>
+			<Grid x:Name="talk" HorizontalAlignment="Right" Width="224" Margin="0,-144,24,0" VerticalAlignment="Top" Height="168" d:IsHidden="True">
+				<Path x:Name="mc_talkBG" Fill="#FF2C1F1B" Stretch="Fill" Data="M9.9999981,0 L214,0 C219.52284,0 224,4.4771523 224,9.9999981 L224,126 C224,131.52284 219.52284,136 214,136 L201.5,136 201.5,168 181.06923,136 9.9999981,136 C4.4771523,136 0,131.52284 0,126 L0,9.9999981 C0,4.4771523 4.4771523,0 9.9999981,0 z" Margin="0,80,0,0"/>
+				<TextBlock x:Name="t_good" Margin="16,0,16,24" FontFamily="나눔고딕 Bold" FontSize="16" Foreground="#FFF4CA71" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Height="56"><TextBlock.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</TextBlock.RenderTransform><Run Text="주거지가 안정되어"/><LineBreak/><Run Text="자원 채굴량이 늘었습니다."/></TextBlock>
+			</Grid>
+		</Grid>
+		<local:explosion_effControl x:Name="explosion_eff" HorizontalAlignment="Left" Margin="-144,96,0,0" VerticalAlignment="Top" Width="64" Height="64"/>
+		<local:Tower_overControl x:Name="Tower_over" HorizontalAlignment="Left" Margin="-144,-8,0,0" VerticalAlignment="Top" Width="64" Height="50" RenderTransformOrigin="0.5,0.5">
+			<local:Tower_overControl.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</local:Tower_overControl.RenderTransform>
+		</local:Tower_overControl>
+		<Grid x:Name="Tower_s" Margin="24,40,24,74">
+			<Grid x:Name="Tower_01" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="85" Margin="3,84,0,0" Opacity="0">
+				<Image x:Name="Tower_BG" Margin="2,35,6,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-23,19,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body" Margin="3,15.706,14,8" Source="001.png"/>
+				<Image x:Name="Tower_top" Margin="1,5,13,35" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_01_0" HorizontalAlignment="Left" Margin="90,40,0,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG6" Margin="2,35,6,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon6" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-23,19,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body6" Margin="3,15.706,14,8" Source="001.png"/>
+				<Image x:Name="Tower_top6" Margin="1,5,13,35" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_01_1" HorizontalAlignment="Left" Margin="184,24,0,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG7" Margin="2,35,6,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon7" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-23,19,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body7" Margin="3,15.706,14,8" Source="001.png"/>
+				<Image x:Name="Tower_top7" Margin="1,5,13,35" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_01_2" HorizontalAlignment="Left" Margin="272,3,0,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG8" Margin="2,35,6,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon8" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-23,19,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body8" Margin="3,15.706,14,8" Source="001.png"/>
+				<Image x:Name="Tower_top8" Margin="1,5,13,35" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_01_3" HorizontalAlignment="Left" Margin="376,-8,0,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG9" Margin="2,35,6,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon9" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-23,19,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body9" Margin="3,15.706,14,8" Source="001.png"/>
+				<Image x:Name="Tower_top9" Margin="1,5,13,35" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_01_4" HorizontalAlignment="Left" Margin="432,-5,0,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG10" Margin="2,35,6,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon10" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-23,19,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body10" Margin="3,15.706,14,8" Source="001.png"/>
+				<Image x:Name="Tower_top10" Margin="1,5,13,35" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_01_5" HorizontalAlignment="Right" Margin="0,-8,376,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG11" Margin="2,35,6,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon11" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-23,19,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body11" Margin="3,15.706,14,8" Source="001.png"/>
+				<Image x:Name="Tower_top11" Margin="1,5,13,35" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_01_6" HorizontalAlignment="Right" Margin="0,0,312,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG12" Margin="2,35,6,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon12" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-23,19,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body12" Margin="3,15.706,14,8" Source="001.png"/>
+				<Image x:Name="Tower_top12" Margin="1,5,13,35" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_01_7" HorizontalAlignment="Right" Margin="0,8,258,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG13" Margin="2,35,6,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon13" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-23,19,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body13" Margin="3,15.706,14,8" Source="001.png"/>
+				<Image x:Name="Tower_top13" Margin="1,5,13,35" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_01_8" HorizontalAlignment="Right" Margin="0,19,194,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG14" Margin="2,35,6,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon14" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-23,19,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body14" Margin="3,15.706,14,8" Source="001.png"/>
+				<Image x:Name="Tower_top14" Margin="1,5,13,35" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_01_9" HorizontalAlignment="Right" Margin="0,48,96,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG15" Margin="2,35,6,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon15" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-23,19,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body15" Margin="3,15.706,14,8" Source="001.png"/>
+				<Image x:Name="Tower_top15" Margin="1,5,13,35" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_01_10" HorizontalAlignment="Right" Margin="0,72,24,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG16" Margin="2,35,6,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon16" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-23,19,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body16" Margin="3,15.706,14,8" Source="001.png"/>
+				<Image x:Name="Tower_top16" Margin="1,5,13,35" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_03" HorizontalAlignment="Left" Margin="106,144,0,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG2" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon2" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body2" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top2" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_03_0" HorizontalAlignment="Left" Margin="224,104,0,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG17" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon17" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body17" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top17" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_03_1" HorizontalAlignment="Left" Margin="314,88,0,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG18" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon18" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body18" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top18" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_03_2" HorizontalAlignment="Left" Margin="432,83,0,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG19" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon19" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body19" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top19" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_03_3" HorizontalAlignment="Right" Margin="0,80,410,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG20" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon20" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body20" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top20" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_03_4" HorizontalAlignment="Right" Margin="0,80,352,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG21" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon21" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body21" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top21" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_03_5" HorizontalAlignment="Right" Margin="0,91,298,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG22" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon22" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body22" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top22" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_03_6" HorizontalAlignment="Right" Margin="0,99,240,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG23" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon23" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body23" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top23" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_03_7" HorizontalAlignment="Right" Margin="0,123,152,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG24" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon24" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body24" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top24" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_03_8" HorizontalAlignment="Right" Margin="0,139,98,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG25" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon25" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body25" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top25" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_03_9" HorizontalAlignment="Right" Margin="0,179,16,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG26" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon26" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body26" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top26" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_05" HorizontalAlignment="Left" Margin="154,219,0,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG1" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon1" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body1" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top1" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_05_0" HorizontalAlignment="Left" Margin="256,179,0,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG27" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon27" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body27" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top27" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_05_1" HorizontalAlignment="Left" Margin="336,168,0,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG28" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon28" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body28" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top28" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_05_2" Margin="450,160,504,0" VerticalAlignment="Top" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG29" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon29" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body29" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top29" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_05_3" HorizontalAlignment="Right" Margin="0,163,394,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG30" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon30" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body30" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top30" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_05_4" HorizontalAlignment="Right" Margin="0,211,200,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG31" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon31" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body31" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top31" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_05_5" HorizontalAlignment="Right" Margin="0,227,130,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG32" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon32" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body32" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top32" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_05_6" HorizontalAlignment="Right" Margin="0,288,-16,0" VerticalAlignment="Top" Width="70" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG33" Margin="2,35,14,8" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon33" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body33" Margin="3,16.206,14,7.5" Source="001.png"/>
+				<Image x:Name="Tower_top33" Margin="1,1,13,31" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_07" HorizontalAlignment="Left" Margin="34,0,0,267" Width="70" VerticalAlignment="Bottom" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG3" Margin="0,29,8,6" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon3" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body3" Margin="3,12.706,14,3.5" Source="001.png"/>
+				<Image x:Name="Tower_top3" Margin="-1.5,-2,9,28" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_07_0" HorizontalAlignment="Left" Margin="114,344,0,323" Width="70" Opacity="0">
+				<Image x:Name="Tower_BG34" Margin="0,29,8,6" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon34" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body34" Margin="3,12.706,14,3.5" Source="001.png"/>
+				<Image x:Name="Tower_top34" Margin="-1.5,-2,9,28" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_07_1" HorizontalAlignment="Left" Margin="217,291.5,0,375.5" Width="70" Opacity="0">
+				<Image x:Name="Tower_BG35" Margin="0,29,8,6" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon35" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body35" Margin="3,12.706,14,3.5" Source="001.png"/>
+				<Image x:Name="Tower_top35" Margin="-1.5,-2,9,28" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_07_2" HorizontalAlignment="Left" Margin="322,256,0,0" Width="70" VerticalAlignment="Top" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG36" Margin="0,29,8,6" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon36" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body36" Margin="3,12.706,14,3.5" Source="001.png"/>
+				<Image x:Name="Tower_top36" Margin="-1.5,-2,9,28" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_07_3" HorizontalAlignment="Left" Margin="434,240,0,0" Width="70" VerticalAlignment="Top" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG37" Margin="0,29,8,6" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon37" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body37" Margin="3,12.706,14,3.5" Source="001.png"/>
+				<Image x:Name="Tower_top37" Margin="-1.5,-2,9,28" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_07_4" HorizontalAlignment="Right" Margin="0,248,400,0" Width="70" VerticalAlignment="Top" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG38" Margin="0,29,8,6" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon38" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body38" Margin="3,12.706,14,3.5" Source="001.png"/>
+				<Image x:Name="Tower_top38" Margin="-1.5,-2,9,28" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_07_5" HorizontalAlignment="Right" Margin="0,264,290,0" Width="70" VerticalAlignment="Top" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG39" Margin="0,29,8,6" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon39" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body39" Margin="3,12.706,14,3.5" Source="001.png"/>
+				<Image x:Name="Tower_top39" Margin="-1.5,-2,9,28" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_07_6" HorizontalAlignment="Right" Margin="0,272,234,0" Width="70" VerticalAlignment="Top" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG40" Margin="0,29,8,6" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon40" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body40" Margin="3,12.706,14,3.5" Source="001.png"/>
+				<Image x:Name="Tower_top40" Margin="-1.5,-2,9,28" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_07_7" HorizontalAlignment="Right" Margin="0,291,170,0" Width="70" VerticalAlignment="Top" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG41" Margin="0,29,8,6" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon41" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body41" Margin="3,12.706,14,3.5" Source="001.png"/>
+				<Image x:Name="Tower_top41" Margin="-1.5,-2,9,28" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_07_8" HorizontalAlignment="Right" Margin="0,363,48,304" Width="70" Opacity="0">
+				<Image x:Name="Tower_BG42" Margin="0,29,8,6" Source="000.png"/>
+				<Rectangle x:Name="Tower_cannon42" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body42" Margin="3,12.706,14,3.5" Source="001.png"/>
+				<Image x:Name="Tower_top42" Margin="-1.5,-2,9,28" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_09_0" HorizontalAlignment="Left" Margin="162,0,0,235" Width="70" VerticalAlignment="Bottom" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG43" Margin="-1.333,33.995,-2.668,1.005" Source="000.png" Width="74" d:LayoutOverrides="HorizontalMargin"/>
+				<Rectangle x:Name="Tower_cannon43" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body43" Margin="2,13.039,-2.001,3.167" Width="70" Source="001.png" d:LayoutOverrides="HorizontalMargin"/>
+				<Image x:Name="Tower_top43" Margin="1.5,-2,-1.5,28" Width="70" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_09_1" HorizontalAlignment="Left" Margin="304,0,0,283" Width="70" VerticalAlignment="Bottom" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG44" Margin="-1.333,33.995,-2.668,1.005" Source="000.png" Width="74" d:LayoutOverrides="HorizontalMargin"/>
+				<Rectangle x:Name="Tower_cannon44" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body44" Margin="2,13.039,-2.001,3.167" Width="70" Source="001.png" d:LayoutOverrides="HorizontalMargin"/>
+				<Image x:Name="Tower_top44" Margin="1.5,-2,-1.5,28" Width="70" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_09_2" HorizontalAlignment="Left" Margin="384,363,0,304" Width="70" Opacity="0">
+				<Image x:Name="Tower_BG45" Margin="-1.333,33.995,-2.668,1.005" Source="000.png" Width="74" d:LayoutOverrides="HorizontalMargin"/>
+				<Rectangle x:Name="Tower_cannon45" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body45" Margin="2,13.039,-2.001,3.167" Width="70" Source="001.png" d:LayoutOverrides="HorizontalMargin"/>
+				<Image x:Name="Tower_top45" Margin="1.5,-2,-1.5,28" Width="70" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_09_3" HorizontalAlignment="Right" Margin="0,352,386,315" Width="70" Opacity="0">
+				<Image x:Name="Tower_BG46" Margin="-1.333,33.995,-2.668,1.005" Source="000.png" Width="74" d:LayoutOverrides="HorizontalMargin"/>
+				<Rectangle x:Name="Tower_cannon46" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body46" Margin="2,13.039,-2.001,3.167" Width="70" Source="001.png" d:LayoutOverrides="HorizontalMargin"/>
+				<Image x:Name="Tower_top46" Margin="1.5,-2,-1.5,28" Width="70" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_09_4" HorizontalAlignment="Right" Margin="0,368,226,299" Width="70" Opacity="0">
+				<Image x:Name="Tower_BG47" Margin="-1.333,33.995,-2.668,1.005" Source="000.png" Width="74" d:LayoutOverrides="HorizontalMargin"/>
+				<Rectangle x:Name="Tower_cannon47" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body47" Margin="2,13.039,-2.001,3.167" Width="70" Source="001.png" d:LayoutOverrides="HorizontalMargin"/>
+				<Image x:Name="Tower_top47" Margin="1.5,-2,-1.5,28" Width="70" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_09_5" HorizontalAlignment="Right" Margin="0,0,168,275" Width="70" VerticalAlignment="Bottom" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG48" Margin="-1.333,33.995,-2.668,1.005" Source="000.png" Width="74" d:LayoutOverrides="HorizontalMargin"/>
+				<Rectangle x:Name="Tower_cannon48" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body48" Margin="2,13.039,-2.001,3.167" Width="70" Source="001.png" d:LayoutOverrides="HorizontalMargin"/>
+				<Image x:Name="Tower_top48" Margin="1.5,-2,-1.5,28" Width="70" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_09_6" HorizontalAlignment="Right" Margin="0,0,66,195" Width="70" VerticalAlignment="Bottom" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG49" Margin="-1.333,33.995,-2.668,1.005" Source="000.png" Width="74" d:LayoutOverrides="HorizontalMargin"/>
+				<Rectangle x:Name="Tower_cannon49" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body49" Margin="2,13.039,-2.001,3.167" Width="70" Source="001.png" d:LayoutOverrides="HorizontalMargin"/>
+				<Image x:Name="Tower_top49" Margin="1.5,-2,-1.5,28" Width="70" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_09" HorizontalAlignment="Left" Margin="112,0,0,211" Width="70" VerticalAlignment="Bottom" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG4" Margin="-1.333,33.995,-2.668,1.005" Source="000.png" Width="74" d:LayoutOverrides="HorizontalMargin"/>
+				<Rectangle x:Name="Tower_cannon4" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body4" Margin="2,13.039,-2.001,3.167" Width="70" Source="001.png" d:LayoutOverrides="HorizontalMargin"/>
+				<Image x:Name="Tower_top4" Margin="1.5,-2,-1.5,28" Width="70" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_11" HorizontalAlignment="Left" Margin="336,0,0,224" Width="70" VerticalAlignment="Bottom" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG5" Margin="-1.333,33.995,-2.668,1.005" Source="000.png" Width="74" d:LayoutOverrides="HorizontalMargin"/>
+				<Rectangle x:Name="Tower_cannon5" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body5" Margin="2,13.039,-2.001,3.167" Width="70" Source="001.png" d:LayoutOverrides="HorizontalMargin"/>
+				<Image x:Name="Tower_top5" Margin="-1.5,-2,1.5,28" Width="70" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_11_0" HorizontalAlignment="Left" Margin="408,0,0,240" Width="70" VerticalAlignment="Bottom" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG50" Margin="-1.333,33.995,-2.668,1.005" Source="000.png" Width="74" d:LayoutOverrides="HorizontalMargin"/>
+				<Rectangle x:Name="Tower_cannon50" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body50" Margin="2,13.039,-2.001,3.167" Width="70" Source="001.png" d:LayoutOverrides="HorizontalMargin"/>
+				<Image x:Name="Tower_top50" Margin="-1.5,-2,1.5,28" Width="70" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_11_1" HorizontalAlignment="Right" Margin="0,0,394,235" Width="70" VerticalAlignment="Bottom" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG51" Margin="-1.333,33.995,-2.668,1.005" Source="000.png" Width="74" d:LayoutOverrides="HorizontalMargin"/>
+				<Rectangle x:Name="Tower_cannon51" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body51" Margin="2,13.039,-2.001,3.167" Width="70" Source="001.png" d:LayoutOverrides="HorizontalMargin"/>
+				<Image x:Name="Tower_top51" Margin="-1.5,-2,1.5,28" Width="70" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_11_2" HorizontalAlignment="Right" Margin="0,0,274,203" Width="70" VerticalAlignment="Bottom" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG52" Margin="-1.333,33.995,-2.668,1.005" Source="000.png" Width="74" d:LayoutOverrides="HorizontalMargin"/>
+				<Rectangle x:Name="Tower_cannon52" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body52" Margin="2,13.039,-2.001,3.167" Width="70" Source="001.png" d:LayoutOverrides="HorizontalMargin"/>
+				<Image x:Name="Tower_top52" Margin="-1.5,-2,1.5,28" Width="70" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_11_3" HorizontalAlignment="Right" Margin="0,0,138,139" Width="70" VerticalAlignment="Bottom" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG53" Margin="-1.333,33.995,-2.668,1.005" Source="000.png" Width="74" d:LayoutOverrides="HorizontalMargin"/>
+				<Rectangle x:Name="Tower_cannon53" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body53" Margin="2,13.039,-2.001,3.167" Width="70" Source="001.png" d:LayoutOverrides="HorizontalMargin"/>
+				<Image x:Name="Tower_top53" Margin="-1.5,-2,1.5,28" Width="70" Source="003.png"/>
+			</Grid>
+			<Grid x:Name="Tower_11_4" HorizontalAlignment="Left" Margin="234,0,0,163" Width="70" VerticalAlignment="Bottom" Height="85" Opacity="0">
+				<Image x:Name="Tower_BG54" Margin="-1.333,33.995,-2.668,1.005" Source="000.png" Width="74" d:LayoutOverrides="HorizontalMargin"/>
+				<Rectangle x:Name="Tower_cannon54" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-22.5,22.5,0,0" VerticalAlignment="Top" Width="48" Height="8"/>
+				<Image x:Name="Tower_body54" Margin="2,13.039,-2.001,3.167" Width="70" Source="001.png" d:LayoutOverrides="HorizontalMargin"/>
+				<Image x:Name="Tower_top54" Margin="-1.5,-2,1.5,28" Width="70" Source="003.png"/>
+			</Grid>
+		</Grid>
+	</Grid>
+</Window>
