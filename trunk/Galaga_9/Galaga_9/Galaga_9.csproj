@@ -70,8 +70,11 @@
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Tower_overControl.xaml.cs">
-      <DependentUpon>Tower_overControl.xaml</DependentUpon>
+    <Compile Include="TowersControl.xaml.cs">
+      <DependentUpon>TowersControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Tower_menu.xaml.cs">
+      <DependentUpon>UI_Tower_menu.xaml</DependentUpon>
     </Compile>
     <Page Include="explosion_effControl.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -81,7 +84,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Tower_overControl.xaml">
+    <Page Include="TowersControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_Tower_menu.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -95,6 +102,9 @@
     <Resource Include="001.png" />
     <Resource Include="003.png" />
     <Resource Include="BG.png" />
+    <Resource Include="BigTower_bg.png" />
+    <Resource Include="BigTower_middle.png" />
+    <Resource Include="BigTower_top.png" />
     <Resource Include="Gold.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
