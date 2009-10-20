@@ -63,6 +63,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Enemy_jachoControl.xaml.cs">
+      <DependentUpon>Enemy_jachoControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="explosion_effControl.xaml.cs">
       <DependentUpon>explosion_effControl.xaml</DependentUpon>
     </Compile>
@@ -76,6 +79,10 @@
     <Compile Include="UI_Tower_menu.xaml.cs">
       <DependentUpon>UI_Tower_menu.xaml</DependentUpon>
     </Compile>
+    <Page Include="Enemy_jachoControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="explosion_effControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
