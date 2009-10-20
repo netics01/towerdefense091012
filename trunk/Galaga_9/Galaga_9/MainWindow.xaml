@@ -84,7 +84,6 @@
 					</TextBlock.RenderTransform><Run Text="아리미가 안정되어"/><LineBreak/><Run Text="자원 채굴량이 늘었습니다."/></TextBlock>
 			</Grid>
 		</Grid>
-		<local:explosion_effControl x:Name="explosion_eff" HorizontalAlignment="Left" Margin="-144,96,0,0" VerticalAlignment="Top" Width="64" Height="64"/>
 		<local:Tower_overControl x:Name="UI_Tower_menu" HorizontalAlignment="Left" Margin="-136,0,0,810" VerticalAlignment="Bottom" Width="140" Height="50" RenderTransformOrigin="0.5,0.5">
 			<local:Tower_overControl.RenderTransform>
 				<TransformGroup>
