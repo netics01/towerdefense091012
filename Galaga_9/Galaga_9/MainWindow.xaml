@@ -45,8 +45,8 @@
 	</Window.Triggers>
 
 	<Grid x:Name="LayoutRoot">
-		<local:TowersControl x:Name="towersControl" Margin="0,40,0,74" d:IsLocked="True"/>
-		<Grid x:Name="UI" Margin="24,0,24,2" VerticalAlignment="Bottom" Height="80" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+		<local:TowersControl x:Name="towersControl" Margin="0,40,0,74"/>
+		<Grid x:Name="UI" Margin="24,0,24,2" VerticalAlignment="Bottom" Height="80" RenderTransformOrigin="0.5,0.5">
 			<Grid.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -72,19 +72,19 @@
 				<Image HorizontalAlignment="Left" Width="32" Source="Gold.png"/>
 				<TextBlock Margin="39,6,0,2" Text="12000" TextWrapping="Wrap" Foreground="#FFECB33B" FontFamily="kroeger 05_53" FontSize="18.667"/>
 			</Grid>
-			<Grid x:Name="talk" HorizontalAlignment="Right" Width="224" Margin="0,-144,24,0" VerticalAlignment="Top" Height="168" d:IsHidden="True">
+			<Grid x:Name="talk" HorizontalAlignment="Right" Width="224" Margin="0,-144,24,0" VerticalAlignment="Top" Height="168">
 				<Path x:Name="mc_talkBG" Fill="#FF2C1F1B" Stretch="Fill" Data="M9.9999981,0 L214,0 C219.52284,0 224,4.4771523 224,9.9999981 L224,126 C224,131.52284 219.52284,136 214,136 L201.5,136 201.5,168 181.06923,136 9.9999981,136 C4.4771523,136 0,131.52284 0,126 L0,9.9999981 C0,4.4771523 4.4771523,0 9.9999981,0 z" Margin="0,80,0,0"/>
-				<TextBlock x:Name="t_good" Margin="16,0,16,24" FontFamily="나눔고딕 Bold" FontSize="16" Foreground="#FFF4CA71" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Height="56"><TextBlock.RenderTransform>
+				<TextBlock x:Name="t_good" Margin="16,80,16,24" FontFamily="나눔고딕 Bold" FontSize="16" Foreground="#FFF4CA71" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
 							<SkewTransform/>
 							<RotateTransform/>
 							<TranslateTransform/>
 						</TransformGroup>
-					</TextBlock.RenderTransform><Run Text="아리미가 안정되어"/><LineBreak/><Run Text="자원 채굴량이 늘었습니다."/></TextBlock>
+					</TextBlock.RenderTransform><Run Text="무림씨 프로그래머 세미나가"/><LineBreak/><Run Text="종료되어 게임개발이 "/><LineBreak/><Run Text="본격 시작 됩니다. 얏호"/><LineBreak/><Run Text="자원 채굴량이 늘었습니다."/></TextBlock>
 			</Grid>
 		</Grid>
-		<local:Tower_overControl x:Name="UI_Tower_menu" HorizontalAlignment="Left" Margin="-136,0,0,810" VerticalAlignment="Bottom" Width="140" Height="50" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+		<local:Tower_overControl x:Name="UI_Tower_menu" HorizontalAlignment="Left" Margin="-136,0,0,810" VerticalAlignment="Bottom" Width="140" Height="50" RenderTransformOrigin="0.5,0.5">
 			<local:Tower_overControl.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -94,6 +94,6 @@
 				</TransformGroup>
 			</local:Tower_overControl.RenderTransform>
 		</local:Tower_overControl>
-		<local:Enemy_jachoControl Margin="480,372.999,474.096,0" VerticalAlignment="Top" Height="59.001"/>
+		<local:Enemy_jachoControl x:Name="Enemy_jacho" Margin="480,372.999,474.096,0" VerticalAlignment="Top" Height="59.001"/>
 	</Grid>
 </Window>
