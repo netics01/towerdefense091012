@@ -680,13 +680,13 @@
 							<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="35.5"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="48"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="48"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="51.5"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="4.438"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Tower_A_0_cannon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="21.04"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="10.08"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="10.08"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="-0.88"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0.052"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Tower_A_0_top" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-2"/>
@@ -723,6 +723,10 @@
 							<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000" Value="{x:Static Visibility.Visible}"/>
 							<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
+						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Tower_A_0_cannon" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
+							<SplinePointKeyFrame KeyTime="00:00:01.1000000" Value="0.5,0.5"/>
+							<SplinePointKeyFrame KeyTime="00:00:02" Value="1.001,0.57"/>
+						</PointAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				
@@ -737,12 +741,12 @@
 				</Grid.RowDefinitions>
 				<Image x:Name="Tower_A_0_BG" Margin="1,6,7,10" Source="000.png" Grid.Row="1"/>
 				<Image x:Name="Tower_A_0_body" Margin="8,-10.794,17,7.5" Source="001.png" Grid.Row="1"/>
-				<Rectangle x:Name="Tower_A_0_cannon" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-19.5,0,0,-3" VerticalAlignment="Bottom" Width="47" Height="7" RenderTransformOrigin="0.5,0.5">
+				<Rectangle x:Name="Tower_A_0_cannon" Fill="Black" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Margin="-19.5,0,0,-3" VerticalAlignment="Bottom" Width="47" Height="7" RenderTransformOrigin="1.004,0.482">
 					<Rectangle.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
 							<SkewTransform/>
-							<RotateTransform/>
+							<RotateTransform Angle="173.29"/>
 							<TranslateTransform/>
 						</TransformGroup>
 					</Rectangle.RenderTransform>
