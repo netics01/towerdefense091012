@@ -76,6 +76,9 @@
     <Compile Include="TowersControl.xaml.cs">
       <DependentUpon>TowersControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI_BottonControl.xaml.cs">
+      <DependentUpon>UI_BottonControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI_Tower_menu.xaml.cs">
       <DependentUpon>UI_Tower_menu.xaml</DependentUpon>
     </Compile>
@@ -92,6 +95,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TowersControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_BottonControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
