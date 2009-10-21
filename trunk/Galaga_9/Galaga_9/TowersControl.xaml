@@ -134,34 +134,16 @@
 					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_A_0" Storyboard.TargetProperty="(UIElement.Opacity)">
 						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
 					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="216"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="138"/>
-					</DoubleAnimationUsingKeyFrames>
 				</Storyboard>
 				
 				<Storyboard x:Key="Tower_A_0_Leave">
 					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_A_0" Storyboard.TargetProperty="(UIElement.Opacity)">
 						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-5"/>
-					</DoubleAnimationUsingKeyFrames>
 				</Storyboard>
 				<Storyboard x:Key="Tower_A_0_Build_Over">
 					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_A_0" Storyboard.TargetProperty="(UIElement.Opacity)">
 						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="220"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="138"/>
 					</DoubleAnimationUsingKeyFrames>
 				</Storyboard>
 				<Storyboard x:Key="Tower_A_0_Build_Leave">
@@ -218,23 +200,11 @@
 					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_B_0" Storyboard.TargetProperty="(UIElement.Opacity)">
 						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
 					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="311"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="203"/>
-					</DoubleAnimationUsingKeyFrames>
 				</Storyboard>
 				
 				<Storyboard x:Key="Tower_B_0_leave">
 					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_B_0" Storyboard.TargetProperty="(UIElement.Opacity)">
 						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-5"/>
 					</DoubleAnimationUsingKeyFrames>
 				</Storyboard>
 		<Storyboard x:Key="Tower_C_0_Build">
@@ -286,23 +256,11 @@
 					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_C_0" Storyboard.TargetProperty="(UIElement.Opacity)">
 						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
 					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="321"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="295"/>
-					</DoubleAnimationUsingKeyFrames>
 				</Storyboard>
 				
 				<Storyboard x:Key="Tower_C_0_leave">
 					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_C_0" Storyboard.TargetProperty="(UIElement.Opacity)">
 						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-5"/>
 					</DoubleAnimationUsingKeyFrames>
 				</Storyboard>
 				
@@ -355,23 +313,11 @@
 					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_D_0" Storyboard.TargetProperty="(UIElement.Opacity)">
 						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
 					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="248"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="452"/>
-					</DoubleAnimationUsingKeyFrames>
 				</Storyboard>
 				
 				<Storyboard x:Key="Tower_D_0_leave">
 					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_D_0" Storyboard.TargetProperty="(UIElement.Opacity)">
 						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-5"/>
 					</DoubleAnimationUsingKeyFrames>
 				</Storyboard>
 		<Storyboard x:Key="Tower_E_0_Build">
@@ -423,23 +369,11 @@
 					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_E_0" Storyboard.TargetProperty="(UIElement.Opacity)">
 						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
 					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="264"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="588"/>
-					</DoubleAnimationUsingKeyFrames>
 				</Storyboard>
 				
 				<Storyboard x:Key="Tower_E_0_leave">
 					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_E_0" Storyboard.TargetProperty="(UIElement.Opacity)">
 						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-5"/>
 					</DoubleAnimationUsingKeyFrames>
 				</Storyboard>				
 				
@@ -492,23 +426,11 @@
 					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_F_0" Storyboard.TargetProperty="(UIElement.Opacity)">
 						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
 					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="392"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="618"/>
-					</DoubleAnimationUsingKeyFrames>
 				</Storyboard>
 				
 				<Storyboard x:Key="Tower_F_0_leave">
 					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_F_0" Storyboard.TargetProperty="(UIElement.Opacity)">
 						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-					</DoubleAnimationUsingKeyFrames>
-					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-						<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-5"/>
 					</DoubleAnimationUsingKeyFrames>
 				</Storyboard>
 						
@@ -593,6 +515,9 @@
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
 						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Tower_A_0_Remove">
@@ -613,6 +538,9 @@
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Tower_A_0_BG" Storyboard.TargetProperty="(UIElement.Opacity)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
 						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Tower_A_0_Build_Idle">
@@ -645,6 +573,9 @@
 							<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="2"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
 						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Tower_A_0_Build_attack">
@@ -685,6 +616,9 @@
 							<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
 						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Tower_A_0_Over">
@@ -693,24 +627,30 @@
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="216"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="244"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="146"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="125"/>
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
-				<VisualState x:Name="Tower_A_0_Leave"/>
+				<VisualState x:Name="Tower_A_0_Leave">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
 				<VisualState x:Name="Tower_A_0_Build_Over">
 					<Storyboard>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_A_0" Storyboard.TargetProperty="(UIElement.Opacity)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="216"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="240"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="146"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="125"/>
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
@@ -719,6 +659,70 @@
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_A_0" Storyboard.TargetProperty="(UIElement.Opacity)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UI_Tower_menu" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Tower_A_0_Build_Idle_Fluctuation">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Tower_A_0" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Tower_A_0_cannon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-108.734"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="-158.986"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="-158.986"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="-184.643"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Tower_A_0_cannon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="35.5"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="48"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="48"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="51.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Tower_A_0_cannon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="21.04"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="10.08"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="10.08"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="-0.88"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Tower_A_0_top" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-2"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="-0.364"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="2"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="t_Fluctuation" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="t_Fluctuation" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-11"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-11"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="t_Fluctuation" Storyboard.TargetProperty="(TextElement.FontWeight)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00">
+								<DiscreteObjectKeyFrame.Value>
+									<FontWeight>Bold</FontWeight>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+							<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000">
+								<DiscreteObjectKeyFrame.Value>
+									<FontWeight>Bold</FontWeight>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="t_Fluctuation" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-15"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="t_Fluctuation" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000" Value="{x:Static Visibility.Visible}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				
@@ -753,6 +757,16 @@
 						</TransformGroup>
 					</Image.RenderTransform>
 				</Image>
+				<TextBlock x:Name="t_Fluctuation" Margin="24,8,-18,7.96" Opacity="0" Text="+ 120" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="나눔고딕 Bold">
+					<TextBlock.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</TextBlock.RenderTransform>
+				</TextBlock>
 			</Grid>
 			<Grid x:Name="Tower_A_1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="85" Margin="126,46,0,0" Opacity="0">
 				<Image x:Name="Tower_A_1_BG" Margin="1,38,7,10" Source="000.png"/>
@@ -1621,16 +1635,6 @@
 				<Image x:Name="Tower_BIG_1_top" Margin="6.5,-36,0,0" Width="160" Source="BigTower_top.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="108" d:LayoutOverrides="VerticalAlignment"/>
 			</Grid>
 		</Grid>
-		<local:Tower_overControl x:Name="UI_Tower_menu" HorizontalAlignment="Left" Margin="-136,0,0,696" VerticalAlignment="Bottom" Width="140" Height="50" RenderTransformOrigin="0.5,0.5">
-			<local:Tower_overControl.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</local:Tower_overControl.RenderTransform>
-		</local:Tower_overControl>
 		<local:explosion_effControl x:Name="explosion_eff" HorizontalAlignment="Left" Margin="-144,96,0,0" VerticalAlignment="Top" Width="64" Height="64" RenderTransformOrigin="0.5,0.5">
 			<local:explosion_effControl.RenderTransform>
 				<TransformGroup>
@@ -1641,5 +1645,286 @@
 				</TransformGroup>
 			</local:explosion_effControl.RenderTransform>
 		</local:explosion_effControl>
+		<UserControl
+			x:Name="UI_Tower_menu" d:DesignHeight="50" Width="140" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-160,24,0,0" RenderTransformOrigin="0.5,0.5">
+			<UserControl.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</UserControl.RenderTransform>
+
+			<Grid x:Name="LayoutRoot1" Width="140" HorizontalAlignment="Left">
+				<VisualStateManager.VisualStateGroups>
+					<VisualStateGroup x:Name="Menu">
+						<VisualState x:Name="menu_Build_over">
+							<Storyboard>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC1E683C"/>
+								</ColorAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								</DoubleAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC114136"/>
+								</ColorAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="t_Build" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFE0A3"/>
+								</ColorAnimationUsingKeyFrames>
+								<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="t_Build" Storyboard.TargetProperty="(TextElement.FontWeight)">
+									<DiscreteObjectKeyFrame KeyTime="00:00:00">
+										<DiscreteObjectKeyFrame.Value>
+											<FontWeight>Normal</FontWeight>
+										</DiscreteObjectKeyFrame.Value>
+									</DiscreteObjectKeyFrame>
+								</ObjectAnimationUsingKeyFrames>
+							</Storyboard>
+						</VisualState>
+						<VisualState x:Name="menu_Build_disable">
+							<Storyboard>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC454545"/>
+								</ColorAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC2C2C2C"/>
+								</ColorAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="t_Build" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF6E6E6E"/>
+								</ColorAnimationUsingKeyFrames>
+							</Storyboard>
+						</VisualState>
+						<VisualState x:Name="menu_UPGRADE_none">
+							<Storyboard>
+								<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over" Storyboard.TargetProperty="(UIElement.Visibility)">
+									<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+								</ObjectAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_REMOVE" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+							</Storyboard>
+						</VisualState>
+						<VisualState x:Name="menu_UPGRADE_over">
+							<Storyboard>
+								<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over" Storyboard.TargetProperty="(UIElement.Visibility)">
+									<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+								</ObjectAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_REMOVE" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC1C5B31"/>
+								</ColorAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC205145"/>
+								</ColorAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.991"/>
+								</DoubleAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="t_UPGRADE" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFD285"/>
+								</ColorAnimationUsingKeyFrames>
+							</Storyboard>
+						</VisualState>
+						<VisualState x:Name="menu_UPGRADE_disable">
+							<Storyboard>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+								<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over" Storyboard.TargetProperty="(UIElement.Visibility)">
+									<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+								</ObjectAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_REMOVE" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC515151"/>
+								</ColorAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+								</DoubleAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC2C2C2C"/>
+								</ColorAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="t_UPGRADE" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF686868"/>
+								</ColorAnimationUsingKeyFrames>
+							</Storyboard>
+						</VisualState>
+						<VisualState x:Name="menu_UPGRADE_REMOVE_over">
+							<Storyboard>
+								<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over" Storyboard.TargetProperty="(UIElement.Visibility)">
+									<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+								</ObjectAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_REMOVE" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_REMOVE_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC186338"/>
+								</ColorAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_REMOVE_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC223F32"/>
+								</ColorAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="t_REMOVE" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFB97"/>
+								</ColorAnimationUsingKeyFrames>
+							</Storyboard>
+						</VisualState>
+						<VisualState x:Name="menu_UPGRADE_BIG_none">
+							<Storyboard>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE_BIG" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+								<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over" Storyboard.TargetProperty="(UIElement.Visibility)">
+									<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+								</ObjectAnimationUsingKeyFrames>
+								<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE" Storyboard.TargetProperty="(UIElement.Visibility)">
+									<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+								</ObjectAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_REMOVE" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+							</Storyboard>
+						</VisualState>
+						<VisualState x:Name="menu_UPGRADE_BIG_over">
+							<Storyboard>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE_BIG" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+								<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over" Storyboard.TargetProperty="(UIElement.Visibility)">
+									<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+								</ObjectAnimationUsingKeyFrames>
+								<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE" Storyboard.TargetProperty="(UIElement.Visibility)">
+									<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+								</ObjectAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_REMOVE" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE_BIG_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC1A5D33"/>
+								</ColorAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE_BIG_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC152A1E"/>
+								</ColorAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="t_UPGRADE_BIG" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFED9D"/>
+								</ColorAnimationUsingKeyFrames>
+							</Storyboard>
+						</VisualState>
+						<VisualState x:Name="menu_UPGRADE_BIG_disable">
+							<Storyboard>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE_BIG" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+								<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over" Storyboard.TargetProperty="(UIElement.Visibility)">
+									<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+								</ObjectAnimationUsingKeyFrames>
+								<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE" Storyboard.TargetProperty="(UIElement.Visibility)">
+									<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+								</ObjectAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_REMOVE" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE_BIG_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC595959"/>
+								</ColorAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE_BIG_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC1E1E1E"/>
+								</ColorAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="t_UPGRADE_BIG" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF767676"/>
+								</ColorAnimationUsingKeyFrames>
+							</Storyboard>
+						</VisualState>
+						<VisualState x:Name="menu_UPGRADE_BIG_REMOVE_over">
+							<Storyboard>
+								<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_over" Storyboard.TargetProperty="(UIElement.Visibility)">
+									<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+								</ObjectAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_REMOVE" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_REMOVE_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC186338"/>
+								</ColorAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_REMOVE_BG" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#CC223F32"/>
+								</ColorAnimationUsingKeyFrames>
+								<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="t_REMOVE" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+									<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFB97"/>
+								</ColorAnimationUsingKeyFrames>
+								<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE" Storyboard.TargetProperty="(UIElement.Visibility)">
+									<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+								</ObjectAnimationUsingKeyFrames>
+								<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Tower_UPGRADE_BIG" Storyboard.TargetProperty="(UIElement.Opacity)">
+									<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+							</Storyboard>
+						</VisualState>
+					</VisualStateGroup>
+				</VisualStateManager.VisualStateGroups>
+				<Grid x:Name="Tower_over" d:LayoutOverrides="Height" Margin="0,0,60,0" Width="80">
+					<Rectangle x:Name="Tower_over_BG" RadiusX="6" RadiusY="6" Margin="0,0,0,34" Height="16" Width="80">
+						<Rectangle.Fill>
+							<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+								<GradientStop Color="#CC0E1211" Offset="0"/>
+								<GradientStop Color="#CC0F221C" Offset="1"/>
+							</LinearGradientBrush>
+						</Rectangle.Fill>
+					</Rectangle>
+					<TextBlock x:Name="t_Build" Margin="4.25,-1,3.75,0" FontFamily="나눔고딕" FontSize="13.333" Foreground="#FFFFC750" TextWrapping="Wrap" VerticalAlignment="Top" Height="16"><Run Text="BUILD"/><Run Text="  - 50"/><Run Text="       -50"/></TextBlock>
+				</Grid>
+				<Grid x:Name="Tower_UPGRADE" VerticalAlignment="Top" Width="140" Height="16" Opacity="0">
+					<Rectangle x:Name="Tower_UPGRADE_BG" RadiusX="6" RadiusY="6" Margin="0,0,16,0" Height="16" Width="124" d:LayoutOverrides="VerticalAlignment">
+						<Rectangle.Fill>
+							<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+								<GradientStop Color="#CC0E1211" Offset="0"/>
+								<GradientStop Color="#CC0F221C" Offset="1"/>
+							</LinearGradientBrush>
+						</Rectangle.Fill>
+					</Rectangle>
+					<TextBlock x:Name="t_UPGRADE" Margin="4.5,-1,0,0" FontFamily="나눔고딕" FontSize="13.333" Foreground="#FFFFC750" TextWrapping="Wrap" Height="17"><Run Text="UPGRADE"/><Run Text="  "/><Run Text=" "/><Run Text=" - "/><Run Text="1"/><Run Text="50"/><Run Text="       -50"/></TextBlock>
+				</Grid>
+				<Grid x:Name="Tower_REMOVE" Margin="0,16,0,19" Width="140" Opacity="0">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="0.171*"/>
+						<ColumnDefinition Width="0.829*"/>
+					</Grid.ColumnDefinitions>
+					<Rectangle x:Name="Tower_REMOVE_BG" RadiusX="6" RadiusY="6" Margin="0,0.5,16,-0.5" Height="16" Width="124" d:LayoutOverrides="VerticalAlignment" Grid.ColumnSpan="2">
+						<Rectangle.Fill>
+							<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+								<GradientStop Color="#CC0E1211" Offset="0"/>
+								<GradientStop Color="#CC0F221C" Offset="1"/>
+							</LinearGradientBrush>
+						</Rectangle.Fill>
+					</Rectangle>
+					<TextBlock x:Name="t_REMOVE" Margin="3.75,-1,0.75,0" FontFamily="나눔고딕" FontSize="13.333" Foreground="#FFFFC750" TextWrapping="Wrap" Height="17" Grid.ColumnSpan="2"><Run Text="REMOVE"/><Run Text="  "/><Run Text=" "/><Run Text=" "/><Run Text=" "/><Run Text=" "/><Run Text="+"/><Run Text=" 50"/><Run Text="       -50"/></TextBlock>
+				</Grid>
+				<Grid x:Name="Tower_UPGRADE_BIG" VerticalAlignment="Top" Width="140" Height="16" Opacity="0">
+					<Rectangle x:Name="Tower_UPGRADE_BIG_BG" RadiusX="6" RadiusY="6" Margin="0,0,16,0" Height="16" Width="124" d:LayoutOverrides="VerticalAlignment">
+						<Rectangle.Fill>
+							<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+								<GradientStop Color="#CC0E1211" Offset="0"/>
+								<GradientStop Color="#CC0F221C" Offset="1"/>
+							</LinearGradientBrush>
+						</Rectangle.Fill>
+					</Rectangle>
+					<TextBlock x:Name="t_UPGRADE_BIG" Margin="2,-1,2.5,0" FontFamily="나눔고딕" FontSize="13.333" Foreground="#FFFFC750" TextWrapping="Wrap" Height="17"><Run Text="BIGTOWER"/><Run Text=" "/><Run Text=" "/><Run Text=" "/><Run Text="- "/><Run Text="1"/><Run Text="50"/><Run Text="0"/><Run Text="       -50"/></TextBlock>
+				</Grid>
+			</Grid>
+		</UserControl>
 	</Grid>
 </UserControl>
