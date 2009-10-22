@@ -6,7 +6,9 @@
 	mc:Ignorable="d"
 	x:Class="PlanetTerror.Core"
 	x:Name="UserControl"
-	d:DesignWidth="640" d:DesignHeight="480">
+	d:DesignWidth="224" d:DesignHeight="192">
 
-	<Grid x:Name="LayoutRoot"/>
+	<Grid x:Name="LayoutRoot">
+		<Rectangle Fill="White" Stroke="Black"/>
+	</Grid>
 </UserControl>
