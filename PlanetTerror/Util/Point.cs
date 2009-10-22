@@ -7,9 +7,9 @@ using System.Net;
 namespace PlanetTerror.Util
 {
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	//	Point
+	//	PointF
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public struct Point
+	public struct PointF
 	{
 		//===============================================================================================================================================
 		//	프로퍼티
@@ -18,20 +18,20 @@ namespace PlanetTerror.Util
 
 		//===============================================================================================================================================
 		//	필드
-		public static Point Zero;
+		public static PointF Zero;
 
 		public float x;
 		public float y;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
-		public Point(float x, float y)
+		public PointF(float x, float y)
 		{
 			this.x = x;
 			this.y = y;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public Point(Point pos)
+		public PointF(PointF pos)
 		{
 			x = pos.x;
 			y = pos.y;
@@ -41,7 +41,7 @@ namespace PlanetTerror.Util
 		//	메소드
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	클램프
-		public void Clamp(Point min, Point max)
+		public void Clamp(PointF min, PointF max)
 		{
 			X = NumberH.Clamp(min.X, X, max.X);
 			Y = NumberH.Clamp(min.Y, Y, max.Y);
@@ -54,7 +54,7 @@ namespace PlanetTerror.Util
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	비교
-		public bool IsSame(Point rhs)
+		public bool IsSame(PointF rhs)
 		{
 			return x == rhs.x && y == rhs.y;
 		}
@@ -62,53 +62,53 @@ namespace PlanetTerror.Util
 		//===============================================================================================================================================
 		//	연산자
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public static Point operator+(Point lhs, Point rhs)
+		public static PointF operator+(PointF lhs, PointF rhs)
 		{
-			return new Point(lhs.x + rhs.x, lhs.y + rhs.y);
+			return new PointF(lhs.x + rhs.x, lhs.y + rhs.y);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public static Point operator-(Point lhs, Point rhs)
+		public static PointF operator-(PointF lhs, PointF rhs)
 		{
-			return new Point(lhs.x - rhs.x, lhs.y - rhs.y);
+			return new PointF(lhs.x - rhs.x, lhs.y - rhs.y);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public static Point operator*(Point lhs, Point rhs)
+		public static PointF operator*(PointF lhs, PointF rhs)
 		{
-			return new Point(lhs.x * rhs.x, lhs.y * rhs.y);
+			return new PointF(lhs.x * rhs.x, lhs.y * rhs.y);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public static Point operator/(Point lhs, Point rhs)
+		public static PointF operator/(PointF lhs, PointF rhs)
 		{
-			return new Point(lhs.x / rhs.x, lhs.y / rhs.y);
+			return new PointF(lhs.x / rhs.x, lhs.y / rhs.y);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public static Point operator*(Point lhs, float scalar)
+		public static PointF operator*(PointF lhs, float scalar)
 		{
-			return new Point(lhs.x * scalar, lhs.y * scalar);
+			return new PointF(lhs.x * scalar, lhs.y * scalar);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public static Point operator*(float scalar, Point lhs)
+		public static PointF operator*(float scalar, PointF lhs)
 		{
-			return new Point(lhs.x * scalar, lhs.y * scalar);
+			return new PointF(lhs.x * scalar, lhs.y * scalar);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public static Point operator/(Point lhs, float scalar)
+		public static PointF operator/(PointF lhs, float scalar)
 		{
-			return new Point(lhs.x / scalar, lhs.y / scalar);
+			return new PointF(lhs.x / scalar, lhs.y / scalar);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public static bool operator==(Point lhs, Point rhs)
+		public static bool operator==(PointF lhs, PointF rhs)
 		{
 			return lhs.x == rhs.x && lhs.y == rhs.y;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public static bool operator!=(Point lhs, Point rhs)
+		public static bool operator!=(PointF lhs, PointF rhs)
 		{
 			return lhs.x != rhs.x || lhs.y != rhs.y;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public override bool Equals(object rhs) { return this == (Point)rhs; }
-		public bool Equals(Point rhs) { return this == rhs; }
+		public override bool Equals(object rhs) { return this == (PointF)rhs; }
+		public bool Equals(PointF rhs) { return this == rhs; }
 		public override int GetHashCode() {	return base.GetHashCode();}
 	}
 
