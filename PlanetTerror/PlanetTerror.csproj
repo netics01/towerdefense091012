@@ -125,11 +125,11 @@
     <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="000.png" />
-    <Resource Include="001.png" />
-    <Resource Include="003.png" />
-    <Resource Include="backgroundImage.png" />
-    <Resource Include="Gold.png" />
+    <Resource Include="Resources\backgroundImage.png" />
+    <Resource Include="Resources\Gold.png" />
+    <Resource Include="Resources\TowerA0_BG.png" />
+    <Resource Include="Resources\TowerA0_Body.png" />
+    <Resource Include="Resources\TowerA0_Top.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

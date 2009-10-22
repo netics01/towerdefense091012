@@ -13,39 +13,39 @@
 			<VisualStateGroup x:Name="NotifyStateGroup">
 				<VisualState x:Name="ShowState">
 					<Storyboard>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk" Storyboard.TargetProperty="(UIElement.Visibility)">
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Grid" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 							<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.536"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.965"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-36"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-4"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.536"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.953"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-36"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-12"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.47"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.012"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="45.916"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-3.21"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.47"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.008"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="53.886"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-4.198"/>
 						</DoubleAnimationUsingKeyFrames>
@@ -53,43 +53,43 @@
 				</VisualState>
 				<VisualState x:Name="HideState">
 					<Storyboard>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk" Storyboard.TargetProperty="(UIElement.Visibility)">
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Grid" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 							<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Hidden}"/>
 						</ObjectAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.042"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-68"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.077"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="80"/>
 						</DoubleAnimationUsingKeyFrames>
-						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
+						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
 							<SplinePointKeyFrame KeyTime="00:00:00" Value="0.5,0.5"/>
 							<SplinePointKeyFrame KeyTime="00:00:00.1000000" Value="0.25,1.012"/>
 						</PointAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.108"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.181"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-18"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="2.2"/>
 						</DoubleAnimationUsingKeyFrames>
@@ -101,11 +101,10 @@
 			<ColumnDefinition Width="0.904*"/>
 			<ColumnDefinition Width="0.096*"/>
 		</Grid.ColumnDefinitions>
-		<Slider x:Name="gage" Margin="288,8,352,0" VerticalAlignment="Top" Height="24" Foreground="#FFCBCB84"/>
-		<Image x:Name="icon_gold" HorizontalAlignment="Right" Margin="0,8,128,0" VerticalAlignment="Top" Width="32" Height="32" Source="Gold.png"/>
-		<TextBlock x:Name="t_gold" HorizontalAlignment="Right" Margin="0,8,-40,0" VerticalAlignment="Top" Width="168" Height="24" Text="1200" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="kroeger 05_53" FontSize="14.667"/>
-		<Grid x:Name="talk" HorizontalAlignment="Right" Margin="0,-152,-31.68,0" VerticalAlignment="Top" Width="224" Height="166.084" Visibility="Hidden">
-			<Path x:Name="path" Fill="#FF1F2222" Stretch="Fill" Data="M9.9999981,1.7053026E-13 L214,1.7053026E-13 C219.52284,-9.5367415E-07 224,4.4771514 224,9.999999 L224,126 C224,131.52284 219.52284,136 214,136 L63.625805,136 53.760132,166.08446 38.801029,136 9.9999981,136 C4.4771523,136 0,131.52284 0,126 L0,9.999999 C0,4.4771514 4.4771523,-9.5367415E-07 9.9999981,1.7053026E-13 z" RenderTransformOrigin="0.5,0.5">
+		<Image x:Name="gold_Image" HorizontalAlignment="Right" Margin="0,8,128,0" VerticalAlignment="Top" Width="32" Height="32" Source="Resources/Gold.png"/>
+		<TextBlock x:Name="gold_Text" HorizontalAlignment="Right" Margin="0,8,-40,0" VerticalAlignment="Top" Width="168" Height="24" Text="1200" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="kroeger 05_53" FontSize="14.667"/>
+		<Grid x:Name="talk_Grid" HorizontalAlignment="Right" Margin="0,-152,-31.68,0" VerticalAlignment="Top" Width="224" Height="166.084" Visibility="Hidden">
+			<Path x:Name="talkBox_Path" Fill="#FF1F2222" Stretch="Fill" Data="M9.9999981,1.7053026E-13 L214,1.7053026E-13 C219.52284,-9.5367415E-07 224,4.4771514 224,9.999999 L224,126 C224,131.52284 219.52284,136 214,136 L63.625805,136 53.760132,166.08446 38.801029,136 9.9999981,136 C4.4771523,136 0,131.52284 0,126 L0,9.999999 C0,4.4771514 4.4771523,-9.5367415E-07 9.9999981,1.7053026E-13 z" RenderTransformOrigin="0.5,0.5">
 				<Path.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -115,7 +114,7 @@
 					</TransformGroup>
 				</Path.RenderTransform>
 			</Path>
-			<TextBlock x:Name="textBlock" Margin="16,16,16,46.084" Foreground="#FFE6AD69" Text="돈이 쏟아진다!!!" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
+			<TextBlock x:Name="talk_Text" Margin="16,16,16,46.084" Foreground="#FFE6AD69" Text="돈이 쏟아진다!!!" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
 				<TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -126,5 +125,6 @@
 				</TextBlock.RenderTransform>
 			</TextBlock>
 		</Grid>
+		<ProgressBar x:Name="power_Progress" Margin="248,14.084,222.32,0" VerticalAlignment="Top" Height="17.916" Value="50"/>
 	</Grid>
 </UserControl>
