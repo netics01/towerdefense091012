@@ -131,6 +131,7 @@
     <Compile Include="Util\Point.cs" />
     <Compile Include="Util\Rect.cs" />
     <Compile Include="Util\Util.cs" />
+    <Compile Include="Util\WPF\Extension.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -143,15 +144,15 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="Resources\Enemy\" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\backgroundImage.png" />
     <Resource Include="Resources\Tower\TowerA0_BG.png" />
     <Resource Include="Resources\Tower\TowerA0_Body.png" />
     <Resource Include="Resources\Tower\TowerA0_Top.png" />
     <Resource Include="Resources\UI\Gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="Resources\Enemy\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

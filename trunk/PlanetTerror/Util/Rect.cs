@@ -29,38 +29,38 @@ namespace PlanetTerror.Util
 			get { return bottom - top; }
 			set { bottom = top + value; }
 		}
-		public Point Size
+		public PointF Size
 		{
-			get { return new Point(Width, Height); }
+			get { return new PointF(Width, Height); }
 			set { Width = value.x; Height = value.y; }
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public bool Empty { get { return Width == 0 && Height == 0; } }
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public Point LT
+		public PointF LT
 		{
-			get { return new Point(left, top); }
+			get { return new PointF(left, top); }
 			set { left = value.x; top = value.y; }
 		}
-		public Point RT
+		public PointF RT
 		{
-			get { return new Point(right, top); }
+			get { return new PointF(right, top); }
 			set { right = value.x; top = value.y; }
 		}
-		public Point LB
+		public PointF LB
 		{
-			get { return new Point(left, bottom); }
+			get { return new PointF(left, bottom); }
 			set { left = value.x; bottom = value.y; }
 		}
-		public Point RB
+		public PointF RB
 		{
-			get { return new Point(right, bottom); }
+			get { return new PointF(right, bottom); }
 			set { right = value.x; bottom = value.y; }
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public Point Center
+		public PointF Center
 		{
-			get { return new Point((left + right) * 0.5f, (top + bottom) * 0.5f); }
+			get { return new PointF((left + right) * 0.5f, (top + bottom) * 0.5f); }
 			set { SetCenter(value); }
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -81,7 +81,7 @@ namespace PlanetTerror.Util
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
-		public RectF(Point lt, Point rb) { left = lt.x; top = lt.y; right = rb.x; bottom = rb.y; }
+		public RectF(PointF lt, PointF rb) { left = lt.x; top = lt.y; right = rb.x; bottom = rb.y; }
 		public RectF(float left, float top, float right, float bottom) { this.left = left; this.top = top; this.right = right; this.bottom = bottom; }
 		public RectF(RectF r) { left = r.left; top = r.top; right = r.right; bottom = r.bottom; }
 
@@ -94,7 +94,7 @@ namespace PlanetTerror.Util
 			return new RectF(0, 0, w, y);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public static RectF FromSize(Point size) { return FromSize(size.x, size.y); }
+		public static RectF FromSize(PointF size) { return FromSize(size.x, size.y); }
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	왼쪽, 위, 오른족, 아래 좌표에서 Rect 생성
 		public static RectF FromBoundary(float left, float top, float right, float bottom)
@@ -102,7 +102,7 @@ namespace PlanetTerror.Util
 			return new RectF(left, top, right, bottom);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public static RectF FromBoundary(Point lt, Point rb) { return new RectF(lt.x, lt.y, rb.x, rb.y); }
+		public static RectF FromBoundary(PointF lt, PointF rb) { return new RectF(lt.x, lt.y, rb.x, rb.y); }
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	Left/Top 좌표와 Width/Height 에서 Rect 생성
 		public static RectF FromPosSize(float left, float top, float width, float height)
@@ -110,7 +110,7 @@ namespace PlanetTerror.Util
 			return new RectF(left, top, left + width, top + height);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public static RectF FromPosSize(Point pos, Point size) { return FromPosSize(pos.x, pos.y, size.x, size.y); }
+		public static RectF FromPosSize(PointF pos, PointF size) { return FromPosSize(pos.x, pos.y, size.x, size.y); }
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	중심점과 크기로부터 Rect 생성
 		public static RectF FromCenterSize(float centerX, float centerY, float width, float height)
@@ -120,7 +120,7 @@ namespace PlanetTerror.Util
 			return new RectF(centerX - halfWidth, centerY - halfHeight, centerX + halfWidth, centerY + halfHeight);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public static RectF FromCenterSize(Point center, Point size) { return FromCenterSize(center.x, center.y, size.x, size.y); }
+		public static RectF FromCenterSize(PointF center, PointF size) { return FromCenterSize(center.x, center.y, size.x, size.y); }
 
 		//===============================================================================================================================================
 		//	위치/크기 변경
@@ -134,7 +134,7 @@ namespace PlanetTerror.Util
 			this.bottom = bottom;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public void SetBoundary(Point lt, Point rb) { SetBoundary(lt.x, lt.y, rb.x, rb.y);}
+		public void SetBoundary(PointF lt, PointF rb) { SetBoundary(lt.x, lt.y, rb.x, rb.y);}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	위치, 크기로 설정
 		public void SetPosSize(float left, float top, float width, float height)
@@ -142,7 +142,7 @@ namespace PlanetTerror.Util
 			SetBoundary(left, top, left + width, right + height);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public void SetPosSize(Point lt, Point size) { SetBoundary(lt, lt + size); }
+		public void SetPosSize(PointF lt, PointF size) { SetBoundary(lt, lt + size); }
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	크기 변경
 		public void SetSize(float w, float h)
@@ -151,10 +151,10 @@ namespace PlanetTerror.Util
 			Height = h;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public void SetSize(Point size) { Size = size; }
+		public void SetSize(PointF size) { Size = size; }
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	중심점을 설정한다.
-		public void SetCenter(Point center)
+		public void SetCenter(PointF center)
 		{
 			var hw = Width * 0.5f;
 			var hh = Height * 0.5f;
@@ -169,7 +169,7 @@ namespace PlanetTerror.Util
 			Center = c;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public void SetSizeOnCenter(Point size) { SetSizeOnCenter(size.x, size.y); }
+		public void SetSizeOnCenter(PointF size) { SetSizeOnCenter(size.x, size.y); }
 
 		//===============================================================================================================================================
 		//	변형
@@ -183,14 +183,14 @@ namespace PlanetTerror.Util
 			bottom += y;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public void Move(Point p) { Move(p.x, p.y); }
+		public void Move(PointF p) { Move(p.x, p.y); }
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public RectF MoveRect(float x, float y)
 		{
 			return FromBoundary(left + x, top + y, right + x, bottom + y);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public RectF MoveRect(Point p) { return MoveRect(p.x, p.y); }
+		public RectF MoveRect(PointF p) { return MoveRect(p.x, p.y); }
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	교차
 		public void Intersect(RectF r)
@@ -214,7 +214,7 @@ namespace PlanetTerror.Util
 			return left <= r.left && top <= r.top && right >= r.right && bottom >= r.bottom;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public bool IsContained(Point p)
+		public bool IsContained(PointF p)
 		{
 			return left <= p.x && p.x <= right && top <= p.y && p.y <= bottom;
 		}
@@ -241,7 +241,7 @@ namespace PlanetTerror.Util
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void Expand(float leftRight, float topBottom) { Expand(leftRight, topBottom, leftRight, topBottom); }
-		public void Expand(Point d) { Expand(d.x, d.y, d.x, d.y); }
+		public void Expand(PointF d) { Expand(d.x, d.y, d.x, d.y); }
 		public void Expand(float d) { Expand(d, d, d, d); }
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public RectF ExpandRect(float left, float top, float right, float bottom)
@@ -254,7 +254,7 @@ namespace PlanetTerror.Util
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public RectF ExpandRect(float leftRight, float topBottom) { return ExpandRect(leftRight, topBottom, leftRight, topBottom); }
-		public RectF ExpandRect(Point d) { return ExpandRect(d.x, d.y, d.x, d.y); }
+		public RectF ExpandRect(PointF d) { return ExpandRect(d.x, d.y, d.x, d.y); }
 		public RectF ExpandRect(float d) { return ExpandRect(d, d, d, d); }
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	선형보간
@@ -312,15 +312,15 @@ namespace PlanetTerror.Util
 		//	상대좌표 계산
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	절대 좌표 absPoint 를 상대좌표로 변환한다.
-		public Point GetNormalizedPoint(Point absPoint)
+		public PointF GetNormalizedPoint(PointF absPoint)
 		{
-			return new Point((absPoint.X - left) / Width, (absPoint.Y - top) / Height);
+			return new PointF((absPoint.X - left) / Width, (absPoint.Y - top) / Height);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	상대좌표 relPoint 를 절대좌표로 변환한다.
-		public Point GetDenormalizedPoint(Point relPoint)
+		public PointF GetDenormalizedPoint(PointF relPoint)
 		{
-			return new Point(left + Width * relPoint.X, top + Height * relPoint.Y);
+			return new PointF(left + Width * relPoint.X, top + Height * relPoint.Y);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	baseRect 를 기준으로 상대좌표로 변환한다.
