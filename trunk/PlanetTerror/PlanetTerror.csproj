@@ -56,11 +56,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Boss1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Enemy1.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Projectile.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -82,8 +94,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Boss1.xaml.cs">
+      <DependentUpon>Boss1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core.xaml.cs">
+      <DependentUpon>Core.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Enemy1.xaml.cs">
       <DependentUpon>Enemy1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Projectile.xaml.cs">
+      <DependentUpon>Projectile.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -123,13 +144,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
+    <Folder Include="Resources\Enemy\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\backgroundImage.png" />
-    <Resource Include="Resources\Gold.png" />
-    <Resource Include="Resources\TowerA0_BG.png" />
-    <Resource Include="Resources\TowerA0_Body.png" />
-    <Resource Include="Resources\TowerA0_Top.png" />
+    <Resource Include="Resources\Tower\TowerA0_BG.png" />
+    <Resource Include="Resources\Tower\TowerA0_Body.png" />
+    <Resource Include="Resources\Tower\TowerA0_Top.png" />
+    <Resource Include="Resources\UI\Gold.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

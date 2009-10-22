@@ -11,5 +11,8 @@
 		<local:Enemy1 Canvas.Left="273" Canvas.Top="48" Width="50" Height="30"/>
 		<local:Enemy1 Canvas.Left="550" Canvas.Top="88" Width="50" Height="30"/>
 		<local:UIPanelControl x:Name="ui_Panel" Width="1080" Height="100" Canvas.Top="768" Canvas.Left="-8"/>
+		<local:Boss1 Width="344" Height="256" Canvas.Left="408" Canvas.Top="40"/>
+		<local:Core Width="224" Height="192" Canvas.Left="432" Canvas.Top="576"/>
+		<local:Projectile Width="24" Height="16" Canvas.Left="232" Canvas.Top="448"/>
 	</Canvas>
 </Window>
