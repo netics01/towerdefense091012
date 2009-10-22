@@ -9,13 +9,18 @@
 	d:DesignWidth="640" d:DesignHeight="480" Width="80" Height="80">
 
 	<Grid x:Name="LayoutRoot">
-		<Rectangle Stroke="Black" Margin="8">
-			<Rectangle.Fill>
-				<LinearGradientBrush EndPoint="0.486,0.03" StartPoint="0.492,1">
-					<GradientStop Color="Black" Offset="0"/>
-					<GradientStop Color="White" Offset="1"/>
-				</LinearGradientBrush>
-			</Rectangle.Fill>
+		<Image Source="000.png" Margin="0,16,0,-16"/>
+		<Image Margin="0,7,0,1" Source="001.png"/>
+		<Rectangle Fill="Black" RadiusX="8" RadiusY="8" HorizontalAlignment="Left" Margin="-40,13,0,0" VerticalAlignment="Top" Width="80" Height="16" RenderTransformOrigin="1,0.5">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-192.69599999999997"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
 		</Rectangle>
+		<Image Source="003.png" Margin="0,-21,0,21"/>
 	</Grid>
 </UserControl>
