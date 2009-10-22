@@ -49,6 +49,7 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -64,6 +65,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Tower.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UIPanelControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -96,6 +101,9 @@
     <Compile Include="Tower.xaml.cs">
       <DependentUpon>Tower.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIPanelControl.xaml.cs">
+      <DependentUpon>UIPanelControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Util\Extension.cs" />
     <Compile Include="Util\Helper.cs" />
     <Compile Include="Util\NativeMethods.cs" />
@@ -115,6 +123,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="000.png" />
+    <Resource Include="001.png" />
+    <Resource Include="003.png" />
+    <Resource Include="backgroundImage.png" />
+    <Resource Include="Gold.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
