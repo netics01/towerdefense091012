@@ -9,6 +9,18 @@
 	d:DesignWidth="640" d:DesignHeight="480" Width="80" Height="80">
 
 	<Grid x:Name="LayoutRoot">
-		<Rectangle Fill="Black" RadiusX="8" RadiusY="8" HorizontalAlignment="Left" Margin="-40,13,0,0" VerticalAlignment="Top" Width="80" Height="16" RenderTransformOrigin="1,0.5" />
+		<Image Source="Resources/Tower/TowerA0_BG.png" Margin="1,29,-1,-29"/>
+		<Image Source="Resources/Tower/TowerA0_Body.png" Margin="1,10,-1,-10"/>
+		<Rectangle Fill="Black" RadiusX="8" RadiusY="8" Margin="-39,18,39,0" VerticalAlignment="Top" Height="16" RenderTransformOrigin="1,0.5" >
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-168.986"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Image Source="Resources/Tower/TowerA0_Top.png" Margin="1,-16,-1,16"/>
 	</Grid>
 </UserControl>
