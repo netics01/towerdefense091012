@@ -9,6 +9,6 @@
 	d:DesignWidth="224" d:DesignHeight="192">
 
 	<Grid x:Name="LayoutRoot">
-		<Rectangle Fill="White" Stroke="Black"/>
+		<Rectangle Fill="#FF1B7658" Stroke="Black" RadiusX="100" RadiusY="100"/>
 	</Grid>
 </UserControl>
