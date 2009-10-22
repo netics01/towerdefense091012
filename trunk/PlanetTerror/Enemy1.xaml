@@ -9,13 +9,66 @@
 	d:DesignWidth="640" d:DesignHeight="480" Width="50" Height="30">
 
 	<Grid x:Name="LayoutRoot">
-		<Rectangle Stroke="Black" Margin="3.333,3.333,3.666,3">
-			<Rectangle.Fill>
-				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-					<GradientStop Color="Black" Offset="0"/>
-					<GradientStop Color="White" Offset="1"/>
-				</LinearGradientBrush>
-			</Rectangle.Fill>
+		<Ellipse Margin="14.11,0.125,14.644,11.628" Fill="Black"/>
+		<Rectangle Fill="Black" HorizontalAlignment="Right" Margin="0,4.846,1.767,0.825" Width="5.311" RadiusX="4" RadiusY="4" RenderTransformOrigin="0.511,-0.041">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1.0183001567331478" ScaleY="0.98202872049842571"/>
+					<SkewTransform AngleY="-5.5455645822490425"/>
+					<RotateTransform Angle="-20.146336752694427"/>
+					<TranslateTransform X="-6.711" Y="1.315"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle Fill="Black" RadiusX="4" RadiusY="4" HorizontalAlignment="Left" Margin="1.533,4.847,0,0.825" Width="5.311" RenderTransformOrigin="0.461,-0.029">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1.0142432163421025" ScaleY="0.98595680393754992"/>
+					<SkewTransform AngleY="5.0030507547607357"/>
+					<RotateTransform Angle="17.670808550401073"/>
+					<TranslateTransform X="5.82" Y="0.918"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle Fill="Black" RadiusX="2" RadiusY="2" HorizontalAlignment="Left" Margin="5.812,14.95,0,11.438" Width="8.298" RenderTransformOrigin="1.02,0.5">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1.1068255872447079" ScaleY="0.903484714777298"/>
+					<SkewTransform AngleY="6.4901895412708654"/>
+					<RotateTransform Angle="58.232944416676467"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle Fill="Black" RadiusX="2" RadiusY="2" Margin="0,14.57,14.644,11.818" RenderTransformOrigin="1.02,0.5" HorizontalAlignment="Right" Width="8.299">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1.1286402886213125" ScaleY="0.88602188853416475"/>
+					<SkewTransform AngleX="-5.0591773798956865"/>
+					<RotateTransform Angle="107.91613755312271"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle Fill="Black" RadiusX="2" RadiusY="2" Margin="18.157,11.645,0,0" VerticalAlignment="Top" Height="2.28" RenderTransformOrigin="-0.062,0.417" HorizontalAlignment="Left" Width="5.104">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1.0809303524013822" ScaleY="0.925128985210205"/>
+					<SkewTransform AngleX="-7.7162117192520157"/>
+					<RotateTransform Angle="128.81817443663789"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle Fill="Black" RadiusX="2" RadiusY="2" HorizontalAlignment="Right" Margin="0,11.149,12.382,0" VerticalAlignment="Top" Width="5.103" Height="2.281" RenderTransformOrigin="-0.062,0.417">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1.0551343985508854" ScaleY="0.94774656325620055"/>
+					<SkewTransform AngleY="7.663539690414396"/>
+					<RotateTransform Angle="37.103117192813158"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
 		</Rectangle>
 	</Grid>
 </UserControl>
