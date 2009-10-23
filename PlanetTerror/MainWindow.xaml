@@ -4,14 +4,14 @@
     xmlns:local="clr-namespace:PlanetTerror" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Class="PlanetTerror.MainWindow"
     Title="PlanetTerror" Height="900" Width="1080" Background="Black" mc:Ignorable="d" SnapsToDevicePixels="True" ResizeMode="NoResize">
     <Canvas x:Name="main_Canvas">
-		<Image x:Name="background_Image" Source="Resources/backgroundImage.png" Width="1072" Height="894"/>
+		<Image x:Name="background_Image" Source="Resources/backgroundImage.png" Width="1072" Height="894" d:IsLocked="True"/>
 		<local:Tower Canvas.Left="116" Canvas.Top="402" d:LayoutOverrides="VerticalAlignment, Width, Height"/>
 		<local:Tower Canvas.Left="572.799" Canvas.Top="286.719" d:LayoutOverrides="VerticalAlignment"/>
 		<local:Tower Canvas.Left="336" Canvas.Top="120"/>
 		<local:Enemy1 Canvas.Left="273" Canvas.Top="48" Width="50" Height="30"/>
 		<local:Enemy1 Canvas.Left="550" Canvas.Top="88" Width="50" Height="30"/>
 		<local:UIPanelControl x:Name="ui_Panel" Width="1080" Height="100" Canvas.Top="768" Canvas.Left="-8"/>
-		<local:Boss1 Width="344" Height="256" Canvas.Left="408" Canvas.Top="40"/>
+		<local:Boss1 Width="344" Height="256" Canvas.Left="392" Canvas.Top="24"/>
 		<local:Core Width="224" Height="192" Canvas.Left="432" Canvas.Top="576"/>
 		<local:Projectile Width="24" Height="16" Canvas.Left="232" Canvas.Top="448"/>
 	</Canvas>
