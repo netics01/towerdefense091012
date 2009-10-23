@@ -1377,12 +1377,52 @@
 								<SplinePointKeyFrame KeyTime="00:00:04.8600000" Value="0.505,0.109"/>
 								<SplinePointKeyFrame KeyTime="00:00:04.9000000" Value="0.505,0.109"/>
 							</PointAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="sh" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-30"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="-28.5"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="-15"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="-39"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="-36.692"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="-27.739"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="-43.5"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:06" Value="-63"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="-63"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:07.6400000" Value="-228"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="sh" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+								<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="279"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="261"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="261"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="259.5"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="262.5"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="258"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="259.023"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="262.5"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:06" Value="259.5"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="252"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:07.6400000" Value="451.5"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="sh" Storyboard.TargetProperty="(UIElement.Opacity)">
+								<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="1"/>
+								<SplineDoubleKeyFrame KeyTime="00:00:07.6400000" Value="0.3"/>
+							</DoubleAnimationUsingKeyFrames>
 						</Storyboard>
 					</VisualTransition>
 				</VisualStateGroup.Transitions>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
 		<Image Margin="-467.5,8,-468.5,-712" Source="Resources/backgroundImage.png" Stretch="Fill" d:IsLocked="True" Grid.RowSpan="2"/>
+		<Image x:Name="sh" Margin="171,-195,-93,0" Source="Resources/Boss/Boss_shadow.png" Stretch="Fill" VerticalAlignment="Top" Height="205" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
 		<Image x:Name="image1" HorizontalAlignment="Left" Margin="18,-298,0,0" Width="91" RenderTransformOrigin="0.945,0.952" Source="Resources/Boss/Boss_lb1.png" Stretch="Fill" VerticalAlignment="Top" Height="105">
 			<Image.RenderTransform>
 				<TransformGroup>
