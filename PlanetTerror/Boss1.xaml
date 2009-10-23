@@ -11,7 +11,7 @@
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="BossMoveState"/>
 		</VisualStateManager.VisualStateGroups>
-		<Image Margin="-392,-24,-336,-614" Source="Resources/Dummy_BG.png" Stretch="Fill" Width="1072" Height="894"/>
+		<Image Margin="-392,-24,-336,-614" Source="Resources/Dummy_BG.png" Stretch="Fill" Width="1072" Height="894" d:IsLocked="True"/>
 		<Image HorizontalAlignment="Right" Margin="0,0,-4,0" VerticalAlignment="Top" Width="100" Height="106" RenderTransformOrigin="1.04,0" Source="Resources/Boss/Boss_rb1.png" Stretch="Fill"/>
 		<Image HorizontalAlignment="Right" Margin="0,-12,-70,96" Width="102" RenderTransformOrigin="-0.078,-0.023" Source="Resources/Boss/Boss_rb2.png" Stretch="Fill"/>
 		<Image HorizontalAlignment="Left" Margin="-88,-23,0,80" Width="118" RenderTransformOrigin="1.017,-0.005" Source="Resources/Boss/Boss_lf2.png" Stretch="Fill"/>
