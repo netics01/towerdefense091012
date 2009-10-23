@@ -4,7 +4,7 @@
     xmlns:local="clr-namespace:PlanetTerror" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Class="PlanetTerror.MainWindow"
     Title="PlanetTerror" Height="900" Width="1080" Background="Black" mc:Ignorable="d" SnapsToDevicePixels="True" ResizeMode="NoResize">
     <Canvas x:Name="main_Canvas">
-		<Image x:Name="background_Image" Source="Resources/backgroundImage.png" Width="1072" Height="894" d:IsLocked="True"/>
+		<Image x:Name="background_Image" Source="Resources/backgroundImage.png" Width="1072" Height="894"/>
 		<local:Tower Canvas.Left="116" Canvas.Top="402" d:LayoutOverrides="VerticalAlignment, Width, Height"/>
 		<local:Tower Canvas.Left="572.799" Canvas.Top="286.719" d:LayoutOverrides="VerticalAlignment"/>
 		<local:Tower Canvas.Left="336" Canvas.Top="120"/>
