@@ -7,10 +7,10 @@
 	xmlns:local="clr-namespace:PlanetTerror"
 	x:Class="PlanetTerror.WorldControl"
 	x:Name="UserControl"
-	d:DesignWidth="640" d:DesignHeight="480" Width="1074" Height="775">
+	d:DesignWidth="640" d:DesignHeight="480" Width="1080" Height="840">
 
 	<Canvas x:Name="LayoutRoot">
-		<Image Width="1074" Height="805.5" Source="Resources/backgroundImage.png" Stretch="Fill"/>
+		<Image Width="1080" Height="810" Source="Resources/backgroundImage.png" Stretch="Fill"/>
 		<local:Tower Canvas.Left="99.333" Canvas.Top="333.333"/>
 		<local:Tower Canvas.Left="572.799" Canvas.Top="286.719"/>
 		<local:Tower Canvas.Left="336" Canvas.Top="120"/>
