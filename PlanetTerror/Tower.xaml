@@ -9,6 +9,13 @@
 	d:DesignWidth="640" d:DesignHeight="480" Width="80" Height="80">
 
 	<Grid x:Name="LayoutRoot">
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="TowerState">
+				<VisualState x:Name="NotyetBuiltState"/>
+				<VisualState x:Name="BuiltState"/>
+				<VisualState x:Name="BuiltdDismantleState"/>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
 		<Image Source="Resources/Tower/TowerA0_BG.png" Margin="1,29,-1,-29"/>
 		<Image Source="Resources/Tower/TowerA0_Body.png" Margin="1,10,-1,-10"/>
 		<Rectangle Fill="Black" RadiusX="8" RadiusY="8" Margin="-39,18,39,0" VerticalAlignment="Top" Height="16" RenderTransformOrigin="1,0.5" >
