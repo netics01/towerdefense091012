@@ -6,23 +6,17 @@
 	mc:Ignorable="d"
 	x:Class="PlanetTerror.Boss1"
 	x:Name="UserControl"
-	d:DesignWidth="344" d:DesignHeight="256">
-	<Grid x:Name="Boss" Margin="0" OpacityMask="#FF351C1C">
-		<Grid.RowDefinitions>
-			<RowDefinition Height="*"/>
-			<RowDefinition Height="66.052"/>
-			<RowDefinition Height="7.5"/>
-			<RowDefinition Height="46"/>
-		</Grid.RowDefinitions>
+	d:DesignWidth="344" d:DesignHeight="256" Width="50" Height="50">
+	<Canvas x:Name="Boss" Margin="0" OpacityMask="#FF351C1C">
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="BossMoveState">
 				<VisualStateGroup.Transitions>
 					<VisualTransition GeneratedDuration="00:00:30">
 						<Storyboard>
-							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="BG_dummy" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="background_Image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-282.5"/>
 							</DoubleAnimationUsingKeyFrames>
-							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="BG_dummy" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="background_Image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-583.5"/>
 							</DoubleAnimationUsingKeyFrames>
 						</Storyboard>
@@ -1752,17 +1746,17 @@
 							<SplineDoubleKeyFrame KeyTime="00:00:07.3000000" Value="1.039"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:07.4000000" Value="1"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="BG_dummy" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="background_Image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-285"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="BG_dummy" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="background_Image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-83"/>
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Image x:Name="BG_dummy" Margin="-178,-29.948,-758,-810.5" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.RowSpan="3" Source="Resources/Field/backgroundImage.png" Stretch="Fill" d:IsLocked="True">
+		<Image x:Name="background_Image" RenderTransformOrigin="0.5,0.5" Source="Resources/Field/backgroundImage.png" Stretch="Fill" Width="1280" Height="960" Canvas.Left="-178" Canvas.Top="106.5">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1772,7 +1766,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="shadow" Margin="171,-195,-93,0" Source="Resources/Boss/Boss_shadow.png" Stretch="Fill" VerticalAlignment="Top" Height="205" RenderTransformOrigin="0.5,0.5">
+		<Image x:Name="shadow" Source="Resources/Boss/Boss_shadow.png" Stretch="Fill" Height="205" RenderTransformOrigin="0.5,0.5" Width="266" Canvas.Left="171" Canvas.Top="-195">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1782,7 +1776,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="image2" HorizontalAlignment="Left" Margin="-59,-305,0,0" Width="101" RenderTransformOrigin="0.139,0.898" Stretch="Fill" VerticalAlignment="Top" Height="171" Source="Resources/Boss/Boss_lb2.png">
+		<Image x:Name="image2" Width="101" RenderTransformOrigin="0.139,0.898" Stretch="Fill" Height="171" Source="Resources/Boss/Boss_lb2.png" Canvas.Left="-59" Canvas.Top="-305">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1792,7 +1786,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="image1" HorizontalAlignment="Left" Margin="18,-298,0,0" Width="91" RenderTransformOrigin="0.945,0.952" Source="Resources/Boss/Boss_lb1.png" Stretch="Fill" VerticalAlignment="Top" Height="105">
+		<Image x:Name="image1" Width="91" RenderTransformOrigin="0.945,0.952" Source="Resources/Boss/Boss_lb1.png" Stretch="Fill" Height="105" Canvas.Left="18" Canvas.Top="-298">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1802,7 +1796,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="image4" HorizontalAlignment="Right" Margin="0,-294,-72,0" Width="102" RenderTransformOrigin="0.088,0.151" Stretch="Fill" VerticalAlignment="Top" Height="172" Source="Resources/Boss/Boss_rb2.png">
+		<Image x:Name="image4" Width="102" RenderTransformOrigin="0.088,0.151" Stretch="Fill" Height="172" Source="Resources/Boss/Boss_rb2.png" Canvas.Left="314" Canvas.Top="-294">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1812,7 +1806,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="image3" HorizontalAlignment="Right" Margin="0,-282,-6,0" VerticalAlignment="Top" Width="100" Height="106" RenderTransformOrigin="0.05,0.934" Source="Resources/Boss/Boss_rb1.png" Stretch="Fill">
+		<Image x:Name="image3" Width="100" Height="106" RenderTransformOrigin="0.05,0.934" Source="Resources/Boss/Boss_rb1.png" Stretch="Fill" Canvas.Left="250" Canvas.Top="-282">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1822,7 +1816,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="body" Margin="42,-258,36,0" Source="Resources/Boss/Boss_body.png" Stretch="Fill" VerticalAlignment="Top" Height="205" RenderTransformOrigin="0.5,0.5">
+		<Image x:Name="body" Source="Resources/Boss/Boss_body.png" Stretch="Fill" Height="205" RenderTransformOrigin="0.5,0.5" Width="266" Canvas.Left="42" Canvas.Top="-258">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1832,7 +1826,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="eyeopen" Margin="66,-217,54,0" VerticalAlignment="Top" Height="56" Source="Resources/Boss/Boss_eye1.png" Stretch="Fill" RenderTransformOrigin="0.505,0.234">
+		<Image x:Name="eyeopen" Height="56" Source="Resources/Boss/Boss_eye1.png" Stretch="Fill" RenderTransformOrigin="0.505,0.234" Width="224" Canvas.Left="66" Canvas.Top="-217">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1842,7 +1836,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="eyeclose" Margin="66,-210,54,0" VerticalAlignment="Top" Height="56" Source="Resources/Boss/Boss_eye2.png" Stretch="Fill" RenderTransformOrigin="0.505,0.109">
+		<Image x:Name="eyeclose" Height="56" Source="Resources/Boss/Boss_eye2.png" Stretch="Fill" RenderTransformOrigin="0.505,0.109" Width="224" Canvas.Left="66" Canvas.Top="-210">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1852,7 +1846,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="iris" Margin="93,-213,78,0" VerticalAlignment="Top" Height="18" Source="Resources/Boss/Boss_iris.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+		<Image x:Name="iris" Height="18" Source="Resources/Boss/Boss_iris.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="173" Canvas.Left="93" Canvas.Top="-213">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1862,7 +1856,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="bomb" Margin="119,-179,30,0" Source="Resources/Boss/Boss_bomb.png" Stretch="Fill" VerticalAlignment="Top" Height="85" RenderTransformOrigin="0.239,0.652">
+		<Image x:Name="bomb" Source="Resources/Boss/Boss_bomb.png" Stretch="Fill" Height="85" RenderTransformOrigin="0.239,0.652" Width="195" Canvas.Left="119" Canvas.Top="-179">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1872,7 +1866,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="steam2" HorizontalAlignment="Right" Margin="0,22.552,59,10" Width="78" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.RowSpan="3" Source="Resources/Boss/steam2.png" Stretch="Fill">
+		<Image x:Name="steam2" Width="78" RenderTransformOrigin="0.5,0.5" Source="Resources/Boss/steam2.png" Stretch="Fill" Height="87" Canvas.Left="207" Canvas.Top="159">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1882,7 +1876,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="steam1" HorizontalAlignment="Left" Margin="-136.5,-87,0,0" VerticalAlignment="Top" Width="74" Height="129" RenderTransformOrigin="0.5,0.5" Source="Resources/Boss/steam1.png" Stretch="Fill">
+		<Image x:Name="steam1" Width="74" Height="129" RenderTransformOrigin="0.5,0.5" Source="Resources/Boss/steam1.png" Stretch="Fill" Canvas.Left="-136.5" Canvas.Top="-87">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1892,7 +1886,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="clock" Margin="163.667,-130.438,162.333,0" VerticalAlignment="Top" Height="14" Source="Resources/Boss/clock.png" Stretch="Fill" RenderTransformOrigin="0.148,0.438">
+		<Image x:Name="clock" Height="14" Source="Resources/Boss/clock.png" Stretch="Fill" RenderTransformOrigin="0.148,0.438" Width="18" Canvas.Left="163.667" Canvas.Top="-130.438">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1902,7 +1896,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="image10" HorizontalAlignment="Left" Margin="-0.5,-192.5,0,0" Width="119" RenderTransformOrigin="0.895,0.913" Source="Resources/Boss/Boss_lf1.png" Stretch="Fill" VerticalAlignment="Top" Height="132">
+		<Image x:Name="image10" Width="119" RenderTransformOrigin="0.895,0.913" Source="Resources/Boss/Boss_lf1.png" Stretch="Fill" Height="132" Canvas.Left="-0.5" Canvas.Top="-192.5">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1912,7 +1906,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="image11" HorizontalAlignment="Left" Margin="-75.5,-193.5,0,0" Width="118" RenderTransformOrigin="0.157,0.889" Source="Resources/Boss/Boss_lf2.png" Stretch="Fill" VerticalAlignment="Top" Height="199">
+		<Image x:Name="image11" Width="118" RenderTransformOrigin="0.157,0.889" Source="Resources/Boss/Boss_lf2.png" Stretch="Fill" Height="199" Canvas.Left="-75.5" Canvas.Top="-193.5">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1922,7 +1916,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="image12" HorizontalAlignment="Right" Margin="0,-190,-2,0" Width="120" Source="Resources/Boss/Boss_rf1.png" Stretch="Fill" VerticalAlignment="Top" Height="132" RenderTransformOrigin="0.108,0.917">
+		<Image x:Name="image12" Width="120" Source="Resources/Boss/Boss_rf1.png" Stretch="Fill" Height="132" RenderTransformOrigin="0.108,0.917" Canvas.Left="226" Canvas.Top="-190">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1932,7 +1926,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="image13" HorizontalAlignment="Right" Margin="0,-192,-77,0" VerticalAlignment="Top" Width="117" Height="200" Source="Resources/Boss/Boss_rf2.png" Stretch="Fill" RenderTransformOrigin="0.799,0.885">
+		<Image x:Name="image13" Width="117" Height="200" Source="Resources/Boss/Boss_rf2.png" Stretch="Fill" RenderTransformOrigin="0.799,0.885" Canvas.Left="304" Canvas.Top="-192">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1942,5 +1936,5 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-	</Grid>
+	</Canvas>
 </UserControl>
