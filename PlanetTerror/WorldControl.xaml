@@ -1,0 +1,23 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:local="clr-namespace:PlanetTerror"
+	x:Class="PlanetTerror.WorldControl"
+	x:Name="UserControl"
+	d:DesignWidth="640" d:DesignHeight="480" Width="1074" Height="775">
+
+	<Canvas x:Name="LayoutRoot">
+		<Image Width="1074" Height="805.5" Source="Resources/backgroundImage.png" Stretch="Fill"/>
+		<local:Tower Canvas.Left="99.333" Canvas.Top="333.333"/>
+		<local:Tower Canvas.Left="572.799" Canvas.Top="286.719"/>
+		<local:Tower Canvas.Left="336" Canvas.Top="120"/>
+		<local:Enemy1 Canvas.Left="273" Canvas.Top="48" Width="50" Height="30"/>
+		<local:Enemy1 Canvas.Left="550" Canvas.Top="88" Width="50" Height="30"/>
+		<local:Boss1 Width="50" Height="50" Canvas.Left="392" Canvas.Top="24"/>
+		<local:Core Width="224" Height="192" Canvas.Left="429" Canvas.Top="525"/>
+		<local:Projectile Width="24" Height="16" Canvas.Left="232" Canvas.Top="448"/>
+	</Canvas>
+</UserControl>

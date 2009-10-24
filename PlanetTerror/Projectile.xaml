@@ -8,7 +8,7 @@
 	x:Name="UserControl"
 	d:DesignWidth="24" d:DesignHeight="16">
 
-	<Grid x:Name="LayoutRoot">
-		<Rectangle Fill="Red" Stroke="Black" RadiusX="5" RadiusY="5"/>
-	</Grid>
+	<Canvas x:Name="LayoutRoot">
+		<Rectangle Fill="Red" Stroke="Black" RadiusX="5" RadiusY="5" Width="24" Height="16"/>
+	</Canvas>
 </UserControl>

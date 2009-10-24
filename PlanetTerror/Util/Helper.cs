@@ -51,6 +51,7 @@ namespace PlanetTerror.Util
 		//	0.0, 0.0, 1.0, 1.0 으로 채워진 Rect
 // 		public static readonly Rect InfiniteRect = new Rect(float.MinValue, float.MinValue, float.PositiveInfinity, float.PositiveInfinity);
 // 		public static readonly Rect UnitRect = new Rect(0, 0, 1, 1);
+		public static readonly Point ZeroPoint;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	스왑
@@ -170,6 +171,12 @@ namespace PlanetTerror.Util
 		public static Point GetCenterPoint()
 		{
 			return new Point(Random.NextDouble() - 0.5, Random.NextDouble() - 0.5);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	방향벡터 반환
+		public static Point GetDirectionPoint()
+		{
+			return GetCenterPoint().Normalize();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	랜덤 단위 벡터(Point)를 얻는다.
