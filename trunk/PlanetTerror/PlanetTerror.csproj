@@ -182,13 +182,13 @@
     <Resource Include="Resources\Boss\steam1.png" />
     <Resource Include="Resources\Boss\steam2.png" />
     <Resource Include="Resources\Boss\steam3.png" />
-    <Resource Include="Resources\Field\backgroundImage.png">
-      <Link>Resources\backgroundImage.png</Link>
-    </Resource>
     <Resource Include="Resources\Tower\TowerA0_BG.png" />
     <Resource Include="Resources\Tower\TowerA0_Body.png" />
     <Resource Include="Resources\Tower\TowerA0_Top.png" />
     <Resource Include="Resources\UI\Gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Field\backgroundImage.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />

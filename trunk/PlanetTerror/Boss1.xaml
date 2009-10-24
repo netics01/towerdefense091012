@@ -9,7 +9,7 @@
 	d:DesignWidth="344" d:DesignHeight="256" Width="50" Height="50">
 	<Canvas x:Name="Boss" Margin="0" OpacityMask="#FF351C1C">
 		<VisualStateManager.VisualStateGroups>
-			<VisualStateGroup x:Name="BossMoveState">
+			<VisualStateGroup x:Name="MoveStateGroup">
 				<VisualStateGroup.Transitions>
 					<VisualTransition GeneratedDuration="00:00:30">
 						<Storyboard>
@@ -22,7 +22,7 @@
 						</Storyboard>
 					</VisualTransition>
 				</VisualStateGroup.Transitions>
-				<VisualState x:Name="BossMove">
+				<VisualState x:Name="MoveState">
 					<Storyboard>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="clock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
 							<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="-364.809204"/>

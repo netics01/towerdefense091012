@@ -16,9 +16,6 @@ using PlanetTerror.Util;
 
 namespace PlanetTerror
 {
-	/// <summary>
-	/// Interaction logic for Boss1.xaml
-	/// </summary>
 	public partial class Boss1 : UserControl
 	{
 		public Boss1()
@@ -26,6 +23,16 @@ namespace PlanetTerror
 			this.InitializeComponent();
 
 			background_Image.SetVisible(false);
+
+			Loaded += new RoutedEventHandler(Boss1_Loaded);
+
+		}
+
+		//===============================================================================================================================================
+		//	핸들러
+		void Boss1_Loaded(object sender, RoutedEventArgs e)
+		{
+			VisualStateManager.GoToState(this, "MoveState", false);
 		}
 	}
 }
