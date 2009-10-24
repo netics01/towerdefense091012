@@ -18,6 +18,6 @@
 		<local:Boss1 Width="50" Height="50" Canvas.Left="392" Canvas.Top="24"/>
 		<local:Core Width="224" Height="192" Canvas.Left="429" Canvas.Top="525"/>
 		<local:Projectile Width="24" Height="16" Canvas.Left="232" Canvas.Top="448"/>
-		<Image Width="1080" Height="900" Source="Resources/Field/backgroundImage.png" Stretch="Fill"/>
+		<Image Width="1080" Height="900" Source="Resources/Field/backgroundImage.png" Stretch="Fill" Panel.ZIndex="-1"/>
 	</Canvas>
 </UserControl>
