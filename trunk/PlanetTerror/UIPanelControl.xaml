@@ -8,7 +8,13 @@
 	x:Name="UserControl"
 	d:DesignWidth="1080" d:DesignHeight="100">
 
-	<Grid x:Name="LayoutRoot">
+	<Canvas x:Name="LayoutRoot">
+		<Canvas.Background>
+			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+				<GradientStop Color="Black" Offset="1"/>
+				<GradientStop Color="#00000000"/>
+			</LinearGradientBrush>
+		</Canvas.Background>
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="NotifyStateGroup">
 				<VisualState x:Name="ShowState">
@@ -97,13 +103,9 @@
 				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="0.904*"/>
-			<ColumnDefinition Width="0.096*"/>
-		</Grid.ColumnDefinitions>
-		<Image x:Name="gold_Image" HorizontalAlignment="Right" Margin="0,8,128,0" VerticalAlignment="Top" Width="32" Height="32" Source="Resources/Gold.png"/>
-		<TextBlock x:Name="gold_Text" HorizontalAlignment="Right" Margin="0,8,-40,0" VerticalAlignment="Top" Width="168" Height="24" Text="1200" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="kroeger 05_53" FontSize="14.667"/>
-		<Grid x:Name="talk_Grid" HorizontalAlignment="Right" Margin="0,-152,-31.68,0" VerticalAlignment="Top" Width="224" Height="166.084" Visibility="Hidden">
+		<Image x:Name="gold_Image" Width="32" Height="32" Source="Resources/Gold.png" Canvas.Left="816.32" Canvas.Top="8"/>
+		<TextBlock x:Name="gold_Text" Width="168" Height="24" Text="1200" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="848.32" Canvas.Top="8"/>
+		<Grid x:Name="talk_Grid" Width="224" Height="166.084" Visibility="Hidden" Canvas.Left="784" Canvas.Top="-152">
 			<Path x:Name="talkBox_Path" Fill="#FF1F2222" Stretch="Fill" Data="M9.9999981,1.7053026E-13 L214,1.7053026E-13 C219.52284,-9.5367415E-07 224,4.4771514 224,9.999999 L224,126 C224,131.52284 219.52284,136 214,136 L63.625805,136 53.760132,166.08446 38.801029,136 9.9999981,136 C4.4771523,136 0,131.52284 0,126 L0,9.999999 C0,4.4771514 4.4771523,-9.5367415E-07 9.9999981,1.7053026E-13 z" RenderTransformOrigin="0.5,0.5">
 				<Path.RenderTransform>
 					<TransformGroup>
@@ -125,7 +127,7 @@
 				</TextBlock.RenderTransform>
 			</TextBlock>
 		</Grid>
-		<ProgressBar x:Name="power_Progress" Margin="376,8,222.32,0" VerticalAlignment="Top" Height="17.916" Value="50" SmallChange="0" Template="{DynamicResource ProgressBarControlTemplate1}">
+		<ProgressBar x:Name="power_Progress" Height="17.916" Value="50" SmallChange="0" Template="{DynamicResource ProgressBarControlTemplate1}" Width="378" Canvas.Left="376" Canvas.Top="8">
 			<ProgressBar.Resources>
 				<ControlTemplate x:Key="ProgressBarControlTemplate1" TargetType="{x:Type ProgressBar}">
 					<Grid x:Name="grid" RenderTransformOrigin="0.5,0.5">
@@ -196,5 +198,5 @@
 				</ControlTemplate>
 			</ProgressBar.Resources>
 		</ProgressBar>
-	</Grid>
+	</Canvas>
 </UserControl>

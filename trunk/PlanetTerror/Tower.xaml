@@ -8,17 +8,17 @@
 	x:Name="UserControl"
 	d:DesignWidth="640" d:DesignHeight="480" Width="80" Height="80">
 
-	<Grid x:Name="LayoutRoot">
+	<Canvas x:Name="LayoutRoot">
 		<VisualStateManager.VisualStateGroups>
-			<VisualStateGroup x:Name="TowerState">
-				<VisualState x:Name="NotyetBuiltState"/>
+			<VisualStateGroup x:Name="TowerStateGroup">
+				<VisualState x:Name="NotYetBuiltState"/>
 				<VisualState x:Name="BuiltState"/>
-				<VisualState x:Name="BuiltdDismantleState"/>
+				<VisualState x:Name="DismantleState"/>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Image Source="Resources/Tower/TowerA0_BG.png" Margin="1,29,-1,-29"/>
-		<Image Source="Resources/Tower/TowerA0_Body.png" Margin="1,10,-1,-10"/>
-		<Rectangle Fill="Black" RadiusX="8" RadiusY="8" Margin="-39,18,39,0" VerticalAlignment="Top" Height="16" RenderTransformOrigin="1,0.5" >
+		<Image Source="Resources/Tower/TowerA0_BG.png" Width="80" Height="80" Canvas.Left="1" Canvas.Top="29"/>
+		<Image Source="Resources/Tower/TowerA0_Body.png" Width="80" Height="80" Canvas.Left="1" Canvas.Top="10"/>
+		<Rectangle Fill="Black" RadiusX="8" RadiusY="8" Height="16" RenderTransformOrigin="1,0.5" Width="80" Canvas.Left="-39" Canvas.Top="18" >
 			<Rectangle.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -28,6 +28,6 @@
 				</TransformGroup>
 			</Rectangle.RenderTransform>
 		</Rectangle>
-		<Image Source="Resources/Tower/TowerA0_Top.png" Margin="1,-16,-1,16"/>
-	</Grid>
+		<Image Source="Resources/Tower/TowerA0_Top.png" Width="80" Height="80" Canvas.Left="1" Canvas.Top="-16"/>
+	</Canvas>
 </UserControl>

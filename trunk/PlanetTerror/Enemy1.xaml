@@ -8,10 +8,10 @@
 	x:Name="UserControl"
 	d:DesignWidth="640" d:DesignHeight="480" Width="50" Height="30">
 
-	<Grid x:Name="LayoutRoot">
+	<Canvas x:Name="LayoutRoot">
 		<VisualStateManager.VisualStateGroups>
-			<VisualStateGroup x:Name="MoveState">
-				<VisualState x:Name="Move">
+			<VisualStateGroup x:Name="MoveStateGroup">
+				<VisualState x:Name="MoveState">
 					<Storyboard>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
@@ -91,7 +91,7 @@
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
-				<VisualState x:Name="destroy">
+				<VisualState x:Name="DestroyState">
 					<Storyboard>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
@@ -211,10 +211,6 @@
 							<SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="Black"/>
 							<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#00000000"/>
 						</ColorAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-							<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000" Value="{x:Static Visibility.Hidden}"/>
-						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="eff_explode" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 							<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
@@ -260,7 +256,7 @@
 				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Ellipse x:Name="ellipse" Margin="14.11,0.125,14.644,11.628" Fill="Black" RenderTransformOrigin="0.5,0.5">
+		<Ellipse x:Name="ellipse" Fill="Black" RenderTransformOrigin="0.5,0.5" Width="21.246" Height="18.247" Canvas.Left="14.11" Canvas.Top="0.125">
 			<Ellipse.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -270,7 +266,7 @@
 				</TransformGroup>
 			</Ellipse.RenderTransform>
 		</Ellipse>
-		<Rectangle x:Name="rectangle" Fill="Black" HorizontalAlignment="Right" Margin="0,4.846,1.767,0.825" Width="5.311" RadiusX="4" RadiusY="4" RenderTransformOrigin="0.511,-0.041">
+		<Rectangle x:Name="rectangle" Fill="Black" Width="5.311" RadiusX="4" RadiusY="4" RenderTransformOrigin="0.511,-0.041" Height="24.329" Canvas.Left="42.922" Canvas.Top="4.846">
 			<Rectangle.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform ScaleX="1.0183001567331478" ScaleY="0.98202872049842571"/>
@@ -280,7 +276,7 @@
 				</TransformGroup>
 			</Rectangle.RenderTransform>
 		</Rectangle>
-		<Rectangle x:Name="rectangle1" Fill="Black" RadiusX="4" RadiusY="4" HorizontalAlignment="Left" Margin="1.533,4.847,0,0.825" Width="5.311" RenderTransformOrigin="0.461,-0.029">
+		<Rectangle x:Name="rectangle1" Fill="Black" RadiusX="4" RadiusY="4" Width="5.311" RenderTransformOrigin="0.461,-0.029" Height="24.328" Canvas.Left="1.533" Canvas.Top="4.847">
 			<Rectangle.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform ScaleX="1.0142432163421025" ScaleY="0.98595680393754992"/>
@@ -290,7 +286,7 @@
 				</TransformGroup>
 			</Rectangle.RenderTransform>
 		</Rectangle>
-		<Rectangle x:Name="rectangle2" Fill="Black" RadiusX="2" RadiusY="2" HorizontalAlignment="Left" Margin="5.812,14.95,0,11.438" Width="8.298" RenderTransformOrigin="1.02,0.5">
+		<Rectangle x:Name="rectangle2" Fill="Black" RadiusX="2" RadiusY="2" Width="8.298" RenderTransformOrigin="1.02,0.5" Height="3.612" Canvas.Left="5.812" Canvas.Top="14.95">
 			<Rectangle.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform ScaleX="1.1068255872447079" ScaleY="0.903484714777298"/>
@@ -300,7 +296,7 @@
 				</TransformGroup>
 			</Rectangle.RenderTransform>
 		</Rectangle>
-		<Rectangle x:Name="rectangle3" Fill="Black" RadiusX="2" RadiusY="2" Margin="0,14.57,14.644,11.818" RenderTransformOrigin="1.02,0.5" HorizontalAlignment="Right" Width="8.299">
+		<Rectangle x:Name="rectangle3" Fill="Black" RadiusX="2" RadiusY="2" RenderTransformOrigin="1.02,0.5" Width="8.299" Height="3.612" Canvas.Left="27.057" Canvas.Top="14.57">
 			<Rectangle.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform ScaleX="1.1286402886213125" ScaleY="0.88602188853416475"/>
@@ -310,7 +306,7 @@
 				</TransformGroup>
 			</Rectangle.RenderTransform>
 		</Rectangle>
-		<Rectangle x:Name="rectangle4" Fill="Black" RadiusX="2" RadiusY="2" Margin="18.157,11.645,0,0" VerticalAlignment="Top" Height="2.28" RenderTransformOrigin="-0.062,0.417" HorizontalAlignment="Left" Width="5.104">
+		<Rectangle x:Name="rectangle4" Fill="Black" RadiusX="2" RadiusY="2" Height="2.28" RenderTransformOrigin="-0.062,0.417" Width="5.104" Canvas.Left="18.157" Canvas.Top="11.645">
 			<Rectangle.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform ScaleX="1.0809303524013822" ScaleY="0.925128985210205"/>
@@ -320,7 +316,7 @@
 				</TransformGroup>
 			</Rectangle.RenderTransform>
 		</Rectangle>
-		<Rectangle x:Name="rectangle5" Fill="Black" RadiusX="2" RadiusY="2" HorizontalAlignment="Right" Margin="0,11.149,12.382,0" VerticalAlignment="Top" Width="5.103" Height="2.281" RenderTransformOrigin="-0.062,0.417">
+		<Rectangle x:Name="rectangle5" Fill="Black" RadiusX="2" RadiusY="2" Width="5.103" Height="2.281" RenderTransformOrigin="-0.062,0.417" Canvas.Left="32.515" Canvas.Top="11.149">
 			<Rectangle.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform ScaleX="1.0551343985508854" ScaleY="0.94774656325620055"/>
@@ -330,7 +326,7 @@
 				</TransformGroup>
 			</Rectangle.RenderTransform>
 		</Rectangle>
-		<Grid x:Name="eff_explode" Margin="21.5,-9.583,10.917,0" VerticalAlignment="Top" Height="17.583" Visibility="Hidden" RenderTransformOrigin="0.5,0.5">
+		<Grid x:Name="eff_explode" Height="17.583" Visibility="Hidden" RenderTransformOrigin="0.5,0.5" Width="17.583" Canvas.Left="21.5" Canvas.Top="-9.583">
 			<Grid.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -364,5 +360,5 @@
 			</Ellipse>
 			<Ellipse Fill="#FFFFC630" Margin="3.917,0,5,-3.833" VerticalAlignment="Bottom" Height="8.333"/>
 		</Grid>
-	</Grid>
+	</Canvas>
 </UserControl>

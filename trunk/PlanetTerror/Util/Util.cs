@@ -60,7 +60,7 @@ namespace PlanetTerror.Util
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	0 -> -extAmount -> +extAmout -> 1 로 변화한다. extAmount 로 변화하는 구간에는 extInterval(< 0.5) 이 소요된다.
 		//	각 구간은 EaseInSine() 으로 보간된다.
-		public static double EaseInSinEx(float x, float extAmount, float extInterval)
+		public static float EaseInSinEx(float x, float extAmount, float extInterval)
 		{
 			Debug.Assert(extInterval < 0.5f);
 			if( x < extInterval )
@@ -84,6 +84,73 @@ namespace PlanetTerror.Util
 			//double lambda = -Math.Log(b/a);
 			//return a * Math.Exp(-lambda * t);
 			return a * (float)Math.Exp(Math.Log(b/a) * t);
+		}
+	}
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//	EaseFunctionD
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//	Double 버전
+	public static class EaseFunctionD
+	{
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	시작/종료시 ease-in : 3x^2 - 2x^3
+		public static double EaseInPoly(double x)
+		{
+			double squared = x * x;
+			return 3.0 * squared - 2.0 * squared * x;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	시작/종료시 ease-in : (1 - sin(x * PI + PI/2) / 2
+		public static double EaseInSin(double x)
+		{
+			return (1.0 - Math.Sin((x + 0.5) * Math.PI)) * 0.5;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	c > 1		: ease-out -> ease-in
+		//	0 < c < 1	: ease-in -> ease-out
+		public static double EaseInOut(double x, double c)
+		{
+			double cx = x * c;
+			return cx / (cx - x + 1.0);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	0 -> -extAmount -> +extAmout -> 1 로 변화한다. extAmount 로 변화하는 구간에는 extInterval(< 0.5) 이 소요된다.
+		//	각 구간은 EaseInSine() 으로 보간된다.
+		public static double EaseInSinEx(double x, double extAmount, double extInterval)
+		{
+			Debug.Assert(extInterval < 0.5);
+			if( x < extInterval )
+			{
+				return -EaseInSin(x / extInterval) * extAmount;
+			}
+			else if( x < 1.0 - extInterval )
+			{
+				return EaseInSin((x - extInterval) / (1.0 - extInterval * 2)) * (1 + 2 * extAmount) - extAmount;
+			}
+			else
+			{
+				return 1 + EaseInSin((1 - x) / extInterval) * extAmount;
+			}
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	Lerp
+		public static float Lerp(float a, float b, float t)
+		{
+			return a + (b - a) * t;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		public static double Lerp(double a, double b, double t)
+		{
+			return a + (b - a) * t;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	반감기를 사용한 보간
+		public static double HalflifeInterpolate(double a, double b, double t)
+		{
+			Debug.Assert(a * b > 0);
+			//double lambda = -Math.Log(b/a);
+			//return a * Math.Exp(-lambda * t);
+			return a * Math.Exp(Math.Log(b/a) * t);
 		}
 	}
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -194,36 +261,36 @@ namespace PlanetTerror.Util
 	//	RefreshTimer
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//	Period 가 될때마다 Refresh() 에서 true 를 리턴한다.
-// 	public class RefreshTimer
-// 	{
-// 		//===============================================================================================================================================
-// 		//	프로퍼티
-// 		public float Period { get; set; }
-// 		public float CurTime { get; set; }
-// 
-// 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-// 		//	생성자
-// 		public RefreshTimer(float period) : this(period, false) { }
-// 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-// 		public RefreshTimer(float period, bool bRandomStart)
-// 		{
-// 			Period = period;
-// 			CurTime = bRandomStart ? (float)(RandomH.Random.NextDouble() * period) : 0;
-// 		}
-// 
-// 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-// 		//	리프레쉬 주기가 되었으면 true 리턴
-// 		public bool Refresh(float delta)
-// 		{
-// 			CurTime += delta;
-// 			if( CurTime >= Period )
-// 			{
-// 				CurTime -= Period;
-// 				return true;
-// 			}
-// 			return false;
-// 		}
-// 	}
+	public class RefreshTimer
+	{
+		//===============================================================================================================================================
+		//	프로퍼티
+		public float Period { get; set; }
+		public float CurTime { get; set; }
+
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	생성자
+		public RefreshTimer(float period) : this(period, false) { }
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		public RefreshTimer(float period, bool bRandomStart)
+		{
+			Period = period;
+			CurTime = bRandomStart ? (float)(RandomH.Random.NextDouble() * period) : 0;
+		}
+
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	리프레쉬 주기가 되었으면 true 리턴
+		public bool Refresh(float delta)
+		{
+			CurTime += delta;
+			if( CurTime >= Period )
+			{
+				CurTime -= Period;
+				return true;
+			}
+			return false;
+		}
+	}
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//	List2D
