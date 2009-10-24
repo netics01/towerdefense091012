@@ -6,7 +6,7 @@
 	mc:Ignorable="d"
 	x:Class="PlanetTerror.DebugPanelControl"
 	x:Name="UserControl"
-	d:DesignWidth="640" d:DesignHeight="480" Width="320" Height="900">
+	d:DesignWidth="640" d:DesignHeight="480" Width="300" Height="720">
 
 	<Canvas x:Name="LayoutRoot">
 		<Canvas.Background>
@@ -15,7 +15,7 @@
 				<GradientStop Color="White" Offset="1"/>
 			</LinearGradientBrush>
 		</Canvas.Background>
-		<ListBox x:Name="log_ListBox" Width="304" Height="420" Canvas.Left="8" Canvas.Top="8"/>
+		<ListBox x:Name="log_ListBox" Width="284" Height="420" Canvas.Left="8" Canvas.Top="8"/>
 		<Button x:Name="test1_Button" Content="Test1" VerticalAlignment="Top" Width="127.5" Height="20" Canvas.Left="8" Canvas.Top="432" HorizontalAlignment="Left"/>
 		<Button x:Name="test2_Button" Width="127.5" Height="20" Content="Test2" Canvas.Left="8" Canvas.Top="456" VerticalAlignment="Top" HorizontalAlignment="Left"/>
 	</Canvas>

@@ -1756,7 +1756,7 @@
 				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Image x:Name="background_Image" RenderTransformOrigin="0.5,0.5" Source="Resources/Field/backgroundImage.png" Stretch="Fill" Width="1080" Height="900">
+		<Image x:Name="background_Image" RenderTransformOrigin="0.5,0.5" Source="Resources/Field/backgroundImage.png" Stretch="Fill" Width="1024" Height="720">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
