@@ -125,6 +125,76 @@
 				</TextBlock.RenderTransform>
 			</TextBlock>
 		</Grid>
-		<ProgressBar x:Name="power_Progress" Margin="248,14.084,222.32,0" VerticalAlignment="Top" Height="17.916" Value="50"/>
+		<ProgressBar x:Name="power_Progress" Margin="376,8,222.32,0" VerticalAlignment="Top" Height="17.916" Value="50" SmallChange="0" Template="{DynamicResource ProgressBarControlTemplate1}">
+			<ProgressBar.Resources>
+				<ControlTemplate x:Key="ProgressBarControlTemplate1" TargetType="{x:Type ProgressBar}">
+					<Grid x:Name="grid" RenderTransformOrigin="0.5,0.5">
+						<Grid.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Grid.RenderTransform>
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="ProgressState">
+								<VisualState x:Name="Progress0">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
+											<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Progress99">
+									<Storyboard>
+										<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(FrameworkElement.Width)">
+											<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+											<SplineDoubleKeyFrame KeyTime="00:00:01" Value="368"/>
+										</DoubleAnimationUsingKeyFrames>
+										<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+											<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.167"/>
+										</DoubleAnimationUsingKeyFrames>
+										<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+											<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+											<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+										</DoubleAnimationUsingKeyFrames>
+										<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+											<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF32D4AD"/>
+											<SplineColorKeyFrame KeyTime="00:00:01" Value="#FF1BD4A8"/>
+										</ColorAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Progress100">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
+											<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.Visibility)">
+											<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
+											<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<Rectangle Fill="{x:Null}" Stroke="#FF51E082" Margin="0,1.916,2,0" RadiusX="8" RadiusY="8" StrokeThickness="2"/>
+						<Rectangle x:Name="rectangle" Fill="#FF32D4AD" Stroke="{x:Null}" StrokeThickness="2" RadiusX="4" RadiusY="5" Margin="4,6,372,4" RenderTransformOrigin="-0.001,0.5" Width="1">
+							<Rectangle.RenderTransform>
+								<TransformGroup>
+									<ScaleTransform/>
+									<SkewTransform/>
+									<RotateTransform/>
+									<TranslateTransform/>
+								</TransformGroup>
+							</Rectangle.RenderTransform>
+						</Rectangle>
+						<TextBlock x:Name="textBlock" Margin="16,3,18,-9.084" Text="PRESS SPACE BAR!!!" TextWrapping="Wrap" TextAlignment="Center" Visibility="Hidden" d:IsLocked="True"/>
+					</Grid>
+				</ControlTemplate>
+			</ProgressBar.Resources>
+		</ProgressBar>
 	</Grid>
 </UserControl>
