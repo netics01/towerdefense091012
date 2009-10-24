@@ -11,16 +11,7 @@
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="MoveStateGroup">
 				<VisualStateGroup.Transitions>
-					<VisualTransition GeneratedDuration="00:00:30">
-						<Storyboard>
-							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="background_Image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-282.5"/>
-							</DoubleAnimationUsingKeyFrames>
-							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="background_Image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-583.5"/>
-							</DoubleAnimationUsingKeyFrames>
-						</Storyboard>
-					</VisualTransition>
+					<VisualTransition GeneratedDuration="00:00:30"/>
 				</VisualStateGroup.Transitions>
 				<VisualState x:Name="MoveState">
 					<Storyboard>
