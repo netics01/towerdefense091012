@@ -170,6 +170,8 @@
 							<SplineDoubleKeyFrame KeyTime="00:00:07.6400000" Value="-166.817"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:08" Value="-179.817"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="-175.817"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="-175.817"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:08.6000000" Value="-175.817"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="body" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="11"/>
@@ -193,6 +195,8 @@
 							<SplineDoubleKeyFrame KeyTime="00:00:07.6400000" Value="444.557"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:08" Value="447.557"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="448.057"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="448.057"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:08.6000000" Value="448.057"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="eyeopen" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2.36"/>
