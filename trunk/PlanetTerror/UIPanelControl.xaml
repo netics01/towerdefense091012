@@ -6,9 +6,9 @@
 	mc:Ignorable="d"
 	x:Class="PlanetTerror.UIPanelControl"
 	x:Name="UserControl"
-	d:DesignWidth="1080" d:DesignHeight="100">
+	d:DesignWidth="1080" d:DesignHeight="100" Height="60">
 
-	<Canvas x:Name="LayoutRoot">
+	<Canvas x:Name="LayoutRoot" Height="60">
 		<Canvas.Background>
 			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 				<GradientStop Color="Black" Offset="1"/>
