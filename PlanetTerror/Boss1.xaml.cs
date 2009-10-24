@@ -11,6 +11,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using PlanetTerror.Util;
+
+
 namespace PlanetTerror
 {
 	/// <summary>
@@ -21,6 +24,8 @@ namespace PlanetTerror
 		public Boss1()
 		{
 			this.InitializeComponent();
+
+			background_Image.SetVisible(false);
 		}
 	}
 }
