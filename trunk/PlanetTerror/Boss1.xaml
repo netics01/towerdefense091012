@@ -7,7 +7,7 @@
 	x:Class="PlanetTerror.Boss1"
 	x:Name="UserControl"
 	d:DesignWidth="344" d:DesignHeight="256" Width="50" Height="50">
-	<Canvas x:Name="Boss" Margin="0" OpacityMask="#FF351C1C">
+	<Canvas x:Name="LayoutRoot" Margin="0" OpacityMask="#FF351C1C">
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="MoveStateGroup">
 				<VisualStateGroup.Transitions>
