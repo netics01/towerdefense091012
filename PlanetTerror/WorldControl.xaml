@@ -10,13 +10,13 @@
 	d:DesignWidth="640" d:DesignHeight="480" Width="1024" Height="660">
 
 	<Canvas x:Name="LayoutRoot">
-		<local:Tower Canvas.Left="99.333" Canvas.Top="333.333"/>
-		<local:Tower Canvas.Left="572.799" Canvas.Top="286.719"/>
-		<local:Tower Canvas.Left="336" Canvas.Top="120"/>
-		<local:Boss1 x:Name="testBoss1" Width="50" Height="50" Canvas.Left="0" Canvas.Top="0"/>
-		<local:Core Width="150" Height="150" Canvas.Left="430" Canvas.Top="486"/>
-		<local:Projectile Width="24" Height="16" Canvas.Left="232" Canvas.Top="448"/>
+		<local:Tower Canvas.Left="99.333" Canvas.Top="333.333" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="572.799" Canvas.Top="286.719" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="336" Canvas.Top="120" Panel.ZIndex="10"/>
+		<local:Boss1 x:Name="testBoss1" Width="50" Height="50" Canvas.Left="0" Canvas.Top="0" Panel.ZIndex="10"/>
+		<local:Core Width="150" Height="150" Canvas.Left="430" Canvas.Top="486" Panel.ZIndex="10"/>
 		<Image Width="1024" Height="720" Source="Resources/Field/backgroundImage.png" Stretch="Fill" Panel.ZIndex="-1"/>
 		<Path x:Name="route1_Path" Stretch="Fill" Stroke="Black" Width="401" Height="648.5" Canvas.Left="143.5" Data="M536,0 L543.5,63.5 399.5,63.5 431.5,223.5 287.5,247.5 183.5,279.5 143.5,303.5 223.5,367.5 367.5,319.5 487.5,319.5 503.5,479.5 399.5,495.5 295.5,559.5 247.5,607.5 247.5,647.5 423.5,647.5"/>
+		<Image Width="1024" Height="720" Stretch="Fill" Panel.ZIndex="5" Source="Resources/Field/roofImage.png"/>
 	</Canvas>
 </UserControl>
