@@ -37,7 +37,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void test1_Button_Click(object sender, RoutedEventArgs e)
 		{
-			WorldControl.Instance.CreateEnemy1(WorldControl.Instance.Route1);
+			EnemyTest();
 			//MainWindow.Instance.ToggleDebugPanel();			
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -50,5 +50,16 @@ namespace PlanetTerror
 		{
 			WorldControl.Instance.testBoss1.TestState("Boss_Move_State");
 		}
+
+		//===============================================================================================================================================
+		//	공용
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	적 생성
+		public void EnemyTest()
+		{
+			int i = RandomH.Next(WorldControl.Instance.Routes.Count);
+			WorldControl.Instance.CreateEnemy1(WorldControl.Instance.Routes[i]);
+		}
+
 	}
 }

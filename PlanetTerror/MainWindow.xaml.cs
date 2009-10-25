@@ -70,7 +70,7 @@ namespace PlanetTerror
 			}
 			if( e.Key == Key.F1 )
 			{
-				world.CreateEnemy1(WorldControl.Instance.Route1);
+				debug_Panel.EnemyTest();
 			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
