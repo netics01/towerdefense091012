@@ -28,17 +28,36 @@ namespace PlanetTerror
 			this.InitializeComponent();
 
 			Loaded += new RoutedEventHandler(Tower_Loaded);
+			MouseEnter += new MouseEventHandler(Tower_MouseEnter);
+			MouseLeave += new MouseEventHandler(Tower_MouseLeave);
 		}
-		
+
 		//===============================================================================================================================================
 		//	핸들러
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Tower_Loaded(object sender, RoutedEventArgs e)
 		{
-			this.SetState("Build_NotYetBuilt_State", true);
+			//this.SetState("Build_NotYetBuilt_State", true);
+			this.SetState("Build_Built_State", true);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void Tower_MouseEnter(object sender, MouseEventArgs e)
+		{
+			this.SetState("Menu_Build_State", true);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void Tower_MouseLeave(object sender, MouseEventArgs e)
+		{
+			this.SetState("Menu_NoMenu_State", true);
 		}
 
 		//===============================================================================================================================================
 		//	공용
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	업데이트
+		public void Update(float delta)
+		{
+			
+		}
 	}
 }

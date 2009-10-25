@@ -24,7 +24,9 @@ namespace PlanetTerror
 	{
 		public int startGold = 1000;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public int towerBuildGold = 50;
+		public int tower_BuildGold = 50;
+		public double tower_AttackRangeSqr = 200 * 200;
+		public double tower_AttackDamageSqr = 20;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public double enemy1_RouteTime = 20.0;
 		public double enemy1_HitPoint = 100;
