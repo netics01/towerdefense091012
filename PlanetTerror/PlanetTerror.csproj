@@ -193,24 +193,32 @@
     <Resource Include="Resources\Boss\Boss_rf1.png" />
     <Resource Include="Resources\Boss\Boss_rf2.png" />
     <Resource Include="Resources\Boss\Boss_shadow.png" />
-    <Resource Include="Resources\Boss\clock.png" />
-    <Resource Include="Resources\Boss\steam1.png" />
-    <Resource Include="Resources\Boss\steam2.png" />
-    <Resource Include="Resources\Boss\steam3.png" />
     <Resource Include="Resources\Tower\TowerA0_BG.png" />
     <Resource Include="Resources\Tower\TowerA0_Body.png" />
     <Resource Include="Resources\Tower\TowerA0_Top.png" />
     <Resource Include="Resources\UI\Gold.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\Boss\Boss_clock.png" />
+    <Resource Include="Resources\Effect\Effect_blow1.png" />
+    <Resource Include="Resources\Effect\Effect_blow2.png" />
+    <Resource Include="Resources\Effect\Effect_steam1.png" />
+    <Resource Include="Resources\Effect\Effect_steam2.png" />
+    <Resource Include="Resources\Effect\Effect_steam3.png" />
+    <Resource Include="Resources\Enemy\Enemy_body.png" />
+    <Resource Include="Resources\Enemy\Enemy_bomb1.png" />
+    <Resource Include="Resources\Enemy\Enemy_bomb2.png" />
+    <Resource Include="Resources\Enemy\Enemy_fuse1.png" />
+    <Resource Include="Resources\Enemy\Enemy_fuse2.png" />
+    <Resource Include="Resources\Enemy\Enemy_rec1.png" />
+    <Resource Include="Resources\Enemy\Enemy_rec2.png" />
+    <Resource Include="Resources\Enemy\Enemy_shadow.png" />
     <Resource Include="Resources\Field\backgroundImage.png" />
     <Resource Include="Resources\Field\baseImage.png" />
     <Resource Include="Resources\Field\roofImage.png" />
     <Resource Include="Resources\UI\Icon_Core.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\Enemy\" />
-    <Folder Include="Resources\Effect\" />
     <Folder Include="sound\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
