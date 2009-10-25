@@ -42,13 +42,14 @@ namespace PlanetTerror
 			this.InitializeComponent();
 
 			IsDeleted = false;
-			Pos = new Point(-100, -100);
+			Pos = new Point(-1000, -1000);
 			HitPoint = SettingXml.Instance.enemy1_HitPoint;
 			this.path = path;
 			acc = 0;
 			
 			Loaded += new RoutedEventHandler(Enemy1_Loaded);
 			Enemy_Boom_State.Storyboard.Completed += new EventHandler(BoomState_Completed);
+			Enemy_Destroy_State.Storyboard.Completed +=new EventHandler(DestroyState_Completed);
 		}
 
 		//===============================================================================================================================================
@@ -64,6 +65,11 @@ namespace PlanetTerror
 		{
 			IsDeleted = true;
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void DestroyState_Completed(object sender, EventArgs e)
+		{
+			IsDeleted = true;
+		}
 
 		//===============================================================================================================================================
 		//	공용
@@ -71,7 +77,7 @@ namespace PlanetTerror
 		//	업데이트
 		public void Update(float delta)
 		{
-			if( acc >= 1.0 ) { return; }
+			if( acc >= 1.0 || IsDestroyed ) { return; }
 
  			acc += delta / SettingXml.Instance.enemy1_RouteTime;
 			if( acc >= 1.0 )
@@ -89,10 +95,13 @@ namespace PlanetTerror
 		//	데미지를 입는다.
 		public void GetDamage(double damage)
 		{
+			if( IsDestroyed ) { return; }
+
 			HitPoint -= damage;
 			if( HitPoint < 0 )
 			{
 				IsDestroyed = true;
+				this.SetState("Enemy_Destroy_State", true);
 			}
 		}
 	}

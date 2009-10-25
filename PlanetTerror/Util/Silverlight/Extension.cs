@@ -69,6 +69,12 @@ namespace PlanetTerror.Util
 			Canvas.SetTop(e, y);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	중심위치를 얻는다.
+		public static Point GetCenter(this FrameworkElement e)
+		{
+			return new Point(Canvas.GetLeft(e) + e.ActualWidth * 0.5, Canvas.GetTop(e) + e.ActualHeight * 0.5);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	중심위치를 통해 Canvas.Left, Canvas.Top 을 변경한다.
 		public static void SetCenter(this FrameworkElement e, Point p)
 		{
