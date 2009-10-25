@@ -10,30 +10,30 @@
 
 	<Canvas x:Name="LayoutRoot">
 		<VisualStateManager.VisualStateGroups>
-			<VisualStateGroup x:Name="VisualStateGroup">
-				<VisualState x:Name="NormalState"/>
-				<VisualState x:Name="Damaged00State">
+			<VisualStateGroup x:Name="Core_Visual_StateGroup">
+				<VisualState x:Name="Core_Normal_State"/>
+				<VisualState x:Name="Core_Damaged00_State">
 					<Storyboard>
 						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
 							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF5C9B2A"/>
 						</ColorAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
-				<VisualState x:Name="Damaged01State">
+				<VisualState x:Name="Core_Damaged01_State">
 					<Storyboard>
 						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
 							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFA9CD35"/>
 						</ColorAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
-				<VisualState x:Name="Damaged03State">
+				<VisualState x:Name="Core_Damaged02_State">
 					<Storyboard>
 						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
 							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFBADE1E"/>
 						</ColorAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
-				<VisualState x:Name="DestroyState">
+				<VisualState x:Name="Core_Destroy_State">
 					<Storyboard>
 						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
 							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFEA8018"/>
