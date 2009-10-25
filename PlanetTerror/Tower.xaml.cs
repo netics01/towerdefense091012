@@ -25,6 +25,7 @@ namespace PlanetTerror
 		//	필드
 		Enemy1 target;
 		Point towerCenter;
+		
 		RefreshTimer attackTimer;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -67,7 +68,7 @@ namespace PlanetTerror
 		//	업데이트
 		public void Update(float delta)
 		{
-			attackTimer.Refresh(delta);
+//			attackTimer.Refresh(delta);
 
 			//타겟 설정
 			if( target == null || target.IsInvalid )
