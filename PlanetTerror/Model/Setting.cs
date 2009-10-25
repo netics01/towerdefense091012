@@ -26,10 +26,10 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public int tower_BuildGold = 50;
 		public double tower_AttackRangeSqr = 200 * 200;
-		public double tower_AttackDamage = 20;
+		public double tower_AttackDamage = 10;
 		public double tower_AttackCooldown = 1;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public double projectile_speed = 20;
+		public double projectile_speed = 10;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public double enemy1_RouteTime = 20.0;
 		public double enemy1_HitPoint = 50;

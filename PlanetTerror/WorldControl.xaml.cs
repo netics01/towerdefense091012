@@ -109,7 +109,7 @@ namespace PlanetTerror
 		public Projectile CreateProjectile(Enemy1 target, Point pos)
 		{
 			var p = new Projectile(target, pos);
-			Canvas.SetZIndex(p, 1);
+			Canvas.SetZIndex(p, 6);
 			projectiles.Add(p);
 			LayoutRoot.Children.Add(p);
 			return p;
@@ -119,7 +119,7 @@ namespace PlanetTerror
 		public Enemy1 FindTarget(Point pos, double rangeSqr)
 		{
 			Enemy1 target = null;
-			double minDist = -1000.0;
+			double minDist = 100000000.0;
 			for( int i = 0; i < enemy1s.Count; ++i )
 			{
 				if( enemy1s[i].IsInvalid ) { continue; }
