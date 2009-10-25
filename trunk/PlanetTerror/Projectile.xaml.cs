@@ -23,7 +23,10 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	프로퍼티
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public bool IsDeleted { get; protected set; }
+		public bool IsDestroyed { get; protected set; }
+		public bool IsInvalid { get { return IsDeleted || IsDestroyed; } }
 		public double Damage { get; set; }
 
 		//===============================================================================================================================================
@@ -65,7 +68,7 @@ namespace PlanetTerror
 		//	업데이트
 		public void Update(float delta)
 		{
-			if( IsDeleted ) { return; }
+			if( IsInvalid ) { return; }
 
 			if( !target.IsInvalid )
 			{
@@ -78,6 +81,7 @@ namespace PlanetTerror
 			{
 				pos = targetLastPos;
 				target.TakeDamage(Damage);
+				IsDestroyed = true;
 				this.SetState("Projectile_Boom_State", true);
 			}
 			else
