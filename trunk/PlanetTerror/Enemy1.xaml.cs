@@ -24,7 +24,11 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	프로퍼티
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public bool IsDeleted { get; protected set; }
+		public bool IsDestroyed { get; protected set; }
+		public Point Pos { get; protected set; }
+		public double HitPoint { get; protected set; }
 
 		//===============================================================================================================================================
 		//	필드
@@ -37,8 +41,12 @@ namespace PlanetTerror
 		{
 			this.InitializeComponent();
 
+			IsDeleted = false;
+			Pos = new Point(-100, -100);
+			HitPoint = SettingXml.Instance.enemy1_HitPoint;
 			this.path = path;
-
+			acc = 0;
+			
 			Loaded += new RoutedEventHandler(Enemy1_Loaded);
 			Enemy_Boom_State.Storyboard.Completed += new EventHandler(BoomState_Completed);
 		}
@@ -74,8 +82,18 @@ namespace PlanetTerror
 
 			Point pos, tangent;
 			path.GetPointAtFractionLength(acc, out pos, out tangent);
-
+			Pos = pos;
 			this.SetCenter(pos);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	데미지를 입는다.
+		public void GetDamage(double damage)
+		{
+			HitPoint -= damage;
+			if( HitPoint < 0 )
+			{
+				IsDestroyed = true;
+			}
 		}
 	}
 }
