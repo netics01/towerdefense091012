@@ -12,7 +12,7 @@
 		<Canvas.Background>
 			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 				<GradientStop Color="Black" Offset="1"/>
-				<GradientStop Color="#00000000"/>
+				<GradientStop Color="#00000000" Offset="0.534"/>
 			</LinearGradientBrush>
 		</Canvas.Background>
 		<VisualStateManager.VisualStateGroups>
@@ -23,14 +23,6 @@
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 							<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.536"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.965"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-36"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-4"/>
-						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.536"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.953"/>
@@ -38,14 +30,6 @@
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-36"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-12"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.47"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.012"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="45.916"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-3.21"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.47"/>
@@ -79,55 +63,24 @@
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="80"/>
 						</DoubleAnimationUsingKeyFrames>
-						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
-							<SplinePointKeyFrame KeyTime="00:00:00" Value="0.5,0.5"/>
-							<SplinePointKeyFrame KeyTime="00:00:00.1000000" Value="0.25,1.012"/>
-						</PointAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.108"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.181"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-18"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talkBox_Path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="2.2"/>
-						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Image x:Name="gold_Image" Width="32" Height="32" Source="Resources/Gold.png" Canvas.Left="816.32" Canvas.Top="8"/>
-		<TextBlock x:Name="gold_Text" Width="168" Height="24" Text="1200" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="848.32" Canvas.Top="8"/>
-		<Grid x:Name="talk_Grid" Width="224" Height="166.084" Visibility="Hidden" Canvas.Left="784" Canvas.Top="-152">
-			<Path x:Name="talkBox_Path" Fill="#FF1F2222" Stretch="Fill" Data="M9.9999981,1.7053026E-13 L214,1.7053026E-13 C219.52284,-9.5367415E-07 224,4.4771514 224,9.999999 L224,126 C224,131.52284 219.52284,136 214,136 L63.625805,136 53.760132,166.08446 38.801029,136 9.9999981,136 C4.4771523,136 0,131.52284 0,126 L0,9.999999 C0,4.4771514 4.4771523,-9.5367415E-07 9.9999981,1.7053026E-13 z" RenderTransformOrigin="0.5,0.5">
-				<Path.RenderTransform>
+		<Image x:Name="gold_Image" Width="64" Height="64" Source="Resources/UI/Gold.png" Canvas.Left="688" Canvas.Top="8"/>
+		<TextBlock x:Name="gold_Text" Width="56" Height="24" Text="1200" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="752" Canvas.Top="32"/>
+		<Grid x:Name="talk_Grid" Width="184" Height="102.084" Canvas.Left="832" Canvas.Top="-64">
+			<Path Fill="#FF1C3A45" Stretch="Fill" Margin="-20.277,48,0,-1.916" Data="M24.277009,0 L200.27701,0 C202.48615,1.5185146E-06 204.27701,1.7908625 204.27701,4.0000008 L204.27701,100 C204.27701,102.20914 202.48615,104 200.27701,104 L30.666609,104 30.666571,104.001 0,104.001 C0,104.001 11.0285,100.42351 19.329416,93.851045 L20.277008,93.072755 20.277008,4.0000008 C20.277008,1.7908625 22.067869,1.5185146E-06 24.277009,0 z" Stroke="#B7322A2A"/>
+			<TextBlock x:Name="talk_Text" Margin="8,0,8,6.084" Foreground="#FFE6AD69" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Height="40"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
 						<RotateTransform/>
 						<TranslateTransform/>
 					</TransformGroup>
-				</Path.RenderTransform>
-			</Path>
-			<TextBlock x:Name="talk_Text" Margin="16,16,16,46.084" Foreground="#FFE6AD69" Text="돈이 쏟아진다!!!" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
-				<TextBlock.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</TextBlock.RenderTransform>
-			</TextBlock>
+				</TextBlock.RenderTransform><Run Text="자원 채굴 단지가 안정되어"/><LineBreak/><Run Text="더 많은 자원을 획득 했습니다."/></TextBlock>
 		</Grid>
-		<ProgressBar x:Name="power_Progress" Height="17.916" Value="50" SmallChange="0" Template="{DynamicResource ProgressBarControlTemplate1}" Width="378" Canvas.Left="376" Canvas.Top="8">
+		<ProgressBar x:Name="power_Progress" Height="17.916" Value="50" SmallChange="0" Template="{DynamicResource ProgressBarControlTemplate1}" Width="304" Canvas.Left="360" Canvas.Top="32">
 			<ProgressBar.Resources>
 				<ControlTemplate x:Key="ProgressBarControlTemplate1" TargetType="{x:Type ProgressBar}">
 					<Grid x:Name="grid" RenderTransformOrigin="0.5,0.5">
@@ -140,20 +93,16 @@
 							</TransformGroup>
 						</Grid.RenderTransform>
 						<VisualStateManager.VisualStateGroups>
-							<VisualStateGroup x:Name="ProgressState">
-								<VisualState x:Name="Progress0">
+							<VisualStateGroup x:Name="ProgressStateGroup">
+								<VisualState x:Name="Progress0State">
 									<Storyboard>
 										<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
 											<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
 										</ObjectAnimationUsingKeyFrames>
 									</Storyboard>
 								</VisualState>
-								<VisualState x:Name="Progress99">
+								<VisualState x:Name="Progress99State">
 									<Storyboard>
-										<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(FrameworkElement.Width)">
-											<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-											<SplineDoubleKeyFrame KeyTime="00:00:01" Value="368"/>
-										</DoubleAnimationUsingKeyFrames>
 										<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 											<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.167"/>
 										</DoubleAnimationUsingKeyFrames>
@@ -165,9 +114,17 @@
 											<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF32D4AD"/>
 											<SplineColorKeyFrame KeyTime="00:00:01" Value="#FF1BD4A8"/>
 										</ColorAnimationUsingKeyFrames>
+										<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+											<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.009"/>
+											<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+										</DoubleAnimationUsingKeyFrames>
+										<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+											<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.369"/>
+											<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+										</DoubleAnimationUsingKeyFrames>
 									</Storyboard>
 								</VisualState>
-								<VisualState x:Name="Progress100">
+								<VisualState x:Name="Progress100State">
 									<Storyboard>
 										<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
 											<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
@@ -182,8 +139,8 @@
 								</VisualState>
 							</VisualStateGroup>
 						</VisualStateManager.VisualStateGroups>
-						<Rectangle Fill="{x:Null}" Stroke="#FF51E082" Margin="0,1.916,2,0" RadiusX="8" RadiusY="8" StrokeThickness="2"/>
-						<Rectangle x:Name="rectangle" Fill="#FF32D4AD" Stroke="{x:Null}" StrokeThickness="2" RadiusX="4" RadiusY="5" Margin="4,6,372,4" RenderTransformOrigin="-0.001,0.5" Width="1">
+						<Rectangle Fill="{x:Null}" Stroke="#FF51E082" Margin="0" RadiusX="2" RadiusY="2" StrokeThickness="1"/>
+						<Rectangle x:Name="rectangle" Fill="#FF32D4AD" Stroke="{x:Null}" StrokeThickness="2" RadiusX="1" RadiusY="1" Margin="2,4" RenderTransformOrigin="-0.001,0.5" Height="11" Width="372">
 							<Rectangle.RenderTransform>
 								<TransformGroup>
 									<ScaleTransform/>
@@ -198,5 +155,6 @@
 				</ControlTemplate>
 			</ProgressBar.Resources>
 		</ProgressBar>
+		<Image Width="64" Height="64" Canvas.Left="301" Canvas.Top="8" Source="Resources/UI/Icon_Core.png" Stretch="Fill"/>
 	</Canvas>
 </UserControl>
