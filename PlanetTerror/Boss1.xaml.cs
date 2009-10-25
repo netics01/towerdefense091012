@@ -37,7 +37,17 @@ namespace PlanetTerror
 		//	핸들러
 		void Boss1_Loaded(object sender, RoutedEventArgs e)
 		{
-			VisualStateManager.GoToState(this, "MoveState", false);
+			//VisualStateManager.GoToState(this, "MoveState", false);
 		}
+
+		//===============================================================================================================================================
+		//	공용
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	스테이트 테스트
+		public void TestState(string stateName)
+		{
+			VisualStateManager.GoToState(this, stateName, false);
+		}
+
 	}
 }

@@ -26,6 +26,10 @@ namespace PlanetTerror
 		//	싱글턴 액세서
 		public static MainWindow Instance { get; protected set; }
 
+		//===============================================================================================================================================
+		//	필드
+		UpdatePump pump;
+
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
 		public MainWindow()
@@ -33,18 +37,37 @@ namespace PlanetTerror
 			InitializeComponent();
 
 			Instance = this;
+			pump = new UpdatePump();
+			pump.Update += new UpdatePump.UpdateHandler(pump_Update);
 
+			Loaded += new RoutedEventHandler(MainWindow_Loaded);
 			KeyDown += new KeyEventHandler(MainWindow_KeyDown);
 		}
 
 		//===============================================================================================================================================
 		//	핸들러
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void MainWindow_Loaded(object sender, RoutedEventArgs e)
+		{
+			pump.Begin();
+
+			//화면 중앙으로 정렬
+			var left = (System.Windows.SystemParameters.PrimaryScreenWidth - Width) / 2;
+			var top = (System.Windows.SystemParameters.PrimaryScreenHeight - Height) / 2;
+			this.SetLeftTop(left, top);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void MainWindow_KeyDown(object sender, KeyEventArgs e)
 		{
 			if( e.Key == Key.F8 )
 			{
 				ToggleDebugPanel();
 			}
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void pump_Update(float delta)
+		{
+			world.Update(delta);			
 		}
 
 		//===============================================================================================================================================
