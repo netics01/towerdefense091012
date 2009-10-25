@@ -25,16 +25,13 @@ namespace PlanetTerror
 		//	필드
 		Enemy1 target;
 		Point towerCenter;
-		
-		RefreshTimer attackTimer;
+		double cooldownTime;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
 		public Tower()
 		{
 			this.InitializeComponent();
-
-//			attackTimer = new RefreshTimer(SettingXml.Instance.tower_AttackCooldown);
 
 			Loaded += new RoutedEventHandler(Tower_Loaded);
 			MouseEnter += new MouseEventHandler(Tower_MouseEnter);
@@ -68,8 +65,11 @@ namespace PlanetTerror
 		//	업데이트
 		public void Update(float delta)
 		{
-//			attackTimer.Refresh(delta);
-
+			if( cooldownTime > 0 )
+			{
+				cooldownTime -= delta;
+				return;
+			}
 			//타겟 설정
 			if( target == null || target.IsInvalid )
 			{
@@ -78,8 +78,10 @@ namespace PlanetTerror
 			//타겟이 있으면 타겟 공격
 			if( target != null )
 			{
-				var projectile = WorldControl.Instance.CreateProjectile(towerCenter);
-				projectile.Damage = SettingXml.Instance.tower_AttackDamage;				
+				var projectile = WorldControl.Instance.CreateProjectile(target, towerCenter);
+				projectile.Damage = SettingXml.Instance.tower_AttackDamage;
+
+				cooldownTime = SettingXml.Instance.tower_AttackCooldown;
 			}
 		}
 	}
