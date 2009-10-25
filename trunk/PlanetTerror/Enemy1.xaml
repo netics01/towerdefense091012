@@ -7,6 +7,55 @@
 	x:Class="PlanetTerror.Enemy1"
 	x:Name="UserControl"
 	d:DesignWidth="640" d:DesignHeight="480" Width="50" Height="30">
+	<UserControl.Resources>
+		<Storyboard x:Key="Move_Storyboard">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="5.628"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-20.146336752694427"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-10.499"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="17.670808550401073"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="9.412"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="58.232944416676467"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="66.342"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-1.333"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-0.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="128.81817443663789"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="149.486"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="37.103117192813158"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="30.195"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-6.711"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-6.944"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.315"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.148"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+	<UserControl.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource Move_Storyboard}"/>
+		</EventTrigger>
+	</UserControl.Triggers>
 
 	<Canvas x:Name="LayoutRoot">
 		<VisualStateManager.VisualStateGroups>
