@@ -6,9 +6,9 @@
 	mc:Ignorable="d"
 	x:Class="PlanetTerror.Core"
 	x:Name="UserControl"
-	d:DesignWidth="224" d:DesignHeight="192">
+	d:DesignWidth="224" d:DesignHeight="192" Width="150" Height="150">
 
 	<Canvas x:Name="LayoutRoot">
-		<Rectangle Fill="#FF1B7658" Stroke="Black" RadiusX="100" RadiusY="100" Width="224" Height="192"/>
+		<Rectangle Fill="#FF1B7658" Stroke="Black" RadiusX="100" RadiusY="100" Width="150" Height="150"/>
 	</Canvas>
 </UserControl>

@@ -69,6 +69,17 @@ namespace PlanetTerror.Util
 			Canvas.SetTop(e, y);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	중심위치를 통해 Canvas.Left, Canvas.Top 을 변경한다.
+		public static void SetCenter(this FrameworkElement e, Point p)
+		{
+			e.SetLeftTop(p.X - e.ActualWidth * 0.5, p.Y - e.ActualHeight * 0.5);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		public static void SetCenter(this FrameworkElement e, double x, double y)
+		{
+			e.SetLeftTop(x - e.ActualWidth * 0.5, y - e.ActualHeight * 0.5);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	Canvas.Left, Canvas.Top, ActualWidth, ActualHeight 를 Rect 형으로 얻는다.
 		public static Rect GetActualBound(this FrameworkElement e)
 		{

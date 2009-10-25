@@ -72,6 +72,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Enemy2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Enemy3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -114,6 +122,13 @@
     <Compile Include="Enemy1.xaml.cs">
       <DependentUpon>Enemy1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Enemy2.xaml.cs">
+      <DependentUpon>Enemy2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Enemy3.xaml.cs">
+      <DependentUpon>Enemy3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Setting.cs" />
     <Compile Include="Projectile.xaml.cs">
       <DependentUpon>Projectile.xaml</DependentUpon>
     </Compile>
@@ -191,7 +206,6 @@
     <Resource Include="Resources\Field\backgroundImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
     <Folder Include="Resources\Enemy\" />
     <Folder Include="sound\" />
   </ItemGroup>
