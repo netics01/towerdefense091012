@@ -40,7 +40,7 @@ namespace PlanetTerror
 			this.path = path;
 
 			Loaded += new RoutedEventHandler(Enemy1_Loaded);
-			BoomState.Storyboard.Completed += new EventHandler(BoomState_Completed);
+			Base_Boom_State.Storyboard.Completed += new EventHandler(BoomState_Completed);
 		}
 
 		//===============================================================================================================================================
