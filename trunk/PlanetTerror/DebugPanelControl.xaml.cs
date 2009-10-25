@@ -29,10 +29,12 @@ namespace PlanetTerror
 
 			test1_Button.Click += new RoutedEventHandler(test1_Button_Click);
 			test2_Button.Click += new RoutedEventHandler(test2_Button_Click);
+			bossTest1_Button.Click += new RoutedEventHandler(bossTest1_Button_Click);
 		}
 
 		//===============================================================================================================================================
 		//	핸들러
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void test1_Button_Click(object sender, RoutedEventArgs e)
 		{
 			MainWindow.Instance.ToggleDebugPanel();			
@@ -42,6 +44,10 @@ namespace PlanetTerror
 		{
 			MainWindow.Instance.ToggleDebugPanel();
 		}
-
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void bossTest1_Button_Click(object sender, RoutedEventArgs e)
+		{
+			WorldControl.Instance.testBoss1.TestState("MoveState");			
+		}
 	}
 }
