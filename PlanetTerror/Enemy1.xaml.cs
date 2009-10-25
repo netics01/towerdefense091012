@@ -40,6 +40,7 @@ namespace PlanetTerror
 			this.path = path;
 
 			Loaded += new RoutedEventHandler(Enemy1_Loaded);
+			BoomState.Storyboard.Completed += new EventHandler(BoomState_Completed);
 		}
 
 		//===============================================================================================================================================
@@ -50,6 +51,11 @@ namespace PlanetTerror
 			var story = Resources["Move_Storyboard"] as Storyboard;
 			story.Begin();
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void BoomState_Completed(object sender, EventArgs e)
+		{
+			IsDeleted = true;
+		}
 
 		//===============================================================================================================================================
 		//	공용
@@ -57,10 +63,12 @@ namespace PlanetTerror
 		//	업데이트
 		public void Update(float delta)
 		{
+			if( acc >= 1.0 ) { return; }
+
  			acc += delta / SettingXml.Instance.enemy1RouteTime;
 			if( acc >= 1.0 )
 			{
-				IsDeleted = true;
+				this.SetState("BoomState", true);
 				return;
 			}
 
