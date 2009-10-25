@@ -65,7 +65,7 @@ namespace PlanetTerror
 		{
 			if( acc >= 1.0 ) { return; }
 
- 			acc += delta / SettingXml.Instance.enemy1RouteTime;
+ 			acc += delta / SettingXml.Instance.enemy1_RouteTime;
 			if( acc >= 1.0 )
 			{
 				this.SetState("Enemy_Boom_State", true);
