@@ -77,6 +77,7 @@ namespace PlanetTerror
 		public void CreateEnemy1(PathGeometry path)
 		{
 			var enemy = new Enemy1(path);
+			Canvas.SetZIndex(enemy, 0);
 			enemy1s.Add(enemy);
 			LayoutRoot.Children.Add(enemy);
 		}

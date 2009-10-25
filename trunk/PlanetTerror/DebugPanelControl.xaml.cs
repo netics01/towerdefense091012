@@ -38,12 +38,12 @@ namespace PlanetTerror
 		void test1_Button_Click(object sender, RoutedEventArgs e)
 		{
 			WorldControl.Instance.CreateEnemy1(WorldControl.Instance.Route1);
-			MainWindow.Instance.ToggleDebugPanel();			
+			//MainWindow.Instance.ToggleDebugPanel();			
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void test2_Button_Click(object sender, RoutedEventArgs e)
 		{
-			MainWindow.Instance.ToggleDebugPanel();
+			//MainWindow.Instance.ToggleDebugPanel();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void bossTest1_Button_Click(object sender, RoutedEventArgs e)
