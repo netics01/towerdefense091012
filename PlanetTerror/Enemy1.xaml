@@ -41,5 +41,45 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
+		<Image x:Name="image2" Width="18" Height="18" Canvas.Left="5.334" Canvas.Top="37.667" Source="Resources/Enemy/Enemy_rec1.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
+		<Image x:Name="image3" Width="13" Height="21" Canvas.Left="-0.333" Canvas.Top="39" Source="Resources/Enemy/Enemy_rec2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
+		<Image x:Name="image4" Width="18" Height="18" Canvas.Left="38.667" Canvas.Top="38.333" Source="Resources/Enemy/Enemy_rec1.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="-1"/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
+		<Image x:Name="image5" Width="13" Height="21" Canvas.Left="48" Canvas.Top="38.333" Source="Resources/Enemy/Enemy_rec2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="-1"/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
 	</Canvas>
 </UserControl>
