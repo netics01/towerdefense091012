@@ -10,7 +10,7 @@
 
 	<Canvas x:Name="LayoutRoot">
 		<VisualStateManager.VisualStateGroups>
-			<VisualStateGroup x:Name="Core_Visual_StateGroup">
+			<VisualStateGroup x:Name="Core_StateGroup">
 				<VisualState x:Name="Core_Normal_State"/>
 				<VisualState x:Name="Core_Damaged00_State">
 					<Storyboard>

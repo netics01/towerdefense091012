@@ -40,7 +40,7 @@ namespace PlanetTerror
 			this.path = path;
 
 			Loaded += new RoutedEventHandler(Enemy1_Loaded);
-			Base_Boom_State.Storyboard.Completed += new EventHandler(BoomState_Completed);
+			Enemy_Boom_State.Storyboard.Completed += new EventHandler(BoomState_Completed);
 		}
 
 		//===============================================================================================================================================
@@ -68,7 +68,7 @@ namespace PlanetTerror
  			acc += delta / SettingXml.Instance.enemy1RouteTime;
 			if( acc >= 1.0 )
 			{
-				this.SetState("BoomState", true);
+				this.SetState("Enemy_Boom_State", true);
 				return;
 			}
 
