@@ -65,6 +65,10 @@ namespace PlanetTerror
 		//	업데이트
 		public void Update(float delta)
 		{
+			for( int i = 0; i < projectiles.Count; ++i )
+			{
+				projectiles[i].Update(delta);
+			}
 			for( int i = 0; i < enemy1s.Count; ++i )
 			{
 				enemy1s[i].Update(delta);
@@ -74,6 +78,14 @@ namespace PlanetTerror
 				towers[i].Update(delta);
 			}
 
+			for( int i = 0; i < projectiles.Count; ++i )
+			{
+				if( projectiles[i].IsDeleted )
+				{
+					LayoutRoot.Children.Remove(projectiles[i]);
+					projectiles.RemoveAt(i);
+				}
+			}
 			for( int i = 0; i < enemy1s.Count; ++i )
 			{
 				if( enemy1s[i].IsDeleted )
@@ -94,9 +106,13 @@ namespace PlanetTerror
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	포탄 생성
-		public Projectile CreateProjectile(Point pos)
+		public Projectile CreateProjectile(Enemy1 target, Point pos)
 		{
-			return null;
+			var p = new Projectile(target, pos);
+			Canvas.SetZIndex(p, 1);
+			projectiles.Add(p);
+			LayoutRoot.Children.Add(p);
+			return p;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	타겟 검색

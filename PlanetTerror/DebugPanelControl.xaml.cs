@@ -21,6 +21,10 @@ namespace PlanetTerror
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	public partial class DebugPanelControl : UserControl
 	{
+		//===============================================================================================================================================
+		//	필드
+		int routeSelect;
+
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
 		public DebugPanelControl()
@@ -57,9 +61,8 @@ namespace PlanetTerror
 		//	적 생성
 		public void EnemyTest()
 		{
-			int i = RandomH.Next(WorldControl.Instance.Routes.Count);
-			WorldControl.Instance.CreateEnemy1(WorldControl.Instance.Routes[i]);
+			WorldControl.Instance.CreateEnemy1(WorldControl.Instance.Routes[routeSelect]);
+			routeSelect = routeSelect.RotateInc(WorldControl.Instance.Routes.Count);
 		}
-
 	}
 }
