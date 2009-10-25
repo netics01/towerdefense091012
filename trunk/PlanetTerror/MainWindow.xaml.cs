@@ -65,6 +65,10 @@ namespace PlanetTerror
 			{
 				ToggleDebugPanel();
 			}
+			if( e.Key == Key.F1 )
+			{
+				world.CreateEnemy1(WorldControl.Instance.Route1);
+			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void pump_Update(float delta)
