@@ -85,5 +85,4 @@ namespace PlanetTerror
 			debug_Panel.SetVisible(!debug_Panel.GetVisible());
 		}
 	}
-
 }
