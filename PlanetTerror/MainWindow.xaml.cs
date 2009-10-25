@@ -58,6 +58,8 @@ namespace PlanetTerror
 			this.SetLeftTop(left, top);
 
 			pump.Begin();
+
+			ui_Panel.Initialize();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void MainWindow_KeyDown(object sender, KeyEventArgs e)
