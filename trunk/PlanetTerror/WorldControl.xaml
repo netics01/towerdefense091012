@@ -13,11 +13,12 @@
 		<local:Tower Canvas.Left="99.333" Canvas.Top="333.333"/>
 		<local:Tower Canvas.Left="572.799" Canvas.Top="286.719"/>
 		<local:Tower Canvas.Left="336" Canvas.Top="120"/>
-		<local:Enemy1 Canvas.Left="273" Canvas.Top="48" Width="50" Height="30"/>
+		<local:Enemy1 x:Name="enemy1" Canvas.Left="273" Canvas.Top="48" Width="50" Height="30"/>
 		<local:Enemy1 Canvas.Left="550" Canvas.Top="88" Width="50" Height="30"/>
 		<local:Boss1 x:Name="testBoss1" Width="50" Height="50" Canvas.Left="0" Canvas.Top="0"/>
 		<local:Core Width="224" Height="192" Canvas.Left="429" Canvas.Top="525"/>
 		<local:Projectile Width="24" Height="16" Canvas.Left="232" Canvas.Top="448"/>
 		<Image Width="1024" Height="720" Source="Resources/Field/backgroundImage.png" Stretch="Fill" Panel.ZIndex="-1"/>
+		<Path x:Name="route1_Path" Stroke="Black" Width="494.5" Height="626.5" Canvas.Left="28.5" Canvas.Top="22" Data="M494,0.5 L493.5,33 352.5,47 371.5,114 56.5,200 0.5,127 159.5,71 342.5,41 393.5,195 256.5,220 113.5,279 181.5,355 303.5,301 413.5,296 456.5,297 468.5,440 354.5,482 238.5,543 204.5,626 354.5,622"/>
 	</Canvas>
 </UserControl>
