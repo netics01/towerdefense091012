@@ -37,6 +37,9 @@ namespace PlanetTerror
 			InitializeComponent();
 
 			Instance = this;
+
+			SettingXml.Instance = new SettingXml();
+
 			pump = new UpdatePump();
 			pump.Update += new UpdatePump.UpdateHandler(pump_Update);
 
@@ -53,8 +56,6 @@ namespace PlanetTerror
 			var left = (System.Windows.SystemParameters.PrimaryScreenWidth - Width) / 2;
 			var top = (System.Windows.SystemParameters.PrimaryScreenHeight - Height) / 2;
 			this.SetLeftTop(left, top);
-
-			SettingXml.Instance = new SettingXml();
 
 			pump.Begin();
 		}
