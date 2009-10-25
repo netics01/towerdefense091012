@@ -11,7 +11,13 @@
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="Boss_StateGroup">
 				<VisualStateGroup.Transitions>
-					<VisualTransition GeneratedDuration="00:00:30"/>
+					<VisualTransition GeneratedDuration="00:00:30">
+						<Storyboard>
+							<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="clock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+								<SplineDoubleKeyFrame KeyTime="00:00:00" Value="3.714"/>
+							</DoubleAnimationUsingKeyFrames>
+						</Storyboard>
+					</VisualTransition>
 				</VisualStateGroup.Transitions>
 				<VisualState x:Name="Boss_Move_State">
 					<Storyboard>
@@ -3798,7 +3804,7 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Image x:Name="clock" Height="10.385" Source="Resources/Boss/clock.png" Stretch="Fill" RenderTransformOrigin="0.148,0.438" Width="14.015" Canvas.Left="37.558" Canvas.Top="31.566">
+			<Image x:Name="clock" Height="10.385" Source="Resources/Boss/Boss_clock.png" Stretch="Fill" RenderTransformOrigin="0.148,0.438" Width="14.015" Canvas.Left="37.558" Canvas.Top="31.566">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform ScaleX="0.95296681901382474" ScaleY="1.0493544791358502"/>
@@ -3808,7 +3814,7 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Image x:Name="steam2" Width="60.729" RenderTransformOrigin="0.5,0.5" Source="Resources/Boss/steam2.png" Stretch="Fill" Height="64.552" Canvas.Left="48.509" Canvas.Top="326.444">
+			<Image x:Name="steam2" Width="60.729" RenderTransformOrigin="0.5,0.5" Source="Resources/Effect/Effect_steam2.png" Stretch="Fill" Height="64.552" Canvas.Left="48.509" Canvas.Top="326.444">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -3818,7 +3824,7 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Image x:Name="steam1" Width="57.615" Height="95.713" RenderTransformOrigin="0.5,0.5" Source="Resources/Boss/steam1.png" Stretch="Fill" Canvas.Left="-249.267" Canvas.Top="85.247">
+			<Image x:Name="steam1" Width="57.615" Height="95.713" RenderTransformOrigin="0.5,0.5" Source="Resources/Effect/Effect_steam1.png" Stretch="Fill" Canvas.Left="-249.267" Canvas.Top="85.247">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
