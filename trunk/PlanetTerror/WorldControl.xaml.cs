@@ -89,6 +89,25 @@ namespace PlanetTerror
 			enemy1s.Add(enemy);
 			LayoutRoot.Children.Add(enemy);
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	타겟 검색
+		public Enemy1 FindTarget(Point pos, double rangeSqr)
+		{
+			Enemy1 target = null;
+			double minDist = -1000.0;
+			for( int i = 0; i < enemy1s.Count; ++i )
+			{
+				if( enemy1s[i].IsDeleted || enemy1s[i].IsDestroyed ) { continue; }
+				double distSqr = enemy1s[i].Pos.DistanceSqaure(pos);
+				if( distSqr < rangeSqr &&
+					distSqr < minDist )
+				{
+					target = enemy1s[i];
+					minDist = distSqr;
+				}
+			}
+			return target;
+		}
 
 		//===============================================================================================================================================
 		//	전용
