@@ -48,7 +48,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void bossTest1_Button_Click(object sender, RoutedEventArgs e)
 		{
-			WorldControl.Instance.testBoss1.TestState("MoveState");
+			WorldControl.Instance.testBoss1.TestState("Boss_Move_State");
 		}
 	}
 }
