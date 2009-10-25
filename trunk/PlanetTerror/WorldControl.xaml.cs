@@ -28,7 +28,7 @@ namespace PlanetTerror
 
 		//===============================================================================================================================================
 		//	프로퍼티
-		public PathGeometry Route1 { get; protected set; }
+		public List<PathGeometry> Routes { get; protected set; }
 
 		//===============================================================================================================================================
 		//	필드
@@ -45,7 +45,7 @@ namespace PlanetTerror
 			this.InitializeComponent();
 
 			Instance = this;
-			Route1 = route1_Path.Data.GetFlattenedPathGeometry();
+			Routes = new List<PathGeometry>();
 
 			enemy1s = new List<Enemy1>();
 			towers = new List<Tower>();
@@ -56,7 +56,7 @@ namespace PlanetTerror
 			}
 			projectiles = new List<Projectile>();
 
-			route1_Path.SetVisible(false);
+			PreparePath();			
 		}
 
 		//===============================================================================================================================================
@@ -120,6 +120,21 @@ namespace PlanetTerror
 
 		//===============================================================================================================================================
 		//	전용
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	패스를 모두 찾아서 안보이게 만든다.
+		private void PreparePath()
+		{
+			for( int i = 0; i < LayoutRoot.Children.Count; ++i )
+			{
+				var path = LayoutRoot.Children[i] as Path;
+				if( path != null )
+				{
+					PathGeometry pg = path.Data.GetFlattenedPathGeometry();
+					path.SetVisible(false);
+					Routes.Add(pg);
+				}
+			}
+		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	적 제거
 // 		void DeleteEnemy(Enemy1 enemy)
