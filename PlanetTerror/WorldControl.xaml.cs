@@ -27,6 +27,8 @@ namespace PlanetTerror
 
 		//===============================================================================================================================================
 		//	필드
+		PathGeometry route1;
+		float acc;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -35,6 +37,9 @@ namespace PlanetTerror
 			this.InitializeComponent();
 
 			Instance = this;
+			route1 = route1_Path.Data.GetFlattenedPathGeometry();
+
+			route1_Path.SetVisible(false);			
 		}
 
 		//===============================================================================================================================================
@@ -43,7 +48,13 @@ namespace PlanetTerror
 		//	업데이트
 		public void Update(float delta)
 		{
-			
+			acc += delta;
+			var r = acc * 0.05;
+
+			Point pos, tangent;
+			route1.GetPointAtFractionLength(r, out pos, out tangent);
+
+			enemy1.SetLeftTop(pos.X, pos.Y);			
 		}
 	}
 }
