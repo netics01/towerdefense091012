@@ -125,6 +125,67 @@
 					</Storyboard>
 				</VisualState>
 			</VisualStateGroup>
+			<VisualStateGroup x:Name="Menu_StateGroup">
+				<VisualState x:Name="Menu_NoMenu_State"/>
+				<VisualState x:Name="Menu_Build_State">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Build" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Menu_Upgrade_State">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Upgrade" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Dismantle" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Upgrade" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<StringAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock2" Storyboard.TargetProperty="(TextBlock.Text)">
+							<DiscreteStringKeyFrame KeyTime="00:00:00" Value="업그레이드  -150&#xd;&#xa;"/>
+						</StringAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Menu_UpgradeBIG_State">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_UpgradeBIG" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Dismantle" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+			<VisualStateGroup x:Name="Gold_StateGroup">
+				<VisualState x:Name="Gold_Gain5_State">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock4" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock4" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFB32E"/>
+						</ColorAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="15"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="21.75"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock4" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Gold_Gain10_State"/>
+				<VisualState x:Name="Gold_Gain15_State"/>
+				<VisualState x:Name="Gold_Gain_5_State"/>
+				<VisualState x:Name="Gold_Normal_State"/>
+			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
 		<Image x:Name="image" Source="Resources/Tower/TowerA0_BG.png" Width="80" Height="80" Canvas.Left="1" Canvas.Top="29"/>
 		<Image x:Name="image1" Source="Resources/Tower/TowerA0_Body.png" Width="80" Height="80" Canvas.Left="1" Canvas.Top="10" RenderTransformOrigin="0.5,0.5">
@@ -157,5 +218,55 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
+		<Canvas x:Name="Menu_Build" Width="104" Height="24" Canvas.Left="64" Canvas.Top="72" Cursor="Hand" Visibility="Hidden">
+			<Rectangle Fill="#FF193B35" RadiusX="2" RadiusY="2" Width="110" Height="16"/>
+			<TextBlock x:Name="textBlock1" Width="100" Height="16" Canvas.Left="6" Canvas.Top="1" Foreground="#FFFFE693" TextWrapping="Wrap"><Run Text="타워 짓기"/><Run Text="   "/><Run Text=" "/><Run Text=" "/><Run Text="-50"/><LineBreak/><Run Text=""/></TextBlock>
+		</Canvas>
+		<Canvas x:Name="Menu_Dismantle" Cursor="Hand" Width="104" Height="24" Canvas.Left="64" Canvas.Top="88" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+			<Canvas.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Canvas.RenderTransform>
+			<Rectangle Fill="#FF193B35" RadiusX="2" RadiusY="2" Width="110" Height="16"/>
+			<TextBlock x:Name="textBlock" Width="100" Height="16" Canvas.Left="6" Canvas.Top="1" Foreground="#FFFFE693" TextWrapping="Wrap"><Run Text="채굴소 "/><Run Text="복원 "/><Run Text=" "/><Run Text="+"/><Run Text="50"/><LineBreak/><Run Text=""/></TextBlock>
+		</Canvas>
+		<Canvas x:Name="Menu_Upgrade" Cursor="Hand" Width="104" Height="24" Canvas.Left="64" Canvas.Top="72" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+			<Canvas.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Canvas.RenderTransform>
+			<Rectangle Fill="#FF193B35" RadiusX="2" RadiusY="2" Width="110" Height="16"/>
+			<TextBlock x:Name="textBlock2" Width="100" Height="16" Canvas.Left="6" Canvas.Top="1" Foreground="#FFFFE693" TextWrapping="Wrap"/>
+		</Canvas>
+		<Canvas x:Name="Menu_UpgradeBIG" Cursor="Hand" Width="104" Height="24" Canvas.Left="64" Canvas.Top="72" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+			<Canvas.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Canvas.RenderTransform>
+			<Rectangle Fill="#FF193B35" RadiusX="2" RadiusY="2" Width="110" Height="16"/>
+			<TextBlock x:Name="textBlock3" Width="100" Height="16" Canvas.Left="6" Canvas.Top="1" Foreground="#FFFFE693" TextWrapping="Wrap"><Run Text="메가톤타워"/><Run Text=" "/><Run Text=" "/><Run Text="-"/><Run Text="4"/><Run Text="50"/><LineBreak/><Run Text=""/></TextBlock>
+		</Canvas>
+		<TextBlock x:Name="textBlock4" Width="98.25" Height="24" Opacity="0" Canvas.Left="72" Canvas.Top="36" Text="+5" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
 	</Canvas>
 </UserControl>
