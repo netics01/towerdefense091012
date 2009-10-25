@@ -37,6 +37,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void test1_Button_Click(object sender, RoutedEventArgs e)
 		{
+			WorldControl.Instance.CreateEnemy1(WorldControl.Instance.Route1);
 			MainWindow.Instance.ToggleDebugPanel();			
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -47,7 +48,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void bossTest1_Button_Click(object sender, RoutedEventArgs e)
 		{
-			WorldControl.Instance.testBoss1.TestState("MoveState");			
+			WorldControl.Instance.testBoss1.TestState("MoveState");
 		}
 	}
 }

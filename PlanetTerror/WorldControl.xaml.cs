@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 using PlanetTerror.Util;
 
@@ -26,9 +27,16 @@ namespace PlanetTerror
 		public static WorldControl Instance { get; protected set; }
 
 		//===============================================================================================================================================
+		//	프로퍼티
+		public PathGeometry Route1 { get; protected set; }
+
+
+		//===============================================================================================================================================
 		//	필드
-		PathGeometry route1;
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		float acc;
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		List<Enemy1> enemy1s;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -37,7 +45,9 @@ namespace PlanetTerror
 			this.InitializeComponent();
 
 			Instance = this;
-			route1 = route1_Path.Data.GetFlattenedPathGeometry();
+			Route1 = route1_Path.Data.GetFlattenedPathGeometry();
+
+			enemy1s = new List<Enemy1>();
 
 			route1_Path.SetVisible(false);			
 		}
@@ -48,13 +58,36 @@ namespace PlanetTerror
 		//	업데이트
 		public void Update(float delta)
 		{
-			acc += delta;
-			var r = acc * 0.05;
+			for( int i = 0; i < enemy1s.Count; ++i )
+			{
+				enemy1s[i].Update(delta);
+			}
 
-			Point pos, tangent;
-			route1.GetPointAtFractionLength(r, out pos, out tangent);
-
-			enemy1.SetLeftTop(pos.X, pos.Y);			
+			for( int i = 0; i < enemy1s.Count; ++i )
+			{
+				if( enemy1s[i].IsDeleted )
+				{
+					LayoutRoot.Children.Remove(enemy1s[i]);
+					enemy1s.RemoveAt(i);					
+				}
+			}
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	적 생성
+		public void CreateEnemy1(PathGeometry path)
+		{
+			var enemy = new Enemy1(path);
+			enemy1s.Add(enemy);
+			LayoutRoot.Children.Add(enemy);
+		}
+
+		//===============================================================================================================================================
+		//	전용
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	적 제거
+// 		void DeleteEnemy(Enemy1 enemy)
+// 		{
+// 			LayoutRoot.Children.Remove(enemy);
+// 		}
 	}
 }

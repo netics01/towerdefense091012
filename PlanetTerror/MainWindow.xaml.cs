@@ -49,12 +49,14 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void MainWindow_Loaded(object sender, RoutedEventArgs e)
 		{
-			pump.Begin();
-
-			//화면 중앙으로 정렬
+			//창을 화면 중앙으로 정렬
 			var left = (System.Windows.SystemParameters.PrimaryScreenWidth - Width) / 2;
 			var top = (System.Windows.SystemParameters.PrimaryScreenHeight - Height) / 2;
 			this.SetLeftTop(left, top);
+
+			SettingXml.Instance = new SettingXml();
+
+			pump.Begin();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void MainWindow_KeyDown(object sender, KeyEventArgs e)
