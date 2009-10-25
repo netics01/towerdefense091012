@@ -27,6 +27,8 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public bool IsDeleted { get; protected set; }
 		public bool IsDestroyed { get; protected set; }
+		public bool IsInvalid { get { return IsDeleted || IsDestroyed; } }
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public Point Pos { get; protected set; }
 		public double HitPoint { get; protected set; }
 
@@ -93,9 +95,9 @@ namespace PlanetTerror
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	데미지를 입는다.
-		public void GetDamage(double damage)
+		public void TakeDamage(double damage)
 		{
-			if( IsDestroyed ) { return; }
+			if( IsInvalid ) { return; }
 
 			HitPoint -= damage;
 			if( HitPoint < 0 )

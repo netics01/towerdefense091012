@@ -35,6 +35,8 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		List<Enemy1> enemy1s;
 		List<Tower> towers;
+		List<Projectile> projectiles;
+		
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -52,6 +54,7 @@ namespace PlanetTerror
 				var tower = LayoutRoot.Children[i] as Tower;
 				if( tower != null ) { towers.Add(tower); }
 			}
+			projectiles = new List<Projectile>();
 
 			route1_Path.SetVisible(false);
 		}
@@ -90,6 +93,12 @@ namespace PlanetTerror
 			LayoutRoot.Children.Add(enemy);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	포탄 생성
+		public Projectile CreateProjectile(Point pos)
+		{
+			return null;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	타겟 검색
 		public Enemy1 FindTarget(Point pos, double rangeSqr)
 		{
@@ -97,7 +106,7 @@ namespace PlanetTerror
 			double minDist = -1000.0;
 			for( int i = 0; i < enemy1s.Count; ++i )
 			{
-				if( enemy1s[i].IsDeleted || enemy1s[i].IsDestroyed ) { continue; }
+				if( enemy1s[i].IsInvalid ) { continue; }
 				double distSqr = enemy1s[i].Pos.DistanceSqaure(pos);
 				if( distSqr < rangeSqr &&
 					distSqr < minDist )
