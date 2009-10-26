@@ -263,8 +263,8 @@
 				<VisualState x:Name="Gold_Normal_State"/>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Image x:Name="image" Source="Resources/Tower/TowerA0_BG.png" Width="80" Height="80" Canvas.Left="1" Canvas.Top="29" d:IsLocked="True"/>
-		<Image x:Name="image1" Source="Resources/Tower/TowerA0_Body.png" Width="80" Height="80" Canvas.Left="1" Canvas.Top="10" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+		<Image x:Name="image" Source="Resources/Tower/TowerA0_BG.png" Width="58" Height="60" Canvas.Left="1" Canvas.Top="36"/>
+		<Image x:Name="image1" Source="Resources/Tower/TowerA0_Body.png" Width="58" Height="58" Canvas.Left="1" Canvas.Top="22" RenderTransformOrigin="0.5,0.5">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -274,7 +274,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Rectangle x:Name="rectangle" Fill="Black" RadiusX="8" RadiusY="8" Height="16" RenderTransformOrigin="1,0.5" Width="80" Canvas.Left="-39" Canvas.Top="18" d:IsLocked="True" >
+		<Rectangle x:Name="rectangle" Fill="Black" RadiusX="8" RadiusY="8" Height="12.733" RenderTransformOrigin="1,0.5" Width="54.914" Canvas.Left="-22.602" Canvas.Top="26.03" >
 			<Rectangle.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -284,7 +284,7 @@
 				</TransformGroup>
 			</Rectangle.RenderTransform>
 		</Rectangle>
-		<Image x:Name="image2" Source="Resources/Tower/TowerA0_Top.png" Width="80" Height="80" Canvas.Left="1" Canvas.Top="-16" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+		<Image x:Name="image2" Source="Resources/Tower/TowerA0_Top.png" Width="62" Height="80" RenderTransformOrigin="0.5,0.5" Canvas.Top="-9" Canvas.Left="-1">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
