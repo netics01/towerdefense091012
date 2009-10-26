@@ -34,10 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Windows.Interactivity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -97,6 +99,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Tower.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TowerMG.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -161,6 +167,9 @@
     </Compile>
     <Compile Include="Tower.xaml.cs">
       <DependentUpon>Tower.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TowerMG.xaml.cs">
+      <DependentUpon>TowerMG.xaml</DependentUpon>
     </Compile>
     <Compile Include="UIPanelControl.xaml.cs">
       <DependentUpon>UIPanelControl.xaml</DependentUpon>
@@ -231,6 +240,9 @@
     <Resource Include="Resources\Field\backgroundImage.png" />
     <Resource Include="Resources\Field\baseImage.png" />
     <Resource Include="Resources\Field\roofImage.png" />
+    <Resource Include="Resources\Tower\MGTowerA0_BG.png" />
+    <Resource Include="Resources\Tower\MGTowerA0_Body.png" />
+    <Resource Include="Resources\Tower\MGTowerA0_Top.png" />
     <Resource Include="Resources\UI\Icon_Core.png" />
   </ItemGroup>
   <ItemGroup>
