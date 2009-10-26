@@ -94,7 +94,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Missile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Projectile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Projectile1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Projectile2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProjectileMG.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -148,9 +164,21 @@
     <Compile Include="Enemy3.xaml.cs">
       <DependentUpon>Enemy3.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Missile.xaml.cs">
+      <DependentUpon>Missile.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model\Setting.cs" />
     <Compile Include="Projectile.xaml.cs">
       <DependentUpon>Projectile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Projectile1.xaml.cs">
+      <DependentUpon>Projectile1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Projectile2.xaml.cs">
+      <DependentUpon>Projectile2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectileMG.xaml.cs">
+      <DependentUpon>ProjectileMG.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
