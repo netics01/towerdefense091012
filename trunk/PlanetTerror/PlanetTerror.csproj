@@ -60,6 +60,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Boss2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Boss3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Core.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -112,6 +120,12 @@
   <ItemGroup>
     <Compile Include="Boss1.xaml.cs">
       <DependentUpon>Boss1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Boss2.xaml.cs">
+      <DependentUpon>Boss2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Boss3.xaml.cs">
+      <DependentUpon>Boss3.xaml</DependentUpon>
     </Compile>
     <Compile Include="Core.xaml.cs">
       <DependentUpon>Core.xaml</DependentUpon>
