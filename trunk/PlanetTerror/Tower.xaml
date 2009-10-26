@@ -39,11 +39,11 @@
 				<VisualState x:Name="Build_Built_State">
 					<Storyboard>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.5"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-2"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="48"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="26.333"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="8"/>
 						</DoubleAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -88,6 +88,12 @@
 							<SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#00000000"/>
 							<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="Black"/>
 						</ColorAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="4"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-1.834"/>
+						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Build_Dismantle_State">
@@ -392,8 +398,7 @@
 				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Image x:Name="image" Source="Resources/Tower/TowerA0_BG.png" Width="58" Height="60" Canvas.Left="1" Canvas.Top="36"/>
-		<Image x:Name="image1" Source="Resources/Tower/TowerA0_Body.png" Width="58" Height="58" Canvas.Left="1" Canvas.Top="22" RenderTransformOrigin="0.5,0.5">
+		<Image x:Name="image" Source="Resources/Tower/TowerA0_BG.png" Width="56" Height="55.667" Canvas.Top="38.336" Canvas.Left="1.667" RenderTransformOrigin="0.5,0.5">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -403,7 +408,17 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Rectangle x:Name="rectangle" Fill="Black" RadiusX="8" RadiusY="8" Height="12.733" RenderTransformOrigin="1,0.5" Width="54.914" Canvas.Left="-22.602" Canvas.Top="26.03" >
+		<Image x:Name="image1" Source="Resources/Tower/TowerA0_Body.png" Width="54.668" Height="54.998" Canvas.Left="2.832" Canvas.Top="27.502" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
+		<Rectangle x:Name="rectangle" Fill="Black" RadiusX="8" RadiusY="8" Height="12.733" RenderTransformOrigin="1,0.5" Width="54.914" Canvas.Left="-23.103" Canvas.Top="28.032" >
 			<Rectangle.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -413,7 +428,7 @@
 				</TransformGroup>
 			</Rectangle.RenderTransform>
 		</Rectangle>
-		<Image x:Name="image2" Source="Resources/Tower/TowerA0_Top.png" Width="62" Height="80" RenderTransformOrigin="0.5,0.5" Canvas.Top="-9" Canvas.Left="-1">
+		<Image x:Name="image2" Source="Resources/Tower/TowerA0_Top.png" Width="55.667" Height="73.833" RenderTransformOrigin="0.5,0.5" Canvas.Left="1.832">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -519,7 +534,7 @@
 				</TransformGroup>
 			</Button.RenderTransform>
 		</Button>
-		<Canvas x:Name="Menu_Num" Width="32.75" Height="16" Canvas.Left="50.75">
+		<Canvas x:Name="Menu_Num" Width="32.75" Height="16" Canvas.Left="50.249" Canvas.Top="1.002">
 			<TextBlock x:Name="_5" Width="32.75" Height="16" Visibility="Hidden" Foreground="#FFF2C346" Text="+ 5" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
 				<TextBlock.RenderTransform>
 					<TransformGroup>
