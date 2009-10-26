@@ -41,10 +41,12 @@
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.5"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-2"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-1"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="26.333"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="8"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
 						</DoubleAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
@@ -66,22 +68,22 @@
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-2"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-2"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-0.167"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-10"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-10"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-7.644"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="6"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="6"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-0.167"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="6"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="6"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.203"/>
 						</DoubleAnimationUsingKeyFrames>
 						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
 							<SplineColorKeyFrame KeyTime="00:00:00" Value="#00000000"/>
@@ -89,10 +91,46 @@
 							<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="Black"/>
 						</ColorAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="4"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-2.003"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-1.834"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.166"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_Build_Button" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_Upgrade_Button" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_UpgradeBIG_Button" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_Dismantle_Button" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_Build_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-13"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_Upgrade_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-13"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_UpgradeBIG_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-13"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_Dismantle_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-13"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_Build_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-8"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_Upgrade_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-8"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_UpgradeBIG_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-8"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_Dismantle_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-8"/>
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
@@ -398,7 +436,7 @@
 				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Image x:Name="image" Source="Resources/Tower/TowerA0_BG.png" Width="56" Height="55.667" Canvas.Top="38.336" Canvas.Left="1.667" RenderTransformOrigin="0.5,0.5">
+		<Image x:Name="image" Source="Resources/Tower/TowerA0_BG.png" Width="48" Height="48" Canvas.Top="27.586" RenderTransformOrigin="0.5,0.5">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -408,7 +446,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image x:Name="image1" Source="Resources/Tower/TowerA0_Body.png" Width="54.668" Height="54.998" Canvas.Left="2.832" Canvas.Top="27.502" RenderTransformOrigin="0.5,0.5">
+		<Image x:Name="image1" Source="Resources/Tower/TowerA0_Body.png" Width="48" Height="48" Canvas.Top="16" RenderTransformOrigin="0.5,0.5">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -418,7 +456,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Rectangle x:Name="rectangle" Fill="Black" RadiusX="8" RadiusY="8" Height="12.733" RenderTransformOrigin="1,0.5" Width="54.914" Canvas.Left="-23.103" Canvas.Top="28.032" >
+		<Rectangle x:Name="rectangle" Fill="Black" RadiusX="4" RadiusY="4" Height="6" RenderTransformOrigin="1,0.5" Width="48" Canvas.Left="-23.103" Canvas.Top="28.032" >
 			<Rectangle.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -428,7 +466,7 @@
 				</TransformGroup>
 			</Rectangle.RenderTransform>
 		</Rectangle>
-		<Image x:Name="image2" Source="Resources/Tower/TowerA0_Top.png" Width="55.667" Height="73.833" RenderTransformOrigin="0.5,0.5" Canvas.Left="1.832">
+		<Image x:Name="image2" Source="Resources/Tower/TowerA0_Top.png" Width="48" Height="48" RenderTransformOrigin="0.5,0.5">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -534,7 +572,7 @@
 				</TransformGroup>
 			</Button.RenderTransform>
 		</Button>
-		<Canvas x:Name="Menu_Num" Width="32.75" Height="16" Canvas.Left="50.249" Canvas.Top="1.002">
+		<Canvas x:Name="Menu_Num" Width="32.75" Height="16" Canvas.Left="26.749" Canvas.Top="3.502">
 			<TextBlock x:Name="_5" Width="32.75" Height="16" Visibility="Hidden" Foreground="#FFF2C346" Text="+ 5" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
 				<TextBlock.RenderTransform>
 					<TransformGroup>
