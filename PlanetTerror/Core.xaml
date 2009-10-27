@@ -10,6 +10,9 @@
 	<Canvas x:Name="LayoutRoot" Margin="0,0,56,64">
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="Core_StateGroup">
+				<VisualStateGroup.Transitions>
+					<VisualTransition GeneratedDuration="00:00:00"/>
+				</VisualStateGroup.Transitions>
 				<VisualState x:Name="Core_HP100_State"/>
 				<VisualState x:Name="Core_HP60_State">
 					<Storyboard>
