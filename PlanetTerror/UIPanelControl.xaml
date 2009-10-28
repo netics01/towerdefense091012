@@ -127,7 +127,7 @@
 		<ProgressBar x:Name="power_Progress" Height="17.916" Value="50" SmallChange="0" Template="{DynamicResource ProgressBarControlTemplate1}" Width="304" Canvas.Left="360" Canvas.Top="32">
 			<ProgressBar.Resources>
 				<ControlTemplate x:Key="ProgressBarControlTemplate1" TargetType="{x:Type ProgressBar}">
-					<Grid x:Name="grid" RenderTransformOrigin="0.5,0.5">
+					<Grid x:Name="Root" RenderTransformOrigin="0.5,0.5">
 						<Grid.RenderTransform>
 							<TransformGroup>
 								<ScaleTransform/>
@@ -137,17 +137,17 @@
 							</TransformGroup>
 						</Grid.RenderTransform>
 						<VisualStateManager.VisualStateGroups>
-							<VisualStateGroup x:Name="ProgressStateGroup">
-								<VisualState x:Name="Progress0State">
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Determinate">
 									<Storyboard>
 										<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ProgressBarIndicator" Storyboard.TargetProperty="(UIElement.Visibility)">
 											<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
 										</ObjectAnimationUsingKeyFrames>
 									</Storyboard>
 								</VisualState>
-								<VisualState x:Name="Progress99State">
+								<VisualState x:Name="Indeterminate">
 									<Storyboard>
-										<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+										<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Root" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 											<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.167"/>
 										</DoubleAnimationUsingKeyFrames>
 										<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ProgressBarIndicator" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
@@ -170,7 +170,7 @@
 								</VisualState>
 								<VisualState x:Name="Progress100State">
 									<Storyboard>
-										<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
+										<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Root" Storyboard.TargetProperty="(UIElement.Visibility)">
 											<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 										</ObjectAnimationUsingKeyFrames>
 										<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -183,9 +183,9 @@
 								</VisualState>
 							</VisualStateGroup>
 						</VisualStateManager.VisualStateGroups>
-						<Rectangle x:Name="ProgressBarTrack" Fill="#00000000" Stroke="{x:Null}" StrokeThickness="1" RadiusX="2" RadiusY="2" Margin="2,5,2,4.916" Width="300"/>
-						<Rectangle Fill="{x:Null}" Stroke="#FF51E082" Margin="0" RadiusX="2" RadiusY="2" StrokeThickness="1"/>
-						<Rectangle x:Name="ProgressBarIndicator" Fill="#FF32D4AD" Stroke="{x:Null}" StrokeThickness="2" RadiusX="1" RadiusY="1" Margin="2,4" RenderTransformOrigin="-0.001,0.5" Height="11" Width="372">
+						<Border x:Name="ProgressBarTrack" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="4,4,4,4" Height="18"/>
+						<Rectangle Fill="{x:Null}" Stroke="#FF51E082" Margin="0" RadiusX="2" RadiusY="2" StrokeThickness="1" Height="18"/>
+						<Rectangle x:Name="ProgressBarIndicator" Fill="#FF32D4AD" Stroke="{x:Null}" StrokeThickness="2" RadiusX="1" RadiusY="1" Margin="3" RenderTransformOrigin="-0.001,0.5" Height="12" Width="Auto">
 							<Rectangle.RenderTransform>
 								<TransformGroup>
 									<ScaleTransform/>
