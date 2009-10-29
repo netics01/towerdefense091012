@@ -11,29 +11,6 @@
 	d:DesignWidth="640" d:DesignHeight="480" Width="1024" Height="660">
 
 	<Canvas x:Name="LayoutRoot">
-		<local:Tower Canvas.Left="304" Canvas.Top="56" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="427" Canvas.Top="-30" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="200" Canvas.Top="248" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="328" Canvas.Top="328" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="392" Canvas.Top="312" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="320" Canvas.Top="400" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="392" Canvas.Top="376" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="559" Canvas.Top="376" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="424" Canvas.Top="196" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="440" Canvas.Top="120" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="579" Canvas.Top="303" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="688" Canvas.Top="409" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="670" Canvas.Top="307" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="536" Canvas.Top="203" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="557" Canvas.Top="130" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="424" Canvas.Top="46" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="528" Canvas.Top="48" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="699" Canvas.Top="65" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="815" Canvas.Top="89" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="666" Canvas.Top="220" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="728" Canvas.Top="232" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="576" Canvas.Top="-32" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="264" Canvas.Top="352" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="320" Canvas.Top="136" Panel.ZIndex="10"/>
 		<local:Boss1 x:Name="testBoss1" Width="50" Height="50" Canvas.Left="0" Canvas.Top="0" Panel.ZIndex="10"/>
 		<local:Core Width="176" Height="128" Canvas.Left="421" Canvas.Top="488" Panel.ZIndex="15" RenderTransformOrigin="0.227,0.333"/>
