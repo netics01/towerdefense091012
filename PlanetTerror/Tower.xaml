@@ -18,13 +18,13 @@
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2.333"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roller" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.679"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roller" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-4.443"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roller" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.667"/>
 			</DoubleAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
@@ -34,12 +34,6 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="-31.667"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="-31.667" KeySpline="0,1,1,1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="-31.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:07.8000000" Value="-31.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:08" Value="-31.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:09.8000000" Value="-31.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:10" Value="-31.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:11.8000000" Value="-31.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:12" Value="-31.667"/>
 			</DoubleAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="38.333"/>
@@ -48,12 +42,6 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="38.333"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="38.333" KeySpline="0,1,1,1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="38.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:07.8000000" Value="38.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:08" Value="38.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:09.8000000" Value="38.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:10" Value="38.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:11.8000000" Value="38.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:12" Value="38.333"/>
 			</DoubleAnimationUsingKeyFrames>
 			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
 				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFC77F29"/>
@@ -63,12 +51,6 @@
 				<SplineColorKeyFrame KeyTime="00:00:04" Value="#FFC77F29"/>
 				<SplineColorKeyFrame KeyTime="00:00:05.8000000" Value="Black" KeySpline="0,1,1,1"/>
 				<SplineColorKeyFrame KeyTime="00:00:06" Value="#FFC77F29"/>
-				<SplineColorKeyFrame KeyTime="00:00:07.8000000" Value="Black"/>
-				<SplineColorKeyFrame KeyTime="00:00:08" Value="#FFC77F29"/>
-				<SplineColorKeyFrame KeyTime="00:00:09.8000000" Value="Black"/>
-				<SplineColorKeyFrame KeyTime="00:00:10" Value="#FFC77F29"/>
-				<SplineColorKeyFrame KeyTime="00:00:11.8000000" Value="Black"/>
-				<SplineColorKeyFrame KeyTime="00:00:12" Value="#FFC77F29"/>
 			</ColorAnimationUsingKeyFrames>
 			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
 				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFB90C0C"/>
@@ -78,12 +60,6 @@
 				<SplineColorKeyFrame KeyTime="00:00:04" Value="#FFB90C0C"/>
 				<SplineColorKeyFrame KeyTime="00:00:05.8000000" Value="Black" KeySpline="0,1,1,1"/>
 				<SplineColorKeyFrame KeyTime="00:00:06" Value="#FFB90C0C"/>
-				<SplineColorKeyFrame KeyTime="00:00:07.8000000" Value="Black"/>
-				<SplineColorKeyFrame KeyTime="00:00:08" Value="#FFB90C0C"/>
-				<SplineColorKeyFrame KeyTime="00:00:09.8000000" Value="Black"/>
-				<SplineColorKeyFrame KeyTime="00:00:10" Value="#FFB90C0C"/>
-				<SplineColorKeyFrame KeyTime="00:00:11.8000000" Value="Black"/>
-				<SplineColorKeyFrame KeyTime="00:00:12" Value="#FFB90C0C"/>
 			</ColorAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image1_Copy" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.01"/>
@@ -121,9 +97,8 @@
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image3_Copy">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="360"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:12" Value="720"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roller" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.983"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
@@ -716,7 +691,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Canvas x:Name="roller" Width="40" Height="40" RenderTransformOrigin="0.5,0.5" Canvas.Left="-46.666" Canvas.Top="93.667">
+		<Canvas x:Name="role" Width="40" Height="40" RenderTransformOrigin="0.5,0.5" Canvas.Left="-46.666" Canvas.Top="93.667">
 			<Canvas.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -766,7 +741,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Rectangle x:Name="rectangle_Copy" Fill="#FFC77F29" Stroke="#FFB90C0C" RadiusX="5" RadiusY="5" Width="6" Height="3.688" RenderTransformOrigin="0.5,0.5" Canvas.Left="53.812" Canvas.Top="-14.75">
+		<Rectangle x:Name="rectangle_Copy" Fill="#FFC77F29" Stroke="#FFB90C0C" RadiusX="5" RadiusY="5" Width="6" Height="3.688" RenderTransformOrigin="0.5,0.5" Canvas.Left="53.812" Canvas.Top="-14.5">
 			<Rectangle.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -776,7 +751,7 @@
 				</TransformGroup>
 			</Rectangle.RenderTransform>
 		</Rectangle>
-		<Button x:Name="Menu_Build_Button" Width="110" Height="20.75" Content="타워 짓기  -50" Canvas.Left="43" Canvas.Top="55" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FFDEB64B" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Hidden">
+		<Button x:Name="Menu_Build_Button" Width="110" Height="20.75" Content="타워 짓기  -50" Canvas.Left="149.25" Canvas.Top="69.75" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FFDEB64B" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Hidden">
 			<Button.Resources>
 				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 					<Setter Property="Template">
@@ -800,7 +775,7 @@
 				</TransformGroup>
 			</Button.RenderTransform>
 		</Button>
-		<Button x:Name="Menu_Upgrade_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="업그레이드  -150" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="43" Canvas.Top="55" FontFamily="아리따B" Cursor="Hand" Visibility="Hidden">
+		<Button x:Name="Menu_Upgrade_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="업그레이드  -150" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="149.25" Canvas.Top="69.75" FontFamily="아리따B" Cursor="Hand" Visibility="Hidden">
 			<Button.Resources>
 				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 					<Setter Property="Template">
@@ -824,7 +799,7 @@
 				</TransformGroup>
 			</Button.RenderTransform>
 		</Button>
-		<Button x:Name="Menu_UpgradeBIG_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="메가톤 타워  -600" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="43" Canvas.Top="55" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Hidden">
+		<Button x:Name="Menu_UpgradeBIG_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="메가톤 타워  -600" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="149.25" Canvas.Top="69.75" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Hidden">
 			<Button.Resources>
 				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 					<Setter Property="Template">
@@ -851,7 +826,7 @@
 				</TransformGroup>
 			</Button.RenderTransform>
 		</Button>
-		<Button x:Name="Menu_Dismantle_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="채굴소 복원  +50" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="43" Canvas.Top="74.25" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Hidden">
+		<Button x:Name="Menu_Dismantle_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="채굴소 복원  +50" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="149.25" Canvas.Top="89" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Hidden">
 			<Button.Resources>
 				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 					<Setter Property="Template">
@@ -928,8 +903,7 @@
 											</TransformGroup>
 										</Rectangle.RenderTransform>
 									</Rectangle>
-									<TextBlock x:Name="textBlock1" Width="Auto" Height="Auto" Foreground="#FFFFE693" TextWrapping="Wrap" Margin="6,1,3,3" RenderTransformOrigin="0.5,0.5">
-										<TextBlock.RenderTransform>
+									<TextBlock x:Name="textBlock1" Width="Auto" Height="Auto" Foreground="#FFFFE693" TextWrapping="Wrap" Margin="6,1,3,3" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
 											<TransformGroup>
 												<ScaleTransform/>
 												<SkewTransform/>
@@ -952,7 +926,7 @@
 				</TransformGroup>
 			</Button.RenderTransform>
 		</Button>
-		<Canvas x:Name="Menu_Num" Width="32.75" Height="16" Canvas.Left="26.749" Canvas.Top="3.502">
+		<Canvas x:Name="Menu_Num" Width="32.75" Height="16" Canvas.Left="132.999" Canvas.Top="18.252">
 			<Rectangle x:Name="UP01" Fill="#FFFFDA5E" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-26.749" Canvas.Top="-3.502" Visibility="Hidden"/>
 			<Rectangle x:Name="UP02" Fill="#FFFF7F28" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-18.749" Canvas.Top="-3.502" Visibility="Hidden"/>
 			<Rectangle x:Name="UP03" Fill="Red" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-10.749" Canvas.Top="-3.502" Visibility="Hidden"/>
@@ -991,7 +965,7 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform><Run Text="-"/><Run Text=" 5"/></TextBlock>
 		</Canvas>
-		<Image x:Name="image_Copy" Source="Resources\Tower\TowerA0_BG.png" Width="48" Height="48" Canvas.Top="27.586" RenderTransformOrigin="0.5,0.5" Opacity="0">
+		<Image x:Name="image_Copy" Source="Resources\Tower\TowerA0_BG.png" Width="48" Height="48" Canvas.Top="42.336" RenderTransformOrigin="0.5,0.5" Opacity="0" Canvas.Left="106.25">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1001,5 +975,54 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
+		<Canvas x:Name="rol_1" Width="57.25" Height="101.25" Canvas.Left="-0.75" Canvas.Top="38.083">
+			<Rectangle x:Name="rectangle_Copy1" Stroke="Black" RadiusX="26" RadiusY="26" Width="54.5" Height="53.5" RenderTransformOrigin="0.5,0.5" Canvas.Top="39">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
+			</Rectangle>
+			<Rectangle x:Name="rectangle_Copy2" Stroke="Black" RadiusX="26" RadiusY="26" Width="50" Height="50" RenderTransformOrigin="0.5,0.5" Canvas.Top="40.75" StrokeThickness="2" Canvas.Left="2.333">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
+			</Rectangle>
+			<Path Stroke="Black" StrokeThickness="3" Width="5.166" Height="5.667" Canvas.Left="11.917" Canvas.Top="45.75" Data="M1.0000025,1 L3.1666692,3.6666667"/>
+			<Path Stroke="Black" StrokeThickness="3" Width="16.334" Height="10.833" Canvas.Left="34.083" Canvas.Top="51.917" Data="M14.333331,0.99999873 L0.99999746,8.8333321"/>
+			<Path Stroke="Black" StrokeThickness="2" Width="8.875" Height="7.375" Canvas.Left="8.5" Canvas.Top="74.625" Data="M1,5.375 L6.875,1"/>
+			<Path Stroke="Black" StrokeThickness="2" Width="6.875" Height="6.5" Canvas.Left="38.125" Canvas.Top="77.25" Data="M5.875,5.5 L1,1"/>
+			<Path Stroke="Black" StrokeThickness="2" Width="4.437" Height="3.469" Canvas.Left="43.625" Canvas.Top="76.062" Data="M1,1 L3.4375,2.46875"/>
+			<Path Stroke="Black" StrokeThickness="2" Width="48.375" Height="3" Canvas.Left="3.25" Canvas.Top="65.625" Data="M1,1 L46.375,1"/>
+			<Path Stroke="Black" StrokeThickness="2" Width="3.5" Height="51.125" Canvas.Left="25.75" Canvas.Top="41.125" Data="M1,1 L1.5,49.125"/>
+			<Path Stroke="Black" StrokeThickness="2" Width="12.167" Height="9.25" Canvas.Left="7.083" Canvas.Top="51.333" Data="M0.99999746,1.0000013 L11.166664,8.2500013"/>
+			<Path Stroke="Black" Width="13.916" Height="5.75" Canvas.Left="36.417" Canvas.Top="68.917" Data="M12.916669,4.7499987 L1.0000025,0.99999873"/>
+			<Path Stroke="Black" Width="12.333" Height="2.166" Canvas.Left="4.542" Canvas.Top="69.667" Data="M2.5431315E-06,1.1666654 L11.333336,-1.2715658E-06"/>
+			<Path Stroke="Black" Width="10.083" Height="2.5" Canvas.Left="44.167" Canvas.Top="61.583" Data="M9.0833321,1.2715658E-06 L-1.2715658E-06,1.5000013"/>
+			<Path Stroke="Black" Width="5.334" Height="6.917" Canvas.Left="35.083" Canvas.Top="46.25" Data="M4.3333308,-3.5527137E-15 L-2.5431315E-06,5.9166667"/>
+			<Path Stroke="Black" Width="4.5" Height="3.416" Canvas.Left="42.167" Canvas.Top="49.917" Data="M2.5431315E-06,2.4166654 L3.5000025,-1.2715658E-06"/>
+			<Path Fill="Black" Stroke="Black" Width="3.666" Height="6.084" Canvas.Left="17.917" Canvas.Top="45.333" Data="M6.3578287E-07,1.2715658E-06 L2.6666673,5.0833346"/>
+			<Path Fill="#FFC77F29" Stroke="Black" Width="5.75" Height="2.5" Canvas.Left="4.583" Canvas.Top="59.667" Data="M-1.5894572E-07,-1.2715658E-06 L4.7499998,1.4999987"/>
+			<Path Stroke="Black" StrokeThickness="2" Width="6.5" Height="12.5" Canvas.Left="31.458" Canvas.Top="76.292" Data="M5.5,11.5 L1,1"/>
+			<Path Stroke="Black" Width="16.25" Height="8.916" Canvas.Left="11.75" Canvas.Top="76.667" Data="M1,1.0000025 C2.3259939,3.5783241 3.9731879,4.7046485 6.9166667,5.9166692 C8.2921867,6.4830598 9.4145991,6.9768994 10.916667,7.2500025 C12.379995,7.5160622 13.668337,7.8639471 15.25,7.9166692"/>
+			<Path Stroke="Black" Width="8.417" Height="3.892" Canvas.Left="27.083" Canvas.Top="44.417" Data="M-6.3578288E-07,1.7499987 C1.6321863,1.7499987 3.4450504,1.481925 4.8333327,2.4999987 C5.6461415,3.0960585 5.3589723,3.1517105 6.2499994,1.6666654 C6.587916,1.103471 7.022824,0.60845478 7.416666,0.083332062 C7.3888883,0.055554284 7.3611105,0.027776506 7.3333327,-1.2715658E-06"/>
+			<Path Stroke="Black" Width="5.833" Height="3.815" Canvas.Left="36.667" Canvas.Top="47.333" Data="M0.99999873,1.0000013 C1.8340732,1.4986327 2.5301968,1.8710822 3.1666654,2.6666679 C3.5828908,3.1869496 4.1239704,2.2427727 4.8333321,1.3333346"/>
+			<Path Stroke="Black" Width="3.333" Height="8.167" Canvas.Left="45.167" Canvas.Top="55.333" Data="M-1.2715658E-06,1.2715657E-06 C0.70399755,1.2531192 1.3071563,2.145298 1.6666654,3.5833346 C1.9652848,4.7778122 2.2349355,5.8875122 2.3333321,7.1666679"/>
+			<Path Stroke="Black" Width="4.084" Height="3.994" Canvas.Left="43.333" Canvas.Top="56.833" Data="M1.2715658E-06,1.2715657E-06 C1.6386882,1.9508191 -0.17550889,3.5083808 3.0833346,2.8333346"/>
+			<Path Stroke="Black" Width="5.334" Height="4.111" Canvas.Left="6.583" Canvas.Top="54.583" Data="M-1.5894572E-07,2.5000013 C0.77478279,2.4887725 1.1985865,2.198588 1.9166665,2.9166679 C2.3169673,3.3169687 2.3869427,3.0837767 2.9166665,2.3333346 C3.4944979,1.5147402 3.8034393,0.68027037 4.3333332,1.2715657E-06"/>
+			<Path Stroke="Black" Width="3.254" Height="7.333" Canvas.Left="6.542" Canvas.Top="70.417" Data="M0.66666683,2.5431315E-06 C0.71351575,1.7802617 2.0074427,2.6279914 2.2500002,4.0833359 C2.347934,4.6709387 0.55211482,5.8009396 1.5894572E-07,6.3333359"/>
+			<Path Stroke="Black" Width="2.166" Height="6.5" Canvas.Left="46.167" Canvas.Top="66.75" Data="M-1.2715658E-06,5.5 C0.39367459,4.6577168 0.77789407,3.9624535 0.99999873,3 C1.2385816,1.9661409 1.1771049,1.0523394 1.0833321,-2.8421709E-14"/>
+			<Path Stroke="Black" Width="5.833" Height="4.333" Canvas.Left="35.667" Canvas.Top="80.25" Data="M-1.2715658E-06,3.3333333 C2.3677571,2.7276277 3.329437,2.151141 4.8333321,-2.8421709E-14"/>
+			<Path Stroke="Black" Width="4.334" Height="6.981" Canvas.Left="27.958" Canvas.Top="82.811" Data="M-6.3578288E-07,0.064468384 C0.65179579,0.0044345029 1.1821598,-0.044060432 1.8333327,0.064468384 C1.8333327,2.0425104 2.6398324,4.1107856 3.3333327,5.9811351"/>
+			<Path Stroke="Black" Width="3.17" Height="10.833" Canvas.Left="10.33" Canvas.Top="56.25" Data="M2.1695194,-2.8421709E-14 C-0.16971674,3.7152574 0.0028527578,5.4365012 0.0028527578,9.8333333 C0.0028527578,9.7777778 0.0028527578,9.7222222 0.0028527578,9.6666667"/>
+		</Canvas>
 	</Canvas>
 </UserControl>
