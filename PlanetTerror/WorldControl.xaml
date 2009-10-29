@@ -11,6 +11,62 @@
 	d:DesignWidth="640" d:DesignHeight="480" Width="1024" Height="660">
 
 	<Canvas x:Name="LayoutRoot">
+		<local:Tower Canvas.Left="88" Canvas.Top="304" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="88" Canvas.Top="111" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="207" Canvas.Top="73" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="304" Canvas.Top="56" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="239" Canvas.Top="145" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="133" Canvas.Top="183" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="76" Panel.ZIndex="10" Canvas.Top="21"/>
+		<local:Tower Canvas.Left="162" Panel.ZIndex="10" Canvas.Top="2"/>
+		<local:Tower Canvas.Left="256" Canvas.Top="-16" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="427" Canvas.Top="-30" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="344" Canvas.Top="-26" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="200" Canvas.Top="248" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="287" Canvas.Top="221" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="112" Canvas.Top="407" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="328" Canvas.Top="328" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="40" Canvas.Top="472" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="159" Canvas.Top="496" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="224" Canvas.Top="448" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="8" Canvas.Top="352" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="392" Canvas.Top="312" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="320" Canvas.Top="400" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="392" Canvas.Top="376" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="559" Canvas.Top="376" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="424" Canvas.Top="196" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="440" Canvas.Top="120" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="579" Canvas.Top="303" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="688" Canvas.Top="409" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="670" Canvas.Top="307" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="752" Canvas.Top="330" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="832" Canvas.Top="376" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="812" Canvas.Top="493" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="864" Canvas.Top="568" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="96" Canvas.Top="592" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="536" Canvas.Top="203" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="557" Canvas.Top="130" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="424" Canvas.Top="46" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="528" Canvas.Top="48" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="613" Canvas.Top="51" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="699" Canvas.Top="65" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="815" Canvas.Top="89" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="666" Canvas.Top="220" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="760" Canvas.Top="176" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="792" Canvas.Top="248" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="728" Canvas.Top="232" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="832" Canvas.Top="192" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="880" Canvas.Top="108" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="945" Canvas.Top="143" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="906" Canvas.Top="311" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="886" Canvas.Top="432" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="576" Canvas.Top="-32" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="664" Canvas.Top="-23" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="755" Canvas.Top="-7" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="864" Canvas.Top="20" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="944" Canvas.Top="48" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="264" Canvas.Top="352" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="64" Canvas.Top="216" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="320" Canvas.Top="136" Panel.ZIndex="10"/>
 		<local:Boss1 x:Name="testBoss1" Width="50" Height="50" Canvas.Left="0" Canvas.Top="0" Panel.ZIndex="10"/>
 		<local:Core Width="176" Height="128" Canvas.Left="421" Canvas.Top="488" Panel.ZIndex="15" RenderTransformOrigin="0.227,0.333"/>
