@@ -57,13 +57,13 @@ namespace PlanetTerror
 			Loaded += new RoutedEventHandler(Tower_Loaded);
 			MouseEnter += new MouseEventHandler(Tower_MouseEnter);
 			MouseLeave += new MouseEventHandler(Tower_MouseLeave);
-			Menu_Build_Button.MouseLeave +=new MouseEventHandler(Menu_Build_Button_MouseLeave);
-			Menu_Upgrade_Button.MouseLeave +=new MouseEventHandler(Menu_Upgrade_Button_MouseLeave);
-			Menu_UpgradeBIG_Button.MouseLeave +=new MouseEventHandler(Menu_UpgradeBIG_Button_MouseLeave);
-			Menu_Dismantle_Button.MouseLeave +=new MouseEventHandler(Menu_Dismantle_Button_MouseLeave);
+			//Menu_Build_Button.MouseLeave +=new MouseEventHandler(Menu_Build_Button_MouseLeave);
+			//Menu_Upgrade_Button.MouseLeave +=new MouseEventHandler(Menu_Upgrade_Button_MouseLeave);
+			//Menu_UpgradeBig_Button.MouseLeave +=new MouseEventHandler(Menu_UpgradeBIG_Button_MouseLeave);
+			//Menu_Dismantle_Button.MouseLeave +=new MouseEventHandler(Menu_Dismantle_Button_MouseLeave);
 			Menu_Build_Button.Click += new RoutedEventHandler(Menu_Build_Button_Click);
 			Menu_Upgrade_Button.Click += new RoutedEventHandler(Menu_Upgrade_Button_Click);
-			Menu_UpgradeBIG_Button.Click += new RoutedEventHandler(Menu_UpgradeBIG_Button_Click);
+			Menu_UpgradeBig_Button.Click += new RoutedEventHandler(Menu_UpgradeBIG_Button_Click);
 			Menu_Dismantle_Button.Click += new RoutedEventHandler(Menu_Dismantle_Button_Click);			
 		}
 
@@ -127,6 +127,7 @@ namespace PlanetTerror
 				return;
 			}
 			vsm.SetState(BUILT_STATE);
+			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Upgrade_Button_Click(object sender, RoutedEventArgs e)
@@ -147,6 +148,7 @@ namespace PlanetTerror
 				return;
 			}
 			vsm.SetState(DISMANTLE_STATE);
+			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 		}
 
 		//===============================================================================================================================================

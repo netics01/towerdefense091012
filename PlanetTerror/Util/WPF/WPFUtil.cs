@@ -55,6 +55,7 @@ namespace PlanetTerror.Util
 			public string StateName { get { return State != null ? State.Name : string.Empty; } }
 			public VisualState State { get; protected set; }
 			public bool InProgress { get; protected set; }
+			public bool JustFinished { get; set; }
 
 			//-----------------------------------------------------------------------------------------------------------------------------------------------
 			//	생성자
@@ -92,6 +93,7 @@ namespace PlanetTerror.Util
 				if( state == null ) { return false; }
 				State = state;
 				InProgress = (State.Storyboard != null);
+				JustFinished = false;
 				return true;
 			}
 
@@ -102,6 +104,7 @@ namespace PlanetTerror.Util
 			void Storyboard_Completed(object sender, EventArgs e)
 			{
 				InProgress = false;
+				JustFinished = true;
 			}
 		}
 
@@ -202,5 +205,8 @@ namespace PlanetTerror.Util
 			var group = Groups.Find(groupName);
 			return group != null ? group.InProgress : false;
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	진행이 방금 끝났는가?
+
 	}
 }
