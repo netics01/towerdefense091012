@@ -116,7 +116,8 @@ namespace PlanetTerror
 			{
 				IsDestroyed = true;
 				vsm.SetState(DESTROY_STATE);
-				MainWindow.Instance.ui_Panel.GainGold(setting.gold);
+				MainWindow.UI.GainGold(setting.gold);
+				MainWindow.UI.GainPower(setting.powerUp);
 			}
 			//else { vsm.SetState(HIT_STATE);	}
 		}

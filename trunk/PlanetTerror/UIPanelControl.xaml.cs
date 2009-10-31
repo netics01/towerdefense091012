@@ -51,6 +51,9 @@ namespace PlanetTerror
 		public void Initialize()
 		{
 			gold = Setting.Instance.startGold;
+			power_Progress.Maximum = Setting.Instance.powerMax;
+			power_Progress.Minimum = 0;
+			power_Progress.Value = 0;
 			DisplayGold();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -69,6 +72,12 @@ namespace PlanetTerror
 		{
 			gold += gainedGold;
 			DisplayGold();
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	게이지 변화
+		public void GainPower(double power)
+		{
+			power_Progress.Value = power_Progress.Value + power;
 		}
 
 		//===============================================================================================================================================
