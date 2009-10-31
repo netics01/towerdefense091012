@@ -73,10 +73,6 @@ namespace PlanetTerror
 	//	POD
 	public class Setting
 	{
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	싱글턴 액세서
-		public static Setting Instance { get; set; }
-
 		//===============================================================================================================================================
 		//	필드
 		public const int VERSION = 5;
@@ -126,6 +122,7 @@ namespace PlanetTerror
 
 			public class Bundle
 			{
+				public double waitTime;
 				public string typeName;
 				public int count;
 				public double interval;
@@ -167,7 +164,7 @@ namespace PlanetTerror
 			}
 
 			setting.Adjust();
-			Instance = setting;
+			Game.Setting = setting;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	기본값 설정
@@ -213,6 +210,7 @@ namespace PlanetTerror
 				for( int j = 0; j < 3; ++j )
 				{
 					var b = new Wave.Bundle();
+					b.waitTime = 0.1;
 					if( j == 0 ) { b.typeName = "Enemy1"; }
 					else if( j == 1 ) { b.typeName = "Enemy2"; }
 					else { b.typeName = "Enemy3"; }
@@ -231,5 +229,18 @@ namespace PlanetTerror
 		{
 			tower.attackRangeSqr = tower.attackRange * tower.attackRange;
 		}
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//	Game
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//	귀찮다. 싱글턴 여기 다 모으자 -_-;
+	public static class Game
+	{
+		public static Setting Setting;
+		public static WorldControl World;
+		public static UIPanelControl UI;
+		public static MainWindow MainWindow;
+		public static WaveGenerator Generator;
 	}
 }

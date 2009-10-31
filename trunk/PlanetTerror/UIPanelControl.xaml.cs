@@ -50,8 +50,8 @@ namespace PlanetTerror
 		//	초기화
 		public void Initialize()
 		{
-			gold = Setting.Instance.startGold;
-			power_Progress.Maximum = Setting.Instance.powerMax;
+			gold = Game.Setting.startGold;
+			power_Progress.Maximum = Game.Setting.powerMax;
 			power_Progress.Minimum = 0;
 			power_Progress.Value = 0;
 			DisplayGold();

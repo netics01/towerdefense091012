@@ -69,7 +69,7 @@ namespace PlanetTerror
 		//	초기화
 		public void Initialize()
 		{
-			HitPoint = Setting.Instance.core.hitPoint;
+			HitPoint = Game.Setting.core.hitPoint;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	데미지를 입는다.
@@ -81,21 +81,21 @@ namespace PlanetTerror
 			{
 			case HP100_STATE:
 				if( vsm.GetStateFinished() &&
-					HitPoint <= Setting.Instance.core.hitPoint * 0.6 )
+					HitPoint <= Game.Setting.core.hitPoint * 0.6 )
 				{
 					vsm.SetState(HP60_STATE);
 				}
 				break;
 			case HP60_STATE:
 				if( vsm.GetStateFinished() &&
-					HitPoint <= Setting.Instance.core.hitPoint * 0.3 )
+					HitPoint <= Game.Setting.core.hitPoint * 0.3 )
 				{
 					vsm.SetState(HP30_STATE);
 				}
 				break;
 			case HP30_STATE:
 				if( vsm.GetStateFinished() &&
-					HitPoint <= Setting.Instance.core.hitPoint * 0.1 )
+					HitPoint <= Game.Setting.core.hitPoint * 0.1 )
 				{
 					vsm.SetState(HP10_STATE);
 				}

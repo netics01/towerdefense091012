@@ -22,17 +22,14 @@ namespace PlanetTerror
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	public partial class WorldControl : UserControl
 	{
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	싱글턴 액세서
-		public static WorldControl Instance { get; protected set; }
-
 		//===============================================================================================================================================
 		//	프로퍼티
-		public List<PathGeometry> Routes { get; protected set; }
+		public List<PathGeometry> Routes { get; protected set; }		
 
 		//===============================================================================================================================================
 		//	필드
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		WaveGenerator generator;
 		List<Enemy> enemies;
 		List<Tower> towers;
 		List<Projectile3> projectiles;
@@ -45,8 +42,10 @@ namespace PlanetTerror
 		{
 			this.InitializeComponent();
 
-			Instance = this;
+			generator = new WaveGenerator();
 			Routes = new List<PathGeometry>();
+
+			Game.Generator = generator;
 
 			enemies = new List<Enemy>();
 			towers = new List<Tower>();
@@ -72,6 +71,7 @@ namespace PlanetTerror
 		//	업데이트
 		public void Update(float delta)
 		{
+			generator.Update(delta);
 			for( int i = 0; i < projectiles.Count; ++i )
 			{
 				projectiles[i].Update(delta);
@@ -119,8 +119,8 @@ namespace PlanetTerror
 		public Projectile3 CreateProjectile(Enemy target, Point pos)
 		{
 			var p = new Projectile3(target, pos);
-			p.Damage = Setting.Instance.tower.attackRange;
-			p.Speed = Setting.Instance.proj1.speed;
+			p.Damage = Game.Setting.tower.attackRange;
+			p.Speed = Game.Setting.proj1.speed;
 
 			Canvas.SetZIndex(p, 6);
 			projectiles.Add(p);

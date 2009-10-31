@@ -91,7 +91,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void bossTest1_Button_Click(object sender, RoutedEventArgs e)
 		{
-			WorldControl.Instance.testBoss1.TestState("Boss_Move_State");
+			Game.World.testBoss1.TestState("Boss_Move_State");
 		}
 
 		//===============================================================================================================================================
@@ -100,14 +100,14 @@ namespace PlanetTerror
 		//	업데이트
 		public void Update(float delta)
 		{
-			coreHp_Text.Text = string.Format("{0:F0}", WorldControl.Instance.core.HitPoint);
+			coreHp_Text.Text = string.Format("{0:F0}", Game.World.core.HitPoint);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	적 생성
 		public void EnemyTest<T>() where T : Enemy, new()
 		{
-			WorldControl.Instance.CreateEnemy<T>(WorldControl.Instance.Routes[routeSelect]);
-			routeSelect = routeSelect.RotateInc(WorldControl.Instance.Routes.Count);
+			Game.World.CreateEnemy<T>(Game.World.Routes[routeSelect]);
+			routeSelect = routeSelect.RotateInc(Game.World.Routes.Count);
 		}
 	}
 }
