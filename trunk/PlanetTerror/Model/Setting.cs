@@ -30,11 +30,19 @@ using PlanetTerror.Util;
 //----작업----
 
 
-//자코들 클래스 풀링해야 할듯
+//돈이 없습니다. 표시해준다.
 
 
 
 
+
+//----이따가----
+//하늘 흘러가기
+//배경음악
+//효과음
+//에네미 풀링
+//폰트 배포
+//
 
 
 
@@ -57,6 +65,7 @@ namespace PlanetTerror
 		public class Tower
 		{
 			public int buildCost;
+			public int dismantleCost;
 			public double attackRange;
 			public double attackRangeSqr;
 			public double attackDamage;
@@ -130,6 +139,7 @@ namespace PlanetTerror
 			startGold = 1000;
 
 			tower.buildCost = 50;
+			tower.dismantleCost = -30;
 			tower.attackRange = 100;
 			tower.attackDamage = 10;
 			tower.attackCooldown = 1;

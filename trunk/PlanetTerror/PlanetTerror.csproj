@@ -117,7 +117,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Projectile.xaml">
+    <Page Include="Projectile3.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -190,10 +190,11 @@
       <DependentUpon>Missile.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Enemy.cs" />
+    <Compile Include="Model\Projectile.cs" />
     <Compile Include="Model\Setting.cs" />
     <Compile Include="Model\WaveGenerator.cs" />
-    <Compile Include="Projectile.xaml.cs">
-      <DependentUpon>Projectile.xaml</DependentUpon>
+    <Compile Include="Projectile3.xaml.cs">
+      <DependentUpon>Projectile3.xaml</DependentUpon>
     </Compile>
     <Compile Include="Projectile1.xaml.cs">
       <DependentUpon>Projectile1.xaml</DependentUpon>
