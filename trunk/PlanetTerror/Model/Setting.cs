@@ -22,8 +22,8 @@ using PlanetTerror.Util;
 //	Roof				5
 //	Projectile			6
 //	Tower				[10, 11]
-//	Boss				15
-//	Core				20
+//	Core				15
+//	Boss				20
 
 
 
