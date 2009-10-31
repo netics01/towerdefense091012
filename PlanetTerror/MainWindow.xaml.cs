@@ -58,6 +58,7 @@ namespace PlanetTerror
 			pump.Begin();
 
 			ui_Panel.Initialize();
+			world.Initialize();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void MainWindow_KeyDown(object sender, KeyEventArgs e)
