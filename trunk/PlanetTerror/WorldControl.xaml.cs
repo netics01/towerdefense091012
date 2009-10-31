@@ -33,7 +33,7 @@ namespace PlanetTerror
 		//===============================================================================================================================================
 		//	필드
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		List<Enemy1> enemy1s;
+		List<Enemy> enemies;
 		List<Tower> towers;
 		List<Projectile> projectiles;
 		
@@ -47,7 +47,7 @@ namespace PlanetTerror
 			Instance = this;
 			Routes = new List<PathGeometry>();
 
-			enemy1s = new List<Enemy1>();
+			enemies = new List<Enemy>();
 			towers = new List<Tower>();
 			for( int i = 0; i < LayoutRoot.Children.Count; ++i )
 			{
@@ -69,9 +69,9 @@ namespace PlanetTerror
 			{
 				projectiles[i].Update(delta);
 			}
-			for( int i = 0; i < enemy1s.Count; ++i )
+			for( int i = 0; i < enemies.Count; ++i )
 			{
-				enemy1s[i].Update(delta);
+				enemies[i].Update(delta);
 			}
 			for( int i = 0; i < towers.Count; ++i  )
 			{
@@ -86,22 +86,23 @@ namespace PlanetTerror
 					projectiles.RemoveAt(i);
 				}
 			}
-			for( int i = 0; i < enemy1s.Count; ++i )
+			for( int i = 0; i < enemies.Count; ++i )
 			{
-				if( enemy1s[i].IsDeleted )
+				if( enemies[i].IsDeleted )
 				{
-					LayoutRoot.Children.Remove(enemy1s[i]);
-					enemy1s.RemoveAt(i);
+					LayoutRoot.Children.Remove(enemies[i]);
+					enemies.RemoveAt(i);
 				}
 			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	적 생성
-		public void CreateEnemy1(PathGeometry path)
+		public void CreateEnemy<T>(PathGeometry path) where T : Enemy, new()
 		{
-			var enemy = new Enemy1(path);
+			var enemy = new T();
+			enemy.Initialize(path);
 			Canvas.SetZIndex(enemy, 0);
-			enemy1s.Add(enemy);
+			enemies.Add(enemy);
 			LayoutRoot.Children.Add(enemy);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -116,18 +117,18 @@ namespace PlanetTerror
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	타겟 검색
-		public Enemy1 FindTarget(Point pos, double rangeSqr)
+		public Enemy FindTarget(Point pos, double rangeSqr)
 		{
-			Enemy1 target = null;
+			Enemy target = null;
 			double minDist = 100000000.0;
-			for( int i = 0; i < enemy1s.Count; ++i )
+			for( int i = 0; i < enemies.Count; ++i )
 			{
-				if( enemy1s[i].IsInvalid ) { continue; }
-				double distSqr = enemy1s[i].Pos.DistanceSqaure(pos);
+				if( enemies[i].IsInvalid ) { continue; }
+				double distSqr = enemies[i].Pos.DistanceSqaure(pos);
 				if( distSqr < rangeSqr &&
 					distSqr < minDist )
 				{
-					target = enemy1s[i];
+					target = enemies[i];
 					minDist = distSqr;
 				}
 			}

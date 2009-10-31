@@ -69,7 +69,15 @@ namespace PlanetTerror
 			}
 			if( e.Key == Key.F1 )
 			{
-				debug_Panel.EnemyTest();
+				debug_Panel.enemy1_Button_Click(null, null);
+			}
+			if( e.Key == Key.F2 )
+			{
+				debug_Panel.enemy2_Button_Click(null, null);
+			}
+			if( e.Key == Key.F3 )
+			{
+				debug_Panel.enemy3_Button_Click(null, null);
 			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------

@@ -44,7 +44,6 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void test1_Button_Click(object sender, RoutedEventArgs e)
 		{
-			EnemyTest();
 			//MainWindow.Instance.ToggleDebugPanel();			
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -55,17 +54,17 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void enemy1_Button_Click(object sender, RoutedEventArgs e)
 		{
-			EnemyTest();
+			EnemyTest<Enemy1>();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void enemy2_Button_Click(object sender, RoutedEventArgs e)
 		{
-			
+			EnemyTest<Enemy2>();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void enemy3_Button_Click(object sender, RoutedEventArgs e)
 		{
-
+			EnemyTest<Enemy3>();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void bossTest1_Button_Click(object sender, RoutedEventArgs e)
@@ -77,9 +76,9 @@ namespace PlanetTerror
 		//	공용
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	적 생성
-		public void EnemyTest()
+		public void EnemyTest<T>() where T : Enemy, new()
 		{
-			WorldControl.Instance.CreateEnemy1(WorldControl.Instance.Routes[routeSelect]);
+			WorldControl.Instance.CreateEnemy<T>(WorldControl.Instance.Routes[routeSelect]);
 			routeSelect = routeSelect.RotateInc(WorldControl.Instance.Routes.Count);
 		}
 	}
