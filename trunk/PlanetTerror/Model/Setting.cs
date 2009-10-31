@@ -31,6 +31,7 @@ using PlanetTerror.Util;
 //----작업----
 
 
+
 //돈이 없습니다. 표시해준다.
 //타워 업그레이드
 //합체
@@ -121,7 +122,15 @@ namespace PlanetTerror
 
 		public class Wave
 		{
-			public double startWaitTime;
+			public double waitTime;
+
+			public class Bundle
+			{
+				public string typeName;
+				public int count;
+				public double interval;
+			}
+			public List<Bundle> bundles;			
 		}
 		public List<Wave> waves;
 
@@ -195,6 +204,26 @@ namespace PlanetTerror
 			enemy2.damage = 5;
 			enemy3.gold = 0;
 			enemy3.powerUp = 2;
+
+			for( int i = 0; i < 3; ++i )
+			{
+				var wave = new Wave();
+				wave.waitTime = 5.0;
+				wave.bundles = new List<Wave.Bundle>();
+				for( int j = 0; j < 3; ++j )
+				{
+					var b = new Wave.Bundle();
+					if( j == 0 ) { b.typeName = "Enemy1"; }
+					else if( j == 1 ) { b.typeName = "Enemy2"; }
+					else { b.typeName = "Enemy3"; }
+					
+					b.count = 5;
+					b.interval = 1.5;
+					wave.bundles.Add(b);
+				}
+
+				waves.Add(wave);
+			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	값 변환
