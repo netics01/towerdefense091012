@@ -56,7 +56,7 @@ namespace PlanetTerror
 		{
 			WPFUtil.SetImageScaleMode(LayoutRoot, BitmapScalingMode.Linear);
 
-			var story = Resources.FindStoryboard("Idle_Storyboard");
+			var story = Resources.FindStoryboard("Ring100_Storyboard");
 			story.RepeatBehavior = RepeatBehavior.Forever;
 			story.Begin();
 
