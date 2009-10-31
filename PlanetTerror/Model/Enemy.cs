@@ -170,6 +170,11 @@ namespace PlanetTerror
 			path.GetPointAtFractionLength(routeTime, out pos, out tangent);
 			Pos = pos;
 			this.SetCenter(pos);
+
+
+			DebugPanelControl.Log(string.Format("{0}, {1}", pos.X, pos.Y));
+
+
 		}
 	}
 }
