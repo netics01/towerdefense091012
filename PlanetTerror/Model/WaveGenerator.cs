@@ -50,7 +50,7 @@ namespace PlanetTerror
 		{
 			if( curWaveIndex >= Game.Setting.waves.Count ) { return; }
 
-			if( Time)
+//			if( Time)
 			var wave = Game.Setting.waves[curWaveIndex];
 
 
