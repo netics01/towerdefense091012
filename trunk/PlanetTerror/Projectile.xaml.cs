@@ -31,13 +31,13 @@ namespace PlanetTerror
 
 		//===============================================================================================================================================
 		//	필드
-		Enemy1 target;
+		Enemy target;
 		Point targetLastPos;
 		Point pos;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
-		public Projectile(Enemy1 target, Point pos)
+		public Projectile(Enemy target, Point pos)
 		{
 			this.InitializeComponent();
 
