@@ -80,24 +80,2170 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="50"/>
 				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="360"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="r2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="r2_ring">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="3.928"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="r2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="r2_ring">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="3.928"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="r2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="r2_ring">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="102.5"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="r2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="r2_ring">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-74"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="r2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="r2_ring">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="56.772"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="r2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="r2_ring">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="50"/>
 				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="360"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="Ring100_Storyboard">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="r1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="3.928"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="r1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="3.928"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="r1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="102.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="r1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-74"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="r1" Storyboard.TargetProperty="(FrameworkElement.Height)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="45"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="r1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="720"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.865"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-160.208"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-140.834"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.341"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rs1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="3.928"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="rs1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="3.928"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rs1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="102.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="rs1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-74"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="rs1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="rs1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="720"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.Opacity)" Duration="00:00:00.0010000">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rs2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="3.928"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="rs2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="3.928"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rs2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="102.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="rs2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-74"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="rs2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="60.595"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="rs2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="50"/>
+				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="360"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="r2_ring">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="3.928"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="r2_ring">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="3.928"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="r2_ring">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="102.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="r2_ring">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-74"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="r2_ring">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="56.772"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="r2_ring" Duration="00:00:00.0010000">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="50"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="blink1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="139.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="blink1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="-93.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="blink1" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1" KeySpline="0,1,1,1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:09.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:11.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:13.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:15.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:17.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:19.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:21.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:23.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:25.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:27.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:29.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:31.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:33.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:35.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:37.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:39.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:41.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:43.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:45.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:47.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:49.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:51.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:53.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:55.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:57.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:59.8000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="blink2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="139.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="blink2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="-93.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="blink2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:09.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:11.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:13.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:15.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:17.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:19.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:21.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:23.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:25.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:27.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:29.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:31.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:33.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:35.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:37.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:39.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:41.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:43.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:45.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:47.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:49.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:51.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:53.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:55.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:57.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:59.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="blink2_Copy">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="139.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="blink2_Copy">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="-93.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="blink2_Copy">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:09.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:11.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:13.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:15.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:17.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:19.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:21.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:23.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:25.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:27.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:29.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:31.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:33.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:35.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:37.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:39.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:41.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:43.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:45.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:47.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:49.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:51.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:53.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:55.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:57.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:59.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="blink_r1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="139.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="blink_r1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="-93.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="blink_r1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:09.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:11.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:13.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:15.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:17.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:19.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:21.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:23.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:25.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:27.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:29.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:31.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:33.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:35.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:37.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:39.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:41.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:43.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:45.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:47.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:49.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:51.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:53.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:55.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:57.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:59.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="r2" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="00:00:00.0010000">
+				<SplinePointKeyFrame KeyTime="00:00:00" Value="2.307,-0.816"/>
+			</PointAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="r2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:01:00.2000000" Value="360"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="blink_r2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="139.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="blink_r2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="-93.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="blink_r2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:09.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:11.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:13.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:15.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:17.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:19.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:21.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:23.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:25.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:27.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:29.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:31.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:33.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:35.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:37.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:39.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:41.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:43.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:45.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:47.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:49.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:51.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:53.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:55.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:57.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:59.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="blink_r2_Copy">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="139.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="blink_r2_Copy">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="-93.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="blink_r2_Copy">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:09.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:11.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:13.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:15.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:17.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:19.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:21.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:23.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:25.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:27.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:29.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:31.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:33.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:35.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:37.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:39.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:41.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:43.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:45.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:47.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:49.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:51.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:53.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:55.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:57.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:59.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="blink_r2_Copy1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="139.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="blink_r2_Copy1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="-93.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="blink_r2_Copy1">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:09.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:11.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:13.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:15.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:17.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:19.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:21.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:23.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:25.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:27.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:29.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:31.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:33.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:35.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:37.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:39.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:41.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:43.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:45.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:47.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:49.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:51.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:53.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:55.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:57.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:59.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="blink_r2_Copy2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="139.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="139.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="blink_r2_Copy2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="-93.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="-93.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="blink_r2_Copy2">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:09.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:11.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:12.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:13.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:14.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:15.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:16.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:17.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:18.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:19.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:20.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:21.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:22.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:23.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:24.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:25.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:26.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:27.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:28.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:29.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:30.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:31.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:32.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:33.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:34.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:35.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:36.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:37.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:38.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:39.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:40.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:41.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:42.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:43.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:44.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:45.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:46.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:47.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:48.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:49.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:50.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:51.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:52.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:53.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:54.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:55.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:56.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:57.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:58.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:59.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roop1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.667"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roop1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.333"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="roop1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:01:00" Value="-1440"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roop" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.702"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roop" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-25.405"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roop" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.167"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="glass" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-51.302"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="glass" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-250.72"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roop" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.981"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="glass" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.981"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="glass" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.981"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 	</UserControl.Resources>
@@ -194,7 +2340,38 @@
 				<VisualState x:Name="Core_Attack_State"/>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Canvas x:Name="role" Width="45" Height="45" Canvas.Left="-40" Canvas.Top="143" RenderTransformOrigin="0.5,0.5">
+		<Image Width="1024" Height="720" Canvas.Left="-422" Canvas.Top="-485.5" Source="Resources/Field/backgroundImage.png" Stretch="Fill"/>
+		<Ellipse x:Name="blink2_Copy" Fill="#FFC9C117" Stroke="Black" Width="4" Height="4" RenderTransformOrigin="0.5,0.5" Canvas.Left="-96.168" Canvas.Top="247.168">
+			<Ellipse.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Ellipse.RenderTransform>
+		</Ellipse>
+		<Ellipse x:Name="blink2" Fill="#FFC9C117" Stroke="Black" Width="4" Height="4" RenderTransformOrigin="0.5,0.5" Canvas.Left="-3.168" Canvas.Top="239.501">
+			<Ellipse.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Ellipse.RenderTransform>
+		</Ellipse>
+		<Ellipse x:Name="blink1" Fill="#FFC9C117" Stroke="Black" Width="4" Height="4" RenderTransformOrigin="0.5,0.5" Canvas.Left="-116.167" Canvas.Top="234.001">
+			<Ellipse.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Ellipse.RenderTransform>
+		</Ellipse>
+		<Canvas x:Name="role" Width="45" Height="45" Canvas.Left="66" Canvas.Top="285" RenderTransformOrigin="0.5,0.5">
 			<Canvas.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -203,7 +2380,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Canvas.RenderTransform>
-			<Image x:Name="rs2" Width="58.1" Height="50" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Source="Resources\Tower\TowerA0_parts1.png" Canvas.Left="-5.115" Canvas.Top="67.275" Opacity="0.6">
+			<Image x:Name="rs2" Width="58.1" Height="50" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Source="Resources/Tower/TowerA0_parts2.png" Canvas.Left="-5.115" Canvas.Top="67.275" Opacity="0.6">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -213,7 +2390,7 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Image x:Name="rs1" Width="50" Height="45" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Source="Resources\Tower\TowerA0_parts1.png" Canvas.Left="-1.065" Canvas.Top="48.68" Opacity="0.6">
+			<Image x:Name="rs1" Width="50" Height="45" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Canvas.Left="-1.065" Canvas.Top="48.68" Opacity="0.6" Source="Resources/Tower/TowerA0_parts2.png">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -223,16 +2400,76 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Image x:Name="r2" Width="55.936" Height="45" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Source="Resources\Tower\TowerA0_parts1.png" Canvas.Left="-4.87" Canvas.Top="20.317">
-				<Image.RenderTransform>
+			<Canvas x:Name="r2" Width="55.936" Height="56.772" Canvas.Left="-4.87" Canvas.Top="20.317" RenderTransformOrigin="0.5,0.5">
+				<Canvas.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
 						<RotateTransform/>
 						<TranslateTransform/>
 					</TransformGroup>
-				</Image.RenderTransform>
-			</Image>
+				</Canvas.RenderTransform>
+				<Image x:Name="r2_ring" Width="55.936" Height="56.772" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Source="Resources\Tower\TowerA0_parts1.png">
+					<Image.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Image.RenderTransform>
+				</Image>
+				<Ellipse x:Name="blink_r1" Fill="#FFC9C117" Stroke="Black" Width="4" Height="4" RenderTransformOrigin="0.5,0.5" Canvas.Left="-103.128" Canvas.Top="39.846">
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse x:Name="blink_r2" Fill="#FFC9C117" Stroke="Black" Width="4" Height="4" RenderTransformOrigin="0.5,0.5" Canvas.Left="-15.134" Canvas.Top="138.69">
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse x:Name="blink_r2_Copy" Fill="#FFC9C117" Stroke="Black" Width="4" Height="4" RenderTransformOrigin="0.5,0.5" Canvas.Left="77.831" Canvas.Top="8.44">
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse x:Name="blink_r2_Copy1" Fill="#FFC9C117" Stroke="Black" Width="4" Height="4" RenderTransformOrigin="0.5,0.5" Canvas.Left="-18.117" Canvas.Top="-47.052">
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse x:Name="blink_r2_Copy2" Fill="#FFC9C117" Stroke="Black" Width="4" Height="4" RenderTransformOrigin="0.5,0.5" Canvas.Left="-57.679" Canvas.Top="-32.603">
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+			</Canvas>
 			<Image x:Name="r1" Width="45" Height="45" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Source="Resources/Tower/TowerA0_parts1.png">
 				<Image.RenderTransform>
 					<TransformGroup>
@@ -245,6 +2482,36 @@
 			</Image>
 		</Canvas>
 		<Image x:Name="image" Width="171" Height="126" Source="Resources/Field/baseImage.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
+		<Canvas x:Name="roop" Width="159" Height="159" Canvas.Left="3.997" Canvas.Top="0.29" RenderTransformOrigin="0.5,0.5">
+			<Canvas.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Canvas.RenderTransform>
+			<Image x:Name="roop1" Width="159" Height="159" RenderTransformOrigin="0.5,0.5" Source="Resources/Field/baseImage_c1.png" Stretch="Fill">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+		</Canvas>
+		<Image x:Name="glass" Width="118" Height="87" Canvas.Left="75.333" Canvas.Top="260.667" Source="Resources/Field/baseImage_c2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
