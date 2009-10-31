@@ -37,8 +37,7 @@ namespace PlanetTerror
 			InitializeComponent();
 
 			Instance = this;
-
-			SettingXml.Instance = new SettingXml();
+			Setting.Initialize();
 
 			pump = new UpdatePump();
 			pump.Update += new UpdatePump.UpdateHandler(pump_Update);

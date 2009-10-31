@@ -74,7 +74,7 @@ namespace PlanetTerror.Util
 		public static void Serialize<T>(string filePath, T t)
 		{
 			var serializer = new XmlSerializer(typeof(T));
-			var stream = File.Open(filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+			var stream = File.Open(filePath, FileMode.Create, FileAccess.ReadWrite);
 			serializer.Serialize(stream, t);
 			stream.Close();
 		}
@@ -83,7 +83,7 @@ namespace PlanetTerror.Util
 		public static T Deserialize<T>(string filePath)
 		{
 			var serializer = new XmlSerializer(typeof(T));
-			var stream = File.Open(filePath, FileMode.OpenOrCreate, FileAccess.Read);
+			var stream = File.Open(filePath, FileMode.Open, FileAccess.Read);
 			T result = (T)serializer.Deserialize(stream);
 			stream.Close();
 			return result;

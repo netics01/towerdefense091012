@@ -45,7 +45,7 @@ namespace PlanetTerror
 
 			IsDeleted = false;
 			Pos = new Point(-1000, -1000);
-			HitPoint = SettingXml.Instance.enemy1_HitPoint;
+			HitPoint = Setting.Instance.enemy1.hitPoint;
 			this.path = path;
 			acc = 0;
 			
@@ -59,7 +59,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Enemy1_Loaded(object sender, RoutedEventArgs e)
 		{
-			WPFUtil.SetHighPerformanceImageMode(LayoutRoot);
+			WPFUtil.SetImageScaleMode(LayoutRoot, BitmapScalingMode.Linear);
 
 			var story = Resources["Move_Storyboard"] as Storyboard;
 			story.Begin();
@@ -83,7 +83,7 @@ namespace PlanetTerror
 		{
 			if( acc >= 1.0 || IsDestroyed ) { return; }
 
- 			acc += delta / SettingXml.Instance.enemy1_RouteTime;
+ 			acc += delta / Setting.Instance.enemy1.routeTime;
 			if( acc >= 1.0 )
 			{
 				this.SetState("Enemy_Boom_State", true);

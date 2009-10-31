@@ -37,7 +37,7 @@ namespace PlanetTerror
 		//	핸들러
 		void Boss1_Loaded(object sender, RoutedEventArgs e)
 		{
-			WPFUtil.SetHighPerformanceImageMode(LayoutRoot);
+			WPFUtil.SetImageScaleMode(LayoutRoot, BitmapScalingMode.Linear);
 			//VisualStateManager.GoToState(this, "MoveState", false);			
 		}
 
