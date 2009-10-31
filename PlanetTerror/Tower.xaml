@@ -82,7 +82,7 @@
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
 						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="top" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="spot" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
@@ -90,6 +90,12 @@
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="notYetBuild_Canvas" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="top" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="25.641"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="top" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
+						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Build_Built_State">
@@ -541,7 +547,7 @@
 				</Rectangle.RenderTransform>
 			</Rectangle>
 		</Canvas>
-		<Button x:Name="Menu_Build_Button" Width="110" Height="20.75" Content="타워 짓기  -50" Canvas.Left="44.75" Canvas.Top="43.25" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FFDEB64B" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
+		<Button x:Name="Menu_Build_Button" Width="107.25" Height="19.021" Content="타워 짓기  -50" Canvas.Left="44.75" Canvas.Top="43.25" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FFDEB64B" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
 			<Button.Resources>
 				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 					<Setter Property="Template">
@@ -565,7 +571,7 @@
 				</TransformGroup>
 			</Button.RenderTransform>
 		</Button>
-		<Button x:Name="Menu_Upgrade_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="업그레이드  -150" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="44.75" Canvas.Top="43.25" FontFamily="아리따B" Cursor="Hand" Visibility="Collapsed">
+		<Button x:Name="Menu_Upgrade_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="107.25" Height="19.021" Content="업그레이드  -150" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="44.75" Canvas.Top="43.25" FontFamily="아리따B" Cursor="Hand" Visibility="Collapsed">
 			<Button.Resources>
 				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 					<Setter Property="Template">
@@ -589,7 +595,7 @@
 				</TransformGroup>
 			</Button.RenderTransform>
 		</Button>
-		<Button x:Name="Menu_UpgradeBIG_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="메가톤 타워  -600" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="44.75" Canvas.Top="43.25" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
+		<Button x:Name="Menu_UpgradeBIG_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="107.25" Height="19.021" Content="메가톤 타워  -600" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="44.75" Canvas.Top="43.25" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
 			<Button.Resources>
 				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 					<Setter Property="Template">
@@ -616,7 +622,7 @@
 				</TransformGroup>
 			</Button.RenderTransform>
 		</Button>
-		<Button x:Name="Menu_Dismantle_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="채굴소 복원  +50" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="44.75" Canvas.Top="62.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource menu_ButtonDismantle}" Visibility="Collapsed">
+		<Button x:Name="Menu_Dismantle_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="107.25" Height="19.021" Content="채굴소 복원  +50" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="44.75" Canvas.Top="60.896" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource menu_ButtonDismantle}" Visibility="Collapsed">
 			<Button.Resources>
 				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 					<Setter Property="Template">
@@ -843,6 +849,6 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform><Run Text="-"/><Run Text=" 5"/></TextBlock>
 		</Canvas>
-		<Canvas x:Name="notYetBuild_Canvas" Width="64" Height="56" Canvas.Left="-8" Canvas.Top="24" Background="#00000000" Visibility="Collapsed"/>
+		<Canvas x:Name="notYetBuild_Canvas" Width="48" Height="56" Canvas.Top="24" Background="#00000000"/>
 	</Canvas>
 </UserControl>
