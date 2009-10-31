@@ -100,11 +100,6 @@
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 	</UserControl.Resources>
-	<UserControl.Triggers>
-		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
-			<BeginStoryboard x:Name="Idle_Storyboard_BeginStoryboard" Storyboard="{StaticResource Idle_Storyboard}"/>
-		</EventTrigger>
-	</UserControl.Triggers>
 
 	<Canvas x:Name="LayoutRoot" Cursor="Hand">
 		<VisualStateManager.VisualStateGroups>
