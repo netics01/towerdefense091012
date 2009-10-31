@@ -81,6 +81,10 @@ namespace PlanetTerror
 			{
 				debug_Panel.enemy3_Button_Click(null, null);
 			}
+			if( e.Key == Key.F4 )
+			{
+				debug_Panel.wave_Button_Click(null, null);
+			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void pump_Update(float delta)

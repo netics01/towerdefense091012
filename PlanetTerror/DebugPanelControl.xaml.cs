@@ -48,6 +48,7 @@ namespace PlanetTerror
 			enemy1_Button.Click += new RoutedEventHandler(enemy1_Button_Click);
 			enemy2_Button.Click += new RoutedEventHandler(enemy2_Button_Click);
 			enemy3_Button.Click += new RoutedEventHandler(enemy3_Button_Click);
+			wave_Button.Click += new RoutedEventHandler(wave_Button_Click);
 			bossTest1_Button.Click += new RoutedEventHandler(bossTest1_Button_Click);
 		}
 
@@ -77,6 +78,11 @@ namespace PlanetTerror
 		public void enemy3_Button_Click(object sender, RoutedEventArgs e)
 		{
 			EnemyTest<Enemy3>();
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		public void wave_Button_Click(object sender, RoutedEventArgs e)
+		{
+			
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void bossTest1_Button_Click(object sender, RoutedEventArgs e)
