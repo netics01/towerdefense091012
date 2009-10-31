@@ -545,7 +545,47 @@
 				</Rectangle.RenderTransform>
 			</Rectangle>
 		</Canvas>
-		<Canvas x:Name="menu_Canvas" Width="16" Height="36" Canvas.Top="53" Background="#00000000" Canvas.Left="39">
+		<Canvas x:Name="notYetBuild_Canvas" Width="48" Height="32" Canvas.Top="24" Background="#00000000"/>
+		<Canvas x:Name="Menu_Num" Width="32" Height="16" Canvas.Left="9" Canvas.Top="37">
+			<Rectangle x:Name="UP01" Fill="#FFFFDA5E" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-23" Canvas.Top="-31" Visibility="Collapsed"/>
+			<Rectangle x:Name="UP02" Fill="#FFFF7F28" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-15" Canvas.Top="-31" Visibility="Collapsed"/>
+			<Rectangle x:Name="UP03" Fill="Red" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-7" Canvas.Top="-31" Visibility="Collapsed"/>
+			<TextBlock x:Name="_5" Width="32.75" Height="16" Visibility="Collapsed" Foreground="#FFF2C346" Text="+ 5" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+			<TextBlock x:Name="_10" Width="32.75" Height="16" Foreground="#FFF2C346" TextWrapping="Wrap" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform><Run Text="+ "/><Run Text="10"/></TextBlock>
+			<TextBlock x:Name="_15" Width="32.75" Height="16" Foreground="#FFF2C346" TextWrapping="Wrap" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform><Run Text="+ "/><Run Text="1"/><Run Text="5"/></TextBlock>
+			<TextBlock x:Name="__5" Width="32.75" Height="16" Foreground="#FFC50B0B" TextWrapping="Wrap" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform><Run Text="-"/><Run Text=" 5"/></TextBlock>
+		</Canvas>
+		<Canvas x:Name="menu_Canvas" Width="48" Height="36" Canvas.Top="53" Background="#00000000">
 			<Button x:Name="Menu_Build_Button" Width="80" Height="14" Content="타워 짓기  -50" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FFDEB64B" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
@@ -1009,45 +1049,5 @@
 				</Button.RenderTransform>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="Menu_Num" Width="32" Height="16" Canvas.Left="23" Canvas.Top="35">
-			<Rectangle x:Name="UP01" Fill="#FFFFDA5E" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-23" Canvas.Top="-31" Visibility="Collapsed"/>
-			<Rectangle x:Name="UP02" Fill="#FFFF7F28" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-15" Canvas.Top="-31" Visibility="Collapsed"/>
-			<Rectangle x:Name="UP03" Fill="Red" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-7" Canvas.Top="-31" Visibility="Collapsed"/>
-			<TextBlock x:Name="_5" Width="32.75" Height="16" Visibility="Collapsed" Foreground="#FFF2C346" Text="+ 5" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
-				<TextBlock.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</TextBlock.RenderTransform>
-			</TextBlock>
-			<TextBlock x:Name="_10" Width="32.75" Height="16" Foreground="#FFF2C346" TextWrapping="Wrap" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</TextBlock.RenderTransform><Run Text="+ "/><Run Text="10"/></TextBlock>
-			<TextBlock x:Name="_15" Width="32.75" Height="16" Foreground="#FFF2C346" TextWrapping="Wrap" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</TextBlock.RenderTransform><Run Text="+ "/><Run Text="1"/><Run Text="5"/></TextBlock>
-			<TextBlock x:Name="__5" Width="32.75" Height="16" Foreground="#FFC50B0B" TextWrapping="Wrap" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</TextBlock.RenderTransform><Run Text="-"/><Run Text=" 5"/></TextBlock>
-		</Canvas>
-		<Canvas x:Name="notYetBuild_Canvas" Width="48" Height="32" Canvas.Top="24" Background="#00000000"/>
 	</Canvas>
 </UserControl>
