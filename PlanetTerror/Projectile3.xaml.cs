@@ -55,7 +55,7 @@ namespace PlanetTerror
 			vsm = new VSM(this, LayoutRoot);
 
 			Loaded += new RoutedEventHandler(Projectile_Loaded);
-			Projectile_Boom_State.Storyboard.Completed += new EventHandler(BoomState_Complete);
+			//Projectile_Boom_State.Storyboard.Completed += new EventHandler(BoomState_Complete);
 		}
 
 		//===============================================================================================================================================
