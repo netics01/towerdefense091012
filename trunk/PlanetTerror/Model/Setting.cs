@@ -75,7 +75,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 5;
+		public const int VERSION = 7;
 
 		public class Tower
 		{
@@ -124,6 +124,7 @@ namespace PlanetTerror
 			{
 				public double waitTime;
 				public string typeName;
+				public int pathIndex;
 				public int count;
 				public double interval;
 			}
@@ -214,7 +215,8 @@ namespace PlanetTerror
 					if( j == 0 ) { b.typeName = "Enemy1"; }
 					else if( j == 1 ) { b.typeName = "Enemy2"; }
 					else { b.typeName = "Enemy3"; }
-					
+
+					b.pathIndex = RandomH.Next(3);
 					b.count = 5;
 					b.interval = 1.5;
 					wave.bundles.Add(b);

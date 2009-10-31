@@ -27,19 +27,24 @@ namespace PlanetTerror
 		//	프로퍼티
 		public double WaveTimeLeft { get; set; }
 		public double BundleTimeLeft { get; set; }
+		public double SeqTimeLeft { get; set; }
 
 		//===============================================================================================================================================
 		//	필드
+		enum EState { Wave, Bundle, Seq, WaveOver }
+		EState state;
 		int curWaveIndex;
+		Setting.Wave curWave;
 		int curBundleIndex;
+		Setting.Wave.Bundle curBundle;
 		int curSeqIndex;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
 		public WaveGenerator()
 		{
-			curWaveIndex = 0;
-			PrepareWave();			
+			curWaveIndex = -1;
+			PrepareNextWave();
 		}
 
 		//===============================================================================================================================================
@@ -48,27 +53,108 @@ namespace PlanetTerror
 		//	업데이트
 		public void Update(float delta)
 		{
-			if( curWaveIndex >= Game.Setting.waves.Count ) { return; }
+			while( true )
+			{
+				switch( state )
+				{
+				case EState.Wave:
+					WaveTimeLeft -= delta;
+					if( WaveTimeLeft < 0 )
+					{
+						delta = (float)-WaveTimeLeft;
+						WaveTimeLeft = 0;
 
-//			if( Time)
-			var wave = Game.Setting.waves[curWaveIndex];
+						Debug.Assert( curWave.bundles.Count > 0 );
+						state = EState.Bundle;
+						curBundleIndex = 0;
+						curBundle = curWave.bundles[curBundleIndex];
+						BundleTimeLeft = curBundle.waitTime;
+					}
+					else { return; }
+					break;
+				case EState.Bundle:
+					BundleTimeLeft -= delta;
+					if( BundleTimeLeft < 0 )
+					{
+						delta = (float)-BundleTimeLeft;
+						BundleTimeLeft = 0;
 
+						Debug.Assert(curBundle.count > 0);
+						state = EState.Seq;
+						curSeqIndex = 0;
+						SeqTimeLeft = curBundle.interval;
+						Create();
+					}
+					else { return; }
+					break;
+				case EState.Seq:
+					SeqTimeLeft -= delta;
+					if( SeqTimeLeft < 0 )
+					{
+						delta = (float)-SeqTimeLeft;
+						SeqTimeLeft = 0;
 
-
-			
+						curSeqIndex++;
+						if( curSeqIndex < curBundle.count )
+						{
+							SeqTimeLeft = curBundle.interval;
+							Create();
+						}
+						else { PrepareNextWave(); }
+					}
+					else { return; }
+					break;
+				case EState.WaveOver:
+					return;
+				}
+			}
 		}
 
 		//===============================================================================================================================================
 		//	전용
-		void PrepareWave()
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	웨이브 준비
+		void PrepareNextWave()
 		{
-			if( curWaveIndex >= Game.Setting.waves.Count ) { return; }
+			curWaveIndex++;
 
-			curBundleIndex = 0;
-			curSeqIndex = 0;
-			
-			var wave = Game.Setting.waves[curWaveIndex];
-			WaveTimeLeft = wave.waitTime;
+			if( curWaveIndex >= Game.Setting.waves.Count)
+			{
+				state = EState.WaveOver;
+				return;
+			}
+
+			state = EState.Wave;
+			curWave = Game.Setting.waves[curWaveIndex];
+			WaveTimeLeft = curWave.waitTime;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	번들 준비
+// 		private void PrepareNextBundle()
+// 		{
+// 			curBundleIndex++;
+// 			var wave = Game.Setting.waves[curWaveIndex];
+// 			Debug.Assert( wave.bundles.Count != 0 );
+// 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	생성
+		private void Create()
+		{
+			Debug.Assert( curBundle != null );
+			var pathIndex = curBundle.pathIndex < Game.World.Routes.Count ? curBundle.pathIndex : 0;
+			var path = Game.World.Routes[pathIndex];
+			switch( curBundle.typeName )
+			{
+			case "Enemy1":
+				Game.World.CreateEnemy<Enemy1>(path);
+				break;
+			case "Enemy2":
+				Game.World.CreateEnemy<Enemy2>(path);
+				break;
+			case "Enemy3":
+				Game.World.CreateEnemy<Enemy3>(path);
+				break;
+			}
 		}
 	}
 }
