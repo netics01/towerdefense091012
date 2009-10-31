@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Media.Animation;
 
 using PlanetTerror.Util;
 
@@ -22,10 +23,21 @@ namespace PlanetTerror
 	public partial class Tower : UserControl
 	{
 		//===============================================================================================================================================
+		//	상수
+		const string BUILD_GROUP = "Build_StateGroup";
+		const string NOTYETBUILT_STATE = "Build_NotYetBuilt_State";
+		const string BUILT_STATE = "Build_Built_State";
+		const string DISMANTLE_STATE = "Build_Dismantle_State";
+		const string MENU_GROUP = "Menu_StateGroup";
+		const string MENU_NOMENU_STATE = "Menu_NoMenu_State";
+		const string MENU_BUILD_STATE = "Menu_Build_State";
+
+		//===============================================================================================================================================
 		//	필드
 		Enemy target;
 		Point towerCenter;
 		double cooldownTime;
+		VSM vsm;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -33,31 +45,61 @@ namespace PlanetTerror
 		{
 			this.InitializeComponent();
 
+			vsm = new VSM(this, LayoutRoot);
+			vsm.SetDefaultGroup(BUILD_GROUP);
+
+			var idleStory = Resources.FindStoryboard("Idle_Storyboard");
+			idleStory.RepeatBehavior = RepeatBehavior.Forever;
+
 			Loaded += new RoutedEventHandler(Tower_Loaded);
 			MouseEnter += new MouseEventHandler(Tower_MouseEnter);
 			MouseLeave += new MouseEventHandler(Tower_MouseLeave);
+			Menu_Build_Button.MouseLeave +=new MouseEventHandler(Menu_Build_Button_MouseLeave);
+			Menu_Upgrade_Button.MouseLeave +=new MouseEventHandler(Menu_Upgrade_Button_MouseLeave);
+			Menu_UpgradeBIG_Button.MouseLeave +=new MouseEventHandler(Menu_UpgradeBIG_Button_MouseLeave);
+			Menu_Dismantle_Button.MouseLeave +=new MouseEventHandler(Menu_Dismantle_Button_MouseLeave);
 		}
-
 		//===============================================================================================================================================
 		//	핸들러
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Tower_Loaded(object sender, RoutedEventArgs e)
 		{
 			WPFUtil.SetImageScaleMode(LayoutRoot, BitmapScalingMode.Linear);
-			//this.SetState("Build_NotYetBuilt_State", true);
-			this.SetState("Build_Built_State", true);
+
+			vsm.SetState(NOTYETBUILT_STATE);
 
 			towerCenter = this.GetCenter();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Tower_MouseEnter(object sender, MouseEventArgs e)
 		{
-			this.SetState("Menu_Build_State", true);
+//			this.SetState("Menu_Build_State", true);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Tower_MouseLeave(object sender, MouseEventArgs e)
 		{
-			this.SetState("Menu_NoMenu_State", true);
+// 			vsm.SetState()
+// 			this.SetState("Menu_NoMenu_State", true);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void Menu_Build_Button_MouseLeave(object sender, MouseEventArgs e)
+		{
+			Tower_MouseLeave(sender, e);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void Menu_Upgrade_Button_MouseLeave(object sender, MouseEventArgs e)
+		{
+			Tower_MouseLeave(sender, e);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void Menu_UpgradeBIG_Button_MouseLeave(object sender, MouseEventArgs e)
+		{
+			Tower_MouseLeave(sender, e);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void Menu_Dismantle_Button_MouseLeave(object sender, MouseEventArgs e)
+		{
+			Tower_MouseLeave(sender, e);
 		}
 
 		//===============================================================================================================================================
@@ -66,6 +108,7 @@ namespace PlanetTerror
 		//	업데이트
 		public void Update(float delta)
 		{
+			return;
 			if( cooldownTime > 0 )
 			{
 				cooldownTime -= delta;
