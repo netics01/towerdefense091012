@@ -133,8 +133,8 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Build_Button_Click(object sender, RoutedEventArgs e)
 		{
-			int gold = Setting.Instance.tower.buildCost;
-			if( !MainWindow.Instance.ui_Panel.SpendGold(gold) )
+			int gold = Game.Setting.tower.buildCost;
+			if( !Game.UI.SpendGold(gold) )
 			{
 				return;
 			}
@@ -154,8 +154,8 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Dismantle_Button_Click(object sender, RoutedEventArgs e)
 		{
-			int gold = Setting.Instance.tower.dismantleCost;
-			if( !MainWindow.Instance.ui_Panel.SpendGold(gold) )
+			int gold = Game.Setting.tower.dismantleCost;
+			if( !Game.UI.SpendGold(gold) )
 			{
 				return;
 			}
@@ -188,17 +188,17 @@ namespace PlanetTerror
 				//타겟 설정
 				if( target == null ||
 					target.IsInvalid ||
-					target.Pos.DistanceSqaure(towerCenter) >= Setting.Instance.tower.attackRangeSqr )
+					target.Pos.DistanceSqaure(towerCenter) >= Game.Setting.tower.attackRangeSqr )
 				{
-					target = WorldControl.Instance.FindTarget(towerCenter, Setting.Instance.tower.attackRangeSqr);
+					target = Game.World.FindTarget(towerCenter, Game.Setting.tower.attackRangeSqr);
 				}
 				//타겟이 있으면 타겟 공격
 				if( target != null )
 				{
-					var projectile = WorldControl.Instance.CreateProjectile(target, towerCenter);
-					projectile.Damage = Setting.Instance.tower.attackDamage;
+					var projectile = Game.World.CreateProjectile(target, towerCenter);
+					projectile.Damage = Game.Setting.tower.attackDamage;
 
-					cooldownTime = Setting.Instance.tower.attackCooldown;
+					cooldownTime = Game.Setting.tower.attackCooldown;
 				}
 				break;
 			case DISMANTLE_STATE:

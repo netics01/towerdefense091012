@@ -22,11 +22,6 @@ namespace PlanetTerror
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	public partial class MainWindow : Window
 	{
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	싱글턴 액세서
-		public static MainWindow Instance { get; protected set; }
-		public static UIPanelControl UI { get; protected set; }
-
 		//===============================================================================================================================================
 		//	필드
 		UpdatePump pump;
@@ -37,8 +32,9 @@ namespace PlanetTerror
 		{
 			InitializeComponent();
 
-			Instance = this;
-			UI = ui_Panel;
+			Game.MainWindow = this;
+			Game.UI = ui_Panel;
+			Game.World = world;
 
 			pump = new UpdatePump();
 			pump.Update += new UpdatePump.UpdateHandler(pump_Update);

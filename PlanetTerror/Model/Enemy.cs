@@ -116,8 +116,8 @@ namespace PlanetTerror
 			{
 				IsDestroyed = true;
 				vsm.SetState(DESTROY_STATE);
-				MainWindow.UI.GainGold(setting.gold);
-				MainWindow.UI.GainPower(setting.powerUp);
+				Game.UI.GainGold(setting.gold);
+				Game.UI.GainPower(setting.powerUp);
 			}
 			//else { vsm.SetState(HIT_STATE);	}
 		}
@@ -161,7 +161,7 @@ namespace PlanetTerror
 			if( routeTime >= 1.0 )
 			{
 				vsm.SetState(BOOM_STATE, true);
-				WorldControl.Instance.core.TakeDamage(setting.damage);
+				Game.World.core.TakeDamage(setting.damage);
 				IsDestroyed = true;
 				return;
 			}

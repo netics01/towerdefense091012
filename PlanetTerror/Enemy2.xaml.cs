@@ -57,7 +57,7 @@ namespace PlanetTerror
 		//	초기화
 		public override void Initialize(PathGeometry path)
 		{
-			Initialize(path, Setting.Instance.enemy2, LayoutRoot, Resources);
+			Initialize(path, Game.Setting.enemy2, LayoutRoot, Resources);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	업데이트
