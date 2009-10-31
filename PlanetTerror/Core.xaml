@@ -2340,7 +2340,6 @@
 				<VisualState x:Name="Core_Attack_State"/>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Image Width="1024" Height="720" Canvas.Left="-422" Canvas.Top="-485.5" Source="Resources/Field/backgroundImage.png" Stretch="Fill"/>
 		<Ellipse x:Name="blink2_Copy" Fill="#FFC9C117" Stroke="Black" Width="4" Height="4" RenderTransformOrigin="0.5,0.5" Canvas.Left="-96.168" Canvas.Top="247.168">
 			<Ellipse.RenderTransform>
 				<TransformGroup>
