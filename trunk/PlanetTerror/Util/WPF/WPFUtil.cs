@@ -194,6 +194,13 @@ namespace PlanetTerror.Util
 			return DefaultGroup.StateName;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		public string GetState(string groupName)
+		{
+			var group = Groups.Find(groupName);
+			Debug.Assert(group != null);
+			return group.StateName;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	진행상태를 확인한다.
 		public bool GetStateFinished()
 		{

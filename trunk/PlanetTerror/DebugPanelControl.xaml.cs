@@ -28,7 +28,11 @@ namespace PlanetTerror
 		//	로그
 		public static void Log(string str)
 		{
-			Instance.log_ListBox.Items.Add(str);
+			Instance.log_ListBox.Items.Insert(0, str);
+			if( Instance.log_ListBox.Items.Count == 100 )
+			{
+				Instance.log_ListBox.Items.RemoveAt(99);
+			}
 		}
 
 		//===============================================================================================================================================
