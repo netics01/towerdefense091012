@@ -125,7 +125,7 @@ namespace PlanetTerror
 
 			tower.buildCost = 50;
 			tower.attackRange = 100;
-			tower.attackRange = 10;
+			tower.attackDamage = 10;
 			tower.attackCooldown = 1;
 
 			proj1.speed = 20;

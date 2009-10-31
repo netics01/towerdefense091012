@@ -41,6 +41,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		Canvas layoutRoot;
 		ResourceDictionary resources;
+		VSM vsm;
 		VisualState destroyState;
 		VisualState boomState;
 		Storyboard moveStory;		
@@ -61,7 +62,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void DestroyState_Completed(object sender, EventArgs e)
 		{
-			IsDeleted = true;
+			IsDestroyed = true;
 		}
 
 		//===============================================================================================================================================
@@ -76,19 +77,30 @@ namespace PlanetTerror
 		//	업데이트
 		public virtual void Update(float delta)
 		{
-			if( routeTime >= 1.0 || IsDestroyed ) { return; }
-
-			routeTime += delta / setting.routeTime;
-			if( routeTime >= 1.0 )
+			switch( vsm.GetState() )
 			{
-				this.SetState(boomState.Name, true);
-				return;
-			}
+			case "":
+				routeTime += delta / setting.routeTime;
+				if( routeTime >= 1.0 )
+				{
+					vsm.SetState(boomState.Name, true);
+					IsDestroyed = true;
+					return;
+				}
 
-			Point pos, tangent;
-			path.GetPointAtFractionLength(routeTime, out pos, out tangent);
-			Pos = pos;
-			this.SetCenter(pos);
+				Point pos, tangent;
+				path.GetPointAtFractionLength(routeTime, out pos, out tangent);
+				Pos = pos;
+				this.SetCenter(pos);
+				break;
+			case "Enemy_Destroy_State":
+			case "Enemy_Boom_State":
+				if( vsm.GetStateFinished() )
+				{
+					IsDeleted = true;
+				}
+				break;
+			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	데미지를 입는다.
@@ -100,7 +112,7 @@ namespace PlanetTerror
 			if( HitPoint < 0 )
 			{
 				IsDestroyed = true;
-				this.SetState(destroyState.Name, true);
+				vsm.SetState(destroyState.Name);
 			}
 		}
 
@@ -121,12 +133,14 @@ namespace PlanetTerror
 
 			this.layoutRoot = layoutRoot;
 			this.resources = resources;
+			vsm = new VSM(this, layoutRoot);
+			vsm.SetDefaultGroup("Enemy_StateGroup");
 			destroyState = layoutRoot.FindState("Enemy_Destroy_State");
 			this.boomState = layoutRoot.FindState("Enemy_Boom_State");
 			this.moveStory = resources.FindStoryboard("Move_Storyboard");
 
-			destroyState.Storyboard.Completed += new EventHandler(DestroyState_Completed);
-			boomState.Storyboard.Completed += new EventHandler(BoomState_Completed);
+// 			destroyState.Storyboard.Completed += new EventHandler(DestroyState_Completed);
+// 			boomState.Storyboard.Completed += new EventHandler(BoomState_Completed);
 
 			WPFUtil.SetImageScaleMode(layoutRoot, BitmapScalingMode.Linear);
 

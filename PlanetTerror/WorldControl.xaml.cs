@@ -110,7 +110,7 @@ namespace PlanetTerror
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	포탄 생성
-		public Projectile CreateProjectile(Enemy1 target, Point pos)
+		public Projectile CreateProjectile(Enemy target, Point pos)
 		{
 			var p = new Projectile(target, pos);
 			Canvas.SetZIndex(p, 6);
