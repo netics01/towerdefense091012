@@ -546,13 +546,21 @@
 			</Rectangle>
 		</Canvas>
 		<Canvas x:Name="menu_Canvas" Width="16" Height="36" Canvas.Top="53" Background="#00000000" Canvas.Left="39">
-			<Button x:Name="Menu_Build_Button" Width="80" Height="14" Content="타워 짓기  -50" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FFDEB64B" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}">
+			<Button x:Name="Menu_Build_Button" Width="80" Height="14" Content="타워 짓기  -50" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FFDEB64B" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 						<Setter Property="Template">
 							<Setter.Value>
 								<ControlTemplate TargetType="{x:Type Control}">
-									<Grid Width="80" Height="14">
+									<Grid x:Name="grid" Width="80" Height="14" RenderTransformOrigin="0.5,0.5">
+										<Grid.RenderTransform>
+											<TransformGroup>
+												<ScaleTransform/>
+												<SkewTransform/>
+												<RotateTransform/>
+												<TranslateTransform/>
+											</TransformGroup>
+										</Grid.RenderTransform>
 										<VisualStateManager.VisualStateGroups>
 											<VisualStateGroup x:Name="CommonStates">
 												<VisualState x:Name="Normal"/>
@@ -574,9 +582,21 @@
 														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
 															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
 														</ColorAnimationUsingKeyFrames>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2"/>
+														</DoubleAnimationUsingKeyFrames>
 													</Storyboard>
 												</VisualState>
-												<VisualState x:Name="Disabled"/>
+												<VisualState x:Name="Disabled">
+													<Storyboard>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF4D4D4D"/>
+														</ColorAnimationUsingKeyFrames>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF949494"/>
+														</ColorAnimationUsingKeyFrames>
+													</Storyboard>
+												</VisualState>
 											</VisualStateGroup>
 											<VisualStateGroup x:Name="FocusStates">
 												<VisualState x:Name="Unfocused"/>
@@ -600,7 +620,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_Upgrade_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="80" Height="14" Content="업그레이드  -150" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Upgrade}" d:IsHidden="True">
+			<Button x:Name="Menu_Upgrade_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="80" Height="14" Content="업그레이드  -150" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Upgrade}" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 						<Setter Property="Template">
@@ -723,7 +743,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_UpgradeBig_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="80" Height="14" Content="메가톤 타워  -600" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" d:IsHidden="True">
+			<Button x:Name="Menu_UpgradeBig_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="80" Height="14" Content="메가톤 타워  -600" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 						<Setter Property="Template">
@@ -797,7 +817,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_Dismantle_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="80" Height="14" Content="채굴소 복원  +50" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Top="14" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource menu_ButtonDismantle}" d:IsHidden="True">
+			<Button x:Name="Menu_Dismantle_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="80" Height="14" Content="채굴소 복원  +50" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Top="14" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource menu_ButtonDismantle}" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 						<Setter Property="Template">
