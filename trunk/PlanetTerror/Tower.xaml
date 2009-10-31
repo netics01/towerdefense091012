@@ -253,27 +253,15 @@
 				</VisualState>
 				<VisualState x:Name="Menu_Upgrade_State">
 					<Storyboard>
-						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Build_Button" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFF29A31"/>
-						</ColorAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Build_Button" Storyboard.TargetProperty="(FrameworkElement.Width)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="110"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Build_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-8.25"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Build_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="16"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Build_Button" Storyboard.TargetProperty="(FrameworkElement.Height)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="16"/>
-						</DoubleAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Upgrade_Button" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Dismantle_Button" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Dismantle_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1.75"/>
+						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Menu_UpgradeAndBIG_State">
@@ -547,269 +535,271 @@
 				</Rectangle.RenderTransform>
 			</Rectangle>
 		</Canvas>
-		<Button x:Name="Menu_Build_Button" Width="107.25" Height="19.021" Content="타워 짓기  -50" Canvas.Left="44.75" Canvas.Top="43.25" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FFDEB64B" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
-			<Button.Resources>
-				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
-					<Setter Property="Template">
-						<Setter.Value>
-							<ControlTemplate TargetType="{x:Type Control}">
-								<Grid Width="109" Height="20">
-									<Rectangle x:Name="rectangle1" Fill="#FF183435" RadiusX="2" RadiusY="2" Width="Auto" Height="Auto" Margin="0,0,-1,4"/>
-									<TextBlock x:Name="textBlock1" Width="Auto" Height="Auto" Foreground="#FFFFC548" TextWrapping="Wrap" Margin="6,1,3,3"><Run Text="타워 짓기"/><Run Text="   "/><Run Text=" "/><Run Text=" "/><Run Text="-50"/><LineBreak/><Run Text=""/></TextBlock>
-								</Grid>
-							</ControlTemplate>
-						</Setter.Value>
-					</Setter>
-				</Style>
-			</Button.Resources>
-			<Button.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Button.RenderTransform>
-		</Button>
-		<Button x:Name="Menu_Upgrade_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="107.25" Height="19.021" Content="업그레이드  -150" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="44.75" Canvas.Top="43.25" FontFamily="아리따B" Cursor="Hand" Visibility="Collapsed">
-			<Button.Resources>
-				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
-					<Setter Property="Template">
-						<Setter.Value>
-							<ControlTemplate TargetType="{x:Type Control}">
-								<Grid Width="109" Height="20">
-									<Rectangle x:Name="rectangle1" Fill="#FF193B35" RadiusX="2" RadiusY="2" Width="Auto" Height="Auto" Margin="0,0,-1,4"/>
-									<TextBlock x:Name="textBlock1" Width="Auto" Height="Auto" Foreground="#FFFFE693" TextWrapping="Wrap" Margin="6,1,3,3"><Run Text="타워 짓기"/><Run Text="   "/><Run Text=" "/><Run Text=" "/><Run Text="-50"/><LineBreak/><Run Text=""/></TextBlock>
-								</Grid>
-							</ControlTemplate>
-						</Setter.Value>
-					</Setter>
-				</Style>
-			</Button.Resources>
-			<Button.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Button.RenderTransform>
-		</Button>
-		<Button x:Name="Menu_UpgradeBIG_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="107.25" Height="19.021" Content="메가톤 타워  -600" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="44.75" Canvas.Top="43.25" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
-			<Button.Resources>
-				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
-					<Setter Property="Template">
-						<Setter.Value>
-							<ControlTemplate TargetType="{x:Type Control}">
-								<Grid Width="109" Height="20">
-									<VisualStateManager.VisualStateGroups>
-										<VisualStateGroup x:Name="CommonStates"/>
-									</VisualStateManager.VisualStateGroups>
-									<Rectangle x:Name="rectangle1" Fill="#FF193B35" RadiusX="2" RadiusY="2" Width="Auto" Height="Auto" Margin="0,0,-1,4"/>
-									<TextBlock x:Name="textBlock1" Width="Auto" Height="Auto" Foreground="#FFFFE693" TextWrapping="Wrap" Margin="6,1,3,3"><Run Text="메가톤타워"/><Run Text=" "/><Run Text="-"/><Run Text="60"/><Run Text="0"/><LineBreak/><Run Text=""/></TextBlock>
-								</Grid>
-							</ControlTemplate>
-						</Setter.Value>
-					</Setter>
-				</Style>
-			</Button.Resources>
-			<Button.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Button.RenderTransform>
-		</Button>
-		<Button x:Name="Menu_Dismantle_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="107.25" Height="19.021" Content="채굴소 복원  +50" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="44.75" Canvas.Top="60.896" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource menu_ButtonDismantle}" Visibility="Collapsed">
-			<Button.Resources>
-				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
-					<Setter Property="Template">
-						<Setter.Value>
-							<ControlTemplate TargetType="{x:Type Control}">
-								<Grid x:Name="grid" Width="109" Height="20" Visibility="Visible">
-									<VisualStateManager.VisualStateGroups>
-										<VisualStateGroup x:Name="CommonStates">
-											<VisualState x:Name="Normal">
-												<Storyboard>
-													<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
-														<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-													</ObjectAnimationUsingKeyFrames>
-												</Storyboard>
-											</VisualState>
-											<VisualState x:Name="MouseOver">
-												<Storyboard>
-													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF19676A"/>
-													</ColorAnimationUsingKeyFrames>
-													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
-													</ColorAnimationUsingKeyFrames>
-													<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
-														<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-													</ObjectAnimationUsingKeyFrames>
-												</Storyboard>
-											</VisualState>
-											<VisualState x:Name="Pressed">
-												<Storyboard>
-													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF19676A"/>
-													</ColorAnimationUsingKeyFrames>
-													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
-													</ColorAnimationUsingKeyFrames>
-													<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-														<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2"/>
-													</DoubleAnimationUsingKeyFrames>
-													<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-														<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2"/>
-													</DoubleAnimationUsingKeyFrames>
-													<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
-														<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-													</ObjectAnimationUsingKeyFrames>
-												</Storyboard>
-											</VisualState>
-											<VisualState x:Name="Disabled">
-												<Storyboard>
-													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF4D4D4D"/>
-													</ColorAnimationUsingKeyFrames>
-													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF949494"/>
-													</ColorAnimationUsingKeyFrames>
-													<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
-														<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-													</ObjectAnimationUsingKeyFrames>
-												</Storyboard>
-											</VisualState>
-										</VisualStateGroup>
-										<VisualStateGroup x:Name="FocusStates">
-											<VisualState x:Name="Unfocused"/>
-											<VisualState x:Name="Focused"/>
-										</VisualStateGroup>
-									</VisualStateManager.VisualStateGroups>
-									<Rectangle x:Name="rectangle1" Fill="#FF193B35" RadiusX="2" RadiusY="2" Width="Auto" Height="Auto" Margin="0,0,-1,4" RenderTransformOrigin="0.5,0.5">
-										<Rectangle.RenderTransform>
-											<TransformGroup>
-												<ScaleTransform/>
-												<SkewTransform/>
-												<RotateTransform/>
-												<TranslateTransform/>
-											</TransformGroup>
-										</Rectangle.RenderTransform>
-									</Rectangle>
-									<TextBlock x:Name="textBlock1" Width="Auto" Height="Auto" Foreground="#FFFFE693" TextWrapping="Wrap" Margin="6,1,3,3" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
-											<TransformGroup>
-												<ScaleTransform/>
-												<SkewTransform/>
-												<RotateTransform/>
-												<TranslateTransform/>
-											</TransformGroup>
-										</TextBlock.RenderTransform><Run Text="타워 짓기"/><Run Text="   "/><Run Text=" "/><Run Text=" "/><Run Text="-50"/><LineBreak/><Run Text=""/></TextBlock>
-								</Grid>
-							</ControlTemplate>
-						</Setter.Value>
-					</Setter>
-				</Style>
-				<Style x:Key="menu_ButtonDismantle" TargetType="{x:Type Button}">
-					<Setter Property="Template">
-						<Setter.Value>
-							<ControlTemplate TargetType="{x:Type Button}">
-								<Grid x:Name="grid" Width="109" Height="20" Visibility="Visible">
-									<VisualStateManager.VisualStateGroups>
-										<VisualStateGroup x:Name="CommonStates">
-											<VisualState x:Name="Normal">
-												<Storyboard>
-													<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
-														<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-													</ObjectAnimationUsingKeyFrames>
-												</Storyboard>
-											</VisualState>
-											<VisualState x:Name="MouseOver">
-												<Storyboard>
-													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF19676A"/>
-													</ColorAnimationUsingKeyFrames>
-													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
-													</ColorAnimationUsingKeyFrames>
-													<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
-														<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-													</ObjectAnimationUsingKeyFrames>
-												</Storyboard>
-											</VisualState>
-											<VisualState x:Name="Pressed">
-												<Storyboard>
-													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF19676A"/>
-													</ColorAnimationUsingKeyFrames>
-													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
-													</ColorAnimationUsingKeyFrames>
-													<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-														<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2"/>
-													</DoubleAnimationUsingKeyFrames>
-													<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-														<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2"/>
-													</DoubleAnimationUsingKeyFrames>
-													<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
-														<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-													</ObjectAnimationUsingKeyFrames>
-												</Storyboard>
-											</VisualState>
-											<VisualState x:Name="Disabled">
-												<Storyboard>
-													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF4D4D4D"/>
-													</ColorAnimationUsingKeyFrames>
-													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF949494"/>
-													</ColorAnimationUsingKeyFrames>
-													<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
-														<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-													</ObjectAnimationUsingKeyFrames>
-												</Storyboard>
-											</VisualState>
-										</VisualStateGroup>
-										<VisualStateGroup x:Name="FocusStates">
-											<VisualState x:Name="Unfocused"/>
-											<VisualState x:Name="Focused"/>
-										</VisualStateGroup>
-									</VisualStateManager.VisualStateGroups>
-									<Rectangle x:Name="rectangle1" Fill="#FF193B35" RadiusX="2" RadiusY="2" Width="Auto" Height="Auto" Margin="0,0,-1,4" RenderTransformOrigin="0.5,0.5">
-										<Rectangle.RenderTransform>
-											<TransformGroup>
-												<ScaleTransform/>
-												<SkewTransform/>
-												<RotateTransform/>
-												<TranslateTransform/>
-											</TransformGroup>
-										</Rectangle.RenderTransform>
-									</Rectangle>
-									<TextBlock x:Name="textBlock1" Width="Auto" Height="Auto" Foreground="#FFFFE693" TextWrapping="Wrap" Margin="6,1,3,3" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
-											<TransformGroup>
-												<ScaleTransform/>
-												<SkewTransform/>
-												<RotateTransform/>
-												<TranslateTransform/>
-											</TransformGroup>
-										</TextBlock.RenderTransform><Run Text="채굴소 복원 +"/><Run Text="50"/><LineBreak/><Run Text=""/></TextBlock>
-								</Grid>
-							</ControlTemplate>
-						</Setter.Value>
-					</Setter>
-				</Style>
-			</Button.Resources>
-			<Button.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Button.RenderTransform>
-		</Button>
+		<Canvas x:Name="Menu_Button" Width="107" Height="36" Canvas.Top="20" Background="#00000000" Canvas.Left="48">
+			<Button x:Name="Menu_Build_Button" Width="107.25" Height="19.021" Content="타워 짓기  -50" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FFDEB64B" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
+				<Button.Resources>
+					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
+						<Setter Property="Template">
+							<Setter.Value>
+								<ControlTemplate TargetType="{x:Type Control}">
+									<Grid Width="109" Height="20">
+										<Rectangle x:Name="rectangle1" Fill="#FF183435" RadiusX="2" RadiusY="2" Width="Auto" Height="Auto" Margin="0,0,-1,4"/>
+										<TextBlock x:Name="textBlock1" Width="Auto" Height="Auto" Foreground="#FFFFC548" TextWrapping="Wrap" Margin="6,1,3,3"><Run Text="타워 짓기"/><Run Text="   "/><Run Text=" "/><Run Text=" "/><Run Text="-50"/><LineBreak/><Run Text=""/></TextBlock>
+									</Grid>
+								</ControlTemplate>
+							</Setter.Value>
+						</Setter>
+					</Style>
+				</Button.Resources>
+				<Button.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Button.RenderTransform>
+			</Button>
+			<Button x:Name="Menu_Upgrade_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="107.25" Height="19.021" Content="업그레이드  -150" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Visibility="Collapsed">
+				<Button.Resources>
+					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
+						<Setter Property="Template">
+							<Setter.Value>
+								<ControlTemplate TargetType="{x:Type Control}">
+									<Grid Width="109" Height="20">
+										<Rectangle x:Name="rectangle1" Fill="#FF193B35" RadiusX="2" RadiusY="2" Width="Auto" Height="Auto" Margin="0,0,-1,4"/>
+										<TextBlock x:Name="textBlock1" Width="Auto" Height="Auto" Foreground="#FFFFE693" TextWrapping="Wrap" Margin="6,1,3,3"><Run Text="타워 짓기"/><Run Text="   "/><Run Text=" "/><Run Text=" "/><Run Text="-50"/><LineBreak/><Run Text=""/></TextBlock>
+									</Grid>
+								</ControlTemplate>
+							</Setter.Value>
+						</Setter>
+					</Style>
+				</Button.Resources>
+				<Button.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Button.RenderTransform>
+			</Button>
+			<Button x:Name="Menu_UpgradeBIG_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="107.25" Height="19.021" Content="메가톤 타워  -600" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
+				<Button.Resources>
+					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
+						<Setter Property="Template">
+							<Setter.Value>
+								<ControlTemplate TargetType="{x:Type Control}">
+									<Grid Width="109" Height="20">
+										<VisualStateManager.VisualStateGroups>
+											<VisualStateGroup x:Name="CommonStates"/>
+										</VisualStateManager.VisualStateGroups>
+										<Rectangle x:Name="rectangle1" Fill="#FF193B35" RadiusX="2" RadiusY="2" Width="Auto" Height="Auto" Margin="0,0,-1,4"/>
+										<TextBlock x:Name="textBlock1" Width="Auto" Height="Auto" Foreground="#FFFFE693" TextWrapping="Wrap" Margin="6,1,3,3"><Run Text="메가톤타워"/><Run Text=" "/><Run Text="-"/><Run Text="60"/><Run Text="0"/><LineBreak/><Run Text=""/></TextBlock>
+									</Grid>
+								</ControlTemplate>
+							</Setter.Value>
+						</Setter>
+					</Style>
+				</Button.Resources>
+				<Button.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Button.RenderTransform>
+			</Button>
+			<Button x:Name="Menu_Dismantle_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="107.25" Height="19.021" Content="채굴소 복원  +50" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Top="17.646" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource menu_ButtonDismantle}" Visibility="Collapsed">
+				<Button.Resources>
+					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
+						<Setter Property="Template">
+							<Setter.Value>
+								<ControlTemplate TargetType="{x:Type Control}">
+									<Grid x:Name="grid" Width="109" Height="20" Visibility="Visible">
+										<VisualStateManager.VisualStateGroups>
+											<VisualStateGroup x:Name="CommonStates">
+												<VisualState x:Name="Normal">
+													<Storyboard>
+														<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
+															<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+														</ObjectAnimationUsingKeyFrames>
+													</Storyboard>
+												</VisualState>
+												<VisualState x:Name="MouseOver">
+													<Storyboard>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF19676A"/>
+														</ColorAnimationUsingKeyFrames>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
+														</ColorAnimationUsingKeyFrames>
+														<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
+															<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+														</ObjectAnimationUsingKeyFrames>
+													</Storyboard>
+												</VisualState>
+												<VisualState x:Name="Pressed">
+													<Storyboard>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF19676A"/>
+														</ColorAnimationUsingKeyFrames>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
+														</ColorAnimationUsingKeyFrames>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2"/>
+														</DoubleAnimationUsingKeyFrames>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2"/>
+														</DoubleAnimationUsingKeyFrames>
+														<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
+															<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+														</ObjectAnimationUsingKeyFrames>
+													</Storyboard>
+												</VisualState>
+												<VisualState x:Name="Disabled">
+													<Storyboard>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF4D4D4D"/>
+														</ColorAnimationUsingKeyFrames>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF949494"/>
+														</ColorAnimationUsingKeyFrames>
+														<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
+															<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+														</ObjectAnimationUsingKeyFrames>
+													</Storyboard>
+												</VisualState>
+											</VisualStateGroup>
+											<VisualStateGroup x:Name="FocusStates">
+												<VisualState x:Name="Unfocused"/>
+												<VisualState x:Name="Focused"/>
+											</VisualStateGroup>
+										</VisualStateManager.VisualStateGroups>
+										<Rectangle x:Name="rectangle1" Fill="#FF193B35" RadiusX="2" RadiusY="2" Width="Auto" Height="Auto" Margin="0,0,-1,4" RenderTransformOrigin="0.5,0.5">
+											<Rectangle.RenderTransform>
+												<TransformGroup>
+													<ScaleTransform/>
+													<SkewTransform/>
+													<RotateTransform/>
+													<TranslateTransform/>
+												</TransformGroup>
+											</Rectangle.RenderTransform>
+										</Rectangle>
+										<TextBlock x:Name="textBlock1" Width="Auto" Height="Auto" Foreground="#FFFFE693" TextWrapping="Wrap" Margin="6,1,3,3" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+												<TransformGroup>
+													<ScaleTransform/>
+													<SkewTransform/>
+													<RotateTransform/>
+													<TranslateTransform/>
+												</TransformGroup>
+											</TextBlock.RenderTransform><Run Text="타워 짓기"/><Run Text="   "/><Run Text=" "/><Run Text=" "/><Run Text="-50"/><LineBreak/><Run Text=""/></TextBlock>
+									</Grid>
+								</ControlTemplate>
+							</Setter.Value>
+						</Setter>
+					</Style>
+					<Style x:Key="menu_ButtonDismantle" TargetType="{x:Type Button}">
+						<Setter Property="Template">
+							<Setter.Value>
+								<ControlTemplate TargetType="{x:Type Button}">
+									<Grid x:Name="grid" Width="109" Height="20" Visibility="Visible">
+										<VisualStateManager.VisualStateGroups>
+											<VisualStateGroup x:Name="CommonStates">
+												<VisualState x:Name="Normal">
+													<Storyboard>
+														<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
+															<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+														</ObjectAnimationUsingKeyFrames>
+													</Storyboard>
+												</VisualState>
+												<VisualState x:Name="MouseOver">
+													<Storyboard>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF19676A"/>
+														</ColorAnimationUsingKeyFrames>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
+														</ColorAnimationUsingKeyFrames>
+														<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
+															<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+														</ObjectAnimationUsingKeyFrames>
+													</Storyboard>
+												</VisualState>
+												<VisualState x:Name="Pressed">
+													<Storyboard>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF19676A"/>
+														</ColorAnimationUsingKeyFrames>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
+														</ColorAnimationUsingKeyFrames>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2"/>
+														</DoubleAnimationUsingKeyFrames>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2"/>
+														</DoubleAnimationUsingKeyFrames>
+														<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
+															<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+														</ObjectAnimationUsingKeyFrames>
+													</Storyboard>
+												</VisualState>
+												<VisualState x:Name="Disabled">
+													<Storyboard>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF4D4D4D"/>
+														</ColorAnimationUsingKeyFrames>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF949494"/>
+														</ColorAnimationUsingKeyFrames>
+														<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
+															<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+														</ObjectAnimationUsingKeyFrames>
+													</Storyboard>
+												</VisualState>
+											</VisualStateGroup>
+											<VisualStateGroup x:Name="FocusStates">
+												<VisualState x:Name="Unfocused"/>
+												<VisualState x:Name="Focused"/>
+											</VisualStateGroup>
+										</VisualStateManager.VisualStateGroups>
+										<Rectangle x:Name="rectangle1" Fill="#FF193B35" RadiusX="2" RadiusY="2" Width="Auto" Height="Auto" Margin="0,0,-1,4" RenderTransformOrigin="0.5,0.5">
+											<Rectangle.RenderTransform>
+												<TransformGroup>
+													<ScaleTransform/>
+													<SkewTransform/>
+													<RotateTransform/>
+													<TranslateTransform/>
+												</TransformGroup>
+											</Rectangle.RenderTransform>
+										</Rectangle>
+										<TextBlock x:Name="textBlock1" Width="Auto" Height="Auto" Foreground="#FFFFE693" TextWrapping="Wrap" Margin="6,1,3,3" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+												<TransformGroup>
+													<ScaleTransform/>
+													<SkewTransform/>
+													<RotateTransform/>
+													<TranslateTransform/>
+												</TransformGroup>
+											</TextBlock.RenderTransform><Run Text="채굴소 복원 +"/><Run Text="50"/><LineBreak/><Run Text=""/></TextBlock>
+									</Grid>
+								</ControlTemplate>
+							</Setter.Value>
+						</Setter>
+					</Style>
+				</Button.Resources>
+				<Button.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Button.RenderTransform>
+			</Button>
+		</Canvas>
 		<Canvas x:Name="Menu_Num" Width="32" Height="16" Canvas.Left="23" Canvas.Top="35">
 			<Rectangle x:Name="UP01" Fill="#FFFFDA5E" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-23" Canvas.Top="-31" Visibility="Collapsed"/>
 			<Rectangle x:Name="UP02" Fill="#FFFF7F28" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-15" Canvas.Top="-31" Visibility="Collapsed"/>
@@ -849,6 +839,6 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform><Run Text="-"/><Run Text=" 5"/></TextBlock>
 		</Canvas>
-		<Canvas x:Name="notYetBuild_Canvas" Width="48" Height="56" Canvas.Top="24" Background="#00000000"/>
+		<Canvas x:Name="notYetBuild_Canvas" Width="48" Height="43" Canvas.Top="24" Background="#00000000"/>
 	</Canvas>
 </UserControl>
