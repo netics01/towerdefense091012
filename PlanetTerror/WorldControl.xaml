@@ -68,8 +68,8 @@
 		<local:Tower Canvas.Left="264" Canvas.Top="352" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="64" Canvas.Top="216" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="320" Canvas.Top="136" Panel.ZIndex="10"/>
-		<local:Boss1 x:Name="testBoss1" Width="50" Height="50" Canvas.Left="0" Canvas.Top="0" Panel.ZIndex="10"/>
-		<local:Core x:Name="core" Width="176" Height="128" Canvas.Left="421" Canvas.Top="488" Panel.ZIndex="15" RenderTransformOrigin="0.227,0.333"/>
+		<local:Boss1 x:Name="testBoss1" Width="50" Height="50" Canvas.Left="0" Canvas.Top="0" Panel.ZIndex="15"/>
+		<local:Core x:Name="core" Width="176" Height="128" Canvas.Left="421" Canvas.Top="488" Panel.ZIndex="20" RenderTransformOrigin="0.227,0.333"/>
 		<Image Width="1024" Height="720" Source="Resources/Field/backgroundImage.png" Stretch="Fill" Panel.ZIndex="-2000"/>
 		<Image Width="1024" Height="720" Stretch="Fill" Panel.ZIndex="5" Source="Resources/Field/roofImage.png"/>
 		<Path x:Name="route1_Path" Stretch="Fill" Stroke="#FF59FF00" Width="544.5" Height="673" Canvas.Left="-16" Canvas.Top="-24.5" Data="M-16,64 L95.5,15.5 215.5,-8.5 367.5,-24.5 527.5,-16.5 527.5,47.5 447.5,55.5 375.5,71.5 415.5,215.5 284.62973,229.92162 180.62973,261.92162 119.5,303.5 207.5,383.5 295.5,335.5 391.5,311.5 495.5,303.5 503.05353,478.76448 349.73814,503.78756 263.5,559.5 239.5,631.5 423.5,647.5"/>
