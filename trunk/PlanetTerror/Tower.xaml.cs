@@ -43,6 +43,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Tower_Loaded(object sender, RoutedEventArgs e)
 		{
+			WPFUtil.SetHighPerformanceImageMode(LayoutRoot);
 			//this.SetState("Build_NotYetBuilt_State", true);
 			this.SetState("Build_Built_State", true);
 
@@ -78,10 +79,10 @@ namespace PlanetTerror
 			//타겟이 있으면 타겟 공격
 			if( target != null )
 			{
-				var projectile = WorldControl.Instance.CreateProjectile(target, towerCenter);
-				projectile.Damage = SettingXml.Instance.tower_AttackDamage;
-
-				cooldownTime = SettingXml.Instance.tower_AttackCooldown;
+// 				var projectile = WorldControl.Instance.CreateProjectile(target, towerCenter);
+// 				projectile.Damage = SettingXml.Instance.tower_AttackDamage;
+// 
+// 				cooldownTime = SettingXml.Instance.tower_AttackCooldown;
 			}
 		}
 	}

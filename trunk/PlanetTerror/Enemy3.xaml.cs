@@ -59,6 +59,8 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Enemy1_Loaded(object sender, RoutedEventArgs e)
 		{
+			WPFUtil.SetHighPerformanceImageMode(LayoutRoot);
+
 			var story = Resources["Move_Storyboard"] as Storyboard;
 			story.Begin();
 		}

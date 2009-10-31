@@ -18,6 +18,9 @@
 		<ListBox x:Name="log_ListBox" Width="184" Height="420" Canvas.Left="8" Canvas.Top="8"/>
 		<Button x:Name="test1_Button" Content="Test1" VerticalAlignment="Top" Width="90" Height="20" Canvas.Left="8" Canvas.Top="432" HorizontalAlignment="Left"/>
 		<Button x:Name="test2_Button" Width="90" Height="20" Content="Test2" Canvas.Left="8" Canvas.Top="456" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-		<Button x:Name="bossTest1_Button" Width="90" Height="20" Content="보스테스트" Canvas.Left="8" Canvas.Top="517" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+		<Button x:Name="bossTest1_Button" Width="90" Height="20" Content="보스테스트" Canvas.Left="8" Canvas.Top="668" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+		<Button x:Name="enemy1_Button" Width="90" Height="20" Content="적1 (F1)" Canvas.Left="8" Canvas.Top="523" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+		<Button x:Name="enemy2_Button" Width="90" Height="20" Content="적2 (F2)" Canvas.Left="8" Canvas.Top="547" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+		<Button x:Name="enemy3_Button" Width="90" Height="20" Content="적3 (F3)" Canvas.Left="8" Canvas.Top="571" VerticalAlignment="Top" HorizontalAlignment="Left"/>
 	</Canvas>
 </UserControl>

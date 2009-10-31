@@ -33,6 +33,9 @@ namespace PlanetTerror
 
 			test1_Button.Click += new RoutedEventHandler(test1_Button_Click);
 			test2_Button.Click += new RoutedEventHandler(test2_Button_Click);
+			enemy1_Button.Click += new RoutedEventHandler(enemy1_Button_Click);
+			enemy2_Button.Click += new RoutedEventHandler(enemy2_Button_Click);
+			enemy3_Button.Click += new RoutedEventHandler(enemy3_Button_Click);
 			bossTest1_Button.Click += new RoutedEventHandler(bossTest1_Button_Click);
 		}
 
@@ -48,6 +51,21 @@ namespace PlanetTerror
 		void test2_Button_Click(object sender, RoutedEventArgs e)
 		{
 			//MainWindow.Instance.ToggleDebugPanel();
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void enemy1_Button_Click(object sender, RoutedEventArgs e)
+		{
+			EnemyTest();
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void enemy2_Button_Click(object sender, RoutedEventArgs e)
+		{
+			
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void enemy3_Button_Click(object sender, RoutedEventArgs e)
+		{
+
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void bossTest1_Button_Click(object sender, RoutedEventArgs e)
