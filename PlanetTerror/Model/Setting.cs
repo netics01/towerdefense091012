@@ -16,7 +16,6 @@ using PlanetTerror.Util;
 
 
 //----작업----
-//Setting 파일 시리얼라이즈/디시리얼라이즈
 
 //Enemy 클래스 제작
 //자코들 클래스 풀링해야 할듯
