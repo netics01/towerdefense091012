@@ -22,18 +22,26 @@ namespace PlanetTerror
 	public partial class Projectile3 : UserControl
 	{
 		//===============================================================================================================================================
+		//	상수
+		const string FIRE_STATE = "Projectile_Fire_State";
+		const string BOOM_STATE = "Projectile_Boom_State";
+		const string NORMAL_STATE = "Projectile_Normal_State";
+
+		//===============================================================================================================================================
 		//	프로퍼티
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public bool IsDeleted { get; protected set; }
 		public bool IsDestroyed { get; protected set; }
 		public bool IsInvalid { get { return IsDeleted || IsDestroyed; } }
 		public double Damage { get; set; }
+		public double Speed { get; set; }
 
 		//===============================================================================================================================================
 		//	필드
 		Enemy target;
 		Point targetLastPos;
 		Point pos;
+		VSM vsm;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -44,6 +52,7 @@ namespace PlanetTerror
 			this.target = target;
 			this.targetLastPos = target.Pos;
 			this.pos = pos;
+			vsm = new VSM(this, LayoutRoot);
 
 			Loaded += new RoutedEventHandler(Projectile_Loaded);
 			Projectile_Boom_State.Storyboard.Completed += new EventHandler(BoomState_Complete);
@@ -55,6 +64,7 @@ namespace PlanetTerror
 		void Projectile_Loaded(object sender, RoutedEventArgs e)
 		{
 			this.SetCenter(pos);
+			vsm.SetState(FIRE_STATE);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void BoomState_Complete(object sender, EventArgs e)
@@ -68,26 +78,48 @@ namespace PlanetTerror
 		//	업데이트
 		public void Update(float delta)
 		{
-			if( IsInvalid ) { return; }
-
-			if( !target.IsInvalid )
+			switch( vsm.GetState() )
 			{
-				targetLastPos = target.Pos;
+			case FIRE_STATE:
+				if( vsm.GetStateFinished() )
+				{
+					vsm.SetState(NORMAL_STATE);
+				}
+				break;
+			case NORMAL_STATE:
+				if( !target.IsInvalid )
+				{
+					targetLastPos = target.Pos;
+				}
+				Move();
+				break;
+			case BOOM_STATE:
+				if( vsm.GetStateFinished() )
+				{
+					IsDeleted = true;
+				}
+				break;
 			}
+		}
 
+		//===============================================================================================================================================
+		//	전용
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	이동
+		void Move()
+		{
 			var disp = targetLastPos - pos;
-			var speed = Setting.Instance.proj1.speed;
-			if( disp.LengthSquared <= speed * speed )
+			if( disp.LengthSquared <= Speed * Speed )
 			{
 				pos = targetLastPos;
 				target.TakeDamage(Damage);
 				IsDestroyed = true;
-				this.SetState("Projectile_Boom_State", true);
+				vsm.SetState(BOOM_STATE);
 			}
 			else
 			{
 				disp.Normalize();
-				disp = disp * speed;
+				disp = disp * Speed;
 				pos += disp;
 			}
 			this.SetCenter(pos);
