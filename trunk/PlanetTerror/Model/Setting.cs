@@ -15,11 +15,22 @@ using System.Diagnostics;
 using PlanetTerror.Util;
 
 
+
+//----레이어----
+//	Background			-2001
+//	Enemy				[-1000, 0]
+//	Roof				5
+//	Projectile			6
+//	Boss				10
+//	Core				15
+
+
+
+
 //----작업----
 
-//Enemy 클래스 제작
-//일단 F1, F2, F3 에서 나올 수 있도록 하자.
 
+//백그라운드 수정
 
 //자코들 클래스 풀링해야 할듯
 

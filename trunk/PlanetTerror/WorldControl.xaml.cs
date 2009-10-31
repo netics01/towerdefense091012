@@ -36,7 +36,8 @@ namespace PlanetTerror
 		List<Enemy> enemies;
 		List<Tower> towers;
 		List<Projectile> projectiles;
-		
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		int enemyLayer = 0;		
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -101,9 +102,11 @@ namespace PlanetTerror
 		{
 			var enemy = new T();
 			enemy.Initialize(path);
-			Canvas.SetZIndex(enemy, 0);
+			Canvas.SetZIndex(enemy, enemyLayer);
 			enemies.Add(enemy);
 			LayoutRoot.Children.Add(enemy);
+
+			enemyLayer--;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	포탄 생성
