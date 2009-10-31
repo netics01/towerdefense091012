@@ -442,7 +442,7 @@
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_UpgradeBIG_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-20"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-17.003"/>
 						</DoubleAnimationUsingKeyFrames>
 						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_UpgradeBIG_Button" Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)">
 							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF434343"/>
@@ -813,7 +813,7 @@
 				</Rectangle.RenderTransform>
 			</Rectangle>
 		</Canvas>
-		<Button x:Name="Menu_Build_Button" Width="110" Height="20.75" Content="타워 짓기  -50" Canvas.Left="149.25" Canvas.Top="69.75" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FFDEB64B" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Hidden">
+		<Button x:Name="Menu_Build_Button" Width="110" Height="20.75" Content="타워 짓기  -50" Canvas.Left="50" Canvas.Top="64" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FFDEB64B" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Hidden" d:IsLocked="True">
 			<Button.Resources>
 				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 					<Setter Property="Template">
@@ -837,7 +837,7 @@
 				</TransformGroup>
 			</Button.RenderTransform>
 		</Button>
-		<Button x:Name="Menu_Upgrade_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="업그레이드  -150" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="149.25" Canvas.Top="69.75" FontFamily="아리따B" Cursor="Hand" Visibility="Hidden">
+		<Button x:Name="Menu_Upgrade_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="업그레이드  -150" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="50" Canvas.Top="64" FontFamily="아리따B" Cursor="Hand" Visibility="Hidden" d:IsLocked="True">
 			<Button.Resources>
 				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 					<Setter Property="Template">
@@ -861,7 +861,7 @@
 				</TransformGroup>
 			</Button.RenderTransform>
 		</Button>
-		<Button x:Name="Menu_UpgradeBIG_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="메가톤 타워  -600" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="149.25" Canvas.Top="69.75" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Hidden">
+		<Button x:Name="Menu_UpgradeBIG_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="메가톤 타워  -600" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="50" Canvas.Top="64" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Hidden" d:IsLocked="True">
 			<Button.Resources>
 				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 					<Setter Property="Template">
@@ -888,7 +888,7 @@
 				</TransformGroup>
 			</Button.RenderTransform>
 		</Button>
-		<Button x:Name="Menu_Dismantle_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="채굴소 복원  +50" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="149.25" Canvas.Top="89" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Hidden">
+		<Button x:Name="Menu_Dismantle_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="채굴소 복원  +50" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Left="50" Canvas.Top="83.25" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource menu_ButtonDismantle}" Visibility="Hidden" d:IsLocked="True">
 			<Button.Resources>
 				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 					<Setter Property="Template">
@@ -978,6 +978,94 @@
 						</Setter.Value>
 					</Setter>
 				</Style>
+				<Style x:Key="menu_ButtonDismantle" TargetType="{x:Type Button}">
+					<Setter Property="Template">
+						<Setter.Value>
+							<ControlTemplate TargetType="{x:Type Button}">
+								<Grid x:Name="grid" Width="109" Height="20" Visibility="Visible">
+									<VisualStateManager.VisualStateGroups>
+										<VisualStateGroup x:Name="CommonStates">
+											<VisualState x:Name="Normal">
+												<Storyboard>
+													<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
+														<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+													</ObjectAnimationUsingKeyFrames>
+												</Storyboard>
+											</VisualState>
+											<VisualState x:Name="MouseOver">
+												<Storyboard>
+													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF19676A"/>
+													</ColorAnimationUsingKeyFrames>
+													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
+													</ColorAnimationUsingKeyFrames>
+													<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
+														<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+													</ObjectAnimationUsingKeyFrames>
+												</Storyboard>
+											</VisualState>
+											<VisualState x:Name="Pressed">
+												<Storyboard>
+													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF19676A"/>
+													</ColorAnimationUsingKeyFrames>
+													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
+													</ColorAnimationUsingKeyFrames>
+													<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+														<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2"/>
+													</DoubleAnimationUsingKeyFrames>
+													<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+														<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2"/>
+													</DoubleAnimationUsingKeyFrames>
+													<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
+														<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+													</ObjectAnimationUsingKeyFrames>
+												</Storyboard>
+											</VisualState>
+											<VisualState x:Name="Disabled">
+												<Storyboard>
+													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF4D4D4D"/>
+													</ColorAnimationUsingKeyFrames>
+													<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+														<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF949494"/>
+													</ColorAnimationUsingKeyFrames>
+													<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
+														<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+													</ObjectAnimationUsingKeyFrames>
+												</Storyboard>
+											</VisualState>
+										</VisualStateGroup>
+										<VisualStateGroup x:Name="FocusStates">
+											<VisualState x:Name="Unfocused"/>
+											<VisualState x:Name="Focused"/>
+										</VisualStateGroup>
+									</VisualStateManager.VisualStateGroups>
+									<Rectangle x:Name="rectangle1" Fill="#FF193B35" RadiusX="2" RadiusY="2" Width="Auto" Height="Auto" Margin="0,0,-1,4" RenderTransformOrigin="0.5,0.5">
+										<Rectangle.RenderTransform>
+											<TransformGroup>
+												<ScaleTransform/>
+												<SkewTransform/>
+												<RotateTransform/>
+												<TranslateTransform/>
+											</TransformGroup>
+										</Rectangle.RenderTransform>
+									</Rectangle>
+									<TextBlock x:Name="textBlock1" Width="Auto" Height="Auto" Foreground="#FFFFE693" TextWrapping="Wrap" Margin="6,1,3,3" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+											<TransformGroup>
+												<ScaleTransform/>
+												<SkewTransform/>
+												<RotateTransform/>
+												<TranslateTransform/>
+											</TransformGroup>
+										</TextBlock.RenderTransform><Run Text="채굴소 복원 +"/><Run Text="50"/><LineBreak/><Run Text=""/></TextBlock>
+								</Grid>
+							</ControlTemplate>
+						</Setter.Value>
+					</Setter>
+				</Style>
 			</Button.Resources>
 			<Button.RenderTransform>
 				<TransformGroup>
@@ -988,7 +1076,7 @@
 				</TransformGroup>
 			</Button.RenderTransform>
 		</Button>
-		<Canvas x:Name="Menu_Num" Width="32.75" Height="16" Canvas.Left="132.999" Canvas.Top="18.252">
+		<Canvas x:Name="Menu_Num" Width="32.75" Height="16" Canvas.Left="35.666" Canvas.Top="32" d:IsLocked="True">
 			<Rectangle x:Name="UP01" Fill="#FFFFDA5E" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-26.749" Canvas.Top="-3.502" Visibility="Hidden"/>
 			<Rectangle x:Name="UP02" Fill="#FFFF7F28" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-18.749" Canvas.Top="-3.502" Visibility="Hidden"/>
 			<Rectangle x:Name="UP03" Fill="Red" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-10.749" Canvas.Top="-3.502" Visibility="Hidden"/>
