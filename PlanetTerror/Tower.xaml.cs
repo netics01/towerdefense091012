@@ -23,7 +23,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		Enemy1 target;
+		Enemy target;
 		Point towerCenter;
 		double cooldownTime;
 

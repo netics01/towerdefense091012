@@ -203,4 +203,17 @@ namespace PlanetTerror.Util
 			VisualStateManager.GoToState(c, stateName, useTransition);
 		}
 	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//	ResourceDictionaryExtMethod
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	public static class ResourceDictionaryExtMethod
+	{
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	스토리 보드를 찾는다.
+		public static Storyboard FindStoryboard(this ResourceDictionary resources, string name)
+		{
+			return resources[name] as Storyboard;
+		}		
+	}
 }
