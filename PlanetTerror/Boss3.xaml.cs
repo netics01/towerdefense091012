@@ -37,7 +37,8 @@ namespace PlanetTerror
 		//	핸들러
 		void Boss1_Loaded(object sender, RoutedEventArgs e)
 		{
-			//VisualStateManager.GoToState(this, "MoveState", false);
+			WPFUtil.SetHighPerformanceImageMode(LayoutRoot);
+			//VisualStateManager.GoToState(this, "MoveState", false);			
 		}
 
 		//===============================================================================================================================================
