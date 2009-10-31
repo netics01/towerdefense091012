@@ -67,7 +67,7 @@ namespace PlanetTerror
 
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 3;
+		public const int VERSION = 4;
 
 		public class Tower
 		{
@@ -97,6 +97,7 @@ namespace PlanetTerror
 			public double routeTime;
 			public double hitPoint;
 			public double damage;
+			public int gold;
 		}
 		public Enemy enemy1;
 		public Enemy enemy2;
@@ -166,14 +167,17 @@ namespace PlanetTerror
 			enemy1.routeTime = 20;
 			enemy1.hitPoint = 50;
 			enemy1.damage = 5;
+			enemy1.gold = 5;
 
 			enemy2.routeTime = 20;
 			enemy2.hitPoint = 50;
 			enemy2.damage = 5;
+			enemy2.gold = 5;
 
 			enemy3.routeTime = 20;
 			enemy3.hitPoint = 50;
 			enemy2.damage = 5;
+			enemy3.gold = 5;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	값 변환
