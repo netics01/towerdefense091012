@@ -119,6 +119,9 @@ namespace PlanetTerror
 		public Projectile3 CreateProjectile(Enemy target, Point pos)
 		{
 			var p = new Projectile3(target, pos);
+			p.Damage = Setting.Instance.tower.attackRange;
+			p.Speed = Setting.Instance.proj1.speed;
+
 			Canvas.SetZIndex(p, 6);
 			projectiles.Add(p);
 			LayoutRoot.Children.Add(p);
