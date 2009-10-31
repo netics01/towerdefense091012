@@ -42,33 +42,33 @@ namespace PlanetTerror
 		//===============================================================================================================================================
 		//	핸들러
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		void test1_Button_Click(object sender, RoutedEventArgs e)
+		public void test1_Button_Click(object sender, RoutedEventArgs e)
 		{
 			EnemyTest();
 			//MainWindow.Instance.ToggleDebugPanel();			
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		void test2_Button_Click(object sender, RoutedEventArgs e)
+		public void test2_Button_Click(object sender, RoutedEventArgs e)
 		{
 			//MainWindow.Instance.ToggleDebugPanel();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		void enemy1_Button_Click(object sender, RoutedEventArgs e)
+		public void enemy1_Button_Click(object sender, RoutedEventArgs e)
 		{
 			EnemyTest();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		void enemy2_Button_Click(object sender, RoutedEventArgs e)
+		public void enemy2_Button_Click(object sender, RoutedEventArgs e)
 		{
 			
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		void enemy3_Button_Click(object sender, RoutedEventArgs e)
+		public void enemy3_Button_Click(object sender, RoutedEventArgs e)
 		{
 
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		void bossTest1_Button_Click(object sender, RoutedEventArgs e)
+		public void bossTest1_Button_Click(object sender, RoutedEventArgs e)
 		{
 			WorldControl.Instance.testBoss1.TestState("Boss_Move_State");
 		}

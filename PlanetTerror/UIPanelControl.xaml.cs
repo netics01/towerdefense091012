@@ -50,7 +50,7 @@ namespace PlanetTerror
 		//	초기화
 		public void Initialize()
 		{
-			gold = SettingXml.Instance.startGold;
+			gold = Setting.Instance.startGold;
 			DisplayGold();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------

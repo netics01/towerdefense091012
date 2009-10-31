@@ -10,15 +10,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 using PlanetTerror.Util;
 
 
-
+//----작업----
 //Setting 파일 시리얼라이즈/디시리얼라이즈
-//스케일링 저퀄리티 옵션 테스트
 
-//Jaco 클래스 제작
+//Enemy 클래스 제작
 //자코들 클래스 풀링해야 할듯
 
 
@@ -28,32 +28,107 @@ using PlanetTerror.Util;
 namespace PlanetTerror
 {
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	//	SettingXml
+	//	Setting
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//	POD
-	public class SettingXml
+	public class Setting
 	{
-		public int startGold = 1000;
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public int tower_BuildGold = 50;
-		public double tower_AttackRangeSqr = 200 * 200;
-		public double tower_AttackDamage = 10;
-		public double tower_AttackCooldown = 1;
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public double projectile_speed = 10;
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public double enemy1_RouteTime = 20.0;
-		public double enemy1_HitPoint = 50;
-		
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	싱글턴 액세서
-		public static SettingXml Instance { get; set; }
+		public static Setting Instance { get; set; }
+
+		//===============================================================================================================================================
+		//	필드
+		public const int VERSION = 1;
+
+		public class Tower
+		{
+			public int buildCost;
+			public double attackRange;
+			public double attackRangeSqr;
+			public double attackDamage;
+			public double attackCooldown;
+		}
+		public Tower tower;
+
+		public class Projectile
+		{
+			public double speed;
+		}
+		public Projectile proj1;
+
+		public class Enemy
+		{
+			public double routeTime;
+			public double hitPoint;
+		}
+		public Enemy enemy1;
+		public Enemy enemy2;
+		public Enemy enemy3;
+
+		public int version;
+		public int startGold;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
-		public SettingXml()
+		public Setting()
 		{
-	
+			tower = new Tower();
+			proj1 = new Projectile();
+			enemy1 = new Enemy();
+			enemy2 = new Enemy();
+			enemy3 = new Enemy();
+
+			SetDefault();
+		}
+
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	초기화
+		public static void Initialize()
+		{
+			Setting setting = null;
+			try { setting = Helper.Deserialize<Setting>("setting.xml"); }
+			catch( Exception ) {}
+
+			if( setting == null ||
+				setting.version != VERSION )
+			{
+				setting = new Setting();
+				try { Helper.Serialize("setting.xml", setting); }
+				catch( Exception ) {}
+			}
+
+			setting.Adjust();
+			Instance = setting;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	기본값 설정
+		public void SetDefault()
+		{
+			version = VERSION;
+			startGold = 1000;
+
+			tower.buildCost = 50;
+			tower.attackRange = 100;
+			tower.attackRange = 10;
+			tower.attackCooldown = 1;
+
+			proj1.speed = 20;
+
+			enemy1.routeTime = 20;
+			enemy1.hitPoint = 50;
+
+			enemy2.routeTime = 20;
+			enemy2.hitPoint = 50;
+
+			enemy3.routeTime = 20;
+			enemy3.hitPoint = 50;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	값 변환
+		public void Adjust()
+		{
+			tower.attackRangeSqr = tower.attackRange * tower.attackRange;
 		}
 	}
 }

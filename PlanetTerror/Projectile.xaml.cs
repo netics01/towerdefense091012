@@ -76,7 +76,7 @@ namespace PlanetTerror
 			}
 
 			var disp = targetLastPos - pos;
-			var speed = SettingXml.Instance.projectile_speed;
+			var speed = Setting.Instance.proj1.speed;
 			if( disp.LengthSquared <= speed * speed )
 			{
 				pos = targetLastPos;
