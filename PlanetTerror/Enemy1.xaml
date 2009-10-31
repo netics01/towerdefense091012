@@ -1214,6 +1214,9 @@
 							<SplineColorKeyFrame KeyTime="00:00:00.2360000" Value="#FFFFAF03"/>
 							<SplineColorKeyFrame KeyTime="00:00:00.3540000" Value="#FF450101"/>
 						</ColorAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="boom" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 			</VisualStateGroup>
