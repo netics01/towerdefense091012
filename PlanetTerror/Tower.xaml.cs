@@ -81,7 +81,8 @@ namespace PlanetTerror
 			WPFUtil.SetImageScaleMode(LayoutRoot, BitmapScalingMode.Linear);
 
 			towerCenter = this.GetCenter();
-			vsm.SetState(NOTYETBUILT_STATE);			
+			vsm.SetState(NOTYETBUILT_STATE);
+			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Tower_MouseEnter(object sender, MouseEventArgs e)
@@ -93,7 +94,10 @@ namespace PlanetTerror
 				vsm.SetState(MENU_GROUP, MENU_BUILD_STATE);
 				break;
 			case BUILT_STATE:
-				vsm.SetState(MENU_GROUP, MENU_UPGRADE_STATE);
+				if( vsm.GetStateFinished() )
+				{
+					vsm.SetState(MENU_GROUP, MENU_UPGRADE_STATE);
+				}
 				break;
 			case DISMANTLE_STATE:
 				vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
