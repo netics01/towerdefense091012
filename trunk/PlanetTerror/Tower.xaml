@@ -264,9 +264,9 @@
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
-				<VisualState x:Name="Menu_UpgradeAndBIG_State">
+				<VisualState x:Name="Menu_UpgradeAndBig_State">
 					<Storyboard>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_UpgradeBIG_Button" Storyboard.TargetProperty="(UIElement.Visibility)">
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_UpgradeBig_Button" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Dismantle_Button" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -275,13 +275,13 @@
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Upgrade_Button" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_UpgradeBIG_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_UpgradeBig_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-17.003"/>
 						</DoubleAnimationUsingKeyFrames>
-						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_UpgradeBIG_Button" Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)">
+						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_UpgradeBig_Button" Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)">
 							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF434343"/>
 						</ColorAnimationUsingKeyFrames>
-						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_UpgradeBIG_Button" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_UpgradeBig_Button" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
 							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF707070"/>
 						</ColorAnimationUsingKeyFrames>
 					</Storyboard>
@@ -298,7 +298,7 @@
 				</VisualState>
 				<VisualState x:Name="Menu_UpgradeBIG_State">
 					<Storyboard>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_UpgradeBIG_Button" Storyboard.TargetProperty="(UIElement.Visibility)">
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_UpgradeBig_Button" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Dismantle_Button" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -535,7 +535,7 @@
 				</Rectangle.RenderTransform>
 			</Rectangle>
 		</Canvas>
-		<Canvas x:Name="Menu_Button" Width="107" Height="36" Canvas.Top="20" Background="#00000000" Canvas.Left="48">
+		<Canvas x:Name="menu_Canvas" Width="107" Height="36" Canvas.Top="20" Background="#00000000" Canvas.Left="48">
 			<Button x:Name="Menu_Build_Button" Width="107.25" Height="19.021" Content="타워 짓기  -50" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FFDEB64B" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
@@ -584,7 +584,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_UpgradeBIG_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="107.25" Height="19.021" Content="메가톤 타워  -600" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
+			<Button x:Name="Menu_UpgradeBig_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="107.25" Height="19.021" Content="메가톤 타워  -600" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 						<Setter Property="Template">
