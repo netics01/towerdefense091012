@@ -80,25 +80,29 @@ namespace PlanetTerror
 			switch( vsm.GetState() )
 			{
 			case HP100_STATE:
-				if( HitPoint <= Setting.Instance.core.hitPoint * 0.6 )
+				if( vsm.GetStateFinished() &&
+					HitPoint <= Setting.Instance.core.hitPoint * 0.6 )
 				{
 					vsm.SetState(HP60_STATE);
 				}
 				break;
 			case HP60_STATE:
-				if( HitPoint <= Setting.Instance.core.hitPoint * 0.3 )
+				if( vsm.GetStateFinished() &&
+					HitPoint <= Setting.Instance.core.hitPoint * 0.3 )
 				{
 					vsm.SetState(HP30_STATE);
 				}
 				break;
 			case HP30_STATE:
-				if( HitPoint <= Setting.Instance.core.hitPoint * 0.1 )
+				if( vsm.GetStateFinished() &&
+					HitPoint <= Setting.Instance.core.hitPoint * 0.1 )
 				{
 					vsm.SetState(HP10_STATE);
 				}
 				break;
 			case HP10_STATE:
-				if( HitPoint <= 0 )
+				if( vsm.GetStateFinished() &&
+					HitPoint <= 0 )
 				{
 					vsm.SetState(HP0_STATE);
 				}

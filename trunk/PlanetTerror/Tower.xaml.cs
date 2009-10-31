@@ -44,7 +44,9 @@ namespace PlanetTerror
 		Enemy target;
 		Point towerCenter;
 		double cooldownTime;
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		VSM vsm;
+		Storyboard idleStory;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -55,7 +57,7 @@ namespace PlanetTerror
 			vsm = new VSM(this, LayoutRoot);
 			vsm.SetDefaultGroup(BUILD_GROUP);
 
-			var idleStory = Resources.FindStoryboard("Idle_Storyboard");
+			idleStory = Resources.FindStoryboard("Idle_Storyboard");
 			idleStory.RepeatBehavior = RepeatBehavior.Forever;
 
 			Loaded += new RoutedEventHandler(Tower_Loaded);
@@ -153,6 +155,7 @@ namespace PlanetTerror
 			{
 				return;
 			}
+			idleStory.Stop();
 			vsm.SetState(DISMANTLE_STATE);
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 		}
@@ -169,6 +172,10 @@ namespace PlanetTerror
 				break;
 			case BUILT_STATE:
 				if( !vsm.GetStateFinished() ) { return; }
+				if( vsm.GetStateJustFinished() )
+				{
+					idleStory.Begin();
+				}
 				if( cooldownTime > 0 )
 				{
 					cooldownTime -= delta;
