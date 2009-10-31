@@ -203,10 +203,25 @@ namespace PlanetTerror.Util
 		public bool GetStateFinished(string groupName)
 		{
 			var group = Groups.Find(groupName);
+			Debug.Assert( group != null );
 			return group != null ? group.InProgress : false;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	진행이 방금 끝났는가?
-
+		public bool GetStateJustFinished()
+		{
+			bool ret = DefaultGroup.JustFinished;
+			DefaultGroup.JustFinished = false;
+			return ret;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		public bool GetStateJustFinished(string groupName)
+		{
+			var group = Groups.Find(groupName);
+			Debug.Assert(group != null);
+			bool ret = group.JustFinished;
+			group.JustFinished = false;
+			return ret;
+		}
 	}
 }
