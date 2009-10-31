@@ -167,7 +167,9 @@ namespace PlanetTerror
 					break;
 				}
 				//타겟 설정
-				if( target == null || target.IsInvalid )
+				if( target == null ||
+					target.IsInvalid ||
+					target.Pos.DistanceSqaure(towerCenter) >= Setting.Instance.tower.attackRangeSqr )
 				{
 					target = WorldControl.Instance.FindTarget(towerCenter, Setting.Instance.tower.attackRangeSqr);
 				}
