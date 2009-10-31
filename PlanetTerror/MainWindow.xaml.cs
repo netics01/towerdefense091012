@@ -25,6 +25,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	싱글턴 액세서
 		public static MainWindow Instance { get; protected set; }
+		public static UIPanelControl UI { get; protected set; }
 
 		//===============================================================================================================================================
 		//	필드
@@ -37,6 +38,7 @@ namespace PlanetTerror
 			InitializeComponent();
 
 			Instance = this;
+			UI = ui_Panel;
 
 			pump = new UpdatePump();
 			pump.Update += new UpdatePump.UpdateHandler(pump_Update);

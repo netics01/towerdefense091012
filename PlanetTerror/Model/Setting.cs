@@ -78,7 +78,7 @@ namespace PlanetTerror
 
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 4;
+		public const int VERSION = 5;
 
 		public class Tower
 		{
@@ -109,6 +109,7 @@ namespace PlanetTerror
 			public double hitPoint;
 			public double damage;
 			public int gold;
+			public double powerUp;
 		}
 		public Enemy enemy1;
 		public Enemy enemy2;
@@ -116,6 +117,7 @@ namespace PlanetTerror
 
 		public int version;
 		public int startGold;
+		public double powerMax;
 
 		public class Wave
 		{
@@ -164,6 +166,7 @@ namespace PlanetTerror
 		{
 			version = VERSION;
 			startGold = 1000;
+			powerMax = 100;
 
 			tower.buildCost = 50;
 			tower.dismantleCost = -30;
@@ -178,17 +181,20 @@ namespace PlanetTerror
 			enemy1.routeTime = 20;
 			enemy1.hitPoint = 50;
 			enemy1.damage = 5;
-			enemy1.gold = 5;
+			enemy1.gold = 0;
+			enemy1.powerUp = 2;
 
 			enemy2.routeTime = 20;
 			enemy2.hitPoint = 50;
 			enemy2.damage = 5;
-			enemy2.gold = 5;
+			enemy2.gold = 0;
+			enemy2.powerUp = 2;
 
 			enemy3.routeTime = 20;
 			enemy3.hitPoint = 50;
 			enemy2.damage = 5;
-			enemy3.gold = 5;
+			enemy3.gold = 0;
+			enemy3.powerUp = 2;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	값 변환
