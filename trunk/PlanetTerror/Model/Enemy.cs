@@ -159,6 +159,7 @@ namespace PlanetTerror
 			if( routeTime >= 1.0 )
 			{
 				vsm.SetState(BOOM_STATE, true);
+				WorldControl.Instance.core.TakeDamage(setting.damage);
 				IsDestroyed = true;
 				return;
 			}

@@ -30,8 +30,6 @@ using PlanetTerror.Util;
 //----작업----
 
 
-//백그라운드 수정
-
 //자코들 클래스 풀링해야 할듯
 
 
@@ -54,7 +52,7 @@ namespace PlanetTerror
 
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 1;
+		public const int VERSION = 3;
 
 		public class Tower
 		{
@@ -66,6 +64,12 @@ namespace PlanetTerror
 		}
 		public Tower tower;
 
+		public class Core
+		{
+			public double hitPoint;
+		}
+		public Core core;
+
 		public class Projectile
 		{
 			public double speed;
@@ -76,6 +80,7 @@ namespace PlanetTerror
 		{
 			public double routeTime;
 			public double hitPoint;
+			public double damage;
 		}
 		public Enemy enemy1;
 		public Enemy enemy2;
@@ -89,6 +94,7 @@ namespace PlanetTerror
 		public Setting()
 		{
 			tower = new Tower();
+			core = new Core();
 			proj1 = new Projectile();
 			enemy1 = new Enemy();
 			enemy2 = new Enemy();
@@ -128,16 +134,21 @@ namespace PlanetTerror
 			tower.attackDamage = 10;
 			tower.attackCooldown = 1;
 
+			core.hitPoint = 100;
+
 			proj1.speed = 20;
 
 			enemy1.routeTime = 20;
 			enemy1.hitPoint = 50;
+			enemy1.damage = 5;
 
 			enemy2.routeTime = 20;
 			enemy2.hitPoint = 50;
+			enemy2.damage = 5;
 
 			enemy3.routeTime = 20;
 			enemy3.hitPoint = 50;
+			enemy2.damage = 5;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	값 변환

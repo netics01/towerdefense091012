@@ -138,7 +138,7 @@ namespace PlanetTerror.Util
 		public bool SetDefaultGroup(string groupName)
 		{
 			Group group = Groups.Find(groupName);
-			if( group == null ) { return false; }
+			if( group == null ) { Debug.Assert(false); return false; }
 			DefaultGroup = group;
 			return true;
 		}
@@ -146,7 +146,7 @@ namespace PlanetTerror.Util
 		//	기본 상태그룹에서 상태를 설정한다.
 		public bool SetState(string stateName, bool useTransition)
 		{
-			if( !DefaultGroup.SetState(stateName) ) { return false; }
+			if( !DefaultGroup.SetState(stateName) ) { Debug.Assert(false); return false; }
 			if( stateName.Length > 0 )
 			{
 				VisualStateManager.GoToState(Control, stateName, useTransition);
@@ -160,9 +160,9 @@ namespace PlanetTerror.Util
 		public bool SetState(string groupName, string stateName, bool useTransition)
 		{
 			Group group = Groups.Find(groupName);
-			if( group == null ) { return false; }
+			if( group == null ) { Debug.Assert(false); return false; }
 
-			if( !group.SetState(stateName) ) { return false; }
+			if( !group.SetState(stateName) ) { Debug.Assert(false); return false; }
 			if( stateName.Length > 0 )
 			{
 				VisualStateManager.GoToState(Control, stateName, useTransition);
