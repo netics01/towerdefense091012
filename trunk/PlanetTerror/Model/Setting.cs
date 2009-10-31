@@ -105,6 +105,12 @@ namespace PlanetTerror
 		public int version;
 		public int startGold;
 
+		public class Wave
+		{
+			public double startWaitTime;
+		}
+		public List<Wave> waves;
+
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
 		public Setting()
@@ -115,6 +121,8 @@ namespace PlanetTerror
 			enemy1 = new Enemy();
 			enemy2 = new Enemy();
 			enemy3 = new Enemy();
+
+			waves = new List<Wave>();
 
 			SetDefault();
 		}
