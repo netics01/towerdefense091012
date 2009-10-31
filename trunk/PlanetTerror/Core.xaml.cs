@@ -43,8 +43,7 @@ namespace PlanetTerror
 		public Core()
 		{
 			this.InitializeComponent();
-
-			HitPoint = Setting.Instance.core.hitPoint;
+			
 			vsm = new VSM(this, LayoutRoot);
 
 			Loaded += new RoutedEventHandler(Core_Loaded);
@@ -66,6 +65,12 @@ namespace PlanetTerror
 
 		//===============================================================================================================================================
 		//	공용
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	초기화
+		public void Initialize()
+		{
+			HitPoint = Setting.Instance.core.hitPoint;
+		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	데미지를 입는다.
 		public void TakeDamage(double damage)

@@ -73,13 +73,12 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Tower_MouseEnter(object sender, MouseEventArgs e)
 		{
-//			this.SetState("Menu_Build_State", true);
+			vsm.SetState(MENU_GROUP, MENU_BUILD_STATE);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Tower_MouseLeave(object sender, MouseEventArgs e)
 		{
-// 			vsm.SetState()
-// 			this.SetState("Menu_NoMenu_State", true);
+			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Build_Button_MouseLeave(object sender, MouseEventArgs e)

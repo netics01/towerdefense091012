@@ -170,7 +170,7 @@ namespace PlanetTerror.Util
 			return true;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public bool SetState(string groupName, string stateName) { return SetState(groupName, stateName); }
+		public bool SetState(string groupName, string stateName) { return SetState(groupName, stateName, true); }
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	VisualState 획득
 		public VisualState GetVisualState(string stateName)
