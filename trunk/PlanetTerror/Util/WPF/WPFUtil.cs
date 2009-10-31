@@ -81,6 +81,13 @@ namespace PlanetTerror.Util
 			//	상태를 설정한다.
 			internal bool SetState(string stateName)
 			{
+				if( stateName.Length == 0 )
+				{
+					State = null;
+					InProgress = false;
+					return true;
+				}
+
 				VisualState state = States.Find(stateName);
 				if( state == null ) { return false; }
 				State = state;
@@ -140,7 +147,10 @@ namespace PlanetTerror.Util
 		public bool SetState(string stateName, bool useTransition)
 		{
 			if( !DefaultGroup.SetState(stateName) ) { return false; }
-			VisualStateManager.GoToState(Control, stateName, useTransition);
+			if( stateName.Length > 0 )
+			{
+				VisualStateManager.GoToState(Control, stateName, useTransition);
+			}
 			return true;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -153,7 +163,10 @@ namespace PlanetTerror.Util
 			if( group == null ) { return false; }
 
 			if( !group.SetState(stateName) ) { return false; }
-			VisualStateManager.GoToState(Control, stateName, useTransition);
+			if( stateName.Length > 0 )
+			{
+				VisualStateManager.GoToState(Control, stateName, useTransition);
+			}
 			return true;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------

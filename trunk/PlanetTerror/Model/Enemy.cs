@@ -23,6 +23,13 @@ namespace PlanetTerror
 	public class Enemy : UserControl
 	{
 		//===============================================================================================================================================
+		//	상수
+		const string NO_STATE = "";
+		const string HIT_STATE = "Enemy_Hit_State";
+		const string DESTROY_STATE = "Enemy_Destroy_State";
+		const string BOOM_STATE = "Enemy_Boom_State";
+
+		//===============================================================================================================================================
 		//	프로퍼티
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public bool IsDeleted { get; protected set; }
@@ -79,22 +86,18 @@ namespace PlanetTerror
 		{
 			switch( vsm.GetState() )
 			{
-			case "":
-				routeTime += delta / setting.routeTime;
-				if( routeTime >= 1.0 )
-				{
-					vsm.SetState(boomState.Name, true);
-					IsDestroyed = true;
-					return;
-				}
-
-				Point pos, tangent;
-				path.GetPointAtFractionLength(routeTime, out pos, out tangent);
-				Pos = pos;
-				this.SetCenter(pos);
+			case NO_STATE:
+				Move(delta);
 				break;
-			case "Enemy_Destroy_State":
-			case "Enemy_Boom_State":
+			//case HIT_STATE:
+			//    Move(delta);
+			//    if( vsm.GetStateFinished() )
+			//    {
+			//        vsm.SetState(NO_STATE);
+			//    }
+			//    break;
+			case DESTROY_STATE:
+			case BOOM_STATE:
 				if( vsm.GetStateFinished() )
 				{
 					IsDeleted = true;
@@ -112,8 +115,9 @@ namespace PlanetTerror
 			if( HitPoint < 0 )
 			{
 				IsDestroyed = true;
-				vsm.SetState(destroyState.Name);
+				vsm.SetState(DESTROY_STATE);
 			}
+			//else { vsm.SetState(HIT_STATE);	}
 		}
 
 		//===============================================================================================================================================
@@ -145,6 +149,24 @@ namespace PlanetTerror
 			WPFUtil.SetImageScaleMode(layoutRoot, BitmapScalingMode.Linear);
 
 			moveStory.Begin();
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	이동
+		void Move(float delta)
+		{
+			routeTime += delta / setting.routeTime;
+			//routeTime = Math.Min(1.0, routeTime);
+			if( routeTime >= 1.0 )
+			{
+				vsm.SetState(BOOM_STATE, true);
+				IsDestroyed = true;
+				return;
+			}
+
+			Point pos, tangent;
+			path.GetPointAtFractionLength(routeTime, out pos, out tangent);
+			Pos = pos;
+			this.SetCenter(pos);
 		}
 	}
 }
