@@ -37,7 +37,6 @@ namespace PlanetTerror
 			InitializeComponent();
 
 			Instance = this;
-			Setting.Initialize();
 
 			pump = new UpdatePump();
 			pump.Update += new UpdatePump.UpdateHandler(pump_Update);
@@ -83,7 +82,8 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void pump_Update(float delta)
 		{
-			world.Update(delta);			
+			world.Update(delta);
+			debug_Panel.Update(delta);
 		}
 
 		//===============================================================================================================================================

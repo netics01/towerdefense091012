@@ -12,5 +12,11 @@ namespace PlanetTerror
 	/// </summary>
 	public partial class App : Application
 	{
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	생성자
+		public App()
+		{
+			Setting.Initialize();
+		}
 	}
 }

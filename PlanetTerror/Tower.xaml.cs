@@ -79,10 +79,10 @@ namespace PlanetTerror
 			//타겟이 있으면 타겟 공격
 			if( target != null )
 			{
-				var projectile = WorldControl.Instance.CreateProjectile(target, towerCenter);
-				projectile.Damage = Setting.Instance.tower.attackDamage;
-
-				cooldownTime = Setting.Instance.tower.attackCooldown;
+// 				var projectile = WorldControl.Instance.CreateProjectile(target, towerCenter);
+// 				projectile.Damage = Setting.Instance.tower.attackDamage;
+// 
+// 				cooldownTime = Setting.Instance.tower.attackCooldown;
 			}
 		}
 	}

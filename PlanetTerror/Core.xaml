@@ -7,7 +7,7 @@
 	x:Class="PlanetTerror.Core"
 	x:Name="UserControl" Width="168" Height="216">
 	<UserControl.Resources>
-		<Storyboard x:Key="Core_Idle1">
+		<Storyboard x:Key="Idle_Storyboard">
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="r1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="3.928"/>
 			</DoubleAnimationUsingKeyFrames>
@@ -101,11 +101,6 @@
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 	</UserControl.Resources>
-	<UserControl.Triggers>
-		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
-			<BeginStoryboard Storyboard="{StaticResource Core_Idle1}"/>
-		</EventTrigger>
-	</UserControl.Triggers>
 
 	<Canvas x:Name="LayoutRoot" Margin="0,0,56,64">
 		<VisualStateManager.VisualStateGroups>
@@ -165,7 +160,7 @@
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
-				<VisualState x:Name="Core_0_State">
+				<VisualState x:Name="Core_HP0_State">
 					<Storyboard>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>

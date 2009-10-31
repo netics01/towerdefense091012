@@ -22,6 +22,16 @@ namespace PlanetTerror
 	public partial class DebugPanelControl : UserControl
 	{
 		//===============================================================================================================================================
+		//	싱글턴 인스턴스
+		public static DebugPanelControl Instance;
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	로그
+		public static void Log(string str)
+		{
+			Instance.log_ListBox.Items.Add(str);
+		}
+
+		//===============================================================================================================================================
 		//	필드
 		int routeSelect;
 
@@ -30,6 +40,8 @@ namespace PlanetTerror
 		public DebugPanelControl()
 		{
 			this.InitializeComponent();
+
+			Instance = this;
 
 			test1_Button.Click += new RoutedEventHandler(test1_Button_Click);
 			test2_Button.Click += new RoutedEventHandler(test2_Button_Click);
@@ -74,6 +86,12 @@ namespace PlanetTerror
 
 		//===============================================================================================================================================
 		//	공용
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	업데이트
+		public void Update(float delta)
+		{
+			coreHp_Text.Text = string.Format("{0:F0}", WorldControl.Instance.core.HitPoint);
+		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	적 생성
 		public void EnemyTest<T>() where T : Enemy, new()
