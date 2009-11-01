@@ -9,7 +9,7 @@
 	x:Name="UserControl"
 	d:DesignWidth="640" d:DesignHeight="480" Width="80" Height="80">
 	<UserControl.Resources>
-		<Storyboard x:Key="Idle_Storyboard">
+		<Storyboard x:Key="Upg0_tower_storyboard">
 			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="b1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
 				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFC77F29"/>
 				<SplineColorKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.8000000" Value="Black"/>
@@ -70,9 +70,6 @@
 									<VisualState x:Name="Normal"/>
 									<VisualState x:Name="MouseOver">
 										<Storyboard>
-											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
-											</ColorAnimationUsingKeyFrames>
 											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
 												<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 											</ObjectAnimationUsingKeyFrames>
@@ -83,12 +80,6 @@
 									</VisualState>
 									<VisualState x:Name="Pressed">
 										<Storyboard>
-											<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-												<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-											</DoubleAnimationUsingKeyFrames>
-											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
-											</ColorAnimationUsingKeyFrames>
 											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
 												<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 											</ObjectAnimationUsingKeyFrames>
@@ -98,9 +89,6 @@
 										<Storyboard>
 											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
 												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF4D4D4D"/>
-											</ColorAnimationUsingKeyFrames>
-											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF949494"/>
 											</ColorAnimationUsingKeyFrames>
 											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
 												<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
@@ -136,14 +124,6 @@
 									</TransformGroup>
 								</Rectangle.RenderTransform>
 							</Rectangle>
-							<TextBlock x:Name="textBlock1" Foreground="#FF61302C" TextWrapping="Wrap" Margin="17.5,0,30.5,0" RenderTransformOrigin="0.5,0.5" FontSize="10.667" Height="14" FontWeight="Bold"><TextBlock.RenderTransform>
-									<TransformGroup>
-										<ScaleTransform/>
-										<SkewTransform/>
-										<RotateTransform/>
-										<TranslateTransform/>
-									</TransformGroup>
-								</TextBlock.RenderTransform><Run Text="+"/><Run Text="50"/><LineBreak/><Run Text=""/></TextBlock>
 							<Path x:Name="path" Fill="{x:Null}" Stretch="Fill" Stroke="Black" StrokeThickness="2" HorizontalAlignment="Left" Margin="2,1,0,1" Width="12" RenderTransformOrigin="0.5,0.5" Data="M11,6 C11,8.7614237 8.7614237,11 6,11 C3.2385763,11 1,8.7614237 1,6 C1,3.2385763 3.2385763,1 6,1 C8.7614237,1 11,3.2385763 11,6 z M1.1669999,6.3329998 L10.541,6.3329998">
 								<Path.RenderTransform>
 									<TransformGroup>
@@ -154,11 +134,213 @@
 									</TransformGroup>
 								</Path.RenderTransform>
 							</Path>
+							<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Content="+50" RecognizesAccessKey="True" Width="44.2"/>
 						</Grid>
 					</ControlTemplate>
 				</Setter.Value>
 			</Setter>
 		</Style>
+		<Storyboard x:Key="Upg1_tower_storyboard">
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="b1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFC77F29"/>
+				<SplineColorKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.8000000" Value="Black"/>
+				<SplineColorKeyFrame KeyTime="00:00:02" Value="#FFC77F29"/>
+				<SplineColorKeyFrame KeyTime="00:00:03.8000000" Value="Black" KeySpline="0,1,1,1"/>
+				<SplineColorKeyFrame KeyTime="00:00:04" Value="#FFC77F29"/>
+				<SplineColorKeyFrame KeyTime="00:00:05.8000000" Value="Black" KeySpline="0,1,1,1"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="#FFC77F29"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="b1" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFB90C0C"/>
+				<SplineColorKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.8000000" Value="Black"/>
+				<SplineColorKeyFrame KeyTime="00:00:02" Value="#FFB90C0C"/>
+				<SplineColorKeyFrame KeyTime="00:00:03.8000000" Value="Black" KeySpline="0,1,1,1"/>
+				<SplineColorKeyFrame KeyTime="00:00:04" Value="#FFB90C0C"/>
+				<SplineColorKeyFrame KeyTime="00:00:05.8000000" Value="Black" KeySpline="0,1,1,1"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="#FFB90C0C"/>
+			</ColorAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="spot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.667"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.815"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2.996"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.167"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1.001"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="360"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="360"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="360"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="360"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy1" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF48214D"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="Black"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy2" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF48214D"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="Black"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF48214D"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="Black"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path1" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF48214D"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="Black"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="Upg2_tower_storyboard">
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="b1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF0B64FF"/>
+				<SplineColorKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.8000000" Value="Black"/>
+				<SplineColorKeyFrame KeyTime="00:00:02" Value="#FFC77F29"/>
+				<SplineColorKeyFrame KeyTime="00:00:03.8000000" Value="Black" KeySpline="0,1,1,1"/>
+				<SplineColorKeyFrame KeyTime="00:00:04" Value="#FFC77F29"/>
+				<SplineColorKeyFrame KeyTime="00:00:05.8000000" Value="Black" KeySpline="0,1,1,1"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="#FFC77F29"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="b1" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF370F2B"/>
+				<SplineColorKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.8000000" Value="Black"/>
+				<SplineColorKeyFrame KeyTime="00:00:02" Value="#FFB90C0C"/>
+				<SplineColorKeyFrame KeyTime="00:00:03.8000000" Value="Black" KeySpline="0,1,1,1"/>
+				<SplineColorKeyFrame KeyTime="00:00:04" Value="#FFB90C0C"/>
+				<SplineColorKeyFrame KeyTime="00:00:05.8000000" Value="Black" KeySpline="0,1,1,1"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="#FFB90C0C"/>
+			</ColorAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="spot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.667"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.815"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2.996"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.167"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1.001"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="360"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="360"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="360"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="360"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy1" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF3683DE"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="Black"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy2" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF3683DE"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="Black"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF3683DE"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="Black"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path1" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF3683DE"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="Black"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="Upg3_tower_storyboard">
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="b1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF29C73B"/>
+				<SplineColorKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.8000000" Value="Black"/>
+				<SplineColorKeyFrame KeyTime="00:00:02" Value="#FFC77F29"/>
+				<SplineColorKeyFrame KeyTime="00:00:03.8000000" Value="Black" KeySpline="0,1,1,1"/>
+				<SplineColorKeyFrame KeyTime="00:00:04" Value="#FFC77F29"/>
+				<SplineColorKeyFrame KeyTime="00:00:05.8000000" Value="Black" KeySpline="0,1,1,1"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="#FFC77F29"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="b1" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF07092C"/>
+				<SplineColorKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.8000000" Value="Black"/>
+				<SplineColorKeyFrame KeyTime="00:00:02" Value="#FFB90C0C"/>
+				<SplineColorKeyFrame KeyTime="00:00:03.8000000" Value="Black" KeySpline="0,1,1,1"/>
+				<SplineColorKeyFrame KeyTime="00:00:04" Value="#FFB90C0C"/>
+				<SplineColorKeyFrame KeyTime="00:00:05.8000000" Value="Black" KeySpline="0,1,1,1"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="#FFB90C0C"/>
+			</ColorAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="spot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.667"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.815"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2.996"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.167"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="role" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1.001"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="360"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="360"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="360"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="360"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy1" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF30B357"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="Black"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy2" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF30B357"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="Black"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF31A3A7"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="Black"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path1" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF31A3A7"/>
+				<SplineColorKeyFrame KeyTime="00:00:06" Value="Black"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
 	</UserControl.Resources>
 	<UserControl.Triggers>
 		<EventTrigger RoutedEvent="FrameworkElement.Loaded"/>
@@ -476,10 +658,10 @@
 						</ObjectAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="35.46"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="25.46"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="28.293"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="24.46"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="29.46"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="28.46"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="32.293"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="31.46"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.586"/>
@@ -506,6 +688,13 @@
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_Dismantle_Button" Storyboard.TargetProperty="(UIElement.Opacity)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.0376666666666667"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.151"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.0376666666666667"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1.113"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1.12"/>
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
@@ -622,38 +811,6 @@
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Gold_Normal_State"/>
-			</VisualStateGroup>
-			<VisualStateGroup x:Name="Upgrade_StateGroup">
-				<VisualState x:Name="Upgrade1_State">
-					<Storyboard>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UP01" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-					</Storyboard>
-				</VisualState>
-				<VisualState x:Name="Upgrade2_State">
-					<Storyboard>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UP01" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UP02" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-					</Storyboard>
-				</VisualState>
-				<VisualState x:Name="Upgrade3_State">
-					<Storyboard>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UP01" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UP02" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="UP03" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-					</Storyboard>
-				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
 		<Image x:Name="hole" Source="Resources/Tower/TowerA0_BG.png" Width="48" Height="48" Canvas.Top="24" RenderTransformOrigin="0.5,0.5">
@@ -821,7 +978,7 @@
 					</TransformGroup>
 				</Rectangle.RenderTransform>
 			</Rectangle>
-			<Button x:Name="Menu_Build_Button" Width="80" Height="14" Content="타워 짓기  -50" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FFDEB64B" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
+			<Button x:Name="Menu_Build_Button" Width="80" Height="14" Content="{DynamicResource Menu_Build_Button}" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FF552D1A" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" FontSize="10.667" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 						<Setter Property="Template">
@@ -841,9 +998,6 @@
 												<VisualState x:Name="Normal"/>
 												<VisualState x:Name="MouseOver">
 													<Storyboard>
-														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
-														</ColorAnimationUsingKeyFrames>
 														<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
 															<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 														</ObjectAnimationUsingKeyFrames>
@@ -860,9 +1014,6 @@
 														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 														</DoubleAnimationUsingKeyFrames>
-														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
-														</ColorAnimationUsingKeyFrames>
 														<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
 															<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 														</ObjectAnimationUsingKeyFrames>
@@ -879,9 +1030,6 @@
 														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
 															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF4D4D4D"/>
 														</ColorAnimationUsingKeyFrames>
-														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF949494"/>
-														</ColorAnimationUsingKeyFrames>
 														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
 															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF909090"/>
 														</ColorAnimationUsingKeyFrames>
@@ -893,7 +1041,7 @@
 												<VisualState x:Name="Focused"/>
 											</VisualStateGroup>
 										</VisualStateManager.VisualStateGroups>
-										<Rectangle x:Name="rectangle" Fill="#FF8E5720" RadiusX="2" RadiusY="2" Margin="-1,-1,31,-2" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5" Width="50" Height="17">
+										<Rectangle x:Name="rectangle" Fill="#FF8E5720" RadiusX="2" RadiusY="2" Margin="-1,-1,31,-2" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5" Width="50" Height="17" d:IsLocked="True">
 											<Rectangle.RenderTransform>
 												<TransformGroup>
 													<ScaleTransform/>
@@ -903,9 +1051,9 @@
 												</TransformGroup>
 											</Rectangle.RenderTransform>
 										</Rectangle>
-										<Rectangle x:Name="rectangle1" Fill="#FF208E31" RadiusX="2" RadiusY="2" Width="16" Height="14" Margin="0,0,1,0" HorizontalAlignment="Left" d:LayoutOverrides="Width" Stroke="#FFDCC799"/>
-										<TextBlock x:Name="textBlock1" Width="Auto" Height="14" Foreground="#FF513123" TextWrapping="Wrap" Margin="18,0,0,0" FontFamily="아리따L" FontSize="10.667" FontWeight="Bold"><Run Text="-50"/><LineBreak/><Run Text=""/></TextBlock>
-										<Path Fill="Black" Stretch="Fill" HorizontalAlignment="Left" Margin="0.906,2.469,0,0.087" Width="12.636" Data="M4.5000001,0 L11.917,0 C12.193142,8.6527166E-08 12.417,0.22386735 12.417,0.50002166 L12.417,4.1251775 C12.417,4.401332 12.193142,4.6251989 11.917,4.6251989 L8.8330951,4.6251989 8.8330636,6.8777047 8.8404474,6.8794228 C8.858706,6.8855611 8.8753901,6.89703 8.8879633,6.9134909 L11.46875,10.35982 C11.502278,10.403714 11.528533,10.467267 11.484639,10.500798 L10.19042,10.513404 C10.146527,10.546935 10.083764,10.538534 10.050236,10.494639 L8.8330359,8.9010983 8.833015,10.400797 C8.8330145,10.456033 8.788238,10.500811 8.7330041,10.500812 L7.6829033,10.500826 C7.6276693,10.500827 7.5828943,10.45605 7.582895,10.400814 L7.5829158,8.8920232 6.3556702,10.498691 C6.3221409,10.542586 6.2593782,10.550989 6.2154856,10.517461 L4.984539,10.50058 C4.9406462,10.46705 4.8730543,10.403703 4.9065833,10.359807 L7.5180426,6.9175101 C7.530616,6.9010497 7.5473003,6.8895799 7.5655589,6.8834406 L7.5829437,6.8793951 7.5829749,4.6251989 4.5000001,4.6251989 C4.2238577,4.6251989 4,4.401332 4,4.1251775 L4,2.7500001 0.20000005,2.7500001 C0.089543104,2.7500001 0,2.660457 0,2.55 L0,1.7309999 C0,1.6205431 0.089543104,1.5310001 0.20000005,1.5310002 L4,1.5310002 4,0.50002166 C4,0.22386735 4.2238577,8.6527166E-08 4.5000001,0 z"/>
+										<Rectangle x:Name="rectangle1" Fill="#FF208E31" RadiusX="2" RadiusY="2" Width="16" Height="14" Margin="0,0,1,0" HorizontalAlignment="Left" d:LayoutOverrides="Width" Stroke="#FFDCC799" d:IsLocked="True"/>
+										<Path Fill="Black" Stretch="Fill" HorizontalAlignment="Left" Margin="0.906,2.469,0,0.087" Width="12.636" Data="M4.5000001,0 L11.917,0 C12.193142,8.6527166E-08 12.417,0.22386735 12.417,0.50002166 L12.417,4.1251775 C12.417,4.401332 12.193142,4.6251989 11.917,4.6251989 L8.8330951,4.6251989 8.8330636,6.8777047 8.8404474,6.8794228 C8.858706,6.8855611 8.8753901,6.89703 8.8879633,6.9134909 L11.46875,10.35982 C11.502278,10.403714 11.528533,10.467267 11.484639,10.500798 L10.19042,10.513404 C10.146527,10.546935 10.083764,10.538534 10.050236,10.494639 L8.8330359,8.9010983 8.833015,10.400797 C8.8330145,10.456033 8.788238,10.500811 8.7330041,10.500812 L7.6829033,10.500826 C7.6276693,10.500827 7.5828943,10.45605 7.582895,10.400814 L7.5829158,8.8920232 6.3556702,10.498691 C6.3221409,10.542586 6.2593782,10.550989 6.2154856,10.517461 L4.984539,10.50058 C4.9406462,10.46705 4.8730543,10.403703 4.9065833,10.359807 L7.5180426,6.9175101 C7.530616,6.9010497 7.5473003,6.8895799 7.5655589,6.8834406 L7.5829437,6.8793951 7.5829749,4.6251989 4.5000001,4.6251989 C4.2238577,4.6251989 4,4.401332 4,4.1251775 L4,2.7500001 0.20000005,2.7500001 C0.089543104,2.7500001 0,2.660457 0,2.55 L0,1.7309999 C0,1.6205431 0.089543104,1.5310001 0.20000005,1.5310002 L4,1.5310002 4,0.50002166 C4,0.22386735 4.2238577,8.6527166E-08 4.5000001,0 z" d:IsLocked="True"/>
+										<ContentPresenter HorizontalAlignment="Stretch" Margin="19.891,0,33.898,0" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Content="-50" RecognizesAccessKey="True" d:LayoutOverrides="Width"/>
 									</Grid>
 								</ControlTemplate>
 							</Setter.Value>
@@ -921,7 +1069,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_Upgrade_Button" Width="80" Height="14" Content="업그레이드  -150" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Upgrade}" Visibility="Collapsed">
+			<Button x:Name="Menu_Upgrade_Button" Width="80" Height="14" Content="{DynamicResource Menu_Upgrade}" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FF552D1A" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Upgrade}" FontSize="10.667" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Upgrade" TargetType="{x:Type Button}">
 						<Setter Property="FocusVisualStyle">
@@ -967,9 +1115,6 @@
 												<VisualState x:Name="Normal"/>
 												<VisualState x:Name="MouseOver">
 													<Storyboard>
-														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFCD776"/>
-														</ColorAnimationUsingKeyFrames>
 														<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
 															<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 														</ObjectAnimationUsingKeyFrames>
@@ -980,9 +1125,6 @@
 												</VisualState>
 												<VisualState x:Name="Pressed">
 													<Storyboard>
-														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFCD776"/>
-														</ColorAnimationUsingKeyFrames>
 														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="canvas" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 														</DoubleAnimationUsingKeyFrames>
@@ -995,9 +1137,6 @@
 													<Storyboard>
 														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
 															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF4D4D4D"/>
-														</ColorAnimationUsingKeyFrames>
-														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF949494"/>
 														</ColorAnimationUsingKeyFrames>
 													</Storyboard>
 												</VisualState>
@@ -1018,7 +1157,7 @@
 											</Rectangle.RenderTransform>
 										</Rectangle>
 										<Rectangle x:Name="rectangle" Fill="#FF1C89BB" RadiusX="2" RadiusY="2" Width="16" Height="14" Canvas.Left="0" Canvas.Top="0" Stroke="#FFE6E6AC"/>
-										<TextBlock x:Name="textBlock" Width="36" Height="14" Canvas.Left="0" Canvas.Top="0" Text=" -150" TextWrapping="Wrap" FontSize="10.667" Foreground="#FF533C2D" Margin="16,0,0,0" FontFamily="아리따B" FontWeight="Bold"/>
+										<ContentPresenter HorizontalAlignment="Stretch" Margin="{TemplateBinding Padding}" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Content="-150" RecognizesAccessKey="True" Canvas.Left="18.938" Canvas.Top="0.6" Width="59.104"/>
 										<Path Fill="Black" Stretch="Fill" Stroke="{x:Null}" Width="8.333" Height="10.75" Canvas.Left="4.084" Canvas.Top="3.25" Data="M4.0830004,0 L8.3330007,4.7500001 6.1660001,4.7283307 6.1660001,10.65 C6.1660001,10.705229 6.1212285,10.75 6.066,10.75 L2.3490001,10.75 C2.2937716,10.75 2.2490001,10.705229 2.2490001,10.65 L2.2490001,4.6891618 0,4.6666725 z"/>
 									</Canvas>
 									<ControlTemplate.Triggers>
@@ -1053,7 +1192,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_UpgradeBig_Button" FocusVisualStyle="{DynamicResource ControlStyle1}" Width="80" Height="14" Content="메가톤 타워  -600" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Visibility="Collapsed">
+			<Button x:Name="Menu_UpgradeBig_Button" FocusVisualStyle="{DynamicResource ControlStyle1}" Width="80" Height="14" Content="{DynamicResource ControlStyle1}" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FF552D1A" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource ControlStyle1}" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="ControlStyle1" TargetType="{x:Type Control}">
 						<Setter Property="Template">
@@ -1131,83 +1270,6 @@
 						</Setter>
 					</Style>
 				</Button.Resources>
-				<Button.Style>
-					<Style TargetType="{x:Type Control}">
-						<Setter Property="Template">
-							<Setter.Value>
-								<ControlTemplate TargetType="{x:Type Control}">
-									<Grid x:Name="grid" Width="80" Height="14" RenderTransformOrigin="0.5,0.5">
-										<Grid.RenderTransform>
-											<TransformGroup>
-												<ScaleTransform/>
-												<SkewTransform/>
-												<RotateTransform/>
-												<TranslateTransform/>
-											</TransformGroup>
-										</Grid.RenderTransform>
-										<VisualStateManager.VisualStateGroups>
-											<VisualStateGroup x:Name="CommonStates">
-												<VisualState x:Name="Normal"/>
-												<VisualState x:Name="MouseOver">
-													<Storyboard>
-														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFFA93"/>
-														</ColorAnimationUsingKeyFrames>
-														<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
-															<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-														</ObjectAnimationUsingKeyFrames>
-													</Storyboard>
-												</VisualState>
-												<VisualState x:Name="Pressed">
-													<Storyboard>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-														</DoubleAnimationUsingKeyFrames>
-														<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
-															<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-														</ObjectAnimationUsingKeyFrames>
-														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFD25B"/>
-														</ColorAnimationUsingKeyFrames>
-													</Storyboard>
-												</VisualState>
-												<VisualState x:Name="Disabled">
-													<Storyboard>
-														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF4D4D4D"/>
-														</ColorAnimationUsingKeyFrames>
-														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF949494"/>
-														</ColorAnimationUsingKeyFrames>
-													</Storyboard>
-												</VisualState>
-											</VisualStateGroup>
-											<VisualStateGroup x:Name="FocusStates">
-												<VisualState x:Name="Unfocused"/>
-												<VisualState x:Name="Focused"/>
-											</VisualStateGroup>
-										</VisualStateManager.VisualStateGroups>
-										<Rectangle x:Name="rectangle" Fill="#FF8E5720" RadiusX="2" RadiusY="2" Margin="-1.25,-1.188,31.25,-1.813" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" Width="50" Height="17">
-											<Rectangle.RenderTransform>
-												<TransformGroup>
-													<ScaleTransform/>
-													<SkewTransform/>
-													<RotateTransform/>
-													<TranslateTransform/>
-												</TransformGroup>
-											</Rectangle.RenderTransform>
-										</Rectangle>
-										<Rectangle x:Name="rectangle1" Fill="#FFE88626" RadiusX="2" RadiusY="2" Width="16" Height="14" Margin="0" Stroke="#FFFAE499" HorizontalAlignment="Left" d:LayoutOverrides="Width, HorizontalMargin"/>
-										<TextBlock x:Name="textBlock1" Width="36" Height="14" Foreground="#FF59462F" TextWrapping="Wrap" Margin="18,0,17.75,0" FontSize="10.667"><Run Text="-"/><Run Text="60"/><Run Text="0"/><LineBreak/><Run Text=""/></TextBlock>
-										<Path Fill="Black" Stretch="Fill" Stroke="{x:Null}" HorizontalAlignment="Left" Margin="0.375,2.882,0,0.938" VerticalAlignment="Stretch" Width="6.908" Height="Auto" Data="M3.8672009,0.000228405 C4.1625934,-0.010248184 4.4471338,0.33973479 4.9372685,0.99318218 5.7962363,2.1383572 6.4980557,3.1369634 6.8746779,4.4926659 6.968591,4.8307191 6.8946841,4.8763588 6.249707,4.9301015 5.9832437,4.9523045 5.7173629,4.9742299 5.4557352,5.003076 L5.375,5.0125991 5.375,10.08 C5.375,10.135228 5.3302283,10.18 5.2749999,10.18 L1.913,10.18 C1.8577715,10.18 1.813,10.135228 1.813,10.08 L1.813,5.0716089 1.7886525,5.0689747 C1.2002912,5.00849 0.56681108,4.9809615 0,4.8676108 0,3.6047464 1.4649288,2.8022934 2.3123915,1.7430716 2.7129934,1.2423697 2.9961598,0.6844275 3.4373388,0.24329281 3.5964199,0.084227562 3.7329314,0.0049905777 3.8672009,0.000228405 z"/>
-										<Path Fill="Black" Stretch="Fill" Stroke="{x:Null}" HorizontalAlignment="Left" Margin="7.938,4.875,0,4.5" Width="3.75" Data="M11.375,5 C10.729125,5.5805618 10.343644,5.9377122 9.9375,6.75 9.2907069,6.1032069 8.7111344,5.5236344 8.0625,4.875 8.5578793,5.5355058 8.8865321,6.4411449 9.375,7.125 8.6950413,7.8049587 8.5981379,8.8393621 7.9375,9.5 8.7886934,8.9892839 9.0922501,8.1577499 9.75,7.5 10.285496,8.0354965 11.057859,8.157399 11.625,8.5625 11.645833,8.5416667 11.666667,8.5208333 11.6875,8.5 11.204736,8.0172357 10.870558,7.433058&#xa;10.375,6.9375 10.780028,6.5324722 10.8474,5.6950144 11.0625,5.125"/>
-										<Path Fill="Black" Stretch="Fill" Stroke="{x:Null}" HorizontalAlignment="Left" Margin="10.453,6.125,0,1.563" Width="4.893" Data="M13.375,3.5625 C12.347265,4.7044275 12.019445,5.7236071 11.875,7.3125 11.794096,8.2024467 11.654251,8.1844774 13.0625,8.3125 14.198589,8.4157808 13.547703,8.2237157 13.8125,9.8125 14.520705,9.8125 14.75,9.3682243 14.75,8.1875 14.957676,8.2290351 17.900822,8.4692143 16.18788,7.0002772 15.750554,6.6252475 15.125,7.8964917 15.125,6.4375 15.125,6.1466683 15.150889,5.9389816 15,5.6875 14.81424,5.3778995 14.801326,5.4147348&#xa;14.375,5.5 14.297523,5.9648624 14.150672,6.5608022 14.062777,7.0002772 13.025534,7.0002772 12.357309,7.852305 13.375,5.5625 13.514141,5.2494317 13.757761,4.8284316 13.8125,4.5 13.914192,3.8898484 14.150221,3.8876105 13.375,3.5 13.375,3.5208333 13.375,3.5416667 13.375,3.5625 z"/>
-									</Grid>
-								</ControlTemplate>
-							</Setter.Value>
-						</Setter>
-					</Style>
-				</Button.Style>
 				<Button.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -1217,7 +1279,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_Dismantle_Button" Width="80" Height="14" Content="채굴소 복원  +50" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" Canvas.Top="14" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Dismantle}" FocusVisualStyle="{DynamicResource ControlStyle1}" Visibility="Collapsed">
+			<Button x:Name="Menu_Dismantle_Button" Width="80" Height="14" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FF552D1A" RenderTransformOrigin="0.5,0.5" Canvas.Top="14" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Dismantle}" FocusVisualStyle="{DynamicResource ControlStyle1}" Content="{DynamicResource menu_ButtonDismantle}" FontSize="10.667" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="menu_ButtonDismantle" TargetType="{x:Type Button}">
 						<Setter Property="Template">
