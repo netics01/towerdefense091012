@@ -50,6 +50,7 @@ namespace PlanetTerror
 		Storyboard ring30_Story;
 		Storyboard ring10_Story;
 		Storyboard ring0_Story;
+		Storyboard hit_Story;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -79,6 +80,9 @@ namespace PlanetTerror
 			ring30_Story.RepeatForever();
 			ring10_Story.RepeatForever();
 
+			hit_Story = Resources.FindStoryboard("Hit_Storyboard");
+			hit_Story.FillBehavior = FillBehavior.Stop;
+
 			WPFUtil.SetImageScaleMode(LayoutRoot, BitmapScalingMode.Linear);
 
 			vsm.SetState(HP100_STATE);
@@ -107,6 +111,11 @@ namespace PlanetTerror
 		public void TakeDamage(double damage)
 		{
 			HitPoint -= damage;
+
+			if( vsm.GetState() != HP0_STATE )
+			{
+				hit_Story.Begin();
+			}			
 
 			switch( vsm.GetState() )
 			{
