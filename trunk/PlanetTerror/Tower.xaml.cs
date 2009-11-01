@@ -45,6 +45,8 @@ namespace PlanetTerror
 		Point towerCenter;
 		double cooldownTime;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		double miningTime;
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		VSM vsm;
 		Storyboard idleStory;
 
@@ -57,7 +59,7 @@ namespace PlanetTerror
 			vsm = new VSM(this, LayoutRoot);
 			vsm.SetDefaultGroup(BUILD_GROUP);
 
-			idleStory = Resources.FindStoryboard("Idle_Storyboard");
+			idleStory = Resources.FindStoryboard("Upg0_Tower_Storyboard");
 			idleStory.RepeatBehavior = RepeatBehavior.Forever;
 
 			Loaded += new RoutedEventHandler(Tower_Loaded);
@@ -83,6 +85,7 @@ namespace PlanetTerror
 			towerCenter = this.GetCenter();
 			vsm.SetState(NOTYETBUILT_STATE);
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
+			miningTime = 0;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Tower_MouseEnter(object sender, MouseEventArgs e)

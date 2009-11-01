@@ -9,7 +9,7 @@
 	x:Name="UserControl"
 	d:DesignWidth="640" d:DesignHeight="480" Width="80" Height="80">
 	<UserControl.Resources>
-		<Storyboard x:Key="Upg0_tower_storyboard">
+		<Storyboard x:Key="Upg0_Tower_Storyboard">
 			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="b1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
 				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFC77F29"/>
 				<SplineColorKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.8000000" Value="Black"/>
@@ -140,7 +140,7 @@
 				</Setter.Value>
 			</Setter>
 		</Style>
-		<Storyboard x:Key="Upg1_tower_storyboard">
+		<Storyboard x:Key="Upg1_Tower_Storyboard">
 			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="b1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
 				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFC77F29"/>
 				<SplineColorKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.8000000" Value="Black"/>
@@ -207,7 +207,7 @@
 				<SplineColorKeyFrame KeyTime="00:00:06" Value="Black"/>
 			</ColorAnimationUsingKeyFrames>
 		</Storyboard>
-		<Storyboard x:Key="Upg2_tower_storyboard">
+		<Storyboard x:Key="Upg2_Tower_Storyboard">
 			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="b1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
 				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF0B64FF"/>
 				<SplineColorKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.8000000" Value="Black"/>
@@ -274,7 +274,7 @@
 				<SplineColorKeyFrame KeyTime="00:00:06" Value="Black"/>
 			</ColorAnimationUsingKeyFrames>
 		</Storyboard>
-		<Storyboard x:Key="Upg3_tower_storyboard">
+		<Storyboard x:Key="Upg3_Tower_Storyboard">
 			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="b1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
 				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF29C73B"/>
 				<SplineColorKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.8000000" Value="Black"/>
