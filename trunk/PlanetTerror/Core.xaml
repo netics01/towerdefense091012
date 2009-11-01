@@ -22741,8 +22741,7 @@
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="blink_r1_Copy11" Storyboard.TargetProperty="(UIElement.Opacity)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="1"/>
-							<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.7000000" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1" KeySpline="0,1,1,1"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="blink_r1_Copy10" Storyboard.TargetProperty="(UIElement.Opacity)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
@@ -22787,31 +22786,30 @@
 						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="blink_r1_Copy11">
 							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF081B32"/>
 							<SplineColorKeyFrame KeyTime="00:00:00.9000000" Value="#FF081B32"/>
-							<SplineColorKeyFrame KeyTime="00:00:01.8000000" Value="#FF233347"/>
 						</ColorAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="blink_r1_Copy11">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.176"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="1.176"/>
-							<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.7000000" Value="0.392"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0.392" KeySpline="0,1,1,1"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="blink_r1_Copy11">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.176"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="1.176"/>
-							<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.7000000" Value="0.392"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0.392" KeySpline="0,1,1,1"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="blink_r1_Copy11">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.289"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="-0.289"/>
-							<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.7000000" Value="0.11"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0.27" KeySpline="0,1,1,1"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="blink_r1_Copy11">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="25.006"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="25.006"/>
-							<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.7000000" Value="2.589"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1.907" KeySpline="0,1,1,1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="blink_r1_Copy11" Storyboard.TargetProperty="(Shape.StrokeThickness)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="2"/>
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
@@ -24049,7 +24047,7 @@
 				</TransformGroup>
 			</Ellipse.RenderTransform>
 		</Ellipse>
-		<Canvas x:Name="body" Width="45" Height="45" Canvas.Left="66" Canvas.Top="285" RenderTransformOrigin="0.5,0.5">
+		<Canvas x:Name="body" Width="45" Height="45" Canvas.Left="-1" Canvas.Top="9.5" RenderTransformOrigin="0.5,0.5">
 			<Canvas.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -24058,7 +24056,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Canvas.RenderTransform>
-			<Canvas x:Name="role" Width="45" Height="45" RenderTransformOrigin="0.5,0.5">
+			<Canvas x:Name="role" Width="45" Height="45" RenderTransformOrigin="0.5,0.5" Canvas.Left="64.334" Canvas.Top="295.667">
 				<Canvas.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
