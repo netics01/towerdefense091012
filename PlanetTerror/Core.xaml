@@ -23441,7 +23441,7 @@
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="beam" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1.012"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.0090000" Value="-1.012" KeySpline="1,0,1,1"/>
-							<SplineDoubleKeyFrame KeySpline="1,0,1,1" KeyTime="00:00:00.2500000" Value="-70.77"/>
+							<SplineDoubleKeyFrame KeySpline="1,0,1,1" KeyTime="00:00:00.3000000" Value="-70.77"/>
 							<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.0030000" Value="-201.978"/>
 						</DoubleAnimationUsingKeyFrames>
 						<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="beam" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
@@ -23480,8 +23480,8 @@
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="beam" Storyboard.TargetProperty="(FrameworkElement.Width)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00.0080000" Value="811"/>
-							<SplineDoubleKeyFrame KeySpline="1,0,1,1" KeyTime="00:00:00.2500000" Value="811"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.9010000" Value="811"/>
+							<SplineDoubleKeyFrame KeySpline="1,0,1,1" KeyTime="00:00:00.3000000" Value="811"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="811"/>
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
