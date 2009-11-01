@@ -1086,23 +1086,35 @@
 			<Setter Property="Template">
 				<Setter.Value>
 					<ControlTemplate TargetType="{x:Type ProgressBar}">
-						<Border SnapsToDevicePixels="true" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="3">
-							<Border BorderBrush="#BEBEBE" BorderThickness="1,1,1,0" CornerRadius="2">
-								<Border BorderBrush="#EFEFEF" BorderThickness="1" CornerRadius="1">
+						<Border SnapsToDevicePixels="true" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="3" Background="#661E1A1A" BorderBrush="#851E93B3">
+							<Border BorderBrush="{x:Null}" BorderThickness="1,1,1,0" CornerRadius="2">
+								<Border BorderBrush="{x:Null}" BorderThickness="1" CornerRadius="1">
 									<DockPanel x:Name="PART_Track" Margin="1,0,0,1" LastChildFill="false">
-										<Rectangle x:Name="PART_Indicator">
+										<Rectangle x:Name="PART_Indicator" Width="52" RenderTransformOrigin="0.5,0.5" Margin="0,-0.208,0,0.208" RadiusX="2" RadiusY="2">
 											<Rectangle.Fill>
-												<MultiBinding>
-													<MultiBinding.Converter>
-														<Microsoft_Windows_Themes:ProgressBarBrushConverter/>
-													</MultiBinding.Converter>
-													<Binding Path="Foreground" RelativeSource="{RelativeSource TemplatedParent}"/>
-													<Binding Path="IsIndeterminate" RelativeSource="{RelativeSource TemplatedParent}"/>
-													<Binding Path="ActualWidth" ElementName="PART_Indicator"/>
-													<Binding Path="ActualHeight" ElementName="PART_Indicator"/>
-													<Binding Path="ActualWidth" ElementName="PART_Track"/>
-												</MultiBinding>
+												<LinearGradientBrush EndPoint="0,1" StartPoint="0,0" MappingMode="RelativeToBoundingBox">
+													<LinearGradientBrush.RelativeTransform>
+														<TransformGroup>
+															<ScaleTransform CenterX="0.5" CenterY="0.5"/>
+															<SkewTransform CenterX="0.5" CenterY="0.5"/>
+															<RotateTransform Angle="-90" CenterX="0.5" CenterY="0.5"/>
+															<TranslateTransform/>
+														</TransformGroup>
+													</LinearGradientBrush.RelativeTransform>
+													<GradientStop Color="#FF1BEAB8" Offset="1"/>
+													<GradientStop Color="#FF18388C" Offset="0.326"/>
+													<GradientStop Color="#FF1BACD4" Offset="0.674"/>
+													<GradientStop Color="#FF1B1920"/>
+												</LinearGradientBrush>
 											</Rectangle.Fill>
+											<Rectangle.RenderTransform>
+												<TransformGroup>
+													<ScaleTransform/>
+													<SkewTransform AngleY="-0.265"/>
+													<RotateTransform/>
+													<TranslateTransform Y="-0.12"/>
+												</TransformGroup>
+											</Rectangle.RenderTransform>
 										</Rectangle>
 									</DockPanel>
 								</Border>
@@ -1377,6 +1389,18 @@
 					</Storyboard>
 				</VisualState>
 			</VisualStateGroup>
+			<VisualStateGroup x:Name="Progress_StateGroup">
+				<VisualState x:Name="Progress100_State">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="button" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-3.996"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
 		<ProgressBar Width="100" Height="10"/>
 		<Image x:Name="gold_Image" Width="64" Height="64" Source="Resources/UI/Gold.png" Canvas.Left="688" Canvas.Top="8"/>
@@ -1568,5 +1592,60 @@
 			</Path>
 		</Canvas>
 		<ProgressBar x:Name="power_Progress" Width="256" Height="16" Canvas.Left="376" Canvas.Top="32" Style="{DynamicResource ProgressBarStyle1}"/>
+		<Button x:Name="button" Width="263" Height="24" Content="button" Opacity="0" Canvas.Left="372.333" Canvas.Top="32" RenderTransformOrigin="0.5,0.5" Style="{DynamicResource ButtonStyle1}">
+			<Button.Resources>
+				<Style x:Key="ButtonFocusVisual">
+					<Setter Property="Control.Template">
+						<Setter.Value>
+							<ControlTemplate>
+								<Rectangle Stroke="Black" StrokeDashArray="1 2" StrokeThickness="1" Margin="3" SnapsToDevicePixels="true"/>
+							</ControlTemplate>
+						</Setter.Value>
+					</Setter>
+				</Style>
+				<LinearGradientBrush x:Key="ButtonNormalBackgroundFill" EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="White" Offset="0"/>
+					<GradientStop Color="#FFE3E5F0" Offset="0.5"/>
+					<GradientStop Color="#FFC6C5D7" Offset="1.0"/>
+				</LinearGradientBrush>
+				<SolidColorBrush x:Key="ButtonBorder" Color="#FF003C74"/>
+				<Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+					<Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
+					<Setter Property="Background" Value="{StaticResource ButtonNormalBackgroundFill}"/>
+					<Setter Property="BorderBrush" Value="{StaticResource ButtonBorder}"/>
+					<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+					<Setter Property="HorizontalContentAlignment" Value="Center"/>
+					<Setter Property="VerticalContentAlignment" Value="Center"/>
+					<Setter Property="Template">
+						<Setter.Value>
+							<ControlTemplate TargetType="{x:Type Button}">
+								<Microsoft_Windows_Themes:ButtonChrome x:Name="Chrome" SnapsToDevicePixels="true" RenderDefaulted="{TemplateBinding IsDefaulted}" RenderMouseOver="{TemplateBinding IsMouseOver}" RenderPressed="{TemplateBinding IsPressed}" ThemeColor="Metallic">
+									<Rectangle RadiusX="2" RadiusY="2" Margin="15.667,0,111.333,-1.667"/>
+								</Microsoft_Windows_Themes:ButtonChrome>
+								<ControlTemplate.Triggers>
+									<Trigger Property="IsKeyboardFocused" Value="true">
+										<Setter Property="RenderDefaulted" TargetName="Chrome" Value="true"/>
+									</Trigger>
+									<Trigger Property="ToggleButton.IsChecked" Value="true">
+										<Setter Property="RenderPressed" TargetName="Chrome" Value="true"/>
+									</Trigger>
+									<Trigger Property="IsEnabled" Value="false">
+										<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+									</Trigger>
+								</ControlTemplate.Triggers>
+							</ControlTemplate>
+						</Setter.Value>
+					</Setter>
+				</Style>
+			</Button.Resources>
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
 	</Canvas>
 </UserControl>
