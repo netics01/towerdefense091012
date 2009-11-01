@@ -75,22 +75,20 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 8;
+		public const int VERSION = 9;
 
-		public class Mine
+		public class Gold
 		{
 			public double interval;
-			public int level1Gold;
-			public int level2Gold;
-			public int level3Gold;
-			public int goodGoldTowerCount;
-			public int normalGoldTowerCount;
-			public int noGoldTowerCount;
+			public int mineGold;
+			public int labGold;
+			public double labPower;
 		}
-		public Mine mine;
+		public Gold gold;
 		public class Tower
 		{
-			public int buildCost;
+			public int towerCost;
+			public int labCost;
 			public int dismantleCost;
 			public int upgrade1Cost;
 			public int upgrade2Cost;
@@ -98,7 +96,7 @@ namespace PlanetTerror
 			public double attackRange;
 			public double attackRangeSqr;
 			public double attackDamage;
-			public double attackCooldown;
+			public double attackCooldown;			
 		}
 		public Tower tower;
 
@@ -150,7 +148,7 @@ namespace PlanetTerror
 		//	생성자
 		public Setting()
 		{
-			mine = new Mine();
+			gold = new Gold();
 			tower = new Tower();
 			core = new Core();
 			proj1 = new Projectile();
@@ -190,15 +188,13 @@ namespace PlanetTerror
 			startGold = 1000;
 			powerMax = 100;
 
-			mine.interval = 5;
-			mine.level1Gold = 5;
-			mine.level2Gold = 10;
-			mine.level3Gold = 15;
-			mine.goodGoldTowerCount = 5;
-			mine.normalGoldTowerCount = 30;
-			mine.noGoldTowerCount = 40;
+			gold.interval = 15;
+			gold.mineGold = 5;
+			gold.labGold = -5;
+			gold.labPower = 1.5;
 
-			tower.buildCost = 50;
+			tower.towerCost = 50;
+			tower.labCost = 200;
 			tower.dismantleCost = -30;
 			tower.upgrade1Cost = 150;
 			tower.upgrade2Cost = 200;

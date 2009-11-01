@@ -33,6 +33,14 @@ namespace PlanetTerror.Util
 				}
 			}
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	스크린 중앙에 위치할 수 있는 Left, Top 위치를 계산한다.
+		public static Point GetScreenCenterLeftTop(double width, double height)
+		{
+			var left = (System.Windows.SystemParameters.PrimaryScreenWidth - width) / 2;
+			var top = (System.Windows.SystemParameters.PrimaryScreenHeight - height) / 2;
+			return new Point(left, top);
+		}
 	}
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -149,12 +157,7 @@ namespace PlanetTerror.Util
 		//	기본 스테이트그룹에서 스테이트를 설정한다.
 		public bool SetState(string stateName, bool useTransition)
 		{
-			if( !DefaultGroup.SetState(stateName) ) { Debug.Assert(false); return false; }
-			if( stateName.Length > 0 )
-			{
-				VisualStateManager.GoToState(Control, stateName, useTransition);
-			}
-			return true;
+			return SetState(DefaultGroup, stateName, useTransition);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public bool SetState(string stateName) { return SetState(stateName, true); }
@@ -164,13 +167,7 @@ namespace PlanetTerror.Util
 		{
 			Group group = Groups.Find(groupName);
 			if( group == null ) { Debug.Assert(false); return false; }
-
-			if( !group.SetState(stateName) ) { Debug.Assert(false); return false; }
-			if( stateName.Length > 0 )
-			{
-				VisualStateManager.GoToState(Control, stateName, useTransition);
-			}
-			return true;
+			return SetState(group, stateName, useTransition);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public bool SetState(string groupName, string stateName) { return SetState(groupName, stateName, true); }
@@ -178,17 +175,14 @@ namespace PlanetTerror.Util
 		//	기본 그룹에서 완됴된 상태로 스테이트를 설정한다.
 		public bool SetStateFinished(string stateName)
 		{
-			if( !DefaultGroup.SetState(stateName) ) { Debug.Assert(false); return false; }
-			if( stateName.Length > 0 )
-			{
-				VisualStateManager.GoToState(Control, stateName, false);
-				if( DefaultGroup.InProgress )
-				{
-					DefaultGroup.State.Storyboard.SkipToFill();
-					DefaultGroup.InProgress = false;
-				}
-			}
-			return true;
+			return SetStateFinished(DefaultGroup, stateName);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		public bool SetStateFinished(string groupName, string stateName)
+		{
+			Group group = Groups.Find(groupName);
+			if( group == null ) { Debug.Assert(false); return false; }
+			return SetStateFinished(group, stateName);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	VisualState 획득
@@ -245,6 +239,36 @@ namespace PlanetTerror.Util
 			bool ret = group.JustFinished;
 			group.JustFinished = false;
 			return ret;
+		}
+
+		//===============================================================================================================================================
+		//	전용
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	스테이트 설정
+		bool SetState(Group group, string stateName, bool useTransition)
+		{
+			if( !group.SetState(stateName) ) { Debug.Assert(false); return false; }
+			if( stateName.Length > 0 )
+			{
+				VisualStateManager.GoToState(Control, stateName, useTransition);
+			}
+			return true;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	스테이트 완료된 상태로 설정
+		bool SetStateFinished(Group group, string stateName)
+		{
+			if( !group.SetState(stateName) ) { Debug.Assert(false); return false; }
+			if( stateName.Length > 0 )
+			{
+				VisualStateManager.GoToState(Control, stateName, false);
+				if( group.InProgress )
+				{
+					group.State.Storyboard.SkipToFill();
+					group.InProgress = false;
+				}
+			}
+			return true;
 		}
 	}
 }
