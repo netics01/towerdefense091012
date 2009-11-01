@@ -1402,7 +1402,6 @@
 				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<ProgressBar Width="100" Height="10"/>
 		<Image x:Name="gold_Image" Width="64" Height="64" Source="Resources/UI/Gold.png" Canvas.Left="688" Canvas.Top="8"/>
 		<TextBlock x:Name="gold_Text" Width="56" Height="24" Text="1200" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="752" Canvas.Top="32"/>
 		<Image x:Name="image" Width="64" Height="64" Canvas.Left="301" Canvas.Top="8" Source="Resources/UI/Icon_Core.png" Stretch="Fill"/>
