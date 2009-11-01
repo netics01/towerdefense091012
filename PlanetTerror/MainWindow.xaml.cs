@@ -39,6 +39,11 @@ namespace PlanetTerror
 			pump = new UpdatePump();
 			pump.Update += new UpdatePump.UpdateHandler(pump_Update);
 
+			//창을 화면 중앙으로 정렬
+			var left = (System.Windows.SystemParameters.PrimaryScreenWidth - Width) / 2;
+			var top = (System.Windows.SystemParameters.PrimaryScreenHeight - Height) / 2;
+			this.SetLeftTop(left, top);
+
 			Loaded += new RoutedEventHandler(MainWindow_Loaded);
 			KeyDown += new KeyEventHandler(MainWindow_KeyDown);
 		}
@@ -48,11 +53,6 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void MainWindow_Loaded(object sender, RoutedEventArgs e)
 		{
-			//창을 화면 중앙으로 정렬
-			var left = (System.Windows.SystemParameters.PrimaryScreenWidth - Width) / 2;
-			var top = (System.Windows.SystemParameters.PrimaryScreenHeight - Height) / 2;
-			this.SetLeftTop(left, top);
-
 			pump.Begin();
 
 			ui_Panel.Initialize();
