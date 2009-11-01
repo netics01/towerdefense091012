@@ -24,11 +24,17 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	상수
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		const string CORE_GROUP = "Core_StateGroup";
 		const string HP100_STATE = "Core_HP100_State";
 		const string HP60_STATE = "Core_HP60_State";
 		const string HP30_STATE = "Core_HP30_State";
 		const string HP10_STATE = "Core_HP10_State";
 		const string HP0_STATE = "Core_HP0_State";
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		const string ATTACK_GROUP = "Attack_StateGroup";
+		const string NOATTACK_STATE = "Attack_Normal_State";
+		const string BEAM_STATE = "Attack_Beam_State";
 
 		//===============================================================================================================================================
 		//	프로퍼티
@@ -52,6 +58,7 @@ namespace PlanetTerror
 			this.InitializeComponent();
 			
 			vsm = new VSM(this, LayoutRoot);
+			vsm.SetDefaultGroup(CORE_GROUP);
 
 			Loaded += new RoutedEventHandler(Core_Loaded);
 		}
@@ -76,14 +83,15 @@ namespace PlanetTerror
 
 			vsm.SetState(HP100_STATE);
 			ring100_Story.Begin();
+			vsm.SetState(ATTACK_GROUP, NOATTACK_STATE);
 
 			//필살기 테스트를 위해
-			Core_Attack_State.Storyboard.Completed += new EventHandler(Storyboard_Completed);
+			Attack_Beam_State.Storyboard.Completed += new EventHandler(Storyboard_Completed);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Storyboard_Completed(object sender, EventArgs e)
 		{
-			VisualStateManager.GoToState(this, HP100_STATE, true);
+			VisualStateManager.GoToState(this, NOATTACK_STATE, true);
 		}
 
 		//===============================================================================================================================================
