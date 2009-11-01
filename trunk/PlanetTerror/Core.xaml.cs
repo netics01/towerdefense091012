@@ -83,7 +83,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Storyboard_Completed(object sender, EventArgs e)
 		{
-			VisualStateManager.GoToState(this, HP0_STATE, true);
+			VisualStateManager.GoToState(this, HP100_STATE, true);
 		}
 
 		//===============================================================================================================================================
