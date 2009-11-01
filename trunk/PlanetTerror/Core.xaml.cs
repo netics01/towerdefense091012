@@ -81,7 +81,7 @@ namespace PlanetTerror
 			ring10_Story.RepeatForever();
 
 			hit_Story = Resources.FindStoryboard("Hit_Storyboard");
-			hit_Story.FillBehavior = FillBehavior.Stop;
+			//hit_Story.FillBehavior = FillBehavior.Stop;
 
 			WPFUtil.SetImageScaleMode(LayoutRoot, BitmapScalingMode.Linear);
 
