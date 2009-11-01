@@ -211,7 +211,7 @@ namespace PlanetTerror
 			enemy1.hitPoint = 50;
 			enemy1.damage = 5;
 			enemy1.gold = 0;
-			enemy1.powerUp = 2;
+			enemy1.powerUp = 0;
 
 			enemy2.routeTime = 20;
 			enemy2.hitPoint = 50;
