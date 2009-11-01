@@ -32,17 +32,15 @@ namespace PlanetTerror
 		{
 			InitializeComponent();
 
+			//창을 화면 중앙으로 정렬
+			this.SetLeftTop(WPFUtil.GetScreenCenterLeftTop(Width, Height));
+
 			Game.MainWindow = this;
 			Game.UI = ui_Panel;
 			Game.World = world;
 
 			pump = new UpdatePump();
 			pump.Update += new UpdatePump.UpdateHandler(pump_Update);
-
-			//창을 화면 중앙으로 정렬
-			var left = (System.Windows.SystemParameters.PrimaryScreenWidth - Width) / 2;
-			var top = (System.Windows.SystemParameters.PrimaryScreenHeight - Height) / 2;
-			this.SetLeftTop(left, top);
 
 			Loaded += new RoutedEventHandler(MainWindow_Loaded);
 			KeyDown += new KeyEventHandler(MainWindow_KeyDown);

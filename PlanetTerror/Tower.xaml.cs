@@ -29,25 +29,27 @@ namespace PlanetTerror
 		const string NOTYETBUILT_STATE = "Build_NotYetBuilt_State";
 		const string BUILT_STATE = "Build_Built_State";
 		const string DISMANTLE_STATE = "Build_Dismantle_State";
+		const string LAB_STATE = "Build_Lab_State";
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		const string MENU_GROUP = "Menu_StateGroup";
 		const string MENU_NOMENU_STATE = "Menu_NoMenu_State";
 		const string MENU_BUILD_STATE = "Menu_Build_State";
 		const string MENU_UPGRADE_STATE = "Menu_Upgrade_State";
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		const string GOLD_GROUP = "Gold_StateGroup";
+		const string GOLD_GAIN_STATE = "Gold_Gain_State";
+		const string GOLD_LOSE_STATE = "Gold_Lose_State";
+		const string GOLD_NORMAL_STATE = "Gold_Normal_State";
 
 		//===============================================================================================================================================
 		//	스태틱
 		static Tower selected;
-		static int activeTower;
 
 		//===============================================================================================================================================
 		//	필드
 		Enemy target;
 		Point towerCenter;
 		double cooldownTime;
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		double mineTime;
-		int mineLevel;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		VSM vsm;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -82,7 +84,10 @@ namespace PlanetTerror
 			Menu_Build_Button.Click += new RoutedEventHandler(Menu_Build_Button_Click);
 			Menu_Upgrade_Button.Click += new RoutedEventHandler(Menu_Upgrade_Button_Click);
 			Menu_UpgradeBig_Button.Click += new RoutedEventHandler(Menu_UpgradeBIG_Button_Click);
-			Menu_Dismantle_Button.Click += new RoutedEventHandler(Menu_Dismantle_Button_Click);			
+			Menu_Dismantle_Button.Click += new RoutedEventHandler(Menu_Dismantle_Button_Click);
+
+			Gold_Gain_State.Storyboard.Completed +=new EventHandler(GoldGain_Storyboard_Completed);
+			Gold_Lose_State.Storyboard.Completed +=new EventHandler(GoldLose_Storyboard_Completed);
 		}
 
 		//===============================================================================================================================================
@@ -146,7 +151,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Build_Button_Click(object sender, RoutedEventArgs e)
 		{
-			int gold = Game.Setting.tower.buildCost;
+			int gold = Game.Setting.tower.towerCost;
 			if( !Game.UI.SpendGold(gold) )
 			{
 				return;
@@ -175,6 +180,16 @@ namespace PlanetTerror
 			effectStories[0].Stop();
 			vsm.SetState(DISMANTLE_STATE);
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void GoldGain_Storyboard_Completed(object sender, EventArgs e)
+		{
+			vsm.SetState(GOLD_GROUP, GOLD_NORMAL_STATE);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void GoldLose_Storyboard_Completed(object sender, EventArgs e)
+		{
+			vsm.SetState(GOLD_GROUP, GOLD_NORMAL_STATE);
 		}
 
 		//===============================================================================================================================================
@@ -222,6 +237,41 @@ namespace PlanetTerror
 				break;
 			}			
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	골드타임
+		public void MakeGold()
+		{
+			int gold = 0;
+			double power = 0;
+			switch( vsm.GetState() )
+			{
+			case NOTYETBUILT_STATE:
+				gold = Game.Setting.gold.mineGold;
+				break;
+			case LAB_STATE:
+				gold = Game.Setting.gold.labGold;
+				power = Game.Setting.gold.labPower;
+				break;
+			}
+			if( gold > 0 )
+			{
+				vsm.SetState(GOLD_GROUP, GOLD_GAIN_STATE);
+				goldGain_Text.Text = "+" + gold.ToString();
+				Game.UI.GainGold(gold);
+			}
+			else if( gold < 0 )
+			{
+				vsm.SetState(GOLD_GROUP, GOLD_LOSE_STATE);
+				goldLose_Text.Text = gold.ToString();
+				Game.UI.GainGold(gold);
+			}
+			if( power > 0 )
+			{
+				vsm.SetState(GOLD_GROUP, GOLD_GAIN_STATE);
+				goldGain_Text.Text = "+" + power.ToString();
+				Game.UI.GainPower(power);
+			}
+		}
 
 		//===============================================================================================================================================
 		//	전용
@@ -239,25 +289,5 @@ namespace PlanetTerror
 				Canvas.SetZIndex(selected, (int)ELayer.SelectedTower);
 			}
 		}
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	채굴 상태로 전환
-		void SwitchToMine(bool firstTime)
-		{
-			vsm.SetState(NOTYETBUILT_STATE);
-			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
-			mineTime = Game.Setting.mine.interval;
-			mineLevel = 0;
-
-			if( !firstTime ) { activeTower--; }
-		}
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	타워 상태로 전환
-		void SwitchToTower()
-		{
-
-		}
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	돈을 번다.
-
 	}
 }

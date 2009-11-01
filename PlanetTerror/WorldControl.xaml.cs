@@ -34,7 +34,8 @@ namespace PlanetTerror
 		List<Tower> towers;
 		List<Projectile3> projectiles;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		int enemyLayer = 0;		
+		int enemyLayer = 0;
+		RefreshTimer goldTimer;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -56,7 +57,7 @@ namespace PlanetTerror
 			}
 			projectiles = new List<Projectile3>();
 
-			PreparePath();			
+			PreparePath();		
 		}
 
 		//===============================================================================================================================================
@@ -65,6 +66,7 @@ namespace PlanetTerror
 		//	초기화
 		public void Initialize()
 		{
+			goldTimer = new RefreshTimer((float)Game.Setting.gold.interval);
 			core.Initialize();			
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -80,11 +82,14 @@ namespace PlanetTerror
 			{
 				enemies[i].Update(delta);
 			}
+			bool bGoldTime = goldTimer.Refresh(delta);
 			for( int i = 0; i < towers.Count; ++i  )
 			{
 				towers[i].Update(delta);
-			}
+				if( bGoldTime ) { towers[i].MakeGold(); }
+			}			
 
+			//객체 제거
 			for( int i = 0; i < projectiles.Count; ++i )
 			{
 				if( projectiles[i].IsDeleted )
