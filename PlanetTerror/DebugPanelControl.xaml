@@ -24,5 +24,6 @@
 		<Button x:Name="enemy3_Button" Width="90" Height="20" Content="적3 (F3)" Canvas.Left="8" Canvas.Top="571" VerticalAlignment="Top" HorizontalAlignment="Left"/>
 		<TextBlock x:Name="coreHp_Text" Width="90" Height="17" Canvas.Left="8" Canvas.Top="695" Text="0" TextWrapping="Wrap" TextAlignment="Right"/>
 		<Button x:Name="wave_Button" Width="90" Height="20" Content="Wave (F4)" Canvas.Left="8" Canvas.Top="595" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+		<Button x:Name="coreTest_Button" Width="90" Height="20" Content="필살의 코어" Canvas.Left="8" Canvas.Top="658" VerticalAlignment="Top" HorizontalAlignment="Left"/>
 	</Canvas>
 </UserControl>
