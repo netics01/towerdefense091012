@@ -76,6 +76,14 @@ namespace PlanetTerror
 
 			vsm.SetState(HP100_STATE);
 			ring100_Story.Begin();
+
+			//필살기 테스트를 위해
+			Core_Attack_State.Storyboard.Completed += new EventHandler(Storyboard_Completed);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void Storyboard_Completed(object sender, EventArgs e)
+		{
+			VisualStateManager.GoToState(this, HP0_STATE, true);
 		}
 
 		//===============================================================================================================================================

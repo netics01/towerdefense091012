@@ -54,6 +54,7 @@ namespace PlanetTerror
 			enemy3_Button.Click += new RoutedEventHandler(enemy3_Button_Click);
 			wave_Button.Click += new RoutedEventHandler(wave_Button_Click);
 			bossTest1_Button.Click += new RoutedEventHandler(bossTest1_Button_Click);
+			coreTest_Button.Click += new RoutedEventHandler(coreTest_Button_Click);
 		}
 
 		//===============================================================================================================================================
@@ -92,6 +93,11 @@ namespace PlanetTerror
 		public void bossTest1_Button_Click(object sender, RoutedEventArgs e)
 		{
 			Game.World.testBoss1.TestState("Boss_Move_State");
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void coreTest_Button_Click(object sender, RoutedEventArgs e)
+		{
+			VisualStateManager.GoToState(Game.World.core, "Core_Attack_State", true);
 		}
 
 		//===============================================================================================================================================
