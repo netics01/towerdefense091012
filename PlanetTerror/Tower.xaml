@@ -823,7 +823,7 @@
 				</VisualState>
 			</VisualStateGroup>
 			<VisualStateGroup x:Name="Gold_StateGroup">
-				<VisualState x:Name="Gold_Gain5_State">
+				<VisualState x:Name="Gold_Gain_State">
 					<Storyboard>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="goldGain_Text" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
