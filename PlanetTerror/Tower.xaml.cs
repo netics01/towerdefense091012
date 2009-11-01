@@ -38,6 +38,7 @@ namespace PlanetTerror
 		//===============================================================================================================================================
 		//	스태틱
 		static Tower selected;
+		static int activeTower;
 
 		//===============================================================================================================================================
 		//	필드
@@ -45,10 +46,12 @@ namespace PlanetTerror
 		Point towerCenter;
 		double cooldownTime;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		double miningTime;
+		double mineTime;
+		int mineLevel;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		VSM vsm;
-		Storyboard idleStory;
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		List<Storyboard> effectStories;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -59,8 +62,15 @@ namespace PlanetTerror
 			vsm = new VSM(this, LayoutRoot);
 			vsm.SetDefaultGroup(BUILD_GROUP);
 
-			idleStory = Resources.FindStoryboard("Upg0_Tower_Storyboard");
-			idleStory.RepeatBehavior = RepeatBehavior.Forever;
+			effectStories = new List<Storyboard>();
+			effectStories.Add(Resources.FindStoryboard("Upg0_Tower_Storyboard"));
+			effectStories.Add(Resources.FindStoryboard("Upg1_Tower_Storyboard"));
+			effectStories.Add(Resources.FindStoryboard("Upg2_Tower_Storyboard"));
+			effectStories.Add(Resources.FindStoryboard("Upg3_Tower_Storyboard"));
+			for( int i = 0; i < effectStories.Count; ++i )
+			{
+				effectStories[i].RepeatForever();
+			}
 
 			Loaded += new RoutedEventHandler(Tower_Loaded);
 			MouseEnter += new MouseEventHandler(Tower_MouseEnter);
@@ -85,7 +95,7 @@ namespace PlanetTerror
 			towerCenter = this.GetCenter();
 			vsm.SetState(NOTYETBUILT_STATE);
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
-			miningTime = 0;
+//			mineTime = 0;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Tower_MouseEnter(object sender, MouseEventArgs e)
@@ -162,7 +172,7 @@ namespace PlanetTerror
 			{
 				return;
 			}
-			idleStory.Stop();
+			effectStories[0].Stop();
 			vsm.SetState(DISMANTLE_STATE);
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 		}
@@ -181,7 +191,7 @@ namespace PlanetTerror
 				if( !vsm.GetStateFinished() ) { return; }
 				if( vsm.GetStateJustFinished() )
 				{
-					idleStory.Begin();
+					effectStories[0].Begin();
 				}
 				if( cooldownTime > 0 )
 				{
@@ -229,5 +239,25 @@ namespace PlanetTerror
 				Canvas.SetZIndex(selected, (int)ELayer.SelectedTower);
 			}
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	채굴 상태로 전환
+		void SwitchToMine(bool firstTime)
+		{
+			vsm.SetState(NOTYETBUILT_STATE);
+			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
+			mineTime = Game.Setting.mine.interval;
+			mineLevel = 0;
+
+			if( !firstTime ) { activeTower--; }
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	타워 상태로 전환
+		void SwitchToTower()
+		{
+
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	돈을 번다.
+
 	}
 }

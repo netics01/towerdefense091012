@@ -54,7 +54,7 @@ namespace PlanetTerror.Util
 			//-----------------------------------------------------------------------------------------------------------------------------------------------
 			public string StateName { get { return State != null ? State.Name : string.Empty; } }
 			public VisualState State { get; protected set; }
-			public bool InProgress { get; protected set; }
+			public bool InProgress { get; set; }
 			public bool JustFinished { get; set; }
 
 			//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -146,7 +146,7 @@ namespace PlanetTerror.Util
 			return true;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	기본 상태그룹에서 상태를 설정한다.
+		//	기본 스테이트그룹에서 스테이트를 설정한다.
 		public bool SetState(string stateName, bool useTransition)
 		{
 			if( !DefaultGroup.SetState(stateName) ) { Debug.Assert(false); return false; }
@@ -159,7 +159,7 @@ namespace PlanetTerror.Util
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public bool SetState(string stateName) { return SetState(stateName, true); }
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	상태를 설정한다.
+		//	스테이트를 설정한다.
 		public bool SetState(string groupName, string stateName, bool useTransition)
 		{
 			Group group = Groups.Find(groupName);
@@ -174,6 +174,22 @@ namespace PlanetTerror.Util
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public bool SetState(string groupName, string stateName) { return SetState(groupName, stateName, true); }
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	기본 그룹에서 완됴된 상태로 스테이트를 설정한다.
+		public bool SetStateFinished(string stateName)
+		{
+			if( !DefaultGroup.SetState(stateName) ) { Debug.Assert(false); return false; }
+			if( stateName.Length > 0 )
+			{
+				VisualStateManager.GoToState(Control, stateName, false);
+				if( DefaultGroup.InProgress )
+				{
+					DefaultGroup.State.Storyboard.SkipToFill();
+					DefaultGroup.InProgress = false;
+				}
+			}
+			return true;
+		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	VisualState 획득
 		public VisualState GetVisualState(string stateName)

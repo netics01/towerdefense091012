@@ -97,7 +97,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void coreTest_Button_Click(object sender, RoutedEventArgs e)
 		{
-			VisualStateManager.GoToState(Game.World.core, "Core_Attack_State", true);
+			VisualStateManager.GoToState(Game.World.core, "Attack_Beam_State", true);
 		}
 
 		//===============================================================================================================================================
