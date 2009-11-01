@@ -36,7 +36,14 @@ namespace PlanetTerror
 		
 		//===============================================================================================================================================
 		//	필드
-		VSM vsm;		
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		VSM vsm;
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		Storyboard ring100_Story;
+		Storyboard ring60_Story;
+		Storyboard ring30_Story;
+		Storyboard ring10_Story;
+		Storyboard ring0_Story;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -54,13 +61,21 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Core_Loaded(object sender, RoutedEventArgs e)
 		{
+			ring100_Story = Resources.FindStoryboard("Ring100_Storyboard");
+			ring60_Story = Resources.FindStoryboard("Ring60_Storyboard");
+			ring30_Story = Resources.FindStoryboard("Ring30_Storyboard");
+			ring10_Story = Resources.FindStoryboard("Ring10_Storyboard");
+			ring0_Story = Resources.FindStoryboard("Ring0_Storyboard");
+
+			ring100_Story.RepeatForever();
+			ring60_Story.RepeatForever();
+			ring30_Story.RepeatForever();
+			ring10_Story.RepeatForever();
+
 			WPFUtil.SetImageScaleMode(LayoutRoot, BitmapScalingMode.Linear);
 
-			var story = Resources.FindStoryboard("Ring100_Storyboard");
-			story.RepeatBehavior = RepeatBehavior.Forever;
-			story.Begin();
-
 			vsm.SetState(HP100_STATE);
+			ring100_Story.Begin();
 		}
 
 		//===============================================================================================================================================
@@ -84,6 +99,8 @@ namespace PlanetTerror
 					HitPoint <= Game.Setting.core.hitPoint * 0.6 )
 				{
 					vsm.SetState(HP60_STATE);
+					ring100_Story.Stop();
+					ring60_Story.Begin();
 				}
 				break;
 			case HP60_STATE:
@@ -91,6 +108,8 @@ namespace PlanetTerror
 					HitPoint <= Game.Setting.core.hitPoint * 0.3 )
 				{
 					vsm.SetState(HP30_STATE);
+					ring60_Story.Stop();
+					ring30_Story.Begin();
 				}
 				break;
 			case HP30_STATE:
@@ -98,6 +117,8 @@ namespace PlanetTerror
 					HitPoint <= Game.Setting.core.hitPoint * 0.1 )
 				{
 					vsm.SetState(HP10_STATE);
+					ring30_Story.Stop();
+					ring10_Story.Begin();
 				}
 				break;
 			case HP10_STATE:
@@ -105,6 +126,8 @@ namespace PlanetTerror
 					HitPoint <= 0 )
 				{
 					vsm.SetState(HP0_STATE);
+					ring10_Story.Stop();
+					ring0_Story.Begin();
 				}
 				break;
 			case HP0_STATE:
