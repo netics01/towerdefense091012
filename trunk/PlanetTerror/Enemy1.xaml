@@ -8,602 +8,12 @@
 	x:Class="PlanetTerror.Enemy1" Width="60" Height="60">
 	<UserControl.Resources>
 		<Storyboard x:Key="Move_Storyboard" RepeatBehavior="Forever">
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="body" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-18.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-7.334"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-16.334"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-7.334"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-18.5"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bomb" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-2.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-0.385"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-2"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3020000" Value="-0.385"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4020000" Value="-2"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0150000" Value="-2.257"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0300000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0450000" Value="-2.257"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0630000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0780000" Value="-2.257"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1150000" Value="-2.257"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1290000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1440000" Value="-2.257"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1600000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1750000" Value="-2.257"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1930000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2080000" Value="-2.257"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2340000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2490000" Value="-2.257"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2680000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2830000" Value="-2.257"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3140000" Value="-2.257"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3360000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3510000" Value="-2.257"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3680000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3800000" Value="-2.257"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3890000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4010000" Value="-2.257"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0150000" Value="-4.4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0300000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0450000" Value="-4.4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0630000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0780000" Value="-4.4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1150000" Value="-4.4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1290000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1440000" Value="-4.4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1600000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1750000" Value="-4.4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1930000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2080000" Value="-4.4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2340000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2490000" Value="-4.4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2680000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2830000" Value="-4.4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3140000" Value="-4.4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3360000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3510000" Value="-4.4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3680000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3800000" Value="-4.4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3890000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4010000" Value="-4.4"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0280000" Value="5.498"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0550000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0830000" Value="5.498"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1070000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1350000" Value="5.498"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1620000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1900000" Value="5.498"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2120000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2400000" Value="5.498"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2660000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2940000" Value="5.498"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3190000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3470000" Value="5.498"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3750000" Value="1.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4030000" Value="5.498"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0280000" Value="0.72"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0550000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0830000" Value="0.72"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1070000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1350000" Value="0.72"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1620000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1900000" Value="0.72"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2120000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2400000" Value="0.72"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2660000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2940000" Value="0.72"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3190000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3470000" Value="0.72"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3750000" Value="-0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4030000" Value="0.72"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="shadow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="3.583"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0990000" Value="-1.334"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.525"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="3.916"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="-2.334"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1.969"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="7.499"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="shadow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-8.083"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0990000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-1.125"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-8.167"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="0.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="2.707"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-3.833"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bombgroup" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2.274"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-1.242"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-10.02"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-0.625"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.333"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bombgroup" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-20.591"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-8.546"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-19.141"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-8.828"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-22.917"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bombgroup" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="14.811"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-20.032"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="14.811"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="body" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-10.084"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="5.732"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-10.084"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bomb" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-0.297"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="4.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3020000" Value="-0.297"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4020000" Value="4.333"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bomb" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="4.76"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4020000" Value="4.76"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0280000" Value="0.631"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0550000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0830000" Value="0.631"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1070000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1350000" Value="0.631"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1620000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1900000" Value="0.631"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2120000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2400000" Value="0.631"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2660000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2940000" Value="0.631"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3190000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3470000" Value="0.631"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3750000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4030000" Value="0.631"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0280000" Value="0.631"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0550000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0830000" Value="0.631"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1070000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1350000" Value="0.631"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1620000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1900000" Value="0.631"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2120000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2400000" Value="0.631"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2660000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2940000" Value="0.631"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3190000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3470000" Value="0.631"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3750000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4030000" Value="0.631"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse2" Storyboard.TargetProperty="(UIElement.Opacity)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0130000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0280000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0410000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0550000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0680000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0830000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0960000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1070000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1200000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1350000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1480000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1620000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1750000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1900000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2030000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2120000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2250000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2400000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2530000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2660000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2790000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2940000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3070000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3190000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3320000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3470000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3600000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3750000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3880000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4030000" Value="1"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0150000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0300000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0450000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0630000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0780000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1150000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1290000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1440000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1600000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1750000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1930000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2080000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2340000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2490000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2680000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2830000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3140000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3360000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3510000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3680000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3800000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3890000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4010000" Value="1.287"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0150000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0300000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0450000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0630000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0780000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1150000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1290000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1440000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1600000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1750000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1930000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2080000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2340000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2490000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2680000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2830000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3140000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3360000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3510000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3680000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3800000" Value="1.287"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3890000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4010000" Value="1.287"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse1" Storyboard.TargetProperty="(UIElement.Opacity)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.8"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0150000" Value="0.1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0300000" Value="0.8"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0450000" Value="0.1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0630000" Value="0.8"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0780000" Value="0.1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1150000" Value="0.1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1290000" Value="0.8"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1440000" Value="0.1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1600000" Value="0.8"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1750000" Value="0.1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1930000" Value="0.8"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2080000" Value="0.1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2340000" Value="0.8"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2490000" Value="0.1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2680000" Value="0.8"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2830000" Value="0.1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="0.8"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3140000" Value="0.1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3360000" Value="0.8"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3510000" Value="0.1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3680000" Value="0.8"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3800000" Value="0.1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3890000" Value="0.8"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4010000" Value="0.1"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bomb" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.868"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3020000" Value="0.868"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4020000" Value="1"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bomb" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.868"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3020000" Value="0.868"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4020000" Value="1"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0150000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0300000" Value="-23.775"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0450000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0630000" Value="13.672"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0780000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1150000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1290000" Value="-62.029"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1440000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2080000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2340000" Value="-49.918"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2490000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2680000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2830000" Value="57.524"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3140000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3360000" Value="45.775"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3510000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3680000" Value="19.057"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3800000" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="body" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-0.333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-0.333"/>
-			</DoubleAnimationUsingKeyFrames>
-			<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl1" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
-				<SplinePointKeyFrame KeyTime="00:00:00" Value="0.818,0.593"/>
-				<SplinePointKeyFrame KeyTime="00:00:00.4000000" Value="0.818,0.593"/>
-			</PointAnimationUsingKeyFrames>
-			<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rl1" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
-				<SplinePointKeyFrame KeyTime="00:00:00" Value="0.879,0.572"/>
-				<SplinePointKeyFrame KeyTime="00:00:00.4000000" Value="0.879,0.572"/>
-			</PointAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-12.027"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-11.777"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-13.277"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-11.777"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-12.027"/>
-			</DoubleAnimationUsingKeyFrames>
-			<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl2" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
-				<SplinePointKeyFrame KeyTime="00:00:00" Value="0.704,0.185"/>
-				<SplinePointKeyFrame KeyTime="00:00:00.4000000" Value="0.704,0.185"/>
-			</PointAnimationUsingKeyFrames>
-			<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bl2" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
-				<SplinePointKeyFrame KeyTime="00:00:00" Value="0.723,0.176"/>
-				<SplinePointKeyFrame KeyTime="00:00:00.4000000" Value="0.723,0.176"/>
-			</PointAnimationUsingKeyFrames>
-			<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bl1" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
-				<SplinePointKeyFrame KeyTime="00:00:00" Value="0.868,0.641"/>
-				<SplinePointKeyFrame KeyTime="00:00:00.4000000" Value="0.868,0.641"/>
-			</PointAnimationUsingKeyFrames>
-			<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="br1" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
-				<SplinePointKeyFrame KeyTime="00:00:00" Value="0.853,0.595"/>
-				<SplinePointKeyFrame KeyTime="00:00:00.4000000" Value="0.853,0.595"/>
-			</PointAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="br1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-11.202"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-9.952"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-11.452"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="-9.952"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-11.202"/>
-			</DoubleAnimationUsingKeyFrames>
-			<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="br2" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
-				<SplinePointKeyFrame KeyTime="00:00:00" Value="0.72,0.208"/>
-				<SplinePointKeyFrame KeyTime="00:00:00.4000000" Value="0.72,0.208"/>
-			</PointAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="br2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-5.041"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-11.041"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-4.791"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="-5.291"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-9.289"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-5.041"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-11.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-12.75"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-11.5"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2.25"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.75"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.75"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="2.25"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-46.247"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="11.553"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="6.358"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-0.973"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-81.685"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="8.537"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="8.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="9.25"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="8.75"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="13.5"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.976"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-3.75"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-12.75"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-0.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="6"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-15.966"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.273"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-21.114"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1.273"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-1.561"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-3.737"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-4.034"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="82.691"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-3.737"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-3.737"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="br1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="42.089"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-39.155"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="14.29"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="-7.98"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-28.339"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="42.089"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="11.937"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="42.309"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-45.734"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="11.937"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="44.085"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="11.937"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="6.25"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="5.02"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="2"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1.75"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="5.75"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="10"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="9.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="5.389"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-1.75"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="12"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="12"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-5.519"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-5.269"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-11.019"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-3.269"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-5.519"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.75"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="13.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="23"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="12.75"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.75"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="10.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="11"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.25"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="-1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="br1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="12.25"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="3.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="12.25"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="br2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-0.75"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-3.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2990000" Value="2"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-1.02"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="20.815"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-0.798"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="21.937"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.633"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.405"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.633"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.633"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.405"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.633"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="5.629"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="5.463"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="9.012"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="6.262"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="9.17"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.881"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="4.147"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-1.682"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="3.568"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-1.08"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fuse3" Storyboard.TargetProperty="(UIElement.Opacity)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
-			</DoubleAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-15.151"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-0.419"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="10.084"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-1.516"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-13.267"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bombgroup" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.144"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.893"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1.115"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bombgroup" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.71"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.777"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 	</UserControl.Resources>
@@ -624,60 +34,6 @@
 				</VisualStateGroup.Transitions>
 				<VisualState x:Name="Enemy_Destroy_State">
 					<Storyboard>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="body" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1.667"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="bomb" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1.667"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="fl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1.667"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="fl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1.667"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1.667"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1.667"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="body" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.333"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="bomb" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.333"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="fl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.333"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="fl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.333"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.333"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.333"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="bl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-2"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="bl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-2"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="br1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-2"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="br2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-2"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="shadow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-2"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="bombgroup" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-2"/>
-						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1"/>
 						</DoubleAnimationUsingKeyFrames>
@@ -723,234 +79,10 @@
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Enemy_rec4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="2.369"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="vector" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="19.815"/>
-						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Enemy_Boom_State">
 					<Storyboard>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="body" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.334"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.334"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="2.334"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="body" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-3"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-3"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-1.333"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bomb" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.333"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-2.198"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bomb" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-9.334"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-9.055"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.667"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.972"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="2.334"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.666"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="5.672"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="4.333"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="7.334"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="2.617"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="3.001"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="3.333"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="10.682"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="7"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-4.016"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-2"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="16.333"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="22.667"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="22.667"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-3.666"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-6.707"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-3.666"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="18.333"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="31.657"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="29"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="13.333"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="13.333"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="15"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="12.333"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="2.022"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="4.668"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="br1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="15.333"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="16.333"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="18"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="br2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="7.667"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.664"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="3.334"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="shadow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="5.464"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.667"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bombgroup" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.5"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-7"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-7"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-5.333"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.334"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-0.334"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1.666"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-2.334"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-2.937"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-3.689"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="br1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.666"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.999"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="2.999"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="br2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.333"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="3.676"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="6"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="shadow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.667"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-6.729"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1.333"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bombgroup" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.334"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.167"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.167"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="2.167"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="body" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="17.276"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bombgroup" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.817"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.561"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bombgroup" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.854"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.452"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bombgroup" Storyboard.TargetProperty="(UIElement.Opacity)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-50.964"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="50.345"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-45.858"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="66.573"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bl2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="102.672"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="br2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-70.344"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bl1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2.478"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="5.245"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="br1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-2.941"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bl1" Storyboard.TargetProperty="(UIElement.Opacity)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bl2" Storyboard.TargetProperty="(UIElement.Opacity)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="br1" Storyboard.TargetProperty="(UIElement.Opacity)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="br2" Storyboard.TargetProperty="(UIElement.Opacity)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="shadow" Storyboard.TargetProperty="(UIElement.Opacity)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="body" Storyboard.TargetProperty="(UIElement.Opacity)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl1" Storyboard.TargetProperty="(UIElement.Opacity)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fl2" Storyboard.TargetProperty="(UIElement.Opacity)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rl1" Storyboard.TargetProperty="(UIElement.Opacity)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rl2" Storyboard.TargetProperty="(UIElement.Opacity)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bomb" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.612"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bomb" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.612"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="bomb" Storyboard.TargetProperty="(FrameworkElement.Height)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="31"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="40"/>
-						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="3.665"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.0600000" Value="-4.102"/>
@@ -966,16 +98,6 @@
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00.2600000" Value="0"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="2.333"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="shadow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.953"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="shadow" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.953"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="boom3" Storyboard.TargetProperty="(UIElement.Opacity)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
@@ -1221,67 +343,11 @@
 				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Image x:Name="bl1" Width="14.554" Height="14.556" Canvas.Left="9.189" Canvas.Top="27.866" Source="Resources\Enemy\Enemy_rec1.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0">
-			<Image.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform Angle="2.478"/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Image.RenderTransform>
-		</Image>
-		<Image x:Name="bl2" Width="10.511" Height="16.98" Canvas.Left="3.966" Canvas.Top="28.169" Source="Resources\Enemy\Enemy_rec2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0">
-			<Image.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Image.RenderTransform>
-		</Image>
-		<Image x:Name="br1" Width="14.555" Height="14.556" Canvas.Left="31.396" Canvas.Top="26.711" Source="Resources\Enemy\Enemy_rec1.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0">
-			<Image.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform ScaleX="-1"/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Image.RenderTransform>
-		</Image>
-		<Image x:Name="br2" Width="10.513" Height="16.982" Canvas.Left="42.23" Canvas.Top="35.052" Source="Resources\Enemy\Enemy_rec2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0">
-			<Image.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform ScaleX="-1"/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Image.RenderTransform>
-		</Image>
-		<Image x:Name="shadow" Width="31.535" Height="23.45" Canvas.Left="19.281" Canvas.Top="50.839" Source="Resources/Enemy/Enemy_shadow.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0">
-			<Image.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Image.RenderTransform>
-		</Image>
-		<Image x:Name="body" Width="26.683" Height="19.409" RenderTransformOrigin="0.5,0.5" Canvas.Left="18.244" Canvas.Top="52.109" Source="Resources/Enemy/Enemy_body.png" Stretch="Fill" Opacity="0">
-			<Image.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Image.RenderTransform>
-		</Image>
-		<Canvas x:Name="bombgroup" Width="29.11" Height="25.067" Canvas.Left="11.619" Canvas.Top="36.652" RenderTransformOrigin="0.5,0.5" Opacity="0">
+		<Canvas x:Name="Enemy_rec1" Width="13.989" Height="13.66" RenderTransformOrigin="1.016,0.985" Canvas.Left="5.741" Canvas.Top="26.458">
+			<Path Fill="#FFECAE32" Stretch="Fill" Width="12.757" Height="11.877" Canvas.Left="0.703" Canvas.Top="1.219" Data="M7.8034384,29.154057 C6.7242455,28.863592 4.4690096,28.590564 6.041329,32.052663 6.5742272,33.226055 7.6016964,34.096847 8.1004701,35.266598 8.673909,36.611459 9.234133,37.517228 10.49738,38.417541 11.504944,39.13563 13.254886,39.630162 14.399196,40.15703 14.882811,40.379699 15.807022,40.963581 16.360198,40.860414 17.162275,40.710828 16.791262,39.534311 16.995542,38.644825 17.317215,37.244184 19.39926,36.278429 17.404146,34.66226 16.414908,33.860915 14.943953,33.709836&#xa;13.845144,32.776596 12.784183,31.875502 11.498422,30.895581 10.233242,30.386804 10.236607,30.33135 10.239971,30.275897 10.243336,30.220443 9.3029901,29.842294 8.8662282,29.135052 7.7253047,29.06583 7.7513493,29.095239 7.7773938,29.124648 7.8034384,29.154057 z"/>
+			<Path Fill="Black" Stretch="Fill" Width="13.989" Height="13.66" Data="M11.692476,7.8415893 C11.891645,7.844847 12.115323,7.9184478 12.123183,7.9018934 12.247972,7.9094632 12.503697,8.5567363 11.759697,8.4805825 11.333871,8.4370015 11.336093,8.2172158 11.391766,7.9967063 11.420255,7.8838671 11.528346,7.8462971 11.65304,7.841923 11.666029,7.8414672 11.679198,7.8413718 11.692476,7.8415893 z M11.021451,7.5932672 L11.016063,7.6130321 C11.007338,7.6383841 10.995371,7.6625197 10.980461,7.6854728 L10.972488,7.6963728 10.972676,7.6959599 C10.986453,7.6660054 11.000084,7.6368707 11.013753,7.6085933 z M6.5843182,6.9534848 L6.5985375,6.9784449 C6.64992,7.0685075 6.7010689,7.1590841 6.6597004,7.1351669 L6.5699077,7.0671041 C6.5524807,7.0948542 6.5680056,7.0291546 6.582532,6.9618938 z M6.5630928,6.8724692 L6.5946651,6.9016183 6.5927091,6.9125917 C6.5912209,6.920379 6.5895844,6.9285005 6.5878663,6.9367774 L6.5843182,6.9534848 6.5794387,6.9449203 C6.5731888,6.9339035 6.5671158,6.9231189 6.561399,6.912792 L6.5471082,6.8863776 z M1.9104077,1.527155 C1.7536989,1.5333931 1.6370435,1.7284867 1.5428844,2.3790877 1.4524188,3.004169 1.4763546,3.2612463 2.3039844,3.5940931 2.3688784,3.7899919 2.4608698,3.9673033 2.5750313,4.1291135 L2.5799694,4.1358932 C2.4877367,4.1956561 2.4224129,4.393358 2.3945816,4.852115 2.3589435,5.4395502 2.5289467,5.6259573 2.9842308,6.1400984 3.6028693,6.838712 3.941947,7.9187391 4.4079857,8.814379 4.6498723,9.2792418 4.8523622,9.7401059 5.2471366,10.117502 5.5990458,10.45392 5.9954758,10.811169 6.6407967,10.535986 7.8487454,10.020883 6.8443985,9.4317592 6.3530846,8.2317212 L6.3259659,8.1616319 6.3796893,8.2115643 C6.4005762,8.2307942 6.4220982,8.2504294 6.4442673,8.2704814 6.9728094,8.7485373 7.5170246,9.0802386 7.9440265,9.6971801 8.5332203,10.54847 9.6427937,12.013788 10.688942,12.618623 11.10216,12.857525 12.130596,12.576412 11.450313,11.078647 11.052458,10.202701 10.710459,10.127601 9.8724165,9.5637267 8.7992411,8.8416303 7.8167143,7.6844309 6.6566296,6.9041527 L6.7882562,7.0803521 6.5946651,6.9016183 6.5966626,6.8904131 C6.6022897,6.8557199 6.6025534,6.8338769 6.5891653,6.8473185 L6.5814782,6.8547338 6.5359765,6.8248117 C6.530922,6.8215645 6.5273056,6.8201225 6.5249477,6.8202608 6.5155149,6.8208149 6.5262113,6.8466557 6.5455013,6.8834069 L6.5471082,6.8863776 6.5175877,6.9120634 C6.2858324,7.101507 5.9953652,7.1669586 5.8591795,7.2841642 L5.8566618,7.2864755 5.8156019,7.1984618 C5.5053721,6.5625489 5.0148697,5.9875725 4.4747448,5.4327229 L4.4738408,5.4318049 4.5665045,5.4716566 C4.9049082,5.6133883 5.2521334,5.7454689 5.5879975,5.880543 6.8309002,6.3804 7.8678441,7.1805542 8.9703246,7.9224961 9.2718935,8.1254447 10.618135,8.1328013 10.955926,7.7190187 L10.972488,7.6963728 10.930724,7.7882441 C10.716619,8.2622951 10.519253,8.9509776 11.591247,9.2467473 12.169751,9.40636 13.727645,8.2842496 12.475968,7.2381461 12.474604,7.2616694 12.114461,7.00474 12.113096,7.0282639 12.062432,7.025163 12.014374,7.0234464 11.968737,7.0230759 11.421094,7.0186317 11.222174,7.2080682 11.055054,7.5263708 L11.021451,7.5932672 11.02668,7.5740884 C11.086158,7.2817533 10.735185,6.8403032 9.5753479,6.2059701 8.5501852,5.6452911 7.4315625,4.6337164 6.2761965,4.1690639 6.2795606,4.1136101 6.2829247,4.0581558 6.2862893,4.0027016 5.0605026,3.6792233 3.878063,2.4522667 2.7278054,1.8753977 L2.7080718,1.865874 2.7699364,1.8752552 C2.814781,1.8801328 2.8611169,1.8812272 2.9090085,1.8775676 L2.4981802,1.7691523 C2.5363808,1.7852618 2.5746162,1.8022086 2.6128869,1.8199355 L2.7080718,1.865874 2.70378,1.8652232 C2.3568266,1.7978784 2.1032803,1.519478 1.9104077,1.527155 z M2.5347181,0.00023809813 C2.6346333,-0.0018882927 2.7393585,0.010136549 2.8525083,0.039993295 3.4200719,0.18976386 3.5744946,0.39207231 4.0649291,0.69798415 5.4505787,1.4342857 6.5364161,2.5017992 7.8180876,3.5138753 9.0119496,4.4566133 10.177825,5.8099492 11.498157,6.1583508 13.02505,6.5612586 13.036213,6.0923694 13.512128,7.365907 13.963031,8.5725167 14.17667,8.6032031 13.781684,9.8034652 13.649877,10.203993 13.261174,10.462433 13.133792,10.849517 12.938396,11.443273 13.347009,11.463507&#xa;13.317732,11.946046 13.253247,13.008889 12.315609,13.469371 11.631265,13.597008 10.460793,13.8153 9.9356575,13.434542 9.0828658,12.941451 8.6915245,12.71517 8.3734436,12.07076 7.9637227,12.122138 7.3957348,12.193369 7.325368,12.541031 6.7058802,12.212802 5.8661642,11.767901 5.4531217,11.243437 4.7171426,10.58933 3.6098009,9.6051705 2.7556794,8.0285132 1.7782433,6.7374814 0.38376049,4.8955939 -0.32266881,4.1546839 0.1426081,2.0463076 0.32983108,1.1979185&#xa;0.96921025,0.66558848 1.6677553,0.30207269 1.9785177,0.14035601 2.2349728,0.0066168863 2.5347181,0.00023809813 z"/>
+		</Canvas>
+		<Canvas x:Name="Enemy_rec2" Width="10.504" Height="17.168" RenderTransformOrigin="1.012,-0.011" Canvas.Left="-0.341" Canvas.Top="26.244">
 			<Canvas.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1290,88 +356,90 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Canvas.RenderTransform>
-			<Image x:Name="bomb" Width="36" Height="31" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Source="Resources/Enemy/Enemy_bomb1.png" Canvas.Left="2.702" Canvas.Top="-8.496">
-				<Image.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Image.RenderTransform>
-			</Image>
-			<Image x:Name="fuse1" Width="31.123" Height="32.368" RenderTransformOrigin="0.5,0.5" Canvas.Left="-14.346" Canvas.Top="-14.239" Stretch="Fill" Opacity="0.1" Source="Resources/Enemy/Enemy_fuse2.png">
-				<Image.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Image.RenderTransform>
-			</Image>
-			<Image x:Name="fuse2" Width="14.573" Height="13.248" RenderTransformOrigin="0.5,0.5" Canvas.Left="-17.007" Canvas.Top="-5.019" Source="Resources/Enemy/Enemy_fuse1.png" Stretch="Fill">
-				<Image.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Image.RenderTransform>
-			</Image>
-			<Image x:Name="fuse3" Width="31.123" Height="32.368" RenderTransformOrigin="0.5,0.5" Canvas.Left="-14.26" Canvas.Top="-16.848" Stretch="Fill" Opacity="0.1" Source="Resources/Enemy/Enemy_fuse2.png">
-				<Image.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Image.RenderTransform>
-			</Image>
+			<Path Fill="#FFECAE32" Stretch="Fill" Width="10.12" Height="16.172" Canvas.Left="0.239" Canvas.Top="0.27" Data="M10.926431,1.4172774 C9.1317174,1.4072135 7.9558871,1.9787884 6.5876449,3.7838611 6.0536877,4.4882917 5.4940467,5.1118223 4.9617066,5.8141196 4.2644063,6.7340427 4.3389987,7.5712811 4.1561715,8.7707626 4.0018206,9.7834178 3.9352939,10.838344 3.9669191,11.890027 3.9869848,12.557299 4.5029387,12.620962 3.6416771,13.122592 3.0753189,13.45246 3.013642,13.436879 2.8287079,14.137721 2.5845375,15.063051 2.6174681,15.708372 3.6906107,16.444152 4.6357027,17.092137 5.0954719,17.343382&#xa;6.3863575,17.421703 7.4566534,17.48664 8.3294804,17.226522 9.3997763,17.291459 10.633362,17.366303 10.676896,16.788359 11.330071,15.404896 11.873756,14.253339 11.224654,14.231257 10.721494,13.05122 10.292953,12.04618 10.035519,11.303748 9.8898719,10.245707 9.5515843,7.7882484 11.03524,7.2597253 12.26653,5.1302499 12.4926,4.7392688 12.651855,4.3521839 12.716543,3.9052546 12.80472,3.2960317 12.949818,3.1003023 12.612658,2.5214232 11.928394,1.3465926&#xa;12.245673,1.1365042 10.306363,1.3170416"/>
+			<Path Fill="Black" Stretch="Fill" Width="10.504" Height="17.168" Data="M8.6290001,2.547 C8.6290001,2.9501679 8.3124654,3.277 7.9220001,3.277 7.5315348,3.277 7.2150002,2.9501679 7.2150002,2.547 7.2150002,2.1438322 7.5315348,1.817 7.9220001,1.817 8.3124654,1.817 8.6290001,2.1438322 8.6290001,2.547 z M9.7880972,0.77594179 C9.6700545,0.19618154 9.9050772,0.062949721 8.9582965,0.005500546 8.5160397,-0.021334906 7.9781526,0.052663893 7.5395988,0.16988235 7.0866621,0.29094513 6.6618182,0.40976272 6.1974403,0.62068287 5.7782884,0.81106145 5.3906752,0.97220468 4.9998786,1.2681069 3.5580112,2.3598558 2.3924059,3.4125309 1.8163146,5.2389332 1.4673588,6.3452401 1.2508728,7.4067364 1.0817049,8.5756515 1.0033919,9.116778 1.2342344,9.6997132 1.0787643,10.172195 0.9310666,10.621056 0.58192732,11.063478&#xa;0.40288617,11.508748 -0.031973264,12.590228 -0.17421593,13.426907 0.27602906,14.631877 0.66872033,15.682819 0.28372366,16.459416 1.7692376,16.851445 2.9875983,17.172972 4.1454296,17.089553 5.412813,17.166456 5.9371877,17.198275 6.2383233,16.727306 6.7549714,16.715656 7.0390758,16.709249 7.3384666,16.742174 7.6301892,16.737454 7.9467957,16.732333 8.0765131,16.637324 8.3390819,16.40477 9.3683308,15.493175 9.3211026,15.18208 9.4195884,13.558664 9.4917312,12.369479&#xa;9.1839317,12.1593 8.3120164,11.174646 7.6156229,10.388209 7.9013947,9.3292034 8.1543771,8.0968703 8.2652407,7.5568289 8.345676,7.081284 8.5278152,6.5854247 8.6979232,6.1223194 8.9625634,5.8944078 9.2528271,5.4710113 9.4944444,5.1185734 9.6451825,4.7879448 9.9721619,4.4501782 10.379535,4.0293661 10.446919,3.8487299 10.486412,3.197743 10.567047,1.8685823 10.377223,1.6179044 9.7758308,0.46211477 M8.8306945,0.91464401 C8.0246834,0.78714657 8.6343251,0.3090069 6.359622,1.5854668 5.0895477,2.2981748 4.4975215,2.9348021 3.6072479,4.18583 3.2348114,4.7091843 2.9178013,5.2347846 2.6720592,5.8235447 2.3915922,6.4955002 2.404378,7.1380699 2.3537092,7.9426804 2.2488129,9.6084119 1.7380049,10.707785 2.448314,12.312773 1.1390261,12.236238 0.28805241,13.706665 1.2099862,15.063058 1.9422891,16.140456 2.6472019,16.103937 3.6138696,15.995614 4.4103587,15.90636 5.8769395,15.994721&#xa;4.9547892,13.617235 4.3058695,11.944191 4.6522192,11.327883 5.3960886,9.5456866 5.3653531,10.033761 4.292129,15.442306 7.0203665,13.11447 6.2477174,13.883365 5.8707655,13.911476 5.6943766,15.085631 5.6355393,15.477288 6.7301485,17.186137 7.7040678,15.470326 8.1484093,14.687503 8.7798302,14.264158 8.033595,13.173698 7.2202361,11.985151 6.8667915,12.133701 6.8289438,10.516436 6.7741289,8.1741505 6.6209246,7.0929557 8.0794151,5.0434597 8.6495893,4.2422409&#xa;9.3852772,3.6119456 9.6426337,2.6722815 9.8132615,2.0492829 9.8032509,2.5038599 9.7343079,1.846368 9.7045719,1.5627829 9.6443834,1.3504272 9.5956996,1.3787826 9.5994254,1.3196186 9.4077798,1.1275109 9.2415632,1.0233509"/>
 		</Canvas>
-		<Image x:Name="fl1" Width="14.556" Height="14.556" Canvas.Left="5.078" Canvas.Top="48.396" Source="Resources/Enemy/Enemy_rec1.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0">
-			<Image.RenderTransform>
+		<Canvas x:Name="Enemy_rec3" Width="13.989" Height="13.66" RenderTransformOrigin="1.016,0.985" Canvas.Left="14.829" Canvas.Top="24.181">
+			<Canvas.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="-1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="10.811"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Canvas.RenderTransform>
+			<Path Fill="#FFECAE32" Stretch="Fill" Width="12.757" Height="11.877" Canvas.Left="0.703" Canvas.Top="1.219" Data="M7.8034384,29.154057 C6.7242455,28.863592 4.4690096,28.590564 6.041329,32.052663 6.5742272,33.226055 7.6016964,34.096847 8.1004701,35.266598 8.673909,36.611459 9.234133,37.517228 10.49738,38.417541 11.504944,39.13563 13.254886,39.630162 14.399196,40.15703 14.882811,40.379699 15.807022,40.963581 16.360198,40.860414 17.162275,40.710828 16.791262,39.534311 16.995542,38.644825 17.317215,37.244184 19.39926,36.278429 17.404146,34.66226 16.414908,33.860915 14.943953,33.709836&#xa;13.845144,32.776596 12.784183,31.875502 11.498422,30.895581 10.233242,30.386804 10.236607,30.33135 10.239971,30.275897 10.243336,30.220443 9.3029901,29.842294 8.8662282,29.135052 7.7253047,29.06583 7.7513493,29.095239 7.7773938,29.124648 7.8034384,29.154057 z"/>
+			<Path Fill="Black" Stretch="Fill" Width="13.989" Height="13.66" Data="M11.692476,7.8415893 C11.891645,7.844847 12.115323,7.9184478 12.123183,7.9018934 12.247972,7.9094632 12.503697,8.5567363 11.759697,8.4805825 11.333871,8.4370015 11.336093,8.2172158 11.391766,7.9967063 11.420255,7.8838671 11.528346,7.8462971 11.65304,7.841923 11.666029,7.8414672 11.679198,7.8413718 11.692476,7.8415893 z M11.021451,7.5932672 L11.016063,7.6130321 C11.007338,7.6383841 10.995371,7.6625197 10.980461,7.6854728 L10.972488,7.6963728 10.972676,7.6959599 C10.986453,7.6660054 11.000084,7.6368707 11.013753,7.6085933 z M6.5843182,6.9534848 L6.5985375,6.9784449 C6.64992,7.0685075 6.7010689,7.1590841 6.6597004,7.1351669 L6.5699077,7.0671041 C6.5524807,7.0948542 6.5680056,7.0291546 6.582532,6.9618938 z M6.5630928,6.8724692 L6.5946651,6.9016183 6.5927091,6.9125917 C6.5912209,6.920379 6.5895844,6.9285005 6.5878663,6.9367774 L6.5843182,6.9534848 6.5794387,6.9449203 C6.5731888,6.9339035 6.5671158,6.9231189 6.561399,6.912792 L6.5471082,6.8863776 z M1.9104077,1.527155 C1.7536989,1.5333931 1.6370435,1.7284867 1.5428844,2.3790877 1.4524188,3.004169 1.4763546,3.2612463 2.3039844,3.5940931 2.3688784,3.7899919 2.4608698,3.9673033 2.5750313,4.1291135 L2.5799694,4.1358932 C2.4877367,4.1956561 2.4224129,4.393358 2.3945816,4.852115 2.3589435,5.4395502 2.5289467,5.6259573 2.9842308,6.1400984 3.6028693,6.838712 3.941947,7.9187391 4.4079857,8.814379 4.6498723,9.2792418 4.8523622,9.7401059 5.2471366,10.117502 5.5990458,10.45392 5.9954758,10.811169 6.6407967,10.535986 7.8487454,10.020883 6.8443985,9.4317592 6.3530846,8.2317212 L6.3259659,8.1616319 6.3796893,8.2115643 C6.4005762,8.2307942 6.4220982,8.2504294 6.4442673,8.2704814 6.9728094,8.7485373 7.5170246,9.0802386 7.9440265,9.6971801 8.5332203,10.54847 9.6427937,12.013788 10.688942,12.618623 11.10216,12.857525 12.130596,12.576412 11.450313,11.078647 11.052458,10.202701 10.710459,10.127601 9.8724165,9.5637267 8.7992411,8.8416303 7.8167143,7.6844309 6.6566296,6.9041527 L6.7882562,7.0803521 6.5946651,6.9016183 6.5966626,6.8904131 C6.6022897,6.8557199 6.6025534,6.8338769 6.5891653,6.8473185 L6.5814782,6.8547338 6.5359765,6.8248117 C6.530922,6.8215645 6.5273056,6.8201225 6.5249477,6.8202608 6.5155149,6.8208149 6.5262113,6.8466557 6.5455013,6.8834069 L6.5471082,6.8863776 6.5175877,6.9120634 C6.2858324,7.101507 5.9953652,7.1669586 5.8591795,7.2841642 L5.8566618,7.2864755 5.8156019,7.1984618 C5.5053721,6.5625489 5.0148697,5.9875725 4.4747448,5.4327229 L4.4738408,5.4318049 4.5665045,5.4716566 C4.9049082,5.6133883 5.2521334,5.7454689 5.5879975,5.880543 6.8309002,6.3804 7.8678441,7.1805542 8.9703246,7.9224961 9.2718935,8.1254447 10.618135,8.1328013 10.955926,7.7190187 L10.972488,7.6963728 10.930724,7.7882441 C10.716619,8.2622951 10.519253,8.9509776 11.591247,9.2467473 12.169751,9.40636 13.727645,8.2842496 12.475968,7.2381461 12.474604,7.2616694 12.114461,7.00474 12.113096,7.0282639 12.062432,7.025163 12.014374,7.0234464 11.968737,7.0230759 11.421094,7.0186317 11.222174,7.2080682 11.055054,7.5263708 L11.021451,7.5932672 11.02668,7.5740884 C11.086158,7.2817533 10.735185,6.8403032 9.5753479,6.2059701 8.5501852,5.6452911 7.4315625,4.6337164 6.2761965,4.1690639 6.2795606,4.1136101 6.2829247,4.0581558 6.2862893,4.0027016 5.0605026,3.6792233 3.878063,2.4522667 2.7278054,1.8753977 L2.7080718,1.865874 2.7699364,1.8752552 C2.814781,1.8801328 2.8611169,1.8812272 2.9090085,1.8775676 L2.4981802,1.7691523 C2.5363808,1.7852618 2.5746162,1.8022086 2.6128869,1.8199355 L2.7080718,1.865874 2.70378,1.8652232 C2.3568266,1.7978784 2.1032803,1.519478 1.9104077,1.527155 z M2.5347181,0.00023809813 C2.6346333,-0.0018882927 2.7393585,0.010136549 2.8525083,0.039993295 3.4200719,0.18976386 3.5744946,0.39207231 4.0649291,0.69798415 5.4505787,1.4342857 6.5364161,2.5017992 7.8180876,3.5138753 9.0119496,4.4566133 10.177825,5.8099492 11.498157,6.1583508 13.02505,6.5612586 13.036213,6.0923694 13.512128,7.365907 13.963031,8.5725167 14.17667,8.6032031 13.781684,9.8034652 13.649877,10.203993 13.261174,10.462433 13.133792,10.849517 12.938396,11.443273 13.347009,11.463507&#xa;13.317732,11.946046 13.253247,13.008889 12.315609,13.469371 11.631265,13.597008 10.460793,13.8153 9.9356575,13.434542 9.0828658,12.941451 8.6915245,12.71517 8.3734436,12.07076 7.9637227,12.122138 7.3957348,12.193369 7.325368,12.541031 6.7058802,12.212802 5.8661642,11.767901 5.4531217,11.243437 4.7171426,10.58933 3.6098009,9.6051705 2.7556794,8.0285132 1.7782433,6.7374814 0.38376049,4.8955939 -0.32266881,4.1546839 0.1426081,2.0463076 0.32983108,1.1979185&#xa;0.96921025,0.66558848 1.6677553,0.30207269 1.9785177,0.14035601 2.2349728,0.0066168863 2.5347181,0.00023809813 z"/>
+		</Canvas>
+		<Canvas x:Name="Enemy_rec4" Width="10.504" Height="17.168" RenderTransformOrigin="1.012,-0.011" Canvas.Left="31.524" Canvas.Top="26.871">
+			<Canvas.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="-1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="20.182"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Canvas.RenderTransform>
+			<Path Fill="#FFECAE32" Stretch="Fill" Width="10.12" Height="16.172" Canvas.Left="0.239" Canvas.Top="0.27" Data="M10.926431,1.4172774 C9.1317174,1.4072135 7.9558871,1.9787884 6.5876449,3.7838611 6.0536877,4.4882917 5.4940467,5.1118223 4.9617066,5.8141196 4.2644063,6.7340427 4.3389987,7.5712811 4.1561715,8.7707626 4.0018206,9.7834178 3.9352939,10.838344 3.9669191,11.890027 3.9869848,12.557299 4.5029387,12.620962 3.6416771,13.122592 3.0753189,13.45246 3.013642,13.436879 2.8287079,14.137721 2.5845375,15.063051 2.6174681,15.708372 3.6906107,16.444152 4.6357027,17.092137 5.0954719,17.343382&#xa;6.3863575,17.421703 7.4566534,17.48664 8.3294804,17.226522 9.3997763,17.291459 10.633362,17.366303 10.676896,16.788359 11.330071,15.404896 11.873756,14.253339 11.224654,14.231257 10.721494,13.05122 10.292953,12.04618 10.035519,11.303748 9.8898719,10.245707 9.5515843,7.7882484 11.03524,7.2597253 12.26653,5.1302499 12.4926,4.7392688 12.651855,4.3521839 12.716543,3.9052546 12.80472,3.2960317 12.949818,3.1003023 12.612658,2.5214232 11.928394,1.3465926&#xa;12.245673,1.1365042 10.306363,1.3170416"/>
+			<Path Fill="Black" Stretch="Fill" Width="10.504" Height="17.168" Data="M8.6290001,2.547 C8.6290001,2.9501679 8.3124654,3.277 7.9220001,3.277 7.5315348,3.277 7.2150002,2.9501679 7.2150002,2.547 7.2150002,2.1438322 7.5315348,1.817 7.9220001,1.817 8.3124654,1.817 8.6290001,2.1438322 8.6290001,2.547 z M9.7880972,0.77594179 C9.6700545,0.19618154 9.9050772,0.062949721 8.9582965,0.005500546 8.5160397,-0.021334906 7.9781526,0.052663893 7.5395988,0.16988235 7.0866621,0.29094513 6.6618182,0.40976272 6.1974403,0.62068287 5.7782884,0.81106145 5.3906752,0.97220468 4.9998786,1.2681069 3.5580112,2.3598558 2.3924059,3.4125309 1.8163146,5.2389332 1.4673588,6.3452401 1.2508728,7.4067364 1.0817049,8.5756515 1.0033919,9.116778 1.2342344,9.6997132 1.0787643,10.172195 0.9310666,10.621056 0.58192732,11.063478&#xa;0.40288617,11.508748 -0.031973264,12.590228 -0.17421593,13.426907 0.27602906,14.631877 0.66872033,15.682819 0.28372366,16.459416 1.7692376,16.851445 2.9875983,17.172972 4.1454296,17.089553 5.412813,17.166456 5.9371877,17.198275 6.2383233,16.727306 6.7549714,16.715656 7.0390758,16.709249 7.3384666,16.742174 7.6301892,16.737454 7.9467957,16.732333 8.0765131,16.637324 8.3390819,16.40477 9.3683308,15.493175 9.3211026,15.18208 9.4195884,13.558664 9.4917312,12.369479&#xa;9.1839317,12.1593 8.3120164,11.174646 7.6156229,10.388209 7.9013947,9.3292034 8.1543771,8.0968703 8.2652407,7.5568289 8.345676,7.081284 8.5278152,6.5854247 8.6979232,6.1223194 8.9625634,5.8944078 9.2528271,5.4710113 9.4944444,5.1185734 9.6451825,4.7879448 9.9721619,4.4501782 10.379535,4.0293661 10.446919,3.8487299 10.486412,3.197743 10.567047,1.8685823 10.377223,1.6179044 9.7758308,0.46211477 M8.8306945,0.91464401 C8.0246834,0.78714657 8.6343251,0.3090069 6.359622,1.5854668 5.0895477,2.2981748 4.4975215,2.9348021 3.6072479,4.18583 3.2348114,4.7091843 2.9178013,5.2347846 2.6720592,5.8235447 2.3915922,6.4955002 2.404378,7.1380699 2.3537092,7.9426804 2.2488129,9.6084119 1.7380049,10.707785 2.448314,12.312773 1.1390261,12.236238 0.28805241,13.706665 1.2099862,15.063058 1.9422891,16.140456 2.6472019,16.103937 3.6138696,15.995614 4.4103587,15.90636 5.8769395,15.994721&#xa;4.9547892,13.617235 4.3058695,11.944191 4.6522192,11.327883 5.3960886,9.5456866 5.3653531,10.033761 4.292129,15.442306 7.0203665,13.11447 6.2477174,13.883365 5.8707655,13.911476 5.6943766,15.085631 5.6355393,15.477288 6.7301485,17.186137 7.7040678,15.470326 8.1484093,14.687503 8.7798302,14.264158 8.033595,13.173698 7.2202361,11.985151 6.8667915,12.133701 6.8289438,10.516436 6.7741289,8.1741505 6.6209246,7.0929557 8.0794151,5.0434597 8.6495893,4.2422409&#xa;9.3852772,3.6119456 9.6426337,2.6722815 9.8132615,2.0492829 9.8032509,2.5038599 9.7343079,1.846368 9.7045719,1.5627829 9.6443834,1.3504272 9.5956996,1.3787826 9.5994254,1.3196186 9.4077798,1.1275109 9.2415632,1.0233509"/>
+		</Canvas>
+		<Canvas x:Name="Enemy_body" Width="22.663" Height="19.846" Canvas.Left="15.016" Canvas.Top="40.101">
+			<Path Fill="#FFECAE32" Stretch="Fill" Width="18.354" Height="18.529" Canvas.Left="2.388" Canvas.Top="0.15" Data="M14.147223,38.805957 C11.325236,39.906382 10.538546,40.851242 9.9474674,44.729156 9.8524311,45.352664 9.4828485,45.907966 9.5818515,46.627164 9.6652806,47.233227 9.8405916,47.743564 10.14636,48.331145 10.838387,49.660985 10.86921,50.177392 10.766201,51.875189 10.727993,52.504932 10.387102,53.076041 10.483765,53.778244 10.569414,54.400431 10.448915,54.960467 11.136501,55.404091 12.104356,56.028543 13.599,55.522842 14.688024,56.037003 17.546358,57.386509 20.624543,56.408472&#xa;23.769825,56.337555 24.826766,56.313724 26.829708,56.457717 26.167097,53.978406 25.758104,52.448067 26.042021,51.817359 26.638694,50.333609 28.104974,46.687401 28.65342,47.270298 26.417363,42.973362 25.859959,41.902222 24.783703,41.285475 24.249808,40.170282 23.506212,38.617067 23.682851,38.717596 21.517563,38.418266 18.916485,38.058692 16.240749,38.164044 13.726274,38.863904"/>
+			<Path Fill="White" Stretch="Fill" Width="5.289" Height="4.646" Canvas.Left="8.82" Canvas.Top="11.17" Data="M18.933199,49.365181 C17.493752,49.441466 16.18746,49.211607 16.026752,51.860411 15.931312,53.433454 15.877495,54.273183 18.920311,53.705701 20.035548,53.49771 21.756423,53.294764 21.166362,51.086917 20.744732,49.509293 20.287426,49.530884 18.189623,49.23658"/>
+			<Path Fill="Black" Stretch="Fill" Width="22.663" Height="19.846" Data="M11.30388,11.932157 C10.902314,11.9251 10.570131,12.159165 10.181746,13.054358 9.8325357,13.859256 9.237668,14.706925 10.992648,15.170045 12.08678,15.458775 12.675154,15.782376 13.259488,13.929931 13.611762,12.813157 13.548146,12.686615 12.121507,12.044881 L12.425875,12.18859 C11.970511,12.088994 11.616209,11.937644 11.30388,11.932157 z M10.753531,9.8650016 C10.820299,9.8650722 10.889388,9.8672866 10.961024,9.8716325 12.403347,9.9591322 13.012416,10.05565 13.906419,10.8643 16.740557,13.638204 15.125563,14.31963 14.231263,15.830464 13.603335,16.891291 13.254992,17.023504 11.722447,16.930529 10.269618,16.842388 9.751667,16.962364 8.7656984,16.125013 7.7962804,15.301715 7.1468911,14.940762 7.2137175,13.839386 7.297039,12.466144 7.8422379,12.352575 8.5542726,11.353568 9.2728043,10.34544 9.752018,9.8639507&#xa;10.753531,9.8650016 z M10.159595,0.75406643 C9.9278364,0.75294974 9.6949568,0.76566823 9.4606066,0.79792824 8.3718052,0.94781067 7.4374537,1.0427832 6.4130702,1.4896531 L6.4107299,1.5188973 C6.2162857,1.6323102 5.2510061,3.366543 4.2911553,4.4584374 3.8208792,4.9934125 3.4169457,7.5886011 3.2065155,7.8990244 3.0086842,8.190855 3.573041,10.112788 3.7411861,10.316925 3.7412195,10.316971 3.8868384,12.192533 4.2779393,12.944097 4.5620799,13.490112 5.2136917,13.950227 4.7996049,14.666381 4.359952,15.426749 3.8907304,15.197939 3.8277826,16.235435 3.8048964,16.612656 4.1684747,17.735311 5.1775722,16.693033 5.2951307,16.5716 5.3730173,16.502546&#xa;5.50843,16.400021 6.0481367,15.991411 6.3355656,16.880011 6.8279366,17.356705 7.1490464,17.667593 7.3466148,17.536669 7.814764,17.604427 9.2688866,17.814896 10.612182,17.928591 12.109826,18.019459 12.800436,18.061354 14.059239,18.335909 14.682833,17.924753 15.284636,17.527971 15.121256,17.195293 15.571555,16.697496 16.140026,16.069057 17.303568,17.141764 18.008406,16.782726 18.3505,16.608467 18.579716,15.521272 17.607729,15.130395 17.161346,13.78298&#xa;16.843979,14.233824 18.129665,12.720033 18.916634,11.793447 19.081114,10.852214 19.500477,9.735013 20.027027,8.3322677 20.236929,8.4221134 19.234102,6.9011263 18.657228,6.0261778 18.319086,4.9175982 17.712433,4.1163134 15.704419,1.4640559 17.29067,1.3356126 13.137617,1.0836395 12.147089,1.0235401 11.163877,0.75890579 10.159595,0.75406643 z M6.9554992,7.1807488E-05 C7.4273872,0.0023765525 8.0446062,0.059824242 8.9389448,0.11408743 11.582669,0.27449261 13.495047,-0.20892876 16.168495,0.19857614 16.217655,0.076326839 16.817097,0.17487772 16.866257,0.052628498 17.533854,2.5506734 19.822702,5.3324575 21.40407,7.2572326 21.793758,7.7315464 22.667961,8.5902185 22.662977,9.2120971 22.659569,9.6374826 22.463556,10.146605 22.33017,10.569457 21.980789,11.677031 22.135986,10.933372 21.434078,10.890784 18.231529,10.696472 21.114325,13.974156&#xa;21.486795,14.150017 20.684366,17.644094 20.531286,17.475229 17.917295,19.318422 15.893024,20.745787 11.866717,18.796219 9.4178715,19.053192 6.000668,19.411783 5.5453138,19.477798 2.9753094,17.910904 -1.1026225,15.424645 0.91587472,15.340683 2.2496781,13.35852 2.7554347,12.606915 2.9778581,12.498094 2.5976257,11.751615 2.4403601,11.442867 1.7227401,11.021783 1.4029268,10.802503 -0.52388996,9.4813757 -0.11060491,9.6588106 0.55617511,8.2464857 1.4354992,6.3839664&#xa;2.1668425,4.0504746 3.5321119,2.5411388 5.4074259,0.46793809 5.6279135,0.014829284 6.8630204,0.00036324689 6.8932266,9.4565569E-06 6.9240403,-8.1965314E-05 6.9554992,7.1807488E-05 z"/>
+		</Canvas>
+		<Canvas x:Name="bombgroup" Width="144" Height="124" Canvas.Left="-57.276" Canvas.Top="33.477">
+			<Image Width="29.401" Height="25.073" Canvas.Left="68.683" Canvas.Top="-13.836" Source="Resources/Enemy/Enemy_bomb1.png" Stretch="Fill"/>
+		</Canvas>
+		<Canvas x:Name="Enemy_rec5" Width="13.989" Height="13.66" RenderTransformOrigin="1.016,0.985" Canvas.Left="9.447" Canvas.Top="40.264">
+			<Canvas.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-97.857"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Canvas.RenderTransform>
+			<Path Fill="#FFECAE32" Stretch="Fill" Width="12.757" Height="11.877" Canvas.Left="0.703" Canvas.Top="1.219" Data="M7.8034384,29.154057 C6.7242455,28.863592 4.4690096,28.590564 6.041329,32.052663 6.5742272,33.226055 7.6016964,34.096847 8.1004701,35.266598 8.673909,36.611459 9.234133,37.517228 10.49738,38.417541 11.504944,39.13563 13.254886,39.630162 14.399196,40.15703 14.882811,40.379699 15.807022,40.963581 16.360198,40.860414 17.162275,40.710828 16.791262,39.534311 16.995542,38.644825 17.317215,37.244184 19.39926,36.278429 17.404146,34.66226 16.414908,33.860915 14.943953,33.709836&#xa;13.845144,32.776596 12.784183,31.875502 11.498422,30.895581 10.233242,30.386804 10.236607,30.33135 10.239971,30.275897 10.243336,30.220443 9.3029901,29.842294 8.8662282,29.135052 7.7253047,29.06583 7.7513493,29.095239 7.7773938,29.124648 7.8034384,29.154057 z"/>
+			<Path Fill="Black" Stretch="Fill" Width="13.989" Height="13.66" Data="M11.692476,7.8415893 C11.891645,7.844847 12.115323,7.9184478 12.123183,7.9018934 12.247972,7.9094632 12.503697,8.5567363 11.759697,8.4805825 11.333871,8.4370015 11.336093,8.2172158 11.391766,7.9967063 11.420255,7.8838671 11.528346,7.8462971 11.65304,7.841923 11.666029,7.8414672 11.679198,7.8413718 11.692476,7.8415893 z M11.021451,7.5932672 L11.016063,7.6130321 C11.007338,7.6383841 10.995371,7.6625197 10.980461,7.6854728 L10.972488,7.6963728 10.972676,7.6959599 C10.986453,7.6660054 11.000084,7.6368707 11.013753,7.6085933 z M6.5843182,6.9534848 L6.5985375,6.9784449 C6.64992,7.0685075 6.7010689,7.1590841 6.6597004,7.1351669 L6.5699077,7.0671041 C6.5524807,7.0948542 6.5680056,7.0291546 6.582532,6.9618938 z M6.5630928,6.8724692 L6.5946651,6.9016183 6.5927091,6.9125917 C6.5912209,6.920379 6.5895844,6.9285005 6.5878663,6.9367774 L6.5843182,6.9534848 6.5794387,6.9449203 C6.5731888,6.9339035 6.5671158,6.9231189 6.561399,6.912792 L6.5471082,6.8863776 z M1.9104077,1.527155 C1.7536989,1.5333931 1.6370435,1.7284867 1.5428844,2.3790877 1.4524188,3.004169 1.4763546,3.2612463 2.3039844,3.5940931 2.3688784,3.7899919 2.4608698,3.9673033 2.5750313,4.1291135 L2.5799694,4.1358932 C2.4877367,4.1956561 2.4224129,4.393358 2.3945816,4.852115 2.3589435,5.4395502 2.5289467,5.6259573 2.9842308,6.1400984 3.6028693,6.838712 3.941947,7.9187391 4.4079857,8.814379 4.6498723,9.2792418 4.8523622,9.7401059 5.2471366,10.117502 5.5990458,10.45392 5.9954758,10.811169 6.6407967,10.535986 7.8487454,10.020883 6.8443985,9.4317592 6.3530846,8.2317212 L6.3259659,8.1616319 6.3796893,8.2115643 C6.4005762,8.2307942 6.4220982,8.2504294 6.4442673,8.2704814 6.9728094,8.7485373 7.5170246,9.0802386 7.9440265,9.6971801 8.5332203,10.54847 9.6427937,12.013788 10.688942,12.618623 11.10216,12.857525 12.130596,12.576412 11.450313,11.078647 11.052458,10.202701 10.710459,10.127601 9.8724165,9.5637267 8.7992411,8.8416303 7.8167143,7.6844309 6.6566296,6.9041527 L6.7882562,7.0803521 6.5946651,6.9016183 6.5966626,6.8904131 C6.6022897,6.8557199 6.6025534,6.8338769 6.5891653,6.8473185 L6.5814782,6.8547338 6.5359765,6.8248117 C6.530922,6.8215645 6.5273056,6.8201225 6.5249477,6.8202608 6.5155149,6.8208149 6.5262113,6.8466557 6.5455013,6.8834069 L6.5471082,6.8863776 6.5175877,6.9120634 C6.2858324,7.101507 5.9953652,7.1669586 5.8591795,7.2841642 L5.8566618,7.2864755 5.8156019,7.1984618 C5.5053721,6.5625489 5.0148697,5.9875725 4.4747448,5.4327229 L4.4738408,5.4318049 4.5665045,5.4716566 C4.9049082,5.6133883 5.2521334,5.7454689 5.5879975,5.880543 6.8309002,6.3804 7.8678441,7.1805542 8.9703246,7.9224961 9.2718935,8.1254447 10.618135,8.1328013 10.955926,7.7190187 L10.972488,7.6963728 10.930724,7.7882441 C10.716619,8.2622951 10.519253,8.9509776 11.591247,9.2467473 12.169751,9.40636 13.727645,8.2842496 12.475968,7.2381461 12.474604,7.2616694 12.114461,7.00474 12.113096,7.0282639 12.062432,7.025163 12.014374,7.0234464 11.968737,7.0230759 11.421094,7.0186317 11.222174,7.2080682 11.055054,7.5263708 L11.021451,7.5932672 11.02668,7.5740884 C11.086158,7.2817533 10.735185,6.8403032 9.5753479,6.2059701 8.5501852,5.6452911 7.4315625,4.6337164 6.2761965,4.1690639 6.2795606,4.1136101 6.2829247,4.0581558 6.2862893,4.0027016 5.0605026,3.6792233 3.878063,2.4522667 2.7278054,1.8753977 L2.7080718,1.865874 2.7699364,1.8752552 C2.814781,1.8801328 2.8611169,1.8812272 2.9090085,1.8775676 L2.4981802,1.7691523 C2.5363808,1.7852618 2.5746162,1.8022086 2.6128869,1.8199355 L2.7080718,1.865874 2.70378,1.8652232 C2.3568266,1.7978784 2.1032803,1.519478 1.9104077,1.527155 z M2.5347181,0.00023809813 C2.6346333,-0.0018882927 2.7393585,0.010136549 2.8525083,0.039993295 3.4200719,0.18976386 3.5744946,0.39207231 4.0649291,0.69798415 5.4505787,1.4342857 6.5364161,2.5017992 7.8180876,3.5138753 9.0119496,4.4566133 10.177825,5.8099492 11.498157,6.1583508 13.02505,6.5612586 13.036213,6.0923694 13.512128,7.365907 13.963031,8.5725167 14.17667,8.6032031 13.781684,9.8034652 13.649877,10.203993 13.261174,10.462433 13.133792,10.849517 12.938396,11.443273 13.347009,11.463507&#xa;13.317732,11.946046 13.253247,13.008889 12.315609,13.469371 11.631265,13.597008 10.460793,13.8153 9.9356575,13.434542 9.0828658,12.941451 8.6915245,12.71517 8.3734436,12.07076 7.9637227,12.122138 7.3957348,12.193369 7.325368,12.541031 6.7058802,12.212802 5.8661642,11.767901 5.4531217,11.243437 4.7171426,10.58933 3.6098009,9.6051705 2.7556794,8.0285132 1.7782433,6.7374814 0.38376049,4.8955939 -0.32266881,4.1546839 0.1426081,2.0463076 0.32983108,1.1979185&#xa;0.96921025,0.66558848 1.6677553,0.30207269 1.9785177,0.14035601 2.2349728,0.0066168863 2.5347181,0.00023809813 z"/>
+		</Canvas>
+		<Canvas x:Name="Enemy_rec6" Width="10.504" Height="17.168" RenderTransformOrigin="1.012,-0.011" Canvas.Left="6.093" Canvas.Top="65.87">
+			<Canvas.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
 					<SkewTransform/>
 					<RotateTransform/>
 					<TranslateTransform/>
 				</TransformGroup>
-			</Image.RenderTransform>
-		</Image>
-		<Image x:Name="fl2" Width="10.513" Height="16.98" Canvas.Left="-6.188" Canvas.Top="53.514" Source="Resources/Enemy/Enemy_rec2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0">
-			<Image.RenderTransform>
+			</Canvas.RenderTransform>
+			<Path Fill="#FFECAE32" Stretch="Fill" Width="10.12" Height="16.172" Canvas.Left="0.239" Canvas.Top="0.27" Data="M10.926431,1.4172774 C9.1317174,1.4072135 7.9558871,1.9787884 6.5876449,3.7838611 6.0536877,4.4882917 5.4940467,5.1118223 4.9617066,5.8141196 4.2644063,6.7340427 4.3389987,7.5712811 4.1561715,8.7707626 4.0018206,9.7834178 3.9352939,10.838344 3.9669191,11.890027 3.9869848,12.557299 4.5029387,12.620962 3.6416771,13.122592 3.0753189,13.45246 3.013642,13.436879 2.8287079,14.137721 2.5845375,15.063051 2.6174681,15.708372 3.6906107,16.444152 4.6357027,17.092137 5.0954719,17.343382&#xa;6.3863575,17.421703 7.4566534,17.48664 8.3294804,17.226522 9.3997763,17.291459 10.633362,17.366303 10.676896,16.788359 11.330071,15.404896 11.873756,14.253339 11.224654,14.231257 10.721494,13.05122 10.292953,12.04618 10.035519,11.303748 9.8898719,10.245707 9.5515843,7.7882484 11.03524,7.2597253 12.26653,5.1302499 12.4926,4.7392688 12.651855,4.3521839 12.716543,3.9052546 12.80472,3.2960317 12.949818,3.1003023 12.612658,2.5214232 11.928394,1.3465926&#xa;12.245673,1.1365042 10.306363,1.3170416"/>
+			<Path Fill="Black" Stretch="Fill" Width="10.504" Height="17.168" Data="M8.6290001,2.547 C8.6290001,2.9501679 8.3124654,3.277 7.9220001,3.277 7.5315348,3.277 7.2150002,2.9501679 7.2150002,2.547 7.2150002,2.1438322 7.5315348,1.817 7.9220001,1.817 8.3124654,1.817 8.6290001,2.1438322 8.6290001,2.547 z M9.7880972,0.77594179 C9.6700545,0.19618154 9.9050772,0.062949721 8.9582965,0.005500546 8.5160397,-0.021334906 7.9781526,0.052663893 7.5395988,0.16988235 7.0866621,0.29094513 6.6618182,0.40976272 6.1974403,0.62068287 5.7782884,0.81106145 5.3906752,0.97220468 4.9998786,1.2681069 3.5580112,2.3598558 2.3924059,3.4125309 1.8163146,5.2389332 1.4673588,6.3452401 1.2508728,7.4067364 1.0817049,8.5756515 1.0033919,9.116778 1.2342344,9.6997132 1.0787643,10.172195 0.9310666,10.621056 0.58192732,11.063478&#xa;0.40288617,11.508748 -0.031973264,12.590228 -0.17421593,13.426907 0.27602906,14.631877 0.66872033,15.682819 0.28372366,16.459416 1.7692376,16.851445 2.9875983,17.172972 4.1454296,17.089553 5.412813,17.166456 5.9371877,17.198275 6.2383233,16.727306 6.7549714,16.715656 7.0390758,16.709249 7.3384666,16.742174 7.6301892,16.737454 7.9467957,16.732333 8.0765131,16.637324 8.3390819,16.40477 9.3683308,15.493175 9.3211026,15.18208 9.4195884,13.558664 9.4917312,12.369479&#xa;9.1839317,12.1593 8.3120164,11.174646 7.6156229,10.388209 7.9013947,9.3292034 8.1543771,8.0968703 8.2652407,7.5568289 8.345676,7.081284 8.5278152,6.5854247 8.6979232,6.1223194 8.9625634,5.8944078 9.2528271,5.4710113 9.4944444,5.1185734 9.6451825,4.7879448 9.9721619,4.4501782 10.379535,4.0293661 10.446919,3.8487299 10.486412,3.197743 10.567047,1.8685823 10.377223,1.6179044 9.7758308,0.46211477 M8.8306945,0.91464401 C8.0246834,0.78714657 8.6343251,0.3090069 6.359622,1.5854668 5.0895477,2.2981748 4.4975215,2.9348021 3.6072479,4.18583 3.2348114,4.7091843 2.9178013,5.2347846 2.6720592,5.8235447 2.3915922,6.4955002 2.404378,7.1380699 2.3537092,7.9426804 2.2488129,9.6084119 1.7380049,10.707785 2.448314,12.312773 1.1390261,12.236238 0.28805241,13.706665 1.2099862,15.063058 1.9422891,16.140456 2.6472019,16.103937 3.6138696,15.995614 4.4103587,15.90636 5.8769395,15.994721&#xa;4.9547892,13.617235 4.3058695,11.944191 4.6522192,11.327883 5.3960886,9.5456866 5.3653531,10.033761 4.292129,15.442306 7.0203665,13.11447 6.2477174,13.883365 5.8707655,13.911476 5.6943766,15.085631 5.6355393,15.477288 6.7301485,17.186137 7.7040678,15.470326 8.1484093,14.687503 8.7798302,14.264158 8.033595,13.173698 7.2202361,11.985151 6.8667915,12.133701 6.8289438,10.516436 6.7741289,8.1741505 6.6209246,7.0929557 8.0794151,5.0434597 8.6495893,4.2422409&#xa;9.3852772,3.6119456 9.6426337,2.6722815 9.8132615,2.0492829 9.8032509,2.5038599 9.7343079,1.846368 9.7045719,1.5627829 9.6443834,1.3504272 9.5956996,1.3787826 9.5994254,1.3196186 9.4077798,1.1275109 9.2415632,1.0233509"/>
+		</Canvas>
+		<Canvas x:Name="Enemy_rec7" Width="13.989" Height="13.66" RenderTransformOrigin="1.016,0.985" Canvas.Left="16.211" Canvas.Top="47.865">
+			<Canvas.RenderTransform>
 				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
+					<ScaleTransform ScaleX="-1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="10.811"/>
 					<TranslateTransform/>
 				</TransformGroup>
-			</Image.RenderTransform>
-		</Image>
-		<Image x:Name="rl1" Width="14.554" Height="14.557" Canvas.Left="33.448" Canvas.Top="40.338" Source="Resources/Enemy/Enemy_rec1.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0">
-			<Image.RenderTransform>
+			</Canvas.RenderTransform>
+			<Path Fill="#FFECAE32" Stretch="Fill" Width="12.757" Height="11.877" Canvas.Left="0.703" Canvas.Top="1.219" Data="M7.8034384,29.154057 C6.7242455,28.863592 4.4690096,28.590564 6.041329,32.052663 6.5742272,33.226055 7.6016964,34.096847 8.1004701,35.266598 8.673909,36.611459 9.234133,37.517228 10.49738,38.417541 11.504944,39.13563 13.254886,39.630162 14.399196,40.15703 14.882811,40.379699 15.807022,40.963581 16.360198,40.860414 17.162275,40.710828 16.791262,39.534311 16.995542,38.644825 17.317215,37.244184 19.39926,36.278429 17.404146,34.66226 16.414908,33.860915 14.943953,33.709836&#xa;13.845144,32.776596 12.784183,31.875502 11.498422,30.895581 10.233242,30.386804 10.236607,30.33135 10.239971,30.275897 10.243336,30.220443 9.3029901,29.842294 8.8662282,29.135052 7.7253047,29.06583 7.7513493,29.095239 7.7773938,29.124648 7.8034384,29.154057 z"/>
+			<Path Fill="Black" Stretch="Fill" Width="13.989" Height="13.66" Data="M11.692476,7.8415893 C11.891645,7.844847 12.115323,7.9184478 12.123183,7.9018934 12.247972,7.9094632 12.503697,8.5567363 11.759697,8.4805825 11.333871,8.4370015 11.336093,8.2172158 11.391766,7.9967063 11.420255,7.8838671 11.528346,7.8462971 11.65304,7.841923 11.666029,7.8414672 11.679198,7.8413718 11.692476,7.8415893 z M11.021451,7.5932672 L11.016063,7.6130321 C11.007338,7.6383841 10.995371,7.6625197 10.980461,7.6854728 L10.972488,7.6963728 10.972676,7.6959599 C10.986453,7.6660054 11.000084,7.6368707 11.013753,7.6085933 z M6.5843182,6.9534848 L6.5985375,6.9784449 C6.64992,7.0685075 6.7010689,7.1590841 6.6597004,7.1351669 L6.5699077,7.0671041 C6.5524807,7.0948542 6.5680056,7.0291546 6.582532,6.9618938 z M6.5630928,6.8724692 L6.5946651,6.9016183 6.5927091,6.9125917 C6.5912209,6.920379 6.5895844,6.9285005 6.5878663,6.9367774 L6.5843182,6.9534848 6.5794387,6.9449203 C6.5731888,6.9339035 6.5671158,6.9231189 6.561399,6.912792 L6.5471082,6.8863776 z M1.9104077,1.527155 C1.7536989,1.5333931 1.6370435,1.7284867 1.5428844,2.3790877 1.4524188,3.004169 1.4763546,3.2612463 2.3039844,3.5940931 2.3688784,3.7899919 2.4608698,3.9673033 2.5750313,4.1291135 L2.5799694,4.1358932 C2.4877367,4.1956561 2.4224129,4.393358 2.3945816,4.852115 2.3589435,5.4395502 2.5289467,5.6259573 2.9842308,6.1400984 3.6028693,6.838712 3.941947,7.9187391 4.4079857,8.814379 4.6498723,9.2792418 4.8523622,9.7401059 5.2471366,10.117502 5.5990458,10.45392 5.9954758,10.811169 6.6407967,10.535986 7.8487454,10.020883 6.8443985,9.4317592 6.3530846,8.2317212 L6.3259659,8.1616319 6.3796893,8.2115643 C6.4005762,8.2307942 6.4220982,8.2504294 6.4442673,8.2704814 6.9728094,8.7485373 7.5170246,9.0802386 7.9440265,9.6971801 8.5332203,10.54847 9.6427937,12.013788 10.688942,12.618623 11.10216,12.857525 12.130596,12.576412 11.450313,11.078647 11.052458,10.202701 10.710459,10.127601 9.8724165,9.5637267 8.7992411,8.8416303 7.8167143,7.6844309 6.6566296,6.9041527 L6.7882562,7.0803521 6.5946651,6.9016183 6.5966626,6.8904131 C6.6022897,6.8557199 6.6025534,6.8338769 6.5891653,6.8473185 L6.5814782,6.8547338 6.5359765,6.8248117 C6.530922,6.8215645 6.5273056,6.8201225 6.5249477,6.8202608 6.5155149,6.8208149 6.5262113,6.8466557 6.5455013,6.8834069 L6.5471082,6.8863776 6.5175877,6.9120634 C6.2858324,7.101507 5.9953652,7.1669586 5.8591795,7.2841642 L5.8566618,7.2864755 5.8156019,7.1984618 C5.5053721,6.5625489 5.0148697,5.9875725 4.4747448,5.4327229 L4.4738408,5.4318049 4.5665045,5.4716566 C4.9049082,5.6133883 5.2521334,5.7454689 5.5879975,5.880543 6.8309002,6.3804 7.8678441,7.1805542 8.9703246,7.9224961 9.2718935,8.1254447 10.618135,8.1328013 10.955926,7.7190187 L10.972488,7.6963728 10.930724,7.7882441 C10.716619,8.2622951 10.519253,8.9509776 11.591247,9.2467473 12.169751,9.40636 13.727645,8.2842496 12.475968,7.2381461 12.474604,7.2616694 12.114461,7.00474 12.113096,7.0282639 12.062432,7.025163 12.014374,7.0234464 11.968737,7.0230759 11.421094,7.0186317 11.222174,7.2080682 11.055054,7.5263708 L11.021451,7.5932672 11.02668,7.5740884 C11.086158,7.2817533 10.735185,6.8403032 9.5753479,6.2059701 8.5501852,5.6452911 7.4315625,4.6337164 6.2761965,4.1690639 6.2795606,4.1136101 6.2829247,4.0581558 6.2862893,4.0027016 5.0605026,3.6792233 3.878063,2.4522667 2.7278054,1.8753977 L2.7080718,1.865874 2.7699364,1.8752552 C2.814781,1.8801328 2.8611169,1.8812272 2.9090085,1.8775676 L2.4981802,1.7691523 C2.5363808,1.7852618 2.5746162,1.8022086 2.6128869,1.8199355 L2.7080718,1.865874 2.70378,1.8652232 C2.3568266,1.7978784 2.1032803,1.519478 1.9104077,1.527155 z M2.5347181,0.00023809813 C2.6346333,-0.0018882927 2.7393585,0.010136549 2.8525083,0.039993295 3.4200719,0.18976386 3.5744946,0.39207231 4.0649291,0.69798415 5.4505787,1.4342857 6.5364161,2.5017992 7.8180876,3.5138753 9.0119496,4.4566133 10.177825,5.8099492 11.498157,6.1583508 13.02505,6.5612586 13.036213,6.0923694 13.512128,7.365907 13.963031,8.5725167 14.17667,8.6032031 13.781684,9.8034652 13.649877,10.203993 13.261174,10.462433 13.133792,10.849517 12.938396,11.443273 13.347009,11.463507&#xa;13.317732,11.946046 13.253247,13.008889 12.315609,13.469371 11.631265,13.597008 10.460793,13.8153 9.9356575,13.434542 9.0828658,12.941451 8.6915245,12.71517 8.3734436,12.07076 7.9637227,12.122138 7.3957348,12.193369 7.325368,12.541031 6.7058802,12.212802 5.8661642,11.767901 5.4531217,11.243437 4.7171426,10.58933 3.6098009,9.6051705 2.7556794,8.0285132 1.7782433,6.7374814 0.38376049,4.8955939 -0.32266881,4.1546839 0.1426081,2.0463076 0.32983108,1.1979185&#xa;0.96921025,0.66558848 1.6677553,0.30207269 1.9785177,0.14035601 2.2349728,0.0066168863 2.5347181,0.00023809813 z"/>
+		</Canvas>
+		<Canvas x:Name="Enemy_rec8" Width="10.504" Height="17.168" RenderTransformOrigin="1.012,-0.011" Canvas.Left="30.882" Canvas.Top="50.284">
+			<Canvas.RenderTransform>
 				<TransformGroup>
-					<ScaleTransform ScaleX="-1"/>
-					<SkewTransform/>
-					<RotateTransform/>
+					<ScaleTransform ScaleX="-1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="16.536"/>
 					<TranslateTransform/>
 				</TransformGroup>
-			</Image.RenderTransform>
-		</Image>
-		<Image x:Name="rl2" Width="10.51" Height="16.98" Canvas.Left="42.833" Canvas.Top="38.95" Source="Resources/Enemy/Enemy_rec2.png" Stretch="Fill" RenderTransformOrigin="0.73,0.163" Opacity="0">
-			<Image.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform ScaleX="-1"/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform X="-5.269"/>
-				</TransformGroup>
-			</Image.RenderTransform>
-		</Image>
-		<Canvas x:Name="boom" Width="10" Height="10" Canvas.Left="17.237" Canvas.Top="30.186" Opacity="0">
+			</Canvas.RenderTransform>
+			<Path Fill="#FFECAE32" Stretch="Fill" Width="10.12" Height="16.172" Canvas.Left="0.239" Canvas.Top="0.27" Data="M10.926431,1.4172774 C9.1317174,1.4072135 7.9558871,1.9787884 6.5876449,3.7838611 6.0536877,4.4882917 5.4940467,5.1118223 4.9617066,5.8141196 4.2644063,6.7340427 4.3389987,7.5712811 4.1561715,8.7707626 4.0018206,9.7834178 3.9352939,10.838344 3.9669191,11.890027 3.9869848,12.557299 4.5029387,12.620962 3.6416771,13.122592 3.0753189,13.45246 3.013642,13.436879 2.8287079,14.137721 2.5845375,15.063051 2.6174681,15.708372 3.6906107,16.444152 4.6357027,17.092137 5.0954719,17.343382&#xa;6.3863575,17.421703 7.4566534,17.48664 8.3294804,17.226522 9.3997763,17.291459 10.633362,17.366303 10.676896,16.788359 11.330071,15.404896 11.873756,14.253339 11.224654,14.231257 10.721494,13.05122 10.292953,12.04618 10.035519,11.303748 9.8898719,10.245707 9.5515843,7.7882484 11.03524,7.2597253 12.26653,5.1302499 12.4926,4.7392688 12.651855,4.3521839 12.716543,3.9052546 12.80472,3.2960317 12.949818,3.1003023 12.612658,2.5214232 11.928394,1.3465926&#xa;12.245673,1.1365042 10.306363,1.3170416"/>
+			<Path Fill="Black" Stretch="Fill" Width="10.504" Height="17.168" Data="M8.6290001,2.547 C8.6290001,2.9501679 8.3124654,3.277 7.9220001,3.277 7.5315348,3.277 7.2150002,2.9501679 7.2150002,2.547 7.2150002,2.1438322 7.5315348,1.817 7.9220001,1.817 8.3124654,1.817 8.6290001,2.1438322 8.6290001,2.547 z M9.7880972,0.77594179 C9.6700545,0.19618154 9.9050772,0.062949721 8.9582965,0.005500546 8.5160397,-0.021334906 7.9781526,0.052663893 7.5395988,0.16988235 7.0866621,0.29094513 6.6618182,0.40976272 6.1974403,0.62068287 5.7782884,0.81106145 5.3906752,0.97220468 4.9998786,1.2681069 3.5580112,2.3598558 2.3924059,3.4125309 1.8163146,5.2389332 1.4673588,6.3452401 1.2508728,7.4067364 1.0817049,8.5756515 1.0033919,9.116778 1.2342344,9.6997132 1.0787643,10.172195 0.9310666,10.621056 0.58192732,11.063478&#xa;0.40288617,11.508748 -0.031973264,12.590228 -0.17421593,13.426907 0.27602906,14.631877 0.66872033,15.682819 0.28372366,16.459416 1.7692376,16.851445 2.9875983,17.172972 4.1454296,17.089553 5.412813,17.166456 5.9371877,17.198275 6.2383233,16.727306 6.7549714,16.715656 7.0390758,16.709249 7.3384666,16.742174 7.6301892,16.737454 7.9467957,16.732333 8.0765131,16.637324 8.3390819,16.40477 9.3683308,15.493175 9.3211026,15.18208 9.4195884,13.558664 9.4917312,12.369479&#xa;9.1839317,12.1593 8.3120164,11.174646 7.6156229,10.388209 7.9013947,9.3292034 8.1543771,8.0968703 8.2652407,7.5568289 8.345676,7.081284 8.5278152,6.5854247 8.6979232,6.1223194 8.9625634,5.8944078 9.2528271,5.4710113 9.4944444,5.1185734 9.6451825,4.7879448 9.9721619,4.4501782 10.379535,4.0293661 10.446919,3.8487299 10.486412,3.197743 10.567047,1.8685823 10.377223,1.6179044 9.7758308,0.46211477 M8.8306945,0.91464401 C8.0246834,0.78714657 8.6343251,0.3090069 6.359622,1.5854668 5.0895477,2.2981748 4.4975215,2.9348021 3.6072479,4.18583 3.2348114,4.7091843 2.9178013,5.2347846 2.6720592,5.8235447 2.3915922,6.4955002 2.404378,7.1380699 2.3537092,7.9426804 2.2488129,9.6084119 1.7380049,10.707785 2.448314,12.312773 1.1390261,12.236238 0.28805241,13.706665 1.2099862,15.063058 1.9422891,16.140456 2.6472019,16.103937 3.6138696,15.995614 4.4103587,15.90636 5.8769395,15.994721&#xa;4.9547892,13.617235 4.3058695,11.944191 4.6522192,11.327883 5.3960886,9.5456866 5.3653531,10.033761 4.292129,15.442306 7.0203665,13.11447 6.2477174,13.883365 5.8707655,13.911476 5.6943766,15.085631 5.6355393,15.477288 6.7301485,17.186137 7.7040678,15.470326 8.1484093,14.687503 8.7798302,14.264158 8.033595,13.173698 7.2202361,11.985151 6.8667915,12.133701 6.8289438,10.516436 6.7741289,8.1741505 6.6209246,7.0929557 8.0794151,5.0434597 8.6495893,4.2422409&#xa;9.3852772,3.6119456 9.6426337,2.6722815 9.8132615,2.0492829 9.8032509,2.5038599 9.7343079,1.846368 9.7045719,1.5627829 9.6443834,1.3504272 9.5956996,1.3787826 9.5994254,1.3196186 9.4077798,1.1275109 9.2415632,1.0233509"/>
+		</Canvas>
+		<Canvas x:Name="boom" Width="10" Height="10" Canvas.Left="7.89" Canvas.Top="43.023" Opacity="0">
 			<Rectangle x:Name="boom1" Fill="#FFDC1919" Stroke="Black" RadiusX="11.092" RadiusY="11.092" Width="23.184" Height="24.186" RenderTransformOrigin="0.496,0.496" Opacity="0" Canvas.Left="10.78" Canvas.Top="-7.705">
 				<Rectangle.RenderTransform>
 					<TransformGroup>
@@ -1453,123 +521,5 @@
 				</Rectangle>
 			</Canvas>
 		</Canvas>
-		<Canvas x:Name="vector" Width="64.632" Height="64.485" Canvas.Left="-5.07" Canvas.Top="-1.977" RenderTransformOrigin="0.5,0.5">
-			<Canvas.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Canvas.RenderTransform>
-			<Canvas x:Name="Enemy_body" Width="22.663" Height="19.846" Canvas.Left="24.363" Canvas.Top="27.264">
-				<Path Fill="#FFECAE32" Stretch="Fill" Width="18.354" Height="18.529" Canvas.Left="2.388" Canvas.Top="0.15" Data="M14.147223,38.805957 C11.325236,39.906382 10.538546,40.851242 9.9474674,44.729156 9.8524311,45.352664 9.4828485,45.907966 9.5818515,46.627164 9.6652806,47.233227 9.8405916,47.743564 10.14636,48.331145 10.838387,49.660985 10.86921,50.177392 10.766201,51.875189 10.727993,52.504932 10.387102,53.076041 10.483765,53.778244 10.569414,54.400431 10.448915,54.960467 11.136501,55.404091 12.104356,56.028543 13.599,55.522842 14.688024,56.037003 17.546358,57.386509 20.624543,56.408472&#xd;&#xa;23.769825,56.337555 24.826766,56.313724 26.829708,56.457717 26.167097,53.978406 25.758104,52.448067 26.042021,51.817359 26.638694,50.333609 28.104974,46.687401 28.65342,47.270298 26.417363,42.973362 25.859959,41.902222 24.783703,41.285475 24.249808,40.170282 23.506212,38.617067 23.682851,38.717596 21.517563,38.418266 18.916485,38.058692 16.240749,38.164044 13.726274,38.863904"/>
-				<Path Fill="White" Stretch="Fill" Width="5.289" Height="4.646" Canvas.Left="8.82" Canvas.Top="11.17" Data="M18.933199,49.365181 C17.493752,49.441466 16.18746,49.211607 16.026752,51.860411 15.931312,53.433454 15.877495,54.273183 18.920311,53.705701 20.035548,53.49771 21.756423,53.294764 21.166362,51.086917 20.744732,49.509293 20.287426,49.530884 18.189623,49.23658"/>
-				<Path Fill="Black" Stretch="Fill" Width="22.663" Height="19.846" Data="M11.30388,11.932157 C10.902314,11.9251 10.570131,12.159165 10.181746,13.054358 9.8325357,13.859256 9.237668,14.706925 10.992648,15.170045 12.08678,15.458775 12.675154,15.782376 13.259488,13.929931 13.611762,12.813157 13.548146,12.686615 12.121507,12.044881 L12.425875,12.18859 C11.970511,12.088994 11.616209,11.937644 11.30388,11.932157 z M10.753531,9.8650016 C10.820299,9.8650722 10.889388,9.8672866 10.961024,9.8716325 12.403347,9.9591322 13.012416,10.05565 13.906419,10.8643 16.740557,13.638204 15.125563,14.31963 14.231263,15.830464 13.603335,16.891291 13.254992,17.023504 11.722447,16.930529 10.269618,16.842388 9.751667,16.962364 8.7656984,16.125013 7.7962804,15.301715 7.1468911,14.940762 7.2137175,13.839386 7.297039,12.466144 7.8422379,12.352575 8.5542726,11.353568 9.2728043,10.34544 9.752018,9.8639507&#xd;&#xa;10.753531,9.8650016 z M10.159595,0.75406643 C9.9278364,0.75294974 9.6949568,0.76566823 9.4606066,0.79792824 8.3718052,0.94781067 7.4374537,1.0427832 6.4130702,1.4896531 L6.4107299,1.5188973 C6.2162857,1.6323102 5.2510061,3.366543 4.2911553,4.4584374 3.8208792,4.9934125 3.4169457,7.5886011 3.2065155,7.8990244 3.0086842,8.190855 3.573041,10.112788 3.7411861,10.316925 3.7412195,10.316971 3.8868384,12.192533 4.2779393,12.944097 4.5620799,13.490112 5.2136917,13.950227 4.7996049,14.666381 4.359952,15.426749 3.8907304,15.197939 3.8277826,16.235435 3.8048964,16.612656 4.1684747,17.735311 5.1775722,16.693033 5.2951307,16.5716 5.3730173,16.502546&#xd;&#xa;5.50843,16.400021 6.0481367,15.991411 6.3355656,16.880011 6.8279366,17.356705 7.1490464,17.667593 7.3466148,17.536669 7.814764,17.604427 9.2688866,17.814896 10.612182,17.928591 12.109826,18.019459 12.800436,18.061354 14.059239,18.335909 14.682833,17.924753 15.284636,17.527971 15.121256,17.195293 15.571555,16.697496 16.140026,16.069057 17.303568,17.141764 18.008406,16.782726 18.3505,16.608467 18.579716,15.521272 17.607729,15.130395 17.161346,13.78298&#xd;&#xa;16.843979,14.233824 18.129665,12.720033 18.916634,11.793447 19.081114,10.852214 19.500477,9.735013 20.027027,8.3322677 20.236929,8.4221134 19.234102,6.9011263 18.657228,6.0261778 18.319086,4.9175982 17.712433,4.1163134 15.704419,1.4640559 17.29067,1.3356126 13.137617,1.0836395 12.147089,1.0235401 11.163877,0.75890579 10.159595,0.75406643 z M6.9554992,7.1807488E-05 C7.4273872,0.0023765525 8.0446062,0.059824242 8.9389448,0.11408743 11.582669,0.27449261 13.495047,-0.20892876 16.168495,0.19857614 16.217655,0.076326839 16.817097,0.17487772 16.866257,0.052628498 17.533854,2.5506734 19.822702,5.3324575 21.40407,7.2572326 21.793758,7.7315464 22.667961,8.5902185 22.662977,9.2120971 22.659569,9.6374826 22.463556,10.146605 22.33017,10.569457 21.980789,11.677031 22.135986,10.933372 21.434078,10.890784 18.231529,10.696472 21.114325,13.974156&#xd;&#xa;21.486795,14.150017 20.684366,17.644094 20.531286,17.475229 17.917295,19.318422 15.893024,20.745787 11.866717,18.796219 9.4178715,19.053192 6.000668,19.411783 5.5453138,19.477798 2.9753094,17.910904 -1.1026225,15.424645 0.91587472,15.340683 2.2496781,13.35852 2.7554347,12.606915 2.9778581,12.498094 2.5976257,11.751615 2.4403601,11.442867 1.7227401,11.021783 1.4029268,10.802503 -0.52388996,9.4813757 -0.11060491,9.6588106 0.55617511,8.2464857 1.4354992,6.3839664&#xd;&#xa;2.1668425,4.0504746 3.5321119,2.5411388 5.4074259,0.46793809 5.6279135,0.014829284 6.8630204,0.00036324689 6.8932266,9.4565569E-06 6.9240403,-8.1965314E-05 6.9554992,7.1807488E-05 z"/>
-			</Canvas>
-			<Canvas x:Name="Enemy_rec1" Width="13.989" Height="13.66" RenderTransformOrigin="1.016,0.985" Canvas.Left="10.432" Canvas.Top="1.482">
-				<Path Fill="#FFECAE32" Stretch="Fill" Width="12.757" Height="11.877" Canvas.Left="0.703" Canvas.Top="1.219" Data="M7.8034384,29.154057 C6.7242455,28.863592 4.4690096,28.590564 6.041329,32.052663 6.5742272,33.226055 7.6016964,34.096847 8.1004701,35.266598 8.673909,36.611459 9.234133,37.517228 10.49738,38.417541 11.504944,39.13563 13.254886,39.630162 14.399196,40.15703 14.882811,40.379699 15.807022,40.963581 16.360198,40.860414 17.162275,40.710828 16.791262,39.534311 16.995542,38.644825 17.317215,37.244184 19.39926,36.278429 17.404146,34.66226 16.414908,33.860915 14.943953,33.709836&#xd;&#xa;13.845144,32.776596 12.784183,31.875502 11.498422,30.895581 10.233242,30.386804 10.236607,30.33135 10.239971,30.275897 10.243336,30.220443 9.3029901,29.842294 8.8662282,29.135052 7.7253047,29.06583 7.7513493,29.095239 7.7773938,29.124648 7.8034384,29.154057 z"/>
-				<Path Fill="Black" Stretch="Fill" Width="13.989" Height="13.66" Data="M11.692476,7.8415893 C11.891645,7.844847 12.115323,7.9184478 12.123183,7.9018934 12.247972,7.9094632 12.503697,8.5567363 11.759697,8.4805825 11.333871,8.4370015 11.336093,8.2172158 11.391766,7.9967063 11.420255,7.8838671 11.528346,7.8462971 11.65304,7.841923 11.666029,7.8414672 11.679198,7.8413718 11.692476,7.8415893 z M11.021451,7.5932672 L11.016063,7.6130321 C11.007338,7.6383841 10.995371,7.6625197 10.980461,7.6854728 L10.972488,7.6963728 10.972676,7.6959599 C10.986453,7.6660054 11.000084,7.6368707 11.013753,7.6085933 z M6.5843182,6.9534848 L6.5985375,6.9784449 C6.64992,7.0685075 6.7010689,7.1590841 6.6597004,7.1351669 L6.5699077,7.0671041 C6.5524807,7.0948542 6.5680056,7.0291546 6.582532,6.9618938 z M6.5630928,6.8724692 L6.5946651,6.9016183 6.5927091,6.9125917 C6.5912209,6.920379 6.5895844,6.9285005 6.5878663,6.9367774 L6.5843182,6.9534848 6.5794387,6.9449203 C6.5731888,6.9339035 6.5671158,6.9231189 6.561399,6.912792 L6.5471082,6.8863776 z M1.9104077,1.527155 C1.7536989,1.5333931 1.6370435,1.7284867 1.5428844,2.3790877 1.4524188,3.004169 1.4763546,3.2612463 2.3039844,3.5940931 2.3688784,3.7899919 2.4608698,3.9673033 2.5750313,4.1291135 L2.5799694,4.1358932 C2.4877367,4.1956561 2.4224129,4.393358 2.3945816,4.852115 2.3589435,5.4395502 2.5289467,5.6259573 2.9842308,6.1400984 3.6028693,6.838712 3.941947,7.9187391 4.4079857,8.814379 4.6498723,9.2792418 4.8523622,9.7401059 5.2471366,10.117502 5.5990458,10.45392 5.9954758,10.811169 6.6407967,10.535986 7.8487454,10.020883 6.8443985,9.4317592 6.3530846,8.2317212 L6.3259659,8.1616319 6.3796893,8.2115643 C6.4005762,8.2307942 6.4220982,8.2504294 6.4442673,8.2704814 6.9728094,8.7485373 7.5170246,9.0802386 7.9440265,9.6971801 8.5332203,10.54847 9.6427937,12.013788 10.688942,12.618623 11.10216,12.857525 12.130596,12.576412 11.450313,11.078647 11.052458,10.202701 10.710459,10.127601 9.8724165,9.5637267 8.7992411,8.8416303 7.8167143,7.6844309 6.6566296,6.9041527 L6.7882562,7.0803521 6.5946651,6.9016183 6.5966626,6.8904131 C6.6022897,6.8557199 6.6025534,6.8338769 6.5891653,6.8473185 L6.5814782,6.8547338 6.5359765,6.8248117 C6.530922,6.8215645 6.5273056,6.8201225 6.5249477,6.8202608 6.5155149,6.8208149 6.5262113,6.8466557 6.5455013,6.8834069 L6.5471082,6.8863776 6.5175877,6.9120634 C6.2858324,7.101507 5.9953652,7.1669586 5.8591795,7.2841642 L5.8566618,7.2864755 5.8156019,7.1984618 C5.5053721,6.5625489 5.0148697,5.9875725 4.4747448,5.4327229 L4.4738408,5.4318049 4.5665045,5.4716566 C4.9049082,5.6133883 5.2521334,5.7454689 5.5879975,5.880543 6.8309002,6.3804 7.8678441,7.1805542 8.9703246,7.9224961 9.2718935,8.1254447 10.618135,8.1328013 10.955926,7.7190187 L10.972488,7.6963728 10.930724,7.7882441 C10.716619,8.2622951 10.519253,8.9509776 11.591247,9.2467473 12.169751,9.40636 13.727645,8.2842496 12.475968,7.2381461 12.474604,7.2616694 12.114461,7.00474 12.113096,7.0282639 12.062432,7.025163 12.014374,7.0234464 11.968737,7.0230759 11.421094,7.0186317 11.222174,7.2080682 11.055054,7.5263708 L11.021451,7.5932672 11.02668,7.5740884 C11.086158,7.2817533 10.735185,6.8403032 9.5753479,6.2059701 8.5501852,5.6452911 7.4315625,4.6337164 6.2761965,4.1690639 6.2795606,4.1136101 6.2829247,4.0581558 6.2862893,4.0027016 5.0605026,3.6792233 3.878063,2.4522667 2.7278054,1.8753977 L2.7080718,1.865874 2.7699364,1.8752552 C2.814781,1.8801328 2.8611169,1.8812272 2.9090085,1.8775676 L2.4981802,1.7691523 C2.5363808,1.7852618 2.5746162,1.8022086 2.6128869,1.8199355 L2.7080718,1.865874 2.70378,1.8652232 C2.3568266,1.7978784 2.1032803,1.519478 1.9104077,1.527155 z M2.5347181,0.00023809813 C2.6346333,-0.0018882927 2.7393585,0.010136549 2.8525083,0.039993295 3.4200719,0.18976386 3.5744946,0.39207231 4.0649291,0.69798415 5.4505787,1.4342857 6.5364161,2.5017992 7.8180876,3.5138753 9.0119496,4.4566133 10.177825,5.8099492 11.498157,6.1583508 13.02505,6.5612586 13.036213,6.0923694 13.512128,7.365907 13.963031,8.5725167 14.17667,8.6032031 13.781684,9.8034652 13.649877,10.203993 13.261174,10.462433 13.133792,10.849517 12.938396,11.443273 13.347009,11.463507&#xd;&#xa;13.317732,11.946046 13.253247,13.008889 12.315609,13.469371 11.631265,13.597008 10.460793,13.8153 9.9356575,13.434542 9.0828658,12.941451 8.6915245,12.71517 8.3734436,12.07076 7.9637227,12.122138 7.3957348,12.193369 7.325368,12.541031 6.7058802,12.212802 5.8661642,11.767901 5.4531217,11.243437 4.7171426,10.58933 3.6098009,9.6051705 2.7556794,8.0285132 1.7782433,6.7374814 0.38376049,4.8955939 -0.32266881,4.1546839 0.1426081,2.0463076 0.32983108,1.1979185&#xd;&#xa;0.96921025,0.66558848 1.6677553,0.30207269 1.9785177,0.14035601 2.2349728,0.0066168863 2.5347181,0.00023809813 z"/>
-			</Canvas>
-			<Canvas x:Name="Enemy_rec2" Width="10.504" Height="17.168" RenderTransformOrigin="1.012,-0.011" Canvas.Left="4.35" Canvas.Top="1.268">
-				<Canvas.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Canvas.RenderTransform>
-				<Path Fill="#FFECAE32" Stretch="Fill" Width="10.12" Height="16.172" Canvas.Left="0.239" Canvas.Top="0.27" Data="M10.926431,1.4172774 C9.1317174,1.4072135 7.9558871,1.9787884 6.5876449,3.7838611 6.0536877,4.4882917 5.4940467,5.1118223 4.9617066,5.8141196 4.2644063,6.7340427 4.3389987,7.5712811 4.1561715,8.7707626 4.0018206,9.7834178 3.9352939,10.838344 3.9669191,11.890027 3.9869848,12.557299 4.5029387,12.620962 3.6416771,13.122592 3.0753189,13.45246 3.013642,13.436879 2.8287079,14.137721 2.5845375,15.063051 2.6174681,15.708372 3.6906107,16.444152 4.6357027,17.092137 5.0954719,17.343382&#xd;&#xa;6.3863575,17.421703 7.4566534,17.48664 8.3294804,17.226522 9.3997763,17.291459 10.633362,17.366303 10.676896,16.788359 11.330071,15.404896 11.873756,14.253339 11.224654,14.231257 10.721494,13.05122 10.292953,12.04618 10.035519,11.303748 9.8898719,10.245707 9.5515843,7.7882484 11.03524,7.2597253 12.26653,5.1302499 12.4926,4.7392688 12.651855,4.3521839 12.716543,3.9052546 12.80472,3.2960317 12.949818,3.1003023 12.612658,2.5214232 11.928394,1.3465926&#xd;&#xa;12.245673,1.1365042 10.306363,1.3170416"/>
-				<Path Fill="Black" Stretch="Fill" Width="10.504" Height="17.168" Data="M8.6290001,2.547 C8.6290001,2.9501679 8.3124654,3.277 7.9220001,3.277 7.5315348,3.277 7.2150002,2.9501679 7.2150002,2.547 7.2150002,2.1438322 7.5315348,1.817 7.9220001,1.817 8.3124654,1.817 8.6290001,2.1438322 8.6290001,2.547 z M9.7880972,0.77594179 C9.6700545,0.19618154 9.9050772,0.062949721 8.9582965,0.005500546 8.5160397,-0.021334906 7.9781526,0.052663893 7.5395988,0.16988235 7.0866621,0.29094513 6.6618182,0.40976272 6.1974403,0.62068287 5.7782884,0.81106145 5.3906752,0.97220468 4.9998786,1.2681069 3.5580112,2.3598558 2.3924059,3.4125309 1.8163146,5.2389332 1.4673588,6.3452401 1.2508728,7.4067364 1.0817049,8.5756515 1.0033919,9.116778 1.2342344,9.6997132 1.0787643,10.172195 0.9310666,10.621056 0.58192732,11.063478&#xd;&#xa;0.40288617,11.508748 -0.031973264,12.590228 -0.17421593,13.426907 0.27602906,14.631877 0.66872033,15.682819 0.28372366,16.459416 1.7692376,16.851445 2.9875983,17.172972 4.1454296,17.089553 5.412813,17.166456 5.9371877,17.198275 6.2383233,16.727306 6.7549714,16.715656 7.0390758,16.709249 7.3384666,16.742174 7.6301892,16.737454 7.9467957,16.732333 8.0765131,16.637324 8.3390819,16.40477 9.3683308,15.493175 9.3211026,15.18208 9.4195884,13.558664 9.4917312,12.369479&#xd;&#xa;9.1839317,12.1593 8.3120164,11.174646 7.6156229,10.388209 7.9013947,9.3292034 8.1543771,8.0968703 8.2652407,7.5568289 8.345676,7.081284 8.5278152,6.5854247 8.6979232,6.1223194 8.9625634,5.8944078 9.2528271,5.4710113 9.4944444,5.1185734 9.6451825,4.7879448 9.9721619,4.4501782 10.379535,4.0293661 10.446919,3.8487299 10.486412,3.197743 10.567047,1.8685823 10.377223,1.6179044 9.7758308,0.46211477 M8.8306945,0.91464401 C8.0246834,0.78714657 8.6343251,0.3090069 6.359622,1.5854668 5.0895477,2.2981748 4.4975215,2.9348021 3.6072479,4.18583 3.2348114,4.7091843 2.9178013,5.2347846 2.6720592,5.8235447 2.3915922,6.4955002 2.404378,7.1380699 2.3537092,7.9426804 2.2488129,9.6084119 1.7380049,10.707785 2.448314,12.312773 1.1390261,12.236238 0.28805241,13.706665 1.2099862,15.063058 1.9422891,16.140456 2.6472019,16.103937 3.6138696,15.995614 4.4103587,15.90636 5.8769395,15.994721&#xd;&#xa;4.9547892,13.617235 4.3058695,11.944191 4.6522192,11.327883 5.3960886,9.5456866 5.3653531,10.033761 4.292129,15.442306 7.0203665,13.11447 6.2477174,13.883365 5.8707655,13.911476 5.6943766,15.085631 5.6355393,15.477288 6.7301485,17.186137 7.7040678,15.470326 8.1484093,14.687503 8.7798302,14.264158 8.033595,13.173698 7.2202361,11.985151 6.8667915,12.133701 6.8289438,10.516436 6.7741289,8.1741505 6.6209246,7.0929557 8.0794151,5.0434597 8.6495893,4.2422409&#xd;&#xa;9.3852772,3.6119456 9.6426337,2.6722815 9.8132615,2.0492829 9.8032509,2.5038599 9.7343079,1.846368 9.7045719,1.5627829 9.6443834,1.3504272 9.5956996,1.3787826 9.5994254,1.3196186 9.4077798,1.1275109 9.2415632,1.0233509"/>
-			</Canvas>
-			<Canvas x:Name="Enemy_rec3" Width="13.989" Height="13.66" RenderTransformOrigin="1.016,0.985" Canvas.Left="28.103" Canvas.Top="0.666">
-				<Canvas.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform ScaleX="-1" ScaleY="1"/>
-						<SkewTransform AngleX="0" AngleY="0"/>
-						<RotateTransform Angle="10.811"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Canvas.RenderTransform>
-				<Path Fill="#FFECAE32" Stretch="Fill" Width="12.757" Height="11.877" Canvas.Left="0.703" Canvas.Top="1.219" Data="M7.8034384,29.154057 C6.7242455,28.863592 4.4690096,28.590564 6.041329,32.052663 6.5742272,33.226055 7.6016964,34.096847 8.1004701,35.266598 8.673909,36.611459 9.234133,37.517228 10.49738,38.417541 11.504944,39.13563 13.254886,39.630162 14.399196,40.15703 14.882811,40.379699 15.807022,40.963581 16.360198,40.860414 17.162275,40.710828 16.791262,39.534311 16.995542,38.644825 17.317215,37.244184 19.39926,36.278429 17.404146,34.66226 16.414908,33.860915 14.943953,33.709836&#xa;13.845144,32.776596 12.784183,31.875502 11.498422,30.895581 10.233242,30.386804 10.236607,30.33135 10.239971,30.275897 10.243336,30.220443 9.3029901,29.842294 8.8662282,29.135052 7.7253047,29.06583 7.7513493,29.095239 7.7773938,29.124648 7.8034384,29.154057 z"/>
-				<Path Fill="Black" Stretch="Fill" Width="13.989" Height="13.66" Data="M11.692476,7.8415893 C11.891645,7.844847 12.115323,7.9184478 12.123183,7.9018934 12.247972,7.9094632 12.503697,8.5567363 11.759697,8.4805825 11.333871,8.4370015 11.336093,8.2172158 11.391766,7.9967063 11.420255,7.8838671 11.528346,7.8462971 11.65304,7.841923 11.666029,7.8414672 11.679198,7.8413718 11.692476,7.8415893 z M11.021451,7.5932672 L11.016063,7.6130321 C11.007338,7.6383841 10.995371,7.6625197 10.980461,7.6854728 L10.972488,7.6963728 10.972676,7.6959599 C10.986453,7.6660054 11.000084,7.6368707 11.013753,7.6085933 z M6.5843182,6.9534848 L6.5985375,6.9784449 C6.64992,7.0685075 6.7010689,7.1590841 6.6597004,7.1351669 L6.5699077,7.0671041 C6.5524807,7.0948542 6.5680056,7.0291546 6.582532,6.9618938 z M6.5630928,6.8724692 L6.5946651,6.9016183 6.5927091,6.9125917 C6.5912209,6.920379 6.5895844,6.9285005 6.5878663,6.9367774 L6.5843182,6.9534848 6.5794387,6.9449203 C6.5731888,6.9339035 6.5671158,6.9231189 6.561399,6.912792 L6.5471082,6.8863776 z M1.9104077,1.527155 C1.7536989,1.5333931 1.6370435,1.7284867 1.5428844,2.3790877 1.4524188,3.004169 1.4763546,3.2612463 2.3039844,3.5940931 2.3688784,3.7899919 2.4608698,3.9673033 2.5750313,4.1291135 L2.5799694,4.1358932 C2.4877367,4.1956561 2.4224129,4.393358 2.3945816,4.852115 2.3589435,5.4395502 2.5289467,5.6259573 2.9842308,6.1400984 3.6028693,6.838712 3.941947,7.9187391 4.4079857,8.814379 4.6498723,9.2792418 4.8523622,9.7401059 5.2471366,10.117502 5.5990458,10.45392 5.9954758,10.811169 6.6407967,10.535986 7.8487454,10.020883 6.8443985,9.4317592 6.3530846,8.2317212 L6.3259659,8.1616319 6.3796893,8.2115643 C6.4005762,8.2307942 6.4220982,8.2504294 6.4442673,8.2704814 6.9728094,8.7485373 7.5170246,9.0802386 7.9440265,9.6971801 8.5332203,10.54847 9.6427937,12.013788 10.688942,12.618623 11.10216,12.857525 12.130596,12.576412 11.450313,11.078647 11.052458,10.202701 10.710459,10.127601 9.8724165,9.5637267 8.7992411,8.8416303 7.8167143,7.6844309 6.6566296,6.9041527 L6.7882562,7.0803521 6.5946651,6.9016183 6.5966626,6.8904131 C6.6022897,6.8557199 6.6025534,6.8338769 6.5891653,6.8473185 L6.5814782,6.8547338 6.5359765,6.8248117 C6.530922,6.8215645 6.5273056,6.8201225 6.5249477,6.8202608 6.5155149,6.8208149 6.5262113,6.8466557 6.5455013,6.8834069 L6.5471082,6.8863776 6.5175877,6.9120634 C6.2858324,7.101507 5.9953652,7.1669586 5.8591795,7.2841642 L5.8566618,7.2864755 5.8156019,7.1984618 C5.5053721,6.5625489 5.0148697,5.9875725 4.4747448,5.4327229 L4.4738408,5.4318049 4.5665045,5.4716566 C4.9049082,5.6133883 5.2521334,5.7454689 5.5879975,5.880543 6.8309002,6.3804 7.8678441,7.1805542 8.9703246,7.9224961 9.2718935,8.1254447 10.618135,8.1328013 10.955926,7.7190187 L10.972488,7.6963728 10.930724,7.7882441 C10.716619,8.2622951 10.519253,8.9509776 11.591247,9.2467473 12.169751,9.40636 13.727645,8.2842496 12.475968,7.2381461 12.474604,7.2616694 12.114461,7.00474 12.113096,7.0282639 12.062432,7.025163 12.014374,7.0234464 11.968737,7.0230759 11.421094,7.0186317 11.222174,7.2080682 11.055054,7.5263708 L11.021451,7.5932672 11.02668,7.5740884 C11.086158,7.2817533 10.735185,6.8403032 9.5753479,6.2059701 8.5501852,5.6452911 7.4315625,4.6337164 6.2761965,4.1690639 6.2795606,4.1136101 6.2829247,4.0581558 6.2862893,4.0027016 5.0605026,3.6792233 3.878063,2.4522667 2.7278054,1.8753977 L2.7080718,1.865874 2.7699364,1.8752552 C2.814781,1.8801328 2.8611169,1.8812272 2.9090085,1.8775676 L2.4981802,1.7691523 C2.5363808,1.7852618 2.5746162,1.8022086 2.6128869,1.8199355 L2.7080718,1.865874 2.70378,1.8652232 C2.3568266,1.7978784 2.1032803,1.519478 1.9104077,1.527155 z M2.5347181,0.00023809813 C2.6346333,-0.0018882927 2.7393585,0.010136549 2.8525083,0.039993295 3.4200719,0.18976386 3.5744946,0.39207231 4.0649291,0.69798415 5.4505787,1.4342857 6.5364161,2.5017992 7.8180876,3.5138753 9.0119496,4.4566133 10.177825,5.8099492 11.498157,6.1583508 13.02505,6.5612586 13.036213,6.0923694 13.512128,7.365907 13.963031,8.5725167 14.17667,8.6032031 13.781684,9.8034652 13.649877,10.203993 13.261174,10.462433 13.133792,10.849517 12.938396,11.443273 13.347009,11.463507&#xa;13.317732,11.946046 13.253247,13.008889 12.315609,13.469371 11.631265,13.597008 10.460793,13.8153 9.9356575,13.434542 9.0828658,12.941451 8.6915245,12.71517 8.3734436,12.07076 7.9637227,12.122138 7.3957348,12.193369 7.325368,12.541031 6.7058802,12.212802 5.8661642,11.767901 5.4531217,11.243437 4.7171426,10.58933 3.6098009,9.6051705 2.7556794,8.0285132 1.7782433,6.7374814 0.38376049,4.8955939 -0.32266881,4.1546839 0.1426081,2.0463076 0.32983108,1.1979185&#xa;0.96921025,0.66558848 1.6677553,0.30207269 1.9785177,0.14035601 2.2349728,0.0066168863 2.5347181,0.00023809813 z"/>
-			</Canvas>
-			<Canvas x:Name="Enemy_rec4" Width="10.504" Height="17.168" RenderTransformOrigin="1.012,-0.011" Canvas.Left="44.798" Canvas.Top="3.356">
-				<Canvas.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform ScaleX="-1" ScaleY="1"/>
-						<SkewTransform AngleX="0" AngleY="0"/>
-						<RotateTransform Angle="20.182"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Canvas.RenderTransform>
-				<Path Fill="#FFECAE32" Stretch="Fill" Width="10.12" Height="16.172" Canvas.Left="0.239" Canvas.Top="0.27" Data="M10.926431,1.4172774 C9.1317174,1.4072135 7.9558871,1.9787884 6.5876449,3.7838611 6.0536877,4.4882917 5.4940467,5.1118223 4.9617066,5.8141196 4.2644063,6.7340427 4.3389987,7.5712811 4.1561715,8.7707626 4.0018206,9.7834178 3.9352939,10.838344 3.9669191,11.890027 3.9869848,12.557299 4.5029387,12.620962 3.6416771,13.122592 3.0753189,13.45246 3.013642,13.436879 2.8287079,14.137721 2.5845375,15.063051 2.6174681,15.708372 3.6906107,16.444152 4.6357027,17.092137 5.0954719,17.343382&#xa;6.3863575,17.421703 7.4566534,17.48664 8.3294804,17.226522 9.3997763,17.291459 10.633362,17.366303 10.676896,16.788359 11.330071,15.404896 11.873756,14.253339 11.224654,14.231257 10.721494,13.05122 10.292953,12.04618 10.035519,11.303748 9.8898719,10.245707 9.5515843,7.7882484 11.03524,7.2597253 12.26653,5.1302499 12.4926,4.7392688 12.651855,4.3521839 12.716543,3.9052546 12.80472,3.2960317 12.949818,3.1003023 12.612658,2.5214232 11.928394,1.3465926&#xa;12.245673,1.1365042 10.306363,1.3170416"/>
-				<Path Fill="Black" Stretch="Fill" Width="10.504" Height="17.168" Data="M8.6290001,2.547 C8.6290001,2.9501679 8.3124654,3.277 7.9220001,3.277 7.5315348,3.277 7.2150002,2.9501679 7.2150002,2.547 7.2150002,2.1438322 7.5315348,1.817 7.9220001,1.817 8.3124654,1.817 8.6290001,2.1438322 8.6290001,2.547 z M9.7880972,0.77594179 C9.6700545,0.19618154 9.9050772,0.062949721 8.9582965,0.005500546 8.5160397,-0.021334906 7.9781526,0.052663893 7.5395988,0.16988235 7.0866621,0.29094513 6.6618182,0.40976272 6.1974403,0.62068287 5.7782884,0.81106145 5.3906752,0.97220468 4.9998786,1.2681069 3.5580112,2.3598558 2.3924059,3.4125309 1.8163146,5.2389332 1.4673588,6.3452401 1.2508728,7.4067364 1.0817049,8.5756515 1.0033919,9.116778 1.2342344,9.6997132 1.0787643,10.172195 0.9310666,10.621056 0.58192732,11.063478&#xa;0.40288617,11.508748 -0.031973264,12.590228 -0.17421593,13.426907 0.27602906,14.631877 0.66872033,15.682819 0.28372366,16.459416 1.7692376,16.851445 2.9875983,17.172972 4.1454296,17.089553 5.412813,17.166456 5.9371877,17.198275 6.2383233,16.727306 6.7549714,16.715656 7.0390758,16.709249 7.3384666,16.742174 7.6301892,16.737454 7.9467957,16.732333 8.0765131,16.637324 8.3390819,16.40477 9.3683308,15.493175 9.3211026,15.18208 9.4195884,13.558664 9.4917312,12.369479&#xa;9.1839317,12.1593 8.3120164,11.174646 7.6156229,10.388209 7.9013947,9.3292034 8.1543771,8.0968703 8.2652407,7.5568289 8.345676,7.081284 8.5278152,6.5854247 8.6979232,6.1223194 8.9625634,5.8944078 9.2528271,5.4710113 9.4944444,5.1185734 9.6451825,4.7879448 9.9721619,4.4501782 10.379535,4.0293661 10.446919,3.8487299 10.486412,3.197743 10.567047,1.8685823 10.377223,1.6179044 9.7758308,0.46211477 M8.8306945,0.91464401 C8.0246834,0.78714657 8.6343251,0.3090069 6.359622,1.5854668 5.0895477,2.2981748 4.4975215,2.9348021 3.6072479,4.18583 3.2348114,4.7091843 2.9178013,5.2347846 2.6720592,5.8235447 2.3915922,6.4955002 2.404378,7.1380699 2.3537092,7.9426804 2.2488129,9.6084119 1.7380049,10.707785 2.448314,12.312773 1.1390261,12.236238 0.28805241,13.706665 1.2099862,15.063058 1.9422891,16.140456 2.6472019,16.103937 3.6138696,15.995614 4.4103587,15.90636 5.8769395,15.994721&#xa;4.9547892,13.617235 4.3058695,11.944191 4.6522192,11.327883 5.3960886,9.5456866 5.3653531,10.033761 4.292129,15.442306 7.0203665,13.11447 6.2477174,13.883365 5.8707655,13.911476 5.6943766,15.085631 5.6355393,15.477288 6.7301485,17.186137 7.7040678,15.470326 8.1484093,14.687503 8.7798302,14.264158 8.033595,13.173698 7.2202361,11.985151 6.8667915,12.133701 6.8289438,10.516436 6.7741289,8.1741505 6.6209246,7.0929557 8.0794151,5.0434597 8.6495893,4.2422409&#xa;9.3852772,3.6119456 9.6426337,2.6722815 9.8132615,2.0492829 9.8032509,2.5038599 9.7343079,1.846368 9.7045719,1.5627829 9.6443834,1.3504272 9.5956996,1.3787826 9.5994254,1.3196186 9.4077798,1.1275109 9.2415632,1.0233509"/>
-			</Canvas>
-			<Canvas x:Name="Enemy_bomb1" Width="35.635" Height="31.776" Canvas.Left="17.736" Canvas.Top="4.586" RenderTransformOrigin="0.5,0.5">
-				<Canvas.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Canvas.RenderTransform>
-				<Ellipse Fill="#FF723A1B" Width="28.941" Height="28.683" Canvas.Left="4.463" Canvas.Top="1.335"/>
-				<Path Fill="#FFECAE32" Stretch="Fill" Width="34.228" Height="30.406" Canvas.Left="1.081" Canvas.Top="1.077" Data="M2.2972942,16.594197 C-0.38396854,17.138935 -0.25053088,16.781189 0.38003377,21.36201 0.65511779,23.360395 1.6282973,22.98753 1.8984915,24.950392 1.9816723,24.955439 3.4565463,26.985969 3.5397271,26.991016 4.3205932,32.663723 11.195068,29.907968 18.618792,30.358395 26.525523,30.838128 25.332315,30.724684 31.364785,24.619557 33.20265,22.759557 34.940327,20.786467 33.932533,17.386524 33.355787,15.440787 32.631625,12.08779 29.762093,18.010128 28.782224,20.03245 27.794634,22.103233&#xd;&#xa;25.787933,23.655016 25.136422,24.158829 21.527905,30.526753 20.475491,26.588782 20.39231,26.583736 20.30913,26.578689 20.225949,26.573642 19.992529,24.877933 19.932457,23.286383 19.912468,21.420012 19.894395,19.732415 19.280746,19.368019 16.751195,19.778086 14.672672,20.115037 13.794367,18.62975 13.911253,22.51686 13.965049,24.305879 13.595378,24.965222 13.832338,26.686653 13.987715,27.815405 12.577744,28.347769 10.198834,26.716663 8.9558075,25.864378&#xd;&#xa;8.0571462,24.96355 6.8642139,23.884416 5.5906781,22.732367 4.6187042,22.471733 4.0589589,20.58335 3.8387481,19.840437 3.7769634,19.068863 3.5713654,18.299547 3.2577791,17.126156 3.1343084,17.395885 2.2972942,16.594197 z M8.1240177,9.3090807 C7.9082611,7.227285 6.7038738,5.9855276 6.1884412,4.0568672 5.8862289,2.9260406 4.9127899,-0.64060248 2.3960048,0.43256542 0.62154706,1.1892018 0.75712273,4.0514168 2.6453771,6.7223797 3.1994422,7.5061129 3.9656091,8.295533 4.9025599,8.7379076 6.055702,9.2823554 7.0317895,9.3680496 8.3659988,9.449001 8.2853384,9.4023609 8.2046781,9.3557208 8.1240177,9.3090807 z M10.070963,8.1750026 C8.8761039,8.4575369 9.2534571,7.2981111 8.3959034,8.9499601 7.8649367,9.9727262 8.2415891,9.5586497 7.2399714,10.03814 6.6401489,10.325285 5.2935104,12.894194 8.0213081,13.059685 9.7755361,13.166111 10.648642,12.833067 11.42234,11.62789 12.415964,10.080136 12.367226,8.7831367 9.3223168,8.1295835"/>
-				<Path Fill="Black" Stretch="Fill" Width="35.635" Height="32.301" Data="M20.373119,30.592099 L20.553595,30.729256 C20.553595,30.729256 20.766878,30.634009 20.766878,30.634009 20.766878,30.634009 20.373119,30.592099 20.373119,30.592099 z M7.0301323,30.173483 C7.0301323,30.173483 7.0301323,30.173483 7.0301323,30.173483 z M10.244964,9.3250068 C9.5974722,11.338212 10.258647,10.767951 8.2145968,11.831797 7.8332791,12.030257 7.9802694,13.896673 10.119931,13.450269 11.242851,13.215989 15.483226,10.528205 10.244964,9.3250068 z M18.817114,2.0530265 C18.694613,2.0532348 18.572186,2.0551682 18.449938,2.0588446 16.674404,2.1122334 15.162889,2.4735666 13.500527,3.1360536 12.072783,3.7050379 11.256247,4.5765951 9.855485,5.4194358 9.4820252,5.6441458 9.0061798,6.3177946 8.8839502,6.9881246 8.783968,7.5364335 9.7988443,8.4211591 9.7988443,8.4211591 11.398151,8.8938773 12.419518,7.5579098 13.53047,10.901702 13.95404,12.176584 12.370959,13.897139 10.086966,14.352326 9.1892252,14.531245 6.2935047,14.595201&#xd;&#xa;7.1856418,12.270132 6.8316188,11.870394 6.3106561,11.473852 6.0060463,11.071528 5.3887606,12.04141 4.9285069,12.318891 4.8488898,13.631079 4.7875667,14.641762 4.6359096,15.58485 4.6672049,16.625485 4.7279339,18.644919 5.2146606,19.931557 6.4931026,21.620085 7.5066967,22.958815 8.2595072,24.349201 9.510088,25.559916 10.9783,26.981324 12.238819,27.266777 13.858073,28.203007 14.587664,24.929554 14.173358,23.009945 14.342947,20.214882 15.966534,19.991392&#xd;&#xa;21.435892,18.895127 21.530319,19.401726 21.932343,21.558617 22.334602,24.721943 22.17635,27.330183 23.701828,25.979285 24.940142,24.410435 26.441605,23.080805 28.085283,21.625235 28.93223,19.471876 30.018785,17.787874 31.555397,15.406342 31.624828,14.354637 31.176214,11.095872 30.926008,9.2783501 30.391222,6.8606713 27.985386,5.8932307 27.990433,5.8100574 27.99548,5.7268765 28.000526,5.6437033 26.599834,5.0804565 25.428871,3.8135629 24.019291,3.1480844&#xd;&#xa;22.508698,2.4349239 20.654629,2.0499015 18.817114,2.0530265 z M4.1093655,2.0392394 C4.0273252,2.0368133 3.9429896,2.0529321 3.8560083,2.0900193 2.2208426,2.7872374 4.6542707,6.5187891 4.9182115,7.2893341 5.6015916,9.2843831 7.1110706,9.4096787 8.6274776,10.144435 8.6690722,10.146959 8.7106657,10.149482 8.7522602,10.152005 8.8389416,8.723327 7.3975577,6.9160679 6.6312323,5.8903773 5.7260098,4.6787813 5.0774479,2.0678728 4.1093655,2.0392394 z M19.613834,0.00032524835 C25.905228,-0.039227855 29.453932,3.5371411 31.352026,6.1275461 31.847307,0.020964722 33.987633,8.5553944 34.055252,9.046613 34.234833,10.351147 34.139328,11.842442 34.179752,13.186749 34.221169,14.564021 35.19334,15.349345 35.347855,16.638827 35.763538,20.107851 35.992157,22.376551 34.107155,24.703491 33.20163,25.821312 32.616837,26.594879 32.405487,27.981453 32.23645,29.090454 30.269876,29.348854 30.008175,30.340599 28.840137,30.65276 29.09625,30.970114&#xd;&#xa;27.866525,31.110728 L26.427878,31.086057 C27.380128,30.764075 27.0973,29.66152 29.311152,27.379303 32.12772,24.475756 34.350807,21.544058 33.372471,18.24169 33.23056,17.762671 33.058006,17.560396 32.87009,17.550122 32.055798,17.505595 30.953026,21.066386 30.805016,21.336739 29.993563,22.818905 28.963463,24.208514 28.044661,25.546753 27.115002,26.900805 26.283274,28.056626 24.721016,28.719645 23.470718,29.250267 22.204987,29.973551 20.897825,30.574837 L20.766878,30.634009 20.701345,30.624619 20.392044,30.563219 C20.519415,30.301804 20.300768,29.700598 20.112404,28.332388 19.796131,26.035092 19.841747,23.490332 19.53813,21.284954 18.914114,21.247097 18.373692,21.209313 17.860546,21.206206 17.200789,21.202208 16.586119,21.255533 15.896848,21.439726 15.175479,24.580424 16.017323,27.490969 16.263844,30.606118 16.263844,30.606118 16.037674,30.905998 15.953348,30.915257 L15.793209,30.93352 15.722058,30.864622 C14.604643,29.83593 12.939683,29.848889 11.544436,29.190171 9.861146,28.39546 8.9143772,27.809294 7.4458504,26.562081 4.5873356,24.134356 3.262362,18.470953 3.262362,18.470953 2.9243948,18.525143 2.5840752,18.414521 2.3141346,18.422121 1.9092237,18.433522 1.6626653,18.710923 1.8199281,20.209572 1.9355316,21.311224 2.3998163,22.015099 2.7763722,23.022724 3.4063964,24.708607 3.7994909,26.637684 4.9690967,28.165077 5.5803113,28.963265 6.1357856,29.446757&#xd;&#xa;6.8595452,30.033032 6.9176421,30.080094 7.6769217,30.659273 7.7292574,30.702949 L9.3020692,31.612374 C9.3020692,31.612374 6.8459827,31.849155 6.901148,31.967857 7.8278596,33.961897 2.0030294,26.444863 1.4430779,24.349709 0.82090009,22.021731 -0.85478401,18.370638 0.53993225,16.530665 1.9431895,14.679431 2.6462309,16.903895 2.8049018,14.288715 2.8940814,12.818882 3.0359747,11.807095 3.5310993,10.575886 4.3697357,8.4904759 3.831315,8.9237035 2.9792891,7.2864273 2.4471841,6.2639215 2.1080918,4.9452799 1.8111856,3.8343563 1.1716131,1.4412906 1.3326147,1.5403507&#xd;&#xa;2.8587093,1.0176227 4.1010952,0.59207055 4.8983674,0.13953312 6.2881331,0.22385305 6.3411126,0.60871026 6.4837146,0.92827502 6.8589931,1.1351003 6.8174019,1.1325748 7.3391056,2.1660524 7.2975144,2.163527 7.8439822,7.3711903 8.6841393,4.3336466 10.363858,3.226187 12.435777,1.8601367 13.792055,0.79814044 16.300226,0.3303749 17.481394,0.11009248 18.584335,0.0067971802 19.613834,0.00032524835 z"/>
-				<Ellipse Fill="#FFFAEBCF" Width="7.021" Height="6.663" Canvas.Left="13.128" Canvas.Top="6.999"/>
-			</Canvas>
-			<Canvas x:Name="Enemy_rec5" Width="13.989" Height="13.66" RenderTransformOrigin="1.016,0.985" Canvas.Left="14.949" Canvas.Top="19.306">
-				<Canvas.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="-97.857"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Canvas.RenderTransform>
-				<Path Fill="#FFECAE32" Stretch="Fill" Width="12.757" Height="11.877" Canvas.Left="0.703" Canvas.Top="1.219" Data="M7.8034384,29.154057 C6.7242455,28.863592 4.4690096,28.590564 6.041329,32.052663 6.5742272,33.226055 7.6016964,34.096847 8.1004701,35.266598 8.673909,36.611459 9.234133,37.517228 10.49738,38.417541 11.504944,39.13563 13.254886,39.630162 14.399196,40.15703 14.882811,40.379699 15.807022,40.963581 16.360198,40.860414 17.162275,40.710828 16.791262,39.534311 16.995542,38.644825 17.317215,37.244184 19.39926,36.278429 17.404146,34.66226 16.414908,33.860915 14.943953,33.709836&#xa;13.845144,32.776596 12.784183,31.875502 11.498422,30.895581 10.233242,30.386804 10.236607,30.33135 10.239971,30.275897 10.243336,30.220443 9.3029901,29.842294 8.8662282,29.135052 7.7253047,29.06583 7.7513493,29.095239 7.7773938,29.124648 7.8034384,29.154057 z"/>
-				<Path Fill="Black" Stretch="Fill" Width="13.989" Height="13.66" Data="M11.692476,7.8415893 C11.891645,7.844847 12.115323,7.9184478 12.123183,7.9018934 12.247972,7.9094632 12.503697,8.5567363 11.759697,8.4805825 11.333871,8.4370015 11.336093,8.2172158 11.391766,7.9967063 11.420255,7.8838671 11.528346,7.8462971 11.65304,7.841923 11.666029,7.8414672 11.679198,7.8413718 11.692476,7.8415893 z M11.021451,7.5932672 L11.016063,7.6130321 C11.007338,7.6383841 10.995371,7.6625197 10.980461,7.6854728 L10.972488,7.6963728 10.972676,7.6959599 C10.986453,7.6660054 11.000084,7.6368707 11.013753,7.6085933 z M6.5843182,6.9534848 L6.5985375,6.9784449 C6.64992,7.0685075 6.7010689,7.1590841 6.6597004,7.1351669 L6.5699077,7.0671041 C6.5524807,7.0948542 6.5680056,7.0291546 6.582532,6.9618938 z M6.5630928,6.8724692 L6.5946651,6.9016183 6.5927091,6.9125917 C6.5912209,6.920379 6.5895844,6.9285005 6.5878663,6.9367774 L6.5843182,6.9534848 6.5794387,6.9449203 C6.5731888,6.9339035 6.5671158,6.9231189 6.561399,6.912792 L6.5471082,6.8863776 z M1.9104077,1.527155 C1.7536989,1.5333931 1.6370435,1.7284867 1.5428844,2.3790877 1.4524188,3.004169 1.4763546,3.2612463 2.3039844,3.5940931 2.3688784,3.7899919 2.4608698,3.9673033 2.5750313,4.1291135 L2.5799694,4.1358932 C2.4877367,4.1956561 2.4224129,4.393358 2.3945816,4.852115 2.3589435,5.4395502 2.5289467,5.6259573 2.9842308,6.1400984 3.6028693,6.838712 3.941947,7.9187391 4.4079857,8.814379 4.6498723,9.2792418 4.8523622,9.7401059 5.2471366,10.117502 5.5990458,10.45392 5.9954758,10.811169 6.6407967,10.535986 7.8487454,10.020883 6.8443985,9.4317592 6.3530846,8.2317212 L6.3259659,8.1616319 6.3796893,8.2115643 C6.4005762,8.2307942 6.4220982,8.2504294 6.4442673,8.2704814 6.9728094,8.7485373 7.5170246,9.0802386 7.9440265,9.6971801 8.5332203,10.54847 9.6427937,12.013788 10.688942,12.618623 11.10216,12.857525 12.130596,12.576412 11.450313,11.078647 11.052458,10.202701 10.710459,10.127601 9.8724165,9.5637267 8.7992411,8.8416303 7.8167143,7.6844309 6.6566296,6.9041527 L6.7882562,7.0803521 6.5946651,6.9016183 6.5966626,6.8904131 C6.6022897,6.8557199 6.6025534,6.8338769 6.5891653,6.8473185 L6.5814782,6.8547338 6.5359765,6.8248117 C6.530922,6.8215645 6.5273056,6.8201225 6.5249477,6.8202608 6.5155149,6.8208149 6.5262113,6.8466557 6.5455013,6.8834069 L6.5471082,6.8863776 6.5175877,6.9120634 C6.2858324,7.101507 5.9953652,7.1669586 5.8591795,7.2841642 L5.8566618,7.2864755 5.8156019,7.1984618 C5.5053721,6.5625489 5.0148697,5.9875725 4.4747448,5.4327229 L4.4738408,5.4318049 4.5665045,5.4716566 C4.9049082,5.6133883 5.2521334,5.7454689 5.5879975,5.880543 6.8309002,6.3804 7.8678441,7.1805542 8.9703246,7.9224961 9.2718935,8.1254447 10.618135,8.1328013 10.955926,7.7190187 L10.972488,7.6963728 10.930724,7.7882441 C10.716619,8.2622951 10.519253,8.9509776 11.591247,9.2467473 12.169751,9.40636 13.727645,8.2842496 12.475968,7.2381461 12.474604,7.2616694 12.114461,7.00474 12.113096,7.0282639 12.062432,7.025163 12.014374,7.0234464 11.968737,7.0230759 11.421094,7.0186317 11.222174,7.2080682 11.055054,7.5263708 L11.021451,7.5932672 11.02668,7.5740884 C11.086158,7.2817533 10.735185,6.8403032 9.5753479,6.2059701 8.5501852,5.6452911 7.4315625,4.6337164 6.2761965,4.1690639 6.2795606,4.1136101 6.2829247,4.0581558 6.2862893,4.0027016 5.0605026,3.6792233 3.878063,2.4522667 2.7278054,1.8753977 L2.7080718,1.865874 2.7699364,1.8752552 C2.814781,1.8801328 2.8611169,1.8812272 2.9090085,1.8775676 L2.4981802,1.7691523 C2.5363808,1.7852618 2.5746162,1.8022086 2.6128869,1.8199355 L2.7080718,1.865874 2.70378,1.8652232 C2.3568266,1.7978784 2.1032803,1.519478 1.9104077,1.527155 z M2.5347181,0.00023809813 C2.6346333,-0.0018882927 2.7393585,0.010136549 2.8525083,0.039993295 3.4200719,0.18976386 3.5744946,0.39207231 4.0649291,0.69798415 5.4505787,1.4342857 6.5364161,2.5017992 7.8180876,3.5138753 9.0119496,4.4566133 10.177825,5.8099492 11.498157,6.1583508 13.02505,6.5612586 13.036213,6.0923694 13.512128,7.365907 13.963031,8.5725167 14.17667,8.6032031 13.781684,9.8034652 13.649877,10.203993 13.261174,10.462433 13.133792,10.849517 12.938396,11.443273 13.347009,11.463507&#xa;13.317732,11.946046 13.253247,13.008889 12.315609,13.469371 11.631265,13.597008 10.460793,13.8153 9.9356575,13.434542 9.0828658,12.941451 8.6915245,12.71517 8.3734436,12.07076 7.9637227,12.122138 7.3957348,12.193369 7.325368,12.541031 6.7058802,12.212802 5.8661642,11.767901 5.4531217,11.243437 4.7171426,10.58933 3.6098009,9.6051705 2.7556794,8.0285132 1.7782433,6.7374814 0.38376049,4.8955939 -0.32266881,4.1546839 0.1426081,2.0463076 0.32983108,1.1979185&#xa;0.96921025,0.66558848 1.6677553,0.30207269 1.9785177,0.14035601 2.2349728,0.0066168863 2.5347181,0.00023809813 z"/>
-			</Canvas>
-			<Canvas x:Name="Enemy_rec6" Width="10.504" Height="17.168" RenderTransformOrigin="1.012,-0.011" Canvas.Left="11.595" Canvas.Top="44.912">
-				<Canvas.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Canvas.RenderTransform>
-				<Path Fill="#FFECAE32" Stretch="Fill" Width="10.12" Height="16.172" Canvas.Left="0.239" Canvas.Top="0.27" Data="M10.926431,1.4172774 C9.1317174,1.4072135 7.9558871,1.9787884 6.5876449,3.7838611 6.0536877,4.4882917 5.4940467,5.1118223 4.9617066,5.8141196 4.2644063,6.7340427 4.3389987,7.5712811 4.1561715,8.7707626 4.0018206,9.7834178 3.9352939,10.838344 3.9669191,11.890027 3.9869848,12.557299 4.5029387,12.620962 3.6416771,13.122592 3.0753189,13.45246 3.013642,13.436879 2.8287079,14.137721 2.5845375,15.063051 2.6174681,15.708372 3.6906107,16.444152 4.6357027,17.092137 5.0954719,17.343382&#xa;6.3863575,17.421703 7.4566534,17.48664 8.3294804,17.226522 9.3997763,17.291459 10.633362,17.366303 10.676896,16.788359 11.330071,15.404896 11.873756,14.253339 11.224654,14.231257 10.721494,13.05122 10.292953,12.04618 10.035519,11.303748 9.8898719,10.245707 9.5515843,7.7882484 11.03524,7.2597253 12.26653,5.1302499 12.4926,4.7392688 12.651855,4.3521839 12.716543,3.9052546 12.80472,3.2960317 12.949818,3.1003023 12.612658,2.5214232 11.928394,1.3465926&#xa;12.245673,1.1365042 10.306363,1.3170416"/>
-				<Path Fill="Black" Stretch="Fill" Width="10.504" Height="17.168" Data="M8.6290001,2.547 C8.6290001,2.9501679 8.3124654,3.277 7.9220001,3.277 7.5315348,3.277 7.2150002,2.9501679 7.2150002,2.547 7.2150002,2.1438322 7.5315348,1.817 7.9220001,1.817 8.3124654,1.817 8.6290001,2.1438322 8.6290001,2.547 z M9.7880972,0.77594179 C9.6700545,0.19618154 9.9050772,0.062949721 8.9582965,0.005500546 8.5160397,-0.021334906 7.9781526,0.052663893 7.5395988,0.16988235 7.0866621,0.29094513 6.6618182,0.40976272 6.1974403,0.62068287 5.7782884,0.81106145 5.3906752,0.97220468 4.9998786,1.2681069 3.5580112,2.3598558 2.3924059,3.4125309 1.8163146,5.2389332 1.4673588,6.3452401 1.2508728,7.4067364 1.0817049,8.5756515 1.0033919,9.116778 1.2342344,9.6997132 1.0787643,10.172195 0.9310666,10.621056 0.58192732,11.063478&#xa;0.40288617,11.508748 -0.031973264,12.590228 -0.17421593,13.426907 0.27602906,14.631877 0.66872033,15.682819 0.28372366,16.459416 1.7692376,16.851445 2.9875983,17.172972 4.1454296,17.089553 5.412813,17.166456 5.9371877,17.198275 6.2383233,16.727306 6.7549714,16.715656 7.0390758,16.709249 7.3384666,16.742174 7.6301892,16.737454 7.9467957,16.732333 8.0765131,16.637324 8.3390819,16.40477 9.3683308,15.493175 9.3211026,15.18208 9.4195884,13.558664 9.4917312,12.369479&#xa;9.1839317,12.1593 8.3120164,11.174646 7.6156229,10.388209 7.9013947,9.3292034 8.1543771,8.0968703 8.2652407,7.5568289 8.345676,7.081284 8.5278152,6.5854247 8.6979232,6.1223194 8.9625634,5.8944078 9.2528271,5.4710113 9.4944444,5.1185734 9.6451825,4.7879448 9.9721619,4.4501782 10.379535,4.0293661 10.446919,3.8487299 10.486412,3.197743 10.567047,1.8685823 10.377223,1.6179044 9.7758308,0.46211477 M8.8306945,0.91464401 C8.0246834,0.78714657 8.6343251,0.3090069 6.359622,1.5854668 5.0895477,2.2981748 4.4975215,2.9348021 3.6072479,4.18583 3.2348114,4.7091843 2.9178013,5.2347846 2.6720592,5.8235447 2.3915922,6.4955002 2.404378,7.1380699 2.3537092,7.9426804 2.2488129,9.6084119 1.7380049,10.707785 2.448314,12.312773 1.1390261,12.236238 0.28805241,13.706665 1.2099862,15.063058 1.9422891,16.140456 2.6472019,16.103937 3.6138696,15.995614 4.4103587,15.90636 5.8769395,15.994721&#xa;4.9547892,13.617235 4.3058695,11.944191 4.6522192,11.327883 5.3960886,9.5456866 5.3653531,10.033761 4.292129,15.442306 7.0203665,13.11447 6.2477174,13.883365 5.8707655,13.911476 5.6943766,15.085631 5.6355393,15.477288 6.7301485,17.186137 7.7040678,15.470326 8.1484093,14.687503 8.7798302,14.264158 8.033595,13.173698 7.2202361,11.985151 6.8667915,12.133701 6.8289438,10.516436 6.7741289,8.1741505 6.6209246,7.0929557 8.0794151,5.0434597 8.6495893,4.2422409&#xa;9.3852772,3.6119456 9.6426337,2.6722815 9.8132615,2.0492829 9.8032509,2.5038599 9.7343079,1.846368 9.7045719,1.5627829 9.6443834,1.3504272 9.5956996,1.3787826 9.5994254,1.3196186 9.4077798,1.1275109 9.2415632,1.0233509"/>
-			</Canvas>
-			<Canvas x:Name="Enemy_rec7" Width="13.989" Height="13.66" RenderTransformOrigin="1.016,0.985" Canvas.Left="28.781" Canvas.Top="23.123">
-				<Canvas.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform ScaleX="-1" ScaleY="1"/>
-						<SkewTransform AngleX="0" AngleY="0"/>
-						<RotateTransform Angle="10.811"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Canvas.RenderTransform>
-				<Path Fill="#FFECAE32" Stretch="Fill" Width="12.757" Height="11.877" Canvas.Left="0.703" Canvas.Top="1.219" Data="M7.8034384,29.154057 C6.7242455,28.863592 4.4690096,28.590564 6.041329,32.052663 6.5742272,33.226055 7.6016964,34.096847 8.1004701,35.266598 8.673909,36.611459 9.234133,37.517228 10.49738,38.417541 11.504944,39.13563 13.254886,39.630162 14.399196,40.15703 14.882811,40.379699 15.807022,40.963581 16.360198,40.860414 17.162275,40.710828 16.791262,39.534311 16.995542,38.644825 17.317215,37.244184 19.39926,36.278429 17.404146,34.66226 16.414908,33.860915 14.943953,33.709836&#xa;13.845144,32.776596 12.784183,31.875502 11.498422,30.895581 10.233242,30.386804 10.236607,30.33135 10.239971,30.275897 10.243336,30.220443 9.3029901,29.842294 8.8662282,29.135052 7.7253047,29.06583 7.7513493,29.095239 7.7773938,29.124648 7.8034384,29.154057 z"/>
-				<Path Fill="Black" Stretch="Fill" Width="13.989" Height="13.66" Data="M11.692476,7.8415893 C11.891645,7.844847 12.115323,7.9184478 12.123183,7.9018934 12.247972,7.9094632 12.503697,8.5567363 11.759697,8.4805825 11.333871,8.4370015 11.336093,8.2172158 11.391766,7.9967063 11.420255,7.8838671 11.528346,7.8462971 11.65304,7.841923 11.666029,7.8414672 11.679198,7.8413718 11.692476,7.8415893 z M11.021451,7.5932672 L11.016063,7.6130321 C11.007338,7.6383841 10.995371,7.6625197 10.980461,7.6854728 L10.972488,7.6963728 10.972676,7.6959599 C10.986453,7.6660054 11.000084,7.6368707 11.013753,7.6085933 z M6.5843182,6.9534848 L6.5985375,6.9784449 C6.64992,7.0685075 6.7010689,7.1590841 6.6597004,7.1351669 L6.5699077,7.0671041 C6.5524807,7.0948542 6.5680056,7.0291546 6.582532,6.9618938 z M6.5630928,6.8724692 L6.5946651,6.9016183 6.5927091,6.9125917 C6.5912209,6.920379 6.5895844,6.9285005 6.5878663,6.9367774 L6.5843182,6.9534848 6.5794387,6.9449203 C6.5731888,6.9339035 6.5671158,6.9231189 6.561399,6.912792 L6.5471082,6.8863776 z M1.9104077,1.527155 C1.7536989,1.5333931 1.6370435,1.7284867 1.5428844,2.3790877 1.4524188,3.004169 1.4763546,3.2612463 2.3039844,3.5940931 2.3688784,3.7899919 2.4608698,3.9673033 2.5750313,4.1291135 L2.5799694,4.1358932 C2.4877367,4.1956561 2.4224129,4.393358 2.3945816,4.852115 2.3589435,5.4395502 2.5289467,5.6259573 2.9842308,6.1400984 3.6028693,6.838712 3.941947,7.9187391 4.4079857,8.814379 4.6498723,9.2792418 4.8523622,9.7401059 5.2471366,10.117502 5.5990458,10.45392 5.9954758,10.811169 6.6407967,10.535986 7.8487454,10.020883 6.8443985,9.4317592 6.3530846,8.2317212 L6.3259659,8.1616319 6.3796893,8.2115643 C6.4005762,8.2307942 6.4220982,8.2504294 6.4442673,8.2704814 6.9728094,8.7485373 7.5170246,9.0802386 7.9440265,9.6971801 8.5332203,10.54847 9.6427937,12.013788 10.688942,12.618623 11.10216,12.857525 12.130596,12.576412 11.450313,11.078647 11.052458,10.202701 10.710459,10.127601 9.8724165,9.5637267 8.7992411,8.8416303 7.8167143,7.6844309 6.6566296,6.9041527 L6.7882562,7.0803521 6.5946651,6.9016183 6.5966626,6.8904131 C6.6022897,6.8557199 6.6025534,6.8338769 6.5891653,6.8473185 L6.5814782,6.8547338 6.5359765,6.8248117 C6.530922,6.8215645 6.5273056,6.8201225 6.5249477,6.8202608 6.5155149,6.8208149 6.5262113,6.8466557 6.5455013,6.8834069 L6.5471082,6.8863776 6.5175877,6.9120634 C6.2858324,7.101507 5.9953652,7.1669586 5.8591795,7.2841642 L5.8566618,7.2864755 5.8156019,7.1984618 C5.5053721,6.5625489 5.0148697,5.9875725 4.4747448,5.4327229 L4.4738408,5.4318049 4.5665045,5.4716566 C4.9049082,5.6133883 5.2521334,5.7454689 5.5879975,5.880543 6.8309002,6.3804 7.8678441,7.1805542 8.9703246,7.9224961 9.2718935,8.1254447 10.618135,8.1328013 10.955926,7.7190187 L10.972488,7.6963728 10.930724,7.7882441 C10.716619,8.2622951 10.519253,8.9509776 11.591247,9.2467473 12.169751,9.40636 13.727645,8.2842496 12.475968,7.2381461 12.474604,7.2616694 12.114461,7.00474 12.113096,7.0282639 12.062432,7.025163 12.014374,7.0234464 11.968737,7.0230759 11.421094,7.0186317 11.222174,7.2080682 11.055054,7.5263708 L11.021451,7.5932672 11.02668,7.5740884 C11.086158,7.2817533 10.735185,6.8403032 9.5753479,6.2059701 8.5501852,5.6452911 7.4315625,4.6337164 6.2761965,4.1690639 6.2795606,4.1136101 6.2829247,4.0581558 6.2862893,4.0027016 5.0605026,3.6792233 3.878063,2.4522667 2.7278054,1.8753977 L2.7080718,1.865874 2.7699364,1.8752552 C2.814781,1.8801328 2.8611169,1.8812272 2.9090085,1.8775676 L2.4981802,1.7691523 C2.5363808,1.7852618 2.5746162,1.8022086 2.6128869,1.8199355 L2.7080718,1.865874 2.70378,1.8652232 C2.3568266,1.7978784 2.1032803,1.519478 1.9104077,1.527155 z M2.5347181,0.00023809813 C2.6346333,-0.0018882927 2.7393585,0.010136549 2.8525083,0.039993295 3.4200719,0.18976386 3.5744946,0.39207231 4.0649291,0.69798415 5.4505787,1.4342857 6.5364161,2.5017992 7.8180876,3.5138753 9.0119496,4.4566133 10.177825,5.8099492 11.498157,6.1583508 13.02505,6.5612586 13.036213,6.0923694 13.512128,7.365907 13.963031,8.5725167 14.17667,8.6032031 13.781684,9.8034652 13.649877,10.203993 13.261174,10.462433 13.133792,10.849517 12.938396,11.443273 13.347009,11.463507&#xa;13.317732,11.946046 13.253247,13.008889 12.315609,13.469371 11.631265,13.597008 10.460793,13.8153 9.9356575,13.434542 9.0828658,12.941451 8.6915245,12.71517 8.3734436,12.07076 7.9637227,12.122138 7.3957348,12.193369 7.325368,12.541031 6.7058802,12.212802 5.8661642,11.767901 5.4531217,11.243437 4.7171426,10.58933 3.6098009,9.6051705 2.7556794,8.0285132 1.7782433,6.7374814 0.38376049,4.8955939 -0.32266881,4.1546839 0.1426081,2.0463076 0.32983108,1.1979185&#xa;0.96921025,0.66558848 1.6677553,0.30207269 1.9785177,0.14035601 2.2349728,0.0066168863 2.5347181,0.00023809813 z"/>
-			</Canvas>
-			<Canvas x:Name="Enemy_rec8" Width="10.504" Height="17.168" RenderTransformOrigin="1.012,-0.011" Canvas.Left="43.452" Canvas.Top="25.542">
-				<Canvas.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform ScaleX="-1" ScaleY="1"/>
-						<SkewTransform AngleX="0" AngleY="0"/>
-						<RotateTransform Angle="16.536"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Canvas.RenderTransform>
-				<Path Fill="#FFECAE32" Stretch="Fill" Width="10.12" Height="16.172" Canvas.Left="0.239" Canvas.Top="0.27" Data="M10.926431,1.4172774 C9.1317174,1.4072135 7.9558871,1.9787884 6.5876449,3.7838611 6.0536877,4.4882917 5.4940467,5.1118223 4.9617066,5.8141196 4.2644063,6.7340427 4.3389987,7.5712811 4.1561715,8.7707626 4.0018206,9.7834178 3.9352939,10.838344 3.9669191,11.890027 3.9869848,12.557299 4.5029387,12.620962 3.6416771,13.122592 3.0753189,13.45246 3.013642,13.436879 2.8287079,14.137721 2.5845375,15.063051 2.6174681,15.708372 3.6906107,16.444152 4.6357027,17.092137 5.0954719,17.343382&#xa;6.3863575,17.421703 7.4566534,17.48664 8.3294804,17.226522 9.3997763,17.291459 10.633362,17.366303 10.676896,16.788359 11.330071,15.404896 11.873756,14.253339 11.224654,14.231257 10.721494,13.05122 10.292953,12.04618 10.035519,11.303748 9.8898719,10.245707 9.5515843,7.7882484 11.03524,7.2597253 12.26653,5.1302499 12.4926,4.7392688 12.651855,4.3521839 12.716543,3.9052546 12.80472,3.2960317 12.949818,3.1003023 12.612658,2.5214232 11.928394,1.3465926&#xa;12.245673,1.1365042 10.306363,1.3170416"/>
-				<Path Fill="Black" Stretch="Fill" Width="10.504" Height="17.168" Data="M8.6290001,2.547 C8.6290001,2.9501679 8.3124654,3.277 7.9220001,3.277 7.5315348,3.277 7.2150002,2.9501679 7.2150002,2.547 7.2150002,2.1438322 7.5315348,1.817 7.9220001,1.817 8.3124654,1.817 8.6290001,2.1438322 8.6290001,2.547 z M9.7880972,0.77594179 C9.6700545,0.19618154 9.9050772,0.062949721 8.9582965,0.005500546 8.5160397,-0.021334906 7.9781526,0.052663893 7.5395988,0.16988235 7.0866621,0.29094513 6.6618182,0.40976272 6.1974403,0.62068287 5.7782884,0.81106145 5.3906752,0.97220468 4.9998786,1.2681069 3.5580112,2.3598558 2.3924059,3.4125309 1.8163146,5.2389332 1.4673588,6.3452401 1.2508728,7.4067364 1.0817049,8.5756515 1.0033919,9.116778 1.2342344,9.6997132 1.0787643,10.172195 0.9310666,10.621056 0.58192732,11.063478&#xa;0.40288617,11.508748 -0.031973264,12.590228 -0.17421593,13.426907 0.27602906,14.631877 0.66872033,15.682819 0.28372366,16.459416 1.7692376,16.851445 2.9875983,17.172972 4.1454296,17.089553 5.412813,17.166456 5.9371877,17.198275 6.2383233,16.727306 6.7549714,16.715656 7.0390758,16.709249 7.3384666,16.742174 7.6301892,16.737454 7.9467957,16.732333 8.0765131,16.637324 8.3390819,16.40477 9.3683308,15.493175 9.3211026,15.18208 9.4195884,13.558664 9.4917312,12.369479&#xa;9.1839317,12.1593 8.3120164,11.174646 7.6156229,10.388209 7.9013947,9.3292034 8.1543771,8.0968703 8.2652407,7.5568289 8.345676,7.081284 8.5278152,6.5854247 8.6979232,6.1223194 8.9625634,5.8944078 9.2528271,5.4710113 9.4944444,5.1185734 9.6451825,4.7879448 9.9721619,4.4501782 10.379535,4.0293661 10.446919,3.8487299 10.486412,3.197743 10.567047,1.8685823 10.377223,1.6179044 9.7758308,0.46211477 M8.8306945,0.91464401 C8.0246834,0.78714657 8.6343251,0.3090069 6.359622,1.5854668 5.0895477,2.2981748 4.4975215,2.9348021 3.6072479,4.18583 3.2348114,4.7091843 2.9178013,5.2347846 2.6720592,5.8235447 2.3915922,6.4955002 2.404378,7.1380699 2.3537092,7.9426804 2.2488129,9.6084119 1.7380049,10.707785 2.448314,12.312773 1.1390261,12.236238 0.28805241,13.706665 1.2099862,15.063058 1.9422891,16.140456 2.6472019,16.103937 3.6138696,15.995614 4.4103587,15.90636 5.8769395,15.994721&#xa;4.9547892,13.617235 4.3058695,11.944191 4.6522192,11.327883 5.3960886,9.5456866 5.3653531,10.033761 4.292129,15.442306 7.0203665,13.11447 6.2477174,13.883365 5.8707655,13.911476 5.6943766,15.085631 5.6355393,15.477288 6.7301485,17.186137 7.7040678,15.470326 8.1484093,14.687503 8.7798302,14.264158 8.033595,13.173698 7.2202361,11.985151 6.8667915,12.133701 6.8289438,10.516436 6.7741289,8.1741505 6.6209246,7.0929557 8.0794151,5.0434597 8.6495893,4.2422409&#xa;9.3852772,3.6119456 9.6426337,2.6722815 9.8132615,2.0492829 9.8032509,2.5038599 9.7343079,1.846368 9.7045719,1.5627829 9.6443834,1.3504272 9.5956996,1.3787826 9.5994254,1.3196186 9.4077798,1.1275109 9.2415632,1.0233509"/>
-			</Canvas>
-		</Canvas>
-		<TextBlock x:Name="textBlock" Width="69.182" Height="19.726" Opacity="0" Canvas.Left="-5.371" Canvas.Top="-22.739" TextWrapping="Wrap"><Run FontFamily="Wide Latin" Text="HIT!"/></TextBlock>
 	</Canvas>
 </local:Enemy>
