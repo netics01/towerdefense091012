@@ -552,7 +552,8 @@
 			</VisualStateGroup>
 			<VisualStateGroup x:Name="Menu_StateGroup" ic:ExtendedVisualStateManager.UseFluidLayout="True">
 				<VisualStateGroup.Transitions>
-					<VisualTransition GeneratedDuration="00:00:00.1000000"/>
+					<VisualTransition GeneratedDuration="00:00:00"/>
+					<VisualTransition From="Menu_Build_State" GeneratedDuration="00:00:00.2000000" To="Menu_NoMenu_State"/>
 				</VisualStateGroup.Transitions>
 				<VisualState x:Name="Menu_NoMenu_State"/>
 				<VisualState x:Name="Menu_Build_State">
