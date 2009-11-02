@@ -66,6 +66,8 @@ namespace PlanetTerror
 		//	초기화
 		public void Initialize()
 		{
+			generator.Initialize();
+
 			goldTimer = new RefreshTimer((float)Game.Setting.gold.interval);
 			core.Initialize();			
 		}
