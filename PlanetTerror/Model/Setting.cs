@@ -157,8 +157,6 @@ namespace PlanetTerror
 			enemy3 = new Enemy();
 
 			waves = new List<Wave>();
-
-			SetDefault();
 		}
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -173,6 +171,7 @@ namespace PlanetTerror
 				setting.version != VERSION )
 			{
 				setting = new Setting();
+				setting.SetDefault();
 				try { Helper.Serialize("setting.xml", setting); }
 				catch( Exception ) {}
 			}
