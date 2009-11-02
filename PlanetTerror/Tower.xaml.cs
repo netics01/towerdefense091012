@@ -86,8 +86,8 @@ namespace PlanetTerror
 			Menu_UpgradeBig_Button.Click += new RoutedEventHandler(Menu_UpgradeBIG_Button_Click);
 			Menu_Dismantle_Button.Click += new RoutedEventHandler(Menu_Dismantle_Button_Click);
 
-			Gold_Gain_State.Storyboard.Completed +=new EventHandler(GoldGain_Storyboard_Completed);
-			Gold_Lose_State.Storyboard.Completed +=new EventHandler(GoldLose_Storyboard_Completed);
+			Gold_Gain_State.Storyboard.Completed += new EventHandler(GoldGain_Storyboard_Completed);
+			Gold_Lose_State.Storyboard.Completed += new EventHandler(GoldLose_Storyboard_Completed);
 		}
 
 		//===============================================================================================================================================
@@ -206,7 +206,7 @@ namespace PlanetTerror
 				if( !vsm.GetStateFinished() ) { return; }
 				if( vsm.GetStateJustFinished() )
 				{
-					effectStories[0].Begin();
+//					effectStories[0].Begin();
 				}
 				if( cooldownTime > 0 )
 				{
