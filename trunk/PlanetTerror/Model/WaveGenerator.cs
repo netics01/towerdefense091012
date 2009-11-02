@@ -105,7 +105,17 @@ namespace PlanetTerror
 							SeqTimeLeft = curBundle.interval;
 							Create();
 						}
-						else { PrepareNextWave(); }
+						else
+						{
+							curBundleIndex++;
+							if( curBundleIndex < curWave.bundles.Count )
+							{
+								state = EState.Bundle;
+								curBundle = curWave.bundles[curBundleIndex];
+								BundleTimeLeft = curBundle.waitTime;
+							}
+							else { PrepareNextWave(); }
+						}						
 					}
 					else { return; }
 					break;
