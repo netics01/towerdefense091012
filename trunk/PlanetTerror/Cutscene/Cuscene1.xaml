@@ -14,94 +14,16 @@
 		</VisualStateManager.CustomVisualStateManager>
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="Cutscene_StateGroup">
-				<VisualState x:Name="Title_State">
-					<Storyboard>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Opening" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="GameOver" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Ending" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-						</ObjectAnimationUsingKeyFrames>
-					</Storyboard>
-				</VisualState>
-				<VisualState x:Name="Opening_State">
-					<Storyboard>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Title" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="GameOver" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Ending" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-						</ObjectAnimationUsingKeyFrames>
-					</Storyboard>
-				</VisualState>
-				<VisualState x:Name="GameOver_State">
-					<Storyboard>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Title" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Opening" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Ending" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_ReStart" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
-							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFC74848"/>
-						</ColorAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_ReStart" Storyboard.TargetProperty="(TextElement.FontFamily)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00">
-								<DiscreteObjectKeyFrame.Value>
-									<FontFamily>/PlanetTerror;Component/Fonts/#아리따B</FontFamily>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_ReStart" Storyboard.TargetProperty="(TextElement.FontSize)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="18.667"/>
-						</DoubleAnimationUsingKeyFrames>
-					</Storyboard>
-				</VisualState>
-				<VisualState x:Name="Ending_State">
-					<Storyboard>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Title" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Opening" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="GameOver" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="p2" Storyboard.TargetProperty="(UIElement.Opacity)" Duration="00:00:00.0010000">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="P1" Storyboard.TargetProperty="(UIElement.Opacity)">
-							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="P1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:03" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:04" Value="-936"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="p2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Duration="00:00:00.0010000">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="816"/>
-						</DoubleAnimationUsingKeyFrames>
-					</Storyboard>
-				</VisualState>
+				<VisualState x:Name="Title_State"/>
+				<VisualState x:Name="Opening_State"/>
+				<VisualState x:Name="GameOver_State"/>
+				<VisualState x:Name="Ending_State"/>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Canvas x:Name="Title" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" d:IsLocked="True">
-			<Image Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Title.png" Stretch="Fill"/>
+		<Canvas x:Name="Title" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" d:IsHidden="True">
+			<Image Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Title.jpg" Stretch="Fill"/>
 			<TextBlock Width="976" Height="184" Canvas.Left="16" Canvas.Top="16" FontFamily="아리따B" FontSize="133.333" FontWeight="Bold" Text="Planet Terror" TextWrapping="Wrap"/>
-			<Button x:Name="Menu_Start" Style="{DynamicResource menu_Start}" Width="400" Height="40" Content="게임 시작" FontFamily="아리따B" FontSize="21.333" FontWeight="Bold" Foreground="#FFFFCD85" Canvas.Left="328" Canvas.Top="656">
+			<Button x:Name="Menu_Start" Style="{DynamicResource menu_Start}" Width="400" Height="40" Content="게임 시작" FontFamily="아리따B" FontSize="21.333" FontWeight="Bold" Foreground="#FFFFCD85" Canvas.Left="328" Canvas.Top="656" BorderBrush="Black">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
 						<Setter Property="Control.Template">
@@ -131,9 +53,11 @@
 									<Microsoft_Windows_Themes:ButtonChrome x:Name="Chrome" SnapsToDevicePixels="true" BorderBrush="#FF532020" RenderDefaulted="{TemplateBinding IsDefaulted}" RenderMouseOver="{TemplateBinding IsMouseOver}" RenderPressed="{TemplateBinding IsPressed}" ThemeColor="Metallic">
 										<Microsoft_Windows_Themes:ButtonChrome.Fill>
 											<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-												<GradientStop Color="Black" Offset="1"/>
-												<GradientStop Color="#FF741D00" Offset="0.787"/>
-												<GradientStop Color="#FFBF3000" Offset="0.013"/>
+												<GradientStop Color="#FF200A03" Offset="0.909"/>
+												<GradientStop Color="#FF741D00" Offset="0.813"/>
+												<GradientStop Color="#FFDE5629" Offset="0.091"/>
+												<GradientStop Color="#FF963818" Offset="0.057"/>
+												<GradientStop Color="#FF940B0B" Offset="0.13"/>
 											</LinearGradientBrush>
 										</Microsoft_Windows_Themes:ButtonChrome.Fill>
 										<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True"/>
@@ -156,8 +80,22 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="Opening" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="Black" d:IsLocked="True">
-			<Image Width="424" Height="664" Canvas.Left="320" Canvas.Top="32" Source="CutsceneResources/img_Opening_Poster01.png" Stretch="Fill"/>
+		<Canvas x:Name="Opening" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="Black">
+			<Canvas x:Name="TV" Width="1024" Height="720">
+				<Image Width="650" Height="493" Canvas.Left="78" Canvas.Top="104" Source="CutsceneResources/img_Opening_TV01.jpg" Stretch="Fill"/>
+				<Image Width="650" Height="493" Canvas.Left="72" Canvas.Top="88" Source="CutsceneResources/img_Opening_TV02.jpg" Stretch="Fill"/>
+				<Image Width="650" Height="493" Canvas.Left="78" Canvas.Top="96" Source="CutsceneResources/img_Opening_TV03.jpg" Stretch="Fill"/>
+				<Image Width="650" Height="493" Canvas.Left="86" Canvas.Top="96" Source="CutsceneResources/img_Opening_TV04.jpg" Stretch="Fill"/>
+				<Image Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Opening_TV00.png" Stretch="Fill"/>
+			</Canvas>
+			<Canvas x:Name="Paper" Width="1024" Height="1403" Canvas.Left="0" Canvas.Top="0">
+				<Image Width="1024" Height="1403" Source="CutsceneResources/img_Opening_paper01.jpg" Stretch="Fill"/>
+			</Canvas>
+			<Canvas x:Name="Poster" Width="1024" Height="1024">
+				<Image Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Opening_Poster02.jpg" Stretch="Fill"/>
+				<Image Width="720" Height="1024" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Opening_Poster01.jpg" Stretch="Fill"/>
+				<Image Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Title.jpg" Stretch="Fill"/>
+			</Canvas>
 			<Button x:Name="Menu_ReStart_Copy" Style="{DynamicResource ReStart}" Width="64" Height="24" Content="■Skip" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" Foreground="#FF9B2727" Canvas.Left="961" Canvas.Top="8">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
@@ -202,7 +140,7 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="GameOver" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="#FF0C0C0C" d:IsLocked="True">
+		<Canvas x:Name="GameOver" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="#FF0C0C0C">
 			<TextBlock Width="584" Height="80" Canvas.Left="256" Canvas.Top="280" FontFamily="아리따B" FontSize="64" Foreground="#FFBB3131" TextWrapping="Wrap"><Run Text="Core"/><Run Text=" is"/><Run Text=" Dismantle"/><Run Text="..."/></TextBlock>
 			<Button x:Name="Menu_ReStart" Style="{DynamicResource ReStart}" Width="176" Height="40" Content="타이틀 화면으로" Canvas.Left="448" Canvas.Top="416" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" Foreground="#FF9B2727">
 				<Button.Resources>
@@ -265,9 +203,10 @@
 				</RadialGradientBrush>
 			</Canvas.Background>
 			<Canvas x:Name="p0" Width="1024" Height="720">
-				<Image Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Ending.png" Stretch="Fill" d:IsLocked="True"/>
+				<Image Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Ending.jpg" Stretch="Fill"/>
+				<TextBlock Width="352" Height="24" Canvas.Left="216" Canvas.Top="200" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" FontWeight="Bold" TextWrapping="Wrap"><Run Text="그렇게 코어는 지켜졌고"/><LineBreak/><Run Text=""/><LineBreak/><Run Text="폭탄에 매달려 있던 생명체는 "/><LineBreak/><Run Text="자유를 찾아 우주로 사라졌다."/><LineBreak/><Run Text=""/><LineBreak/><Run Text=""/><LineBreak/><Run Text="아직은 누가 콜로니를 공격 했는지 알지 못하지만"/><LineBreak/><Run Text=""/><LineBreak/><Run Text="평화를 가져다준  당신에게 모두들 감사하고 있다."/><LineBreak/><Run Text=""/><LineBreak/><Run Text=""/><LineBreak/><Run Text=""/><LineBreak/><Run Text="그들은 계속 채굴할  이다."/><LineBreak/><Run Text=""/><LineBreak/><Run Text="미래를 약속하는 황금의 광물을"/><Run Text="..."/></TextBlock>
 			</Canvas>
-			<Canvas x:Name="P1" Width="624" Height="144" RenderTransformOrigin="0.5,0.5" Canvas.Left="232" Canvas.Top="288" d:IsHidden="True">
+			<Canvas x:Name="P1" Width="624" Height="144" RenderTransformOrigin="0.5,0.5" Canvas.Left="232" Canvas.Top="288">
 				<Canvas.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -276,9 +215,9 @@
 						<TranslateTransform/>
 					</TransformGroup>
 				</Canvas.RenderTransform>
-				<TextBlock Width="624" Height="144" FontFamily="아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold" Text="축하합니다!!"/>
+				<TextBlock Width="624" Height="144" FontFamily="아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold"><Run Text="감사"/><Run Text="합니다!!"/></TextBlock>
 			</Canvas>
-			<Canvas x:Name="p2" Width="632" Height="176" RenderTransformOrigin="0.5,0.5" Canvas.Left="232" Canvas.Top="264" d:IsHidden="True">
+			<Canvas x:Name="p2" Width="632" Height="176" RenderTransformOrigin="0.5,0.5" Canvas.Left="232" Canvas.Top="264">
 				<Canvas.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -290,7 +229,7 @@
 				<TextBlock Width="568" Height="56" Canvas.Left="16" Canvas.Top="120" FontFamily="아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold"><Run Text="byuckdal"/><Run Text=" |"/><Run Text=" yx"/><Run Text=" | "/><Run Text="netics01"/></TextBlock>
 				<TextBlock Width="632" Height="121" FontFamily="아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold" Text="만든 사람 들"/>
 			</Canvas>
-			<Canvas x:Name="p3" Width="632" Height="176" RenderTransformOrigin="0.5,0.5" Canvas.Left="208" Canvas.Top="288" d:IsHidden="True">
+			<Canvas x:Name="p3" Width="632" Height="176" RenderTransformOrigin="0.5,0.5" Canvas.Left="208" Canvas.Top="288">
 				<Canvas.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -302,8 +241,16 @@
 				<TextBlock Width="288" Height="171" Canvas.Left="400" Canvas.Top="8" FontFamily="아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold"><Run Text="2009.10.07"/><Run Text="-"/><LineBreak/><Run Text="-"/><Run Text="2009.11.12"/><LineBreak/></TextBlock>
 				<TextBlock Width="424" Height="121" FontFamily="아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold" Text="개발기간"/>
 			</Canvas>
-			<Rectangle x:Name="_0x000000" Fill="Black" Stroke="Black" Width="1024" Height="720" d:IsHidden="True"/>
-			<Button x:Name="Menu_ReStart2" Style="{DynamicResource ReStart}" Width="112" Height="40" Content="타이틀 화면으로" Canvas.Left="903" Canvas.Top="8" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="13.333" Foreground="#FF75A8DA">
+			<Canvas x:Name="PP" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0">
+				<Image Width="718" Height="715" Source="CutsceneResources/img_Ending_art01.jpg" Stretch="Fill"/>
+				<Image Width="800" Height="742" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Ending_art02.jpg" Stretch="Fill"/>
+				<Image Width="800" Height="767" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Ending_art03.jpg" Stretch="Fill"/>
+				<Image Width="800" Height="609" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Ending_art04.jpg" Stretch="Fill"/>
+				<Image Width="800" Height="609" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Ending_art05.jpg" Stretch="Fill"/>
+				<Image Width="800" Height="609" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Ending_art06.jpg" Stretch="Fill"/>
+			</Canvas>
+			<Rectangle x:Name="_0x000000" Fill="Black" Stroke="Black" Width="1024" Height="720"/>
+			<Button x:Name="Menu_ReStart2" Style="{DynamicResource ReStart}" Width="112" Height="40" Content="타이틀 화면으로" Canvas.Left="914" Canvas.Top="8" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF75A8DA" FontFamily="/PlanetTerror;Component/Fonts/#아리따B">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
 						<Setter Property="Control.Template">
@@ -346,7 +293,6 @@
 					</Style>
 				</Button.Resources>
 			</Button>
-			<TextBlock Width="80" Height="96" Canvas.Left="96" Canvas.Top="112" Text="TextBlock" TextWrapping="Wrap"/>
 		</Canvas>
 	</Canvas>
 </Window>
