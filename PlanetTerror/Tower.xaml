@@ -1372,11 +1372,11 @@
 			</Image>
 		</Canvas>
 		<Canvas x:Name="notYetBuild_Canvas" Width="48" Height="32" Canvas.Top="24" Background="#00000000"/>
-		<Canvas x:Name="Menu_Num" Width="32" Height="16" Canvas.Left="9" Canvas.Top="37" d:IsLocked="True">
+		<Canvas x:Name="Menu_Num" Width="32" Height="16" Canvas.Left="9" Canvas.Top="37">
 			<Rectangle x:Name="UP01" Fill="#FFFFDA5E" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-23" Canvas.Top="-31" Visibility="Collapsed"/>
 			<Rectangle x:Name="UP02" Fill="#FFFF7F28" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-15" Canvas.Top="-31" Visibility="Collapsed"/>
 			<Rectangle x:Name="UP03" Fill="Red" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-7" Canvas.Top="-31" Visibility="Collapsed"/>
-			<TextBlock x:Name="goldGain_Text" Width="32.75" Height="16" Visibility="Collapsed" Foreground="#FFF2C346" Text="+ 5" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
+			<TextBlock x:Name="goldGain_Text" Width="32.75" Height="16" Visibility="Collapsed" Foreground="#FFF2C346" Text="+ 5" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#kroeger 05_53">
 				<TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -1386,7 +1386,7 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform>
 			</TextBlock>
-			<TextBlock x:Name="goldLose_Text" Width="32.75" Height="16" Foreground="#FFC50B0B" TextWrapping="Wrap" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+			<TextBlock x:Name="goldLose_Text" Width="32.75" Height="16" Foreground="#FFC50B0B" TextWrapping="Wrap" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#kroeger 05_53"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
@@ -1395,7 +1395,7 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform><Run Text="-"/><Run Text=" 5"/></TextBlock>
 		</Canvas>
-		<Canvas x:Name="menu_Canvas" Width="48" Height="36" Background="#00000000" Canvas.Left="1.625" Canvas.Top="1" d:IsLocked="True">
+		<Canvas x:Name="menu_Canvas" Width="48" Height="36" Background="#00000000" Canvas.Left="1.625" Canvas.Top="1">
 			<Rectangle x:Name="rectangle" Stroke="#FF302525" Width="60.667" Height="40.25" Canvas.Left="-6.292" Canvas.Top="-5.667" RadiusX="3" RadiusY="3" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#B2FFF8B5" Visibility="Collapsed">
 				<Rectangle.RenderTransform>
 					<TransformGroup>
@@ -1426,7 +1426,7 @@
 					</TransformGroup>
 				</Rectangle.RenderTransform>
 			</Rectangle>
-			<Button x:Name="Menu_Build_Button" Width="80" Height="14" Content="{DynamicResource Menu_Build_Button}" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FF552D1A" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" FontSize="10.667" Visibility="Collapsed">
+			<Button x:Name="Menu_Build_Button" Width="80" Height="14" Content="{DynamicResource Menu_Build_Button}" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FF552D1A" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 						<Setter Property="Template">
@@ -1517,7 +1517,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_Upgrade_Button" Width="80" Height="14" Content="{DynamicResource Menu_Upgrade}" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FF552D1A" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Upgrade}" FontSize="10.667" Visibility="Collapsed">
+			<Button x:Name="Menu_Upgrade_Button" Width="80" Height="14" Content="{DynamicResource Menu_Upgrade}" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FF552D1A" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Upgrade}" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Upgrade" TargetType="{x:Type Button}">
 						<Setter Property="FocusVisualStyle">
@@ -1727,7 +1727,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_Dismantle_Button" Width="80" Height="14" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FF552D1A" RenderTransformOrigin="0.5,0.5" Canvas.Top="14" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Dismantle}" FocusVisualStyle="{DynamicResource ControlStyle1}" Content="{DynamicResource menu_ButtonDismantle}" FontSize="10.667" Visibility="Collapsed">
+			<Button x:Name="Menu_Dismantle_Button" Width="80" Height="14" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FF552D1A" RenderTransformOrigin="0.5,0.5" Canvas.Top="14" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Dismantle}" FocusVisualStyle="{DynamicResource ControlStyle1}" Content="{DynamicResource menu_ButtonDismantle}" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="menu_ButtonDismantle" TargetType="{x:Type Button}">
 						<Setter Property="Template">
@@ -1847,7 +1847,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_BuildResearch_Button_Copy" Width="80" Height="14" Content="{DynamicResource Menu_Build_Button}" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FF552D1A" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" FontSize="10.667" Visibility="Collapsed">
+			<Button x:Name="Menu_BuildResearch_Button_Copy" Width="80" Height="14" Content="{DynamicResource Menu_Build_Button}" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FF552D1A" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 						<Setter Property="Template">
