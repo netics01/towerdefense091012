@@ -2,10 +2,30 @@
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:ic="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	x:Class="PlanetTerror.TowerMG"
 	x:Name="Window"
 	Title="TowerMG"
-	Width="152" Height="152" Background="{x:Null}">
+	Width="152" Height="152" Background="{x:Null}" mc:Ignorable="d">
+
+	<Window.Resources>
+		<Storyboard x:Key="MG_Tower_Storyboard">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</Window.Resources>
+	<Window.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource MG_Tower_Storyboard}"/>
+		</EventTrigger>
+	</Window.Triggers>
 
 	<Grid x:Name="LayoutRoot">
 		<VisualStateManager.CustomVisualStateManager>
@@ -13,8 +33,32 @@
 		</VisualStateManager.CustomVisualStateManager>
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="Build_StateGroup">
-				<VisualState x:Name="Build_Built_State"/>
-				<VisualState x:Name="Build_Dismantle_State"/>
+				<VisualState x:Name="Build_Built_State">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Build_Dismantle_State">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
 			</VisualStateGroup>
 			<VisualStateGroup x:Name="Menu_StateGroup">
 				<VisualState x:Name="Menu_NoMenu_State"/>
@@ -27,49 +71,9 @@
 				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Image Margin="0,32,0,-2" Source="Resources/Tower/MGTowerA0_BG.png" Stretch="Fill"/>
-		<Image Margin="16,-8,10,-4" Source="Resources/Tower/MGTowerA0_Body.png" Stretch="Fill"/>
-		<Rectangle Fill="Black" Stroke="Black" RadiusX="4" RadiusY="4" Margin="-16,8,0,0" VerticalAlignment="Top" Height="8" RenderTransformOrigin="1,0.438" HorizontalAlignment="Left" Width="88">
-			<Rectangle.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform Angle="327.178"/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Rectangle.RenderTransform>
-		</Rectangle>
-		<Rectangle Fill="Black" Stroke="Black" RadiusX="4" RadiusY="4" Margin="-16,8,0,0" VerticalAlignment="Top" Height="8" RenderTransformOrigin="1,0.438" HorizontalAlignment="Left" Width="88">
-			<Rectangle.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform Angle="508.749"/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Rectangle.RenderTransform>
-		</Rectangle>
-		<Rectangle Fill="Black" Stroke="Black" RadiusX="4" RadiusY="4" Margin="-16,8,0,0" VerticalAlignment="Top" Height="8" RenderTransformOrigin="1,0.438" HorizontalAlignment="Left" Width="88">
-			<Rectangle.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform Angle="222.257"/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Rectangle.RenderTransform>
-		</Rectangle>
-		<Rectangle Fill="Black" Stroke="Black" RadiusX="4" RadiusY="4" Margin="-16,8,0,0" VerticalAlignment="Top" Height="8" RenderTransformOrigin="1,0.438" HorizontalAlignment="Left" Width="88">
-			<Rectangle.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform Angle="45.016"/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Rectangle.RenderTransform>
-		</Rectangle>
-		<Image Margin="-2,-32,-6,54" Source="Resources/Tower/MGTowerA0_Top.png" Stretch="Fill"/>
+		<Image x:Name="image" Margin="0,32,0,-17.333" Source="Resources/Tower/MGTowerA0_BG.png" Stretch="Fill"/>
+		<Image x:Name="image1" Margin="3.334,-3.333,2,-14.667" Source="Resources/Tower/MGTowerA0_Body.png" Stretch="Fill"/>
+		<Image x:Name="image2" Margin="11.333,-16.666,6.667,0" Source="Resources/Tower/MGTowerA0_Top.png" Stretch="Fill" VerticalAlignment="Top" Height="86.666"/>
 		<Button x:Name="Menu_Dismantle_Button" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Width="110" Height="20.75" Content="채굴소 복원  +50" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="#FFDEB64B" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" HorizontalAlignment="Right" Margin="0,0,-96,1.25" VerticalAlignment="Bottom" Visibility="Hidden">
 			<Button.Resources>
 				<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
