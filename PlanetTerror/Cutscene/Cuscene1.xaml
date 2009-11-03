@@ -2,7 +2,7 @@
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:ic="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
-	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Luna"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Luna" xmlns:Custom="http://schemas.microsoft.com/wpf/2008/toolkit"
 	x:Class="PlanetTerror.Cuscene1"
 	x:Name="Window"
 	Title="Cuscene1"
@@ -51,6 +51,19 @@
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Ending" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
 						</ObjectAnimationUsingKeyFrames>
+						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_ReStart" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFC74848"/>
+						</ColorAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_ReStart" Storyboard.TargetProperty="(TextElement.FontFamily)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00">
+								<DiscreteObjectKeyFrame.Value>
+									<FontFamily>/PlanetTerror;Component/Fonts/#아리따B</FontFamily>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_ReStart" Storyboard.TargetProperty="(TextElement.FontSize)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="18.667"/>
+						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Ending_State">
@@ -64,6 +77,29 @@
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="GameOver" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
 						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="p2" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="P1" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="P1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:03" Value="-936"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="p2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="816"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="816"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="816"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:03" Value="-16"/>
+						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 			</VisualStateGroup>
@@ -71,7 +107,7 @@
 		<Canvas x:Name="Title" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0">
 			<Image Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Title.png" Stretch="Fill"/>
 			<TextBlock Width="976" Height="184" Canvas.Left="16" Canvas.Top="16" FontFamily="아리따B" FontSize="133.333" FontWeight="Bold" Text="Planet Terror" TextWrapping="Wrap"/>
-			<Button x:Name="Menu_Start" Width="400" Height="40" Content="게임 시작" FontFamily="아리따B" FontSize="21.333" FontWeight="Bold" Canvas.Left="328" Canvas.Top="656" Style="{DynamicResource menu_Start}" Foreground="#FFFFCD85">
+			<Button x:Name="Menu_Start" Style="{DynamicResource menu_Start}" Width="400" Height="40" Content="게임 시작" FontFamily="아리따B" FontSize="21.333" FontWeight="Bold" Foreground="#FFFFCD85" Canvas.Left="328" Canvas.Top="656">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
 						<Setter Property="Control.Template">
@@ -98,7 +134,7 @@
 						<Setter Property="Template">
 							<Setter.Value>
 								<ControlTemplate TargetType="{x:Type Button}">
-									<Microsoft_Windows_Themes:ButtonChrome x:Name="Chrome" SnapsToDevicePixels="true" RenderDefaulted="{TemplateBinding IsDefaulted}" RenderMouseOver="{TemplateBinding IsMouseOver}" RenderPressed="{TemplateBinding IsPressed}" ThemeColor="Metallic" BorderBrush="#FF532020">
+									<Microsoft_Windows_Themes:ButtonChrome x:Name="Chrome" SnapsToDevicePixels="true" BorderBrush="#FF532020" RenderDefaulted="{TemplateBinding IsDefaulted}" RenderMouseOver="{TemplateBinding IsMouseOver}" RenderPressed="{TemplateBinding IsPressed}" ThemeColor="Metallic">
 										<Microsoft_Windows_Themes:ButtonChrome.Fill>
 											<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 												<GradientStop Color="Black" Offset="1"/>
@@ -126,9 +162,9 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="Opening" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="Black" d:IsHidden="True">
+		<Canvas x:Name="Opening" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="Black">
 			<Image Width="424" Height="664" Canvas.Left="320" Canvas.Top="32" Source="CutsceneResources/img_Opening_Poster01.png" Stretch="Fill"/>
-			<Button x:Name="Menu_Sklp" Width="104" Height="32" Content="Skip" Canvas.Left="904" Canvas.Top="16" Style="{DynamicResource Skip}">
+			<Button x:Name="Menu_ReStart_Copy" Style="{DynamicResource ReStart}" Width="64" Height="24" Content="■Skip" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" Foreground="#FF9B2727" Canvas.Left="961" Canvas.Top="8">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
 						<Setter Property="Control.Template">
@@ -145,7 +181,7 @@
 						<GradientStop Color="#FFC6C5D7" Offset="1.0"/>
 					</LinearGradientBrush>
 					<SolidColorBrush x:Key="ButtonBorder" Color="#FF003C74"/>
-					<Style x:Key="Skip" TargetType="{x:Type Button}">
+					<Style x:Key="ReStart" TargetType="{x:Type Button}">
 						<Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
 						<Setter Property="Background" Value="{StaticResource ButtonNormalBackgroundFill}"/>
 						<Setter Property="BorderBrush" Value="{StaticResource ButtonBorder}"/>
@@ -155,16 +191,12 @@
 						<Setter Property="Template">
 							<Setter.Value>
 								<ControlTemplate TargetType="{x:Type Button}">
-									<Microsoft_Windows_Themes:ButtonChrome x:Name="Chrome" SnapsToDevicePixels="true" BorderBrush="{TemplateBinding BorderBrush}" Fill="{TemplateBinding Background}" RenderDefaulted="{TemplateBinding IsDefaulted}" RenderMouseOver="{TemplateBinding IsMouseOver}" RenderPressed="{TemplateBinding IsPressed}" ThemeColor="Metallic">
-										<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True"/>
-									</Microsoft_Windows_Themes:ButtonChrome>
+									<Canvas Margin="0,0,-56,-56">
+										<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True" Width="144" Height="16" Canvas.Left="0" Canvas.Top="0"/>
+									</Canvas>
 									<ControlTemplate.Triggers>
-										<Trigger Property="IsKeyboardFocused" Value="true">
-											<Setter Property="RenderDefaulted" TargetName="Chrome" Value="true"/>
-										</Trigger>
-										<Trigger Property="ToggleButton.IsChecked" Value="true">
-											<Setter Property="RenderPressed" TargetName="Chrome" Value="true"/>
-										</Trigger>
+										<Trigger Property="IsKeyboardFocused" Value="true"/>
+										<Trigger Property="ToggleButton.IsChecked" Value="true"/>
 										<Trigger Property="IsEnabled" Value="false">
 											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
 										</Trigger>
@@ -176,9 +208,9 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="GameOver" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="#FF0C0C0C" d:IsHidden="True">
+		<Canvas x:Name="GameOver" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="#FF0C0C0C">
 			<TextBlock Width="584" Height="80" Canvas.Left="256" Canvas.Top="280" FontFamily="아리따B" FontSize="64" Foreground="#FFBB3131" TextWrapping="Wrap"><Run Text="Core"/><Run Text=" is"/><Run Text=" Dismantle"/><Run Text="..."/></TextBlock>
-			<Button x:Name="Menu_ReStart" Style="{DynamicResource ReStart}" Width="176" Height="40" Content="타이틀 화면으로" Canvas.Left="448" Canvas.Top="416">
+			<Button x:Name="Menu_ReStart" Style="{DynamicResource ReStart}" Width="176" Height="40" Content="타이틀 화면으로" Canvas.Left="448" Canvas.Top="416" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" Foreground="#FF9B2727">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
 						<Setter Property="Control.Template">
@@ -205,16 +237,12 @@
 						<Setter Property="Template">
 							<Setter.Value>
 								<ControlTemplate TargetType="{x:Type Button}">
-									<Microsoft_Windows_Themes:ButtonChrome x:Name="Chrome" SnapsToDevicePixels="true" BorderBrush="{TemplateBinding BorderBrush}" Fill="{TemplateBinding Background}" RenderDefaulted="{TemplateBinding IsDefaulted}" RenderMouseOver="{TemplateBinding IsMouseOver}" RenderPressed="{TemplateBinding IsPressed}" ThemeColor="Metallic">
-										<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True"/>
-									</Microsoft_Windows_Themes:ButtonChrome>
+									<Canvas Margin="0,0,-56,-56">
+										<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True" Canvas.Left="0" Canvas.Top="0" Width="168" Height="32"/>
+									</Canvas>
 									<ControlTemplate.Triggers>
-										<Trigger Property="IsKeyboardFocused" Value="true">
-											<Setter Property="RenderDefaulted" TargetName="Chrome" Value="true"/>
-										</Trigger>
-										<Trigger Property="ToggleButton.IsChecked" Value="true">
-											<Setter Property="RenderPressed" TargetName="Chrome" Value="true"/>
-										</Trigger>
+										<Trigger Property="IsKeyboardFocused" Value="true"/>
+										<Trigger Property="ToggleButton.IsChecked" Value="true"/>
 										<Trigger Property="IsEnabled" Value="false">
 											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
 										</Trigger>
@@ -226,10 +254,46 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="Ending" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="Black" d:IsHidden="True">
-			<TextBlock Width="368" Height="80" Canvas.Left="344" Canvas.Top="120" FontFamily="아리따B" FontSize="64" Foreground="#FFBB7531" TextWrapping="Wrap" Text="축하합니다!!"/>
-			<TextBlock Width="600" Height="128" Canvas.Left="224" Canvas.Top="432" FontFamily="아리따B" FontSize="32" Foreground="#FFBB7531" TextWrapping="Wrap"><Run Text="제작 - "/><Run Text="김아림"/><LineBreak/><Run Text="아트 - 김호용"/><LineBreak/><Run Text="프로그래밍 - 이무림"/></TextBlock>
-			<Button x:Name="Menu_ReStart2" Style="{DynamicResource ReStart}" Width="176" Height="40" Content="타이틀 화면으로" Canvas.Left="408" Canvas.Top="600">
+		<Canvas x:Name="Ending" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0">
+			<Canvas.Background>
+				<RadialGradientBrush>
+					<RadialGradientBrush.RelativeTransform>
+						<TransformGroup>
+							<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.35" ScaleY="1.2"/>
+							<SkewTransform CenterX="0.5" CenterY="0.5"/>
+							<RotateTransform CenterX="0.5" CenterY="0.5"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</RadialGradientBrush.RelativeTransform>
+					<GradientStop Color="#FF383D57" Offset="1"/>
+					<GradientStop Color="#FF13B5A7" Offset="0.004"/>
+					<GradientStop Color="#FF315E76" Offset="0.548"/>
+				</RadialGradientBrush>
+			</Canvas.Background>
+			<Canvas x:Name="P1" Width="624" Height="144" Canvas.Left="232" Canvas.Top="288" RenderTransformOrigin="0.5,0.5">
+				<Canvas.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Canvas.RenderTransform>
+				<TextBlock Width="624" Height="144" FontFamily="아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold" Text="축하합니다!!"/>
+			</Canvas>
+			<Canvas x:Name="p2" Width="632" Height="176" Canvas.Left="248" Canvas.Top="253" RenderTransformOrigin="0.5,0.5">
+				<Canvas.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Canvas.RenderTransform>
+				<TextBlock Width="568" Height="56" Canvas.Left="16" Canvas.Top="120" FontFamily="아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold"><Run Text="김아림"/><Run Text=" |"/><Run Text="김호용"/><Run Text=" | "/><Run Text="이무림"/></TextBlock>
+				<TextBlock Width="632" Height="121" FontFamily="아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold" Text="만든 사람 들"/>
+			</Canvas>
+			<Button x:Name="Menu_ReStart2" Style="{DynamicResource ReStart}" Width="112" Height="40" Content="타이틀 화면으로" Canvas.Left="903" Canvas.Top="8" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF75A8DA" FontSize="13.333">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
 						<Setter Property="Control.Template">
@@ -256,16 +320,12 @@
 						<Setter Property="Template">
 							<Setter.Value>
 								<ControlTemplate TargetType="{x:Type Button}">
-									<Microsoft_Windows_Themes:ButtonChrome x:Name="Chrome" SnapsToDevicePixels="true" BorderBrush="{TemplateBinding BorderBrush}" Fill="{TemplateBinding Background}" RenderDefaulted="{TemplateBinding IsDefaulted}" RenderMouseOver="{TemplateBinding IsMouseOver}" RenderPressed="{TemplateBinding IsPressed}" ThemeColor="Metallic">
-										<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True"/>
-									</Microsoft_Windows_Themes:ButtonChrome>
+									<Canvas Margin="8,0,0,8">
+										<ContentPresenter HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True" Canvas.Left="0" Canvas.Top="0" OpacityMask="Black" Width="100" Height="16"/>
+									</Canvas>
 									<ControlTemplate.Triggers>
-										<Trigger Property="IsKeyboardFocused" Value="true">
-											<Setter Property="RenderDefaulted" TargetName="Chrome" Value="true"/>
-										</Trigger>
-										<Trigger Property="ToggleButton.IsChecked" Value="true">
-											<Setter Property="RenderPressed" TargetName="Chrome" Value="true"/>
-										</Trigger>
+										<Trigger Property="IsKeyboardFocused" Value="true"/>
+										<Trigger Property="ToggleButton.IsChecked" Value="true"/>
 										<Trigger Property="IsEnabled" Value="false">
 											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
 										</Trigger>
