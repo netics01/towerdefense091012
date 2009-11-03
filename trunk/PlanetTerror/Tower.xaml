@@ -1436,7 +1436,7 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform><Run Text="-"/><Run Text=" 5"/></TextBlock>
 		</Canvas>
-		<Canvas x:Name="menu_Canvas" Width="48" Height="36" Background="#00000000" Canvas.Left="1.625" Canvas.Top="1">
+		<Canvas x:Name="menu_Canvas" Width="48" Height="36" Background="#00000000" Canvas.Left="1.625" Canvas.Top="1" d:IsLocked="True">
 			<Rectangle x:Name="rectangle" Stroke="#FF302525" Width="62" Height="40.25" Canvas.Left="-6.292" Canvas.Top="-5.667" RadiusX="3" RadiusY="3" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#B2FFF8B5" Visibility="Collapsed">
 				<Rectangle.RenderTransform>
 					<TransformGroup>
