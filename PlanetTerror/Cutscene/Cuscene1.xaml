@@ -14,13 +14,13 @@
 		</VisualStateManager.CustomVisualStateManager>
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="Cutscene_StateGroup">
-				<VisualState x:Name="Title_State"/>
+				<VisualState x:Name="GameStart_State"/>
 				<VisualState x:Name="Opening_State"/>
 				<VisualState x:Name="GameOver_State"/>
 				<VisualState x:Name="Ending_State"/>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Canvas x:Name="Title" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" d:IsHidden="True">
+		<Canvas x:Name="GameStart" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" d:IsHidden="True">
 			<Image Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Title.jpg" Stretch="Fill"/>
 			<TextBlock Width="976" Height="184" Canvas.Left="16" Canvas.Top="16" FontFamily="아리따B" FontSize="133.333" FontWeight="Bold" Text="Planet Terror" TextWrapping="Wrap"/>
 			<Button x:Name="Menu_Start" Style="{DynamicResource menu_Start}" Width="400" Height="40" Content="게임 시작" FontFamily="아리따B" FontSize="21.333" FontWeight="Bold" Foreground="#FFF4C685" Canvas.Left="328" Canvas.Top="603" BorderBrush="{x:Null}">
