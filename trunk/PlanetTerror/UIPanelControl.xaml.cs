@@ -10,6 +10,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Media.Animation;
+
+using PlanetTerror.Util;
+
 
 namespace PlanetTerror
 {
@@ -24,7 +28,10 @@ namespace PlanetTerror
 
 		//===============================================================================================================================================
 		//	필드
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		int gold;
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		Storyboard noMoneyStory;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -33,6 +40,8 @@ namespace PlanetTerror
 			this.InitializeComponent();
 
 			Instance = this;
+
+			noMoneyStory = Resources.FindStoryboard("NoMoney_Storyboard");
 			
 			Loaded += new RoutedEventHandler(UIPanelControl_Loaded);
 		}
@@ -60,7 +69,11 @@ namespace PlanetTerror
 		//	돈 소모
 		public bool SpendGold(int requiredGold)
 		{
-			if( requiredGold > gold ) { return false; }
+			if( requiredGold > gold )
+			{
+				noMoneyStory.Begin();
+				return false;
+			}
 
 			gold -= requiredGold;
 			DisplayGold();

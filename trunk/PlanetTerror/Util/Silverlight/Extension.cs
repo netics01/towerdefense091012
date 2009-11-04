@@ -150,6 +150,17 @@ namespace PlanetTerror.Util
 	public static class UIElementExtMethod
 	{
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	ZIndex 액세서
+		public static int GetZIndex(this UIElement e)
+		{
+			return Canvas.GetZIndex(e);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		public static void SetZIndex(this UIElement e, int z)
+		{
+			Canvas.SetZIndex(e, z);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	Visibility 를 쉽게 설정한다.
 		public static void SetVisible(this UIElement e, bool value)
 		{

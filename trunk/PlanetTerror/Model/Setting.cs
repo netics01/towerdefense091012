@@ -21,9 +21,9 @@ using PlanetTerror.Util;
 //	Enemy				[-1000, 0]
 //	Roof				5
 //	Projectile			6
-//	Tower				[10, 11]
-//	Core				15
-//	Boss				20
+//	Tower				[10, 100]
+//	Core				105
+//	Boss				200
 
 
 
@@ -64,7 +64,8 @@ namespace PlanetTerror
 	enum ELayer
 	{
 		Tower = 10,
-		SelectedTower = 11
+		TowerMax = 100,
+		SelectedTower = TowerMax
 	}
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

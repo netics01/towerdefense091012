@@ -50,9 +50,11 @@ namespace PlanetTerror
 
 		//===============================================================================================================================================
 		//	필드
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		Enemy target;
 		Point towerCenter;
 		double cooldownTime;
+		int towerLevel;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		VSM vsm;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -233,6 +235,7 @@ namespace PlanetTerror
 			case NOTYETBUILT_STATE:
 				if( vsm.GetStateJustFinished() )
 				{
+					towerLevel = 0;
 					notYetBuiltStory.Begin();
 				}
 				break;
@@ -280,7 +283,6 @@ namespace PlanetTerror
 				if( vsm.GetStateFinished() )
 				{
 					vsm.SetState(NOTYETBUILT_STATE);
-					labStory.Stop();
 				}
 				break;
 			}			
@@ -327,15 +329,15 @@ namespace PlanetTerror
 		//	활성 타워
 		static void Select(Tower t)
 		{
-			if( selected != null )
-			{
-				Canvas.SetZIndex(selected, (int)ELayer.Tower);
-			}
-			selected = t;
-			if( selected != null )
-			{
-				Canvas.SetZIndex(selected, (int)ELayer.SelectedTower);
-			}
+			//if( selected != null )
+			//{
+			//    Canvas.SetZIndex(selected, (int)ELayer.Tower);
+			//}
+			//selected = t;
+			//if( selected != null )
+			//{
+			//    Canvas.SetZIndex(selected, (int)ELayer.SelectedTower);
+			//}
 		}
 	}
 }
