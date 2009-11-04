@@ -46,10 +46,13 @@ namespace PlanetTerror
 
 		//===============================================================================================================================================
 		//	스태틱
-		static Tower selected;
+		static Tower s_selectedTower;
+		static int s_selectedTowerZ;
 
 		//===============================================================================================================================================
 		//	필드
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		const int MAX_UPGRADE = 3;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		Enemy target;
 		Point towerCenter;
@@ -329,15 +332,16 @@ namespace PlanetTerror
 		//	활성 타워
 		static void Select(Tower t)
 		{
-			//if( selected != null )
-			//{
-			//    Canvas.SetZIndex(selected, (int)ELayer.Tower);
-			//}
-			//selected = t;
-			//if( selected != null )
-			//{
-			//    Canvas.SetZIndex(selected, (int)ELayer.SelectedTower);
-			//}
+			if( s_selectedTower != null )
+			{
+				Canvas.SetZIndex(s_selectedTower, (int)s_selectedTowerZ);
+			}
+			s_selectedTower = t;
+			if( s_selectedTower != null )
+			{
+				s_selectedTowerZ = s_selectedTower.GetZIndex();
+				Canvas.SetZIndex(s_selectedTower, (int)ELayer.SelectedTower);
+			}
 		}
 	}
 }
