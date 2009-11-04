@@ -37,6 +37,7 @@ namespace PlanetTerror
 		const string MENU_NOMENU_STATE = "Menu_NoMenu_State";
 		const string MENU_BUILD_STATE = "Menu_Build_State";
 		const string MENU_UPGRADE_STATE = "Menu_Upgrade_State";
+		const string MENU_DISMANTLE_STATE = "Menu_DismantleOnly_State";
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		const string GOLD_GROUP = "Gold_StateGroup";
 		const string GOLD_GAIN_STATE = "Gold_Gain_State";
@@ -126,6 +127,12 @@ namespace PlanetTerror
 					vsm.SetState(MENU_GROUP, MENU_UPGRADE_STATE);
 				}
 				break;
+			case LAB_BUILT_STATE:
+				if( vsm.GetStateFinished() )
+				{
+					vsm.SetState(MENU_GROUP, MENU_DISMANTLE_STATE);
+				}
+				break;
 			case TOWER_DISMANTLE_STATE:
 				vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 				break;
@@ -188,6 +195,7 @@ namespace PlanetTerror
 				return;
 			}
 			effectStories[0].Stop();
+			labStory.Stop();
 			vsm.SetState(TOWER_DISMANTLE_STATE);
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 		}
