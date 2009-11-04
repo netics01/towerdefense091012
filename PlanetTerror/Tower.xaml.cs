@@ -28,9 +28,10 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		const string BUILD_GROUP = "Build_StateGroup";
 		const string NOTYETBUILT_STATE = "Build_NotYetBuilt_State";
-		const string BUILT_STATE = "Build_Built_State";
-		const string DISMANTLE_STATE = "Build_Dismantle_State";
-		const string LAB_STATE = "Build_Lab_State";
+		const string TOWER_BUILT_STATE = "Build_Tower_Built_State";
+		const string TOWER_DISMANTLE_STATE = "Build_Tower_Dismantle_State";
+		const string LAB_BUILT_STATE = "Build_Lab_Built_State";
+		const string LAB_DISMANTLE_STATE = "Build_Lab_Dismantle_State";
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		const string MENU_GROUP = "Menu_StateGroup";
 		const string MENU_NOMENU_STATE = "Menu_NoMenu_State";
@@ -55,6 +56,7 @@ namespace PlanetTerror
 		VSM vsm;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		List<Storyboard> effectStories;
+		Storyboard labStory;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -75,6 +77,9 @@ namespace PlanetTerror
 				effectStories[i].RepeatForever();
 			}
 
+			labStory = Resources.FindStoryboard("Lab_Tower_Storyboard");
+			labStory.RepeatForever();
+
 			Loaded += new RoutedEventHandler(Tower_Loaded);
 			MouseEnter += new MouseEventHandler(Tower_MouseEnter);
 			MouseLeave += new MouseEventHandler(Tower_MouseLeave);
@@ -86,7 +91,8 @@ namespace PlanetTerror
 			Menu_Upgrade_Button.Click += new RoutedEventHandler(Menu_Upgrade_Button_Click);
 			Menu_UpgradeBig_Button.Click += new RoutedEventHandler(Menu_UpgradeBIG_Button_Click);
 			Menu_Dismantle_Button.Click += new RoutedEventHandler(Menu_Dismantle_Button_Click);
-
+			Menu_Lab_Button.Click += new RoutedEventHandler(Menu_Lab_Button_Click);
+			
 			Gold_Gain_State.Storyboard.Completed += new EventHandler(GoldGain_Storyboard_Completed);
 			Gold_Lose_State.Storyboard.Completed += new EventHandler(GoldLose_Storyboard_Completed);
 		}
@@ -101,7 +107,6 @@ namespace PlanetTerror
 			towerCenter = this.GetCenter();
 			vsm.SetState(NOTYETBUILT_STATE);
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
-//			mineTime = 0;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Tower_MouseEnter(object sender, MouseEventArgs e)
@@ -112,13 +117,13 @@ namespace PlanetTerror
 			case NOTYETBUILT_STATE:
 				vsm.SetState(MENU_GROUP, MENU_BUILD_STATE);
 				break;
-			case BUILT_STATE:
+			case TOWER_BUILT_STATE:
 				if( vsm.GetStateFinished() )
 				{
 					vsm.SetState(MENU_GROUP, MENU_UPGRADE_STATE);
 				}
 				break;
-			case DISMANTLE_STATE:
+			case TOWER_DISMANTLE_STATE:
 				vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 				break;
 			}			
@@ -157,7 +162,7 @@ namespace PlanetTerror
 			{
 				return;
 			}
-			vsm.SetState(BUILT_STATE);
+			vsm.SetState(TOWER_BUILT_STATE);
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -179,7 +184,7 @@ namespace PlanetTerror
 				return;
 			}
 			effectStories[0].Stop();
-			vsm.SetState(DISMANTLE_STATE);
+			vsm.SetState(TOWER_DISMANTLE_STATE);
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -203,15 +208,11 @@ namespace PlanetTerror
 			{
 			case NOTYETBUILT_STATE:
 				break;
-			case BUILT_STATE:
+			case TOWER_BUILT_STATE:
 				if( !vsm.GetStateFinished() ) { return; }
 				if( vsm.GetStateJustFinished() )
 				{
 					effectStories[0].Begin();
-// 
-// 					var st = effectStories[0].GetCurrentState();
-// 					Debug.Print("{0}", st.ToString());
-// 
 				}
 				if( cooldownTime > 0 )
 				{
@@ -234,10 +235,23 @@ namespace PlanetTerror
 					cooldownTime = Game.Setting.tower.attackCooldown;
 				}
 				break;
-			case DISMANTLE_STATE:
+			case TOWER_DISMANTLE_STATE:
 				if( vsm.GetStateFinished() )
 				{
 					vsm.SetState(NOTYETBUILT_STATE);
+					effectStories[0].Stop();
+				}
+				break;
+			case LAB_BUILT_STATE:
+				if( vsm.GetStateJustFinished() )
+				{
+					labStory.Begin();
+				}
+			case LAB_DISMANTLE_STATE:
+				if( vsm.GetStateFinished() )
+				{
+					vsm.SetState(NOTYETBUILT_STATE);
+					labStory.Stop();
 				}
 				break;
 			}			
@@ -253,7 +267,7 @@ namespace PlanetTerror
 			case NOTYETBUILT_STATE:
 				gold = Game.Setting.gold.mineGold;
 				break;
-			case LAB_STATE:
+			case LAB_BUILT_STATE:
 				gold = Game.Setting.gold.labGold;
 				power = Game.Setting.gold.labPower;
 				break;
