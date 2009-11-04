@@ -23,7 +23,7 @@
 		<Canvas x:Name="Title" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" d:IsHidden="True">
 			<Image Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Title.jpg" Stretch="Fill"/>
 			<TextBlock Width="976" Height="184" Canvas.Left="16" Canvas.Top="16" FontFamily="아리따B" FontSize="133.333" FontWeight="Bold" Text="Planet Terror" TextWrapping="Wrap"/>
-			<Button x:Name="Menu_Start" Style="{DynamicResource menu_Start}" Width="400" Height="40" Content="게임 시작" FontFamily="아리따B" FontSize="21.333" FontWeight="Bold" Foreground="#FFFFCD85" Canvas.Left="328" Canvas.Top="656" BorderBrush="Black">
+			<Button x:Name="Menu_Start" Style="{DynamicResource menu_Start}" Width="400" Height="40" Content="게임 시작" FontFamily="아리따B" FontSize="21.333" FontWeight="Bold" Foreground="#FFF4C685" Canvas.Left="328" Canvas.Top="603" BorderBrush="{x:Null}">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
 						<Setter Property="Control.Template">
@@ -50,25 +50,83 @@
 						<Setter Property="Template">
 							<Setter.Value>
 								<ControlTemplate TargetType="{x:Type Button}">
-									<Microsoft_Windows_Themes:ButtonChrome x:Name="Chrome" SnapsToDevicePixels="true" BorderBrush="#FF532020" RenderDefaulted="{TemplateBinding IsDefaulted}" RenderMouseOver="{TemplateBinding IsMouseOver}" RenderPressed="{TemplateBinding IsPressed}" ThemeColor="Metallic">
-										<Microsoft_Windows_Themes:ButtonChrome.Fill>
-											<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-												<GradientStop Color="#FF200A03" Offset="0.909"/>
-												<GradientStop Color="#FF741D00" Offset="0.813"/>
-												<GradientStop Color="#FFDE5629" Offset="0.091"/>
-												<GradientStop Color="#FF963818" Offset="0.057"/>
-												<GradientStop Color="#FF940B0B" Offset="0.13"/>
-											</LinearGradientBrush>
-										</Microsoft_Windows_Themes:ButtonChrome.Fill>
-										<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True"/>
-									</Microsoft_Windows_Themes:ButtonChrome>
+									<Canvas Margin="0">
+										<VisualStateManager.VisualStateGroups>
+											<VisualStateGroup x:Name="CommonStates">
+												<VisualState x:Name="Normal"/>
+												<VisualState x:Name="MouseOver">
+													<Storyboard>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[4].(GradientStop.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFC30000"/>
+														</ColorAnimationUsingKeyFrames>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFF0A877"/>
+														</ColorAnimationUsingKeyFrames>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF6E1E00"/>
+														</ColorAnimationUsingKeyFrames>
+													</Storyboard>
+												</VisualState>
+												<VisualState x:Name="Pressed">
+													<Storyboard>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[4].(GradientStop.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFB11111"/>
+														</ColorAnimationUsingKeyFrames>
+														<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+															<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFEC9066"/>
+														</ColorAnimationUsingKeyFrames>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Offset)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.057"/>
+														</DoubleAnimationUsingKeyFrames>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.091"/>
+														</DoubleAnimationUsingKeyFrames>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.909"/>
+														</DoubleAnimationUsingKeyFrames>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Offset)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.939"/>
+														</DoubleAnimationUsingKeyFrames>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[4].(GradientStop.Offset)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.887"/>
+														</DoubleAnimationUsingKeyFrames>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+														</DoubleAnimationUsingKeyFrames>
+													</Storyboard>
+												</VisualState>
+												<VisualState x:Name="Disabled"/>
+											</VisualStateGroup>
+											<VisualStateGroup x:Name="FocusStates">
+												<VisualState x:Name="Unfocused"/>
+												<VisualState x:Name="Focused"/>
+											</VisualStateGroup>
+										</VisualStateManager.VisualStateGroups>
+										<Rectangle x:Name="rectangle" Stroke="#FF420601" Width="400" Height="40" RadiusX="2" RadiusY="2" StrokeThickness="2">
+											<Rectangle.Fill>
+												<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+													<GradientStop Color="#FF200A03" Offset="0.943"/>
+													<GradientStop Color="#FF431504" Offset="0.909"/>
+													<GradientStop Color="#FFE07754" Offset="0.091"/>
+													<GradientStop Color="#FF921B1B" Offset="0.061"/>
+													<GradientStop Color="#FF940B0B" Offset="0.113"/>
+												</LinearGradientBrush>
+											</Rectangle.Fill>
+										</Rectangle>
+										<ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Stretch" Margin="{TemplateBinding Padding}" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True" Canvas.Left="152" Canvas.Top="8" Width="100" Height="26" RenderTransformOrigin="0.5,0.5">
+											<ContentPresenter.RenderTransform>
+												<TransformGroup>
+													<ScaleTransform/>
+													<SkewTransform/>
+													<RotateTransform/>
+													<TranslateTransform/>
+												</TransformGroup>
+											</ContentPresenter.RenderTransform>
+										</ContentPresenter>
+									</Canvas>
 									<ControlTemplate.Triggers>
-										<Trigger Property="IsKeyboardFocused" Value="true">
-											<Setter Property="RenderDefaulted" TargetName="Chrome" Value="true"/>
-										</Trigger>
-										<Trigger Property="ToggleButton.IsChecked" Value="true">
-											<Setter Property="RenderPressed" TargetName="Chrome" Value="true"/>
-										</Trigger>
+										<Trigger Property="IsKeyboardFocused" Value="true"/>
+										<Trigger Property="ToggleButton.IsChecked" Value="true"/>
 										<Trigger Property="IsEnabled" Value="false">
 											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
 										</Trigger>
@@ -80,7 +138,7 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="Opening" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="Black">
+		<Canvas x:Name="Opening" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="Black" d:IsHidden="True">
 			<Canvas x:Name="TV" Width="1024" Height="720">
 				<Image Width="650" Height="493" Canvas.Left="78" Canvas.Top="104" Source="CutsceneResources/img_Opening_TV01.jpg" Stretch="Fill"/>
 				<Image Width="650" Height="493" Canvas.Left="72" Canvas.Top="88" Source="CutsceneResources/img_Opening_TV02.jpg" Stretch="Fill"/>
@@ -140,7 +198,7 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="GameOver" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="#FF0C0C0C">
+		<Canvas x:Name="GameOver" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="#FF0C0C0C" d:IsHidden="True">
 			<TextBlock Width="584" Height="80" Canvas.Left="256" Canvas.Top="280" FontFamily="아리따B" FontSize="64" Foreground="#FFBB3131" TextWrapping="Wrap"><Run Text="Core"/><Run Text=" is"/><Run Text=" Dismantle"/><Run Text="..."/></TextBlock>
 			<Button x:Name="Menu_ReStart" Style="{DynamicResource ReStart}" Width="176" Height="40" Content="타이틀 화면으로" Canvas.Left="448" Canvas.Top="416" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" Foreground="#FF9B2727">
 				<Button.Resources>
@@ -202,11 +260,11 @@
 					<GradientStop Color="#FF315E76" Offset="0.548"/>
 				</RadialGradientBrush>
 			</Canvas.Background>
-			<Canvas x:Name="p0" Width="1024" Height="720">
+			<Canvas x:Name="p0" Width="1024" Height="720" d:IsHidden="True">
 				<Image Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Ending.jpg" Stretch="Fill"/>
 				<TextBlock Width="352" Height="24" Canvas.Left="216" Canvas.Top="200" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" FontWeight="Bold" TextWrapping="Wrap"><Run Text="그렇게 코어는 지켜졌고"/><LineBreak/><Run Text=""/><LineBreak/><Run Text="폭탄에 매달려 있던 생명체는 "/><LineBreak/><Run Text="자유를 찾아 우주로 사라졌다."/><LineBreak/><Run Text=""/><LineBreak/><Run Text=""/><LineBreak/><Run Text="아직은 누가 콜로니를 공격 했는지 알지 못하지만"/><LineBreak/><Run Text=""/><LineBreak/><Run Text="평화를 가져다준  당신에게 모두들 감사하고 있다."/><LineBreak/><Run Text=""/><LineBreak/><Run Text=""/><LineBreak/><Run Text=""/><LineBreak/><Run Text="그들은 계속 채굴할  이다."/><LineBreak/><Run Text=""/><LineBreak/><Run Text="미래를 약속하는 황금의 광물을"/><Run Text="..."/></TextBlock>
 			</Canvas>
-			<Canvas x:Name="P1" Width="624" Height="144" RenderTransformOrigin="0.5,0.5" Canvas.Left="232" Canvas.Top="288">
+			<Canvas x:Name="P1" Width="624" Height="144" RenderTransformOrigin="0.5,0.5" Canvas.Left="232" Canvas.Top="288" d:IsHidden="True">
 				<Canvas.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -229,7 +287,7 @@
 				<TextBlock Width="568" Height="56" Canvas.Left="16" Canvas.Top="120" FontFamily="아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold"><Run Text="byuckdal"/><Run Text=" |"/><Run Text=" yx"/><Run Text=" | "/><Run Text="netics01"/></TextBlock>
 				<TextBlock Width="632" Height="121" FontFamily="아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold" Text="만든 사람 들"/>
 			</Canvas>
-			<Canvas x:Name="p3" Width="632" Height="176" RenderTransformOrigin="0.5,0.5" Canvas.Left="208" Canvas.Top="288">
+			<Canvas x:Name="p3" Width="632" Height="176" RenderTransformOrigin="0.5,0.5" Canvas.Left="208" Canvas.Top="288" d:IsHidden="True">
 				<Canvas.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -241,7 +299,7 @@
 				<TextBlock Width="288" Height="171" Canvas.Left="400" Canvas.Top="8" FontFamily="아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold"><Run Text="2009.10.07"/><Run Text="-"/><LineBreak/><Run Text="-"/><Run Text="2009.11.12"/><LineBreak/></TextBlock>
 				<TextBlock Width="424" Height="121" FontFamily="아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold" Text="개발기간"/>
 			</Canvas>
-			<Rectangle x:Name="_0x000000" Fill="Black" Stroke="Black" Width="1024" Height="720"/>
+			<Rectangle x:Name="_0x000000" Fill="Black" Stroke="Black" Width="1024" Height="720" d:IsHidden="True"/>
 			<Button x:Name="Menu_ReStart2" Style="{DynamicResource ReStart}" Width="112" Height="40" Content="타이틀 화면으로" Canvas.Left="914" Canvas.Top="8" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF75A8DA" FontFamily="/PlanetTerror;Component/Fonts/#아리따B">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
