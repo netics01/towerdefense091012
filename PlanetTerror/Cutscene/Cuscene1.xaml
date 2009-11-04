@@ -241,14 +241,6 @@
 				<TextBlock Width="288" Height="171" Canvas.Left="400" Canvas.Top="8" FontFamily="아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold"><Run Text="2009.10.07"/><Run Text="-"/><LineBreak/><Run Text="-"/><Run Text="2009.11.12"/><LineBreak/></TextBlock>
 				<TextBlock Width="424" Height="121" FontFamily="아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold" Text="개발기간"/>
 			</Canvas>
-			<Canvas x:Name="PP" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0">
-				<Image Width="718" Height="715" Source="CutsceneResources/img_Ending_art01.jpg" Stretch="Fill"/>
-				<Image Width="800" Height="742" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Ending_art02.jpg" Stretch="Fill"/>
-				<Image Width="800" Height="767" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Ending_art03.jpg" Stretch="Fill"/>
-				<Image Width="800" Height="609" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Ending_art04.jpg" Stretch="Fill"/>
-				<Image Width="800" Height="609" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Ending_art05.jpg" Stretch="Fill"/>
-				<Image Width="800" Height="609" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Ending_art06.jpg" Stretch="Fill"/>
-			</Canvas>
 			<Rectangle x:Name="_0x000000" Fill="Black" Stroke="Black" Width="1024" Height="720"/>
 			<Button x:Name="Menu_ReStart2" Style="{DynamicResource ReStart}" Width="112" Height="40" Content="타이틀 화면으로" Canvas.Left="914" Canvas.Top="8" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF75A8DA" FontFamily="/PlanetTerror;Component/Fonts/#아리따B">
 				<Button.Resources>
