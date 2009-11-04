@@ -11,58 +11,42 @@
 	d:DesignWidth="640" d:DesignHeight="480" Width="1024" Height="660">
 
 	<Canvas x:Name="LayoutRoot">
-		<local:Tower Canvas.Left="88" Canvas.Top="304" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="88" Canvas.Top="111" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="207" Canvas.Top="73" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="304" Canvas.Top="56" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="239" Canvas.Top="145" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="133" Canvas.Top="183" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="76" Panel.ZIndex="10" Canvas.Top="21"/>
-		<local:Tower Canvas.Left="162" Panel.ZIndex="10" Canvas.Top="2"/>
-		<local:Tower Canvas.Left="256" Canvas.Top="-16" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="200" Canvas.Top="248" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="287" Canvas.Top="221" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="112" Canvas.Top="407" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="312" Canvas.Top="336" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="40" Canvas.Top="472" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="159" Canvas.Top="496" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="224" Canvas.Top="448" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="8" Canvas.Top="352" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="384" Canvas.Top="320" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="320" Canvas.Top="400" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="392" Canvas.Top="376" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="559" Canvas.Top="376" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="424" Canvas.Top="196" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="440" Canvas.Top="120" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="579" Canvas.Top="303" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="688" Canvas.Top="409" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="670" Canvas.Top="307" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="752" Canvas.Top="330" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="832" Canvas.Top="376" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="812" Canvas.Top="493" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="864" Canvas.Top="568" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="96" Canvas.Top="592" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="536" Canvas.Top="203" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="557" Canvas.Top="130" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="424" Canvas.Top="46" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="528" Canvas.Top="48" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="613" Canvas.Top="51" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="699" Canvas.Top="65" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="815" Canvas.Top="89" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="666" Canvas.Top="220" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="760" Canvas.Top="176" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="792" Canvas.Top="248" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="728" Canvas.Top="232" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="832" Canvas.Top="192" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="880" Canvas.Top="108" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="945" Canvas.Top="143" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="906" Canvas.Top="311" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="886" Canvas.Top="432" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="755" Canvas.Top="-7" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="864" Canvas.Top="20" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="944" Canvas.Top="48" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="64" Canvas.Top="216" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="320" Canvas.Top="136" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="78" Canvas.Top="298.667" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="95.5" Canvas.Top="100.5" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="201" Canvas.Top="75" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="237" Canvas.Top="145" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="64" Panel.ZIndex="10" Canvas.Top="18.5"/>
+		<local:Tower Canvas.Left="157.5" Panel.ZIndex="10" Canvas.Top="-7"/>
+		<local:Tower Canvas.Left="204" Canvas.Top="237.5" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="308.167" Canvas.Top="214" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="84.667" Canvas.Top="394.333" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="276" Canvas.Top="346" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="300.333" Canvas.Top="502.667" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="212" Canvas.Top="444" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="380.667" Canvas.Top="318.667" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="362" Canvas.Top="381.333" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="559" Canvas.Top="380" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="407.5" Canvas.Top="196.5" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="569" Canvas.Top="311" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="663.333" Canvas.Top="403" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="733.333" Canvas.Top="321.333" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="638" Canvas.Top="512" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="781.333" Canvas.Top="481" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="856" Canvas.Top="564" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="92" Canvas.Top="586" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="504" Canvas.Top="194" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="542.5" Canvas.Top="127.5" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="420.5" Canvas.Top="43" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="534" Canvas.Top="45.5" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="648" Canvas.Top="57.5" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="807" Canvas.Top="91.5" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="725.5" Canvas.Top="222.5" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="808.5" Canvas.Top="203" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="941" Canvas.Top="135.5" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="907.333" Canvas.Top="303" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="759" Canvas.Top="-4.5" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="860" Canvas.Top="18" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="79.167" Canvas.Top="194.5" Panel.ZIndex="10"/>
 		<local:Boss1 x:Name="testBoss1" Width="50" Height="50" Canvas.Left="0" Canvas.Top="0" Panel.ZIndex="20"/>
 		<local:Core x:Name="core" Width="176" Height="128" Canvas.Left="421" Canvas.Top="488" Panel.ZIndex="15" RenderTransformOrigin="0.227,0.333"/>
 		<Image Width="1024" Height="720" Source="Resources/Field/backgroundImage.png" Stretch="Fill" Panel.ZIndex="-2000"/>
@@ -70,5 +54,6 @@
 		<Path x:Name="route1_Path" Stretch="Fill" Stroke="#FF59FF00" Width="544.5" Height="689" Canvas.Left="-16" Canvas.Top="-40.5" Data="M-16,64 L95.5,15.5 215.5,-8.5 367.5,-40.5 527.5,-40.5 527.5,47.5 447.5,47.5 383.5,55.5 407.5,207.5 303.5,223.5 207.5,247.5 143.5,279.5 199.5,359.5 283.80899,318.50562 386.93258,294.70787 495.5,287.5 503.05353,478.76448 349.73814,503.78756 255.5,559.5 231.5,639.5 423.5,647.5"/>
 		<Path x:Name="route2_Path" Stretch="Fill" Stroke="Red" Width="545.5" Height="697" Canvas.Left="495.5" Canvas.Top="-40.5" Data="M1040,56 L887.5,7.5 759.5,-16.5 607.5,-40.5 527.5,-40.5 527.5,55.5 639.5,55.5 751.5,79.5 791.5,95.5 759.5,167.5 847.5,183.5 919.5,207.5 983.5,239.5 895.5,287.5 815.5,351.5 743.5,327.5 647.5,303.5 567.5,287.5 495.5,287.5 495.5,471.5 631.5,495.5 724.67647,538.79412 791.5,615.5 791.5,655.5&#xd;&#xa;551.5,647.5"/>
 		<Path x:Name="route3_Path" Stretch="Fill" Stroke="#FF0D00FF" Width="649.5" Height="705" Canvas.Left="383.5" Canvas.Top="-48.5" Data="M1032,64 L855.5,7.5 727.5,-16.5 C727.5,-16.5 591.5,-48.5 591.5,-48.5 L527.5,-48.5 527.5,47.5 471.5,47.5 423.5,47.5 383.5,55.5 399.5,135.5 455.5,135.5 511.5,135.5 575.5,135.5 623.5,135.5 663.5,143.5 615.5,295.5 559.5,287.5 503.5,287.5 503.5,471.5 575.5,479.5 663.5,503.5 727.5,543.5 799.5,607.5 791.5,655.5 543.5,647.5"/>
+		<local:Tower Canvas.Left="449.25" Canvas.Top="133" Panel.ZIndex="10"/>
 	</Canvas>
 </UserControl>
