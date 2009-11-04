@@ -30,118 +30,6 @@
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="WarningLeft_Enemy1_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path5" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path7" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.132"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.887"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.01"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.129"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.936"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.065"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="5.204"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-6.958"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-2.738"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-4.875"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-3.375"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.132"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.887"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.01"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.129"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.936"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.065"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="7.502"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-8.936"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-2.576"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-5.069"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1.596"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-3.473"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.132"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.766"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.01"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.129"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.808"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.065"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="2.907"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-19.77"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-2.477"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-6.275"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="10.892"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-4.083"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.132"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.766"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.01"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.129"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.808"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.065"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="2.961"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-19.866"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-2.473"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-6.352"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="11.007"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-4.122"/>
-			</DoubleAnimationUsingKeyFrames>
-			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path5" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFE6CC27"/>
-				<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFE6CC27"/>
-			</ColorAnimationUsingKeyFrames>
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="talk_Text1" Storyboard.TargetProperty="(TextElement.FontFamily)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00">
 					<DiscreteObjectKeyFrame.Value>
@@ -157,232 +45,8 @@
 				</DiscreteObjectKeyFrame>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
-		<Storyboard x:Key="WarningLeft_Enemy2_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path5" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path7" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.132"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.887"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.01"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.129"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.936"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.065"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="5.204"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-6.958"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-2.738"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-4.875"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-3.375"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.132"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.887"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.01"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.129"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.936"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.065"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="7.502"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-8.936"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-2.576"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-5.069"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1.596"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-3.473"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.132"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.766"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.01"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.129"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.808"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.065"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="2.907"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-19.77"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-2.477"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-6.275"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="10.892"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-4.083"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.132"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.766"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.01"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.129"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.808"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.065"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="2.961"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-19.866"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-2.473"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-6.352"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="11.007"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-4.122"/>
-			</DoubleAnimationUsingKeyFrames>
-		</Storyboard>
-		<Storyboard x:Key="WarningLeft_Enemy3_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path5" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path7" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.132"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.887"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.01"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.129"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.936"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.065"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="5.204"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-6.958"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-2.738"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-4.875"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-3.375"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.132"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.887"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.01"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.129"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.936"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.065"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="7.502"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-8.936"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-2.576"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-5.069"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1.596"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-3.473"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.132"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.766"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.01"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.129"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.808"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.065"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="2.907"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-19.77"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-2.477"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-6.275"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="10.892"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-4.083"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.132"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.766"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.01"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.129"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.808"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1.065"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="2.961"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-19.866"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-2.473"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-6.352"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="11.007"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-4.122"/>
-			</DoubleAnimationUsingKeyFrames>
-			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path5" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF00C8C6"/>
-				<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FF00C8C6"/>
-				<SplineColorKeyFrame KeyTime="00:00:00.4000000" Value="#FF00C8C6"/>
-				<SplineColorKeyFrame KeyTime="00:00:00.6000000" Value="#FF00C8C6"/>
-			</ColorAnimationUsingKeyFrames>
-		</Storyboard>
+		<Storyboard x:Key="WarningLeft_Enemy2_Storyboard"/>
+		<Storyboard x:Key="WarningLeft_Enemy3_Storyboard"/>
 		<Storyboard x:Key="WarningCenter_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path8" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
@@ -857,11 +521,6 @@
 		<EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image">
 			<BeginStoryboard Storyboard="{StaticResource CoreIcon_OnMouseLeave}"/>
 		</EventTrigger>
-		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
-			<BeginStoryboard x:Name="WarningLeft_Enemy1_Storyboard_BeginStoryboard" Storyboard="{StaticResource WarningLeft_Enemy1_Storyboard}"/>
-			<BeginStoryboard Storyboard="{StaticResource WarningCenter_Storyboard}"/>
-			<BeginStoryboard Storyboard="{StaticResource WarningRight_Enemy1_Storyboard}"/>
-		</EventTrigger>
 	</UserControl.Triggers>
 
 	<Canvas x:Name="LayoutRoot" Height="60" Width="1024">
@@ -1090,18 +749,18 @@
 		<Image x:Name="gold_Image" Width="64" Height="64" Source="Resources/UI/Gold.png" Canvas.Left="688" Canvas.Top="8"/>
 		<TextBlock x:Name="gold_Text" Width="56" Height="24" Text="1200" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="752" Canvas.Top="32"/>
 		<Image x:Name="image" Width="64" Height="64" Canvas.Left="301" Canvas.Top="8" Source="Resources/UI/Icon_Core.png" Stretch="Fill"/>
-		<Grid x:Name="talk_Core" Width="184" Height="102" Canvas.Left="112" Canvas.Top="-56">
-			<Path x:Name="path1" Fill="#FF28191E" Stretch="Fill" Margin="-10,45.084,-10.277,1" Data="M24.277009,0 L200.27701,0 C202.48615,1.5185146E-06 204.27701,1.7908625 204.27701,4.0000008 L204.27701,100 C204.27701,102.20914 202.48615,104 200.27701,104 L30.666609,104 30.666571,104.001 0,104.001 C0,104.001 11.0285,100.42351 19.329416,93.851045 L20.277008,93.072755 20.277008,4.0000008 C20.277008,1.7908625 22.067869,1.5185146E-06 24.277009,0 z" Stroke="#EB1A1717" RenderTransformOrigin="0.5,0.5" StrokeThickness="2">
+		<Grid x:Name="talk_Core" Width="184" Height="102" Canvas.Left="139.333" Canvas.Top="-56">
+			<Path x:Name="path1" Fill="#CCD8D09A" Stretch="Fill" Margin="-12.554,48,7.223,1.333" Data="M24.277009,0 L200.27701,0 C202.48615,1.5185146E-06 204.33322,5.3172003 204.33322,7.5263386 L204.27701,96.473977 C204.27701,98.683117 202.48615,104 200.27701,104 L30.666609,104 30.666571,104.001 8.6462092,104.00032 C8.6462092,104.00032 11.0285,100.42351 19.329416,93.851045 L20.136882,91.000276 20.277008,3.6582089 C20.277008,1.4490706 22.067869,1.5185146E-06 24.277009,0 z" Stroke="#EB1A1717" RenderTransformOrigin="0.5,0.5" StrokeThickness="2">
 				<Path.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform ScaleX="-1"/>
 						<SkewTransform/>
 						<RotateTransform/>
-						<TranslateTransform/>
+						<TranslateTransform X="8.2230000000000132"/>
 					</TransformGroup>
 				</Path.RenderTransform>
 			</Path>
-			<TextBlock x:Name="talk_Text1" Margin="0,0,16,6" Foreground="#FFE8C59C" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Height="42" FontFamily="Fonts/#아리따B"><TextBlock.RenderTransform>
+			<TextBlock x:Name="talk_Text1" Margin="-0.002,0,13.333,6.666" Foreground="#FF372510" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Height="42" FontFamily="Fonts/#아리따B"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
@@ -1171,49 +830,19 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform></TextBlock>
 		</Grid>
-		<Canvas x:Name="WarningL" Width="152" Height="104" Canvas.Top="80" Canvas.Left="424">
-			<Path x:Name="path4" Fill="Black" Stretch="Fill" Stroke="Black" Width="148.784" Height="100.75" Canvas.Left="5.581" Canvas.Top="3.25" Data="M355.33339,219.16667 C360.58339,222.20833 361,234.7182 361,247 361,257.44078 362.06032,261.95476 352,269.5 344.08629,275.43528 335.75759,278 325,278 319.56525,278 313.38802,277.04287 307.74774,277.04287 302.77256,277.04287 299.08342,276.41667 293.58108,276.62621 294.83108,278.29287 313.89601,285.30475 323.75,289 334.76098,293.12912 343.93867,298.30094 353.25,305.75 356.76456,308.56164 360.01913,311.51913&#xa;363.25,314.75 367.27988,318.77988 369.82009,322.98014 373,327.75 375.50236,331.50354 376.92797,335.4619 378,339.75 378.8093,342.98719 378.92188,350.92188 379,351 385.35113,343.06108 392.21945,339.76528 401.75,335 411.81823,329.96589 421.20111,326.13315 432.5,324.25 442.87494,322.52084 450.59131,323.91826 461,326 469.65782,327.73156 475.69743,330.03388 483,335.25 481.7826,329.16299&#xa;480.5,323.45947 480.5,316.75 480.5,308.0032 482.11386,302.15843 485,293.5 487.73726,285.28822 491.35129,277.64871 498,271 500.34466,268.65534 502.39802,266.73465 505,265 507.38721,263.40852 509.93628,263.15686 512.25,262 508.22715,258.98286 498.99901,257.74972 493.75,256.25 485.83319,253.98805 481.97545,250.59431 476.5,243.75 463.47331,227.46664 473.43752,221.65625 475.75,203.25&#xa;473.53127,206.65625 467.00002,212.53125 465.75,214 460.95365,219.63563 455.49647,224.85212 449,228.75 443.45268,232.07839 438.83584,234.65236 432.25,235.75 426.31966,236.73839 420.1731,238.19269 413.75,238 407.50004,237.8125 400.11377,237.87126 393.75,235.75 388.58583,234.02861 383.31237,232.13836 378,231 372.69455,229.86312 369.28123,228.02082 364.75,225 361.2737,222.68247 358.94757,218.97283&#xa;354.91673,218.16667 355.08339,218.33333 355.29173,218.79167 355.33339,219.16667 z" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
-				<Path.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Path.RenderTransform>
-			</Path>
-			<Path x:Name="path5" Fill="#FFC80076" Stretch="Fill" Width="100.673" Height="63.337" Canvas.Left="39.996" Canvas.Top="21.332" Data="M81,42.75 C80.011788,53.126229 82.455564,59.371098 76.75,68.5 72.563439,75.198498 67.339993,80.732001 58.5,82.5 62.604634,85.578476 70.36281,87.077916 75.25,89.25 80.378368,91.529275 85.249514,94.399611 89.75,98 100.23357,106.38685 98.76551,115.53102 104.25,126.5 116.87824,117.02882 127.20898,115.3582 142.75,112.25 159.5204,108.89592 172.41343,112.77724 188.75,115.5 188.15962,113.72885 186.24616,112.48465&#xa;185.75,110.5 185.17575,108.20301 185.15579,106.15945 185.5,103.75 186.31236,98.063499 188.63349,93.206333 191,88 195.44222,78.227116 197.37654,74.405098 206.25,67.75 201.8024,65.526202 196.82261,65.322609 193,61.5 190.29646,58.796465 187.19311,56.539658 185,53.25 178.15269,42.979042 175.25,38.547022 175.25,24.75 171.82206,31.605876 167.3753,35.812349 160,39.5 151.5042,43.7479&#xa;143.70491,46.191455 134.75,48.75 125.19391,51.48031 115.96392,48.75 106.25,48.75 96.933206,48.75 88.819216,46.391981 80.25,43" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
-				<Path.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Path.RenderTransform>
-			</Path>
-			<Path x:Name="path6" Fill="Black" Stretch="Fill" Stroke="Black" Width="112.101" Height="46.246" Canvas.Left="44.568" Canvas.Top="29.756" Data="M86.5,32.75 C86.947142,27.607871 88.502191,24.010786 78.694893,24.010786 74.215516,24.010786 71.500312,27.500018 67.694581,30.760774 63.500312,34.500027 61.379157,39.241685 59,44 56.339688,49.320623 53.32326,54.441849 51,60.25 48.571685,66.320788 46.255888,72.700747 49.5,80 52.200435,86.075979 52.637668,91.896749 64.5,83 64.583333,83.083333 64.666667,83.166667 64.75,83.25 63.323805,86.102389 62.623884,92.874777&#xa;69.5,94.25 74.399521,95.229904 77.559839,96.150268 81.25,90 81.166667,90.083333 81.083333,90.166667 81,90.25 84.112278,93.362278 86.701804,94.517526 92.25,92.5 94.356172,91.734119 95.212204,91.180237 97,89.75 98.576949,88.488441 99.605977,87.18207 100.25,85.25 105.93533,90.935328 104.64245,93.803775 115.25,88.5 115.16667,88.583333 115.08333,88.666667 115,88.75 116.03117,89.781171&#xa;116.31272,90.609393 118,90.75 119.6882,90.890683 120.95255,90.937756 122.5,90.25 126.5735,88.439554 123.565,87.614544 128.75,89.5 134.16066,91.467511 138.00489,91.485342 141,82.5 145.96152,84.980762 147.95092,78.205502 149.25,86 149.86712,89.702692 149.09051,91.75 155.25,91.75 154.75704,94.214824 153.75,96.569776 153.75,99.25 153.75,102.66332 153.87223,103.74557 155.75,106.75&#xa;158.50209,111.15334 160.60167,114.5195 169,112 174.49539,110.35138 178.17469,107.61898 183,104 186.86239,101.10321 191.30524,99.08427 193,94 197.51659,94 200.81936,95.526538 205.5,94.25 209.88752,93.053402 211.25,93.522198 211.25,86.75 214.27325,90.780997 216.87719,96.643281 224.5,87.75 226.70326,85.179525 227.5,83.424449 227.5,79.75 227.5,75.838191 227.9155,75.333099&#xa;222.5,74.25 231.92755,71.107483 229.62425,62.282936 233.75,53 235.54137,48.969412 237.00409,46.975434 237.75,42.5 238.59777,37.413405 239.55639,35.5 229.5,35.5 218.84318,35.5 218.58024,39.009266 214.25,52 212.85865,56.174051 210.37849,59.958108 210,64.5 209.63027,68.936708 209.90952,70.954759 215,73.5 212.3657,74.81715 210.50324,76.890545 208.25,78.5 207.08926,77.919628&#xa;205.67212,78.25 204.25,78.25 207.59465,72.675583 212.65867,65.322132 207.25,57.75 204.69885,54.178392 203.4959,54.89918 199,54 195.22952,53.245904 193.31225,53.773595 189.75,56 188.42585,56.827592 187.51751,57.575954 186.5,58.75 184.91061,60.583916 185.83972,58.150985 183.25,57 179.79146,55.462871 177.1938,54.852068 173,56.25 169.45164,57.432788 167.82819,54.057272 164.25,55.25&#xa;160.28346,56.572179 160.78453,58.12063 158.25,61.5 157.13029,60.380293 157.0931,60.5 155.25,60.5 157.36343,58.386571 161.80573,51.94195 152.5,50.25 151.10577,49.996505 143.50031,50.250049 146.50031,55.500056 146.75031,55.500056 141.36914,51.177588 135.75,55.5 134.8607,56.18408 131.63253,54.593122 129.75,54.75 127.26713,54.956906 125.56786,55.136902 124,57.75 123.08053,54.991604 121.62585,50.981532&#xa;116,55 114.55377,47.768838 112.56148,50.887704 103.25,52.75 103.41667,52.75 103.58333,52.75 103.75,52.75 103.58382,52.737217 103.40398,52.686219 103.25,52.75 103.14112,52.7951 103.10541,52.947295 103,53 101.82651,50.653022 105.12751,45.473733 106.5,42.5 108.50598,38.153717 109.25,34.500006 109.25,29.5 109.25,25.120616 110.81915,21.7853 103.75,20.5 98.571138,19.558389&#xa;96.347993,18.536009 92.25,24 90.423044,26.435941 87.061876,30.601173 92.5,34 97.185204,36.928252 94.136794,38.436315 91.75,45 89.062184,52.391495 82.441647,58.366707 79,65.25 80.339555,61.231334 81.947967,57.228457 82.25,53 82.464691,49.994323 84.599289,45.25 78,45.25 81.610573,41.639427 83.722296,36.916556 86.5,32.75 z" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
-				<Path.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Path.RenderTransform>
-			</Path>
-			<Path x:Name="path7" Fill="White" Stretch="Fill" Width="104" Height="40" Canvas.Left="48" Canvas.Top="32" Data="M125.32401,65.893006 C125.32401,65.893006 107.30797,70.572815 113.19916,74.893143 116.22077,77.109055 123.19231,72.100159 125.32401,65.893006 z M162.04691,54.057011 C162.62015,54.058842 163.26328,54.215302 164.0697,54.402516 L164.09825,54.409027 163.82391,54.39254 164.57391,54.517548 164.09825,54.409027 164.12776,54.410801 C165.57678,54.472767 166.0023,54.138634 166.6989,55.392563 167.5255,56.880451 167.35336,57.477024 166.9489,58.892639 165.78357,62.971398 163.97589,62.392727 161.19893,62.392727 156.19756,62.392727 157.86203,58.28748 158.69894,56.892594 160.03354,54.668198 160.90044,54.053345 162.04691,54.057011 z M139.44901,41.768002 C138.99066,40.768001 134.36566,40.226334 135.69855,44.768151 139.28233,47.934668 141.65733,42.684668 139.44901,41.768002 z M100.57372,39.892994 C105.15152,40.335011 102.69863,41.402314 102.69863,44.267994 102.69863,46.593739 101.6705,47.689945 100.57372,49.51799 98.158692,53.543232 95.963516,56.017994 92.074112,56.01799 87.874268,56.017994 89.091004,53.038597 89.699219,51.51799 90.521835,49.461357 90.736496,47.986 92.449097,46.51799 93.904503,45.270439 94.932915,44.190487 95.948937,42.767998 97.958832,39.954018 97.670876,40.045784 100.57372,39.892994 z M140.49486,35.334309 C144.72467,35.302128 147.16266,37.80452 147.19913,37.768063 148.45042,39.436478 147.94911,40.441223 147.94911,42.393055 147.94911,44.30827 147.4975,46.110909 147.32413,48.018044 146.95833,52.041821 146.09793,54.361298 143.82414,57.393029 146.34706,58.023754 148.97005,56.288964 150.94911,58.268025 154.25797,61.576878 152.86562,63.303486 150.82411,64.018013 148.45032,64.848847 145.9525,65.007881 143.44914,65.393013 141.9026,65.630944 139.92664,65.01664&#xa;138.57416,65.768013 137.77699,66.210877 137.36568,67.274117 136.69917,67.893006 132.90697,71.41436 128.85867,74.290428 124.82422,77.517998 119.32828,81.914757 117.53922,84.360977 111.44929,83.14299 108.50633,82.554398 106.99891,82.400322 104.82431,80.39299 103.83273,79.477677 103.64779,78.33384 103.44932,77.142998 103.21909,75.761635 103.44932,74.460778 103.44932,73.142998 103.44932,70.188729 104.84183,69.144875 106.5743,67.268013 108.24532,65.457741&#xa;110.41967,64.34671 112.57428,63.518017 115.18832,62.512612 117.46815,61.386719 120.07424,60.518013 122.43604,59.730751 125.01878,59.129113 127.44921,58.643025 128.71141,58.390583 129.9496,57.995228 131.1992,57.768025 133.34438,57.377987 133.4717,57.938938 134.19919,56.393025 135.07582,54.530144 136.03093,52.436283 137.57417,50.89304 137.5325,50.851372 137.49084,50.8097 137.44917,50.768036 135.71063,51.637306 133.69138,51.557099 132.07419,51.01804&#xa;130.32997,50.436631 130.04582,49.529492 129.6992,48.14304 128.62143,43.831951 128.73575,42.691128 131.07419,39.768059 133.61218,36.595574 135.12747,36.144734 138.57416,35.518067 139.24979,35.395226 139.89059,35.338902 140.49486,35.334309 z M113.07619,34.710346 C113.49348,34.700424 113.89875,34.901726 114.44882,35.268441 115.91284,36.244465 115.28432,37.464871 115.32381,38.768448 118.06583,37.367623 119.73823,35.893444 122.69877,35.893441 126.86449,35.893444 126.35584,38.803955 126.82374,41.143452 127.41417,44.095639 126.59179,46.833294 125.82375,49.39346 125.03542,52.021233 124.12566,53.487438 122.44877,55.643471 120.01341,58.774674 117.90535,59.7192 116.07381,58.018471 115.14544,57.156407 115.86074,55.362259&#xa;115.94881,54.393467 116.04441,53.341877 116.50361,52.089516 116.94881,51.14346 123.04575,38.187351 115.09386,44.945671 113.57383,47.018456 110.37168,51.38506 108.26468,54.774994 106.44888,59.768479 104.8913,64.051865 102.644,62.860543 100.82391,61.768479 97.32074,59.666554 99.302712,57.509014 100.19892,55.268471 102.12604,50.450642 104.19395,45.213379 107.07388,40.893452 108.30567,39.045735 109.37371,37.404686 111.07385,35.893441 111.98331,35.085018&#xa;112.53968,34.723103 113.07619,34.710346 z M96.107117,29.768072 C96.21109,29.767821 96.324104,29.768267 96.448876,29.768267 97.71592,29.768267 97.741074,30.07832 98.573815,30.518282 101.73041,36.831784 94.198441,34.643025 93.073982,33.893345 92.441345,33.471569 92.323998,33.4483 92.324005,32.768326 92.323998,32.349419 92.499458,31.942618 92.69899,31.643301 93.207977,30.879782 93.579956,30.71469 94.323937,30.268278 95.094765,29.805758 95.379326,29.769827 96.107117,29.768072 z M174.30701,15.125098 C174.93742,15.162962 175.6963,15.547404 176.82426,16.268034 178.88371,19.641234 178.64803,20.651411 177.44928,23.768109 176.47185,26.309416 175.03796,28.590678 173.82419,31.018183 172.50934,33.647862 171.12976,36.406983 169.8241,39.018265 168.01968,42.62706 167.77765,44.774868 164.69899,44.518315 160.18553,44.142201 161.91931,40.057766 162.07391,37.893254 162.29236,34.835099 163.08325,32.057415 164.19897,29.26817 165.57507,25.827956 167.21863,22.806107&#xa;169.4491,20.018072 172.15485,16.635929 172.92006,15.041798 174.30701,15.125098 z M47.677452,0.00035041895 C47.751164,0.0018158174 47.815781,0.0078888154 47.870281,0.018742503 55.415215,1.5214842 50.442223,9.2227176 49.654587,12.203347 47.098065,21.87792 42.999611,30.541996 38.948761,39.618698 38.258896,41.164471 37.454171,42.622371 36.761498,44.080501 L36.367272,45.189842 36.861366,44.620373 C39.599152,41.530163 42.517006,38.582863 45.198925,35.517754 47.319092,33.094658 50.071964,31.643357 52.698868,30.767706 60.340576,28.220425 57.199001,35.424244 56.278179,36.001202 55.949001,36.174248 54.871929,36.719952 54.871929,36.719956 54.871929,36.719952 52.512848,37.801621 52.512848,37.801621 50.161087,38.589058 48.417885,39.613896 46.198918,42.017823 43.59681,44.836815 42.169918,48.546913 39.448967,51.26791 44.210468,47.458645 48.045849,43.908364&#xa;51.448876,39.267792 51.885769,38.67202 54.071388,37.434311 54.574001,37.299248 L55.105251,37.330498 C57.473103,39.172188 55.620716,52.080426 55.448845,52.767926 57.592255,48.481034 59.865666,43.017998 61.448799,38.767788 62.972847,34.676209 63.890263,33.475937 65.698769,34.76775 68.828377,37.00322 66.151306,39.410153 65.448769,41.517815 67.839852,39.126698 70.298599,36.849659 73.198708,35.267754 81.533295,30.721533 80.042557,36.829968 78.948662,39.017792 93.870835,24.095345 89.108666,42.037598 87.948593,45.517853 85.057518,54.191235 81.183876,63.315083&#xa;74.698692,62.018021 74.241959,59.73431 74.196976,58.773152 74.948692,56.51796 75.565537,54.667389 76.418976,53.327339 77.198677,51.767914 78.787857,48.589501 82.198639,45.738674 82.198639,42.267823 77.793198,44.470578 76.121567,48.316189 72.948715,52.017918 67.617638,58.237606 69.105065,61.570126 62.948788,59.517994 62.464974,57.098881 63.060745,55.846165 63.448784,53.517933 61.911762,61.203171 57.989254,63.380162 53.44886,62.018021 46.351402,59.888748&#xa;46.691437,56.312847 47.448906,51.767914 42.212139,60.496022 41.262879,63.960865 32.949021,63.268029 28.895874,62.930264 29.049919,59.652588 29.62451,57.139275 L29.678667,56.91927 29.002535,57.901696 C28.056435,59.245919 27.044167,60.593617 25.948824,61.957135 20.309616,68.976975 17.131745,65.301003 15.242995,61.957135 12.571098,57.226738 12.693993,53.37014 12.693994,47.995606 11.723877,52.8261 10.392716,53.5826 6.5763771,54.849446 -0.77159055,57.288632 0.51071993,53.641732 0.20385728,50.28022 -0.67330869,40.671265 1.3334356,36.919846 5.1992723,29.267998 8.3319704,23.067284 11.610405,17.883534 15.242995,12.45719 17.248566,9.461283 18.227051,6.8515904&#xa;21.360613,5.6033528 30.088753,2.1265409 26.448288,6.2909997 25.948824,9.4110406 L26.713524,8.1418088 C24.472008,13.164358 20.836586,17.557715 17.792008,22.611021 14.714287,27.71933 8.3541109,35.023285 9.6351854,40.126389 10.853836,36.485562 13.502424,32.822624 15.865666,29.684667 21.566259,22.115328 22.365666,26.518001 23.532332,29.018001 27.2929,37.076361 15.199098,45.885981 20.198999,54.184668 25.220979,53.788214 28.44915,47.517994 29.949143,43.767994 32.611221,38.336529 35.869708,33.110656 38.365665,27.518001 41.444148,20.62007 45.066376,15.658819&#xa;45.066376,7.8879631 34.367119,4.3363054 45.392365,-0.045082063 47.677452,0.00035041895 z" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
-				<Path.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Path.RenderTransform>
-			</Path>
+		<Canvas x:Name="WarningL" Width="152" Height="104" Canvas.Top="88" Canvas.Left="408">
+			<Canvas Width="64" Height="32">
+				<Path Fill="#99202020" Stretch="Fill" Stroke="#CC000000" Width="64" Height="57.082" Data="M0.5,0.5 L63.5,0.5 63.5,31.5 55.4375,31.4375 54.916669,39.751001 59.416668,38.750999 62.000003,56.582003 57.333002,43.248843 53.999795,46.415803 48.530801,31.5 0.5,31.5 z"/>
+				<Rectangle Fill="#CC091116" Stroke="#FF2686C7" Width="60" Height="28" Canvas.Left="2" Canvas.Top="2"/>
+				<TextBlock Width="44.333" Height="16" FontFamily="Fonts/#kroeger 05_53" Foreground="#FF26C7B6" TextWrapping="Wrap" Canvas.Left="11" Canvas.Top="8"><Run Text="!!"/><Run Text="경고"/><Run Text="!!"/></TextBlock>
+			</Canvas>
+			<Canvas Width="152" Height="72" Canvas.Left="96" Canvas.Top="16">
+				<Rectangle Fill="#4C000000" Stroke="#CC000000" Width="104" Height="32" Canvas.Left="0" Canvas.Top="0"/>
+				<Rectangle Fill="#CC091116" Stroke="#FF2686C7" Width="100" Height="28" Canvas.Left="2" Canvas.Top="2"/>
+				<TextBlock Width="87.001" Height="16" FontFamily="Fonts/#kroeger 05_53" Foreground="#FF26C7B6" TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="8"><Run Text="!!"/><Run Text="적이 옵니다"/><Run Text="!!"/></TextBlock>
+			</Canvas>
 		</Canvas>
-		<Canvas x:Name="WarningR" Width="152" Height="104" Canvas.Top="72" Canvas.Left="440">
+		<Canvas x:Name="WarningR" Width="152" Height="104" Canvas.Top="72" Canvas.Left="440" d:IsHidden="True">
 			<Path x:Name="path14" Fill="Black" Stretch="Fill" Stroke="Black" Width="148.784" Height="100.75" Data="M355.33339,219.16667 C360.58339,222.20833 361,234.7182 361,247 361,257.44078 362.06032,261.95476 352,269.5 344.08629,275.43528 335.75759,278 325,278 319.56525,278 313.38802,277.04287 307.74774,277.04287 302.77256,277.04287 299.08342,276.41667 293.58108,276.62621 294.83108,278.29287 313.89601,285.30475 323.75,289 334.76098,293.12912 343.93867,298.30094 353.25,305.75 356.76456,308.56164 360.01913,311.51913&#xa;363.25,314.75 367.27988,318.77988 369.82009,322.98014 373,327.75 375.50236,331.50354 376.92797,335.4619 378,339.75 378.8093,342.98719 378.92188,350.92188 379,351 385.35113,343.06108 392.21945,339.76528 401.75,335 411.81823,329.96589 421.20111,326.13315 432.5,324.25 442.87494,322.52084 450.59131,323.91826 461,326 469.65782,327.73156 475.69743,330.03388 483,335.25 481.7826,329.16299&#xa;480.5,323.45947 480.5,316.75 480.5,308.0032 482.11386,302.15843 485,293.5 487.73726,285.28822 491.35129,277.64871 498,271 500.34466,268.65534 502.39802,266.73465 505,265 507.38721,263.40852 509.93628,263.15686 512.25,262 508.22715,258.98286 498.99901,257.74972 493.75,256.25 485.83319,253.98805 481.97545,250.59431 476.5,243.75 463.47331,227.46664 473.43752,221.65625 475.75,203.25&#xa;473.53127,206.65625 467.00002,212.53125 465.75,214 460.95365,219.63563 455.49647,224.85212 449,228.75 443.45268,232.07839 438.83584,234.65236 432.25,235.75 426.31966,236.73839 420.1731,238.19269 413.75,238 407.50004,237.8125 400.11377,237.87126 393.75,235.75 388.58583,234.02861 383.31237,232.13836 378,231 372.69455,229.86312 369.28123,228.02082 364.75,225 361.2737,222.68247 358.94757,218.97283&#xa;354.91673,218.16667 355.08339,218.33333 355.29173,218.79167 355.33339,219.16667 z" RenderTransformOrigin="0.5,0.5" Canvas.Top="-1" Canvas.Left="15" Visibility="Collapsed">
 				<Path.RenderTransform>
 					<TransformGroup>
@@ -1255,7 +884,7 @@
 				</Path.RenderTransform>
 			</Path>
 		</Canvas>
-		<Canvas x:Name="BossWarning" Width="200" Height="144" Canvas.Left="424" Canvas.Top="72">
+		<Canvas x:Name="BossWarning" Width="200" Height="144" Canvas.Left="424" Canvas.Top="72" d:IsHidden="True">
 			<Path x:Name="path8" Fill="Black" Stretch="Fill" Width="195.667" Height="114.667" Canvas.Left="2.333" Canvas.Top="18" Data="M341,131.66667 C338.82274,141.3866 335.24235,144.18792 325,150.33333 321.30029,152.55316 318.10598,155.28917 314,157 309.59876,158.83385 305.41267,161.66667 300.33333,161.66667 308.12037,169.45371 311.82625,173.8014 307.66667,187.66667 306.29057,192.25367 303.82935,196.67304 301.33333,200.66667 299.16567,204.13493 294.23502,207.29493 293,211 291.54851,211.5806 290.64577,212.43779 290.33333,214 295.96927,211.18203 306.61476,211.66667&#xa;313.33333,211.66667 322.56912,211.66667 330.89167,211.47292 339.66667,213.66667 348.51776,215.87944 355.12978,218.6112 363,223.33333 368.89724,226.87168 373.03047,230.06094 376.33333,236.66667 378.24351,233.8014 379.81107,231.47503 382.66667,229.33333 385.73305,227.03354 388.72606,225.44291 392.33333,224 395.81905,222.60571 399.16803,222.09973 403,221.33333 406.76778,220.57978 411.10223,220.55378 415,221.33333 422.9901,222.93135&#xa;429.543,223.92947 437,227 439.06022,227.84833 439,229.38993 439,224.33333 439,222.10592 439.64723,220.78326 440,218.66667 440.68787,214.53942 442.41605,210.83539 443.66667,206.66667 448.92447,189.14064 461.38723,189.15732 479.33333,181 482.4235,179.59538 488.71364,182.5991 484,176 481.8387,172.97418 479.33333,169.69933 479.33333,165.33333 479.33333,152.59783 477.57018,150.57309 486,139.33333&#xa;471.97062,144.00979 456.48828,144.2054 441,140.33333 434.35818,138.67288 428.30075,135.7642 421.66667,133 416.88152,131.00619 409.67046,128.01137 407.66667,122 403.99524,125.67143 401.09709,129.82154 397,133.33333 390.90184,138.56033 383.96146,139.15852 375.66667,140.66667 359.26451,143.64888 354.90316,138.00651 341,131.66667 z" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
 				<Path.RenderTransform>
 					<TransformGroup>
