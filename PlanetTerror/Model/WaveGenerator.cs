@@ -25,14 +25,16 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	프로퍼티
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		public enum EState { Wave, Bundle, Seq, WaveOver }
+		public EState State { get; protected set; }
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public double WaveTimeLeft { get; set; }
 		public double BundleTimeLeft { get; set; }
 		public double SeqTimeLeft { get; set; }
 
 		//===============================================================================================================================================
 		//	필드
-		enum EState { Wave, Bundle, Seq, WaveOver }
-		EState state;
 		int curWaveIndex;
 		Setting.Wave curWave;
 		int curBundleIndex;
@@ -60,7 +62,7 @@ namespace PlanetTerror
 		{
 			while( true )
 			{
-				switch( state )
+				switch( State )
 				{
 				case EState.Wave:
 					WaveTimeLeft -= delta;
@@ -70,7 +72,7 @@ namespace PlanetTerror
 						WaveTimeLeft = 0;
 
 						Debug.Assert( curWave.bundles.Count > 0 );
-						state = EState.Bundle;
+						State = EState.Bundle;
 						curBundleIndex = 0;
 						curBundle = curWave.bundles[curBundleIndex];
 						BundleTimeLeft = curBundle.waitTime;
@@ -85,7 +87,7 @@ namespace PlanetTerror
 						BundleTimeLeft = 0;
 
 						Debug.Assert(curBundle.count > 0);
-						state = EState.Seq;
+						State = EState.Seq;
 						curSeqIndex = 0;
 						SeqTimeLeft = curBundle.interval;
 						Create();
@@ -110,7 +112,7 @@ namespace PlanetTerror
 							curBundleIndex++;
 							if( curBundleIndex < curWave.bundles.Count )
 							{
-								state = EState.Bundle;
+								State = EState.Bundle;
 								curBundle = curWave.bundles[curBundleIndex];
 								BundleTimeLeft = curBundle.waitTime;
 							}
@@ -135,11 +137,11 @@ namespace PlanetTerror
 
 			if( curWaveIndex >= Game.Setting.waves.Count)
 			{
-				state = EState.WaveOver;
+				State = EState.WaveOver;
 				return;
 			}
 
-			state = EState.Wave;
+			State = EState.Wave;
 			curWave = Game.Setting.waves[curWaveIndex];
 			WaveTimeLeft = curWave.waitTime;
 		}
