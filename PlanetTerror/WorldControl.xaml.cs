@@ -57,7 +57,22 @@ namespace PlanetTerror
 			}
 			projectiles = new List<Projectile3>();
 
-			PreparePath();		
+			PreparePath();
+
+			Loaded += new RoutedEventHandler(WorldControl_Loaded);
+		}
+
+		//===============================================================================================================================================
+		//	핸들러
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void WorldControl_Loaded(object sender, RoutedEventArgs e)
+		{
+			//위에서부터 아래로 깊이 설정
+			towers.Sort((a, b) => (int)(Canvas.GetTop(a) - Canvas.GetTop(b)));
+			for( int i = 0; i < towers.Count; ++i )
+			{
+				towers[i].SetZIndex((int)ELayer.Tower + i);
+			}
 		}
 
 		//===============================================================================================================================================
