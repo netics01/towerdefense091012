@@ -56,6 +56,7 @@ namespace PlanetTerror
 		VSM vsm;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		List<Storyboard> effectStories;
+		Storyboard notYetBuiltStory;
 		Storyboard labStory;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -77,8 +78,10 @@ namespace PlanetTerror
 				effectStories[i].RepeatForever();
 			}
 
+			notYetBuiltStory = Resources.FindStoryboard("NotYetBuilt_Storyboard");
+			notYetBuiltStory.RepeatForever();
 			labStory = Resources.FindStoryboard("Lab_Tower_Storyboard");
-			labStory.RepeatForever();
+			labStory.RepeatForever();			
 
 			Loaded += new RoutedEventHandler(Tower_Loaded);
 			MouseEnter += new MouseEventHandler(Tower_MouseEnter);
@@ -162,6 +165,7 @@ namespace PlanetTerror
 			{
 				return;
 			}
+			notYetBuiltStory.Stop();
 			vsm.SetState(TOWER_BUILT_STATE);
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 		}
@@ -188,6 +192,18 @@ namespace PlanetTerror
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void Menu_Lab_Button_Click(object sender, RoutedEventArgs e)
+		{
+			int gold = Game.Setting.tower.labCost;
+			if( !Game.UI.SpendGold(gold) )
+			{
+				return;
+			}
+			notYetBuiltStory.Stop();
+			vsm.SetState(LAB_BUILT_STATE);
+			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void GoldGain_Storyboard_Completed(object sender, EventArgs e)
 		{
 			vsm.SetState(GOLD_GROUP, GOLD_NORMAL_STATE);
@@ -207,6 +223,10 @@ namespace PlanetTerror
 			switch( vsm.GetState() )
 			{
 			case NOTYETBUILT_STATE:
+				if( vsm.GetStateJustFinished() )
+				{
+					notYetBuiltStory.Begin();
+				}
 				break;
 			case TOWER_BUILT_STATE:
 				if( !vsm.GetStateFinished() ) { return; }
@@ -247,6 +267,7 @@ namespace PlanetTerror
 				{
 					labStory.Begin();
 				}
+				break;
 			case LAB_DISMANTLE_STATE:
 				if( vsm.GetStateFinished() )
 				{
