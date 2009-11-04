@@ -581,9 +581,6 @@
 		<EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image">
 			<BeginStoryboard Storyboard="{StaticResource CoreIcon_OnMouseLeave}"/>
 		</EventTrigger>
-		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
-			<BeginStoryboard Storyboard="{StaticResource NoMoney_Storyboard}"/>
-		</EventTrigger>
 	</UserControl.Triggers>
 
 	<Canvas x:Name="LayoutRoot" Height="60" Width="1024">
