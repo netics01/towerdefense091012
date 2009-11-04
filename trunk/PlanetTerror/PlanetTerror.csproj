@@ -89,6 +89,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Projectile0.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Core.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -171,6 +175,9 @@
     </Compile>
     <Compile Include="Boss3.xaml.cs">
       <DependentUpon>Boss3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Projectile0.xaml.cs">
+      <DependentUpon>Projectile0.xaml</DependentUpon>
     </Compile>
     <Compile Include="Core.xaml.cs">
       <DependentUpon>Core.xaml</DependentUpon>
@@ -291,12 +298,6 @@
       <All>True</All>
       <AutoFill>True</AutoFill>
     </BlendEmbeddedFont>
-    <Resource Include="Cutscene\CutsceneResources\img_Ending_art01.jpg" />
-    <Resource Include="Cutscene\CutsceneResources\img_Ending_art02.jpg" />
-    <Resource Include="Cutscene\CutsceneResources\img_Ending_art03.jpg" />
-    <Resource Include="Cutscene\CutsceneResources\img_Ending_art04.jpg" />
-    <Resource Include="Cutscene\CutsceneResources\img_Ending_art05.jpg" />
-    <Resource Include="Cutscene\CutsceneResources\img_Ending_art06.jpg" />
     <Resource Include="Cutscene\CutsceneResources\img_Opening_paper01.jpg" />
     <Resource Include="Cutscene\CutsceneResources\img_Opening_Poster01.jpg" />
     <Resource Include="Cutscene\CutsceneResources\img_Opening_Poster02.jpg" />
