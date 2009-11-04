@@ -11,6 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Media.Animation;
+using System.Diagnostics;
 
 using PlanetTerror.Util;
 
@@ -206,7 +207,11 @@ namespace PlanetTerror
 				if( !vsm.GetStateFinished() ) { return; }
 				if( vsm.GetStateJustFinished() )
 				{
-//					effectStories[0].Begin();
+					effectStories[0].Begin();
+// 
+// 					var st = effectStories[0].GetCurrentState();
+// 					Debug.Print("{0}", st.ToString());
+// 
 				}
 				if( cooldownTime > 0 )
 				{

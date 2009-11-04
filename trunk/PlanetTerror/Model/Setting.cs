@@ -77,6 +77,10 @@ namespace PlanetTerror
 		//	필드
 		public const int VERSION = 9;
 
+		public int version;
+		public int startGold;
+		public double powerMax;
+
 		public class Gold
 		{
 			public double interval;
@@ -123,10 +127,6 @@ namespace PlanetTerror
 		public Enemy enemy1;
 		public Enemy enemy2;
 		public Enemy enemy3;
-
-		public int version;
-		public int startGold;
-		public double powerMax;
 
 		public class Wave
 		{
@@ -184,13 +184,13 @@ namespace PlanetTerror
 		public void SetDefault()
 		{
 			version = VERSION;
-			startGold = 1000;
+			startGold = 500;
 			powerMax = 100;
 
 			gold.interval = 15;
 			gold.mineGold = 5;
 			gold.labGold = -5;
-			gold.labPower = 1.5;
+			gold.labPower = 2.5;
 
 			tower.towerCost = 50;
 			tower.labCost = 200;
@@ -206,27 +206,39 @@ namespace PlanetTerror
 
 			proj1.speed = 20;
 
-			enemy1.routeTime = 20;
-			enemy1.hitPoint = 50;
-			enemy1.damage = 5;
+			enemy1.routeTime = 25;
+			enemy1.hitPoint = 20;
+			enemy1.damage = 2;
 			enemy1.gold = 0;
-			enemy1.powerUp = 0;
+			enemy1.powerUp = 0.5;
 
-			enemy2.routeTime = 20;
-			enemy2.hitPoint = 50;
+			enemy2.routeTime = 50;
+			enemy2.hitPoint = 100;
 			enemy2.damage = 5;
 			enemy2.gold = 0;
-			enemy2.powerUp = 2;
+			enemy2.powerUp = 1;
 
-			enemy3.routeTime = 20;
-			enemy3.hitPoint = 50;
+			enemy3.routeTime = 10;
+			enemy3.hitPoint = 70;
 			enemy2.damage = 5;
 			enemy3.gold = 0;
 			enemy3.powerUp = 2;
 
+			var wave = new Wave();
+			wave.waitTime = 34;
+			wave.bundles = new List<Wave.Bundle>();
+			var bundle = new Wave.Bundle();
+			bundle.waitTime = 0.1;
+			bundle.typeName = "Enemy1";
+			bundle.pathIndex = 2;
+			bundle.count = 5;
+			bundle.interval = 0.5;
+			wave.bundles.Add(bundle);
+			waves.Add(wave);
+
 			for( int i = 0; i < 3; ++i )
 			{
-				var wave = new Wave();
+				wave = new Wave();
 				wave.waitTime = 5.0;
 				wave.bundles = new List<Wave.Bundle>();
 				for( int j = 0; j < 3; ++j )
