@@ -513,6 +513,66 @@
 				</Trigger>
 			</Style.Triggers>
 		</Style>
+		<Storyboard x:Key="NoMoney_Storyboard">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="NoMoney" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.02"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.02"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-48"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.02"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-48.49"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.051"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="28"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-3.25"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-0.25"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.051"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="40.814"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-3.25"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-0.25"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.051"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="40.814"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-3.25"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-0.25"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
 	</UserControl.Resources>
 	<UserControl.Triggers>
 		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image">
@@ -520,6 +580,9 @@
 		</EventTrigger>
 		<EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image">
 			<BeginStoryboard Storyboard="{StaticResource CoreIcon_OnMouseLeave}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource NoMoney_Storyboard}"/>
 		</EventTrigger>
 	</UserControl.Triggers>
 
@@ -832,7 +895,7 @@
 		</Grid>
 		<Canvas x:Name="WarningL" Width="152" Height="104" Canvas.Top="88" Canvas.Left="408">
 			<Canvas Width="64" Height="32">
-				<Path Fill="#99202020" Stretch="Fill" Stroke="#CC000000" Width="64" Height="57.082" Data="M0.5,0.5 L63.5,0.5 63.5,31.5 55.4375,31.4375 54.916669,39.751001 59.416668,38.750999 62.000003,56.582003 57.333002,43.248843 53.999795,46.415803 48.530801,31.5 0.5,31.5 z"/>
+				<Path Fill="#CC202020" Stretch="Fill" Stroke="#CC000000" Width="64" Height="57.082" Data="M0.5,0.5 L63.5,0.5 63.5,31.5 55.4375,31.4375 54.916669,39.751001 59.416668,38.750999 62.000003,56.582003 57.333002,43.248843 53.999795,46.415803 48.530801,31.5 0.5,31.5 z"/>
 				<Rectangle Fill="#CC091116" Stroke="#FF2686C7" Width="60" Height="28" Canvas.Left="2" Canvas.Top="2"/>
 				<TextBlock Width="44.333" Height="16" FontFamily="Fonts/#kroeger 05_53" Foreground="#FF26C7B6" TextWrapping="Wrap" Canvas.Left="11" Canvas.Top="8"><Run Text="!!"/><Run Text="경고"/><Run Text="!!"/></TextBlock>
 			</Canvas>
@@ -1117,5 +1180,38 @@
 				</Style>
 			</Button.Resources>
 		</Button>
+		<Canvas x:Name="NoMoney" Width="152" Height="104" Canvas.Top="-32" Canvas.Left="723.5" Visibility="Collapsed" IsHitTestVisible="False">
+			<Canvas Width="64" Height="32">
+				<Path x:Name="path4" Fill="#CC202020" Stretch="Fill" Stroke="#CC000000" Width="98" Height="59" Data="M0.5,0.5 L63.5,0.5 63.5,31.5 55.4375,31.4375 54.916669,39.751001 59.416668,38.750999 62.000003,56.582003 57.333002,43.248843 53.999795,46.415803 48.530801,31.5 0.5,31.5 z" RenderTransformOrigin="0.5,0.5">
+					<Path.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="-1" ScaleY="1"/>
+							<SkewTransform AngleX="0" AngleY="0"/>
+							<RotateTransform Angle="0"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Path.RenderTransform>
+				</Path>
+				<Rectangle x:Name="rectangle" Fill="#CC091116" Stroke="#FF2686C7" Width="94" Height="28" Canvas.Left="2" Canvas.Top="2" RenderTransformOrigin="0.5,0.5">
+					<Rectangle.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Rectangle.RenderTransform>
+				</Rectangle>
+				<TextBlock x:Name="textBlock" Width="77" Height="16" FontFamily="Fonts/#kroeger 05_53" Foreground="#FF26C7B6" TextWrapping="Wrap" Canvas.Left="11" Canvas.Top="8" RenderTransformOrigin="0.5,0.5">
+					<TextBlock.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</TextBlock.RenderTransform><Run Text="!!"/><Run Text="돈이 없어!!"/></TextBlock>
+			</Canvas>
+		</Canvas>
 	</Canvas>
 </UserControl>
