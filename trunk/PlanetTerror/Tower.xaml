@@ -1974,6 +1974,15 @@
 						<TranslateTransform/>
 					</TransformGroup>
 				</Canvas.RenderTransform>
+				<Ellipse x:Name="Projectile_0" Stroke="{x:Null}" Visibility="Collapsed" IsHitTestVisible="False" Width="302.81" Height="205.91" Opacity="0" Canvas.Left="-0.59" Canvas.Top="49.092">
+					<Ellipse.Fill>
+						<RadialGradientBrush>
+							<GradientStop Color="#66FF3737" Offset="1"/>
+							<GradientStop/>
+							<GradientStop Color="#0BFF8003" Offset="0.529"/>
+						</RadialGradientBrush>
+					</Ellipse.Fill>
+				</Ellipse>
 				<Canvas x:Name="canvas" Width="301" Height="301" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
 					<Canvas.RenderTransform>
 						<TransformGroup>
@@ -1994,14 +2003,6 @@
 						</Image.RenderTransform>
 					</Image>
 				</Canvas>
-				<Ellipse x:Name="Projectile_0" Stroke="{x:Null}" Visibility="Collapsed" IsHitTestVisible="False" Width="302.81" Height="205.91" Opacity="0" Canvas.Left="-0.59" Canvas.Top="49.092">
-					<Ellipse.Fill>
-						<RadialGradientBrush>
-							<GradientStop Color="#66000000" Offset="1"/>
-							<GradientStop Color="#00FF6262"/>
-						</RadialGradientBrush>
-					</Ellipse.Fill>
-				</Ellipse>
 			</Canvas>
 			<Rectangle x:Name="rectangle" Stroke="Black" Width="55.5" Height="33" Canvas.Left="-70.792" Canvas.Top="49.083" RadiusX="9.417" RadiusY="9.417" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#B206A6FF" Visibility="Collapsed">
 				<Rectangle.RenderTransform>
