@@ -186,7 +186,7 @@
 				</Setter.Value>
 			</Setter>
 		</Style>
-		<Storyboard x:Key="Research_Tower_Storyboard">
+		<Storyboard x:Key="Lab_Tower_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="turrettower" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
 			</ObjectAnimationUsingKeyFrames>
@@ -543,15 +543,15 @@
 							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
 						</DoubleAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_BuildResearch_Button_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Menu_Lab_Button" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_BuildResearch_Button_Copy" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_Lab_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="56.833"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="28.833"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="32.833"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_BuildResearch_Button_Copy" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Duration="00:00:00.0010000">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_Lab_Button" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Duration="00:00:00.0010000">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.667"/>
 						</DoubleAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -565,7 +565,7 @@
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.5"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_BuildResearch_Button_Copy" Storyboard.TargetProperty="(UIElement.Opacity)">
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_Lab_Button" Storyboard.TargetProperty="(UIElement.Opacity)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
@@ -1609,7 +1609,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_BuildResearch_Button_Copy" Width="80" Height="14" Content="{DynamicResource Menu_Build_Button}" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FF552D1A" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
+			<Button x:Name="Menu_Lab_Button" Width="80" Height="14" Content="{DynamicResource Menu_Build_Button}" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="#FF552D1A" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 						<Setter Property="Template">
