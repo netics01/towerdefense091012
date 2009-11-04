@@ -42,13 +42,13 @@
 		<local:Tower Canvas.Left="807" Canvas.Top="91.5" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="725.5" Canvas.Top="222.5" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="808.5" Canvas.Top="203" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="941" Canvas.Top="135.5" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="903" Canvas.Top="127.5" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="907.333" Canvas.Top="303" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="759" Canvas.Top="-4.5" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="860" Canvas.Top="18" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="79.167" Canvas.Top="194.5" Panel.ZIndex="10"/>
 		<local:Boss1 x:Name="testBoss1" Width="50" Height="50" Canvas.Left="0" Canvas.Top="0" Panel.ZIndex="200"/>
-		<local:Core x:Name="core" Width="176" Height="128" Canvas.Left="421" Canvas.Top="488" Panel.ZIndex="105" RenderTransformOrigin="0.227,0.333"/>
+		<local:Core x:Name="core" Width="176" Height="128" Canvas.Left="423" Canvas.Top="478" Panel.ZIndex="105" RenderTransformOrigin="0.227,0.333"/>
 		<Image Width="1024" Height="720" Source="Resources/Field/backgroundImage.png" Stretch="Fill" Panel.ZIndex="-2000"/>
 		<Image Width="1024" Height="720" Stretch="Fill" Panel.ZIndex="5" Source="Resources/Field/roofImage.png"/>
 		<Path x:Name="route1_Path" Stretch="Fill" Stroke="#FF59FF00" Width="544.5" Height="689" Canvas.Left="-16" Canvas.Top="-40.5" Data="M-16,64 L95.5,15.5 215.5,-8.5 367.5,-40.5 527.5,-40.5 527.5,47.5 447.5,47.5 383.5,55.5 407.5,207.5 303.5,223.5 207.5,247.5 143.5,279.5 199.5,359.5 283.80899,318.50562 386.93258,294.70787 495.5,287.5 503.05353,478.76448 349.73814,503.78756 255.5,559.5 231.5,639.5 423.5,647.5"/>
