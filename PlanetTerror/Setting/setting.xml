@@ -49,6 +49,19 @@
   <startGold>500</startGold>
   <powerMax>100</powerMax>
   <waves>
+      <Wave>
+      <waitTime>5</waitTime>
+      <bundles>
+        <Bundle>
+          <waitTime>0.1</waitTime>
+          <typeName>Enemy2</typeName>
+          <pathIndex>1</pathIndex>
+          <count>5</count>
+          <interval>5</interval>
+        </Bundle>
+      </bundles>
+    </Wave>
+
     <Wave>
       <waitTime>34</waitTime>
       <bundles>
@@ -57,7 +70,7 @@
           <typeName>Enemy1</typeName>
           <pathIndex>2</pathIndex>
           <count>5</count>
-          <interval>0.5</interval>
+          <interval>0.2</interval>
         </Bundle>
     </Wave>
     <Wave>
@@ -68,21 +81,21 @@
           <typeName>Enemy3</typeName>
           <pathIndex>0</pathIndex>
           <count>5</count>
-          <interval>1.5</interval>
+          <interval>0.2</interval>
         </Bundle>
         <Bundle>
           <waitTime>0.1</waitTime>
           <typeName>Enemy1</typeName>
           <pathIndex>2</pathIndex>
           <count>5</count>
-          <interval>1.5</interval>
+          <interval>0.2</interval>
         </Bundle>
         <Bundle>
           <waitTime>0.1</waitTime>
           <typeName>Enemy3</typeName>
           <pathIndex>1</pathIndex>
           <count>5</count>
-          <interval>1.5</interval>
+          <interval>0.2</interval>
         </Bundle>
       </bundles>
     </Wave>
@@ -94,7 +107,7 @@
           <typeName>Enemy1</typeName>
           <pathIndex>1</pathIndex>
           <count>5</count>
-          <interval>1.5</interval>
+          <interval>0.5</interval>
         </Bundle>
         <Bundle>
           <waitTime>0.1</waitTime>
@@ -108,7 +121,7 @@
           <typeName>Enemy3</typeName>
           <pathIndex>1</pathIndex>
           <count>5</count>
-          <interval>1.5</interval>
+          <interval>0.5</interval>
         </Bundle>
       </bundles>
     </Wave>
