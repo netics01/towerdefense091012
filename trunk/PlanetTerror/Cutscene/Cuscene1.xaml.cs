@@ -15,7 +15,7 @@ namespace PlanetTerror
 	/// <summary>
 	/// Interaction logic for Cuscene1.xaml
 	/// </summary>
-	public partial class Cuscene1 : Window
+	public partial class Cuscene1 : UserControl
 	{
 		public Cuscene1()
 		{
