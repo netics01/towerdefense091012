@@ -6,13 +6,30 @@
 	mc:Ignorable="d"
 	x:Class="PlanetTerror.boom"
 	x:Name="UserControl"
-	d:DesignWidth="640" d:DesignHeight="480" Width="200" Height="200">
+	d:DesignWidth="640" d:DesignHeight="480" Width="200" Height="200" IsVisibleChanged="UserControl_IsVisibleChanged">
 	<UserControl.Resources>
-		<Storyboard x:Key="Core_Boom0_Storyboard"/>
+		<Storyboard x:Key="Core_Boom0_Storyboard">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2.776"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="3.382"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.994"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="3.201"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="22"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="29.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="14"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="31"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
 	</UserControl.Resources>
 
-	<Grid x:Name="LayoutRoot">
-		<Ellipse x:Name="ellipse1" Fill="Black" Width="31.604" Height="35.928" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Margin="24.396,-0.667,0,0" VerticalAlignment="Top">
+	<Canvas x:Name="LayoutRoot">
+		<Ellipse x:Name="ellipse1" Fill="Black" Width="31.604" Height="35.928" RenderTransformOrigin="0.5,0.5" Canvas.Left="24.396" Canvas.Top="-0.667">
 			<Ellipse.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -22,7 +39,7 @@
 				</TransformGroup>
 			</Ellipse.RenderTransform>
 		</Ellipse>
-		<Ellipse x:Name="ellipse2" Fill="#FFFF9E2C" Width="23.63" Height="26.866" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Margin="26.391,6.453,0,0" VerticalAlignment="Top">
+		<Ellipse x:Name="ellipse2" Fill="#FFFF9E2C" Width="23.63" Height="26.866" RenderTransformOrigin="0.5,0.5" Canvas.Left="26.391" Canvas.Top="6.453">
 			<Ellipse.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -32,7 +49,7 @@
 				</TransformGroup>
 			</Ellipse.RenderTransform>
 		</Ellipse>
-		<Ellipse x:Name="ellipse3" Fill="Black" Width="24.771" Height="28.16" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Margin="4.75,15.192,0,0" VerticalAlignment="Top">
+		<Ellipse x:Name="ellipse3" Fill="Black" Width="24.771" Height="28.16" RenderTransformOrigin="0.5,0.5" Canvas.Left="4.75" Canvas.Top="15.192">
 			<Ellipse.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -42,7 +59,7 @@
 				</TransformGroup>
 			</Ellipse.RenderTransform>
 		</Ellipse>
-		<Ellipse x:Name="ellipse4" Fill="#FFFFC52C" Width="16.796" Height="20.392" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Margin="10.733,20.369,0,0" VerticalAlignment="Top">
+		<Ellipse x:Name="ellipse4" Fill="#FFFFC52C" Width="16.796" Height="20.392" RenderTransformOrigin="0.5,0.5" Canvas.Left="10.733" Canvas.Top="20.369">
 			<Ellipse.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -52,7 +69,7 @@
 				</TransformGroup>
 			</Ellipse.RenderTransform>
 		</Ellipse>
-		<Ellipse x:Name="ellipse5" Fill="Black" Width="19.646" Height="22.334" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Margin="21.543,26.84,0,0" VerticalAlignment="Top">
+		<Ellipse x:Name="ellipse5" Fill="Black" Width="19.646" Height="22.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="21.543" Canvas.Top="26.84">
 			<Ellipse.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -62,7 +79,7 @@
 				</TransformGroup>
 			</Ellipse.RenderTransform>
 		</Ellipse>
-		<Ellipse x:Name="ellipse6" Fill="#FFFFC326" Width="14.804" Height="16.185" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Margin="22.691,28.786,0,0" VerticalAlignment="Top">
+		<Ellipse x:Name="ellipse6" Fill="#FFFFC326" Width="14.804" Height="16.185" RenderTransformOrigin="0.5,0.5" Canvas.Left="22.691" Canvas.Top="28.786">
 			<Ellipse.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -72,5 +89,5 @@
 				</TransformGroup>
 			</Ellipse.RenderTransform>
 		</Ellipse>
-	</Grid>
+	</Canvas>
 </UserControl>

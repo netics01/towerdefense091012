@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Media.Animation;
 
 namespace PlanetTerror
 {
@@ -18,9 +19,18 @@ namespace PlanetTerror
 	/// </summary>
 	public partial class boom : UserControl
 	{
+		Storyboard story;
+		
 		public boom()
 		{
 			this.InitializeComponent();
+			
+			story = (Storyboard)Resources.FindName("Core_Boom0_Storyboard");
+		}
+
+		private void UserControl_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+		{
+			story.Begin();
 		}
 	}
 }
