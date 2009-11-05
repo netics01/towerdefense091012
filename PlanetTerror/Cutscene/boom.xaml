@@ -4,9 +4,9 @@
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	mc:Ignorable="d"
-	x:Class="PlanetTerror.boom"
+	x:Class="PlanetTerror.Boom"
 	x:Name="UserControl"
-	d:DesignWidth="640" d:DesignHeight="480" Width="200" Height="200" IsVisibleChanged="UserControl_IsVisibleChanged">
+	d:DesignWidth="640" d:DesignHeight="480" Width="200" Height="200">
 	<UserControl.Resources>
 		<Storyboard x:Key="Core_Boom0_Storyboard">
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
