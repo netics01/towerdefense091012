@@ -89,6 +89,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Cutscene\boom.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Projectile0.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -175,6 +179,9 @@
     </Compile>
     <Compile Include="Boss3.xaml.cs">
       <DependentUpon>Boss3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cutscene\boom.xaml.cs">
+      <DependentUpon>boom.xaml</DependentUpon>
     </Compile>
     <Compile Include="Projectile0.xaml.cs">
       <DependentUpon>Projectile0.xaml</DependentUpon>
