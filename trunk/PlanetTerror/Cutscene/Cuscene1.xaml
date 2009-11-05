@@ -549,7 +549,7 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<local:boom x:Name="boom" Width="100" Height="89" Canvas.Left="-138" Canvas.Top="749" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+		<local:Boom x:Name="boom" Width="100" Height="89" Canvas.Left="-138" Canvas.Top="749" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
 			<local:boom.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -558,6 +558,6 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</local:boom.RenderTransform>
-		</local:boom>
+		</local:Boom>
 	</Canvas>
 </UserControl>

@@ -17,18 +17,20 @@ namespace PlanetTerror
 	/// <summary>
 	/// Interaction logic for boom.xaml
 	/// </summary>
-	public partial class boom : UserControl
+	public partial class Boom : UserControl
 	{
 		Storyboard story;
 		
-		public boom()
+		public Boom()
 		{
 			this.InitializeComponent();
 			
 			story = Resources["Core_Boom0_Storyboard"] as Storyboard;
+
+			IsVisibleChanged += new DependencyPropertyChangedEventHandler(boom_IsVisibleChanged);
 		}
 
-		private void UserControl_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+		void boom_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
 		{
 			story.Begin();
 		}
