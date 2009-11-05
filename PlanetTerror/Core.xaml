@@ -20653,7 +20653,7 @@
 		</EventTrigger>
 	</UserControl.Triggers>
 
-	<Canvas x:Name="LayoutRoot" Margin="0,0,56,64">
+	<Canvas x:Name="LayoutRoot" Margin="0,0,56,64" IsHitTestVisible="False" IsEnabled="False">
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="Core_StateGroup">
 				<VisualStateGroup.Transitions>
