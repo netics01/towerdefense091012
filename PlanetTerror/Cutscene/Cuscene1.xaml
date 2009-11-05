@@ -6,7 +6,44 @@
 	x:Class="PlanetTerror.Cuscene1"
 	x:Name="Window"
 	Title="Cuscene1"
-	Width="1024" Height="720" mc:Ignorable="d">
+	Width="1024" Height="720" mc:Ignorable="d" Background="{x:Null}" Foreground="{x:Null}">
+	<Window.Resources>
+		<Storyboard x:Key="Test_Boom_Storyboard">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:02" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="4.508"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="3.447"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.08"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="-2.879"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="5.059"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="3.868"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="8"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="4.725"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</Window.Resources>
+	<Window.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource Test_Boom_Storyboard}"/>
+		</EventTrigger>
+	</Window.Triggers>
 
 	<Canvas x:Name="LayoutRoot" Width="1024" Height="720">
 		<VisualStateManager.CustomVisualStateManager>
@@ -171,7 +208,7 @@
 				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Canvas x:Name="GameStart" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" d:IsHidden="True">
+		<Canvas x:Name="GameStart" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Visibility="Collapsed">
 			<Image Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Title.jpg" Stretch="Fill"/>
 			<TextBlock Width="976" Height="184" Canvas.Left="16" Canvas.Top="16" FontFamily="아리따B" FontSize="133.333" FontWeight="Bold" Text="Planet Terror" TextWrapping="Wrap"/>
 			<Button x:Name="Menu_Start" Style="{DynamicResource menu_Start}" Width="400" Height="40" Content="게임 시작" FontFamily="아리따B" FontSize="21.333" FontWeight="Bold" Foreground="#FFF4C685" Canvas.Left="328" Canvas.Top="603" BorderBrush="{x:Null}">
@@ -289,7 +326,7 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="Opening" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="Black" d:IsHidden="True">
+		<Canvas x:Name="Opening" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="Black" Visibility="Collapsed">
 			<Canvas x:Name="TV" Width="1024" Height="720">
 				<Image Width="650" Height="493" Canvas.Left="78" Canvas.Top="104" Source="CutsceneResources/img_Opening_TV01.jpg" Stretch="Fill"/>
 				<Image Width="650" Height="493" Canvas.Left="72" Canvas.Top="88" Source="CutsceneResources/img_Opening_TV02.jpg" Stretch="Fill"/>
@@ -349,7 +386,7 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="GameOver" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="#FF0C0C0C" d:IsHidden="True">
+		<Canvas x:Name="GameOver" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="#FF0C0C0C" Visibility="Collapsed">
 			<TextBlock Width="584" Height="80" Canvas.Left="256" Canvas.Top="280" FontFamily="아리따B" FontSize="64" Foreground="#FFBB3131" TextWrapping="Wrap"><Run Text="Core"/><Run Text=" is"/><Run Text=" Dismantle"/><Run Text="..."/></TextBlock>
 			<Button x:Name="Menu_ReStart" Style="{DynamicResource ReStart}" Width="176" Height="40" Content="타이틀 화면으로" Canvas.Left="448" Canvas.Top="416" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" Foreground="#FF9B2727">
 				<Button.Resources>
@@ -395,7 +432,7 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="Ending" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0">
+		<Canvas x:Name="Ending" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Visibility="Collapsed">
 			<Canvas.Background>
 				<RadialGradientBrush>
 					<RadialGradientBrush.RelativeTransform>
@@ -532,6 +569,76 @@
 					</Style>
 				</Button.Resources>
 			</Button>
+		</Canvas>
+		<Canvas x:Name="canvas" Width="51.25" Height="49.841" Canvas.Left="4.75" Canvas.Top="-0.667" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+			<Canvas.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Canvas.RenderTransform>
+			<Ellipse x:Name="ellipse1_Copy" Fill="Black" Width="31.604" Height="35.928" RenderTransformOrigin="0.5,0.5" Canvas.Left="19.646">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+			</Ellipse>
+			<Ellipse x:Name="ellipse2_Copy" Fill="#FFFF9E2C" Width="23.63" Height="26.866" RenderTransformOrigin="0.5,0.5" Canvas.Left="21.641" Canvas.Top="7.12">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+			</Ellipse>
+			<Ellipse x:Name="ellipse3_Copy" Fill="Black" Width="24.771" Height="28.16" RenderTransformOrigin="0.5,0.5" Canvas.Top="15.859">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+			</Ellipse>
+			<Ellipse x:Name="ellipse4" Fill="#FFFFC52C" Width="16.796" Height="20.392" RenderTransformOrigin="0.5,0.5" Canvas.Left="5.983" Canvas.Top="21.036">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+			</Ellipse>
+			<Ellipse x:Name="ellipse5" Fill="Black" Width="19.646" Height="22.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="16.793" Canvas.Top="27.507">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+			</Ellipse>
+			<Ellipse x:Name="ellipse6" Fill="#FFFFC326" Width="14.804" Height="16.185" RenderTransformOrigin="0.5,0.5" Canvas.Left="17.941" Canvas.Top="29.453">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+			</Ellipse>
 		</Canvas>
 	</Canvas>
 </Window>
