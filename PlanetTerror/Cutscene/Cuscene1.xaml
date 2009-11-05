@@ -1,25 +1,19 @@
-﻿<Window
+﻿<UserControl
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:ic="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Luna" xmlns:Custom="http://schemas.microsoft.com/wpf/2008/toolkit"
+	mc:Ignorable="d" xmlns:local="clr-namespace:PlanetTerror"
 	x:Class="PlanetTerror.Cuscene1"
-	x:Name="Window"
-	Title="Cuscene1"
-	Width="1024" Height="720" mc:Ignorable="d" Background="{x:Null}" Foreground="{x:Null}">
-	<Window.Resources>
-		<Storyboard x:Key="Test_Boom_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="UserControl" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-		</Storyboard>
-	</Window.Resources>
-	<Window.Triggers>
+	Width="1024" Height="720" Background="{x:Null}" Foreground="{x:Null}">
+	<UserControl.Resources>
+		<Storyboard x:Key="Test_Boom_Storyboard"/>
+	</UserControl.Resources>
+	<UserControl.Triggers>
 		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
 			<BeginStoryboard Storyboard="{StaticResource Test_Boom_Storyboard}"/>
 		</EventTrigger>
-	</Window.Triggers>
+	</UserControl.Triggers>
 
 	<Canvas x:Name="LayoutRoot" Width="1024" Height="720">
 		<VisualStateManager.CustomVisualStateManager>
@@ -179,6 +173,15 @@
 							<SplineDoubleKeyFrame KeyTime="00:00:15.1000000" Value="1"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:15.5000000" Value="0.6"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:17.2000000" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="boom" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00.7000000" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="boom" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="320"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="boom" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-330"/>
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
@@ -546,72 +549,15 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<UserControl
-			x:Name="UserControl"
-			d:DesignWidth="640" d:DesignHeight="480" Width="200" Height="200" IsVisibleChanged="UserControl_IsVisibleChanged" Visibility="Collapsed">
-
-			<Canvas x:Name="LayoutRoot1">
-				<Ellipse x:Name="ellipse4" Fill="Black" Width="31.604" Height="35.928" RenderTransformOrigin="0.5,0.5" Canvas.Left="24.396" Canvas.Top="-0.667">
-					<Ellipse.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</Ellipse.RenderTransform>
-				</Ellipse>
-				<Ellipse x:Name="ellipse5" Fill="#FFFF9E2C" Width="23.63" Height="26.866" RenderTransformOrigin="0.5,0.5" Canvas.Left="26.391" Canvas.Top="6.453">
-					<Ellipse.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</Ellipse.RenderTransform>
-				</Ellipse>
-				<Ellipse x:Name="ellipse6" Fill="Black" Width="24.771" Height="28.16" RenderTransformOrigin="0.5,0.5" Canvas.Left="4.75" Canvas.Top="15.192">
-					<Ellipse.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</Ellipse.RenderTransform>
-				</Ellipse>
-				<Ellipse x:Name="ellipse7" Fill="#FFFFC52C" Width="16.796" Height="20.392" RenderTransformOrigin="0.5,0.5" Canvas.Left="10.733" Canvas.Top="20.369">
-					<Ellipse.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</Ellipse.RenderTransform>
-				</Ellipse>
-				<Ellipse x:Name="ellipse8" Fill="Black" Width="19.646" Height="22.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="21.543" Canvas.Top="26.84">
-					<Ellipse.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</Ellipse.RenderTransform>
-				</Ellipse>
-				<Ellipse x:Name="ellipse9" Fill="#FFFFC326" Width="14.804" Height="16.185" RenderTransformOrigin="0.5,0.5" Canvas.Left="22.691" Canvas.Top="28.786">
-					<Ellipse.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</Ellipse.RenderTransform>
-				</Ellipse>
-			</Canvas>
-		</UserControl>
+		<local:boom x:Name="boom" Width="100" Height="89" Canvas.Left="-138" Canvas.Top="749" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+			<local:boom.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</local:boom.RenderTransform>
+		</local:boom>
 	</Canvas>
-</Window>
+</UserControl>

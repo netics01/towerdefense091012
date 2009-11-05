@@ -25,7 +25,7 @@ namespace PlanetTerror
 		{
 			this.InitializeComponent();
 			
-			story = (Storyboard)Resources.FindName("Core_Boom0_Storyboard");
+			story = Resources["Core_Boom0_Storyboard"] as Storyboard;
 		}
 
 		private void UserControl_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
