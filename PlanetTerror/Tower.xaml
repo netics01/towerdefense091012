@@ -3403,10 +3403,10 @@
 					</Canvas.RenderTransform>
 					<Rectangle x:Name="rectangle1" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5">
 						<Rectangle.Stroke>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+							<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
 						</Rectangle.Stroke>
 						<Rectangle.Fill>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>
+							<SolidColorBrush Color="{DynamicResource FFFFFF}"/>
 						</Rectangle.Fill>
 						<Rectangle.RenderTransform>
 							<TransformGroup>
@@ -3419,10 +3419,10 @@
 					</Rectangle>
 					<Rectangle x:Name="rectangle1_Copy" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="44.667" Canvas.Top="5.5">
 						<Rectangle.Stroke>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+							<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
 						</Rectangle.Stroke>
 						<Rectangle.Fill>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>
+							<SolidColorBrush Color="{DynamicResource FFFFFF}"/>
 						</Rectangle.Fill>
 						<Rectangle.RenderTransform>
 							<TransformGroup>
@@ -3435,10 +3435,10 @@
 					</Rectangle>
 					<Rectangle x:Name="rectangle1_Copy1" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="11.5" Canvas.Top="-12.5">
 						<Rectangle.Stroke>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+							<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
 						</Rectangle.Stroke>
 						<Rectangle.Fill>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>
+							<SolidColorBrush Color="{DynamicResource FFFFFF}"/>
 						</Rectangle.Fill>
 						<Rectangle.RenderTransform>
 							<TransformGroup>
@@ -3451,10 +3451,10 @@
 					</Rectangle>
 					<Rectangle x:Name="rectangle1_Copy2" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="48.5" Canvas.Top="-4.833">
 						<Rectangle.Stroke>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+							<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
 						</Rectangle.Stroke>
 						<Rectangle.Fill>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>
+							<SolidColorBrush Color="{DynamicResource FFFFFF}"/>
 						</Rectangle.Fill>
 						<Rectangle.RenderTransform>
 							<TransformGroup>
@@ -3467,10 +3467,10 @@
 					</Rectangle>
 					<Rectangle x:Name="rectangle1_Copy3" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="28" Canvas.Top="-4">
 						<Rectangle.Stroke>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+							<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
 						</Rectangle.Stroke>
 						<Rectangle.Fill>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>
+							<SolidColorBrush Color="{DynamicResource FFFFFF}"/>
 						</Rectangle.Fill>
 						<Rectangle.RenderTransform>
 							<TransformGroup>
@@ -3483,10 +3483,10 @@
 					</Rectangle>
 					<Rectangle x:Name="rectangle1_Copy4" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="48" Canvas.Top="5.167">
 						<Rectangle.Stroke>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+							<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
 						</Rectangle.Stroke>
 						<Rectangle.Fill>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>
+							<SolidColorBrush Color="{DynamicResource FFFFFF}"/>
 						</Rectangle.Fill>
 						<Rectangle.RenderTransform>
 							<TransformGroup>
@@ -3499,10 +3499,10 @@
 					</Rectangle>
 					<Rectangle x:Name="rectangle1_Copy5" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="5" Canvas.Top="3.333">
 						<Rectangle.Stroke>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+							<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
 						</Rectangle.Stroke>
 						<Rectangle.Fill>
-							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>
+							<SolidColorBrush Color="{DynamicResource FFFFFF}"/>
 						</Rectangle.Fill>
 						<Rectangle.RenderTransform>
 							<TransformGroup>
@@ -3587,7 +3587,7 @@
 			<Canvas x:Name="piston" Width="39.334" Height="8.333" Canvas.Left="22.001" Canvas.Top="43.999">
 				<Rectangle x:Name="rectangle_Copy3" Width="26.334" Height="6.126" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="24.395" Canvas.Top="-9.396" Fill="{DynamicResource Tower_Piston001}">
 					<Rectangle.Stroke>
-						<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+						<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
 					</Rectangle.Stroke>
 					<Rectangle.RenderTransform>
 						<TransformGroup>
@@ -3600,7 +3600,7 @@
 				</Rectangle>
 				<Rectangle x:Name="rectangle_Copy" Width="26.334" Height="8" Canvas.Left="13" Canvas.Top="0.333" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5" Fill="{DynamicResource Tower_Piston001}">
 					<Rectangle.Stroke>
-						<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
+						<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
 					</Rectangle.Stroke>
 					<Rectangle.RenderTransform>
 						<TransformGroup>
@@ -3613,7 +3613,7 @@
 				</Rectangle>
 				<Rectangle x:Name="rectangle_Copy1" Width="26.334" Height="8" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5" Fill="{DynamicResource Tower_Piston001}">
 					<Rectangle.Stroke>
-						<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
+						<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
 					</Rectangle.Stroke>
 					<Rectangle.RenderTransform>
 						<TransformGroup>
@@ -3624,7 +3624,10 @@
 						</TransformGroup>
 					</Rectangle.RenderTransform>
 				</Rectangle>
-				<Rectangle x:Name="rectangle_Copy2" Stroke="Black" Width="26.334" Height="6.126" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="-10.938" Canvas.Top="-10.396" Fill="{DynamicResource Tower_Piston001}">
+				<Rectangle x:Name="rectangle_Copy2" Width="26.334" Height="6.126" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="-10.938" Canvas.Top="-10.396" Fill="{DynamicResource Tower_Piston001}">
+					<Rectangle.Stroke>
+						<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
+					</Rectangle.Stroke>
 					<Rectangle.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -3684,10 +3687,10 @@
 			</Image>
 			<Ellipse x:Name="ellipse1_Copy" Width="39.667" Height="29.667" Opacity="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="21.833" Canvas.Top="2.5">
 				<Ellipse.Stroke>
-					<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
+					<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
 				</Ellipse.Stroke>
 				<Ellipse.Fill>
-					<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
+					<SolidColorBrush Color="{DynamicResource FFFFFF}"/>
 				</Ellipse.Fill>
 				<Ellipse.RenderTransform>
 					<TransformGroup>
@@ -4015,7 +4018,10 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Ellipse x:Name="ellipse1_Copy1" Stroke="Black" Width="75.917" Height="50.417" RenderTransformOrigin="0.5,0.5" Canvas.Left="3.833" Canvas.Top="6" StrokeThickness="0" IsEnabled="False" IsHitTestVisible="False">
+			<Ellipse x:Name="ellipse1_Copy1" Width="75.917" Height="50.417" RenderTransformOrigin="0.5,0.5" Canvas.Left="3.833" Canvas.Top="6" StrokeThickness="0" IsEnabled="False" IsHitTestVisible="False">
+				<Ellipse.Stroke>
+					<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
+				</Ellipse.Stroke>
 				<Ellipse.OpacityMask>
 					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 						<GradientStop Color="Black" Offset="0"/>
@@ -4058,7 +4064,13 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Ellipse x:Name="ellipse1" Fill="White" Stroke="Black" Width="39.667" Height="29.667" Opacity="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="21.833" Canvas.Top="2.5" IsEnabled="False" IsHitTestVisible="False">
+			<Ellipse x:Name="ellipse1" Width="39.667" Height="29.667" Opacity="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="21.833" Canvas.Top="2.5" IsEnabled="False" IsHitTestVisible="False">
+				<Ellipse.Fill>
+					<SolidColorBrush Color="{DynamicResource FFFFFF}"/>
+				</Ellipse.Fill>
+				<Ellipse.Stroke>
+					<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
+				</Ellipse.Stroke>
 				<Ellipse.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -4080,9 +4092,21 @@
 			</Image>
 		</Canvas>
 		<Canvas x:Name="Menu_Num" Width="32" Height="16" Canvas.Left="9" Canvas.Top="37" IsEnabled="False" IsHitTestVisible="False">
-			<Rectangle x:Name="UP01" Fill="#FFFFDA5E" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-23" Canvas.Top="-31" Visibility="Collapsed"/>
-			<Rectangle x:Name="UP02" Fill="#FFFF7F28" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-15" Canvas.Top="-31" Visibility="Collapsed"/>
-			<Rectangle x:Name="UP03" Fill="Red" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-7" Canvas.Top="-31" Visibility="Collapsed"/>
+			<Rectangle x:Name="UP01" Fill="#FFFFDA5E" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-23" Canvas.Top="-31" Visibility="Collapsed">
+				<Rectangle.Stroke>
+					<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
+				</Rectangle.Stroke>
+			</Rectangle>
+			<Rectangle x:Name="UP02" Fill="#FFFF7F28" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-15" Canvas.Top="-31" Visibility="Collapsed">
+				<Rectangle.Stroke>
+					<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
+				</Rectangle.Stroke>
+			</Rectangle>
+			<Rectangle x:Name="UP03" Fill="Red" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-7" Canvas.Top="-31" Visibility="Collapsed">
+				<Rectangle.Stroke>
+					<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
+				</Rectangle.Stroke>
+			</Rectangle>
 			<TextBlock x:Name="goldGain_Text" Width="32.75" Height="16" Visibility="Collapsed" Foreground="#FFF2C346" Text="+ 5" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#kroeger 05_53">
 				<TextBlock.RenderTransform>
 					<TransformGroup>
