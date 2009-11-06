@@ -22868,7 +22868,7 @@
 														<TranslateTransform/>
 													</TransformGroup>
 												</Canvas.RenderTransform>
-												<Ellipse x:Name="ellipse" Stroke="Black" Width="327.423" Height="328.191" Canvas.Left="-13.987" Canvas.Top="-18.439">
+												<Ellipse x:Name="ellipse" Stroke="Black" Width="327.423" Height="328.191" Canvas.Left="-13.987" Canvas.Top="-18.439" IsEnabled="False" IsHitTestVisible="False">
 													<Ellipse.Fill>
 														<RadialGradientBrush>
 															<GradientStop Color="Black" Offset="0"/>
@@ -22878,7 +22878,7 @@
 														</RadialGradientBrush>
 													</Ellipse.Fill>
 												</Ellipse>
-												<Image x:Name="image" Width="301" Height="301" RenderTransformOrigin="0.5,0.5" Source="Resources\Tower\TowerA0_parts2.png" Stretch="Fill" Opacity="0">
+												<Image x:Name="image" Width="301" Height="301" RenderTransformOrigin="0.5,0.5" Source="Resources\Tower\TowerA0_parts2.png" Stretch="Fill" Opacity="0" IsEnabled="False" IsHitTestVisible="False">
 													<Image.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -22984,7 +22984,7 @@
 														<TranslateTransform/>
 													</TransformGroup>
 												</Canvas.RenderTransform>
-												<Canvas x:Name="eye" Width="159" Height="159" RenderTransformOrigin="0.5,0.5">
+												<Canvas x:Name="eye" Width="159" Height="159" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False">
 													<Canvas.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -23024,7 +23024,7 @@
 														</Ellipse.RenderTransform>
 													</Ellipse>
 												</Canvas>
-												<Canvas x:Name="glass" Width="118" Height="95" Canvas.Left="71.881" Canvas.Top="255.463" RenderTransformOrigin="0.5,0.5">
+												<Canvas x:Name="glass" Width="118" Height="95" Canvas.Left="71.881" Canvas.Top="255.463" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False">
 													<Canvas.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
