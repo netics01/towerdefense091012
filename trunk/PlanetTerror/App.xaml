@@ -9,6 +9,25 @@
     		<GradientStop Color="Black" Offset="1"/>
     		<GradientStop Color="#FF595959" Offset="0.536"/>
     	</LinearGradientBrush>
+    	<LinearGradientBrush x:Key="Tower_Piston001" EndPoint="0.5,1" StartPoint="0.5,0">
+    		<GradientStop Color="#FF8A8A8A"/>
+    		<GradientStop Color="#FF3B3B3B" Offset="1"/>
+    		<GradientStop Color="#FF6C6C6C" Offset="0.525"/>
+    		<GradientStop Color="#FF141414" Offset="0.24"/>
+    	</LinearGradientBrush>
+    	<RadialGradientBrush x:Key="Tower_UPG_Lv0">
+    		<GradientStop Color="#00000000"/>
+    		<GradientStop Color="#00000000" Offset="1"/>
+    		<GradientStop Color="#FF9A3B3B" Offset="0.688"/>
+    	</RadialGradientBrush>
+    	<Color x:Key="Tower_eye_01">#B2FFF8B5</Color>
+    	<Color x:Key="Tower_eyeStroke">#FF302525</Color>
+    	<Color x:Key="Tower_eye_02">#B2FF0000</Color>
+    	<RadialGradientBrush x:Key="Tower_menu_MouseOver">
+    		<GradientStop Color="#66FF3737" Offset="1"/>
+    		<GradientStop/>
+    		<GradientStop Color="#0BFF8003" Offset="0.529"/>
+    	</RadialGradientBrush>
          
     </Application.Resources>
 </Application>
