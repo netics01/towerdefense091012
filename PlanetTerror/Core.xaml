@@ -23732,6 +23732,31 @@
 															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Visibility)" Duration="00:00:00.0010000" Storyboard.TargetName="canvas">
 																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 															</ObjectAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:20" Value="360"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.Opacity)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+															</DoubleAnimationUsingKeyFrames>
+															<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+																<SplineColorKeyFrame KeyTime="00:00:00" Value="#CCFF0000"/>
+															</ColorAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(Shape.StrokeThickness)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-13.792"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-7.299"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.126"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.115"/>
+															</DoubleAnimationUsingKeyFrames>
 														</Storyboard>
 													</VisualState>
 													<VisualState x:Name="Pressed">
@@ -23776,6 +23801,22 @@
 															</TransformGroup>
 														</Image.RenderTransform>
 													</Image>
+													<Ellipse x:Name="ellipse" Fill="#CC1E1F20" Stroke="Black" Width="290.421" Height="298.053" Opacity="0" Canvas.Left="15.682" Canvas.Top="9.785" RenderTransformOrigin="0.5,0.5">
+														<Ellipse.RenderTransform>
+															<TransformGroup>
+																<ScaleTransform/>
+																<SkewTransform/>
+																<RotateTransform/>
+																<TranslateTransform/>
+															</TransformGroup>
+														</Ellipse.RenderTransform>
+														<Ellipse.OpacityMask>
+															<RadialGradientBrush>
+																<GradientStop Color="Black" Offset="0"/>
+																<GradientStop Color="White" Offset="1"/>
+															</RadialGradientBrush>
+														</Ellipse.OpacityMask>
+													</Ellipse>
 												</Canvas>
 											</Canvas>
 										</Canvas>
