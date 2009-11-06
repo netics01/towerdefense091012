@@ -262,10 +262,11 @@ namespace PlanetTerror
 				}
 				//주포 회전
 				bool bAim = false;
+				double targetAngle = 0;
 				if( target != null )
 				{
 					var dir = target.Pos - towerCenter;
-					var targetAngle = Math.Atan2(dir.Y, dir.X) * 180 / Math.PI;
+					targetAngle = Math.Atan2(dir.Y, dir.X) * 180 / Math.PI;
 
 					var rotTransform = Turret.RenderTransform as RotateTransform;
 					if( rotTransform == null ) { Turret.RenderTransform = new RotateTransform(0); }
@@ -295,7 +296,7 @@ namespace PlanetTerror
 				if( target != null &&
 					bAim )
 				{
-					var projectile = Game.World.CreateProjectile(target, towerCenter);
+					var projectile = Game.World.CreateProjectile(target, towerCenter, targetAngle);
 					projectile.Damage = Game.Setting.tower.attackDamage;
 
 					cooldownTime = Game.Setting.tower.attackCooldown;
