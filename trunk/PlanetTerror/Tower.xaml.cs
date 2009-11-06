@@ -253,11 +253,6 @@ namespace PlanetTerror
 				{
 					effectStories[0].Begin();
 				}
-				if( cooldownTime > 0 )
-				{
-					cooldownTime -= delta;
-					break;
-				}
 				//타겟 설정
 				if( target == null ||
 					target.IsInvalid ||
@@ -265,8 +260,40 @@ namespace PlanetTerror
 				{
 					target = Game.World.FindTarget(towerCenter, Game.Setting.tower.attackRangeSqr);
 				}
-				//타겟이 있으면 타겟 공격
+				//주포 회전
+				bool bAim = false;
 				if( target != null )
+				{
+					var dir = target.Pos - towerCenter;
+					var targetAngle = Math.Atan2(dir.Y, dir.X) * 180 / Math.PI;
+
+					var rotTransform = Turret.RenderTransform as RotateTransform;
+					if( rotTransform == null ) { Turret.RenderTransform = new RotateTransform(0); }
+					else
+					{
+						var curAngle = rotTransform.Angle;
+						var maxAngleChange = Game.Setting.tower.turretRotSpeed * delta;
+						if( Math.Abs(targetAngle - curAngle) < maxAngleChange )
+						{
+							rotTransform.Angle = targetAngle;
+							bAim = true;
+						}
+						else
+						{
+							rotTransform.Angle = curAngle + maxAngleChange * Math.Sign(targetAngle - curAngle);
+							bAim = Math.Abs(rotTransform.Angle - targetAngle) < Game.Setting.tower.turretAimTolerance;
+						}
+					}
+				}
+				//쿨타임 대기
+				if( cooldownTime > 0 )
+				{
+					cooldownTime -= delta;
+					break;
+				}
+				//타겟이 있으면 타겟 공격
+				if( target != null &&
+					bAim )
 				{
 					var projectile = Game.World.CreateProjectile(target, towerCenter);
 					projectile.Damage = Game.Setting.tower.attackDamage;
