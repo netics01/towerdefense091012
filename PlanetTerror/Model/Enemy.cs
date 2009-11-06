@@ -143,14 +143,20 @@ namespace PlanetTerror
 			vsm.SetDefaultGroup("Enemy_StateGroup");
 			destroyState = layoutRoot.FindState("Enemy_Destroy_State");
 			this.boomState = layoutRoot.FindState("Enemy_Boom_State");
-			this.moveStory = resources.FindStoryboard("Move_Storyboard");
 
-// 			destroyState.Storyboard.Completed += new EventHandler(DestroyState_Completed);
-// 			boomState.Storyboard.Completed += new EventHandler(BoomState_Completed);
+// 			if( (this as Enemy2) != null )
+// 			{
+// 				this.moveStory = Application.Current.Resources["Enemy2_Move_Storyboard"] as Storyboard;
+// 			}
+// 			else
+			{
+				this.moveStory = resources.FindStoryboard("Move_Storyboard");
+			}
 
 			WPFUtil.SetImageScaleMode(layoutRoot, BitmapScalingMode.Linear);
 
 			moveStory.Begin();
+			//moveStory.Begin(layoutRoot);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	이동

@@ -98,7 +98,7 @@ namespace PlanetTerror
 			//Menu_Dismantle_Button.MouseLeave +=new MouseEventHandler(Menu_Dismantle_Button_MouseLeave);
 			Menu_Build_Button.Click += new RoutedEventHandler(Menu_Build_Button_Click);
 			Menu_Upgrade_Button.Click += new RoutedEventHandler(Menu_Upgrade_Button_Click);
-			Menu_UpgradeBig_Button.Click += new RoutedEventHandler(Menu_UpgradeBIG_Button_Click);
+			//Menu_UpgradeBig_Button.Click += new RoutedEventHandler(Menu_UpgradeBIG_Button_Click);
 			Menu_Dismantle_Button.Click += new RoutedEventHandler(Menu_Dismantle_Button_Click);
 			Menu_Lab_Button.Click += new RoutedEventHandler(Menu_Lab_Button_Click);
 			
