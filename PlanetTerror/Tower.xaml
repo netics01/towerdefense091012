@@ -3587,7 +3587,7 @@
 			<Canvas x:Name="piston" Width="39.334" Height="8.333" Canvas.Left="22.001" Canvas.Top="43.999">
 				<Rectangle x:Name="rectangle_Copy3" Width="26.334" Height="6.126" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="24.395" Canvas.Top="-9.396" Fill="{DynamicResource Tower_Piston001}">
 					<Rectangle.Stroke>
-						<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
+						<SolidColorBrush Color="#FF1A0E0E"/>
 					</Rectangle.Stroke>
 					<Rectangle.RenderTransform>
 						<TransformGroup>
@@ -3600,7 +3600,7 @@
 				</Rectangle>
 				<Rectangle x:Name="rectangle_Copy" Width="26.334" Height="8" Canvas.Left="13" Canvas.Top="0.333" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5" Fill="{DynamicResource Tower_Piston001}">
 					<Rectangle.Stroke>
-						<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
+						<SolidColorBrush Color="#FF1A0E0E"/>
 					</Rectangle.Stroke>
 					<Rectangle.RenderTransform>
 						<TransformGroup>
@@ -3613,7 +3613,7 @@
 				</Rectangle>
 				<Rectangle x:Name="rectangle_Copy1" Width="26.334" Height="8" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5" Fill="{DynamicResource Tower_Piston001}">
 					<Rectangle.Stroke>
-						<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
+						<SolidColorBrush Color="#FF1A0E0E"/>
 					</Rectangle.Stroke>
 					<Rectangle.RenderTransform>
 						<TransformGroup>
@@ -3626,7 +3626,7 @@
 				</Rectangle>
 				<Rectangle x:Name="rectangle_Copy2" Width="26.334" Height="6.126" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="-10.938" Canvas.Top="-10.396" Fill="{DynamicResource Tower_Piston001}">
 					<Rectangle.Stroke>
-						<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
+						<SolidColorBrush Color="#FF1A0E0E"/>
 					</Rectangle.Stroke>
 					<Rectangle.RenderTransform>
 						<TransformGroup>
