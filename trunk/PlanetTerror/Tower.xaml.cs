@@ -57,7 +57,7 @@ namespace PlanetTerror
 		Enemy target;
 		Point towerCenter;
 		double cooldownTime;
-		int towerLevel;
+//		int towerLevel;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		VSM vsm;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -201,7 +201,12 @@ namespace PlanetTerror
 			}
 			effectStories[0].Stop();
 			labStory.Stop();
-			vsm.SetState(TOWER_DISMANTLE_STATE);
+			if( vsm.GetState() == TOWER_BUILT_STATE )
+			{
+				vsm.SetState(TOWER_DISMANTLE_STATE);
+			}
+			else { vsm.SetState(LAB_DISMANTLE_STATE); }
+			
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -238,7 +243,7 @@ namespace PlanetTerror
 			case NOTYETBUILT_STATE:
 				if( vsm.GetStateJustFinished() )
 				{
-					towerLevel = 0;
+//					towerLevel = 0;
 					notYetBuiltStory.Begin();
 				}
 				break;

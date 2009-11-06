@@ -209,13 +209,13 @@ namespace PlanetTerror
 		void SetDefault()
 		{
 			version = VERSION;
-			startGold = 500;
+			startGold = 100;
 			powerMax = 100;
 
 			gold.interval = 15;
 			gold.mineGold = 5;
 			gold.labGold = -5;
-			gold.labPower = 2.5;
+			gold.labPower = 4;
 
 			tower.towerCost = 50;
 			tower.labCost = 200;
@@ -231,21 +231,21 @@ namespace PlanetTerror
 
 			proj1.speed = 20;
 
-			enemy1.routeTime = 25;
+			enemy1.routeTime = 35;
 			enemy1.hitPoint = 20;
-			enemy1.damage = 2;
+			enemy1.damage = 5;
 			enemy1.gold = 0;
 			enemy1.powerUp = 0.5;
 
-			enemy2.routeTime = 50;
+			enemy2.routeTime = 60;
 			enemy2.hitPoint = 100;
-			enemy2.damage = 5;
+			enemy2.damage = 7.5;
 			enemy2.gold = 0;
 			enemy2.powerUp = 1;
 
-			enemy3.routeTime = 10;
-			enemy3.hitPoint = 70;
-			enemy2.damage = 5;
+			enemy3.routeTime = 20;
+			enemy3.hitPoint = 50;
+			enemy2.damage = 10;
 			enemy3.gold = 0;
 			enemy3.powerUp = 2;
 
