@@ -76,7 +76,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 9;
+		public const int VERSION = 11;
 
 		public int version;
 		public int startGold;
@@ -101,7 +101,9 @@ namespace PlanetTerror
 			public double attackRange;
 			public double attackRangeSqr;
 			public double attackDamage;
-			public double attackCooldown;			
+			public double attackCooldown;
+			public double turretRotSpeed;
+			public double turretAimTolerance;
 		}
 		public Tower tower;
 
@@ -223,9 +225,11 @@ namespace PlanetTerror
 			tower.upgrade1Cost = 150;
 			tower.upgrade2Cost = 200;
 			tower.upgrade3Cost = 250;
-			tower.attackRange = 100;
+			tower.attackRange = 130;
 			tower.attackDamage = 10;
 			tower.attackCooldown = 1;
+			tower.turretRotSpeed = 90;
+			tower.turretAimTolerance = 10;
 
 			core.hitPoint = 100;
 
