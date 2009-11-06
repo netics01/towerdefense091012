@@ -170,9 +170,6 @@
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Duration="00:00:00.0010000" Storyboard.TargetName="color_change">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 			</DoubleAnimationUsingKeyFrames>
-			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Duration="00:00:00.0010000" Storyboard.TargetName="color_change">
-				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF9A3B3B"/>
-			</ColorAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="UPGcolor" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.5"/>
@@ -1543,9 +1540,6 @@
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Duration="00:00:00.0010000" Storyboard.TargetName="color_change">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 			</DoubleAnimationUsingKeyFrames>
-			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Duration="00:00:00.0010000" Storyboard.TargetName="color_change">
-				<SplineColorKeyFrame KeyTime="00:00:00" Value="Red"/>
-			</ColorAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="UPGcolor" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.5"/>
@@ -1599,6 +1593,9 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:09.8000000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:10" Value="0.5"/>
 			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="color_change" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFE01919"/>
+			</ColorAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Upg2_Tower_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="notYetBuild_Canvas" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -1760,9 +1757,6 @@
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Duration="00:00:00.0010000" Storyboard.TargetName="color_change">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 			</DoubleAnimationUsingKeyFrames>
-			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Duration="00:00:00.0010000" Storyboard.TargetName="color_change">
-				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFD6B317"/>
-			</ColorAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="UPGcolor" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.5"/>
@@ -1816,6 +1810,9 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:09.8000000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:10" Value="0.5"/>
 			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="color_change" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFEAAF11"/>
+			</ColorAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Upg3_Tower_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="notYetBuild_Canvas" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -1977,9 +1974,6 @@
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Duration="00:00:00.0010000" Storyboard.TargetName="color_change">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 			</DoubleAnimationUsingKeyFrames>
-			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Duration="00:00:00.0010000" Storyboard.TargetName="color_change">
-				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF00A4FF"/>
-			</ColorAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="UPGcolor" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.5"/>
@@ -2033,6 +2027,9 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:09.8000000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:10" Value="0.5"/>
 			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="color_change" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF32E9F0"/>
+			</ColorAnimationUsingKeyFrames>
 		</Storyboard>
 	</UserControl.Resources>
 
@@ -2272,9 +2269,6 @@
 						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="t1" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
 							<SplineColorKeyFrame KeyTime="00:00:01.3000000" Value="#FF595959"/>
 						</ColorAnimationUsingKeyFrames>
-						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="t2">
-							<SplineColorKeyFrame KeyTime="00:00:01.3000000" Value="#FF595959"/>
-						</ColorAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="color_change" Storyboard.TargetProperty="(UIElement.Opacity)">
 							<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0"/>
 							<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.2000000" Value="1"/>
@@ -2286,11 +2280,6 @@
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="color_change" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 							<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1" KeySpline="0,1,1,1"/>
 						</DoubleAnimationUsingKeyFrames>
-						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="color_change" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
-							<SplineColorKeyFrame KeyTime="00:00:01.1000000" Value="#FF9A3B3B"/>
-							<SplineColorKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:01.2000000" Value="Red"/>
-							<SplineColorKeyFrame KeyTime="00:00:01.8000000" Value="#FF9A3B3B" KeySpline="0,1,1,1"/>
-						</ColorAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="color_change" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
 							<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
@@ -3349,8 +3338,21 @@
 						</Image.RenderTransform>
 					</Image>
 				</Canvas>
-				<Ellipse x:Name="ellipse" Fill="#B2FFF8B5" Stroke="#FF302525" StrokeThickness="2.5" Width="64.25" Height="43.75" Opacity="0" Canvas.Left="1.25" Canvas.Top="2.5"/>
-				<Ellipse x:Name="ellipse_Copy" Fill="#B2FF0000" Stroke="#FF302525" StrokeThickness="2.5" Width="9" Height="6.129" Opacity="0" Canvas.Left="29.25" Canvas.Top="21.21" RenderTransformOrigin="0.5,0.5" d:IsHidden="True">
+				<Ellipse x:Name="ellipse" StrokeThickness="2.5" Width="64.25" Height="43.75" Opacity="0" Canvas.Left="1.25" Canvas.Top="2.5">
+					<Ellipse.Stroke>
+						<SolidColorBrush Color="{DynamicResource Tower_eyeStroke}"/>
+					</Ellipse.Stroke>
+					<Ellipse.Fill>
+						<SolidColorBrush Color="{DynamicResource Tower_eye_01}"/>
+					</Ellipse.Fill>
+				</Ellipse>
+				<Ellipse x:Name="ellipse_Copy" StrokeThickness="2.5" Width="9" Height="6.129" Opacity="0" Canvas.Left="29.25" Canvas.Top="21.21" RenderTransformOrigin="0.5,0.5" d:IsHidden="True">
+					<Ellipse.Fill>
+						<SolidColorBrush Color="{DynamicResource Tower_eye_02}"/>
+					</Ellipse.Fill>
+					<Ellipse.Stroke>
+						<SolidColorBrush Color="{DynamicResource Tower_eyeStroke}"/>
+					</Ellipse.Stroke>
 					<Ellipse.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -3399,7 +3401,13 @@
 							<TranslateTransform/>
 						</TransformGroup>
 					</Canvas.RenderTransform>
-					<Rectangle x:Name="rectangle1" Fill="White" Stroke="Black" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5">
+					<Rectangle x:Name="rectangle1" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5">
+						<Rectangle.Stroke>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+						</Rectangle.Stroke>
+						<Rectangle.Fill>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>
+						</Rectangle.Fill>
 						<Rectangle.RenderTransform>
 							<TransformGroup>
 								<ScaleTransform/>
@@ -3409,7 +3417,13 @@
 							</TransformGroup>
 						</Rectangle.RenderTransform>
 					</Rectangle>
-					<Rectangle x:Name="rectangle1_Copy" Fill="White" Stroke="Black" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="44.667" Canvas.Top="5.5">
+					<Rectangle x:Name="rectangle1_Copy" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="44.667" Canvas.Top="5.5">
+						<Rectangle.Stroke>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+						</Rectangle.Stroke>
+						<Rectangle.Fill>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>
+						</Rectangle.Fill>
 						<Rectangle.RenderTransform>
 							<TransformGroup>
 								<ScaleTransform/>
@@ -3419,7 +3433,13 @@
 							</TransformGroup>
 						</Rectangle.RenderTransform>
 					</Rectangle>
-					<Rectangle x:Name="rectangle1_Copy1" Fill="White" Stroke="Black" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="11.5" Canvas.Top="-12.5">
+					<Rectangle x:Name="rectangle1_Copy1" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="11.5" Canvas.Top="-12.5">
+						<Rectangle.Stroke>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+						</Rectangle.Stroke>
+						<Rectangle.Fill>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>
+						</Rectangle.Fill>
 						<Rectangle.RenderTransform>
 							<TransformGroup>
 								<ScaleTransform/>
@@ -3429,7 +3449,13 @@
 							</TransformGroup>
 						</Rectangle.RenderTransform>
 					</Rectangle>
-					<Rectangle x:Name="rectangle1_Copy2" Fill="White" Stroke="Black" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="48.5" Canvas.Top="-4.833">
+					<Rectangle x:Name="rectangle1_Copy2" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="48.5" Canvas.Top="-4.833">
+						<Rectangle.Stroke>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+						</Rectangle.Stroke>
+						<Rectangle.Fill>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>
+						</Rectangle.Fill>
 						<Rectangle.RenderTransform>
 							<TransformGroup>
 								<ScaleTransform/>
@@ -3439,7 +3465,13 @@
 							</TransformGroup>
 						</Rectangle.RenderTransform>
 					</Rectangle>
-					<Rectangle x:Name="rectangle1_Copy3" Fill="White" Stroke="Black" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="28" Canvas.Top="-4">
+					<Rectangle x:Name="rectangle1_Copy3" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="28" Canvas.Top="-4">
+						<Rectangle.Stroke>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+						</Rectangle.Stroke>
+						<Rectangle.Fill>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>
+						</Rectangle.Fill>
 						<Rectangle.RenderTransform>
 							<TransformGroup>
 								<ScaleTransform/>
@@ -3449,7 +3481,13 @@
 							</TransformGroup>
 						</Rectangle.RenderTransform>
 					</Rectangle>
-					<Rectangle x:Name="rectangle1_Copy4" Fill="White" Stroke="Black" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="48" Canvas.Top="5.167">
+					<Rectangle x:Name="rectangle1_Copy4" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="48" Canvas.Top="5.167">
+						<Rectangle.Stroke>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+						</Rectangle.Stroke>
+						<Rectangle.Fill>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>
+						</Rectangle.Fill>
 						<Rectangle.RenderTransform>
 							<TransformGroup>
 								<ScaleTransform/>
@@ -3459,7 +3497,13 @@
 							</TransformGroup>
 						</Rectangle.RenderTransform>
 					</Rectangle>
-					<Rectangle x:Name="rectangle1_Copy5" Fill="White" Stroke="Black" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="5" Canvas.Top="3.333">
+					<Rectangle x:Name="rectangle1_Copy5" StrokeThickness="0" RadiusX="1.334" RadiusY="1.334" Width="1.667" Height="17.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="5" Canvas.Top="3.333">
+						<Rectangle.Stroke>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+						</Rectangle.Stroke>
+						<Rectangle.Fill>
+							<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuColorKey}}"/>
+						</Rectangle.Fill>
 						<Rectangle.RenderTransform>
 							<TransformGroup>
 								<ScaleTransform/>
@@ -3493,6 +3537,13 @@
 			</Canvas.RenderTransform>
 			<Canvas x:Name="UPGcolor" Width="40" Height="30" Canvas.Left="17" Canvas.Top="1.75">
 				<Ellipse x:Name="color_change" StrokeThickness="0" Width="79" Height="58.667" RenderTransformOrigin="0.5,0.5" Canvas.Left="-19.333" Canvas.Top="19.666" Opacity="0">
+					<Ellipse.Fill>
+						<RadialGradientBrush>
+							<GradientStop Color="#00000000"/>
+							<GradientStop Color="#00000000" Offset="1"/>
+							<GradientStop Color="#FF9A3B3B" Offset="0.688"/>
+						</RadialGradientBrush>
+					</Ellipse.Fill>
 					<Ellipse.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -3501,13 +3552,6 @@
 							<TranslateTransform/>
 						</TransformGroup>
 					</Ellipse.RenderTransform>
-					<Ellipse.Fill>
-						<RadialGradientBrush>
-							<GradientStop Color="#00000000"/>
-							<GradientStop Color="#00000000" Offset="1"/>
-							<GradientStop Color="#FF9A3B3B" Offset="0.688"/>
-						</RadialGradientBrush>
-					</Ellipse.Fill>
 				</Ellipse>
 			</Canvas>
 			<Canvas x:Name="role" Width="54" Height="54" RenderTransformOrigin="0.5,0.5" Canvas.Left="12.521" Canvas.Top="24.667" Opacity="0.5">
@@ -3541,33 +3585,10 @@
 				</Image.RenderTransform>
 			</Image>
 			<Canvas x:Name="piston" Width="39.334" Height="8.333" Canvas.Left="22.001" Canvas.Top="43.999">
-				<Rectangle x:Name="rectangle_Copy3" Stroke="Black" Width="26.334" Height="6.126" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="24.395" Canvas.Top="-9.396">
-					<Rectangle.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform Angle="90"/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</Rectangle.RenderTransform>
-					<Rectangle.Fill>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="#FF8A8A8A"/>
-							<GradientStop Color="#FF3B3B3B" Offset="1"/>
-							<GradientStop Color="#FF6C6C6C" Offset="0.525"/>
-							<GradientStop Color="#FF141414" Offset="0.24"/>
-						</LinearGradientBrush>
-					</Rectangle.Fill>
-				</Rectangle>
-				<Rectangle x:Name="rectangle_Copy" Stroke="Black" Width="26.334" Height="8" Canvas.Left="13" Canvas.Top="0.333" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5">
-					<Rectangle.Fill>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="#FF8A8A8A"/>
-							<GradientStop Color="#FF3B3B3B" Offset="1"/>
-							<GradientStop Color="#FF6C6C6C" Offset="0.525"/>
-							<GradientStop Color="#FF141414" Offset="0.24"/>
-						</LinearGradientBrush>
-					</Rectangle.Fill>
+				<Rectangle x:Name="rectangle_Copy3" Width="26.334" Height="6.126" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="24.395" Canvas.Top="-9.396" Fill="{DynamicResource Tower_Piston001}">
+					<Rectangle.Stroke>
+						<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuTextColorKey}}"/>
+					</Rectangle.Stroke>
 					<Rectangle.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -3577,7 +3598,10 @@
 						</TransformGroup>
 					</Rectangle.RenderTransform>
 				</Rectangle>
-				<Rectangle x:Name="rectangle_Copy1" Stroke="Black" Width="26.334" Height="8" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5">
+				<Rectangle x:Name="rectangle_Copy" Width="26.334" Height="8" Canvas.Left="13" Canvas.Top="0.333" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5" Fill="{DynamicResource Tower_Piston001}">
+					<Rectangle.Stroke>
+						<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
+					</Rectangle.Stroke>
 					<Rectangle.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -3586,16 +3610,11 @@
 							<TranslateTransform/>
 						</TransformGroup>
 					</Rectangle.RenderTransform>
-					<Rectangle.Fill>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="#FF8A8A8A"/>
-							<GradientStop Color="#FF3B3B3B" Offset="1"/>
-							<GradientStop Color="#FF6C6C6C" Offset="0.525"/>
-							<GradientStop Color="#FF141414" Offset="0.24"/>
-						</LinearGradientBrush>
-					</Rectangle.Fill>
 				</Rectangle>
-				<Rectangle x:Name="rectangle_Copy2" Stroke="Black" Width="26.334" Height="6.126" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="-10.938" Canvas.Top="-10.396">
+				<Rectangle x:Name="rectangle_Copy1" Width="26.334" Height="8" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5" Fill="{DynamicResource Tower_Piston001}">
+					<Rectangle.Stroke>
+						<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
+					</Rectangle.Stroke>
 					<Rectangle.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -3604,14 +3623,16 @@
 							<TranslateTransform/>
 						</TransformGroup>
 					</Rectangle.RenderTransform>
-					<Rectangle.Fill>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="#FF8A8A8A"/>
-							<GradientStop Color="#FF3B3B3B" Offset="1"/>
-							<GradientStop Color="#FF6C6C6C" Offset="0.525"/>
-							<GradientStop Color="#FF141414" Offset="0.24"/>
-						</LinearGradientBrush>
-					</Rectangle.Fill>
+				</Rectangle>
+				<Rectangle x:Name="rectangle_Copy2" Stroke="Black" Width="26.334" Height="6.126" StrokeThickness="0.3" RadiusX="3.334" RadiusY="3.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="-10.938" Canvas.Top="-10.396" Fill="{DynamicResource Tower_Piston001}">
+					<Rectangle.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform Angle="90"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Rectangle.RenderTransform>
 				</Rectangle>
 			</Canvas>
 			<Canvas x:Name="Turret" Width="41.849" Height="21.225" Canvas.Left="0.125" Canvas.Top="16.525" RenderTransformOrigin="1.001,0.505">
@@ -3640,14 +3661,7 @@
 						</TransformGroup>
 					</Rectangle.RenderTransform>
 				</Rectangle>
-				<Rectangle x:Name="t2" Height="6.725" RenderTransformOrigin="1,0.5" Width="41.349" RadiusX="1.884" RadiusY="1.884" Canvas.Left="0.5" >
-					<Rectangle.Fill>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="Black" Offset="1"/>
-							<GradientStop Color="#FF595959" Offset="0.559"/>
-						</LinearGradientBrush>
-					</Rectangle.Fill>
+				<Rectangle x:Name="t2" Height="6.725" RenderTransformOrigin="1,0.5" Width="41.349" RadiusX="1.884" RadiusY="1.884" Canvas.Left="0.5" Fill="{DynamicResource Tower_Turret001}" >
 					<Rectangle.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -3668,7 +3682,13 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Ellipse x:Name="ellipse1_Copy" Fill="White" Stroke="Black" Width="39.667" Height="29.667" Opacity="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="21.833" Canvas.Top="2.5">
+			<Ellipse x:Name="ellipse1_Copy" Width="39.667" Height="29.667" Opacity="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="21.833" Canvas.Top="2.5">
+				<Ellipse.Stroke>
+					<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
+				</Ellipse.Stroke>
+				<Ellipse.Fill>
+					<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
+				</Ellipse.Fill>
 				<Ellipse.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -4092,15 +4112,7 @@
 						<TranslateTransform/>
 					</TransformGroup>
 				</Canvas.RenderTransform>
-				<Ellipse x:Name="Projectile_0" Stroke="{x:Null}" Visibility="Collapsed" IsHitTestVisible="False" Width="302.81" Height="205.91" Opacity="0" Canvas.Left="-0.59" Canvas.Top="49.092">
-					<Ellipse.Fill>
-						<RadialGradientBrush>
-							<GradientStop Color="#66FF3737" Offset="1"/>
-							<GradientStop/>
-							<GradientStop Color="#0BFF8003" Offset="0.529"/>
-						</RadialGradientBrush>
-					</Ellipse.Fill>
-				</Ellipse>
+				<Ellipse x:Name="Projectile_0" Stroke="{x:Null}" Visibility="Collapsed" IsHitTestVisible="False" Width="302.81" Height="205.91" Opacity="0" Canvas.Left="-0.59" Canvas.Top="49.092" Fill="{DynamicResource Tower_menu_MouseOver}"/>
 				<Canvas x:Name="canvas" Width="301" Height="301" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
 					<Canvas.RenderTransform>
 						<TransformGroup>
