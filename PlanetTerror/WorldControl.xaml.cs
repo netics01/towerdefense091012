@@ -32,7 +32,7 @@ namespace PlanetTerror
 		WaveGenerator generator;
 		List<Enemy> enemies;
 		List<Tower> towers;
-		List<Projectile3> projectiles;
+		List<Projectile> projectiles;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		int enemyLayer = 0;
 		RefreshTimer goldTimer;
@@ -55,7 +55,7 @@ namespace PlanetTerror
 				var tower = LayoutRoot.Children[i] as Tower;
 				if( tower != null ) { towers.Add(tower); }
 			}
-			projectiles = new List<Projectile3>();
+			projectiles = new List<Projectile>();
 
 			PreparePath();
 
@@ -138,13 +138,13 @@ namespace PlanetTerror
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	포탄 생성
-		public Projectile3 CreateProjectile(Enemy target, Point pos)
+		public Projectile CreateProjectile(Enemy target, Point pos, double angle)
 		{
-			var p = new Projectile3(target, pos);
+			var p = new Projectile3();
+			p.Initialize(target, pos, angle);
 			p.Damage = Game.Setting.tower.attackRange;
 			p.Speed = Game.Setting.proj1.speed;
 
-			Canvas.SetZIndex(p, 6);
 			projectiles.Add(p);
 			LayoutRoot.Children.Add(p);
 			return p;
