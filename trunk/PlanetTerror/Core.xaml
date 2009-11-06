@@ -23570,6 +23570,18 @@
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="canvas1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.8"/>
 															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.117"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.083"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2.406"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-5.917"/>
+															</DoubleAnimationUsingKeyFrames>
 														</Storyboard>
 													</VisualState>
 													<VisualState x:Name="Pressed">
@@ -23593,7 +23605,16 @@
 												</VisualStateGroup>
 											</VisualStateManager.VisualStateGroups>
 											<Rectangle x:Name="rectangle" Fill="#CC1E1F20" Stroke="Black" Width="224" Height="48" Visibility="Collapsed" Canvas.Left="101.75" Canvas.Top="-62.5"/>
-											<ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Stretch" Margin="{TemplateBinding Padding}" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed" Canvas.Left="117.75" Canvas.Top="-46.5" Width="192" Height="16" Content="아직 필살기를 사용 할 수 없습니다."/>
+											<ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Stretch" Margin="{TemplateBinding Padding}" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed" Canvas.Left="117.75" Canvas.Top="-46.5" Width="192" Height="16" Content="아직 필살기를 사용 할 수 없습니다." RenderTransformOrigin="0.5,0.5">
+												<ContentPresenter.RenderTransform>
+													<TransformGroup>
+														<ScaleTransform/>
+														<SkewTransform/>
+														<RotateTransform/>
+														<TranslateTransform/>
+													</TransformGroup>
+												</ContentPresenter.RenderTransform>
+											</ContentPresenter>
 											<Canvas x:Name="canvas1" Width="301" Height="301" Canvas.Left="-91.208" Canvas.Top="-86.233" RenderTransformOrigin="0.5,0.5">
 												<Canvas.RenderTransform>
 													<TransformGroup>
@@ -23684,13 +23705,31 @@
 															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="(ContentControl.Content)">
 																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="!!필살기써언니야!!"/>
 															</ObjectAnimationUsingKeyFrames>
-															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="top" Storyboard.TargetProperty="(UIElement.Visibility)">
-																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-															</ObjectAnimationUsingKeyFrames>
 															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
 																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 															</ObjectAnimationUsingKeyFrames>
 															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+															</ObjectAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Opacity)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Duration="00:00:00.0010000" Storyboard.TargetName="canvas">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.822"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Duration="00:00:00.0010000" Storyboard.TargetName="canvas">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-105.832"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Duration="00:00:00.0010000" Storyboard.TargetName="canvas">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.3"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Duration="00:00:00.0010000" Storyboard.TargetName="canvas">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.305"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Duration="00:00:00.0010000" Storyboard.TargetName="canvas">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-89.812"/>
+															</DoubleAnimationUsingKeyFrames>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Visibility)" Duration="00:00:00.0010000" Storyboard.TargetName="canvas">
 																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 															</ObjectAnimationUsingKeyFrames>
 														</Storyboard>
@@ -23699,9 +23738,6 @@
 														<Storyboard>
 															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="(ContentControl.Content)">
 																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="!!필살기써언니야!!"/>
-															</ObjectAnimationUsingKeyFrames>
-															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="top" Storyboard.TargetProperty="(UIElement.Visibility)">
-																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 															</ObjectAnimationUsingKeyFrames>
 															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
 																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
@@ -23720,16 +23756,8 @@
 											</VisualStateManager.VisualStateGroups>
 											<Rectangle x:Name="rectangle" Fill="#CC1E1F20" Stroke="Black" Width="120" Height="48" Visibility="Collapsed" Canvas.Left="101.75" Canvas.Top="-62.5"/>
 											<ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Stretch" Margin="{TemplateBinding Padding}" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed" Canvas.Left="117.75" Canvas.Top="-46.5"/>
-											<Canvas x:Name="top" Width="189.336" Height="347.377" Canvas.Left="-23.586" Canvas.Top="-22.5" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
-												<Canvas.RenderTransform>
-													<TransformGroup>
-														<ScaleTransform/>
-														<SkewTransform/>
-														<RotateTransform/>
-														<TranslateTransform/>
-													</TransformGroup>
-												</Canvas.RenderTransform>
-												<Canvas x:Name="eye" Width="159" Height="159" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False">
+											<Canvas Width="301" Height="301">
+												<Canvas x:Name="canvas" Width="301" Height="301" RenderTransformOrigin="0.5,0.5">
 													<Canvas.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -23738,7 +23766,7 @@
 															<TranslateTransform/>
 														</TransformGroup>
 													</Canvas.RenderTransform>
-													<Image x:Name="roop1" Width="159" Height="159" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Canvas.Top="5" Source="Resources\Field\baseImage_c1.png">
+													<Image x:Name="image" Width="301" Height="301" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Opacity="0" IsEnabled="False" IsHitTestVisible="False" Source="Resources\Tower\TowerA0_parts2.png">
 														<Image.RenderTransform>
 															<TransformGroup>
 																<ScaleTransform/>
@@ -23748,567 +23776,7 @@
 															</TransformGroup>
 														</Image.RenderTransform>
 													</Image>
-													<Ellipse x:Name="blink_r1_Copy11" Fill="#FF233347" Stroke="White" Width="21.069" Height="21.069" RenderTransformOrigin="0.5,0.5" Canvas.Left="68.338" Canvas.Top="75.872" Opacity="0.5">
-														<Ellipse.RenderTransform>
-															<TransformGroup>
-																<ScaleTransform/>
-																<SkewTransform/>
-																<RotateTransform/>
-																<TranslateTransform/>
-															</TransformGroup>
-														</Ellipse.RenderTransform>
-													</Ellipse>
-													<Ellipse x:Name="blink_r1_Copy10" Fill="#FF233347" Stroke="White" Width="17.943" Height="17.943" RenderTransformOrigin="0.5,0.5" Canvas.Left="70.005" Canvas.Top="78.123" StrokeThickness="3" Opacity="0.3">
-														<Ellipse.RenderTransform>
-															<TransformGroup>
-																<ScaleTransform/>
-																<SkewTransform/>
-																<RotateTransform/>
-																<TranslateTransform/>
-															</TransformGroup>
-														</Ellipse.RenderTransform>
-													</Ellipse>
 												</Canvas>
-												<Canvas x:Name="glass" Width="118" Height="95" Canvas.Left="71.881" Canvas.Top="255.463" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False">
-													<Canvas.RenderTransform>
-														<TransformGroup>
-															<ScaleTransform/>
-															<SkewTransform/>
-															<RotateTransform/>
-															<TranslateTransform/>
-														</TransformGroup>
-													</Canvas.RenderTransform>
-													<Image x:Name="g" Width="118" Height="95" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Source="Resources\Field\baseImage_c2.png" OpacityMask="Black">
-														<Image.RenderTransform>
-															<TransformGroup>
-																<ScaleTransform/>
-																<SkewTransform/>
-																<RotateTransform/>
-																<TranslateTransform/>
-															</TransformGroup>
-														</Image.RenderTransform>
-													</Image> 
-													<Canvas x:Name="crack" Width="24.099" Height="4.909" Canvas.Left="24.623" Canvas.Top="33.393" RenderTransformOrigin="0.5,0.5">
-														<Canvas.RenderTransform>
-															<TransformGroup>
-																<ScaleTransform/>
-																<SkewTransform/>
-																<RotateTransform/>
-																<TranslateTransform/>
-															</TransformGroup>
-														</Canvas.RenderTransform>
-														<Path x:Name="path13" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.3" Width="0.623" Height="2.224" Opacity="0" Canvas.Left="22.809" Canvas.Top="-2.466" Data="M0.54511066,9.1901816E-07 C0.43201776,1.4402516 0.24007764,2.7644161 2.9989904E-06,4.095005" Stretch="Fill"/>
-														<Path x:Name="path14" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.3" Width="1.428" Height="0.773" Opacity="0" Canvas.Left="23.111" Canvas.Top="-2.259" Data="M-2.6216837E-06,1.2285005 C0.54289902,0.77817367 1.1171053,0.3429522 1.6353204,-7.0090037E-07" Stretch="Fill"/>
-														<Path x:Name="path15" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.3" Width="16.713" Height="2.211" Opacity="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="25.761" Canvas.Top="-3.072" Data="M-4.715627E-07,1.2034974 C4.7113577,0.93124306 7.4003695,-0.58684033 12.401199,0.24799645 C15.71687,0.80151357 19.064859,3.3681475 22.349414,4.0700003" Stretch="Fill">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform/>
-																	<TranslateTransform/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path16" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.3" Width="7.261" Height="4.435" Opacity="0" Canvas.Left="29.446" Canvas.Top="-2.398" Data="M1.4144719E-06,8.4630082 C2.5932632,4.3180461 5.7545788,2.8969007 9.5393854,-2.5673755E-07" Stretch="Fill"/>
-														<Path x:Name="path12" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.3" Width="13.797" Height="8.648" Opacity="0" Canvas.Left="20.647" Canvas.Top="-2.595" Data="M-1.9001247E-06,-6.878827E-07 C3.4525925,5.6750758 5.2741372,6.6749303 12.26492,9.0090083 C12.869877,12.038746 16.233886,14.335663 18.397382,16.789516" Stretch="Fill"/>
-														<Path x:Name="path11" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="25.412" Height="2.685" Opacity="0" Canvas.Left="0.818" Canvas.Top="-3.144" Data="M-2.4192772E-09,5.005874 C4.2203725,4.0451273 8.4166947,1.9227133 12.673753,0.50136951 C15.69734,-0.50814383 17.613401,0.24293844 20.850368,0.70611971 C25.161273,1.322972 29.948121,1.0646961 34.137367,1.9346209" Stretch="Fill"/>
-														<Path x:Name="path18" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.3" Width="6.496" Height="5.752" Opacity="0" Canvas.Left="72.244" Canvas.Top="21.971" Data="M5.9961876,11.19301 C3.3642141,8.5567257 3.2706493,9.4722354 3.2706493,4.6410038 C3.2706493,-0.28999901 4.6148356,2.6535942 3.3566508E-06,-8.3055633E-07" Stretch="Fill"/>
-														<Path x:Name="path19" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="9.085" Height="8.853" Opacity="0" Canvas.Left="48.392" Canvas.Top="18.109" Data="M1.2797649E-06,4.4078855E-07 C2.541448,2.9629533 5.9284995,5.3463062 8.5854469,8.3527515" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform/>
-																	<TranslateTransform/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path20" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="39.135" Height="5.721" Opacity="0" Canvas.Left="55.147" Canvas.Top="13.488" Data="M2.1749556E-06,2.236536 C3.6782026,1.6434881 10.252984,-0.98286909 14.104663,0.99752278 C15.237713,1.5800953 16.640154,3.3059725 18.19297,4.0390223 C20.134073,4.9553736 20.893286,4.973608 23.098939,5.0680192 C32.392704,5.4658313 32.400141,5.4865752 38.634507,8.810544E-07"/>
-														<Path x:Name="path21" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="6.224" Height="12.416" Opacity="0" Canvas.Left="87.158" Canvas.Top="18.07" Data="M-3.3708594E-06,-8.0521416E-07 C4.0926629,4.2745525 5.2096415,5.1274519 5.723627,11.915756"/>
-														<Path x:Name="path22" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="7.654" Height="2.855" Opacity="0" Canvas.Left="90.838" Canvas.Top="19.763" Data="M-5.5116497E-07,2.3555084 C2.5764381,1.16063 4.5635911,0.54373924 7.1545375,-1.1293835E-08"/>
-														<Path x:Name="path23" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.3" Width="29.527" Height="15.882" Canvas.Left="44.939" Canvas.Top="2.267" Data="M-1.1674125E-06,0.8303709 C10.242067,-1.053983 10.561312,-0.059910521 20.850367,7.2511096 C22.492069,8.4176422 24.229778,9.2603277 25.756336,10.737109 C27.042845,11.981669 27.746787,13.908521 29.026982,15.381611" RenderTransformOrigin="0.5,0.5" Opacity="0">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="9.103"/>
-																	<TranslateTransform X="3.8997182116139459" Y="-1.5668811762935242"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path24" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.3" Width="10.93" Height="4.85" Canvas.Left="69.06" Canvas.Top="11.911" Data="M2.9857911E-07,-7.9624035E-07 C5.3590997,0.22939112 5.9780062,1.7247853 10.6296,4.5499947" RenderTransformOrigin="0.5,0.5" Opacity="0">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="9.103"/>
-																	<TranslateTransform X="3.0599487608367473" Y="0.7262056657597995"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path25" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.3" Width="3.571" Height="5.074" Canvas.Left="72.944" Canvas.Top="17.336" Data="M-8.991672E-07,4.7740086 C3.1076224,2.5641252 2.6037942,4.0845808 3.2706451,1.03029E-06" RenderTransformOrigin="0.5,0.5" Opacity="0">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="9.103"/>
-																	<TranslateTransform X="2.1813594084274293" Y="0.68890305600963053"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path26" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.3" Width="2.14" Height="3.088" Canvas.Left="70.491" Canvas.Top="15.122" Data="M2.3072995E-06,2.7877554 C0.81836087,1.7298525 1.2763766,1.0465849 1.8397407,1.0571579E-06" RenderTransformOrigin="0.5,0.5" Opacity="0">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="9.103"/>
-																	<TranslateTransform X="2.72865002771348" Y="0.22792678521990695"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path27" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.3" Width="1.117" Height="4.635" Canvas.Left="86.569" Canvas.Top="14.265" Data="M-2.6770719E-06,6.9257735E-07 C0.29324692,1.4371432 0.55119166,2.8632286 0.81765881,4.3347543" RenderTransformOrigin="0.5,0.5" Opacity="0">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="9.103"/>
-																	<TranslateTransform X="2.7975147241819123" Y="2.46285960257163"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path28" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.3" Width="0.987" Height="7.859" Canvas.Left="91.474" Canvas.Top="17.768" Data="M0.40882928,1.5909452E-06 C0.87339465,3.2413769 0.76711941,4.4868507 -1.4606108E-06,7.5582595" RenderTransformOrigin="0.5,0.5" Opacity="0">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="9.103"/>
-																	<TranslateTransform X="1.9273144987746846" Y="3.1641741358171576"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path29" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.3" Width="4.593" Height="8.674" Canvas.Left="92.905" Canvas.Top="17.198" Data="M-2.0594839E-06,-4.3010922E-07 C2.5394094,2.7431099 3.1037511,4.75011 4.2927208,8.3737543" RenderTransformOrigin="0.5,0.5" Opacity="0">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="9.103"/>
-																	<TranslateTransform X="1.9123721564009628" Y="3.6778774247632313"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path30" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.3" Width="21.205" Height="40.768" Canvas.Left="78.392" Canvas.Top="26.273" Data="M20.850371,-1.0560416E-06 C20.97354,5.0634783 20.850371,10.099167 20.850371,15.151514 C17.216369,16.209282 13.025168,26.490685 10.016356,29.839288 C6.7570291,33.466697 3.5937578,37.246221 2.9248875E-06,40.467057" RenderTransformOrigin="0.5,0.5" Opacity="0">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="9.103"/>
-																	<TranslateTransform X="-1.9839955125016093" Y="2.3793793178154576"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path17" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="22.85" Height="2.714" Opacity="0" Canvas.Left="78.439" Canvas.Top="27.603" Data="M9.6115816E-07,-8.3055633E-07 C3.7940363,1.0932218 7.2876209,3.5548677 10.902154,4.6410038 C13.917729,5.5471581 18.980238,4.4617253 22.349415,4.9140041" Stretch="Fill"/>
-														<Path x:Name="path31" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="12.22" Height="4.356" Opacity="0" Canvas.Left="37.305" Canvas.Top="0.677" Data="M3.102995E-07,1.4093453 C1.9700894,2.1291481 3.6202506,2.7809437 5.7236307,3.2923423 C5.7236307,3.4743425 5.7236307,3.6563427 5.7236307,3.8383428 C9.6710103,4.0073072 9.0938375,2.9820434 11.719815,5.6754112E-07" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="1.8017052673345075" Y="-0.13922431687142023"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path32" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="18.216" Height="15.849" Opacity="0" Canvas.Left="14.165" Canvas.Top="9.171" Data="M17.716,-8.9998964E-07 C15.434337,7.2779449 15.132444,3.8095051 8.7217234,8.3510151 C5.485561,10.643591 3.0012571,12.202582 8.5248765E-07,15.348696" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="0.83194217552439653" Y="-1.6210015886210627"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path33" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="12.765" Height="5.708" Opacity="0" Canvas.Left="29.428" Canvas.Top="3.312" Data="M-4.4922971E-07,5.208015 C2.8992561,2.2719805 0.81351798,2.5128343 6.2687376,2.7463406 C9.2981978,2.8760142 9.7593637,1.7248044 12.264922,-6.0679747E-07" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="1.5837662093146356" Y="-0.69334737103087107"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path34" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="6.582" Height="13.434" Opacity="0" Canvas.Left="40.517" Canvas.Top="-11.348" Data="M6.0818214,12.413343 C-1.0725026,11.490674 2.0784521,16.53191 0.35819102,6.9813423 C-0.026063981,4.8480303 -0.60709897,5.4129249 1.7209602,3.7636712 C4.2936915,1.9410858 2.393343,3.1316696 3.0837293,-3.7993625E-07" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="2.3377469634588279" Y="-0.091740736619549068"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path35" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="5.668" Height="15.8" Opacity="0" Canvas.Left="49.485" Canvas.Top="1.107" Data="M4.4733752,1.4708853E-08 C5.3337058,6.3275266 6.2620774,4.031201 1.4752831,9.1536784 C0.24734315,10.46773 -0.49572635,11.588673 0.38506779,14.021018 C1.1533765,16.14273 2.5062845,14.65545 4.7459291,15.299682" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="1.3374105449580904" Y="0.48370703531604065"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path36" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="9.767" Height="11.297" Opacity="0" Canvas.Left="53.413" Canvas.Top="-9.167" Data="M-8.599153E-07,10.796352 C1.9656023,8.6048359 3.3917734,8.5365377 5.9961834,6.4120093 C8.1529752,4.6526222 8.2501692,2.5532126 9.2668293,1.4587064E-07" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="2.2205675736800181" Y="0.9447773463101754"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path37" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="56.919" Height="31.052" Opacity="0" Canvas.Left="26.975" Canvas.Top="24.753" Data="M56.146088,1.3533355 C56.090829,0.99120255 56.007019,0.59167416 56.146088,0.26133441 C56.195256,0.14454167 56.32779,0.087111859 56.418642,5.8290276E-07 C51.544425,4.6735644 50.480157,10.133761 46.606704,15.141024 C42.982289,19.826352 36.59528,21.417715 32.706458,26.012047 C25.209828,34.868716 25.527954,27.823958 13.62769,29.017399 C5.5968,29.822793 6.9019422,30.452223 -1.0574603E-06,23.520072" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-0.91410557636659107" Y="0.62660166495418679"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path38" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="14.128" Height="19.374" Opacity="0" Canvas.Left="75.217" Canvas.Top="36.415" Data="M-5.3968452E-07,1.3884074E-06 C9.2752277,0.16181949 3.9742291,-0.69267676 11.44726,7.8609995 C13.691078,10.429287 12.41617,15.181967 13.627691,18.874342" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-1.4010314886572886" Y="2.5376324439514093"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path39" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="7.859" Height="1.097" Opacity="0" Canvas.Left="87.755" Canvas.Top="45.637" Data="M2.5917899E-08,0.59693028 C2.9629064,0.24508418 4.7349262,-0.19461754 7.3589534,0.092923512" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-1.4312866159800777" Y="3.2119981550058689"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path40" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="17.126" Height="8.899" Opacity="0" Canvas.Left="56.138" Canvas.Top="15.669" Data="M16.625781,5.3526584 C13.525513,5.6081222 12.288977,6.080768 9.2668275,7.7676671 C6.958307,9.0562339 8.798309,8.4140421 6.2687353,5.455334 C3.3747013,2.070336 4.145617,1.817478 -2.7272351E-06,5.4809371E-07" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="0.50831783270869835" Y="1.3433736361130597"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path41" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="5.617" Height="24.739" Opacity="0" Canvas.Left="59.198" Canvas.Top="23.39" Data="M5.1170876,6.3195607E-07 C-0.15889079,6.4225601 -1.2127835,3.0331264 1.301334,13.213684 C2.2573639,17.084989 3.0420366,20.578922 3.7543185,24.238693" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-0.60684144486908664" Y="1.1097287718749387"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path42" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="10.038" Height="33.362" Opacity="0" Canvas.Left="35.524" Canvas.Top="20.697" Data="M2.7241569,2.541613 C1.925429,2.7588341 1.5521538,1.2775753 1.0888339,0.55808792 C0.97646229,0.3835866 0.90713133,0.18602942 0.81628005,1.7476285E-07 C0.81628005,2.3415282 -1.6113711,9.5616235 1.9064954,10.422359 C4.4128843,11.035611 5.0019367,13.20775 6.8124643,15.826934 C9.2451274,19.346125 9.2654488,27.868139 9.2654488,32.861736 C9.3563,32.683765 9.4471513,32.505794 9.5380026,32.327823" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-0.66761457028419" Y="-0.43422093671118311"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path43" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="7.313" Height="10.63" Canvas.Left="54.329" Canvas.Top="15.248" Data="M3.3525257E-07,-4.5411534E-07 C2.0079071,3.4626647 4.6220715,6.4286586 6.8138461,10.130189" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="0.39813901728096646" Y="0.856981159648269"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path44" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="2.953" Height="3.94" Opacity="0" Canvas.Left="68.229" Canvas.Top="10.481" Data="M-3.2804905E-08,3.4402169 C1.5778523,1.7860784 1.5750615,1.8888938 2.4529844,-1.8715452E-06" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="1.0455351785593194" Y="1.7221246812450666"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path45" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="6.223" Height="11.404" Opacity="0" Canvas.Left="71.955" Canvas.Top="21.125" Data="M3.6248961E-06,-1.5225314E-06 C0.1680402,1.5223484 3.6248961E-06,3.1132218 3.6248961E-06,4.6410031 C2.7409972,4.1539451 2.4054168,7.4631072 4.9059726,8.4102467 C5.091238,9.3464084 5.2586289,10.049603 5.723634,10.903956" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="0.00037044024066901216" Y="2.0696861727466342"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path46" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="2.407" Height="0.586" Opacity="0" Canvas.Left="76.861" Canvas.Top="29.535" Data="M-2.7880373E-06,-1.1221549E-06 C0.63595615,0.028548509 1.2719151,0.057098141 1.907874,0.085647772" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-0.22264978725675277" Y="2.2770334516741411"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path47" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="4.043" Height="8.03" Opacity="0" Canvas.Left="97.302" Canvas.Top="24.447" Data="M-1.5341467E-06,3.5237733E-07 C2.6122345,3.4077352 2.8096309,3.3824325 3.5431982,7.53007" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-0.17942978464554926" Y="3.8056986303416274"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path48" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="29.118" Height="16.547" Opacity="0" Canvas.Left="61.325" Canvas.Top="-6.4" Data="M-2.8254669E-06,1.6590893 C3.6200288,-0.54637401 9.7753471,-1.581431 14.44535,5.3105768 C16.990515,9.066741 20.311866,9.5346482 24.802396,11.235533 C27.488623,12.253 27.016202,13.345477 28.618149,16.047836" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="1.7884199250148569" Y="2.1926672625059851"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path49" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="11.13" Height="42.354" Opacity="0" Canvas.Left="-5.178" Canvas.Top="6.861" Data="M8.7217229,-7.4629426E-08 C0.94495642,11.335141 3.9399617E-07,9.0986659 3.9399617E-07,24.451487 C3.9399617E-07,33.12443 3.7531338,34.793314 10.6296,41.854691" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="0.10591853822934638" Y="-3.2909925399253845"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path50" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="6.768" Height="8.681" Opacity="0" Canvas.Left="6.542" Canvas.Top="-3.37" Data="M-1.1504936E-06,8.1815898 C1.9135339,4.3525934 2.8168305,2.5184069 6.2687369,-9.0773323E-07" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="2.0231598695470581" Y="-2.5369813295188308"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path51" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="70.818" Height="22.682" Opacity="0" Canvas.Left="0.546" Canvas.Top="44.4" Data="M-9.4147843E-08,2.5105634E-06 C1.5344996,2.896994 2.6269651,5.9264698 4.0883073,8.9195446 C7.7288128,7.2597408 14.338731,13.410635 18.53366,16.120036 C23.327232,19.216084 28.005483,17.614691 32.979013,19.498523 C51.248651,26.418542 53.98838,19.040516 70.318888,7.7977807" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-1.973175568212195" Y="-0.8106856460082561"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path52" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="16.308" Height="10.492" Opacity="0" Canvas.Left="19.352" Canvas.Top="18.49" Data="M7.542558E-07,1.0567289E-07 C3.7284898,10.593128 4.4150818,6.2615269 15.808123,9.9916717" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="0.34467103385800613" Y="-1.3343589053198581"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path53" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="11.948" Height="10.906" Opacity="0" Canvas.Left="37.34" Canvas.Top="12.987" Data="M1.3999159E-06,10.406118 C2.3151243,8.3791538 4.2990047,5.9363244 6.8138471,4.16 C6.7229959,4.0649214 6.6321446,3.9698428 6.5412933,3.8747642 C8.1225724,2.3618821 9.6785658,1.2366402 11.447262,1.0122518E-07" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="0.68387949107161328" Y="-0.18662830825036103"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path54" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="4.315" Height="1.217" Opacity="0" Canvas.Left="46.335" Canvas.Top="14.788" Data="M-1.8460263E-07,1.5735469E-06 C0.45758341,0.092911921 0.90500081,0.24244167 1.362769,0.33417963 C2.1757227,0.49709773 2.9999704,0.57409679 3.8157534,0.71729991" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="0.88884560949644964" Y="0.19268838326676807"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path55" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="7.314" Height="0.789" Opacity="0" Canvas.Left="46.88" Canvas.Top="2.511" Data="M2.4936912E-06,0.28894612 C2.3451924,0.01458555 4.3479771,-0.06186404 6.8138482,0.048834478" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="1.7797668309524442" Y="0.37158740985619687"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path56" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="15.218" Height="8.576" Opacity="0" Canvas.Left="26.711" Canvas.Top="-5.362" Data="M-1.2357498E-06,8.075288 C4.3056419,1.2370088 5.9413903,1.7343227 14.717906,-7.0866358E-07" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="2.1070115373992753" Y="-0.781586272999732"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path57" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="5.387" Height="18.53" Opacity="0" Canvas.Left="9.286" Canvas.Top="4.596" Data="M4.6145064,-7.7779842E-07 C0.032482314,6.7878706 -3.0465413,9.0143426 4.8870603,18.030253" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="1.0931237023893772" Y="-2.4228388625023172"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path58" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="11.674" Height="9.464" Opacity="0" Canvas.Left="24.258" Canvas.Top="17.073" Data="M-1.8439804E-06,1.2371215E-06 C2.9285296,7.6277533 1.3860711,6.9564868 11.174705,8.9646675" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="0.47653209930109774" Y="-1.1436453939635793"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path60" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="17.399" Height="5.499" Opacity="0" Canvas.Left="43.336" Canvas.Top="36.433" Data="M3.4357021E-07,3.0634005 C8.2119549,5.2856662 9.9467732,6.972248 16.898338,1.1749863E-06" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-0.82671900079773231" Y="0.38557753386026938"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path61" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="14.673" Height="15.152" Opacity="0" Canvas.Left="60.78" Canvas.Top="27.265" Data="M2.1256338E-06,14.651767 C2.4059974,14.358122 4.1508219,14.783319 6.2687402,13.022183 C7.3957946,12.084991 9.234826,10.597901 10.357048,9.3837129 C13.445878,6.0417509 13.356709,4.5409649 14.172801,1.120171E-06" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-0.55665505677640326" Y="1.550435280430996"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path64" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="10.04" Height="3.736" Opacity="0" Canvas.Left="44.154" Canvas.Top="40.507" Data="M-3.2683835E-06,2.3017582 C5.6770482,3.4062984 4.7596458,4.3692649 9.5393808,-7.2217169E-08" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-1.048344805714081" Y="0.17210118608528191"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path65" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="23.121" Height="19.261" Opacity="0" Canvas.Left="58.6" Canvas.Top="-2.68" Data="M-9.5814713E-07,3.5159107E-07 C8.6349761,1.265091 10.183815,1.9216636 16.898336,8.948613 C18.30959,10.425532 19.17183,12.419894 20.71409,14.033916 C23.469507,16.917542 22.175482,15.447388 22.621967,18.760569" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="1.4389391686001929" Y="1.7689388537051016"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path66" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="3.88" Height="11.84" Opacity="0" Canvas.Left="83.402" Canvas.Top="15.087" Data="M3.2706448,11.33984 C3.6961493,5.7236109 2.9310977,5.0563208 -1.1660892E-06,1.7444463E-06" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="0.39142566510123089" Y="2.8218948560313306"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path67" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="8.58" Height="19.541" Opacity="0" Canvas.Left="86.945" Canvas.Top="25.143" Data="M7.6315082,1.7791977E-06 C8.4905884,8.9661239 9.0563948,12.33432 9.840318E-07,19.040426" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-0.62146328121693273" Y="3.2088311264829494"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path59" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="17.166" Height="8.5" Opacity="0" Canvas.Left="1.498" Canvas.Top="18.439" Data="M6.357829E-07,8.0000013 C3.1495766,5.7920511 4.7730213,3.8936473 7.333334,1.3333346 C8.8562024,-0.18953384 13.871671,0.49494856 16.666667,1.2715658E-06" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="0.46468332461181916" Y="-2.5817508471724944"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path62" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="0.5" Height="0.5" Opacity="0" Canvas.Left="14.164" Canvas.Top="24.106" Data="M1.2715657E-06,1.4210855E-14" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="0.33392589134826167" Y="-2.2751917752650153"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path63" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="36.834" Height="29.171" Opacity="0" Canvas.Left="14.164" Canvas.Top="23.106" Data="M1.2715657E-06,1 C1.2715657E-06,0.66666667 1.2715658E-06,0.33333333 1.2715658E-06,1.4210855E-14 C3.0718025,6.1436024 8.5574336,14.502815 12.666668,20.666667 C15.0065,24.176415 15.691922,23.276768 20.000001,25 C22.963468,26.185387 25.930643,26.90559 28.666668,28 C31.700049,29.213352 33.221367,28.509231 36.333335,28" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-0.66962547496655667" Y="-1.0062331652979797"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path69" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="28.833" Height="29.721" Opacity="0" Canvas.Left="5.498" Canvas.Top="22.773" Data="M28.333332,24.999999 C26.272358,26.898264 25.788328,30.630662 23.333332,28.666665 C19.306311,28.666665 16.541007,27.458061 12.999999,25.999999 C9.2542041,24.457613 9.1842534,20.552763 7.6666654,15.999999 C5.7246155,10.173849 3.2183421,5.1953245 -1.2715658E-06,-1.2715658E-06" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-0.63275347253955871" Y="-1.9148264501664967"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path70" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="17.167" Height="42.834" Opacity="0" Canvas.Left="-8.836" Canvas.Top="16.439" Data="M-6.3578287E-07,1.2715658E-06 C0.31932617,6.8123064 1.2774633,12.763027 3.666666,19.333335 C5.1869131,23.514014 0.96862919,26.211767 7.3333327,28.333335 C10.605827,29.424166 14.154249,38.145973 16.666666,42.333335 C16.666666,42.000001 16.666666,41.666668 16.666666,41.333335" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-0.59678710081876574" Y="-3.3622050913930028"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-														<Path x:Name="path68" Fill="{x:Null}" Stroke="Black" StrokeThickness="0.5" Width="21.487" Height="20.591" Opacity="0" Canvas.Left="61.87" Canvas.Top="39.086" Data="M0.27255368,20.09112 C0.18170241,19.814041 0.090851129,19.536962 -1.4717305E-07,19.259883 C2.5348511,18.865878 5.8790161,18.968798 8.1766147,17.988948 C10.933982,16.813023 12.587074,15.326592 14.445353,13.083361 C17.837727,8.9882391 17.555186,4.2497134 20.986645,9.7548347E-07" RenderTransformOrigin="0.5,0.5">
-															<Path.RenderTransform>
-																<TransformGroup>
-																	<ScaleTransform/>
-																	<SkewTransform/>
-																	<RotateTransform Angle="4.114"/>
-																	<TranslateTransform X="-1.6113590623610037" Y="1.8355898255557008"/>
-																</TransformGroup>
-															</Path.RenderTransform>
-														</Path>
-													</Canvas> 
-												</Canvas> 
 											</Canvas>
 										</Canvas>
 										<ControlTemplate.Triggers>
