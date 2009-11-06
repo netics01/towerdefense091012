@@ -3686,7 +3686,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Canvas.RenderTransform>
-			<Button x:Name="Button_lab_eff" Width="72" Height="64" Content="Button" Canvas.Left="4.5" Canvas.Top="4.5" Style="{DynamicResource ButtonStyle1}">
+			<Button x:Name="Button_lab_eff" Width="72" Height="75.667" Content="Button" Canvas.Left="4.5" Canvas.Top="4.5" Style="{DynamicResource ButtonStyle1}">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
 						<Setter Property="Control.Template">
@@ -3963,7 +3963,7 @@
 					</Style>
 				</Button.Resources>
 			</Button>
-			<Canvas x:Name="role_Copy" Width="54" Height="54" RenderTransformOrigin="0.5,0.5" Canvas.Left="12.521" Canvas.Top="24.667">
+			<Canvas x:Name="role_Copy" Width="54" Height="54" RenderTransformOrigin="0.5,0.5" Canvas.Left="12.521" Canvas.Top="24.667" IsEnabled="False" IsHitTestVisible="False">
 				<Canvas.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -3983,7 +3983,7 @@
 					</Image.RenderTransform>
 				</Image>
 			</Canvas>
-			<Image x:Name="body_Copy" Width="46.35" Height="51.5" RenderTransformOrigin="0.5,0.5" Canvas.Top="12.75" Stretch="Fill" Canvas.Left="18.021" Source="Resources\Tower\TowerA0_Body.png">
+			<Image x:Name="body_Copy" Width="46.35" Height="51.5" RenderTransformOrigin="0.5,0.5" Canvas.Top="12.75" Stretch="Fill" Canvas.Left="18.021" Source="Resources\Tower\TowerA0_Body.png" IsEnabled="False" IsHitTestVisible="False">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -3993,7 +3993,7 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Ellipse x:Name="ellipse1_Copy1" Stroke="Black" Width="75.917" Height="50.417" RenderTransformOrigin="0.5,0.5" Canvas.Left="3.833" Canvas.Top="6" StrokeThickness="0">
+			<Ellipse x:Name="ellipse1_Copy1" Stroke="Black" Width="75.917" Height="50.417" RenderTransformOrigin="0.5,0.5" Canvas.Left="3.833" Canvas.Top="6" StrokeThickness="0" IsEnabled="False" IsHitTestVisible="False">
 				<Ellipse.OpacityMask>
 					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 						<GradientStop Color="Black" Offset="0"/>
@@ -4016,7 +4016,7 @@
 					</RadialGradientBrush>
 				</Ellipse.Fill>
 			</Ellipse>
-			<Image x:Name="top_Copy" Width="46.25" Height="46.25" RenderTransformOrigin="0.5,0.5" Canvas.Left="18.521" Canvas.Top="-1" Source="Resources\Tower\TowerA0_Top.png">
+			<Image x:Name="top_Copy" Width="46.25" Height="46.25" RenderTransformOrigin="0.5,0.5" Canvas.Left="18.521" Canvas.Top="-1" Source="Resources\Tower\TowerA0_Top.png" IsEnabled="False" IsHitTestVisible="False">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -4026,7 +4026,7 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Image x:Name="top1" Width="37.5" Height="37.5" Canvas.Top="-0.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="22.771" Source="Resources/Tower/TowerA0_BG.png">
+			<Image x:Name="top1" Width="37.5" Height="37.5" Canvas.Top="-0.5" RenderTransformOrigin="0.5,0.5" Canvas.Left="22.771" Source="Resources/Tower/TowerA0_BG.png" IsEnabled="False" IsHitTestVisible="False">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -4036,7 +4036,7 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Ellipse x:Name="ellipse1" Fill="White" Stroke="Black" Width="39.667" Height="29.667" Opacity="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="21.833" Canvas.Top="2.5">
+			<Ellipse x:Name="ellipse1" Fill="White" Stroke="Black" Width="39.667" Height="29.667" Opacity="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="21.833" Canvas.Top="2.5" IsEnabled="False" IsHitTestVisible="False">
 				<Ellipse.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -4046,7 +4046,7 @@
 					</TransformGroup>
 				</Ellipse.RenderTransform>
 			</Ellipse>
-			<Image x:Name="image4_Copy" Width="39.418" Height="31.78" Source="Resources\Field\baseImage_c2.png" Stretch="Fill" Canvas.Left="22.5" Canvas.Top="-0.333" RenderTransformOrigin="0.5,0.5">
+			<Image x:Name="image4_Copy" Width="39.418" Height="31.78" Source="Resources\Field\baseImage_c2.png" Stretch="Fill" Canvas.Left="22.5" Canvas.Top="-0.333" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -4057,7 +4057,7 @@
 				</Image.RenderTransform>
 			</Image>
 		</Canvas>
-		<Canvas x:Name="Menu_Num" Width="32" Height="16" Canvas.Left="9" Canvas.Top="37">
+		<Canvas x:Name="Menu_Num" Width="32" Height="16" Canvas.Left="9" Canvas.Top="37" IsEnabled="False" IsHitTestVisible="False">
 			<Rectangle x:Name="UP01" Fill="#FFFFDA5E" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-23" Canvas.Top="-31" Visibility="Collapsed"/>
 			<Rectangle x:Name="UP02" Fill="#FFFF7F28" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-15" Canvas.Top="-31" Visibility="Collapsed"/>
 			<Rectangle x:Name="UP03" Fill="Red" Stroke="Black" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-7" Canvas.Top="-31" Visibility="Collapsed"/>
@@ -4080,7 +4080,7 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform><Run Text="-"/><Run Text=" 5"/></TextBlock>
 		</Canvas>
-		<Canvas x:Name="menu_Canvas" Width="48" Height="36" Background="#00000000" Canvas.Left="13.666" Canvas.Top="18.667">
+		<Canvas x:Name="menu_Canvas" Width="2.334" Height="5.333" Background="#00000000" Canvas.Left="13.666" Canvas.Top="18.667">
 			<Canvas x:Name="rangeview" Width="301" Height="301" Canvas.Left="-126.834" Canvas.Top="-115" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
 				<Canvas.RenderTransform>
 					<TransformGroup>
@@ -4120,7 +4120,7 @@
 					</Image>
 				</Canvas>
 			</Canvas>
-			<Button x:Name="Menu_Build_Button" Width="80" Height="14" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="Black" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Content="-50" Canvas.Left="3" Canvas.Top="40" BorderThickness="0" Visibility="Collapsed">
+			<Button x:Name="Menu_Build_Button" Width="80" Height="14" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="Black" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Content="-50" Canvas.Left="2.334" Canvas.Top="39.333" BorderThickness="0" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 						<Setter Property="Template">
@@ -4284,7 +4284,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_Lab_Button" Width="80" Height="14" Content="{DynamicResource Menu_Build_Button}" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="Black" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Canvas.Left="3" Canvas.Top="40" Visibility="Collapsed">
+			<Button x:Name="Menu_Lab_Button" Width="80" Height="14" Content="{DynamicResource Menu_Build_Button}" FocusVisualStyle="{DynamicResource Menu_Build_Button}" Background="#FF1D3B33" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Foreground="Black" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Build_Button}" Canvas.Left="2.334" Canvas.Top="39.333" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Build_Button" TargetType="{x:Type Control}">
 						<Setter Property="Template">
@@ -4434,7 +4434,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_Upgrade_Button" Width="80" Height="14" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Upgrade}" Content="-150" Canvas.Left="3" Canvas.Top="40" Visibility="Collapsed">
+			<Button x:Name="Menu_Upgrade_Button" Width="80" Height="14" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Upgrade}" Content="-150" Canvas.Left="2.334" Canvas.Top="39.333" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="Menu_Upgrade" TargetType="{x:Type Button}">
 						<Setter Property="FocusVisualStyle">
@@ -4722,7 +4722,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_UpgradeBig_Button" FocusVisualStyle="{DynamicResource ControlStyle1}" Width="85.306" Height="20.696" Content="{DynamicResource ControlStyle1}" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource ControlStyle1}" Canvas.Left="3" Canvas.Top="40" Visibility="Collapsed">
+			<Button x:Name="Menu_UpgradeBig_Button" FocusVisualStyle="{DynamicResource ControlStyle1}" Width="85.306" Height="20.696" Content="{DynamicResource ControlStyle1}" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource ControlStyle1}" Canvas.Left="2.334" Canvas.Top="39.333" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="ControlStyle1" TargetType="{x:Type Control}">
 						<Setter Property="Template">
@@ -4830,7 +4830,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_Dismantle_Button" Width="80" Height="14" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Canvas.Top="40" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Dismantle}" FocusVisualStyle="{DynamicResource ControlStyle1}" Content="{DynamicResource menu_ButtonDismantle}" Canvas.Left="3" BorderThickness="0" Visibility="Collapsed">
+			<Button x:Name="Menu_Dismantle_Button" Width="80" Height="14" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Canvas.Top="39.333" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Dismantle}" FocusVisualStyle="{DynamicResource ControlStyle1}" Content="{DynamicResource menu_ButtonDismantle}" Canvas.Left="2.334" BorderThickness="0" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="menu_ButtonDismantle" TargetType="{x:Type Button}">
 						<Setter Property="Template">
