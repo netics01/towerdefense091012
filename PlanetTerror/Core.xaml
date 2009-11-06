@@ -23703,7 +23703,7 @@
 					</Canvas>
 				</Canvas>
 			</Canvas>
-			<Canvas x:Name="roopall" Width="171" Height="126" RenderTransformOrigin="0.5,0.5" Canvas.Left="-1.25">
+			<Canvas x:Name="roopall" Width="171" Height="126" RenderTransformOrigin="0.5,0.5" Canvas.Left="-1.25" IsEnabled="False" IsHitTestVisible="False">
 				<Canvas.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
