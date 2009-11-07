@@ -1874,13 +1874,6 @@
 				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF32E9F0"/>
 			</ColorAnimationUsingKeyFrames>
 		</Storyboard>
-		<Storyboard x:Key="Upg1_Attach_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_1" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-		</Storyboard>
 		<Storyboard x:Key="Upg_Effect_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="color_change_UPGeff" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
@@ -1920,6 +1913,13 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1.359"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1.189"/>
 			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+				<Storyboard x:Key="Upg1_Attach_Storyboard">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_1" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Upg2_Attach_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_2" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -3433,17 +3433,17 @@
 					</TransformGroup>
 				</Ellipse.RenderTransform>
 			</Ellipse>
-			<Rectangle x:Name="_1" StrokeThickness="0" RadiusX="1.884" RadiusY="1.884" Width="8" Height="8" Canvas.Left="19.333" Canvas.Top="-31.333" Visibility="Collapsed">
+			<Rectangle x:Name="_1" RadiusX="2" RadiusY="2" Width="8" Height="8" Canvas.Left="19.333" Canvas.Top="-29.496" Stroke="Black" Visibility="Collapsed">
 				<Rectangle.Fill>
 					<SolidColorBrush Color="{DynamicResource FFFFFF}"/>
 				</Rectangle.Fill>
 			</Rectangle>
-			<Rectangle x:Name="_2" StrokeThickness="0" RadiusX="1.884" RadiusY="1.884" Width="8" Height="8" Canvas.Left="27.656" Canvas.Top="-31.333" Visibility="Collapsed">
+			<Rectangle x:Name="_2" RadiusX="2" RadiusY="2" Width="8" Height="8" Canvas.Left="19.333" Canvas.Top="-22.331" Stroke="Black" Visibility="Collapsed">
 				<Rectangle.Fill>
 					<SolidColorBrush Color="{DynamicResource Boom_Fill01}"/>
 				</Rectangle.Fill>
 			</Rectangle>
-			<Rectangle x:Name="_3" StrokeThickness="0" RadiusX="1.884" RadiusY="1.884" Width="8" Height="8" Canvas.Left="35.979" Canvas.Top="-31.333" Visibility="Collapsed">
+			<Rectangle x:Name="_3" RadiusX="2" RadiusY="2" Width="8" Height="8" Canvas.Left="19.333" Canvas.Top="-15.166" Stroke="Black" Visibility="Collapsed">
 				<Rectangle.Fill>
 					<SolidColorBrush Color="{DynamicResource Boom_Fill03}"/>
 				</Rectangle.Fill>
@@ -3772,7 +3772,7 @@
 		    </TextBlock.RenderTransform><Run Text="-"/><Run Text=" 5"/></TextBlock>
 		</Canvas>
 		<Canvas x:Name="menu_Canvas" Width="2.334" Height="5.333" Background="#00000000" Canvas.Left="13.666" Canvas.Top="18.667">
-			<Canvas x:Name="rangeview" Width="301" Height="301" Canvas.Left="-126.834" Canvas.Top="-115" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
+			<Canvas x:Name="rangeview" Width="301" Height="301" Canvas.Left="-125.666" Canvas.Top="-114.667" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
 				<Canvas.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
