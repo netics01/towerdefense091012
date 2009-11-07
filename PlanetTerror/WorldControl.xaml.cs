@@ -138,16 +138,10 @@ namespace PlanetTerror
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	포탄 생성
-		public Projectile CreateProjectile(Enemy target, Point pos, double angle)
+		public void AddProjectile(Projectile proj)
 		{
-			var p = new Projectile3();
-			p.Initialize(target, pos, angle);
-			p.Damage = Game.Setting.tower.attackRange;
-			p.Speed = Game.Setting.proj1.speed;
-
-			projectiles.Add(p);
-			LayoutRoot.Children.Add(p);
-			return p;
+			projectiles.Add(proj);
+			LayoutRoot.Children.Add(proj);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	타겟 검색

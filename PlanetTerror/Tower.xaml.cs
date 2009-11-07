@@ -36,13 +36,19 @@ namespace PlanetTerror
 		const string MENU_GROUP = "Menu_StateGroup";
 		const string MENU_NOMENU_STATE = "Menu_NoMenu_State";
 		const string MENU_BUILD_STATE = "Menu_Build_State";
-		const string MENU_UPGRADE_STATE = "Menu_Upgrade_State";
+		const string MENU_UPGRADE1_STATE = "Menu_Upgrade_State";
+		const string MENU_UPGRADE2_STATE = "Menu_Upgrade2_State";
+		const string MENU_UPGRADE3_STATE = "Menu_Upgrade3_State";
 		const string MENU_DISMANTLE_STATE = "Menu_DismantleOnly_State";
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		const string GOLD_GROUP = "Gold_StateGroup";
 		const string GOLD_GAIN_STATE = "Gold_Gain_State";
 		const string GOLD_LOSE_STATE = "Gold_Lose_State";
 		const string GOLD_NORMAL_STATE = "Gold_Normal_State";
+
+		//===============================================================================================================================================
+		//	프로퍼티
+		public Setting.Tower.Stat Stat { get { return Game.Setting.tower.stats[towerLevel]; } }
 
 		//===============================================================================================================================================
 		//	스태틱
@@ -57,13 +63,15 @@ namespace PlanetTerror
 		Enemy target;
 		Point towerCenter;
 		double cooldownTime;
-//		int towerLevel;
+		int towerLevel;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		VSM vsm;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		List<Storyboard> effectStories;
 		Storyboard notYetBuiltStory;
 		Storyboard labStory;
+		Storyboard upgEffectStory;
+		bool bDismantling;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -87,18 +95,17 @@ namespace PlanetTerror
 			notYetBuiltStory = Resources.FindStoryboard("NotYetBuilt_Storyboard");
 			notYetBuiltStory.RepeatForever();
 			labStory = Resources.FindStoryboard("Lab_Tower_Storyboard");
-			labStory.RepeatForever();			
+			labStory.RepeatForever();
+			upgEffectStory = Resources.FindStoryboard("Upg_Effect_Storyboard");
+			bDismantling = false;
 
 			Loaded += new RoutedEventHandler(Tower_Loaded);
 			MouseEnter += new MouseEventHandler(Tower_MouseEnter);
 			MouseLeave += new MouseEventHandler(Tower_MouseLeave);
-			//Menu_Build_Button.MouseLeave +=new MouseEventHandler(Menu_Build_Button_MouseLeave);
-			//Menu_Upgrade_Button.MouseLeave +=new MouseEventHandler(Menu_Upgrade_Button_MouseLeave);
-			//Menu_UpgradeBig_Button.MouseLeave +=new MouseEventHandler(Menu_UpgradeBIG_Button_MouseLeave);
-			//Menu_Dismantle_Button.MouseLeave +=new MouseEventHandler(Menu_Dismantle_Button_MouseLeave);
 			Menu_Build_Button.Click += new RoutedEventHandler(Menu_Build_Button_Click);
 			Menu_Upgrade_Button.Click += new RoutedEventHandler(Menu_Upgrade_Button_Click);
-			//Menu_UpgradeBig_Button.Click += new RoutedEventHandler(Menu_UpgradeBIG_Button_Click);
+			Menu_Upgrade2_Button.Click += new RoutedEventHandler(Menu_Upgrade2_Button_Click);
+			Menu_Upgrade3_Button.Click += new RoutedEventHandler(Menu_Upgrade3_Button_Click);
 			Menu_Dismantle_Button.Click += new RoutedEventHandler(Menu_Dismantle_Button_Click);
 			Menu_Lab_Button.Click += new RoutedEventHandler(Menu_Lab_Button_Click);
 			
@@ -129,7 +136,21 @@ namespace PlanetTerror
 			case TOWER_BUILT_STATE:
 				if( vsm.GetStateFinished() )
 				{
-					vsm.SetState(MENU_GROUP, MENU_UPGRADE_STATE);
+					switch( towerLevel )
+					{
+					case 0:
+						vsm.SetState(MENU_GROUP, MENU_UPGRADE1_STATE);
+						break;
+					case 1:
+						vsm.SetState(MENU_GROUP, MENU_UPGRADE2_STATE);
+						break;
+					case 2:
+						vsm.SetState(MENU_GROUP, MENU_UPGRADE3_STATE);
+						break;
+					case 3:
+						vsm.SetState(MENU_GROUP, MENU_DISMANTLE_STATE);
+						break;
+					}					
 				}
 				break;
 			case LAB_BUILT_STATE:
@@ -150,26 +171,6 @@ namespace PlanetTerror
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		void Menu_Build_Button_MouseLeave(object sender, MouseEventArgs e)
-		{
-			Tower_MouseLeave(sender, e);
-		}
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		void Menu_Upgrade_Button_MouseLeave(object sender, MouseEventArgs e)
-		{
-			Tower_MouseLeave(sender, e);
-		}
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		void Menu_UpgradeBIG_Button_MouseLeave(object sender, MouseEventArgs e)
-		{
-			Tower_MouseLeave(sender, e);
-		}
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		void Menu_Dismantle_Button_MouseLeave(object sender, MouseEventArgs e)
-		{
-			Tower_MouseLeave(sender, e);
-		}
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Build_Button_Click(object sender, RoutedEventArgs e)
 		{
 			int gold = Game.Setting.tower.towerCost;
@@ -177,6 +178,8 @@ namespace PlanetTerror
 			{
 				return;
 			}
+			towerLevel = 0;
+			bDismantling = false;
 			notYetBuiltStory.Stop();
 			vsm.SetState(TOWER_BUILT_STATE);
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
@@ -184,12 +187,26 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Upgrade_Button_Click(object sender, RoutedEventArgs e)
 		{
-			
+			if( !Game.UI.SpendGold(Stat.upgCost) )
+			{
+				return;
+			}
+
+			effectStories[towerLevel].Stop();
+			towerLevel++;
+			effectStories[towerLevel].Begin();
+//			upgEffectStory.Begin();
+			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		void Menu_UpgradeBIG_Button_Click(object sender, RoutedEventArgs e)
+		void Menu_Upgrade2_Button_Click(object sender, RoutedEventArgs e)
 		{
-			
+			Menu_Upgrade_Button_Click(sender, e);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void Menu_Upgrade3_Button_Click(object sender, RoutedEventArgs e)
+		{
+			Menu_Upgrade_Button_Click(sender, e);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Dismantle_Button_Click(object sender, RoutedEventArgs e)
@@ -199,6 +216,7 @@ namespace PlanetTerror
 			{
 				return;
 			}
+			bDismantling = true;
 			effectStories[0].Stop();
 			labStory.Stop();
 			if( vsm.GetState() == TOWER_BUILT_STATE )
@@ -208,6 +226,21 @@ namespace PlanetTerror
 			else { vsm.SetState(LAB_DISMANTLE_STATE); }
 			
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
+
+
+// 			if( towerLevel == 1 )
+// 			{
+// 				upg1OnceStory.Begin(this, true);
+// 				upg1OnceStory.Seek(this, new TimeSpan(0), TimeSeekOrigin.Duration);
+// 			}
+// 			else
+// 			{
+// 				if( vsm.GetState() == TOWER_BUILT_STATE )
+// 				{
+// 					vsm.SetState(TOWER_DISMANTLE_STATE);
+// 				}
+// 				else { vsm.SetState(LAB_DISMANTLE_STATE); }
+// 			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Lab_Button_Click(object sender, RoutedEventArgs e)
@@ -217,6 +250,7 @@ namespace PlanetTerror
 			{
 				return;
 			}
+			bDismantling = false;
 			notYetBuiltStory.Stop();
 			vsm.SetState(LAB_BUILT_STATE);
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
@@ -243,11 +277,11 @@ namespace PlanetTerror
 			case NOTYETBUILT_STATE:
 				if( vsm.GetStateJustFinished() )
 				{
-//					towerLevel = 0;
 					notYetBuiltStory.Begin();
 				}
 				break;
 			case TOWER_BUILT_STATE:
+				var stat = Game.Setting.tower.stats[towerLevel];
 				if( !vsm.GetStateFinished() ) { return; }
 				if( vsm.GetStateJustFinished() )
 				{
@@ -256,9 +290,9 @@ namespace PlanetTerror
 				//타겟 설정
 				if( target == null ||
 					target.IsInvalid ||
-					target.Pos.DistanceSqaure(towerCenter) >= Game.Setting.tower.attackRangeSqr )
+					target.Pos.DistanceSqaure(towerCenter) >= stat.attackRangeSqr )
 				{
-					target = Game.World.FindTarget(towerCenter, Game.Setting.tower.attackRangeSqr);
+					target = Game.World.FindTarget(towerCenter, stat.attackRangeSqr);
 				}
 				//주포 회전
 				bool bAim = false;
@@ -270,8 +304,8 @@ namespace PlanetTerror
 
 					var transformGroup = Turret.RenderTransform as TransformGroup;
 					var rotTransform = transformGroup.Children[2] as RotateTransform;
-					var curAngle = rotTransform.Angle == 360 ? 0 : rotTransform.Angle;
-					var maxAngleChange = Game.Setting.tower.turretRotSpeed * delta;
+					var curAngle = rotTransform.Angle;
+					var maxAngleChange = stat.turretRotSpeed * delta;
 					if( Math.Abs(targetAngle - curAngle) < maxAngleChange )
 					{
 						transformGroup.Children[2] = new RotateTransform(targetAngle);
@@ -292,10 +326,7 @@ namespace PlanetTerror
 				if( target != null &&
 					bAim )
 				{
-					var projectile = Game.World.CreateProjectile(target, towerCenter, targetAngle);
-					projectile.Damage = Game.Setting.tower.attackDamage;
-
-					cooldownTime = Game.Setting.tower.attackCooldown;
+					FireProjectile(targetAngle);
 				}
 				break;
 			case TOWER_DISMANTLE_STATE:
@@ -371,6 +402,34 @@ namespace PlanetTerror
 				s_selectedTowerZ = s_selectedTower.GetZIndex();
 				Canvas.SetZIndex(s_selectedTower, (int)ELayer.SelectedTower);
 			}
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	발사체 생성
+		void FireProjectile(double angle)
+		{
+			Projectile p;
+			switch( towerLevel )
+			{
+			case 0:
+				p = new Projectile0();
+				break;
+			case 1:
+				p = new Projectile1();
+				break;
+			case 2:
+				p = new Projectile2();
+				break;
+			default:
+				p = new Projectile3();
+				break;
+			}
+			p.Initialize(target, towerCenter, angle);
+			p.Damage = Stat.attackDamage;
+			p.Speed = Stat.projSpeed;
+
+			Game.World.AddProjectile(p);
+
+			cooldownTime = Stat.attackCooldown;
 		}
 	}
 }

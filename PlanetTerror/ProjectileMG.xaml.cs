@@ -76,7 +76,7 @@ namespace PlanetTerror
 			}
 
 			var disp = targetLastPos - pos;
-			var speed = Game.Setting.proj1.speed;
+			var speed = 100;
 			if( disp.LengthSquared <= speed * speed )
 			{
 				pos = targetLastPos;
