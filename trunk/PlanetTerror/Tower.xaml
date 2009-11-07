@@ -1240,9 +1240,6 @@
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="tilt1" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image4" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
-			</ObjectAnimationUsingKeyFrames>
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="labtower" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
 			</ObjectAnimationUsingKeyFrames>
