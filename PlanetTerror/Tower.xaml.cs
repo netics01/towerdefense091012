@@ -72,6 +72,9 @@ namespace PlanetTerror
 		Storyboard labStory;
 		Storyboard upgEffectStory;
 		bool bDismantling;
+		Storyboard upg1AttachtStory;
+		Storyboard upg2AttachtStory;
+		Storyboard upg3AttachtStory;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -98,6 +101,12 @@ namespace PlanetTerror
 			labStory.RepeatForever();
 			upgEffectStory = Resources.FindStoryboard("Upg_Effect_Storyboard");
 			bDismantling = false;
+			upg1AttachtStory = Resources.FindStoryboard("Upg1_Attach_Storyboard");
+			upg1AttachtStory.Completed += new EventHandler(upg1AttachtStory_Completed);
+			upg2AttachtStory = Resources.FindStoryboard("Upg2_Attach_Storyboard");
+			upg2AttachtStory.Completed += new EventHandler(upg2AttachtStory_Completed);
+			upg3AttachtStory = Resources.FindStoryboard("Upg3_Attach_Storyboard");
+			upg3AttachtStory.Completed += new EventHandler(upg3AttachtStory_Completed);
 
 			Loaded += new RoutedEventHandler(Tower_Loaded);
 			MouseEnter += new MouseEventHandler(Tower_MouseEnter);
@@ -195,8 +204,12 @@ namespace PlanetTerror
 			effectStories[towerLevel].Stop();
 			towerLevel++;
 			effectStories[towerLevel].Begin();
-//			upgEffectStory.Begin();
+			upgEffectStory.Begin();
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
+
+			var attachStory = towerLevel == 1 ? upg1AttachtStory : (towerLevel == 2 ? upg2AttachtStory : upg3AttachtStory);
+			attachStory.AutoReverse = false;
+			attachStory.Begin();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Upgrade2_Button_Click(object sender, RoutedEventArgs e)
@@ -219,28 +232,22 @@ namespace PlanetTerror
 			bDismantling = true;
 			effectStories[0].Stop();
 			labStory.Stop();
-			if( vsm.GetState() == TOWER_BUILT_STATE )
-			{
-				vsm.SetState(TOWER_DISMANTLE_STATE);
-			}
-			else { vsm.SetState(LAB_DISMANTLE_STATE); }
-			
+
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 
-
-// 			if( towerLevel == 1 )
-// 			{
-// 				upg1OnceStory.Begin(this, true);
-// 				upg1OnceStory.Seek(this, new TimeSpan(0), TimeSeekOrigin.Duration);
-// 			}
-// 			else
-// 			{
-// 				if( vsm.GetState() == TOWER_BUILT_STATE )
-// 				{
-// 					vsm.SetState(TOWER_DISMANTLE_STATE);
-// 				}
-// 				else { vsm.SetState(LAB_DISMANTLE_STATE); }
-// 			}
+			if( towerLevel == 0 )
+			{
+				if( vsm.GetState() == TOWER_BUILT_STATE )
+				{
+					vsm.SetState(TOWER_DISMANTLE_STATE);
+				}
+				else { vsm.SetState(LAB_DISMANTLE_STATE); }
+			}
+			else
+			{
+				var attachStory = towerLevel == 1 ? upg1AttachtStory : (towerLevel == 2 ? upg2AttachtStory : upg3AttachtStory);
+				attachStory.BeginReverse(this);
+			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Lab_Button_Click(object sender, RoutedEventArgs e)
@@ -264,6 +271,28 @@ namespace PlanetTerror
 		void GoldLose_Storyboard_Completed(object sender, EventArgs e)
 		{
 			vsm.SetState(GOLD_GROUP, GOLD_NORMAL_STATE);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void upg1AttachtStory_Completed(object sender, EventArgs e)
+		{
+			if( !bDismantling ) { return; }
+			if( vsm.GetState() == TOWER_BUILT_STATE )
+			{
+				vsm.SetState(TOWER_DISMANTLE_STATE);
+			}
+			else { vsm.SetState(LAB_DISMANTLE_STATE); }
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void upg2AttachtStory_Completed(object sender, EventArgs e)
+		{
+			if( !bDismantling ) { return; }
+			upg1AttachtStory.BeginReverse(this);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void upg3AttachtStory_Completed(object sender, EventArgs e)
+		{
+			if( !bDismantling ) { return; }
+			upg2AttachtStory.BeginReverse(this);
 		}
 
 		//===============================================================================================================================================
