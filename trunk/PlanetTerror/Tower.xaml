@@ -3559,7 +3559,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Canvas.RenderTransform>
-			<Button x:Name="Button_lab_eff" Width="72" Height="75.667" Content="Button" Canvas.Left="4.5" Canvas.Top="4.5" Style="{StaticResource Tower_Button_lab_eff}">
+			<Button x:Name="Button_lab_eff" Width="72" Height="75.667" Content="Button" Canvas.Left="4.5" Canvas.Top="4.5" Style="{DynamicResource Tower_Button_lab_eff}" Background="{x:Null}" BorderBrush="{x:Null}">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
 						<Setter Property="Control.Template">
