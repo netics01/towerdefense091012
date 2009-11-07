@@ -33,8 +33,9 @@ namespace PlanetTerror
 		const string HP0_STATE = "Core_HP0_State";
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		const string ATTACK_GROUP = "Attack_StateGroup";
-		const string NOATTACK_STATE = "Attack_Normal_State";
-		const string BEAM_STATE = "Attack_Beam_State";
+		const string ATTACK_NORMAL_STATE = "Attack_Normal_State";
+		const string ATTACK_BEAM_STATE = "Attack_Beam_State";
+		const string ATTACK_READY_STATE = "Attack_Ready_State";
 
 		//===============================================================================================================================================
 		//	프로퍼티
@@ -87,15 +88,22 @@ namespace PlanetTerror
 
 			vsm.SetState(HP100_STATE);
 			ring100_Story.Begin();
-			vsm.SetState(ATTACK_GROUP, NOATTACK_STATE);
+			vsm.SetState(ATTACK_GROUP, ATTACK_NORMAL_STATE);
 
 			//필살기 테스트를 위해
-			Attack_Beam_State.Storyboard.Completed += new EventHandler(Storyboard_Completed);
+			Attack_Ready_Button.Click += new RoutedEventHandler(Attack_Ready_Button_Click);
+			Attack_Beam_State.Storyboard.Completed += new EventHandler(Attack_Beam_State_Completed);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		void Storyboard_Completed(object sender, EventArgs e)
+		void Attack_Beam_State_Completed(object sender, EventArgs e)
 		{
-			VisualStateManager.GoToState(this, NOATTACK_STATE, true);
+			VisualStateManager.GoToState(this, ATTACK_NORMAL_STATE, true);
+			Game.UI.GainPower(-1000);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void Attack_Ready_Button_Click(object sender, RoutedEventArgs e)
+		{
+			vsm.SetState(ATTACK_GROUP, ATTACK_BEAM_STATE);
 		}
 
 		//===============================================================================================================================================
@@ -158,6 +166,12 @@ namespace PlanetTerror
 			case HP0_STATE:
 				break;
 			}
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	게이지가 다 찼다.
+		public void DeadlyReady()
+		{
+			vsm.SetState(ATTACK_GROUP, ATTACK_READY_STATE);
 		}
 	}
 }
