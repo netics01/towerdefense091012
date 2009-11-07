@@ -23858,7 +23858,7 @@
 						</TransformGroup>
 					</Button.RenderTransform>
 				</Button>
-				<Button x:Name="button_Attack_Ready" Style="{DynamicResource ButtonStyle1}" Width="120" Height="112" Content="필살기써언니야" FontFamily="Fonts/#아리따B" Foreground="#FF37EFFF" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+				<Button x:Name="button_Attack_Ready" Style="{DynamicResource ButtonStyle1}" Width="120" Height="112" Content="!!필살기 사용 할 수 있습니다!!" FontFamily="Fonts/#아리따B" Foreground="#FFFFB10C" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
 					<Button.Resources>
 						<Style x:Key="ButtonFocusVisual">
 							<Setter Property="Control.Template">
@@ -23892,7 +23892,7 @@
 													<VisualState x:Name="MouseOver">
 														<Storyboard>
 															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="(ContentControl.Content)">
-																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="!!필살기써언니야!!"/>
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="!!필살기 사용 할 수 있습니다!!"/>
 															</ObjectAnimationUsingKeyFrames>
 															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
 																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
@@ -24213,17 +24213,23 @@
 																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
 															</DoubleAnimationUsingKeyFrames>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Talk" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+															</ObjectAnimationUsingKeyFrames>
 														</Storyboard>
 													</VisualState>
 													<VisualState x:Name="Pressed">
 														<Storyboard>
 															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="(ContentControl.Content)">
-																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="!!필살기써언니야!!"/>
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="!!필살기 사용 할 수 있습니다!!"/>
 															</ObjectAnimationUsingKeyFrames>
 															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
 																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 															</ObjectAnimationUsingKeyFrames>
 															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+															</ObjectAnimationUsingKeyFrames>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Talk" Storyboard.TargetProperty="(UIElement.Visibility)">
 																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 															</ObjectAnimationUsingKeyFrames>
 														</Storyboard>
@@ -24235,8 +24241,6 @@
 													<VisualState x:Name="Focused"/>
 												</VisualStateGroup>
 											</VisualStateManager.VisualStateGroups>
-											<Rectangle x:Name="rectangle" Fill="#CC1E1F20" Stroke="Black" Width="120" Height="48" Visibility="Collapsed" Canvas.Left="101.75" Canvas.Top="-62.5"/>
-											<ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Stretch" Margin="{TemplateBinding Padding}" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed" Canvas.Left="117.75" Canvas.Top="-46.5"/>
 											<Canvas x:Name="roll" Width="286.66" Height="424.217" RenderTransformOrigin="0.5,0.5" Canvas.Left="7.547" Canvas.Top="16.293">
 												<Canvas.RenderTransform>
 													<TransformGroup>
@@ -24499,6 +24503,11 @@
 														</RadialGradientBrush>
 													</Ellipse.Fill>
 												</Ellipse>
+											</Canvas>
+											<Canvas x:Name="Talk" Width="120" Height="48" Canvas.Left="101.75" Canvas.Top="-62.5" Visibility="Collapsed" IsEnabled="False" IsHitTestVisible="False">
+												<Rectangle x:Name="rectangle" Fill="#CC1E1F20" Stroke="Black" Width="196.25" Height="48" Visibility="Visible"/>
+												<Rectangle x:Name="rectangle_Copy" Fill="#CC201E1E" Stroke="#FFFF7D25" Width="189.708" Height="44" Visibility="Visible" Margin="0" Canvas.Left="3.271" Canvas.Top="2"/>
+												<ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Stretch" Margin="{TemplateBinding Padding}" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True" IsEnabled="False" IsHitTestVisible="False" Visibility="Visible" Canvas.Left="16" Canvas.Top="16" Content="!!필살기 사용 할 수 있습니다!!"/>
 											</Canvas>
 										</Canvas>
 										<ControlTemplate.Triggers>
