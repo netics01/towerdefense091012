@@ -282,7 +282,7 @@
 				<GradientStop Color="#00000000" Offset="0.534"/>
 			</LinearGradientBrush>
 		</Canvas.Background>
-		<Image x:Name="gold_Image" Width="64" Height="64" Source="Resources/UI/Gold.png" Canvas.Left="688" Canvas.Top="8" RenderTransformOrigin="0.5,0.5">
+		<Image x:Name="gold_Image" Width="64" Height="64" Source="Resources/UI/Gold.png" Canvas.Left="688" Canvas.Top="8" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
