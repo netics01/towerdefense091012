@@ -1443,8 +1443,9 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:09.8000000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:10" Value="0.5"/>
 			</DoubleAnimationUsingKeyFrames>
-			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="color_change" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
-				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFE01919"/>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="color_change" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF4916"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.9000000" Value="#FFFF5F16"/>
 			</ColorAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Upg2_Tower_Storyboard">
