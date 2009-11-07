@@ -77,7 +77,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 14;
+		public const int VERSION = 15;
 
 		public int version;
 		public int startGold;
@@ -257,40 +257,46 @@ namespace PlanetTerror
 			enemy3.gold = 0;
 			enemy3.powerUp = 2;
 
-			var wave = new Wave();
-			wave.waitTime = 34;
-			wave.bundles = new List<Wave.Bundle>();
-			var bundle = new Wave.Bundle();
-			bundle.waitTime = 0.1;
-			bundle.typeName = "Enemy1";
-			bundle.pathIndex = 2;
-			bundle.count = 5;
-			bundle.interval = 0.5;
-			wave.bundles.Add(bundle);
-			waves.Add(wave);
+			var w = MakeWave(34);
+			MakeBundle(w, 0.1, "Enemy1", 2, 5, 0.5);
 
-			for( int i = 0; i < 3; ++i )
-			{
-				wave = new Wave();
-				wave.waitTime = 5.0;
-				wave.bundles = new List<Wave.Bundle>();
-				for( int j = 0; j < 3; ++j )
-				{
-					var b = new Wave.Bundle();
-					b.waitTime = 0.1;
-					if( j == 0 ) { b.typeName = "Enemy1"; }
-					else if( j == 1 ) { b.typeName = "Enemy2"; }
-					else { b.typeName = "Enemy3"; }
+			w = MakeWave(5);
+			MakeBundle(w, 0.1, "Enemy1", 2, 5, 1.5);
+			MakeBundle(w, 0.1, "Enemy2", 0, 5, 1.5);
+			MakeBundle(w, 0.1, "Enemy3", 2, 5, 1.5);
 
-					b.pathIndex = RandomH.Next(3);
-					b.count = 5;
-					b.interval = 1.5;
-					wave.bundles.Add(b);
-				}
+			w = MakeWave(5);
+			MakeBundle(w, 0.1, "Enemy1", 0, 5, 1.5);
+			MakeBundle(w, 0.1, "Enemy2", 1, 5, 1.5);
+			MakeBundle(w, 0.1, "Enemy3", 2, 5, 1.5);
 
-				waves.Add(wave);
-			}
+			w = MakeWave(5);
+			MakeBundle(w, 0.1, "Enemy1", 2, 5, 1.5);
+			MakeBundle(w, 0.1, "Enemy2", 2, 5, 1.5);
+			MakeBundle(w, 0.1, "Enemy3", 2, 5, 1.5);
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	웨이브 생성
+		Wave MakeWave(double waitTime)
+		{
+			var w = new Wave();
+			w.waitTime = waitTime;
+			w.bundles = new List<Wave.Bundle>();
+			return w;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	번들 생성
+		Wave.Bundle MakeBundle(Wave w, double waitTime, string typeName, int pathIndex, int count, double interval)
+		{
+			var b = new Wave.Bundle();
+			b.waitTime = waitTime;
+			b.typeName = typeName;
+			b.pathIndex = pathIndex;
+			b.count = count;
+			b.interval = interval;
+			w.bundles.Add(b);
+			return b;
+		}	
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	계산할 값 수정
 		void Adjust()
