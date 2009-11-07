@@ -224,159 +224,6 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:10" Value="0.5"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
-		<Style x:Key="Menu_Dismantle" TargetType="{x:Type Button}">
-			<Setter Property="Template">
-				<Setter.Value>
-					<ControlTemplate TargetType="{x:Type Button}">
-						<Grid x:Name="grid" Width="80" Height="14" Visibility="Visible" Margin="0">
-							<VisualStateManager.VisualStateGroups>
-								<VisualStateGroup x:Name="CommonStates">
-									<VisualState x:Name="Normal"/>
-									<VisualState x:Name="MouseOver">
-										<Storyboard>
-											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.Visibility)">
-												<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-											</ObjectAnimationUsingKeyFrames>
-											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
-												<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-											</ObjectAnimationUsingKeyFrames>
-											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
-												<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-											</ObjectAnimationUsingKeyFrames>
-											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
-												<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-											</ObjectAnimationUsingKeyFrames>
-											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle_Copy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF2B18"/>
-											</ColorAnimationUsingKeyFrames>
-											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
-												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF2B18"/>
-											</ColorAnimationUsingKeyFrames>
-											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF2B18"/>
-											</ColorAnimationUsingKeyFrames>
-										</Storyboard>
-									</VisualState>
-									<VisualState x:Name="Pressed">
-										<Storyboard>
-											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.Visibility)">
-												<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-											</ObjectAnimationUsingKeyFrames>
-											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
-												<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-											</ObjectAnimationUsingKeyFrames>
-											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
-												<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-											</ObjectAnimationUsingKeyFrames>
-											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
-												<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-											</ObjectAnimationUsingKeyFrames>
-											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle_Copy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF2B18"/>
-											</ColorAnimationUsingKeyFrames>
-											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
-												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF2B18"/>
-											</ColorAnimationUsingKeyFrames>
-											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF2B18"/>
-											</ColorAnimationUsingKeyFrames>
-										</Storyboard>
-									</VisualState>
-									<VisualState x:Name="Disabled">
-										<Storyboard>
-											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF4D4D4D"/>
-											</ColorAnimationUsingKeyFrames>
-											<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
-												<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-											</ObjectAnimationUsingKeyFrames>
-											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
-												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF969696"/>
-											</ColorAnimationUsingKeyFrames>
-										</Storyboard>
-									</VisualState>
-								</VisualStateGroup>
-								<VisualStateGroup x:Name="FocusStates">
-									<VisualState x:Name="Unfocused"/>
-									<VisualState x:Name="Focused"/>
-								</VisualStateGroup>
-							</VisualStateManager.VisualStateGroups>
-							<Rectangle x:Name="rectangle_Copy" Stroke="Black" Width="Auto" Height="Auto" RadiusX="10" RadiusY="9" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#FF9F3232" Visibility="Visible" HorizontalAlignment="Stretch" Margin="-6.335,-7.002,28.168,-6.665" VerticalAlignment="Stretch">
-								<Rectangle.RenderTransform>
-									<TransformGroup>
-										<ScaleTransform/>
-										<SkewTransform/>
-										<RotateTransform/>
-										<TranslateTransform/>
-									</TransformGroup>
-								</Rectangle.RenderTransform>
-							</Rectangle>
-							<Rectangle x:Name="rectangle1" Fill="Black" RadiusX="2" RadiusY="2" Width="16" Height="14" Margin="0" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Stroke="{x:Null}">
-								<Rectangle.RenderTransform>
-									<TransformGroup>
-										<ScaleTransform/>
-										<SkewTransform/>
-										<RotateTransform/>
-										<TranslateTransform/>
-									</TransformGroup>
-								</Rectangle.RenderTransform>
-							</Rectangle>
-							<Path x:Name="path" Fill="{x:Null}" Stretch="Fill" Stroke="#FF9F3232" StrokeThickness="2" HorizontalAlignment="Left" Margin="2,1,0,1" Width="12" RenderTransformOrigin="0.5,0.5" Data="M11,6 C11,8.7614237 8.7614237,11 6,11 C3.2385763,11 1,8.7614237 1,6 C1,3.2385763 3.2385763,1 6,1 C8.7614237,1 11,3.2385763 11,6 z M1.1669999,6.3329998 L10.541,6.3329998">
-								<Path.RenderTransform>
-									<TransformGroup>
-										<ScaleTransform/>
-										<SkewTransform/>
-										<RotateTransform Angle="-44.547"/>
-										<TranslateTransform/>
-									</TransformGroup>
-								</Path.RenderTransform>
-							</Path>
-							<ContentPresenter HorizontalAlignment="Stretch" Margin="23.65,0,12.15,0" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Content="+30" RecognizesAccessKey="True" Width="Auto"/>
-							<Rectangle x:Name="rectangle2" Fill="#CC1A1C1B" Stroke="{x:Null}" RadiusX="2" RadiusY="2" HorizontalAlignment="Right" Margin="0,-3.166,-85,-15.501" Width="106.666" Visibility="Collapsed" Cursor="Help" Height="Auto" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
-								<Rectangle.RenderTransform>
-									<TransformGroup>
-										<ScaleTransform/>
-										<SkewTransform/>
-										<RotateTransform/>
-										<TranslateTransform/>
-									</TransformGroup>
-								</Rectangle.RenderTransform>
-							</Rectangle>
-							<Rectangle x:Name="rectangle1_Copy" Fill="#FF9F3232" RadiusX="2" RadiusY="2" Width="16" Height="14" Margin="0,0,2.666,0" HorizontalAlignment="Right" Stroke="{x:Null}" Visibility="Collapsed" Cursor="Help" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
-								<Rectangle.RenderTransform>
-									<TransformGroup>
-										<ScaleTransform/>
-										<SkewTransform/>
-										<RotateTransform/>
-										<TranslateTransform/>
-									</TransformGroup>
-								</Rectangle.RenderTransform>
-							</Rectangle>
-							<TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Right" Margin="0,0.333,-83.333,-19.333" Width="82" Height="Auto" Visibility="Collapsed" FontFamily="Fonts/#아리따B" FontSize="10.667" Foreground="#FFDCDAD2" Text="채굴소로 복구합니다." TextWrapping="Wrap" Cursor="Help" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
-								<TextBlock.RenderTransform>
-									<TransformGroup>
-										<ScaleTransform/>
-										<SkewTransform/>
-										<RotateTransform/>
-										<TranslateTransform/>
-									</TransformGroup>
-								</TextBlock.RenderTransform>
-							</TextBlock>
-							<Path x:Name="path_Copy" Fill="{x:Null}" Stretch="Fill" Stroke="Black" StrokeThickness="2" HorizontalAlignment="Right" Margin="0,1,4.83,1" Width="12" RenderTransformOrigin="0.5,0.5" Data="M11,6 C11,8.7614237 8.7614237,11 6,11 C3.2385763,11 1,8.7614237 1,6 C1,3.2385763 3.2385763,1 6,1 C8.7614237,1 11,3.2385763 11,6 z M1.1669999,6.3329998 L10.541,6.3329998" Cursor="Help" Visibility="Collapsed" IsHitTestVisible="False" IsEnabled="False">
-								<Path.RenderTransform>
-									<TransformGroup>
-										<ScaleTransform/>
-										<SkewTransform/>
-										<RotateTransform Angle="-44.547"/>
-										<TranslateTransform/>
-									</TransformGroup>
-								</Path.RenderTransform>
-							</Path>
-						</Grid>
-					</ControlTemplate>
-				</Setter.Value>
-			</Setter>
-		</Style>
 		<Storyboard x:Key="Lab_Tower_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="turrettower" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
@@ -3712,7 +3559,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Canvas.RenderTransform>
-			<Button x:Name="Button_lab_eff" Width="72" Height="75.667" Content="Button" Canvas.Left="4.5" Canvas.Top="4.5" Style="{DynamicResource ButtonStyle1}">
+			<Button x:Name="Button_lab_eff" Width="72" Height="75.667" Content="Button" Canvas.Left="4.5" Canvas.Top="4.5" Style="{StaticResource Tower_Button_lab_eff}">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
 						<Setter Property="Control.Template">
@@ -3729,7 +3576,7 @@
 						<GradientStop Color="#FFC6C5D7" Offset="1.0"/>
 					</LinearGradientBrush>
 					<SolidColorBrush x:Key="ButtonBorder" Color="#FF003C74"/>
-					<Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+					<Style x:Key="Tower_Button_lab_eff" TargetType="{x:Type Button}">
 						<Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
 						<Setter Property="Background" Value="{StaticResource ButtonNormalBackgroundFill}"/>
 						<Setter Property="BorderBrush" Value="{StaticResource ButtonBorder}"/>
@@ -5147,7 +4994,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_Dismantle_Button" Width="80" Height="14" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Canvas.Top="39.333" FontFamily="아리따B" Cursor="Hand" Style="{DynamicResource Menu_Dismantle}" FocusVisualStyle="{DynamicResource ControlStyle1}" Content="{DynamicResource menu_ButtonDismantle}" Canvas.Left="2.334" BorderThickness="0" Visibility="Collapsed">
+			<Button x:Name="Menu_Dismantle_Button" Width="80" Height="14" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Canvas.Top="39.333" FontFamily="아리따B" Cursor="Hand" Style="{StaticResource Tower_Menu_Dismantle}" FocusVisualStyle="{DynamicResource ControlStyle1}" Content="{DynamicResource menu_ButtonDismantle}" Canvas.Left="2.334" BorderThickness="0" Visibility="Collapsed">
 				<Button.Resources>
 					<Style x:Key="menu_ButtonDismantle" TargetType="{x:Type Button}">
 						<Setter Property="Template">
