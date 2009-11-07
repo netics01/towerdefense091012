@@ -21,7 +21,13 @@
 		</VisualStateManager.CustomVisualStateManager>
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="Cutscene_StateGroup">
-				<VisualState x:Name="GameStart_State"/>
+				<VisualState x:Name="GameStart_State">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="GameStart" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
 				<VisualState x:Name="Opening_State"/>
 				<VisualState x:Name="GameOver_State"/>
 				<VisualState x:Name="Ending_State">
@@ -181,9 +187,15 @@
 				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Canvas x:Name="GameStart" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Visibility="Collapsed">
-			<Image Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Source="CutsceneResources/img_Title.jpg" Stretch="Fill"/>
-			<TextBlock Width="976" Height="184" Canvas.Left="16" Canvas.Top="16" FontFamily="아리따B" FontSize="133.333" FontWeight="Bold" Text="Planet Terror" TextWrapping="Wrap"/>
+		<Canvas x:Name="GameStart" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0">
+			<Rectangle Stroke="Black" Width="1024" Height="720">
+				<Rectangle.Fill>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="Black" Offset="0.539"/>
+						<GradientStop Color="#FF28344B" Offset="1"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
 			<Button x:Name="Menu_Start" Style="{DynamicResource menu_Start}" Width="400" Height="40" Content="게임 시작" FontFamily="아리따B" FontSize="21.333" FontWeight="Bold" Foreground="#FFF4C685" Canvas.Left="328" Canvas.Top="603" BorderBrush="{x:Null}">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
@@ -299,7 +311,7 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="Opening" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="Black" Visibility="Collapsed">
+		<Canvas x:Name="Opening" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="Black" Visibility="Collapsed" d:IsHidden="True">
 			<Canvas x:Name="TV" Width="1024" Height="720">
 				<Image Width="650" Height="493" Canvas.Left="78" Canvas.Top="104" Source="CutsceneResources/img_Opening_TV01.jpg" Stretch="Fill"/>
 				<Image Width="650" Height="493" Canvas.Left="72" Canvas.Top="88" Source="CutsceneResources/img_Opening_TV02.jpg" Stretch="Fill"/>
@@ -359,7 +371,7 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="GameOver" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="#FF0C0C0C" Visibility="Collapsed">
+		<Canvas x:Name="GameOver" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="#FF0C0C0C" Visibility="Collapsed" d:IsHidden="True">
 			<TextBlock Width="584" Height="80" Canvas.Left="256" Canvas.Top="280" FontFamily="아리따B" FontSize="64" Foreground="#FFBB3131" TextWrapping="Wrap"><Run Text="Core"/><Run Text=" is"/><Run Text=" Dismantle"/><Run Text="..."/></TextBlock>
 			<Button x:Name="Menu_ReStart" Style="{DynamicResource ReStart}" Width="176" Height="40" Content="타이틀 화면으로" Canvas.Left="448" Canvas.Top="416" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" Foreground="#FF9B2727">
 				<Button.Resources>
@@ -405,7 +417,7 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="Ending" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Visibility="Collapsed">
+		<Canvas x:Name="Ending" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" d:IsHidden="True">
 			<Canvas.Background>
 				<RadialGradientBrush>
 					<RadialGradientBrush.RelativeTransform>
