@@ -68,6 +68,11 @@ namespace PlanetTerror
 		//	업데이트
 		public void Update(float delta)
 		{
+			if( lastPowerGauge < 100 &&
+				power_Progress.Value == 100 )
+			{
+				Game.World.core.DeadlyReady();
+			}
 			DisplayGold();
 			lastPowerGauge = power_Progress.Value;
 		}

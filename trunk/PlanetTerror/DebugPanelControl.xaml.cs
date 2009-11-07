@@ -95,9 +95,9 @@ namespace PlanetTerror
 			Game.World.testBoss1.TestState("Boss_Move_State");
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		void coreTest_Button_Click(object sender, RoutedEventArgs e)
+		public void coreTest_Button_Click(object sender, RoutedEventArgs e)
 		{
-			VisualStateManager.GoToState(Game.World.core, "Attack_Beam_State", true);
+			Game.UI.GainPower(1000);
 		}
 
 		//===============================================================================================================================================
