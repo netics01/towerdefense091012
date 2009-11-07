@@ -77,7 +77,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 11;
+		public const int VERSION = 13;
 
 		public int version;
 		public int startGold;
@@ -96,14 +96,17 @@ namespace PlanetTerror
 			public int towerCost;
 			public int labCost;
 			public int dismantleCost;
-			public int upgrade1Cost;
-			public int upgrade2Cost;
-			public int upgrade3Cost;
-			public double attackRange;
-			public double attackRangeSqr;
-			public double attackDamage;
-			public double attackCooldown;
-			public double turretRotSpeed;
+			public class Stat
+			{
+				public double attackRange;
+				public double attackRangeSqr;
+				public double attackCooldown;
+				public double attackDamage;
+				public double projSpeed;
+				public double turretRotSpeed;
+				public int upgCost;
+			}
+			public List<Stat> stats;
 		}
 		public Tower tower;
 
@@ -112,12 +115,6 @@ namespace PlanetTerror
 			public double hitPoint;
 		}
 		public Core core;
-
-		public class Projectile
-		{
-			public double speed;
-		}
-		public Projectile proj1;
 
 		public class Enemy
 		{
@@ -154,7 +151,6 @@ namespace PlanetTerror
 			gold = new Gold();
 			tower = new Tower();
 			core = new Core();
-			proj1 = new Projectile();
 			enemy1 = new Enemy();
 			enemy2 = new Enemy();
 			enemy3 = new Enemy();
@@ -185,24 +181,6 @@ namespace PlanetTerror
 
 		//===============================================================================================================================================
 		//	공용
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	업그레이드 비용을 얻는다.
-		public int GetUpgradeCost(int level)
-		{
-			switch( level )
-			{
-			case 0:
-				return 0;
-			case 1:
-				return tower.upgrade1Cost;
-			case 2:
-				return tower.upgrade2Cost;
-			case 3:
-				return tower.upgrade3Cost;
-			default:
-				throw new Exception("Can't reach here");
-			}
-		}
 
 		//===============================================================================================================================================
 		//	전용
@@ -211,7 +189,7 @@ namespace PlanetTerror
 		void SetDefault()
 		{
 			version = VERSION;
-			startGold = 100;
+			startGold = 1000;
 			powerMax = 100;
 
 			gold.interval = 15;
@@ -222,17 +200,42 @@ namespace PlanetTerror
 			tower.towerCost = 50;
 			tower.labCost = 200;
 			tower.dismantleCost = -30;
-			tower.upgrade1Cost = 150;
-			tower.upgrade2Cost = 200;
-			tower.upgrade3Cost = 250;
-			tower.attackRange = 130;
-			tower.attackDamage = 10;
-			tower.attackCooldown = 1;
-			tower.turretRotSpeed = 180;
+
+			tower.stats = new List<Tower.Stat>();
+			tower.stats.Add(new Tower.Stat());
+			tower.stats.Add(new Tower.Stat());
+			tower.stats.Add(new Tower.Stat());
+			tower.stats.Add(new Tower.Stat());
+
+			tower.stats[0].attackRange = 110;
+			tower.stats[0].attackDamage = 10;
+			tower.stats[0].attackCooldown = 1;
+			tower.stats[0].projSpeed = 100;
+			tower.stats[0].turretRotSpeed = 150;
+			tower.stats[0].upgCost = 150;
+
+			tower.stats[1].attackRange = 130;
+			tower.stats[1].attackDamage = 15;
+			tower.stats[1].attackCooldown = 0.9;
+			tower.stats[1].projSpeed = 110;
+			tower.stats[1].turretRotSpeed = 170;
+			tower.stats[1].upgCost = 200;
+
+			tower.stats[2].attackRange = 150;
+			tower.stats[2].attackDamage = 20;
+			tower.stats[2].attackCooldown = 0.8;
+			tower.stats[2].projSpeed = 120;
+			tower.stats[2].turretRotSpeed = 190;
+			tower.stats[2].upgCost = 250;
+
+			tower.stats[3].attackRange = 170;
+			tower.stats[3].attackDamage = 25;
+			tower.stats[3].attackCooldown = 0.7;
+			tower.stats[3].projSpeed = 130;
+			tower.stats[3].turretRotSpeed = 210;
+			tower.stats[3].upgCost = 1000;
 
 			core.hitPoint = 100;
-
-			proj1.speed = 20;
 
 			enemy1.routeTime = 35;
 			enemy1.hitPoint = 20;
@@ -290,7 +293,11 @@ namespace PlanetTerror
 		//	계산할 값 수정
 		void Adjust()
 		{
-			tower.attackRangeSqr = tower.attackRange * tower.attackRange;
+			Debug.Assert( tower.stats.Count == 4 );
+			for( int i = 0; i < tower.stats.Count; ++i )
+			{
+				tower.stats[i].attackRangeSqr = tower.stats[i].attackRange * tower.stats[i].attackRange;
+			}
 		}
 	}
 
