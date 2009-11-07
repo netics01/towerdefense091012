@@ -2027,6 +2027,18 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="2.029"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1.124"/>
 			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="top2" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.6000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.7000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="top2" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0.2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="top2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="18.676"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 	</UserControl.Resources>
 
@@ -3667,6 +3679,16 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
+			<Image x:Name="top2" Source="Resources\Tower\TowerA0_Top.png" Width="64" Height="64" RenderTransformOrigin="0.5,0.5" Canvas.Left="9.603" Canvas.Top="-25.666" Visibility="Collapsed">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
 			<Ellipse x:Name="ellipse1_Copy" Width="39.667" Height="29.667" Opacity="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="21.833" Canvas.Top="2.5">
 				<Ellipse.Stroke>
 					<SolidColorBrush Color="{StaticResource Enemy_lrgStroke}"/>
@@ -3684,7 +3706,7 @@
 				</Ellipse.RenderTransform>
 			</Ellipse>
 		</Canvas>
-		<Canvas x:Name="labtower" Width="70.833" Height="67" Canvas.Left="-4.5" Canvas.Top="-12.5" RenderTransformOrigin="0.5,0.5">
+		<Canvas x:Name="labtower" Width="70.833" Height="67" Canvas.Left="-4.5" Canvas.Top="-12.5" RenderTransformOrigin="0.5,0.5" d:IsHidden="True">
 			<Canvas.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
