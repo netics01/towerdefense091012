@@ -20,8 +20,8 @@ using PlanetTerror.Util;
 //	Background			-2001
 //	Enemy				[-1000, 0]
 //	Roof				5
-//	Projectile			6
 //	Tower				[10, 100]
+//	Projectile			101
 //	Core				105
 //	Boss				200
 
@@ -65,7 +65,8 @@ namespace PlanetTerror
 	{
 		Tower = 10,
 		TowerMax = 100,
-		SelectedTower = TowerMax
+		SelectedTower = TowerMax,
+		Projectile = 101
 	}
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -103,7 +104,6 @@ namespace PlanetTerror
 			public double attackDamage;
 			public double attackCooldown;
 			public double turretRotSpeed;
-			public double turretAimTolerance;
 		}
 		public Tower tower;
 
@@ -228,8 +228,7 @@ namespace PlanetTerror
 			tower.attackRange = 130;
 			tower.attackDamage = 10;
 			tower.attackCooldown = 1;
-			tower.turretRotSpeed = 90;
-			tower.turretAimTolerance = 10;
+			tower.turretRotSpeed = 180;
 
 			core.hitPoint = 100;
 
