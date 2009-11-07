@@ -506,7 +506,7 @@
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.34"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="canvas2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="47.882"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="24.882"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="canvas2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.777"/>
@@ -527,7 +527,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Canvas.RenderTransform>
-			<Canvas x:Name="canvas2" Width="282" Height="18" Canvas.Left="-68.08" Canvas.Top="22.5" RenderTransformOrigin="0.5,0.5">
+			<Canvas x:Name="canvas2" Width="282" Height="18" Canvas.Left="-30" Canvas.Top="22.5" RenderTransformOrigin="0.5,0.5">
 				<Canvas.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
