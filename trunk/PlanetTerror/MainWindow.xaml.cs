@@ -84,6 +84,7 @@ namespace PlanetTerror
 		void pump_Update(float delta)
 		{
 			world.Update(delta);
+			ui_Panel.Update(delta);
 			debug_Panel.Update(delta);
 		}
 
