@@ -239,5 +239,13 @@ namespace PlanetTerror.Util
 		{
 			story.RepeatBehavior = RepeatBehavior.Forever;
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	거꾸로 재생한다. 주의! AutoReverse 속성이 변경된다.
+		public static void BeginReverse(this Storyboard story, FrameworkElement e)
+		{
+			story.AutoReverse = true;
+			story.Begin(e, true);
+			story.Seek(e, new TimeSpan(0), TimeSeekOrigin.Duration);
+		}
 	}
 }
