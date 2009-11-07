@@ -77,7 +77,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 15;
+		public const int VERSION = 16;
 
 		public int version;
 		public int startGold;
@@ -282,6 +282,7 @@ namespace PlanetTerror
 			var w = new Wave();
 			w.waitTime = waitTime;
 			w.bundles = new List<Wave.Bundle>();
+			waves.Add(w);
 			return w;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
