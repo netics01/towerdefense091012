@@ -129,7 +129,7 @@ namespace PlanetTerror
 		{
 			WPFUtil.SetImageScaleMode(LayoutRoot, BitmapScalingMode.Linear);
 
-			towerCenter = this.GetCenter();
+			towerCenter = this.GetLeftTop() + new Vector(Game.Setting.tower.centerX, Game.Setting.tower.centerY);
 			vsm.SetState(NOTYETBUILT_STATE);
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 		}
@@ -326,10 +326,11 @@ namespace PlanetTerror
 				//주포 회전
 				bool bAim = false;
 				double targetAngle = 0;
+				var firePos = towerCenter;
 				if( target != null )
 				{
 					var dir = target.Pos - towerCenter;
-					targetAngle = Math.Atan2(dir.Y, dir.X) * 180 / Math.PI;
+					targetAngle = NumberH.ToDegree(dir.Angle());
 
 					var transformGroup = Turret.RenderTransform as TransformGroup;
 					var rotTransform = transformGroup.Children[2] as RotateTransform;
@@ -338,6 +339,8 @@ namespace PlanetTerror
 					if( Math.Abs(targetAngle - curAngle) < maxAngleChange )
 					{
 						transformGroup.Children[2] = new RotateTransform(targetAngle);
+						dir.Normalize();
+						firePos = towerCenter + (dir * Game.Setting.tower.barrelLength);
 						bAim = true;
 					}
 					else
@@ -355,7 +358,7 @@ namespace PlanetTerror
 				if( target != null &&
 					bAim )
 				{
-					FireProjectile(targetAngle);
+					FireProjectile(targetAngle, firePos);
 				}
 				break;
 			case TOWER_DISMANTLE_STATE:
@@ -434,7 +437,7 @@ namespace PlanetTerror
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	발사체 생성
-		void FireProjectile(double angle)
+		void FireProjectile(double angle, Point firePos)
 		{
 			Projectile p;
 			switch( towerLevel )
@@ -452,7 +455,7 @@ namespace PlanetTerror
 				p = new Projectile3();
 				break;
 			}
-			p.Initialize(target, towerCenter, angle);
+			p.Initialize(target, firePos, angle);
 			p.Damage = Stat.attackDamage;
 			p.Speed = Stat.projSpeed;
 

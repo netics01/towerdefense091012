@@ -22,14 +22,11 @@ namespace PlanetTerror
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	public partial class UIPanelControl : UserControl
 	{
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	싱글턴 액세서
-		public static UIPanelControl Instance { get; protected set; }
-
 		//===============================================================================================================================================
 		//	필드
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		int gold;
+		double lastPowerGauge;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		Storyboard noMoneyStory;
 		Storyboard normalWarningStory;
@@ -40,8 +37,6 @@ namespace PlanetTerror
 		public UIPanelControl()
 		{
 			this.InitializeComponent();
-
-			Instance = this;
 
 			noMoneyStory = Resources.FindStoryboard("NoMoney_Storyboard");
 			normalWarningStory = Resources.FindStoryboard("Warning_Enemy_Storyboard");
@@ -70,6 +65,13 @@ namespace PlanetTerror
 			DisplayGold();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	업데이트
+		public void Update(float delta)
+		{
+			DisplayGold();
+			lastPowerGauge = power_Progress.Value;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	돈 소모
 		public bool SpendGold(int requiredGold)
 		{
@@ -80,7 +82,6 @@ namespace PlanetTerror
 			}
 
 			gold -= requiredGold;
-			DisplayGold();
 			return true;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -88,7 +89,6 @@ namespace PlanetTerror
 		public void GainGold(int gainedGold)
 		{
 			gold += gainedGold;
-			DisplayGold();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	게이지 변화

@@ -77,7 +77,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 16;
+		public const int VERSION = 17;
 
 		public int version;
 		public int startGold;
@@ -96,6 +96,9 @@ namespace PlanetTerror
 			public int towerCost;
 			public int labCost;
 			public int dismantleCost;
+			public double centerX;
+			public double centerY;
+			public double barrelLength;
 			public class Stat
 			{
 				public double attackRange;
@@ -201,6 +204,9 @@ namespace PlanetTerror
 			tower.towerCost = 50;
 			tower.labCost = 200;
 			tower.dismantleCost = -30;
+			tower.centerX = 38;
+			tower.centerY = 8;
+			tower.barrelLength = 25;
 
 			tower.stats = new List<Tower.Stat>();
 			tower.stats.Add(new Tower.Stat());
