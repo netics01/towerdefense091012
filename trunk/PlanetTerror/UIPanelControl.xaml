@@ -32,34 +32,36 @@
 		<Storyboard x:Key="Warning_Enemy_Storyboard">
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.6"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.3"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0.3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="1"/>
 			</DoubleAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas1" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.6"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.3"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0.3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="1"/>
 			</DoubleAnimationUsingKeyFrames>
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:02" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:02.9000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.3000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas1" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:02" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:02.9000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.3000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Warning_Boss_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="WarningBoss" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:01.7000000" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:02.9000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="WarningBoss" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
@@ -536,19 +538,19 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform></TextBlock>
 		</Grid>
-		<Canvas x:Name="Warning_Enemy" Width="152" Height="104" Canvas.Top="-160" Canvas.Left="408">
+		<Canvas x:Name="Warning_Enemy" Width="152" Height="104" Canvas.Top="-208" Canvas.Left="352" IsHitTestVisible="False">
 			<Canvas x:Name="canvas" Width="64" Height="32" Visibility="Collapsed">
-				<Path Fill="#CC202020" Stretch="Fill" Stroke="#CC000000" Width="64" Height="47" Data="M0.5,0.5 L63.5,0.5 63.5,31.5 55.4375,31.4375 56,37.125003 59.25,36.625003 60.125,46.500004 57.25,40.000003 52.25,42.000003 48.530801,31.5 0.5,31.5 z"/>
-				<Rectangle Fill="#CC091116" Stroke="#FF2686C7" Width="60" Height="28" Canvas.Left="2" Canvas.Top="2"/>
-				<TextBlock Width="44.333" Height="16" FontFamily="Fonts/#kroeger 05_53" Foreground="#FF26C7B6" TextWrapping="Wrap" Canvas.Left="11" Canvas.Top="8"><Run Text="!!"/><Run Text="경고"/><Run Text="!!"/></TextBlock>
+				<Path Fill="#CC202020" Stretch="Fill" Stroke="#CC000000" Width="144" Height="96" Data="M0.5,0.5 L63.5,0.5 63.5,31.5 55.4375,31.4375 56,37.125003 59.25,36.625003 60.125,46.500004 57.25,40.000003 52.25,42.000003 48.530801,31.5 0.5,31.5 z" Canvas.Left="-0.75" Canvas.Top="-0.34"/>
+				<Rectangle Fill="#CC091116" Stroke="#FF2686C7" Width="135" Height="57.192" Canvas.Left="3.75" Canvas.Top="3.745"/>
+				<TextBlock Width="99.749" Height="32.681" FontFamily="Fonts/#kroeger 05_53" Foreground="#FF26C7B6" TextWrapping="Wrap" Canvas.Left="24" Canvas.Top="16" FontSize="24"><Run Text="!!"/><Run Text="경고"/><Run Text="!!"/></TextBlock>
 			</Canvas>
-			<Canvas x:Name="canvas1" Width="152" Height="72" Canvas.Left="96" Canvas.Top="16" Visibility="Collapsed">
+			<Canvas x:Name="canvas1" Width="152" Height="72" Canvas.Left="224" Canvas.Top="8" Visibility="Collapsed">
 				<Rectangle Fill="#4C000000" Stroke="#CC000000" Width="104" Height="32" Canvas.Left="0" Canvas.Top="0"/>
 				<Rectangle Fill="#CC091116" Stroke="#FF2686C7" Width="100" Height="28" Canvas.Left="2" Canvas.Top="2"/>
 				<TextBlock Width="87.001" Height="16" FontFamily="Fonts/#kroeger 05_53" Foreground="#FF26C7B6" TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="8"><Run Text="!!"/><Run Text="적이 옵니다"/><Run Text="!!"/></TextBlock>
 			</Canvas>
 		</Canvas>
-		<Canvas x:Name="WarningBoss" Width="200" Height="144" Canvas.Left="400" Canvas.Top="-160" Visibility="Collapsed">
+		<Canvas x:Name="WarningBoss" Width="200" Height="144" Canvas.Left="400" Canvas.Top="-160" Visibility="Collapsed" IsEnabled="False" IsHitTestVisible="False">
 			<Canvas x:Name="canvas_Copy" Width="64" Height="32">
 				<Path Fill="#CC202020" Stretch="Fill" Stroke="#CC000000" Width="64" Height="47" Data="M0.5,0.5 L63.5,0.5 63.5,31.5 55.4375,31.4375 56,37.125003 59.25,36.625003 60.125,46.500004 57.25,40.000003 52.25,42.000003 48.530801,31.5 0.5,31.5 z"/>
 				<Rectangle Fill="#CC091116" Stroke="#FFFFAE02" Width="60" Height="28" Canvas.Left="2" Canvas.Top="2"/>
