@@ -77,7 +77,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 13;
+		public const int VERSION = 14;
 
 		public int version;
 		public int startGold;
@@ -113,6 +113,7 @@ namespace PlanetTerror
 		public class Core
 		{
 			public double hitPoint;
+			public double warningBefore;
 		}
 		public Core core;
 
@@ -236,6 +237,7 @@ namespace PlanetTerror
 			tower.stats[3].upgCost = 1000;
 
 			core.hitPoint = 100;
+			core.warningBefore = 5;
 
 			enemy1.routeTime = 35;
 			enemy1.hitPoint = 20;

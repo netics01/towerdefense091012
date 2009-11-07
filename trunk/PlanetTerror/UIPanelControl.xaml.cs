@@ -32,6 +32,8 @@ namespace PlanetTerror
 		int gold;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		Storyboard noMoneyStory;
+		Storyboard normalWarningStory;
+		Storyboard bossWarningStory;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -42,6 +44,8 @@ namespace PlanetTerror
 			Instance = this;
 
 			noMoneyStory = Resources.FindStoryboard("NoMoney_Storyboard");
+			normalWarningStory = Resources.FindStoryboard("Warning_Enemy_Storyboard");
+			bossWarningStory = Resources.FindStoryboard("Warning_Boss_Storyboard");
 			
 			Loaded += new RoutedEventHandler(UIPanelControl_Loaded);
 		}
@@ -91,6 +95,13 @@ namespace PlanetTerror
 		public void GainPower(double power)
 		{
 			power_Progress.Value = power_Progress.Value + power;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	경고 발생
+		public void DisplayWarning(bool bBoss)
+		{
+			if( bBoss ) { bossWarningStory.Begin(); }
+			else { normalWarningStory.Begin(); }
 		}
 
 		//===============================================================================================================================================
