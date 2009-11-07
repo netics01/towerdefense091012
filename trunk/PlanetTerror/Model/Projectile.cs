@@ -110,7 +110,7 @@ namespace PlanetTerror
 			this.resources = resources;
 			vsm = new VSM(this, layoutRoot);
 
-			Canvas.SetZIndex(this, Math.Max(Canvas.GetZIndex(target), 6));
+			Canvas.SetZIndex(this, Math.Max(Canvas.GetZIndex(target), (int)ELayer.Projectile));
 			this.SetCenter(pos);
 			vsm.SetState(FIRE_STATE);
 

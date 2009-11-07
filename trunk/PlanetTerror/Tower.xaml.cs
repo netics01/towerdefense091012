@@ -268,22 +268,18 @@ namespace PlanetTerror
 					var dir = target.Pos - towerCenter;
 					targetAngle = Math.Atan2(dir.Y, dir.X) * 180 / Math.PI;
 
-					var rotTransform = Turret.RenderTransform as RotateTransform;
-					if( rotTransform == null ) { Turret.RenderTransform = new RotateTransform(0); }
+					var transformGroup = Turret.RenderTransform as TransformGroup;
+					var rotTransform = transformGroup.Children[2] as RotateTransform;
+					var curAngle = rotTransform.Angle == 360 ? 0 : rotTransform.Angle;
+					var maxAngleChange = Game.Setting.tower.turretRotSpeed * delta;
+					if( Math.Abs(targetAngle - curAngle) < maxAngleChange )
+					{
+						transformGroup.Children[2] = new RotateTransform(targetAngle);
+						bAim = true;
+					}
 					else
 					{
-						var curAngle = rotTransform.Angle;
-						var maxAngleChange = Game.Setting.tower.turretRotSpeed * delta;
-						if( Math.Abs(targetAngle - curAngle) < maxAngleChange )
-						{
-							rotTransform.Angle = targetAngle;
-							bAim = true;
-						}
-						else
-						{
-							rotTransform.Angle = curAngle + maxAngleChange * Math.Sign(targetAngle - curAngle);
-							bAim = Math.Abs(rotTransform.Angle - targetAngle) < Game.Setting.tower.turretAimTolerance;
-						}
+						transformGroup.Children[2] = new RotateTransform(curAngle + maxAngleChange * Math.Sign(targetAngle - curAngle));
 					}
 				}
 				//쿨타임 대기
