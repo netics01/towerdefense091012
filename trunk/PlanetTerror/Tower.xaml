@@ -1884,7 +1884,7 @@
 			</ColorAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Upg1_Attach_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_1" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000" Value="{x:Static Visibility.Visible}"/>
@@ -1931,29 +1931,14 @@
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Upg2_Attach_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_2" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Upg3_Attach_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:00.6000000" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:00.6000000" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle3" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_3" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.6000000" Value="{x:Static Visibility.Visible}"/>
@@ -3440,11 +3425,6 @@
 			</Image>
 		</Canvas>
 		<Canvas x:Name="UPG_eff" Width="79" Height="58.667" Canvas.Left="-19.333" Canvas.Top="19.666">
-			<Rectangle x:Name="rectangle" StrokeThickness="0" RadiusX="1.884" RadiusY="1.884" Width="8" Height="8" Visibility="Collapsed" Canvas.Left="19.333" Canvas.Top="-31.333">
-				<Rectangle.Fill>
-					<SolidColorBrush Color="{DynamicResource FFFFFF}"/>
-				</Rectangle.Fill>
-			</Rectangle>
 			<Ellipse x:Name="color_change_UPGeff" StrokeThickness="0" Width="79" Height="58.667" RenderTransformOrigin="0.5,0.5" Opacity="0" Visibility="Collapsed">
 				<Ellipse.Fill>
 					<RadialGradientBrush>
@@ -3462,12 +3442,17 @@
 					</TransformGroup>
 				</Ellipse.RenderTransform>
 			</Ellipse>
-			<Rectangle x:Name="rectangle2" StrokeThickness="0" RadiusX="1.884" RadiusY="1.884" Width="8" Height="8" Canvas.Left="29.656" Canvas.Top="-31.333" Visibility="Collapsed">
+			<Rectangle x:Name="_1" StrokeThickness="0" RadiusX="1.884" RadiusY="1.884" Width="8" Height="8" Canvas.Left="19.333" Canvas.Top="-31.333" Visibility="Collapsed">
+				<Rectangle.Fill>
+					<SolidColorBrush Color="{DynamicResource FFFFFF}"/>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Rectangle x:Name="_2" StrokeThickness="0" RadiusX="1.884" RadiusY="1.884" Width="8" Height="8" Canvas.Left="27.656" Canvas.Top="-31.333" Visibility="Collapsed">
 				<Rectangle.Fill>
 					<SolidColorBrush Color="{DynamicResource Boom_Fill01}"/>
 				</Rectangle.Fill>
 			</Rectangle>
-			<Rectangle x:Name="rectangle3" StrokeThickness="0" RadiusX="1.884" RadiusY="1.884" Width="8" Height="8" Canvas.Left="39.979" Canvas.Top="-31.333" Visibility="Collapsed">
+			<Rectangle x:Name="_3" StrokeThickness="0" RadiusX="1.884" RadiusY="1.884" Width="8" Height="8" Canvas.Left="35.979" Canvas.Top="-31.333" Visibility="Collapsed">
 				<Rectangle.Fill>
 					<SolidColorBrush Color="{DynamicResource Boom_Fill03}"/>
 				</Rectangle.Fill>
