@@ -267,6 +267,7 @@ namespace PlanetTerror.Util
 		//	프로퍼티
 		public float Period { get; set; }
 		public float CurTime { get; set; }
+		public float TimeLeft { get { return Period - CurTime; } }
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자

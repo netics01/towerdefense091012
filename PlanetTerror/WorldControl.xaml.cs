@@ -99,12 +99,8 @@ namespace PlanetTerror
 			{
 				enemies[i].Update(delta);
 			}
-			bool bGoldTime = goldTimer.Refresh(delta);
-			for( int i = 0; i < towers.Count; ++i  )
-			{
-				towers[i].Update(delta);
-				if( bGoldTime ) { towers[i].MakeGold(); }
-			}			
+
+			UpdateTower(delta);
 
 			//객체 제거
 			for( int i = 0; i < projectiles.Count; ++i )
@@ -179,6 +175,20 @@ namespace PlanetTerror
 					Routes.Add(pg);
 				}
 			}
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	수입 관련 처리
+		private void UpdateTower(float delta)
+		{
+			bool bGoldTime = goldTimer.Refresh(delta);
+			int estimatedGold = 0;
+			for( int i = 0; i < towers.Count; ++i )
+			{
+				towers[i].Update(delta);
+				estimatedGold += towers[i].EstimateGold();
+				if( bGoldTime ) { towers[i].MakeGold(); }
+			}
+			Game.UI.DisplayIncome(goldTimer.TimeLeft, estimatedGold);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	적 제거
