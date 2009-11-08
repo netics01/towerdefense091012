@@ -146,16 +146,21 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void pump_Update(float delta)
 		{
-			if( !bBoom ) { return; }
-
-			do 
+			if( bBoom )
 			{
-				float step = Math.Min(delta, (float)Game.Setting.core.boomLogicFrame);
-				var lastTime = elapsedTime;
-				elapsedTime += step;
-				Process(lastTime, elapsedTime);
-				delta = Math.Max(0, delta - step);
-			} while ( delta > 0);
+				var leftX = ActualWidth * (1 - (elapsedTime + delta)/Game.Setting.core.boomTime);
+				var rightX = ActualWidth * (1 - elapsedTime/Game.Setting.core.boomTime);
+				Game.World.SweepDamage(leftX, rightX, Game.Setting.core.attackDamage);
+
+				do
+				{
+					float step = Math.Min(delta, (float)Game.Setting.core.boomLogicFrame);
+					var lastTime = elapsedTime;
+					elapsedTime += step;
+					Process(lastTime, elapsedTime);
+					delta = Math.Max(0, delta - step);
+				} while( delta > 0 );
+			}
 
 			for( int i = LayoutRoot.Children.Count - 1; i >= 0; --i )
 			{
@@ -170,7 +175,7 @@ namespace PlanetTerror
 			bBoom = (elapsedTime < Game.Setting.core.boomTime);
 			if( bBoom == false)
 			{
-				Debug.Print("{0}", boomCount);
+				//Debug.Print("{0}", boomCount);
 			}
 		}
 

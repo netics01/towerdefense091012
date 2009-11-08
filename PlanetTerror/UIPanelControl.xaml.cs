@@ -11,6 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Media.Animation;
+using System.Diagnostics;
 
 using PlanetTerror.Util;
 
@@ -46,8 +47,14 @@ namespace PlanetTerror
 			bossWarningStory = Resources.FindStoryboard("Warning_Boss_Storyboard");
 			goldGainStory = Resources.FindStoryboard("Gold_Gain_Storyboard");
 			goldLostStory = Resources.FindStoryboard("Gold_Lost_Storyboard");
+			goldLostStory.Completed +=new EventHandler(goldLostStory_Completed);
 			
 			Loaded += new RoutedEventHandler(UIPanelControl_Loaded);
+		}
+
+		void goldLostStory_Completed(object sender, EventArgs e)
+		{
+			Debug.Print("wth");
 		}
 
 		//===============================================================================================================================================
@@ -76,12 +83,15 @@ namespace PlanetTerror
 			if( lastPowerGauge < 100 &&
 				power_Progress.Value == 100 )
 			{
-				Game.World.core.DeadlyReady();
+				Game.World.core.AttackReady();
 			}
 			if( lastGold != gold )
 			{
 				if( lastGold < gold ) { goldGainStory.Begin(); }
-				else { goldLostStory.Begin(); }
+				else
+				{
+					goldLostStory.Begin();
+				}
 				DisplayGold();
 			}			
 			lastPowerGauge = power_Progress.Value;
