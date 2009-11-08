@@ -59,11 +59,6 @@
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 	</UserControl.Resources>
-	<UserControl.Triggers>
-		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
-			<BeginStoryboard Storyboard="{StaticResource BackgrouundAni_Storyboard}"/>
-		</EventTrigger>
-	</UserControl.Triggers>
 
 	<Grid x:Name="LayoutRoot">
 		<Ellipse x:Name="ellipse1" Fill="Black" Height="35.928" RenderTransformOrigin="0.5,0.5" Margin="488,276.072,504.396,0" VerticalAlignment="Top">
