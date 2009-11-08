@@ -22886,7 +22886,7 @@
 							<Setter Property="Control.Template">
 								<Setter.Value>
 									<ControlTemplate>
-										<Rectangle Stroke="Black" StrokeDashArray="1 2" StrokeThickness="1" Margin="3" SnapsToDevicePixels="true"/>
+										<Rectangle Stroke="{x:Null}" StrokeDashArray="1 2" StrokeThickness="1" Margin="3" SnapsToDevicePixels="true"/>
 									</ControlTemplate>
 								</Setter.Value>
 							</Setter>
@@ -23874,7 +23874,7 @@
 							<Setter Property="Control.Template">
 								<Setter.Value>
 									<ControlTemplate>
-										<Rectangle Stroke="Black" StrokeDashArray="1 2" StrokeThickness="1" Margin="3" SnapsToDevicePixels="true"/>
+										<Rectangle Stroke="{x:Null}" StrokeDashArray="1 2" StrokeThickness="1" Margin="3" SnapsToDevicePixels="true"/>
 									</ControlTemplate>
 								</Setter.Value>
 							</Setter>
@@ -26494,6 +26494,6 @@
 				</Ellipse.Fill>
 			</Ellipse>
 		</Canvas> 
-		<local:BoomBoom Canvas.Left="-438" Canvas.Top="-429.999" d:LayoutOverrides="Width, Height"/> 
+		<local:BoomBoom Canvas.Left="-436" Canvas.Top="-443" d:LayoutOverrides="Width, Height" Visibility="Hidden"/> 
 	</Canvas>
 </UserControl>
