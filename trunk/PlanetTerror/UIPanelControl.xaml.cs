@@ -26,11 +26,14 @@ namespace PlanetTerror
 		//	필드
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		int gold;
+		int lastGold;
 		double lastPowerGauge;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		Storyboard noMoneyStory;
 		Storyboard normalWarningStory;
 		Storyboard bossWarningStory;
+		Storyboard goldGainStory;
+		Storyboard goldLostStory;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -41,6 +44,8 @@ namespace PlanetTerror
 			noMoneyStory = Resources.FindStoryboard("NoMoney_Storyboard");
 			normalWarningStory = Resources.FindStoryboard("Warning_Enemy_Storyboard");
 			bossWarningStory = Resources.FindStoryboard("Warning_Boss_Storyboard");
+			goldGainStory = Resources.FindStoryboard("Gold_Gain_Storyboard");
+			goldLostStory = Resources.FindStoryboard("Gold_Lost_Storyboard");
 			
 			Loaded += new RoutedEventHandler(UIPanelControl_Loaded);
 		}
@@ -73,8 +78,14 @@ namespace PlanetTerror
 			{
 				Game.World.core.DeadlyReady();
 			}
-			DisplayGold();
+			if( lastGold != gold )
+			{
+				if( lastGold < gold ) { goldGainStory.Begin(); }
+				else { goldLostStory.Begin(); }
+				DisplayGold();
+			}			
 			lastPowerGauge = power_Progress.Value;
+			lastGold = gold;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	돈 소모
