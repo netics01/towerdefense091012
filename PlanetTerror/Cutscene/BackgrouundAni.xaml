@@ -6,9 +6,9 @@
 	mc:Ignorable="d"
 	x:Class="PlanetTerror.BackgrouundAni"
 	x:Name="UserControl"
-	d:DesignWidth="1024" d:DesignHeight="720">
+	d:DesignWidth="1024" d:DesignHeight="720" Height="660" Width="1024">
 	<UserControl.Resources>
-		<Storyboard x:Key="BackgrouundAni_Storyboard">
+		<Storyboard x:Key="BackgroundAni_Storyboard">
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="9.705"/>
