@@ -598,6 +598,29 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
+		<Storyboard x:Key="GoldT_MouseOver_Storyboard">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_GoldTime" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_GoldTime" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="GoldT_MouseLeave_Storyboard">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_GoldTime" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_GoldTime" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
 	</UserControl.Resources>
 	<UserControl.Triggers>
 		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image">
@@ -612,6 +635,12 @@
 		<EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image3">
 			<BeginStoryboard x:Name="Gold_MouseLeave_Storyboard_BeginStoryboard" Storyboard="{StaticResource Gold_MouseLeave_Storyboard}"/>
 		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="Image_Gold_Time">
+			<BeginStoryboard x:Name="GoldT_MouseOver_Storyboard_BeginStoryboard" Storyboard="{StaticResource GoldT_MouseOver_Storyboard}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="Image_Gold_Time">
+			<BeginStoryboard x:Name="GoldT_MouseLeave_Storyboard_BeginStoryboard" Storyboard="{StaticResource GoldT_MouseLeave_Storyboard}"/>
+		</EventTrigger>
 	</UserControl.Triggers>
 
 	<Canvas x:Name="LayoutRoot" Height="60" Width="1024">
@@ -622,7 +651,7 @@
 			</LinearGradientBrush>
 		</Canvas.Background>
 		<Canvas x:Name="gold_ani" Width="42" Height="42" Canvas.Left="720">
-			<Image x:Name="image3" Width="64" Height="64" Canvas.Left="-29" Canvas.Top="5" Source="Resources/UI/Gold.png" Stretch="Fill"/>
+			<Image x:Name="image3" Width="44" Height="44" Canvas.Left="-14" Canvas.Top="15" Source="Resources/UI/Gold.png" Stretch="Fill"/>
 			<Image x:Name="image1" Width="16" Height="16" Source="Resources/UI/Gold_ani001.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" Canvas.Left="10.75" Canvas.Top="-3.5" IsEnabled="False" IsHitTestVisible="False">
 				<Image.RenderTransform>
 					<TransformGroup>
@@ -683,7 +712,7 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Image Width="34" Height="34" Canvas.Left="107.167" Canvas.Top="22" Source="Resources/UI/Gold_Time.png" Stretch="Fill"/>
+			<Image x:Name="Image_Gold_Time" Width="34" Height="34" Canvas.Left="107.167" Canvas.Top="22" Source="Resources/UI/Gold_Time.png" Stretch="Fill"/>
 		</Canvas>
 		<TextBlock x:Name="gold_Text" Width="56" Height="24" Text="1200" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="752" Canvas.Top="32"/>
 		<TextBlock x:Name="gold_NextTime_Text" Width="56" Height="24" Text="00:15" TextWrapping="Wrap" Foreground="#FF747474" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="863.357" Canvas.Top="32"/>
@@ -728,7 +757,7 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform><Run Text="타워와 연구소를 짓는데 사용되는 골드 입니다."/><LineBreak/><Run Text="채굴소에서 일정 "/><Run Text="시"/><Run Text="간"/><Run Text="마다 획득 할 수 있습니다."/><Run Text=" "/></TextBlock>
 		</Grid>
-		<Grid x:Name="talk_GoldTime" Width="184" Height="56" Canvas.Left="800" Canvas.Top="-56" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+		<Grid x:Name="talk_GoldTime" Width="184" Height="56" Canvas.Left="803.334" Canvas.Top="-38.668" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
 			<Grid.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -737,7 +766,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
-			<Path Fill="#CCD8D09A" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="0,0,45,-18.833" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 38.541965,73.833001 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False"/>
+			<Path Fill="#CCD8D09A" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="0,0,56,-8" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 38.541965,73.833001 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False"/>
 			<TextBlock x:Name="talk_Text3" Margin="4.998,6,59.25,-13.5" Foreground="#FF372510" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" Text="다음 수익이 들어오기 까지 남은 시간과 예상되는 금액 입니다."><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
