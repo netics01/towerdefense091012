@@ -23891,10 +23891,68 @@
 							<Setter Property="Template">
 								<Setter.Value>
 									<ControlTemplate TargetType="{x:Type Button}">
-										<Canvas Margin="0,8,8,0" Background="#00000000">
+										<Canvas x:Name="attackready" Margin="0,8,8,0" Background="#00000000">
 											<VisualStateManager.VisualStateGroups>
 												<VisualStateGroup x:Name="CommonStates">
-													<VisualState x:Name="Normal"/>
+													<VisualState x:Name="Normal">
+														<Storyboard>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+															</ObjectAnimationUsingKeyFrames>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse1_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+															</ObjectAnimationUsingKeyFrames>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse1_Copy1" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+															</ObjectAnimationUsingKeyFrames>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse1_Copy2" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+															</ObjectAnimationUsingKeyFrames>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse1_Copy3" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+															</ObjectAnimationUsingKeyFrames>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse1_Copy4" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+															</ObjectAnimationUsingKeyFrames>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse1_Copy5" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+															</ObjectAnimationUsingKeyFrames>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse1_Copy6" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+															</ObjectAnimationUsingKeyFrames>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse1_Copy7" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+															</ObjectAnimationUsingKeyFrames>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse1_Copy8" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+															</ObjectAnimationUsingKeyFrames>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse1_Copy9" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+															</ObjectAnimationUsingKeyFrames>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse1_Copy10" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+															</ObjectAnimationUsingKeyFrames>
+															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse1_Copy11" Storyboard.TargetProperty="(UIElement.Visibility)">
+																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+															</ObjectAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.Opacity)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="6.415"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="22.913"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.758"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.852"/>
+															</DoubleAnimationUsingKeyFrames>
+														</Storyboard>
+													</VisualState>
 													<VisualState x:Name="MouseOver">
 														<Storyboard>
 															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="(ContentControl.Content)">
@@ -23929,8 +23987,8 @@
 															</ObjectAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-																<SplineDoubleKeyFrame KeySpline="0,0.5,1,1" KeyTime="00:00:00.4000000" Value="360"/>
-																<SplineDoubleKeyFrame KeyTime="00:00:20" Value="720"/>
+																<SplineDoubleKeyFrame KeySpline="0,0.5,1,1" KeyTime="00:00:00.6000000" Value="360"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:11" Value="540"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.Opacity)">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
@@ -23964,269 +24022,1332 @@
 															</ColorAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="roll" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.75" KeySpline="1,1,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:10" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:10.1000000" Value="0.71"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="roll" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.75" KeySpline="1,1,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.2000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.3000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.4000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.5000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.6000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.7000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.8000000" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.9000000" Value="0.71"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:10" Value="0.7"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:10.1000000" Value="0.71"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="roll" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-90.566"/>
-																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-20.094"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-20.094" KeySpline="1,1,1,1"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="roll" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-163.951"/>
-																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-51.27"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-51.27" KeySpline="1,1,1,1"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="roll" Storyboard.TargetProperty="(UIElement.Opacity)">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1" KeySpline="1,1,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.6000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.3000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.4000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.6000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.8000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.2000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.4000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.1000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.3000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.4000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.6000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.7000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.9000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.1000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.2000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.4000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.6000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.7000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.1000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.3000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.4000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.5000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.6000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.7000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.8000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.9000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.2000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.4000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.6000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.7000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.9000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.2000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.3000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.4000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.5000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.6000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.7000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.8000000" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.9000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:10" Value="0.6"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:10.1000000" Value="0.5"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:11" Value="0"/>
 															</DoubleAnimationUsingKeyFrames>
-															<PointAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="canvas2" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
+															<PointAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="zen" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
 																<SplinePointKeyFrame KeyTime="00:00:00" Value="3.976,0.406"/>
 															</PointAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ellipse1_Copy">
 																<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-2.264"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="180.378" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.1000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.7000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.3000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.6000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.7000000" Value="180.378"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ellipse1_Copy">
 																<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="2.037" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.1000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.7000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.3000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.6000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.7000000" Value="2.037"/>
 															</DoubleAnimationUsingKeyFrames>
 															<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="ellipse1_Copy">
 																<SplinePointKeyFrame KeyTime="00:00:00.6000000" Value="3.943,0.696"/>
 																<SplinePointKeyFrame KeyTime="00:00:01.1000000" Value="0.5,0.406" KeySpline="1,0,1,1"/>
+																<SplinePointKeyFrame KeyTime="00:00:01.2000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:01.8000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:02.3000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:02.4000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.2000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.7000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:05.5000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:06" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.1000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.7000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:07.2000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:07.3000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.1000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.6000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.7000000" Value="0.5,0.406"/>
 															</PointAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ellipse1_Copy">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="1" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.3000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.8000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.7000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.2000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.7000000" Value="1"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ellipse1_Copy1">
 																<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="-2.264"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="180.378" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.4000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.3000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.9000000" Value="180.378"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ellipse1_Copy1">
 																<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="2.037" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.9000000" Value="2.037"/>
 															</DoubleAnimationUsingKeyFrames>
 															<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="ellipse1_Copy1">
 																<SplinePointKeyFrame KeyTime="00:00:01.4000000" Value="3.943,0.696"/>
 																<SplinePointKeyFrame KeyTime="00:00:01.9000000" Value="0.5,0.406" KeySpline="1,0,1,1"/>
+																<SplinePointKeyFrame KeyTime="00:00:02" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.3000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.9000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.4000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.9000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:07" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:09.3000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:09.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:09.9000000" Value="0.5,0.406"/>
 															</PointAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ellipse1_Copy1">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="1"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.4000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.4000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.8000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.9000000" Value="0"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ellipse1_Copy2">
 																<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="-2.264"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="180.378" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.9000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.4000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.7000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="180.378"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ellipse1_Copy2">
 																<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="2.037" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.4000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.7000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="2.037"/>
 															</DoubleAnimationUsingKeyFrames>
 															<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="ellipse1_Copy2">
 																<SplinePointKeyFrame KeyTime="00:00:00.9000000" Value="3.943,0.696"/>
 																<SplinePointKeyFrame KeyTime="00:00:01.4000000" Value="0.5,0.406" KeySpline="1,0,1,1"/>
+																<SplinePointKeyFrame KeyTime="00:00:01.5000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:02.2000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:02.7000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:02.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.5000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:04" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.1000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:05.9000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.4000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.5000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:07.2000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:07.7000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:07.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.5000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:09" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:09.1000000" Value="0.5,0.406"/>
 															</PointAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ellipse1_Copy2">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="1" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.4000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.3000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.7000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.8000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="0"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ellipse1_Copy3">
+																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01" Value="180.378"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="-2.264"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="180.378" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.4000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.9000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.4000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.5000000" Value="180.378"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ellipse1_Copy3">
+																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01" Value="2.037"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="2.037" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.9000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.4000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.5000000" Value="2.037"/>
 															</DoubleAnimationUsingKeyFrames>
 															<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="ellipse1_Copy3">
+																<SplinePointKeyFrame KeyTime="00:00:00.4000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:00.9000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:01" Value="0.5,0.406"/>
 																<SplinePointKeyFrame KeyTime="00:00:01.9000000" Value="3.943,0.696"/>
 																<SplinePointKeyFrame KeyTime="00:00:02.4000000" Value="0.5,0.406" KeySpline="1,0,1,1"/>
+																<SplinePointKeyFrame KeyTime="00:00:02.5000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:05.4000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:05.9000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.9000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:07.4000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:07.5000000" Value="0.5,0.406"/>
 															</PointAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ellipse1_Copy3">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="1" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.9000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.4000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.5000000" Value="0"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ellipse1_Copy4">
 																<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="-2.264"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="180.378" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.4000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.4000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.9000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="180.378"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ellipse1_Copy4">
 																<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="2.037" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.9000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="2.037"/>
 															</DoubleAnimationUsingKeyFrames>
 															<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="ellipse1_Copy4">
 																<SplinePointKeyFrame KeyTime="00:00:01.3000000" Value="3.943,0.696"/>
 																<SplinePointKeyFrame KeyTime="00:00:01.8000000" Value="0.5,0.406" KeySpline="1,0,1,1"/>
+																<SplinePointKeyFrame KeyTime="00:00:01.9000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.4000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.9000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:04" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.3000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.9000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.4000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.9000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:09" Value="0.5,0.406"/>
 															</PointAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ellipse1_Copy4">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="1"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.4000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.9000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="0"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ellipse1_Copy5">
 																<SplineDoubleKeyFrame KeyTime="00:00:01" Value="-2.264"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="180.378" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.6000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.6000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.6000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.7000000" Value="180.378"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ellipse1_Copy5">
 																<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="2.037" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.6000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.6000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.6000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.7000000" Value="2.037"/>
 															</DoubleAnimationUsingKeyFrames>
 															<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="ellipse1_Copy5">
 																<SplinePointKeyFrame KeyTime="00:00:01" Value="3.943,0.696"/>
 																<SplinePointKeyFrame KeyTime="00:00:01.5000000" Value="0.5,0.406" KeySpline="1,0,1,1"/>
+																<SplinePointKeyFrame KeyTime="00:00:01.6000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.1000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.6000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.7000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.5000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.6000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.1000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.6000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.7000000" Value="0.5,0.406"/>
 															</PointAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ellipse1_Copy5">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="1"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="1" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.1000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.6000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.2000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.7000000" Value="0"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ellipse1_Copy6">
 																<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-2.264"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="180.378" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.7000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.6000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.7000000" Value="180.378"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ellipse1_Copy6">
 																<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="2.037" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.7000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.6000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.7000000" Value="2.037"/>
 															</DoubleAnimationUsingKeyFrames>
 															<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="ellipse1_Copy6">
 																<SplinePointKeyFrame KeyTime="00:00:00.2000000" Value="3.943,0.696"/>
 																<SplinePointKeyFrame KeyTime="00:00:00.7000000" Value="0.5,0.406" KeySpline="1,0,1,1"/>
+																<SplinePointKeyFrame KeyTime="00:00:00.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.1000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.6000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.7000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:05.2000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:05.7000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:05.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:09.1000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:09.6000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:09.7000000" Value="0.5,0.406"/>
 															</PointAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ellipse1_Copy6">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.2000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.3000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.7000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.2000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.7000000" Value="0"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ellipse1_Copy7">
 																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="-2.264"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="180.378" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.1000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.6000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.7000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.3000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.9000000" Value="180.378"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ellipse1_Copy7">
 																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="2.037" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.6000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.7000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.9000000" Value="2.037"/>
 															</DoubleAnimationUsingKeyFrames>
 															<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="ellipse1_Copy7">
 																<SplinePointKeyFrame KeyTime="00:00:01.1000000" Value="3.943,0.696"/>
 																<SplinePointKeyFrame KeyTime="00:00:01.6000000" Value="0.5,0.406" KeySpline="1,0,1,1"/>
+																<SplinePointKeyFrame KeyTime="00:00:01.7000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:02.3000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:02.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:02.9000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.1000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.6000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.7000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:07.3000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:07.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:07.9000000" Value="0.5,0.406"/>
 															</PointAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ellipse1_Copy7">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="1"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="1" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.2000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.7000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.4000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.8000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.9000000" Value="0"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ellipse1_Copy8">
 																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-2.264"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="180.378" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.6000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.4000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.6000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.2000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.6000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.7000000" Value="180.378"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ellipse1_Copy8">
 																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="2.037" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.6000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.4000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.6000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.2000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.6000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.7000000" Value="2.037"/>
 															</DoubleAnimationUsingKeyFrames>
 															<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="ellipse1_Copy8">
 																<SplinePointKeyFrame KeyTime="00:00:00.8000000" Value="3.943,0.696"/>
 																<SplinePointKeyFrame KeyTime="00:00:01.3000000" Value="0.5,0.406" KeySpline="1,0,1,1"/>
+																<SplinePointKeyFrame KeyTime="00:00:01.4000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:02.6000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.1000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.2000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.1000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.6000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.7000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:05.8000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.3000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.4000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:07.6000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.1000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.2000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:09.1000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:09.6000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:09.7000000" Value="0.5,0.406"/>
 															</PointAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ellipse1_Copy8">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="1"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="1" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.6000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.2000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.9000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.6000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.7000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.2000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.7000000" Value="0"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ellipse1_Copy9">
 																<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="-2.264"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="180.378" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="180.378"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ellipse1_Copy9">
 																<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="2.037" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="2.037"/>
 															</DoubleAnimationUsingKeyFrames>
 															<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="ellipse1_Copy9">
 																<SplinePointKeyFrame KeyTime="00:00:01.3000000" Value="3.943,0.696"/>
 																<SplinePointKeyFrame KeyTime="00:00:01.8000000" Value="0.5,0.406" KeySpline="1,0,1,1"/>
+																<SplinePointKeyFrame KeyTime="00:00:01.9000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.5000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:04" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.1000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.3000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.9000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.5000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:09" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:09.1000000" Value="0.5,0.406"/>
 															</PointAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ellipse1_Copy9">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="1"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.4000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="0"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ellipse1_Copy10">
+																<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="180.378"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="-2.264"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="180.378" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.4000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.7000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.2000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.4000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.5000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.9000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.5000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:10" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:10.1000000" Value="180.378"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ellipse1_Copy10">
+																<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="2.037"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="2.037" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.7000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.2000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.4000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.5000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.9000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:10" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:10.1000000" Value="2.037"/>
 															</DoubleAnimationUsingKeyFrames>
 															<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="ellipse1_Copy10">
+																<SplinePointKeyFrame KeyTime="00:00:00.6000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:01.1000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:01.2000000" Value="0.5,0.406"/>
 																<SplinePointKeyFrame KeyTime="00:00:01.8000000" Value="3.943,0.696"/>
 																<SplinePointKeyFrame KeyTime="00:00:02.3000000" Value="0.5,0.406" KeySpline="1,0,1,1"/>
+																<SplinePointKeyFrame KeyTime="00:00:02.4000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.2000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.7000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.4000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.9000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:05" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:05.7000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.2000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.3000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.9000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:07.4000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:07.5000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.3000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.9000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:09.5000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:10" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:10.1000000" Value="0.5,0.406"/>
 															</PointAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ellipse1_Copy10">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.3000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.8000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.7000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.2000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.4000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.4000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.8000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:10" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:10.1000000" Value="1"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ellipse1_Copy11">
-																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="-2.264"/>
-																<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="180.378" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="180.378" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.4000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.4000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.9000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.6000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.5000000" Value="180.378"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ellipse1_Copy11">
-																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0"/>
-																<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="2.037" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="2.037" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.4000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.9000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.6000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.5000000" Value="2.037"/>
 															</DoubleAnimationUsingKeyFrames>
 															<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="ellipse1_Copy11">
-																<SplinePointKeyFrame KeyTime="00:00:01.1000000" Value="3.943,0.696"/>
-																<SplinePointKeyFrame KeyTime="00:00:01.6000000" Value="0.5,0.406" KeySpline="1,0,1,1"/>
+																<SplinePointKeyFrame KeyTime="00:00:00.3000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:00.8000000" Value="0.5,0.406" KeySpline="1,0,1,1"/>
+																<SplinePointKeyFrame KeyTime="00:00:02.5000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:03" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.9000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.4000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:05.4000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:05.9000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:07.6000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.1000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:09" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:09.5000000" Value="0.5,0.406"/>
 															</PointAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ellipse1_Copy11">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-																<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0"/>
-																<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="1"/>
-																<SplineDoubleKeyFrame KeyTime="00:00:01.6000000" Value="1" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1" KeySpline="1,0,1,1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.4000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.4000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.9000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.6000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.7000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.1000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.5000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.6000000" Value="0"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ellipse1">
 																<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-2.264"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.6000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.7000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.1000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.6000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.7000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.5000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.9000000" Value="-2.264"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.4000000" Value="180.378"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.5000000" Value="180.378"/>
 															</DoubleAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ellipse1">
 																<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.6000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.7000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.6000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.7000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.4000000" Value="2.037"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.5000000" Value="2.037"/>
 															</DoubleAnimationUsingKeyFrames>
 															<PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="ellipse1">
 																<SplinePointKeyFrame KeyTime="00:00:00.3000000" Value="3.943,0.696"/>
 																<SplinePointKeyFrame KeyTime="00:00:00.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:00.9000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:01.2000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:01.7000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:01.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:02.6000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.1000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:03.2000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:04" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.5000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:04.6000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:05.2000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:05.7000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:05.8000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.1000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.6000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:06.7000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:07.5000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:08" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.1000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:08.9000000" Value="3.943,0.696"/>
+																<SplinePointKeyFrame KeyTime="00:00:09.4000000" Value="0.5,0.406"/>
+																<SplinePointKeyFrame KeyTime="00:00:09.5000000" Value="0.5,0.406"/>
 															</PointAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ellipse1">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
 																<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.6000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:03.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.3000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.7000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.2000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:06.7000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.5000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:07.6000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:08.9000000" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.4000000" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:09.5000000" Value="1"/>
 															</DoubleAnimationUsingKeyFrames>
 															<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk" Storyboard.TargetProperty="(UIElement.Visibility)">
 																<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-																<DiscreteObjectKeyFrame KeyTime="00:00:04.7000000" Value="{x:Static Visibility.Visible}"/>
-																<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Collapsed}"/>
+																<DiscreteObjectKeyFrame KeyTime="00:00:10" Value="{x:Static Visibility.Visible}"/>
+																<DiscreteObjectKeyFrame KeyTime="00:00:10.3000000" Value="{x:Static Visibility.Collapsed}"/>
 															</ObjectAnimationUsingKeyFrames>
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk" Storyboard.TargetProperty="(UIElement.Opacity)">
-																<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="1"/>
-																<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:10" Value="1"/>
+																<SplineDoubleKeyFrame KeyTime="00:00:10.3000000" Value="0"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roller" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.13"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roller" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="27.495"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roller" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.9"/>
+															</DoubleAnimationUsingKeyFrames>
+															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roller" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-11.321"/>
 															</DoubleAnimationUsingKeyFrames>
 														</Storyboard>
 													</VisualState>
@@ -24253,7 +25374,7 @@
 													<VisualState x:Name="Focused"/>
 												</VisualStateGroup>
 											</VisualStateManager.VisualStateGroups>
-											<Canvas x:Name="roll" Width="286.66" Height="424.217" RenderTransformOrigin="0.5,0.5" Canvas.Left="7.547" Canvas.Top="16.293">
+											<Canvas x:Name="roller" Width="286.66" Height="424.217" Canvas.Left="7.547" Canvas.Top="16.293" RenderTransformOrigin="0.5,0.5">
 												<Canvas.RenderTransform>
 													<TransformGroup>
 														<ScaleTransform/>
@@ -24262,7 +25383,7 @@
 														<TranslateTransform/>
 													</TransformGroup>
 												</Canvas.RenderTransform>
-												<Canvas x:Name="canvas" Width="301" Height="301" RenderTransformOrigin="0.5,0.5">
+												<Canvas x:Name="roll" Width="286.66" Height="424.217" RenderTransformOrigin="0.5,0.5">
 													<Canvas.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -24271,43 +25392,53 @@
 															<TranslateTransform/>
 														</TransformGroup>
 													</Canvas.RenderTransform>
-													<Ellipse x:Name="ellipse" Stroke="Black" Width="290.421" Height="298.053" Opacity="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="15.682" Canvas.Top="9.785">
-														<Ellipse.OpacityMask>
-															<RadialGradientBrush>
-																<GradientStop Color="Black" Offset="0"/>
-																<GradientStop Color="White" Offset="1"/>
-															</RadialGradientBrush>
-														</Ellipse.OpacityMask>
-														<Ellipse.RenderTransform>
+													<Canvas x:Name="canvas" Width="301" Height="301" RenderTransformOrigin="0.5,0.5">
+														<Canvas.RenderTransform>
 															<TransformGroup>
 																<ScaleTransform/>
 																<SkewTransform/>
 																<RotateTransform/>
 																<TranslateTransform/>
 															</TransformGroup>
-														</Ellipse.RenderTransform>
-														<Ellipse.Fill>
-															<RadialGradientBrush>
-																<GradientStop Color="Black" Offset="0"/>
-																<GradientStop Color="White" Offset="1"/>
-																<GradientStop Color="#FFCDCDCD" Offset="0.806"/>
-															</RadialGradientBrush>
-														</Ellipse.Fill>
-													</Ellipse>
-													<Image x:Name="image" Width="301" Height="301" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Opacity="0" IsEnabled="False" IsHitTestVisible="False" Source="Resources\Tower\TowerA0_parts2.png">
-														<Image.RenderTransform>
-															<TransformGroup>
-																<ScaleTransform/>
-																<SkewTransform/>
-																<RotateTransform/>
-																<TranslateTransform/>
-															</TransformGroup>
-														</Image.RenderTransform>
-													</Image>
+														</Canvas.RenderTransform>
+														<Ellipse x:Name="ellipse" Stroke="Black" Width="290.421" Height="298.053" Opacity="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="15.682" Canvas.Top="9.785">
+															<Ellipse.OpacityMask>
+																<RadialGradientBrush>
+																	<GradientStop Color="Black" Offset="0"/>
+																	<GradientStop Color="White" Offset="1"/>
+																</RadialGradientBrush>
+															</Ellipse.OpacityMask>
+															<Ellipse.RenderTransform>
+																<TransformGroup>
+																	<ScaleTransform/>
+																	<SkewTransform/>
+																	<RotateTransform/>
+																	<TranslateTransform/>
+																</TransformGroup>
+															</Ellipse.RenderTransform>
+															<Ellipse.Fill>
+																<RadialGradientBrush>
+																	<GradientStop Color="Black" Offset="0"/>
+																	<GradientStop Color="White" Offset="1"/>
+																	<GradientStop Color="#FFCDCDCD" Offset="0.806"/>
+																</RadialGradientBrush>
+															</Ellipse.Fill>
+														</Ellipse>
+														<Image x:Name="image" Width="301" Height="301" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Opacity="0" IsEnabled="False" IsHitTestVisible="False" Source="Resources\Tower\TowerA0_parts2.png">
+															<Image.RenderTransform>
+																<TransformGroup>
+																	<ScaleTransform/>
+																	<SkewTransform/>
+																	<RotateTransform/>
+																	<TranslateTransform/>
+																</TransformGroup>
+															</Image.RenderTransform>
+														</Image>
+													</Canvas>
 												</Canvas>
 											</Canvas>
-											<Canvas x:Name="canvas2" Width="52.829" Height="5.856" Canvas.Left="-150.377" Canvas.Top="46.982">
-												<Ellipse x:Name="ellipse1" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696">
+											<Canvas x:Name="zen" Width="52.829" Height="5.856" Canvas.Left="-150.377" Canvas.Top="46.982">
+												<Ellipse x:Name="ellipse1" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696" Opacity="0">
 													<Ellipse.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -24323,7 +25454,7 @@
 														</RadialGradientBrush>
 													</Ellipse.Fill>
 												</Ellipse>
-												<Ellipse x:Name="ellipse1_Copy" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696">
+												<Ellipse x:Name="ellipse1_Copy" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696" Opacity="0">
 													<Ellipse.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -24339,7 +25470,7 @@
 														</RadialGradientBrush>
 													</Ellipse.Fill>
 												</Ellipse>
-												<Ellipse x:Name="ellipse1_Copy1" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696">
+												<Ellipse x:Name="ellipse1_Copy1" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696" Opacity="0">
 													<Ellipse.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -24355,7 +25486,7 @@
 														</RadialGradientBrush>
 													</Ellipse.Fill>
 												</Ellipse>
-												<Ellipse x:Name="ellipse1_Copy2" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696">
+												<Ellipse x:Name="ellipse1_Copy2" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696" Opacity="0">
 													<Ellipse.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -24371,7 +25502,7 @@
 														</RadialGradientBrush>
 													</Ellipse.Fill>
 												</Ellipse>
-												<Ellipse x:Name="ellipse1_Copy3" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696">
+												<Ellipse x:Name="ellipse1_Copy3" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696" Opacity="0">
 													<Ellipse.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -24387,7 +25518,7 @@
 														</RadialGradientBrush>
 													</Ellipse.Fill>
 												</Ellipse>
-												<Ellipse x:Name="ellipse1_Copy4" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696">
+												<Ellipse x:Name="ellipse1_Copy4" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696" Opacity="0">
 													<Ellipse.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -24403,7 +25534,7 @@
 														</RadialGradientBrush>
 													</Ellipse.Fill>
 												</Ellipse>
-												<Ellipse x:Name="ellipse1_Copy5" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696">
+												<Ellipse x:Name="ellipse1_Copy5" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696" Opacity="0">
 													<Ellipse.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -24419,7 +25550,7 @@
 														</RadialGradientBrush>
 													</Ellipse.Fill>
 												</Ellipse>
-												<Ellipse x:Name="ellipse1_Copy6" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696">
+												<Ellipse x:Name="ellipse1_Copy6" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696" Opacity="0">
 													<Ellipse.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -24435,7 +25566,7 @@
 														</RadialGradientBrush>
 													</Ellipse.Fill>
 												</Ellipse>
-												<Ellipse x:Name="ellipse1_Copy7" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696">
+												<Ellipse x:Name="ellipse1_Copy7" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696" Opacity="0">
 													<Ellipse.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -24451,7 +25582,7 @@
 														</RadialGradientBrush>
 													</Ellipse.Fill>
 												</Ellipse>
-												<Ellipse x:Name="ellipse1_Copy8" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696">
+												<Ellipse x:Name="ellipse1_Copy8" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696" Opacity="0">
 													<Ellipse.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -24467,7 +25598,7 @@
 														</RadialGradientBrush>
 													</Ellipse.Fill>
 												</Ellipse>
-												<Ellipse x:Name="ellipse1_Copy9" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696">
+												<Ellipse x:Name="ellipse1_Copy9" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696" Opacity="0">
 													<Ellipse.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -24483,7 +25614,7 @@
 														</RadialGradientBrush>
 													</Ellipse.Fill>
 												</Ellipse>
-												<Ellipse x:Name="ellipse1_Copy10" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696">
+												<Ellipse x:Name="ellipse1_Copy10" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696" Opacity="0">
 													<Ellipse.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -24499,7 +25630,7 @@
 														</RadialGradientBrush>
 													</Ellipse.Fill>
 												</Ellipse>
-												<Ellipse x:Name="ellipse1_Copy11" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696">
+												<Ellipse x:Name="ellipse1_Copy11" Stroke="{x:Null}" StrokeThickness="0" Width="52.829" Height="5.856" RenderTransformOrigin="3.943,0.696" Opacity="0">
 													<Ellipse.RenderTransform>
 														<TransformGroup>
 															<ScaleTransform/>
@@ -24521,6 +25652,22 @@
 												<Rectangle x:Name="rectangle_Copy" Fill="#CC201E1E" Stroke="#FFFF7D25" Width="189.708" Height="44" Visibility="Visible" Margin="0" Canvas.Left="3.271" Canvas.Top="2"/>
 												<ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Stretch" Margin="{TemplateBinding Padding}" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True" IsEnabled="False" IsHitTestVisible="False" Visibility="Visible" Canvas.Left="16" Canvas.Top="16" Content="!!필살기 사용 할 수 있습니다!!"/>
 											</Canvas>
+											<Ellipse x:Name="ellipse2" Stroke="{x:Null}" StrokeThickness="0" Width="271.698" Height="212.831" Opacity="0" Canvas.Left="-79.434" Canvas.Top="-56.888" RenderTransformOrigin="0.5,0.5">
+												<Ellipse.RenderTransform>
+													<TransformGroup>
+														<ScaleTransform/>
+														<SkewTransform/>
+														<RotateTransform/>
+														<TranslateTransform/>
+													</TransformGroup>
+												</Ellipse.RenderTransform>
+												<Ellipse.Fill>
+													<RadialGradientBrush>
+														<GradientStop Color="Red" Offset="0"/>
+														<GradientStop Color="#00FF0000" Offset="1"/>
+													</RadialGradientBrush>
+												</Ellipse.Fill>
+											</Ellipse>
 										</Canvas>
 										<ControlTemplate.Triggers>
 											<Trigger Property="IsKeyboardFocused" Value="true"/>
