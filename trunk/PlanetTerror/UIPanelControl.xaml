@@ -728,7 +728,7 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform><Run Text="타워와 연구소를 짓는데 사용되는 골드 입니다."/><LineBreak/><Run Text="채굴소에서 일정 "/><Run Text="시"/><Run Text="간"/><Run Text="마다 획득 할 수 있습니다."/><Run Text=" "/></TextBlock>
 		</Grid>
-		<Grid x:Name="talk_GoldTime" Width="184" Height="56" Canvas.Left="800" Canvas.Top="-56" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5">
+		<Grid x:Name="talk_GoldTime" Width="184" Height="56" Canvas.Left="800" Canvas.Top="-56" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
 			<Grid.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
