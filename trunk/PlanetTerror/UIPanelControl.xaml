@@ -728,6 +728,25 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform><Run Text="타워와 연구소를 짓는데 사용되는 골드 입니다."/><LineBreak/><Run Text="채굴소에서 일정 "/><Run Text="시"/><Run Text="간"/><Run Text="마다 획득 할 수 있습니다."/><Run Text=" "/></TextBlock>
 		</Grid>
+		<Grid x:Name="talk_GoldTime" Width="184" Height="56" Canvas.Left="800" Canvas.Top="-56" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<Path Fill="#CCD8D09A" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="0,0,45,-18.833" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 38.541965,73.833001 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False"/>
+			<TextBlock x:Name="talk_Text3" Margin="4.998,6,59.25,-13.5" Foreground="#FF372510" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" Text="다음 수익이 들어오기 까지 남은 시간과 예상되는 금액 입니다."><TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform></TextBlock>
+		</Grid>
 		<Canvas x:Name="Warning_Enemy" Width="152" Height="104" Canvas.Top="-208" Canvas.Left="352" IsHitTestVisible="False">
 			<Canvas x:Name="canvas" Width="64" Height="32" Visibility="Collapsed">
 				<Path Fill="#CC202020" Stretch="Fill" Stroke="#CC000000" Width="144" Height="96" Data="M0.5,0.5 L63.5,0.5 63.5,31.5 55.4375,31.4375 56,37.125003 59.25,36.625003 60.125,46.500004 57.25,40.000003 52.25,42.000003 48.530801,31.5 0.5,31.5 z" Canvas.Left="-0.75" Canvas.Top="-0.34"/>
