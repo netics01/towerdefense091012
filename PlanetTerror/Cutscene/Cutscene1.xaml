@@ -4,11 +4,8 @@
 	xmlns:ic="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Luna" xmlns:Custom="http://schemas.microsoft.com/wpf/2008/toolkit"
 	mc:Ignorable="d" xmlns:local="clr-namespace:PlanetTerror"
-	x:Class="PlanetTerror.Cuscene1"
+	x:Class="PlanetTerror.Cutscene1"
 	Width="1024" Height="720" Background="{x:Null}" Foreground="{x:Null}">
-	<UserControl.Resources>
-		<Storyboard x:Key="Test_Boom_Storyboard"/>
-	</UserControl.Resources>
  
 	<Canvas x:Name="LayoutRoot" Width="1024" Height="720">
 		<VisualStateManager.CustomVisualStateManager>
