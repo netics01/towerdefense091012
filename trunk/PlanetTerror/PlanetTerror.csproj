@@ -89,7 +89,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Cutscene\BackgrouundAni.xaml">
+    <Page Include="Cutscene\BackgroundAni.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -109,7 +109,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Cutscene\Cuscene1.xaml">
+    <Page Include="Cutscene\Cutscene1.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -188,8 +188,8 @@
     <Compile Include="Boss3.xaml.cs">
       <DependentUpon>Boss3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Cutscene\BackgrouundAni.xaml.cs">
-      <DependentUpon>BackgrouundAni.xaml</DependentUpon>
+    <Compile Include="Cutscene\BackgroundAni.xaml.cs">
+      <DependentUpon>BackgroundAni.xaml</DependentUpon>
     </Compile>
     <Compile Include="Cutscene\boom.xaml.cs">
       <DependentUpon>boom.xaml</DependentUpon>
@@ -203,8 +203,8 @@
     <Compile Include="Core.xaml.cs">
       <DependentUpon>Core.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Cutscene\Cuscene1.xaml.cs">
-      <DependentUpon>Cuscene1.xaml</DependentUpon>
+    <Compile Include="Cutscene\Cutscene1.xaml.cs">
+      <DependentUpon>Cutscene1.xaml</DependentUpon>
     </Compile>
     <Compile Include="DebugPanelControl.xaml.cs">
       <DependentUpon>DebugPanelControl.xaml</DependentUpon>
