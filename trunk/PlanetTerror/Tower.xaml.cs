@@ -373,6 +373,8 @@ namespace PlanetTerror
 				{
 					labStory.Begin();
 				}
+				//파워 증가
+				Game.UI.GainPower(Game.Setting.gold.labPower* delta);
 				break;
 			case LAB_DISMANTLE_STATE:
 				if( vsm.GetStateFinished() )
@@ -387,7 +389,6 @@ namespace PlanetTerror
 		public void MakeGold()
 		{
 			int gold = EstimateGold();
-			double power = EstimatePower();
 			if( gold > 0 )
 			{
 				vsm.SetState(GOLD_GROUP, GOLD_GAIN_STATE);
@@ -399,12 +400,6 @@ namespace PlanetTerror
 				vsm.SetState(GOLD_GROUP, GOLD_LOSE_STATE);
 				goldLose_Text.Text = gold.ToString();
 				Game.UI.GainGold(gold);
-			}
-			if( power > 0 )
-			{
-				vsm.SetState(GOLD_GROUP, GOLD_GAIN_STATE);
-				goldGain_Text.Text = "+" + power.ToString();
-				Game.UI.GainPower(power);
 			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -418,13 +413,6 @@ namespace PlanetTerror
 			case LAB_BUILT_STATE:
 				return Game.Setting.gold.labGold;
 			}
-			return 0;
-		}
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	예상 파워
-		public double EstimatePower()
-		{
-			if( vsm.GetState() == LAB_BUILT_STATE ) { return Game.Setting.gold.labPower; }
 			return 0;
 		}
 

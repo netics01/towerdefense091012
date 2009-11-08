@@ -123,7 +123,7 @@ namespace PlanetTerror
 		//	다음 수입 예상 표시
 		public void DisplayIncome(double leftTime, int gold)
 		{
-			gold_NextTime_Text.Text = string.Format("{0:F2}", leftTime);
+			gold_NextTime_Text.Text = string.Format("{0:F1}", leftTime);
 			gold_Next_Text.Text = (gold >= 0 ? "+" : "-") + gold.ToString();
 		}
 
