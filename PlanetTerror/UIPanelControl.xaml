@@ -344,6 +344,30 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="-48"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
+		<Storyboard x:Key="Gold_MouseOver_Storyboard">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Gold" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:02" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:02.1000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Gold" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="Gold_MouseLeave_Storyboard">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Gold" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Gold" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
 	</UserControl.Resources>
 	<UserControl.Triggers>
 		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image">
@@ -355,6 +379,12 @@
 		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
 			<BeginStoryboard Storyboard="{StaticResource Gold_Gain_Storyboard}"/>
 			<BeginStoryboard Storyboard="{StaticResource Gold_Lost_Storyboard}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image3">
+			<BeginStoryboard x:Name="Gold_MouseOver_Storyboard_BeginStoryboard" Storyboard="{StaticResource Gold_MouseOver_Storyboard}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image3">
+			<BeginStoryboard x:Name="Gold_MouseLeave_Storyboard_BeginStoryboard" Storyboard="{StaticResource Gold_MouseLeave_Storyboard}"/>
 		</EventTrigger>
 	</UserControl.Triggers>
 
@@ -386,12 +416,14 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Image Width="64" Height="64" Canvas.Left="-29" Canvas.Top="45" Source="Resources/UI/Gold.png" Stretch="Fill"/>
+			<Image x:Name="image3" Width="64" Height="64" Canvas.Left="-29" Canvas.Top="45" Source="Resources/UI/Gold.png" Stretch="Fill"/>
 		</Canvas>
 		<TextBlock x:Name="gold_Text" Width="56" Height="24" Text="1200" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="752" Canvas.Top="32"/>
+		<TextBlock x:Name="gold_NextTime_Text" Width="56" Height="24" Text="00:15" TextWrapping="Wrap" Foreground="#FF747474" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="816" Canvas.Top="32"/>
+		<TextBlock x:Name="gold_Next_Text" Width="56" Height="24" TextWrapping="Wrap" Foreground="#FF946D40" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="865.5" Canvas.Top="32"><Run Text="185"/><LineBreak/><Run Text=""/></TextBlock>
 		<Image x:Name="image" Width="64" Height="64" Canvas.Left="301" Canvas.Top="8" Source="Resources/UI/Icon_Core.png" Stretch="Fill"/>
-		<Grid x:Name="talk_Core" Width="184" Height="102" Canvas.Left="139.333" Canvas.Top="-56" IsEnabled="False" IsHitTestVisible="False">
-			<Path x:Name="path1" Fill="#CCD8D09A" Stretch="Fill" Margin="-12.554,48,7.223,1.333" Data="M24.277009,0 L200.27701,0 C202.48615,1.5185146E-06 204.33322,5.3172003 204.33322,7.5263386 L204.27701,96.473977 C204.27701,98.683117 202.48615,104 200.27701,104 L30.666609,104 30.666571,104.001 8.6462092,104.00032 C8.6462092,104.00032 11.0285,100.42351 19.329416,93.851045 L20.136882,91.000276 20.277008,3.6582089 C20.277008,1.4490706 22.067869,1.5185146E-06 24.277009,0 z" Stroke="#EB1A1717" RenderTransformOrigin="0.5,0.5" StrokeThickness="2">
+		<Grid x:Name="talk_Core" Width="184" Height="56" Canvas.Left="139.333" Canvas.Top="-8" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed">
+			<Path x:Name="path1" Fill="#CCD8D09A" Stretch="Fill" Margin="-12.554,0,7.223,3.333" Data="M24.277009,0 L200.27701,0 C202.48615,1.5185146E-06 204.33322,5.3172003 204.33322,7.5263386 L204.27701,96.473977 C204.27701,98.683117 202.48615,104 200.27701,104 L30.666609,104 30.666571,104.001 8.6462092,104.00032 C8.6462092,104.00032 11.0285,100.42351 19.329416,93.851045 L20.136882,91.000276 20.277008,3.6582089 C20.277008,1.4490706 22.067869,1.5185146E-06 24.277009,0 z" Stroke="#EB1A1717" RenderTransformOrigin="0.5,0.5" StrokeThickness="2">
 				<Path.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform ScaleX="-1"/>
@@ -401,7 +433,7 @@
 					</TransformGroup>
 				</Path.RenderTransform>
 			</Path>
-			<TextBlock x:Name="talk_Text1" Margin="-0.002,0,13.333,6.666" Foreground="#FF372510" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Height="42" FontFamily="Fonts/#아리따B"><TextBlock.RenderTransform>
+			<TextBlock x:Name="talk_Text1" Margin="-0.002,5.334,13.333,8.666" Foreground="#FF372510" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
@@ -410,66 +442,24 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform><Run Text="적을 죽이면 획득하는 자원으로"/><LineBreak/><Run Text="코어의 강"/><Run Text="력"/><Run Text="한 공격을 사용 할 수있습니다."/></TextBlock>
 		</Grid>
-		<Grid x:Name="talk00" Width="184" Height="102" Canvas.Left="816" Canvas.Top="-56" Visibility="Hidden">
-			<Path x:Name="path" Stretch="Fill" Margin="-20.277,48,0,-1.916" Data="M24.277009,0 L200.27701,0 C202.48615,1.5185146E-06 204.27701,1.7908625 204.27701,4.0000008 L204.27701,100 C204.27701,102.20914 202.48615,104 200.27701,104 L30.666609,104 30.666571,104.001 0,104.001 C0,104.001 11.0285,100.42351 19.329416,93.851045 L20.277008,93.072755 20.277008,4.0000008 C20.277008,1.7908625 22.067869,1.5185146E-06 24.277009,0 z" RenderTransformOrigin="0.5,0.5" Fill="#D81C3A45">
-				<Path.RenderTransform>
+		<Grid x:Name="talk_Gold" Width="184" Height="56" Canvas.Left="683.333" Canvas.Top="-56" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<Path Fill="#CCD8D09A" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="0,0,45,-18.833" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 38.541965,73.833001 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False"/>
+			<TextBlock x:Name="talk_Text2" Margin="4.998,5.334,45.583,-12.834" Foreground="#FF372510" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
 						<RotateTransform/>
 						<TranslateTransform/>
 					</TransformGroup>
-				</Path.RenderTransform>
-			</Path>
-			<TextBlock x:Name="talk_Text" Margin="8,0,8,6.084" Foreground="#FFE6AD69" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Height="40"><TextBlock.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</TextBlock.RenderTransform><Run Text="자원 채굴 단지가 안정되어"/><LineBreak/><Run Text="더 많은 자원을 획득 했습니다."/></TextBlock>
-		</Grid>
-		<Grid x:Name="talk01" Width="184" Height="102" Canvas.Left="816" Canvas.Top="-56" Visibility="Hidden">
-			<Path x:Name="path2" Fill="#FF451C1C" Stretch="Fill" Margin="-20.277,48,0,-1.916" Data="M24.277009,0 L200.27701,0 C202.48615,1.5185146E-06 204.27701,1.7908625 204.27701,4.0000008 L204.27701,100 C204.27701,102.20914 202.48615,104 200.27701,104 L30.666609,104 30.666571,104.001 0,104.001 C0,104.001 11.0285,100.42351 19.329416,93.851045 L20.277008,93.072755 20.277008,4.0000008 C20.277008,1.7908625 22.067869,1.5185146E-06 24.277009,0 z" Stroke="#B7322A2A" RenderTransformOrigin="0.5,0.5">
-				<Path.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Path.RenderTransform>
-			</Path>
-			<TextBlock x:Name="talk_Text2" Margin="8,0,8,6.084" Foreground="#FFFFC64B" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Height="40"><TextBlock.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</TextBlock.RenderTransform><Run Text="타워가 많아지자 노동자들이 불안해 합니다. "/><LineBreak/><Run Text="채굴을 거부 할 수 있습니다."/></TextBlock>
-			<Image Margin="0,0,84,2"/>
-		</Grid>
-		<Grid x:Name="talk02" Width="184" Height="102" Canvas.Left="816" Canvas.Top="-56" Visibility="Hidden" Background="Black">
-			<Path x:Name="path3" Fill="#FFBD2F2F" Stretch="Fill" Margin="-20.277,48,0,-1.916" Data="M24.277009,0 L200.27701,0 C202.48615,1.5185146E-06 204.27701,1.7908625 204.27701,4.0000008 L204.27701,100 C204.27701,102.20914 202.48615,104 200.27701,104 L30.666609,104 30.666571,104.001 0,104.001 C0,104.001 11.0285,100.42351 19.329416,93.851045 L20.277008,93.072755 20.277008,4.0000008 C20.277008,1.7908625 22.067869,1.5185146E-06 24.277009,0 z" Stroke="#B7322A2A" RenderTransformOrigin="0.5,0.5">
-				<Path.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Path.RenderTransform>
-			</Path>
-			<TextBlock x:Name="talk_Text3" Margin="8,0,8,6.084" Foreground="Black" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom" Height="40" Text="불안한 노동자들이 채굴을 거부합니다!!!" FontWeight="Bold" FontSize="13.333"><TextBlock.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</TextBlock.RenderTransform></TextBlock>
+				</TextBlock.RenderTransform><Run Text="타워와 연구소를 짓는데 사용되는 골드 입니다."/><LineBreak/><Run Text="채굴소에서 일정 "/><Run Text="시"/><Run Text="간"/><Run Text="마다 획득 할 수 있습니다."/><Run Text=" "/></TextBlock>
 		</Grid>
 		<Canvas x:Name="Warning_Enemy" Width="152" Height="104" Canvas.Top="-208" Canvas.Left="352" IsHitTestVisible="False">
 			<Canvas x:Name="canvas" Width="64" Height="32" Visibility="Collapsed">
