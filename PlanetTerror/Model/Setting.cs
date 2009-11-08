@@ -80,6 +80,7 @@ namespace PlanetTerror
 		public const int VERSION = 17;
 
 		public int version;
+		public bool debugMode;
 		public int startGold;
 		public double powerMax;
 
@@ -193,6 +194,7 @@ namespace PlanetTerror
 		void SetDefault()
 		{
 			version = VERSION;
+			debugMode = true;
 			startGold = 1000;
 			powerMax = 100;
 
@@ -214,31 +216,31 @@ namespace PlanetTerror
 			tower.stats.Add(new Tower.Stat());
 			tower.stats.Add(new Tower.Stat());
 
-			tower.stats[0].attackRange = 110;
-			tower.stats[0].attackDamage = 10;
+			tower.stats[0].attackRange = 130;
 			tower.stats[0].attackCooldown = 1;
+			tower.stats[0].attackDamage = 10;			
 			tower.stats[0].projSpeed = 100;
 			tower.stats[0].turretRotSpeed = 150;
 			tower.stats[0].upgCost = 150;
 
 			tower.stats[1].attackRange = 130;
-			tower.stats[1].attackDamage = 15;
 			tower.stats[1].attackCooldown = 0.9;
-			tower.stats[1].projSpeed = 110;
+			tower.stats[1].attackDamage = 15;			
+			tower.stats[1].projSpeed = 100;
 			tower.stats[1].turretRotSpeed = 170;
 			tower.stats[1].upgCost = 200;
 
-			tower.stats[2].attackRange = 150;
-			tower.stats[2].attackDamage = 20;
+			tower.stats[2].attackRange = 180;
 			tower.stats[2].attackCooldown = 0.8;
-			tower.stats[2].projSpeed = 120;
+			tower.stats[2].attackDamage = 20;			
+			tower.stats[2].projSpeed = 110;
 			tower.stats[2].turretRotSpeed = 190;
-			tower.stats[2].upgCost = 250;
+			tower.stats[2].upgCost = 300;
 
-			tower.stats[3].attackRange = 170;
-			tower.stats[3].attackDamage = 25;
-			tower.stats[3].attackCooldown = 0.7;
-			tower.stats[3].projSpeed = 130;
+			tower.stats[3].attackRange = 180;
+			tower.stats[3].attackCooldown = 0.5;
+			tower.stats[3].attackDamage = 25;			
+			tower.stats[3].projSpeed = 120;
 			tower.stats[3].turretRotSpeed = 210;
 			tower.stats[3].upgCost = 1000;
 
@@ -246,25 +248,25 @@ namespace PlanetTerror
 			core.warningBefore = 5;
 
 			enemy1.routeTime = 35;
-			enemy1.hitPoint = 20;
+			enemy1.hitPoint = 30;
 			enemy1.damage = 5;
 			enemy1.gold = 0;
 			enemy1.powerUp = 0.5;
 
 			enemy2.routeTime = 60;
-			enemy2.hitPoint = 100;
-			enemy2.damage = 7.5;
+			enemy2.hitPoint = 150;
+			enemy2.damage = 10;
 			enemy2.gold = 0;
 			enemy2.powerUp = 1;
 
-			enemy3.routeTime = 20;
-			enemy3.hitPoint = 50;
-			enemy2.damage = 10;
+			enemy3.routeTime = 15;
+			enemy3.hitPoint = 80;
+			enemy2.damage = 8;
 			enemy3.gold = 0;
 			enemy3.powerUp = 2;
 
-			var w = MakeWave(34);
-			MakeBundle(w, 0.1, "Enemy1", 2, 5, 0.5);
+			var w = MakeWave(30);
+			MakeBundle(w, 5, "Enemy1", 2, 5, 0.5);
 
 			w = MakeWave(5);
 			MakeBundle(w, 0.1, "Enemy1", 2, 5, 1.5);

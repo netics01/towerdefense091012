@@ -59,6 +59,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void MainWindow_KeyDown(object sender, KeyEventArgs e)
 		{
+			//if( !Game.Setting.debugMode ) { return; }
 			if( e.Key == Key.F8 )
 			{
 				ToggleDebugPanel();
