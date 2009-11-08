@@ -621,9 +621,9 @@
 				<GradientStop Color="#00000000" Offset="0.534"/>
 			</LinearGradientBrush>
 		</Canvas.Background>
-		<Canvas x:Name="gold_ani" Width="42" Height="42" Canvas.Left="720" Canvas.Top="-40">
-			<Image x:Name="image3" Width="64" Height="64" Canvas.Left="-29" Canvas.Top="45" Source="Resources/UI/Gold.png" Stretch="Fill" d:IsLocked="True"/>
-			<Image x:Name="image1" Width="16" Height="16" Source="Resources/UI/Gold_ani001.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" Canvas.Left="10.75" Canvas.Top="36.5" IsEnabled="False" IsHitTestVisible="False">
+		<Canvas x:Name="gold_ani" Width="42" Height="42" Canvas.Left="720">
+			<Image x:Name="image3" Width="64" Height="64" Canvas.Left="-29" Canvas.Top="5" Source="Resources/UI/Gold.png" Stretch="Fill"/>
+			<Image x:Name="image1" Width="16" Height="16" Source="Resources/UI/Gold_ani001.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" Canvas.Left="10.75" Canvas.Top="-3.5" IsEnabled="False" IsHitTestVisible="False">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -633,7 +633,7 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Image x:Name="image2" Width="16" Height="10" Canvas.Top="30" Source="Resources/UI/Gold_ani002.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" Canvas.Left="-4" IsEnabled="False" IsHitTestVisible="False">
+			<Image x:Name="image2" Width="16" Height="10" Source="Resources/UI/Gold_ani002.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" Canvas.Left="-4" IsEnabled="False" IsHitTestVisible="False" Canvas.Top="-10">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -643,7 +643,7 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Image x:Name="image1_Copy" Width="16" Height="16" Source="Resources\UI\Gold_ani001.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Canvas.Left="2.25" Canvas.Top="2.25" Visibility="Collapsed" IsEnabled="False" IsHitTestVisible="False">
+			<Image x:Name="image1_Copy" Width="16" Height="16" Source="Resources\UI\Gold_ani001.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Canvas.Left="2.25" Canvas.Top="-37.75" Visibility="Collapsed" IsEnabled="False" IsHitTestVisible="False">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -653,7 +653,7 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Image x:Name="image2_Copy" Width="16" Height="10" Canvas.Top="16" Source="Resources\UI\Gold_ani002.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" Canvas.Left="2.75" IsEnabled="False" IsHitTestVisible="False">
+			<Image x:Name="image2_Copy" Width="16" Height="10" Source="Resources\UI\Gold_ani002.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" Canvas.Left="2.75" IsEnabled="False" IsHitTestVisible="False" Canvas.Top="-24">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -663,7 +663,7 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Image x:Name="image1_Copy1" Width="16" Height="16" Source="Resources\UI\Gold_ani001.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Canvas.Left="-16" Canvas.Top="8" Visibility="Collapsed" IsEnabled="False" IsHitTestVisible="False">
+			<Image x:Name="image1_Copy1" Width="16" Height="16" Source="Resources\UI\Gold_ani001.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Canvas.Left="-16" Visibility="Collapsed" IsEnabled="False" IsHitTestVisible="False" Canvas.Top="-32">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -673,7 +673,7 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Image x:Name="image2_Copy1" Width="16" Height="10" Canvas.Top="-8" Source="Resources\UI\Gold_ani002.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Canvas.Left="8" Visibility="Collapsed" IsEnabled="False" IsHitTestVisible="False">
+			<Image x:Name="image2_Copy1" Width="16" Height="10" Canvas.Top="-48" Source="Resources\UI\Gold_ani002.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Canvas.Left="8" Visibility="Collapsed" IsEnabled="False" IsHitTestVisible="False">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -683,10 +683,11 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
+			<Image Width="34" Height="34" Canvas.Left="107.167" Canvas.Top="22" Source="Resources/UI/Gold_Time.png" Stretch="Fill"/>
 		</Canvas>
 		<TextBlock x:Name="gold_Text" Width="56" Height="24" Text="1200" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="752" Canvas.Top="32"/>
-		<TextBlock x:Name="gold_NextTime_Text" Width="56" Height="24" Text="00:15" TextWrapping="Wrap" Foreground="#FF747474" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="816" Canvas.Top="32"/>
-		<TextBlock x:Name="gold_Next_Text" Width="56" Height="24" TextWrapping="Wrap" Foreground="#FF946D40" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="865.5" Canvas.Top="32"><Run Text="185"/><LineBreak/><Run Text=""/></TextBlock>
+		<TextBlock x:Name="gold_NextTime_Text" Width="56" Height="24" Text="00:15" TextWrapping="Wrap" Foreground="#FF747474" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="863.357" Canvas.Top="32"/>
+		<TextBlock x:Name="gold_Next_Text" Width="56" Height="24" TextWrapping="Wrap" Foreground="#FF946D40" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="912.857" Canvas.Top="32"><Run Text="185"/><LineBreak/><Run Text=""/></TextBlock>
 		<Image x:Name="image" Width="64" Height="64" Canvas.Left="301" Canvas.Top="8" Source="Resources/UI/Icon_Core.png" Stretch="Fill"/>
 		<Grid x:Name="talk_Core" Width="184" Height="56" Canvas.Left="139.333" Canvas.Top="-8" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed">
 			<Path x:Name="path1" Fill="#CCD8D09A" Stretch="Fill" Margin="-12.554,0,7.223,3.333" Data="M24.277009,0 L200.27701,0 C202.48615,1.5185146E-06 204.33322,5.3172003 204.33322,7.5263386 L204.27701,96.473977 C204.27701,98.683117 202.48615,104 200.27701,104 L30.666609,104 30.666571,104.001 8.6462092,104.00032 C8.6462092,104.00032 11.0285,100.42351 19.329416,93.851045 L20.136882,91.000276 20.277008,3.6582089 C20.277008,1.4490706 22.067869,1.5185146E-06 24.277009,0 z" Stroke="#EB1A1717" RenderTransformOrigin="0.5,0.5" StrokeThickness="2">
