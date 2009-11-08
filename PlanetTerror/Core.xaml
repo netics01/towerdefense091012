@@ -21575,6 +21575,9 @@
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="button_Attack_Normal" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1"/>
 						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Attack_Ready_Button" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+						</ObjectAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Attack_Beam_State">
@@ -23864,7 +23867,7 @@
 						</TransformGroup>
 					</Button.RenderTransform>
 				</Button>
-				<Button x:Name="Attack_Ready_Button" Style="{DynamicResource ButtonStyle1}" Width="120" Height="112" Content="!!필살기 사용 할 수 있습니다!!" FontFamily="Fonts/#아리따B" Foreground="#FFFFB10C" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+				<Button x:Name="Attack_Ready_Button" Style="{DynamicResource ButtonStyle1}" Width="120" Height="112" Content="!!필살기 사용 할 수 있습니다!!" FontFamily="Fonts/#아리따B" Foreground="#FFFFB10C" RenderTransformOrigin="0.5,0.5">
 					<Button.Resources>
 						<Style x:Key="ButtonFocusVisual">
 							<Setter Property="Control.Template">
