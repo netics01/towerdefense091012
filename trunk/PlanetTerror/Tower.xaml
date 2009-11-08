@@ -3623,7 +3623,7 @@
 				</Ellipse.RenderTransform>
 			</Ellipse>
 		</Canvas>
-		<Canvas x:Name="labtower" Width="70.833" Height="67" Canvas.Left="-4.5" Canvas.Top="-12.5" RenderTransformOrigin="0.5,0.5" d:IsHidden="True">
+		<Canvas x:Name="labtower" Width="70.833" Height="67" Canvas.Left="-4.5" Canvas.Top="-12.5" RenderTransformOrigin="0.5,0.5">
 			<Canvas.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -3632,7 +3632,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Canvas.RenderTransform>
-            <Button x:Name="Button_lab_eff" Width="72" Height="75.667" Content="Button" Canvas.Left="4.5" Canvas.Top="4.5" Style="{StaticResource Tower_Button_lab_eff}" Background="{x:Null}" BorderBrush="{x:Null}" />
+            <Button x:Name="Button_lab_eff" Width="72" Height="75.667" Content="Button" Canvas.Left="4.5" Canvas.Top="4.5" Style="{StaticResource Tower_Button_lab_eff}" Background="#00000000" BorderBrush="{x:Null}" />
 			<Canvas x:Name="role_Copy" Width="54" Height="54" RenderTransformOrigin="0.5,0.5" Canvas.Left="12.521" Canvas.Top="24.667" IsEnabled="False" IsHitTestVisible="False">
 				<Canvas.RenderTransform>
 					<TransformGroup>
@@ -3823,7 +3823,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_Upgrade_Button" Width="80" Height="14" Background="#FF1D3B33" FocusVisualStyle="{StaticResource Tower_Menu_Upgrade_Button_FocusVisual}" BorderBrush="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{StaticResource Tower_Menu_Upgrade_Button}" Content="-150" Canvas.Left="2.334" Canvas.Top="39.333" Visibility="Collapsed">
+			<Button x:Name="Menu_Upgrade_Button" Width="80" Height="14" Background="#FF1D3B33" FocusVisualStyle="{StaticResource Tower_Menu_Upgrade_Button_FocusVisual}" BorderBrush="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" FontFamily="아리따B" Cursor="Hand" Style="{StaticResource Tower_Menu_Upgrade_Button}" Content="-150" Canvas.Left="2.334" Canvas.Top="39.333">
 				<Button.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -3853,7 +3853,7 @@
 					</TransformGroup>
 				</Button.RenderTransform>
 			</Button>
-			<Button x:Name="Menu_Dismantle_Button" Width="80" Height="14" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Canvas.Top="39.333" FontFamily="아리따B" Cursor="Hand" Style="{StaticResource Tower_Menu_Dismantle}" FocusVisualStyle="{StaticResource Tower_Menu_Dismantle_VisualStyle}" Content="{StaticResource Tower_Menu_Dismantle_Button_Content}" Canvas.Left="2.334" BorderThickness="0" Visibility="Collapsed">
+			<Button x:Name="Menu_Dismantle_Button" Width="80" Height="14" Background="#FF1D3B33" BorderBrush="{x:Null}" Foreground="Black" RenderTransformOrigin="0.5,0.5" Canvas.Top="39.333" FontFamily="아리따B" Cursor="Hand" Style="{StaticResource Tower_Menu_Dismantle}" FocusVisualStyle="{StaticResource Tower_Menu_Dismantle_VisualStyle}" Canvas.Left="2.334" BorderThickness="0" Content="-30">
 				<Button.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
