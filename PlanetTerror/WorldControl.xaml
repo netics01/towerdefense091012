@@ -15,8 +15,8 @@
 		<local:Tower Canvas.Left="95.5" Canvas.Top="100.5" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="201" Canvas.Top="75" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="237" Canvas.Top="145" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="64" Panel.ZIndex="10" Canvas.Top="18.5"/>
-		<local:Tower Canvas.Left="157.5" Panel.ZIndex="10" Canvas.Top="-7"/>
+		<local:Tower Canvas.Left="32" Panel.ZIndex="10" Canvas.Top="45.5"/>
+		<local:Tower Canvas.Left="140.5" Panel.ZIndex="10" Canvas.Top="16"/>
 		<local:Tower Canvas.Left="204" Canvas.Top="237.5" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="308.167" Canvas.Top="214" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="84.667" Canvas.Top="394.333" Panel.ZIndex="10"/>
@@ -44,16 +44,17 @@
 		<local:Tower Canvas.Left="808.5" Canvas.Top="203" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="903" Canvas.Top="127.5" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="907.333" Canvas.Top="303" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="759" Canvas.Top="-4.5" Panel.ZIndex="10"/>
-		<local:Tower Canvas.Left="860" Canvas.Top="18" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="790" Canvas.Top="15.5" Panel.ZIndex="10"/>
+		<local:Tower Canvas.Left="894" Canvas.Top="33" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="79.167" Canvas.Top="194.5" Panel.ZIndex="10"/>
 		<local:Boss1 x:Name="testBoss1" Width="50" Height="50" Canvas.Left="0" Canvas.Top="0" Panel.ZIndex="200"/>
 		<local:Core x:Name="core" Width="176" Height="128" Canvas.Left="423" Canvas.Top="478" Panel.ZIndex="105" RenderTransformOrigin="0.227,0.333"/>
 		<Image Width="1024" Height="720" Source="Resources/Field/backgroundImage.png" Stretch="Fill" Panel.ZIndex="-2000"/>
 		<Image Width="1024" Height="720" Stretch="Fill" Panel.ZIndex="5" Source="Resources/Field/roofImage.png"/>
-		<Path x:Name="route1_Path" Stretch="Fill" Stroke="#FF59FF00" Width="544.5" Height="689" Canvas.Left="-16" Canvas.Top="-40.5" Data="M-16,64 L95.5,15.5 215.5,-8.5 367.5,-40.5 527.5,-40.5 527.5,47.5 447.5,47.5 383.5,55.5 407.5,207.5 303.5,223.5 207.5,247.5 143.5,279.5 199.5,359.5 283.80899,318.50562 386.93258,294.70787 495.5,287.5 503.05353,478.76448 349.73814,503.78756 255.5,559.5 231.5,639.5 423.5,647.5"/>
-		<Path x:Name="route2_Path" Stretch="Fill" Stroke="Red" Width="545.5" Height="697" Canvas.Left="495.5" Canvas.Top="-40.5" Data="M1040,56 L887.5,7.5 759.5,-16.5 607.5,-40.5 527.5,-40.5 527.5,55.5 639.5,55.5 751.5,79.5 791.5,95.5 759.5,167.5 847.5,183.5 919.5,207.5 983.5,239.5 895.5,287.5 815.5,351.5 743.5,327.5 647.5,303.5 567.5,287.5 495.5,287.5 495.5,471.5 631.5,495.5 724.67647,538.79412 791.5,615.5 791.5,655.5&#xd;&#xa;551.5,647.5"/>
-		<Path x:Name="route3_Path" Stretch="Fill" Stroke="#FF0D00FF" Width="649.5" Height="705" Canvas.Left="383.5" Canvas.Top="-48.5" Data="M1032,64 L855.5,7.5 727.5,-16.5 C727.5,-16.5 591.5,-48.5 591.5,-48.5 L527.5,-48.5 527.5,47.5 471.5,47.5 423.5,47.5 383.5,55.5 399.5,135.5 455.5,135.5 511.5,135.5 575.5,135.5 623.5,135.5 663.5,143.5 615.5,295.5 559.5,287.5 503.5,287.5 503.5,471.5 575.5,479.5 663.5,503.5 727.5,543.5 799.5,607.5 791.5,655.5 543.5,647.5"/>
+		<Path x:Name="route1_Path" Stretch="Fill" Stroke="#FF59FF00" Width="520.5" Height="681" Canvas.Left="-16" Canvas.Top="-32.5" Data="M-16,64 L95.5,15.5 215.5,-8.5 327.5,-32.5 447.30872,-26.416107 503.5,-0.5 503.5,47.5 447.5,47.5 383.5,55.5 407.5,207.5 303.5,223.5 207.5,247.5 143.5,279.5 199.5,359.5 283.80899,318.50562 386.93258,294.70787 495.5,287.5 503.05353,478.76448 349.73814,503.78756 255.5,559.5 231.5,639.5 423.5,647.5"/>
+		<Path x:Name="route2_Path" Stretch="Fill" Stroke="Red" Width="545.5" Height="681" Canvas.Left="495.5" Canvas.Top="-24.5" Data="M1040,56 L887.5,7.5 759.5,-16.5 607.5,-24.5 527.5,-0.5 527.5,55.5 639.5,55.5 751.5,79.5 791.5,95.5 759.5,167.5 847.5,183.5 919.5,207.5 983.5,239.5 895.5,287.5 815.5,351.5 743.5,327.5 647.5,303.5 567.5,287.5 495.5,287.5 495.5,471.5 631.5,495.5 724.67647,538.79412 791.5,615.5 791.5,655.5&#xd;&#xa;551.5,647.5"/>
+		<Path x:Name="route3_Path" Stretch="Fill" Stroke="#FF0D00FF" Width="649.5" Height="689" Canvas.Left="383.5" Canvas.Top="-32.5" Data="M1032,64 L855.5,7.5 727.5,-16.5 C727.5,-16.5 599.5,-32.5 599.5,-32.5 L527.5,-8.5 527.5,47.5 471.5,47.5 423.5,47.5 383.5,55.5 399.5,135.5 455.5,135.5 511.5,135.5 575.5,135.5 623.5,135.5 663.5,143.5 615.5,295.5 559.5,287.5 503.5,287.5 503.5,471.5 575.5,479.5 663.5,503.5 727.5,543.5 799.5,607.5 791.5,655.5 543.5,647.5"/>
+		<Path x:Name="route1___4_Path" Stretch="Fill" Stroke="#FFFFE800" Width="512.5" Height="681" Data="M-8,56 L95.5,7.5 263.5,-24.5 431.5,-32.5 503.5,-8.5 503.5,47.5 431.5,47.5 367.5,55.5 295.5,63.5 191.5,87.5 87.5,119.5 31.5,143.5 87.5,207.5 199.5,175.5 319.5,143.5 367.5,135.5 399.5,207.5 287.5,231.5 207.5,255.5 143.5,279.5 247.5,439.5 159.5,479.5 103.5,535.5 79.5,575.5&#xd;&#xa;223.5,607.5 223.5,639.5 423.5,647.5" Canvas.Left="-8" Canvas.Top="-32.5"/>
 		<local:Tower Canvas.Left="449.25" Canvas.Top="133" Panel.ZIndex="10"/>
 	</Canvas>
 </UserControl>
