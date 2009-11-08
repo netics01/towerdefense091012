@@ -374,7 +374,7 @@ namespace PlanetTerror
 					labStory.Begin();
 				}
 				//파워 증가
-				Game.UI.GainPower(Game.Setting.gold.labPower* delta);
+				Game.UI.GainPower(Game.Setting.tower.labPower* delta);
 				break;
 			case LAB_DISMANTLE_STATE:
 				if( vsm.GetStateFinished() )
