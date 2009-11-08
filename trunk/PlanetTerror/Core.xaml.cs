@@ -97,7 +97,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Attack_Beam_State_Completed(object sender, EventArgs e)
 		{
-			VisualStateManager.GoToState(this, ATTACK_NORMAL_STATE, true);
+			vsm.SetState(ATTACK_GROUP, ATTACK_NORMAL_STATE);
 			Game.UI.GainPower(-1000);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -169,7 +169,7 @@ namespace PlanetTerror
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	게이지가 다 찼다.
-		public void DeadlyReady()
+		public void AttackReady()
 		{
 			vsm.SetState(ATTACK_GROUP, ATTACK_READY_STATE);
 		}

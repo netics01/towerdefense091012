@@ -65,7 +65,7 @@ namespace PlanetTerror
 				switch( State )
 				{
 				case EState.Wave:
-					Debug.Print("{0}", WaveTimeLeft);
+					//Debug.Print("{0}", WaveTimeLeft);
 					if( WaveTimeLeft - delta <= Game.Setting.core.warningBefore &&
 						Game.Setting.core.warningBefore <= WaveTimeLeft )
 					{

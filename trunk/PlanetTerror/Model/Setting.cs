@@ -77,7 +77,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 22;
+		public const int VERSION = 24;
 
 		public int version;
 		public bool debugMode;
@@ -120,6 +120,7 @@ namespace PlanetTerror
 		{
 			public double hitPoint;
 			public double warningBefore;
+			public double attackDamage;
 			public double boomTime;
 			public double boomDistance;
 			public double boomLogicFrame;
@@ -137,6 +138,11 @@ namespace PlanetTerror
 		public Enemy enemy1;
 		public Enemy enemy2;
 		public Enemy enemy3;
+		public class Boss
+		{
+			public double hitPoint;
+		}
+		public Boss boss;
 
 		public class Wave
 		{
@@ -164,6 +170,7 @@ namespace PlanetTerror
 			enemy1 = new Enemy();
 			enemy2 = new Enemy();
 			enemy3 = new Enemy();
+			boss = new Boss();
 
 			waves = new List<Wave>();
 		}
@@ -256,6 +263,7 @@ namespace PlanetTerror
 
 			core.hitPoint = 100;
 			core.warningBefore = 5;
+			core.attackDamage = 500;
 			core.boomTime = 4;
 			core.boomDistance = 40;
 			core.boomLogicFrame = 0.1;
@@ -277,6 +285,8 @@ namespace PlanetTerror
 			enemy2.damage = 8;
 			enemy3.gold = 0;
 			enemy3.powerUp = 2;
+
+			boss.hitPoint = 500;
 
 			var w = MakeWave(30);
 			MakeBundle(w, 5, "Enemy1", 2, 5, 0.5);

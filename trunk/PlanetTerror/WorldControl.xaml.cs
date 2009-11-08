@@ -158,6 +158,23 @@ namespace PlanetTerror
 			}
 			return target;
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	데미지
+		public void SweepDamage(double leftX, double rightX, double damage)
+		{
+			//적이 이동하는 경우 빠져나갈수가 있다. 여유를 더 준다.
+			rightX += 8;
+			for( int i = 0; i < enemies.Count; ++i )
+			{
+				var e = enemies[i];
+				if( e.IsInvalid ) { continue; }
+				if( leftX < e.Pos.X && e.Pos.X <= rightX )
+				{
+					e.TakeDamage(damage);
+					
+				}
+			}
+		}
 
 		//===============================================================================================================================================
 		//	전용
