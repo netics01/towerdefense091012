@@ -25349,6 +25349,18 @@
 															<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roller" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 																<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-11.321"/>
 															</DoubleAnimationUsingKeyFrames>
+															<BooleanAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="zen" Storyboard.TargetProperty="(UIElement.IsHitTestVisible)">
+																<DiscreteBooleanKeyFrame KeyTime="00:00:00" Value="False"/>
+															</BooleanAnimationUsingKeyFrames>
+															<BooleanAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="zen" Storyboard.TargetProperty="(UIElement.IsEnabled)">
+																<DiscreteBooleanKeyFrame KeyTime="00:00:00" Value="False"/>
+															</BooleanAnimationUsingKeyFrames>
+															<BooleanAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roller" Storyboard.TargetProperty="(UIElement.IsEnabled)">
+																<DiscreteBooleanKeyFrame KeyTime="00:00:00" Value="False"/>
+															</BooleanAnimationUsingKeyFrames>
+															<BooleanAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="roller" Storyboard.TargetProperty="(UIElement.IsHitTestVisible)">
+																<DiscreteBooleanKeyFrame KeyTime="00:00:00" Value="False"/>
+															</BooleanAnimationUsingKeyFrames>
 														</Storyboard>
 													</VisualState>
 													<VisualState x:Name="Pressed">
@@ -25652,7 +25664,7 @@
 												<Rectangle x:Name="rectangle_Copy" Fill="#CC201E1E" Stroke="#FFFF7D25" Width="189.708" Height="44" Visibility="Visible" Margin="0" Canvas.Left="3.271" Canvas.Top="2"/>
 												<ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Stretch" Margin="{TemplateBinding Padding}" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True" IsEnabled="False" IsHitTestVisible="False" Visibility="Visible" Canvas.Left="16" Canvas.Top="16" Content="!!필살기 사용 할 수 있습니다!!"/>
 											</Canvas>
-											<Ellipse x:Name="ellipse2" Stroke="{x:Null}" StrokeThickness="0" Width="271.698" Height="212.831" Opacity="0" Canvas.Left="-79.434" Canvas.Top="-56.888" RenderTransformOrigin="0.5,0.5">
+											<Ellipse x:Name="ellipse2" Stroke="{x:Null}" StrokeThickness="0" Width="271.698" Height="212.831" Opacity="0" Canvas.Left="-79.434" Canvas.Top="-56.888" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False">
 												<Ellipse.RenderTransform>
 													<TransformGroup>
 														<ScaleTransform/>
