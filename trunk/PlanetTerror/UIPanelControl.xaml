@@ -376,10 +376,6 @@
 		<EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image">
 			<BeginStoryboard Storyboard="{StaticResource CoreIcon_OnMouseLeave}"/>
 		</EventTrigger>
-		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
-			<BeginStoryboard Storyboard="{StaticResource Gold_Gain_Storyboard}"/>
-			<BeginStoryboard Storyboard="{StaticResource Gold_Lost_Storyboard}"/>
-		</EventTrigger>
 		<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image3">
 			<BeginStoryboard x:Name="Gold_MouseOver_Storyboard_BeginStoryboard" Storyboard="{StaticResource Gold_MouseOver_Storyboard}"/>
 		</EventTrigger>
