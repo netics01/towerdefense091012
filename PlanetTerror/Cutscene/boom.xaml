@@ -87,69 +87,77 @@
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="-6.037"/>
 			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.4"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 	</UserControl.Resources>
 
 	<Canvas x:Name="LayoutRoot">
-		<Ellipse x:Name="ellipse1" Fill="Black" Width="31.604" Height="35.928" RenderTransformOrigin="0.5,0.5" Canvas.Left="24.396" Canvas.Top="-0.667">
-			<Ellipse.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Ellipse.RenderTransform>
-		</Ellipse>
-		<Ellipse x:Name="ellipse2" Fill="#FFFF9E2C" Width="23.63" Height="26.866" RenderTransformOrigin="0.5,0.5" Canvas.Left="26.391" Canvas.Top="6.453">
-			<Ellipse.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Ellipse.RenderTransform>
-		</Ellipse>
-		<Ellipse x:Name="ellipse3" Fill="Black" Width="24.771" Height="28.16" RenderTransformOrigin="0.5,0.5" Canvas.Left="4.75" Canvas.Top="15.192">
-			<Ellipse.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Ellipse.RenderTransform>
-		</Ellipse>
-		<Ellipse x:Name="ellipse4" Fill="#FFFFC52C" Width="16.796" Height="20.392" RenderTransformOrigin="0.5,0.5" Canvas.Left="10.733" Canvas.Top="20.369">
-			<Ellipse.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Ellipse.RenderTransform>
-		</Ellipse>
-		<Ellipse x:Name="ellipse5" Fill="Black" Width="19.646" Height="22.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="21.543" Canvas.Top="26.84">
-			<Ellipse.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Ellipse.RenderTransform>
-		</Ellipse>
-		<Ellipse x:Name="ellipse6" Fill="#FFFFC326" Width="14.804" Height="16.185" RenderTransformOrigin="0.5,0.5" Canvas.Left="22.691" Canvas.Top="28.786">
-			<Ellipse.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Ellipse.RenderTransform>
-		</Ellipse>
+		<Canvas x:Name="canvas" Width="51.25" Height="49.841" Canvas.Left="4.75" Canvas.Top="-0.667">
+			<Ellipse x:Name="ellipse1" Fill="Black" Width="31.604" Height="35.928" RenderTransformOrigin="0.5,0.5" Canvas.Left="19.646">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+			</Ellipse>
+			<Ellipse x:Name="ellipse2" Fill="#FFFF9E2C" Width="23.63" Height="26.866" RenderTransformOrigin="0.5,0.5" Canvas.Left="21.641" Canvas.Top="7.12">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+			</Ellipse>
+			<Ellipse x:Name="ellipse3" Fill="Black" Width="24.771" Height="28.16" RenderTransformOrigin="0.5,0.5" Canvas.Top="15.859">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+			</Ellipse>
+			<Ellipse x:Name="ellipse4" Fill="#FFFFC52C" Width="16.796" Height="20.392" RenderTransformOrigin="0.5,0.5" Canvas.Left="5.983" Canvas.Top="21.036">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+			</Ellipse>
+			<Ellipse x:Name="ellipse5" Fill="Black" Width="19.646" Height="22.334" RenderTransformOrigin="0.5,0.5" Canvas.Left="16.793" Canvas.Top="27.507">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+			</Ellipse>
+			<Ellipse x:Name="ellipse6" Fill="#FFFFC326" Width="14.804" Height="16.185" RenderTransformOrigin="0.5,0.5" Canvas.Left="17.941" Canvas.Top="29.453">
+				<Ellipse.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Ellipse.RenderTransform>
+			</Ellipse>
+		</Canvas>
 	</Canvas>
 </UserControl>
