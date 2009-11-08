@@ -757,9 +757,9 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:09.8000000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:10" Value="0.5"/>
 			</DoubleAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Button_lab_eff" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Button_lab_eff" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="NotYetBuilt_Storyboard">
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="tilt1">
@@ -2556,6 +2556,9 @@
 							<SplineColorKeyFrame KeyTime="00:00:00.8000000" Value="Red"/>
 							<SplineColorKeyFrame KeyTime="00:00:01.4000000" Value="Red"/>
 						</ColorAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Button_lab_eff" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Build_Lab_Dismantle_State">
@@ -2716,6 +2719,9 @@
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image4_Copy" Storyboard.TargetProperty="(UIElement.Opacity)">
 							<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="1"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Button_lab_eff" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
@@ -3771,7 +3777,7 @@
 			    </TransformGroup>
 		    </TextBlock.RenderTransform><Run Text="-"/><Run Text=" 5"/></TextBlock>
 		</Canvas>
-		<Canvas x:Name="menu_Canvas" Width="2.334" Height="5.333" Background="#00000000" Canvas.Left="13.666" Canvas.Top="3.667">
+		<Canvas x:Name="menu_Canvas" Width="2.334" Height="5.333" Background="#00000000" Canvas.Left="12.916" Canvas.Top="26.167">
 			<Canvas x:Name="rangeview" Width="301" Height="301" Canvas.Left="-125.666" Canvas.Top="-100.667" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
 				<Canvas.RenderTransform>
 					<TransformGroup>
