@@ -439,8 +439,13 @@
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
-				<VisualState x:Name="Opening_State"/>
-				<VisualState x:Name="GameOver_State"/>
+				<VisualState x:Name="GameOver_State">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="GameOver" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
 				<VisualState x:Name="Ending_State">
 					<Storyboard>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="P1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
@@ -598,7 +603,7 @@
 				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Canvas x:Name="GameStart" Width="1024" Height="720" Canvas.Left="216" Canvas.Top="192">
+		<Canvas x:Name="GameStart" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Visibility="Collapsed">
 			<Rectangle Stroke="Black" Width="1024" Height="720" d:IsLocked="True">
 				<Rectangle.Fill>
 					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -974,7 +979,7 @@
 				</TextBlock>
 			</Canvas>
 		</Canvas>
-		<Canvas x:Name="Opening" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="Black" Visibility="Collapsed" d:IsHidden="True">
+		<Canvas x:Name="Opening" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="Black" Visibility="Collapsed">
 			<Button x:Name="Menu_ReStart_Copy" Style="{DynamicResource ReStart}" Width="64" Height="24" Content="■Skip" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" Foreground="#FF9B2727" Canvas.Left="961" Canvas.Top="8">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
@@ -1019,7 +1024,7 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="GameOver" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="#FF0C0C0C" Visibility="Collapsed" d:IsHidden="True">
+		<Canvas x:Name="GameOver" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="#FF0C0C0C" Visibility="Collapsed">
 			<TextBlock Width="584" Height="80" Canvas.Left="256" Canvas.Top="280" FontFamily="아리따B" FontSize="64" Foreground="#FFBB3131" TextWrapping="Wrap"><Run Text="Core"/><Run Text=" is"/><Run Text=" Dismantle"/><Run Text="..."/></TextBlock>
 			<Button x:Name="Menu_ReStart" Style="{DynamicResource ReStart}" Width="176" Height="40" Content="타이틀 화면으로" Canvas.Left="448" Canvas.Top="416" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" Foreground="#FF9B2727">
 				<Button.Resources>
@@ -1065,7 +1070,7 @@
 				</Button.Resources>
 			</Button>
 		</Canvas>
-		<Canvas x:Name="Ending" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" d:IsHidden="True">
+		<Canvas x:Name="Ending" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Visibility="Collapsed">
 			<Canvas.Background>
 				<RadialGradientBrush>
 					<RadialGradientBrush.RelativeTransform>
