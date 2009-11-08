@@ -36,12 +36,24 @@ namespace PlanetTerror
 			vsm = new VSM(this, LayoutRoot);
 
 			Menu_Start.Click += new RoutedEventHandler(Menu_Start_Click);
+			GameStart_State.Storyboard.Completed += new EventHandler(GameStart_State_Storyboard_Completed);
+			GameStart_Click_State.Storyboard.Completed +=new EventHandler(GameStart_Click_State_Storyboard_Completed);
 		}
 
 		//===============================================================================================================================================
 		//	핸들러
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Start_Click(object sender, RoutedEventArgs e)
+		{
+			vsm.SetState("GameStart_Click_State");
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void GameStart_State_Storyboard_Completed(object sender, EventArgs e)
+		{
+			
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void GameStart_Click_State_Storyboard_Completed(object sender, EventArgs e)
 		{
 			Activate(false);
 		}
