@@ -839,7 +839,7 @@
                             </Rectangle>
                             <Rectangle x:Name="rectangle1" Fill="Black" RadiusX="2" RadiusY="2" Width="16" Height="14" Margin="0,0,1,0" HorizontalAlignment="Left" d:LayoutOverrides="Width" Stroke="{x:Null}"/>
                             <Rectangle x:Name="rectangle4" Fill="{x:Null}" RadiusX="4" RadiusY="4" HorizontalAlignment="Left" Margin="2.917,2.5,0,2.283" Width="10.666" Stroke="#FF237BA3" StrokeThickness="3"/>
-                            <ContentPresenter HorizontalAlignment="Stretch" Margin="23.141,0,30.648,0" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Content="-50" RecognizesAccessKey="True" d:LayoutOverrides="Width"/>
+                            <ContentPresenter HorizontalAlignment="Stretch" Margin="18.141,0,32,0" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Content="-200" RecognizesAccessKey="True"/>
                             <Rectangle x:Name="rectangle2" Fill="#CC202221" Stroke="{x:Null}" RadiusX="2" RadiusY="2" HorizontalAlignment="Right" Margin="0,-3.166,-85,-51.501" Width="106.666" Visibility="Collapsed" Cursor="Help" Height="Auto" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
                                 <Rectangle.RenderTransform>
                                     <TransformGroup>
