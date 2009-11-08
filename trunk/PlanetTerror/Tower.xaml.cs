@@ -386,18 +386,8 @@ namespace PlanetTerror
 		//	골드타임
 		public void MakeGold()
 		{
-			int gold = 0;
-			double power = 0;
-			switch( vsm.GetState() )
-			{
-			case NOTYETBUILT_STATE:
-				gold = Game.Setting.gold.mineGold;
-				break;
-			case LAB_BUILT_STATE:
-				gold = Game.Setting.gold.labGold;
-				power = Game.Setting.gold.labPower;
-				break;
-			}
+			int gold = EstimateGold();
+			double power = EstimatePower();
 			if( gold > 0 )
 			{
 				vsm.SetState(GOLD_GROUP, GOLD_GAIN_STATE);
@@ -416,6 +406,26 @@ namespace PlanetTerror
 				goldGain_Text.Text = "+" + power.ToString();
 				Game.UI.GainPower(power);
 			}
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	예상 수입
+		public int EstimateGold()
+		{
+			switch( vsm.GetState() )
+			{
+			case NOTYETBUILT_STATE:
+				return Game.Setting.gold.mineGold;
+			case LAB_BUILT_STATE:
+				return Game.Setting.gold.labGold;
+			}
+			return 0;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	예상 파워
+		public double EstimatePower()
+		{
+			if( vsm.GetState() == LAB_BUILT_STATE ) { return Game.Setting.gold.labPower; }
+			return 0;
 		}
 
 		//===============================================================================================================================================
