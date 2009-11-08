@@ -12,27 +12,52 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Media.Animation;
 
+using PlanetTerror.Util;
+
+
 namespace PlanetTerror
 {
-	/// <summary>
-	/// Interaction logic for boom.xaml
-	/// </summary>
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//	Boom
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	public partial class Boom : UserControl
 	{
+		//===============================================================================================================================================
+		//	프로퍼티
+		public bool Done { get; protected set; }
+
+		//===============================================================================================================================================
+		//	필드
 		Storyboard story;
 		
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	생성자
 		public Boom()
 		{
 			this.InitializeComponent();
-			
+
+			Done = false;
 			story = Resources["Core_Boom0_Storyboard"] as Storyboard;
+			story.Completed += new EventHandler(story_Completed);
 
 			IsVisibleChanged += new DependencyPropertyChangedEventHandler(boom_IsVisibleChanged);
 		}
 
+		//===============================================================================================================================================
+		//	핸들러
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void story_Completed(object sender, EventArgs e)
+		{
+			Done = true;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void boom_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
 		{
-			story.Begin();
+			if( this.GetVisible() )
+			{
+				story.Begin();
+				Done = false;
+			}			
 		}
 	}
 }
