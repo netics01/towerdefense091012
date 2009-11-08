@@ -145,6 +145,7 @@ namespace PlanetTerror
 			case TOWER_BUILT_STATE:
 				if( vsm.GetStateFinished() )
 				{
+					Menu_Dismantle_Button.Content = Stat.dismantleCost;
 					switch( towerLevel )
 					{
 					case 0:
@@ -159,13 +160,13 @@ namespace PlanetTerror
 					case 3:
 						vsm.SetState(MENU_GROUP, MENU_DISMANTLE_STATE);
 						break;
-					}
-					Menu_Dismantle_Button.Content = Stat.dismantleCost;
+					}					
 				}
 				break;
 			case LAB_BUILT_STATE:
 				if( vsm.GetStateFinished() )
 				{
+					Menu_Dismantle_Button.Content = Game.Setting.tower.dismantleCost;
 					vsm.SetState(MENU_GROUP, MENU_DISMANTLE_STATE);
 				}
 				break;
