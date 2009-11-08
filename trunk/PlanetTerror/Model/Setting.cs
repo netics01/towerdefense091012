@@ -77,10 +77,11 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 19;
+		public const int VERSION = 20;
 
 		public int version;
 		public bool debugMode;
+		public bool title;
 		public int startGold;
 		public double powerMax;
 
@@ -196,6 +197,7 @@ namespace PlanetTerror
 		{
 			version = VERSION;
 			debugMode = true;
+			title = false;
 			startGold = 1000;
 			powerMax = 100;
 

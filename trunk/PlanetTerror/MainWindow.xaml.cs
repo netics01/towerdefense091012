@@ -55,6 +55,11 @@ namespace PlanetTerror
 
 			ui_Panel.Initialize();
 			world.Initialize();
+
+			if( Game.Setting.title )
+			{
+				cutscene.RunTitle();
+			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void MainWindow_KeyDown(object sender, KeyEventArgs e)
@@ -88,6 +93,8 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void pump_Update(float delta)
 		{
+			if( cutscene.Active ) { return; }
+
 			world.Update(delta);
 			ui_Panel.Update(delta);
 			debug_Panel.Update(delta);
