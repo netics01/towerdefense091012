@@ -159,7 +159,8 @@ namespace PlanetTerror
 					case 3:
 						vsm.SetState(MENU_GROUP, MENU_DISMANTLE_STATE);
 						break;
-					}					
+					}
+					Menu_Dismantle_Button.Content = Stat.dismantleCost;
 				}
 				break;
 			case LAB_BUILT_STATE:
@@ -225,6 +226,10 @@ namespace PlanetTerror
 		void Menu_Dismantle_Button_Click(object sender, RoutedEventArgs e)
 		{
 			int gold = Game.Setting.tower.dismantleCost;
+			if( vsm.GetState() != LAB_BUILT_STATE )
+			{
+				gold = Stat.dismantleCost;
+			}
 			if( !Game.UI.SpendGold(gold) )
 			{
 				return;
