@@ -3771,8 +3771,8 @@
 			    </TransformGroup>
 		    </TextBlock.RenderTransform><Run Text="-"/><Run Text=" 5"/></TextBlock>
 		</Canvas>
-		<Canvas x:Name="menu_Canvas" Width="2.334" Height="5.333" Background="#00000000" Canvas.Left="13.666" Canvas.Top="18.667">
-			<Canvas x:Name="rangeview" Width="301" Height="301" Canvas.Left="-125.666" Canvas.Top="-114.667" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
+		<Canvas x:Name="menu_Canvas" Width="2.334" Height="5.333" Background="#00000000" Canvas.Left="13.666" Canvas.Top="3.667">
+			<Canvas x:Name="rangeview" Width="301" Height="301" Canvas.Left="-125.666" Canvas.Top="-100.667" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
 				<Canvas.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>

@@ -343,7 +343,7 @@
 		</Canvas>
 		<TextBlock x:Name="gold_Text" Width="56" Height="24" Text="1200" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="kroeger 05_53" FontSize="14.667" Canvas.Left="752" Canvas.Top="32"/>
 		<Image x:Name="image" Width="64" Height="64" Canvas.Left="301" Canvas.Top="8" Source="Resources/UI/Icon_Core.png" Stretch="Fill"/>
-		<Grid x:Name="talk_Core" Width="184" Height="102" Canvas.Left="139.333" Canvas.Top="-56">
+		<Grid x:Name="talk_Core" Width="184" Height="102" Canvas.Left="139.333" Canvas.Top="-56" IsEnabled="False" IsHitTestVisible="False">
 			<Path x:Name="path1" Fill="#CCD8D09A" Stretch="Fill" Margin="-12.554,48,7.223,1.333" Data="M24.277009,0 L200.27701,0 C202.48615,1.5185146E-06 204.33322,5.3172003 204.33322,7.5263386 L204.27701,96.473977 C204.27701,98.683117 202.48615,104 200.27701,104 L30.666609,104 30.666571,104.001 8.6462092,104.00032 C8.6462092,104.00032 11.0285,100.42351 19.329416,93.851045 L20.136882,91.000276 20.277008,3.6582089 C20.277008,1.4490706 22.067869,1.5185146E-06 24.277009,0 z" Stroke="#EB1A1717" RenderTransformOrigin="0.5,0.5" StrokeThickness="2">
 				<Path.RenderTransform>
 					<TransformGroup>
