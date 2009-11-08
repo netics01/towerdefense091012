@@ -3875,7 +3875,7 @@
 				</Ellipse.RenderTransform>
 			</Ellipse>
 		</Canvas>
-		<Canvas x:Name="labtower" Width="70.833" Height="67" Canvas.Left="-4.5" Canvas.Top="-12.5" RenderTransformOrigin="0.5,0.5" d:IsHidden="True">
+		<Canvas x:Name="labtower" Width="70.833" Height="67" Canvas.Left="-4.5" Canvas.Top="-12.5" RenderTransformOrigin="0.5,0.5">
 			<Canvas.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -3988,7 +3988,7 @@
 				</Image.RenderTransform>
 			</Image>
 		</Canvas>
-		<Canvas x:Name="Menu_Num" Width="32" Height="16" Canvas.Left="9" Canvas.Top="37" IsEnabled="False" IsHitTestVisible="False" d:IsHidden="True">
+		<Canvas x:Name="Menu_Num" Width="32" Height="16" Canvas.Left="9" Canvas.Top="37" IsEnabled="False" IsHitTestVisible="False">
 			<Rectangle x:Name="UP01" Fill="#FFFFDA5E" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-23" Canvas.Top="-31" Visibility="Collapsed">
 				<Rectangle.Stroke>
 					<SolidColorBrush Color="{StaticResource Enemy_lrgStroke}"/>
@@ -4023,8 +4023,8 @@
 			    </TransformGroup>
 		    </TextBlock.RenderTransform><Run Text="-"/><Run Text=" 5"/></TextBlock>
 		</Canvas>
-		<Canvas x:Name="menu_Canvas" Width="2.334" Height="5.333" Background="#00000000" Canvas.Left="12.916" Canvas.Top="26.167" d:IsHidden="True">
-			<Canvas x:Name="rangeview" Width="301" Height="301" Canvas.Left="-125.666" Canvas.Top="-100.667" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
+		<Canvas x:Name="menu_Canvas" Width="2.334" Height="5.333" Background="#00000000" Canvas.Left="12.916" Canvas.Top="26.167">
+			<Canvas x:Name="rangeview" Width="301" Height="301" Canvas.Left="-125.666" Canvas.Top="-136.167" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
 				<Canvas.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
