@@ -77,7 +77,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 18;
+		public const int VERSION = 19;
 
 		public int version;
 		public bool debugMode;
@@ -109,6 +109,7 @@ namespace PlanetTerror
 				public double projSpeed;
 				public double turretRotSpeed;
 				public int upgCost;
+				public int dismantleCost;
 			}
 			public List<Stat> stats;
 		}
@@ -222,6 +223,7 @@ namespace PlanetTerror
 			tower.stats[0].projSpeed = 100;
 			tower.stats[0].turretRotSpeed = 150;
 			tower.stats[0].upgCost = 150;
+			tower.stats[0].dismantleCost = -50;
 
 			tower.stats[1].attackRange = 130;
 			tower.stats[1].attackCooldown = 0.9;
@@ -229,6 +231,7 @@ namespace PlanetTerror
 			tower.stats[1].projSpeed = 100;
 			tower.stats[1].turretRotSpeed = 170;
 			tower.stats[1].upgCost = 200;
+			tower.stats[1].dismantleCost = -100;
 
 			tower.stats[2].attackRange = 180;
 			tower.stats[2].attackCooldown = 0.8;
@@ -236,6 +239,7 @@ namespace PlanetTerror
 			tower.stats[2].projSpeed = 110;
 			tower.stats[2].turretRotSpeed = 190;
 			tower.stats[2].upgCost = 300;
+			tower.stats[2].dismantleCost = -150;
 
 			tower.stats[3].attackRange = 180;
 			tower.stats[3].attackCooldown = 0.5;
@@ -243,6 +247,7 @@ namespace PlanetTerror
 			tower.stats[3].projSpeed = 120;
 			tower.stats[3].turretRotSpeed = 210;
 			tower.stats[3].upgCost = 1000;
+			tower.stats[3].dismantleCost = -200;
 
 			core.hitPoint = 100;
 			core.warningBefore = 5;
