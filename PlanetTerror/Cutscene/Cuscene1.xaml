@@ -188,10 +188,49 @@
 						</ObjectAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
+				<VisualState x:Name="GameStart_Click_State">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="GameStart" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock7" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.078"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="-0.178"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.078"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="204"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="name" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Canvas x:Name="GameStart" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0">
-			<Rectangle Stroke="Black" Width="1024" Height="720" d:IsLocked="True">
+		<Canvas x:Name="GameStart" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Visibility="Collapsed">
+			<Rectangle x:Name="rectangle" Stroke="Black" Width="1024" Height="720" RenderTransformOrigin="0.5,0.5">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
 				<Rectangle.Fill>
 					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 						<GradientStop Color="Black" Offset="0.539"/>
@@ -199,7 +238,7 @@
 					</LinearGradientBrush>
 				</Rectangle.Fill>
 			</Rectangle>
-			<Button x:Name="Menu_Start" Style="{DynamicResource menu_Start}" Width="152" Height="149" Content="게임 시작" FontFamily="아리따B" FontSize="21.333" FontWeight="Bold" Foreground="#FFF4C685" Canvas.Left="434" Canvas.Top="491" BorderBrush="{x:Null}" d:IsLocked="True">
+			<Button x:Name="Menu_Start" Style="{DynamicResource menu_Start}" Width="152" Height="149" Content="게임 시작" FontFamily="아리따B" FontSize="21.333" FontWeight="Bold" Foreground="#FFF4C685" Canvas.Left="434" Canvas.Top="491" BorderBrush="{x:Null}">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
 						<Setter Property="Control.Template">
@@ -405,105 +444,200 @@
 					</Style>
 				</Button.Resources>
 			</Button>
-			<TextBlock Width="128" Height="32" Text="Planet Terror" TextWrapping="Wrap" Canvas.Left="455" Canvas.Top="96" Foreground="#FF610F0F" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="21.333" d:IsLocked="True"/>
+			<TextBlock x:Name="textBlock7" Width="128" Height="32" Text="Planet Terror" TextWrapping="Wrap" Canvas.Left="455" Canvas.Top="96" Foreground="#FF610F0F" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="21.333"/>
 			<Canvas x:Name="name" Width="152" Height="32" Canvas.Left="455" Canvas.Top="124">
-				<TextBlock x:Name="b" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Text="b" Canvas.Left="-161" Canvas.Top="-20">
-					<TextBlock.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</TextBlock.RenderTransform>
-				</TextBlock>
-				<TextBlock x:Name="y" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Text="y" Canvas.Left="-137" Canvas.Top="20">
-					<TextBlock.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</TextBlock.RenderTransform>
-				</TextBlock>
-				<TextBlock x:Name="u" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Text="u" Canvas.Left="-105" Canvas.Top="20">
-					<TextBlock.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</TextBlock.RenderTransform>
-				</TextBlock>
-				<TextBlock x:Name="c" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Text="c" Canvas.Left="-81" Canvas.Top="36">
-					<TextBlock.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</TextBlock.RenderTransform>
-				</TextBlock>
-				<TextBlock x:Name="k" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Canvas.Left="-78.25" Canvas.Top="-35.25"><TextBlock.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</TextBlock.RenderTransform><Run Text="k"/><LineBreak/><Run Text=""/></TextBlock>
-				<TextBlock x:Name="d" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Text="d" Canvas.Left="-65" Canvas.Top="-12">
-					<TextBlock.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</TextBlock.RenderTransform>
-				</TextBlock>
-				<TextBlock x:Name="a" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" Text="a" Canvas.Left="-41" Canvas.Top="4" RenderTransformOrigin="0.5,0.5">
-					<TextBlock.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</TextBlock.RenderTransform>
-				</TextBlock>
-				<TextBlock x:Name="l" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" Canvas.Left="-17" Canvas.Top="12" RenderTransformOrigin="0.5,0.5">
-					<TextBlock.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</TextBlock.RenderTransform><Run Text="l |"/><Run Text=" "/></TextBlock>
-				<TextBlock x:Name="y1" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" Text="y" Canvas.Left="7" Canvas.Top="52" RenderTransformOrigin="0.5,0.5">
-					<TextBlock.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</TextBlock.RenderTransform>
-				</TextBlock>
-				<TextBlock x:Name="x" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" Text="x | " Canvas.Left="39" Canvas.Top="68" RenderTransformOrigin="0.5,0.5">
-					<TextBlock.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</TextBlock.RenderTransform>
-				</TextBlock>
+				<Canvas x:Name="byuckdal" Width="5" Height="4" Canvas.Left="0" Canvas.Top="0">
+					<TextBlock x:Name="b" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Text="b" Canvas.Top="-4" Canvas.Left="-167">
+						<TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform>
+					</TextBlock>
+					<TextBlock x:Name="y" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Text="y" Canvas.Left="-143" Canvas.Top="36">
+						<TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform>
+					</TextBlock>
+					<TextBlock x:Name="u" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Text="u" Canvas.Left="-111" Canvas.Top="36">
+						<TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform>
+					</TextBlock>
+					<TextBlock x:Name="c" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Text="c" Canvas.Left="-87" Canvas.Top="52">
+						<TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform>
+					</TextBlock>
+					<TextBlock x:Name="k" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Canvas.Left="-84.25" Canvas.Top="-19.25"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Run Text="k"/><LineBreak/><Run Text=""/></TextBlock>
+					<TextBlock x:Name="d" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Text="d" Canvas.Left="-71" Canvas.Top="4">
+						<TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform>
+					</TextBlock>
+					<TextBlock x:Name="a" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" Text="a" Canvas.Left="-47" Canvas.Top="20" RenderTransformOrigin="0.5,0.5">
+						<TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform>
+					</TextBlock>
+					<TextBlock x:Name="l" Width="16" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" Canvas.Left="-23" Canvas.Top="28" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Run Text="l |"/><Run Text=" "/></TextBlock>
+				</Canvas>
+				<Canvas x:Name="cellintheshell" Width="82" Height="16" Canvas.Left="7" Canvas.Top="52">
+					<TextBlock x:Name="y1" Width="82" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Span FontSize="13.3333333333333"><Run Text="cellintheshell"/></Span></TextBlock>
+					<TextBlock x:Name="y1_Copy" Width="82" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Span FontSize="13.3333333333333"><Run Text="cellintheshell"/></Span></TextBlock>
+					<TextBlock x:Name="y1_Copy1" Width="82" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Span FontSize="13.3333333333333"><Run Text="cellintheshell"/></Span></TextBlock>
+					<TextBlock x:Name="y1_Copy2" Width="82" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Span FontSize="13.3333333333333"><Run Text="cellintheshell"/></Span></TextBlock>
+					<TextBlock x:Name="y1_Copy3" Width="82" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Span FontSize="13.3333333333333"><Run Text="cellintheshell"/></Span></TextBlock>
+					<TextBlock x:Name="y1_Copy4" Width="82" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Canvas.Left="64" Canvas.Top="72"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Span FontSize="13.3333333333333"><Run Text="cellintheshell"/></Span></TextBlock>
+					<TextBlock x:Name="h" Width="10" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Canvas.Left="98" Canvas.Top="48"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Text="h"/></TextBlock>
+					<TextBlock x:Name="t1" Width="8" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Canvas.Left="90" Canvas.Top="40"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Text="t"/></TextBlock>
+					<TextBlock x:Name="n1" Width="10" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Canvas.Left="50" Canvas.Top="28"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Text="n"/></TextBlock>
+					<TextBlock x:Name="i1" Width="5.333" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Canvas.Left="42" Canvas.Top="36.333"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Text="i"/></TextBlock>
+					<TextBlock x:Name="l1" Width="5.667" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Canvas.Left="32" Canvas.Top="32"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Text="l"/></TextBlock>
+					<TextBlock x:Name="l2" Width="4.333" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Canvas.Left="18" Canvas.Top="27.333"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Text="l"/></TextBlock>
+					<TextBlock x:Name="e1" Width="7.333" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Canvas.Top="45.333"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Text="e"/></TextBlock>
+					<TextBlock x:Name="c2" Width="8" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Canvas.Left="-22" Canvas.Top="27.333"><TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Text="c"/></TextBlock>
+				</Canvas>
 				<TextBlock x:Name="n" Width="11.667" Height="16" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="13.333" Foreground="#FF353535" TextWrapping="Wrap" Canvas.Left="163.333" Canvas.Top="36" Text="n" RenderTransformOrigin="0.5,0.5">
 					<TextBlock.RenderTransform>
 						<TransformGroup>
