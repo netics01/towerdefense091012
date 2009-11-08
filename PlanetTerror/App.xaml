@@ -163,7 +163,6 @@
                                     </TransformGroup>
                                 </Path.RenderTransform>
                             </Path>
-                            <ContentPresenter HorizontalAlignment="Stretch" Margin="23.65,0,12.15,0" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Content="+30" RecognizesAccessKey="True" Width="Auto"/>
                             <Rectangle x:Name="rectangle2" Fill="#CC1A1C1B" Stroke="{x:Null}" RadiusX="2" RadiusY="2" HorizontalAlignment="Right" Margin="0,-3.166,-85,-15.501" Width="106.666" Visibility="Collapsed" Cursor="Help" Height="Auto" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
                                 <Rectangle.RenderTransform>
                                     <TransformGroup>
@@ -204,6 +203,7 @@
                                     </TransformGroup>
                                 </Path.RenderTransform>
                             </Path>
+                            <ContentPresenter HorizontalAlignment="Stretch" Margin="19,0.6,1.896,-0.38" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"  RecognizesAccessKey="True" Width="Auto" d:LayoutOverrides="Height"/>
                         </Grid>
                     </ControlTemplate>
                 </Setter.Value>
