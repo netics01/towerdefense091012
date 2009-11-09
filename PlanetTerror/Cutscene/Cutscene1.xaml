@@ -851,7 +851,7 @@
 				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
-		<Canvas x:Name="GameStart" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Visibility="Collapsed">
+		<Canvas x:Name="GameStart" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="1" Visibility="Collapsed">
 			<Rectangle x:Name="rectangle" Stroke="Black" Width="1024" Height="720" RenderTransformOrigin="0.5,0.5">
 				<Rectangle.RenderTransform>
 					<TransformGroup>
@@ -868,7 +868,7 @@
 					</LinearGradientBrush>
 				</Rectangle.Fill>
 			</Rectangle>
-			<Button x:Name="Menu_Start" Style="{DynamicResource menu_Start}" Width="152" Height="149" Content="게임 시작" FontFamily="아리따B" FontSize="21.333" FontWeight="Bold" Foreground="#FFF4C685" Canvas.Left="437" Canvas.Top="491" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Cursor="Hand">
+			<Button x:Name="Menu_Start" Style="{DynamicResource menu_Start}" Width="152" Height="149" Content="게임 시작" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="21.333" FontWeight="Bold" Foreground="#FFF4C685" Canvas.Left="437" Canvas.Top="491" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Cursor="Hand">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
 						<Setter Property="Control.Template">
@@ -1382,7 +1382,7 @@
 			</Button>
 		</Canvas>
 		<Canvas x:Name="GameOver" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="#FF0C0C0C" Visibility="Collapsed">
-			<TextBlock Width="584" Height="80" Canvas.Left="256" Canvas.Top="280" FontFamily="아리따B" FontSize="64" Foreground="#FFBB3131" TextWrapping="Wrap"><Run Text="Core"/><Run Text=" is"/><Run Text=" Dismantle"/><Run Text="..."/></TextBlock>
+			<TextBlock Width="584" Height="80" Canvas.Left="256" Canvas.Top="280" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="64" Foreground="#FFBB3131" TextWrapping="Wrap"><Run Text="Core"/><Run Text=" is"/><Run Text=" Dismantle"/><Run Text="..."/></TextBlock>
 			<Button x:Name="Menu_ReStart" Style="{DynamicResource ReStart}" Width="120" Height="24" Content="타이틀 화면으로" Canvas.Left="457" Canvas.Top="417" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" Foreground="#FF9B2727" Cursor="Hand">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
@@ -1511,7 +1511,7 @@
 						<TranslateTransform/>
 					</TransformGroup>
 				</Canvas.RenderTransform>
-				<TextBlock Width="624" Height="144" FontFamily="아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold"><Run Text="감사"/><Run Text="합니다!!"/></TextBlock>
+				<TextBlock Width="624" Height="144" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold"><Run Text="감사"/><Run Text="합니다!!"/></TextBlock>
 			</Canvas>
 			<Canvas x:Name="p2" Width="632" Height="176" RenderTransformOrigin="0.5,0.5" Canvas.Left="232" Canvas.Top="264">
 				<Canvas.RenderTransform>
@@ -1522,8 +1522,8 @@
 						<TranslateTransform/>
 					</TransformGroup>
 				</Canvas.RenderTransform>
-				<TextBlock x:Name="textBlock1" Width="0" Height="56" Canvas.Left="16" Canvas.Top="120" FontFamily="아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold"><Run Text="byuckdal"/><Run Text=" |"/><Run Text=" yx"/><Run Text=" | "/><Run Text="netics01"/></TextBlock>
-				<TextBlock Width="632" Height="121" FontFamily="아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold" Text="만든 사람 들"/>
+				<TextBlock x:Name="textBlock1" Width="0" Height="56" Canvas.Left="16" Canvas.Top="120" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold"><Run Text="byuckdal"/><Run Text=" |"/><Run Text=" yx"/><Run Text=" | "/><Run Text="netics01"/></TextBlock>
+				<TextBlock Width="632" Height="121" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold" Text="만든 사람 들"/>
 			</Canvas>
 			<Canvas x:Name="p3" Width="632" Height="176" RenderTransformOrigin="0.5,0.5" Canvas.Left="208" Canvas.Top="288">
 				<Canvas.RenderTransform>
@@ -1534,9 +1534,9 @@
 						<TranslateTransform/>
 					</TransformGroup>
 				</Canvas.RenderTransform>
-				<TextBlock x:Name="textBlock" Width="0" Height="60" Canvas.Left="400" Canvas.Top="8" FontFamily="아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold"><Run Text="2009.10.07"/><Run Text="-"/><LineBreak/><Run Text="-"/><Run Text="2009.11.12"/><LineBreak/></TextBlock>
-				<TextBlock x:Name="textBlock2" Width="424" Height="121" FontFamily="아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold" Text="개발기간"/>
-				<TextBlock x:Name="textBlock_Copy" Width="0" Height="60" Canvas.Left="400" Canvas.Top="55" FontFamily="아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold"><Run Text="-"/><Run Text="2009.11.12"/><LineBreak/></TextBlock>
+				<TextBlock x:Name="textBlock" Width="0" Height="60" Canvas.Left="400" Canvas.Top="8" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold"><Run Text="2009.10.07"/><Run Text="-"/><LineBreak/><Run Text="-"/><Run Text="2009.11.12"/><LineBreak/></TextBlock>
+				<TextBlock x:Name="textBlock2" Width="424" Height="121" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold" Text="개발기간"/>
+				<TextBlock x:Name="textBlock_Copy" Width="0" Height="60" Canvas.Left="400" Canvas.Top="55" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold"><Run Text="-"/><Run Text="2009.11.12"/><LineBreak/></TextBlock>
 			</Canvas>
 			<Canvas x:Name="p4" Width="632" Height="176" RenderTransformOrigin="0.5,0.5" Canvas.Left="232" Canvas.Top="264">
 				<Canvas.RenderTransform>
@@ -1548,7 +1548,7 @@
 					</TransformGroup>
 				</Canvas.RenderTransform>
 				<Ellipse x:Name="ellipse" Fill="White" Width="16" Height="16" Canvas.Left="296" Canvas.Top="224"/>
-				<TextBlock x:Name="textBlock4" Width="400" Height="57" FontFamily="아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold" Text="special thanks to" Canvas.Left="-104" Canvas.Top="240"/>
+				<TextBlock x:Name="textBlock4" Width="400" Height="57" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold" Text="special thanks to" Canvas.Left="-104" Canvas.Top="240"/>
 				<Ellipse x:Name="ellipse1" Fill="White" Width="32" Height="32" Canvas.Left="352" Canvas.Top="192" RenderTransformOrigin="0.5,0.5">
 					<Ellipse.RenderTransform>
 						<TransformGroup>
@@ -1561,7 +1561,7 @@
 				</Ellipse>
 				<Ellipse x:Name="ellipse2" Fill="White" Width="472" Height="312" Canvas.Left="208" Canvas.Top="-128"/>
 				<Ellipse x:Name="ellipse3" Fill="White" Width="20" Height="20" Canvas.Left="324" Canvas.Top="216"/>
-				<TextBlock x:Name="textBlock3" Width="328" Height="112" Canvas.Left="288" Canvas.Top="-24" FontFamily="아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold"><Run Text="자극을 준"/><LineBreak/><Run Text="SEI-_-MON님"/></TextBlock>
+				<TextBlock x:Name="textBlock3" Width="328" Height="112" Canvas.Left="288" Canvas.Top="-24" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold"><Run Text="자극을 준"/><LineBreak/><Run Text="SEI-_-MON님"/></TextBlock>
 			</Canvas>
 			<Canvas x:Name="p5" Width="632" Height="176" RenderTransformOrigin="0.5,0.5" Canvas.Left="336" Canvas.Top="304">
 				<Canvas.RenderTransform>
@@ -1572,8 +1572,8 @@
 						<TranslateTransform/>
 					</TransformGroup>
 				</Canvas.RenderTransform>
-				<TextBlock x:Name="textBlock5" Width="200" Height="56" Canvas.Top="40" FontFamily="아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold" Text="and"/>
-				<TextBlock x:Name="textBlock6" Width="296" Height="121" FontFamily="아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold" Text="YOU..." Canvas.Left="112"/>
+				<TextBlock x:Name="textBlock5" Width="200" Height="56" Canvas.Top="40" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="48" Foreground="Black" TextWrapping="Wrap" FontWeight="Bold" Text="and"/>
+				<TextBlock x:Name="textBlock6" Width="296" Height="121" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold" Text="YOU..." Canvas.Left="112"/>
 			</Canvas>
 			<Rectangle x:Name="_0x000000" Fill="Black" Stroke="Black" Width="1024" Height="720"/>
 			<Button x:Name="Menu_ReStart2" Style="{DynamicResource ReStart}" Width="112" Height="40" Content="타이틀 화면으로" Canvas.Left="914" Canvas.Top="8" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF75A8DA" FontFamily="/PlanetTerror;Component/Fonts/#아리따B">
