@@ -386,5 +386,6 @@ namespace PlanetTerror
 		public static UIPanelControl UI;
 		public static MainWindow MainWindow;
 		public static WaveGenerator Generator;
+		public static SoundPlayer SoundPlayer;
 	}
 }

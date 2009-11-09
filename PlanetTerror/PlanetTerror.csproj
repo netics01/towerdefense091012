@@ -197,6 +197,7 @@
     <Compile Include="Cutscene\BoomBoom.xaml.cs">
       <DependentUpon>BoomBoom.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\SoundPlayer.cs" />
     <Compile Include="Projectile0.xaml.cs">
       <DependentUpon>Projectile0.xaml</DependentUpon>
     </Compile>
@@ -371,11 +372,21 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="sound\Button_Title.wav" />
-    <Content Include="sound\Button_Tower.wav" />
-    <Content Include="sound\Music\Background.mp3" />
-    <Content Include="sound\Music\Ending.mp3" />
-    <Content Include="sound\Music\Title.mp3" />
+    <Content Include="sound\Button_Title.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sound\Button_Tower.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sound\Music\Background.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sound\Music\Ending.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sound\Music\Title.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

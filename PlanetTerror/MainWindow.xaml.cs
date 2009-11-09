@@ -24,8 +24,11 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		UpdatePump pump;
 		bool bFullscreen;
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		bool bGameStart;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -39,6 +42,7 @@ namespace PlanetTerror
 			Game.MainWindow = this;
 			Game.UI = ui_Panel;
 			Game.World = world;
+			Game.SoundPlayer = new SoundPlayer();
 
 			pump = new UpdatePump();
 			pump.Update += new UpdatePump.UpdateHandler(pump_Update);
@@ -57,6 +61,7 @@ namespace PlanetTerror
 
 			ui_Panel.Initialize();
 			world.Initialize();
+			bGameStart = false;
 
 			if( Game.Setting.title )
 			{
@@ -99,6 +104,14 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void pump_Update(float delta)
 		{
+			if( !bGameStart )
+			{
+				if( !cutscene.Active )
+				{
+					bGameStart = true;
+					Game.SoundPlayer.Music = "Sound/Music/Background.mp3";
+				}
+			}
 			if( cutscene.Active ) { return; }
 
 			world.Update(delta);
