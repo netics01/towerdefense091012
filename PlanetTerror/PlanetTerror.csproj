@@ -371,7 +371,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="sound\" />
+    <Content Include="sound\Button_Title.wav" />
+    <Content Include="sound\Button_Tower.wav" />
+    <Content Include="sound\Music\Background.mp3" />
+    <Content Include="sound\Music\Ending.mp3" />
+    <Content Include="sound\Music\Title.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
