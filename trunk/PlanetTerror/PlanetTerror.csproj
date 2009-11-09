@@ -312,18 +312,14 @@
     <Resource Include="Cutscene\CutsceneResources\GameStart_eye01.png" />
     <Resource Include="Cutscene\CutsceneResources\GameStart_eye02.png" />
     <Resource Include="Cutscene\CutsceneResources\GameStart_shadow.png" />
-    <BlendEmbeddedFont Include="Fonts\ARBLI___.TTF">
-      <IsSystemFont>True</IsSystemFont>
+    <BlendEmbeddedFont Include="Fonts\KROE0553.TTF">
       <All>True</All>
       <AutoFill>True</AutoFill>
     </BlendEmbeddedFont>
-    <BlendEmbeddedFont Include="Fonts\arial.ttf">
-      <IsSystemFont>True</IsSystemFont>
+    <BlendEmbeddedFont Include="Fonts\아리따B.ttf">
       <All>True</All>
       <AutoFill>True</AutoFill>
     </BlendEmbeddedFont>
-    <Resource Include="Fonts\KROE0553.TTF" />
-    <Resource Include="Fonts\아리따B.ttf" />
     <Resource Include="Resources\Boss\Boss_clock.png" />
     <Resource Include="Resources\Effect\Effect_blow1.png" />
     <Resource Include="Resources\Effect\Effect_blow2.png" />
