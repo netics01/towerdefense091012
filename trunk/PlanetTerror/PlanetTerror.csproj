@@ -101,6 +101,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Path\route1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Path\route1_Path.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Projectile0.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -196,6 +204,12 @@
     </Compile>
     <Compile Include="Cutscene\BoomBoom.xaml.cs">
       <DependentUpon>BoomBoom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Path\route1.xaml.cs">
+      <DependentUpon>route1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Path\route1_Path.xaml.cs">
+      <DependentUpon>route1_Path.xaml</DependentUpon>
     </Compile>
     <Compile Include="Projectile0.xaml.cs">
       <DependentUpon>Projectile0.xaml</DependentUpon>
