@@ -6,8 +6,8 @@
   <startGold>1000</startGold>
   <powerMax>100</powerMax>
   <gold>
-    <interval>30</interval>
-    <mineGold>5</mineGold>
+    <interval>5</interval>
+    <mineGold>1</mineGold>
     <labGold>-5</labGold>
   </gold>
   <tower>
@@ -24,27 +24,27 @@
         <attackRangeSqr>0</attackRangeSqr>
         <attackCooldown>1</attackCooldown>
         <attackDamage>10</attackDamage>
-        <projSpeed>100</projSpeed>
+        <projSpeed>200</projSpeed>
         <turretRotSpeed>150</turretRotSpeed>
         <upgCost>150</upgCost>
-        <dismantleCost>-50</dismantleCost>
+        <dismantleCost>-150</dismantleCost>
       </Stat>
       <Stat>
         <attackRange>130</attackRange>
         <attackRangeSqr>0</attackRangeSqr>
         <attackCooldown>0.9</attackCooldown>
         <attackDamage>15</attackDamage>
-        <projSpeed>100</projSpeed>
+        <projSpeed>200</projSpeed>
         <turretRotSpeed>170</turretRotSpeed>
         <upgCost>200</upgCost>
-        <dismantleCost>-200</dismantleCost>
+        <dismantleCost>-250</dismantleCost>
       </Stat>
       <Stat>
         <attackRange>180</attackRange>
         <attackRangeSqr>0</attackRangeSqr>
         <attackCooldown>0.8</attackCooldown>
         <attackDamage>20</attackDamage>
-        <projSpeed>110</projSpeed>
+        <projSpeed>240</projSpeed>
         <turretRotSpeed>190</turretRotSpeed>
         <upgCost>300</upgCost>
         <dismantleCost>-400</dismantleCost>
@@ -54,10 +54,10 @@
         <attackRangeSqr>0</attackRangeSqr>
         <attackCooldown>0.5</attackCooldown>
         <attackDamage>25</attackDamage>
-        <projSpeed>120</projSpeed>
+        <projSpeed>250</projSpeed>
         <turretRotSpeed>210</turretRotSpeed>
         <upgCost>1000</upgCost>
-        <dismantleCost>-500</dismantleCost>
+        <dismantleCost>-200</dismantleCost>
       </Stat>
     </stats>
   </tower>
@@ -119,7 +119,7 @@
       </bundles>
     </Wave>
     <Wave>
-      <waitTime>25</waitTime>
+      <waitTime>17</waitTime>
       <bundles>
         <Bundle>
           <waitTime>0.1</waitTime>
