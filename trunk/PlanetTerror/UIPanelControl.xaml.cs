@@ -47,14 +47,8 @@ namespace PlanetTerror
 			bossWarningStory = Resources.FindStoryboard("Warning_Boss_Storyboard");
 			goldGainStory = Resources.FindStoryboard("Gold_Gain_Storyboard");
 			goldLostStory = Resources.FindStoryboard("Gold_Lost_Storyboard");
-			goldLostStory.Completed +=new EventHandler(goldLostStory_Completed);
-			
+	
 			Loaded += new RoutedEventHandler(UIPanelControl_Loaded);
-		}
-
-		void goldLostStory_Completed(object sender, EventArgs e)
-		{
-			Debug.Print("wth");
 		}
 
 		//===============================================================================================================================================
