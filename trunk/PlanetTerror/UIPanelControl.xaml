@@ -622,132 +622,249 @@
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route1_Path_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="route1_Path" Storyboard.TargetProperty="(UIElement.Visibility)" Duration="00:00:00.0010000">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="route1_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.1000000" Duration="00:00:09.8000000" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M-16.667,8.3319732 L94.833098,-40.168029 L184.06247,-64.431479 L238.833,-72.168 L246.83299,-40.168 L262.833,15.832 L302.83299,7.8320002 L366.83334,-0.16802721 L406.83337,151.83198 L302.83328,167.83198 L206.8332,191.83198 L142.83314,223.83198 L198.83319,303.83199 L283.14225,262.8376 L386.26594,239.03985 L502.83299,247.832 L502.38699,423.09647 L349.07146,448.11955 L254.83324,503.832 L230.83322,583.832 L422.83339,591.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.2270000" Duration="00:00:09.8000000" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M-16.667,8.3319732 L94.833098,-40.168029 L184.06247,-64.431479 L238.833,-72.168 L246.83299,-40.168 L262.833,15.832 L302.83299,7.8320002 L366.83334,-0.16802721 L406.83337,151.83198 L302.83328,167.83198 L206.8332,191.83198 L142.83314,223.83198 L198.83319,303.83199 L283.14225,262.8376 L386.26594,239.03985 L502.83299,247.832 L502.38699,423.09647 L349.07146,448.11955 L254.83324,503.832 L230.83322,583.832 L422.83339,591.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.2000000" Duration="00:00:09.8000000" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M-16.667,8.3319732 L94.833098,-40.168029 L184.06247,-64.431479 L238.833,-72.168 L246.83299,-40.168 L262.833,15.832 L302.83299,7.8320002 L366.83334,-0.16802721 L406.83337,151.83198 L302.83328,167.83198 L206.8332,191.83198 L142.83314,223.83198 L198.83319,303.83199 L283.14225,262.8376 L386.26594,239.03985 L502.83299,247.832 L502.38699,423.09647 L349.07146,448.11955 L254.83324,503.832 L230.83322,583.832 L422.83339,591.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.2000000" Duration="00:00:09.8000000" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M-16.667,8.3319732 L94.833098,-40.168029 L184.06247,-64.431479 L238.833,-72.168 L246.83299,-40.168 L262.833,15.832 L302.83299,7.8320002 L366.83334,-0.16802721 L406.83337,151.83198 L302.83328,167.83198 L206.8332,191.83198 L142.83314,223.83198 L198.83319,303.83199 L283.14225,262.8376 L386.26594,239.03985 L502.83299,247.832 L502.38699,423.09647 L349.07146,448.11955 L254.83324,503.832 L230.83322,583.832 L422.83339,591.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.3000000" Duration="00:00:09.8000000" Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M-16.667,8.3319732 L94.833098,-40.168029 L184.06247,-64.431479 L238.833,-72.168 L246.83299,-40.168 L262.833,15.832 L302.83299,7.8320002 L366.83334,-0.16802721 L406.83337,151.83198 L302.83328,167.83198 L206.8332,191.83198 L142.83314,223.83198 L198.83319,303.83199 L283.14225,262.8376 L386.26594,239.03985 L502.83299,247.832 L502.38699,423.09647 L349.07146,448.11955 L254.83324,503.832 L230.83322,583.832 L422.83339,591.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.4270000" Duration="00:00:09.8000000" Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M-16.667,8.3319732 L94.833098,-40.168029 L184.06247,-64.431479 L238.833,-72.168 L246.83299,-40.168 L262.833,15.832 L302.83299,7.8320002 L366.83334,-0.16802721 L406.83337,151.83198 L302.83328,167.83198 L206.8332,191.83198 L142.83314,223.83198 L198.83319,303.83199 L283.14225,262.8376 L386.26594,239.03985 L502.83299,247.832 L502.38699,423.09647 L349.07146,448.11955 L254.83324,503.832 L230.83322,583.832 L422.83339,591.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.4000000" Duration="00:00:09.8000000" Storyboard.TargetName="ellipse4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M-16.667,8.3319732 L94.833098,-40.168029 L184.06247,-64.431479 L238.833,-72.168 L246.83299,-40.168 L262.833,15.832 L302.83299,7.8320002 L366.83334,-0.16802721 L406.83337,151.83198 L302.83328,167.83198 L206.8332,191.83198 L142.83314,223.83198 L198.83319,303.83199 L283.14225,262.8376 L386.26594,239.03985 L502.83299,247.832 L502.38699,423.09647 L349.07146,448.11955 L254.83324,503.832 L230.83322,583.832 L422.83339,591.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.5270000" Duration="00:00:09.8000000" Storyboard.TargetName="ellipse4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M-16.667,8.3319732 L94.833098,-40.168029 L184.06247,-64.431479 L238.833,-72.168 L246.83299,-40.168 L262.833,15.832 L302.83299,7.8320002 L366.83334,-0.16802721 L406.83337,151.83198 L302.83328,167.83198 L206.8332,191.83198 L142.83314,223.83198 L198.83319,303.83199 L283.14225,262.8376 L386.26594,239.03985 L502.83299,247.832 L502.38699,423.09647 L349.07146,448.11955 L254.83324,503.832 L230.83322,583.832 L422.83339,591.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.5000000" Duration="00:00:09.8000000" Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M0,0.33197318 L111.5001,-48.168029 L200.72947,-72.431479 L255.5,-80.168 L263.49999,-48.168 L279.5,7.8319995 L319.49999,-0.16799984 L383.50034,-8.1680272 L423.50037,143.83198 L319.50028,159.83198 L223.5002,183.83198 L159.50014,215.83198 L215.50019,295.83199 L299.80925,254.8376 L402.93294,231.03985 L519.49999,239.832 L519.05399,415.09647 L365.73846,440.11955 L271.50024,495.832 L247.50022,575.832 L439.50039,583.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.5000000" Duration="00:00:09.8000000" Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M0,0.33197318 L111.5001,-48.168029 L200.72947,-72.431479 L255.5,-80.168 L263.49999,-48.168 L279.5,7.8319995 L319.49999,-0.16799984 L383.50034,-8.1680272 L423.50037,143.83198 L319.50028,159.83198 L223.5002,183.83198 L159.50014,215.83198 L215.50019,295.83199 L299.80925,254.8376 L402.93294,231.03985 L519.49999,239.832 L519.05399,415.09647 L365.73846,440.11955 L271.50024,495.832 L247.50022,575.832 L439.50039,583.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.6000000" Duration="00:00:09.8000000" Storyboard.TargetName="ellipse6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M0,0.33197318 L111.5001,-48.168029 L200.72947,-72.431479 L255.5,-80.168 L263.49999,-48.168 L279.5,7.8319995 L319.49999,-0.16799984 L383.50034,-8.1680272 L423.50037,143.83198 L319.50028,159.83198 L223.5002,183.83198 L159.50014,215.83198 L215.50019,295.83199 L299.80925,254.8376 L402.93294,231.03985 L519.49999,239.832 L519.05399,415.09647 L365.73846,440.11955 L271.50024,495.832 L247.50022,575.832 L439.50039,583.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.6000000" Duration="00:00:09.8000000" Storyboard.TargetName="ellipse6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M0,0.33197318 L111.5001,-48.168029 L200.72947,-72.431479 L255.5,-80.168 L263.49999,-48.168 L279.5,7.8319995 L319.49999,-0.16799984 L383.50034,-8.1680272 L423.50037,143.83198 L319.50028,159.83198 L223.5002,183.83198 L159.50014,215.83198 L215.50019,295.83199 L299.80925,254.8376 L402.93294,231.03985 L519.49999,239.832 L519.05399,415.09647 L365.73846,440.11955 L271.50024,495.832 L247.50022,575.832 L439.50039,583.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.8000000" Duration="00:00:09.7000000" Storyboard.TargetName="ellipse7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M0,0.33197318 L111.5001,-48.168029 L200.72947,-72.431479 L255.5,-80.168 L263.49999,-48.168 L279.5,7.8319995 L319.49999,-0.16799984 L383.50034,-8.1680272 L423.50037,143.83198 L319.50028,159.83198 L223.5002,183.83198 L159.50014,215.83198 L215.50019,295.83199 L299.80925,254.8376 L402.93294,231.03985 L519.49999,239.832 L519.05399,415.09647 L365.73846,440.11955 L271.50024,495.832 L247.50022,575.832 L439.50039,583.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.8000000" Duration="00:00:09.7000000" Storyboard.TargetName="ellipse7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M0,0.33197318 L111.5001,-48.168029 L200.72947,-72.431479 L255.5,-80.168 L263.49999,-48.168 L279.5,7.8319995 L319.49999,-0.16799984 L383.50034,-8.1680272 L423.50037,143.83198 L319.50028,159.83198 L223.5002,183.83198 L159.50014,215.83198 L215.50019,295.83199 L299.80925,254.8376 L402.93294,231.03985 L519.49999,239.832 L519.05399,415.09647 L365.73846,440.11955 L271.50024,495.832 L247.50022,575.832 L439.50039,583.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.9000000" Duration="00:00:09.7000000" Storyboard.TargetName="ellipse8" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M0,0.33197318 L111.5001,-48.168029 L200.72947,-72.431479 L255.5,-80.168 L263.49999,-48.168 L279.5,7.8319995 L319.49999,-0.16799984 L383.50034,-8.1680272 L423.50037,143.83198 L319.50028,159.83198 L223.5002,183.83198 L159.50014,215.83198 L215.50019,295.83199 L299.80925,254.8376 L402.93294,231.03985 L519.49999,239.832 L519.05399,415.09647 L365.73846,440.11955 L271.50024,495.832 L247.50022,575.832 L439.50039,583.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:00.9000000" Duration="00:00:09.7000000" Storyboard.TargetName="ellipse8" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M0,0.33197318 L111.5001,-48.168029 L200.72947,-72.431479 L255.5,-80.168 L263.49999,-48.168 L279.5,7.8319995 L319.49999,-0.16799984 L383.50034,-8.1680272 L423.50037,143.83198 L319.50028,159.83198 L223.5002,183.83198 L159.50014,215.83198 L215.50019,295.83199 L299.80925,254.8376 L402.93294,231.03985 L519.49999,239.832 L519.05399,415.09647 L365.73846,440.11955 L271.50024,495.832 L247.50022,575.832 L439.50039,583.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:01" Duration="00:00:09.7000000" Storyboard.TargetName="ellipse9" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M0,0.33197318 L111.5001,-48.168029 L200.72947,-72.431479 L255.5,-80.168 L263.49999,-48.168 L279.5,7.8319995 L319.49999,-0.16799984 L383.50034,-8.1680272 L423.50037,143.83198 L319.50028,159.83198 L223.5002,183.83198 L159.50014,215.83198 L215.50019,295.83199 L299.80925,254.8376 L402.93294,231.03985 L519.49999,239.832 L519.05399,415.09647 L365.73846,440.11955 L271.50024,495.832 L247.50022,575.832 L439.50039,583.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<DoubleAnimationUsingPath BeginTime="00:00:01" Duration="00:00:09.7000000" Storyboard.TargetName="ellipse9" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
-				<DoubleAnimationUsingPath.PathGeometry>
-					<PathGeometry Figures="M0,0.33197318 L111.5001,-48.168029 L200.72947,-72.431479 L255.5,-80.168 L263.49999,-48.168 L279.5,7.8319995 L319.49999,-0.16799984 L383.50034,-8.1680272 L423.50037,143.83198 L319.50028,159.83198 L223.5002,183.83198 L159.50014,215.83198 L215.50019,295.83199 L299.80925,254.8376 L402.93294,231.03985 L519.49999,239.832 L519.05399,415.09647 L365.73846,440.11955 L271.50024,495.832 L247.50022,575.832 L439.50039,583.832"/>
-				</DoubleAnimationUsingPath.PathGeometry>
-			</DoubleAnimationUsingPath>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:10.7000000" Value="{x:Static Visibility.Collapsed}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:10.7000000" Value="{x:Static Visibility.Collapsed}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:10.7000000" Value="{x:Static Visibility.Collapsed}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse4" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:10.7000000" Value="{x:Static Visibility.Collapsed}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:10.7000000" Value="{x:Static Visibility.Collapsed}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse6" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:10.7000000" Value="{x:Static Visibility.Collapsed}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse7" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:10.7000000" Value="{x:Static Visibility.Collapsed}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse8" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:10.7000000" Value="{x:Static Visibility.Collapsed}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse9" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:10.7000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:02.9000000" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="route1_Path" Storyboard.TargetProperty="(UIElement.Opacity)" Duration="00:00:00.0010000">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 			</DoubleAnimationUsingKeyFrames>
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="OOOOO" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:07.4000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:02.9000000" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingPath BeginTime="00:00:00" Duration="00:00:02" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00" Duration="00:00:02" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.1000000" Duration="00:00:02" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.1000000" Duration="00:00:02" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.2000000" Duration="00:00:02" Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.2000000" Duration="00:00:02" Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.3000000" Duration="00:00:02" Storyboard.TargetName="ellipse4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.3000000" Duration="00:00:02" Storyboard.TargetName="ellipse4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.4000000" Duration="00:00:02" Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.4000000" Duration="00:00:02" Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.5000000" Duration="00:00:02" Storyboard.TargetName="ellipse6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.5000000" Duration="00:00:02" Storyboard.TargetName="ellipse6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.6000000" Duration="00:00:02" Storyboard.TargetName="ellipse7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.6000000" Duration="00:00:02" Storyboard.TargetName="ellipse7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.7000000" Duration="00:00:02" Storyboard.TargetName="ellipse8" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.7000000" Duration="00:00:02" Storyboard.TargetName="ellipse8" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.8000000" Duration="00:00:02" Storyboard.TargetName="ellipse9" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Source="X">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingPath BeginTime="00:00:00.8000000" Duration="00:00:02" Storyboard.TargetName="ellipse9" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Source="Y">
+				<DoubleAnimationUsingPath.PathGeometry>
+					<PathGeometry Figures="M-4.5,75.999973 L107.0001,27.499971 L196.22947,3.2365214 L251,-4.4999995 L258.99999,27.5 L275,83.5 L314.99999,75.5 L379.00034,67.499973 L419.00037,219.49998 L315.00028,235.49998 L219.0002,259.49998 L155.00014,291.49998 L211.00019,371.49999 L295.30925,330.5056 L398.43294,306.70785 L514.99999,315.5 L514.55399,490.76447 L361.23846,515.78755 L267.00024,571.5 L243.00022,651.5 L435.00039,659.5"/>
+				</DoubleAnimationUsingPath.PathGeometry>
+			</DoubleAnimationUsingPath>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse4" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse6" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.6000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse7" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.6000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse8" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse9" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse9" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.8000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse8" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.7000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse7" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.6000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse5" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.4000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse4" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse6" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse3" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas3" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.4000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.4000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:02" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:02.4000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:03.1000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas4" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.4000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.4000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:02" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:02.4000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:03.1000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas3" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0.3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0.3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0.3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0.3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas4" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0.3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0.3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0.3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0.3"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route2_Path_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="route2_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -1079,7 +1196,7 @@
 			</LinearGradientBrush>
 		</Canvas.Background>
 		<Canvas x:Name="gold_ani" Width="42" Height="42" Canvas.Left="720">
-			<Image x:Name="image3" Width="44" Height="44" Canvas.Left="-14" Canvas.Top="15" Source="Resources/UI/Gold.png" Stretch="Fill"/>
+			<Image x:Name="image3" Width="44" Height="44" Canvas.Left="-14" Canvas.Top="15" Source="Resources/UI/Gold.png" Stretch="Fill" Cursor="Hand"/>
 			<Image x:Name="image1" Width="16" Height="16" Source="Resources/UI/Gold_ani001.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" Canvas.Left="10.75" Canvas.Top="-3.5" IsEnabled="False" IsHitTestVisible="False">
 				<Image.RenderTransform>
 					<TransformGroup>
@@ -1140,12 +1257,12 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Image x:Name="Image_Gold_Time" Width="34" Height="34" Canvas.Left="107.167" Canvas.Top="22" Source="Resources/UI/Gold_Time.png" Stretch="Fill"/>
+			<Image x:Name="Image_Gold_Time" Width="34" Height="34" Canvas.Left="107.167" Canvas.Top="22" Source="Resources/UI/Gold_Time.png" Stretch="Fill" Cursor="Hand"/>
 		</Canvas>
 		<TextBlock x:Name="gold_Text" Width="56" Height="24" Text="1200" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="Fonts/#kroeger 05_53" FontSize="14.667" Canvas.Left="752" Canvas.Top="32"/>
 		<TextBlock x:Name="gold_NextTime_Text" Width="56" Height="24" Text="00:15" TextWrapping="Wrap" Foreground="#FF747474" FontFamily="Fonts/#kroeger 05_53" FontSize="14.667" Canvas.Left="863.357" Canvas.Top="32"/>
 		<TextBlock x:Name="gold_Next_Text" Width="56" Height="24" TextWrapping="Wrap" Foreground="#FF946D40" FontFamily="Fonts/#kroeger 05_53" FontSize="14.667" Canvas.Left="912.857" Canvas.Top="32"><Run Text="185"/><LineBreak/><Run Text=""/></TextBlock>
-		<Image x:Name="image" Width="64" Height="64" Canvas.Left="301" Canvas.Top="8" Source="Resources/UI/Icon_Core.png" Stretch="Fill"/>
+		<Image x:Name="image" Width="64" Height="64" Canvas.Left="301" Canvas.Top="8" Source="Resources/UI/Icon_Core.png" Stretch="Fill" Cursor="Hand"/>
 		<Grid x:Name="talk_Core" Width="184" Height="56" Canvas.Left="139.333" Canvas.Top="-8" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed">
 			<Path x:Name="path1" Fill="#CCD8D09A" Stretch="Fill" Margin="-12.554,0,7.223,3.333" Data="M24.277009,0 L200.27701,0 C202.48615,1.5185146E-06 204.33322,5.3172003 204.33322,7.5263386 L204.27701,96.473977 C204.27701,98.683117 202.48615,104 200.27701,104 L30.666609,104 30.666571,104.001 8.6462092,104.00032 C8.6462092,104.00032 11.0285,100.42351 19.329416,93.851045 L20.136882,91.000276 20.277008,3.6582089 C20.277008,1.4490706 22.067869,1.5185146E-06 24.277009,0 z" Stroke="#EB1A1717" RenderTransformOrigin="0.5,0.5" StrokeThickness="2">
 				<Path.RenderTransform>
@@ -1228,7 +1345,7 @@
 				<TextBlock Width="193.882" Height="28" FontFamily="Fonts/#kroeger 05_53" Foreground="#FFFFAE02" TextWrapping="Wrap" Canvas.Left="14.118" Canvas.Top="14" FontSize="18.667"><Run Text="!!"/><Run Text="강한 "/><Run Text="적이 옵니다"/><Run Text="!!"/></TextBlock>
 			</Canvas>
 		</Canvas>
-		<Canvas x:Name="NoMoney" Width="152" Height="104" Canvas.Top="-32" Canvas.Left="723.5" IsHitTestVisible="False">
+		<Canvas x:Name="NoMoney" Width="152" Height="104" Canvas.Top="-32" Canvas.Left="723.5" IsHitTestVisible="False" IsEnabled="False">
 			<Canvas x:Name="canvas2" Width="64" Height="32" Visibility="Collapsed">
 				<Path x:Name="path4" Fill="#CC202020" Stretch="Fill" Stroke="#CC000000" Width="143.167" Height="59" Data="M0.5,0.5 L63.5,0.5 63.5,31.5 55.4375,31.4375 54.916669,39.751001 59.416668,38.750999 62.000003,56.582003 57.333002,43.248843 53.999795,46.415803 48.530801,31.5 0.5,31.5 z" RenderTransformOrigin="0.5,0.5">
 					<Path.RenderTransform>
@@ -1266,7 +1383,7 @@
 					</TextBlock.RenderTransform><Run Text="!!"/><Run Text="골드가 부족합니다!!"/></TextBlock>
 			</Canvas>
 		</Canvas>
-		<Canvas x:Name="path" Width="1072.5" Height="673" Canvas.Left="-24.5" Canvas.Top="-662" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed">
+		<Canvas x:Name="path" Width="1072.5" Height="673" Canvas.Left="-24.5" Canvas.Top="-662" IsEnabled="False" IsHitTestVisible="False">
 			<Path x:Name="route1_Path" Stretch="Fill" Width="520.5" Height="665" Data="M-16,64 L95.5,15.5 184.72929,-8.7634484 239.49977,-16.499969 247.49976,15.500029 263.49975,71.500026 303.49971,63.500027 367.5,55.5 367.5,55.5 407.5,207.5 303.5,223.5 207.5,247.5 143.5,279.5 199.5,359.5 283.80899,318.50562 386.93258,294.70787 503.49953,303.50002 503.05353,478.76448 349.73814,503.78756 255.5,559.5 231.5,639.5 423.5,647.5" Visibility="Collapsed">
 				<Path.Stroke>
 					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -1282,8 +1399,8 @@
 			<Path x:Name="route6_Path" Stretch="Fill" Stroke="#FFFF8A00" Width="961.5" Height="432.5" Data="M1040,216 L959.5,271.5 935.5,271.5 831.5,359.5 711.5,319.5 615.5,295.5 503.5,311.5 335.5,319.5 207.5,383.5 239.5,431.5 159.5,479.5 103.5,527.5 79.5,583.5 191.5,615.5 239.5,623.5 239.5,639.5 471.5,647.5" Canvas.Left="95.5" Canvas.Top="232.5" Visibility="Collapsed"/>
 			<Path x:Name="route7_Path" Stretch="Fill" Stroke="#FFFF8A00" Width="808.5" Height="657" Data="M-16,56 L95.5,15.5 247.5,-8.5 271.5,63.5 487.5,31.5 607.5,31.5 735.5,55.5 735.5,79.5 791.5,95.5 759.5,175.5 663.5,151.5 615.5,295.5 511.5,303.5 503.5,471.5 351.5,495.5 255.5,559.5 231.5,647.5 495.5,647.5" Canvas.Top="8" Visibility="Collapsed"/>
 			<Path x:Name="route8_Path" Stretch="Fill" Stroke="#FFFF8A00" Width="553" Height="657" Data="M1040,72 L911.5,23.5 751.5,-0.5 735.5,79.5 791.5,111.5 879.5,119.5 991.5,143.5 1055.5,207.5 983.5,255.5 911.5,223.5 799.5,183.5 663.5,159.5 615.5,295.5 511.5,303.5 503.5,479.5 623.5,495.5 727.5,535.5 775.5,599.5 791.5,655.5 527.5,655.5" Canvas.Left="519.5" Canvas.Top="16" Visibility="Collapsed"/>
-			<Canvas x:Name="OOOOO" Width="10" Height="10" Canvas.Left="0" Canvas.Top="72.668" Visibility="Collapsed">
-				<Ellipse x:Name="ellipse1" Fill="#FF3B0909" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
+			<Canvas x:Name="OOOOO" Width="10" Height="10" Canvas.Left="0" Canvas.Top="0" Visibility="Collapsed">
+				<Ellipse x:Name="ellipse1" Fill="#FFE80B0B" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
 					<Ellipse.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -1293,7 +1410,7 @@
 						</TransformGroup>
 					</Ellipse.RenderTransform>
 				</Ellipse>
-				<Ellipse x:Name="ellipse2" Fill="#E53B0909" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
+				<Ellipse x:Name="ellipse2" Fill="#E5E80B0B" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
 					<Ellipse.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -1303,7 +1420,7 @@
 						</TransformGroup>
 					</Ellipse.RenderTransform>
 				</Ellipse>
-				<Ellipse x:Name="ellipse3" Fill="#CC3B0909" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
+				<Ellipse x:Name="ellipse3" Fill="#CCE80B0B" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
 					<Ellipse.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -1313,7 +1430,7 @@
 						</TransformGroup>
 					</Ellipse.RenderTransform>
 				</Ellipse>
-				<Ellipse x:Name="ellipse4" Fill="#B23B0909" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
+				<Ellipse x:Name="ellipse4" Fill="#B2E80B0B" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
 					<Ellipse.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -1323,7 +1440,7 @@
 						</TransformGroup>
 					</Ellipse.RenderTransform>
 				</Ellipse>
-				<Ellipse x:Name="ellipse5" Fill="#993B0909" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
+				<Ellipse x:Name="ellipse5" Fill="#99E80B0B" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
 					<Ellipse.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -1333,7 +1450,7 @@
 						</TransformGroup>
 					</Ellipse.RenderTransform>
 				</Ellipse>
-				<Ellipse x:Name="ellipse6" Fill="#7F3B0909" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
+				<Ellipse x:Name="ellipse6" Fill="#7FE80B0B" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
 					<Ellipse.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -1343,7 +1460,7 @@
 						</TransformGroup>
 					</Ellipse.RenderTransform>
 				</Ellipse>
-				<Ellipse x:Name="ellipse7" Fill="#663B0909" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
+				<Ellipse x:Name="ellipse7" Fill="#66E80B0B" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
 					<Ellipse.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -1353,7 +1470,7 @@
 						</TransformGroup>
 					</Ellipse.RenderTransform>
 				</Ellipse>
-				<Ellipse x:Name="ellipse8" Fill="#4C3B0909" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
+				<Ellipse x:Name="ellipse8" Fill="#4CE80B0B" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
 					<Ellipse.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -1363,7 +1480,7 @@
 						</TransformGroup>
 					</Ellipse.RenderTransform>
 				</Ellipse>
-				<Ellipse x:Name="ellipse9" Fill="#333B0909" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
+				<Ellipse x:Name="ellipse9" Fill="#33E80B0B" Width="10" Height="10" RenderTransformOrigin="0.5,0.5">
 					<Ellipse.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -1373,6 +1490,18 @@
 						</TransformGroup>
 					</Ellipse.RenderTransform>
 				</Ellipse>
+			</Canvas>
+			<Canvas x:Name="Warning_Enemy_Copy" Width="152" Height="104" Canvas.Top="454" Canvas.Left="352.5" IsHitTestVisible="False">
+				<Canvas x:Name="canvas3" Width="64" Height="32" Visibility="Collapsed">
+					<Path Fill="#4C000000" Stretch="Fill" Stroke="#CC000000" Width="142" Height="88.5" Data="M3.5,0.5 L138.5,0.5 C140.15685,0.5 141.5,1.8431473 141.5,3.5 L141.5,60.500001 C141.5,62.156854 140.15685,63.5 138.5,63.5 L112,63.5 112,69.250001 120,72.000001 122.5,88 112,76.249999 104,80 92.770833,63.5 3.5,63.5 C1.8431473,63.5 0.5,62.156854 0.5,60.500001 L0.5,3.5 C0.5,1.8431473 1.8431473,0.5 3.5,0.5 z"/>
+					<Rectangle Fill="#CC091116" Stroke="#FF2686C7" Width="136" Height="58" Canvas.Left="3" Canvas.Top="3" RadiusX="2" RadiusY="2"/>
+					<TextBlock Width="99.749" Height="32.681" FontFamily="Fonts/#kroeger 05_53" Foreground="#FF26C7B6" TextWrapping="Wrap" Canvas.Left="24" Canvas.Top="16" FontSize="24"><Run Text="!!"/><Run Text="경고"/><Run Text="!!"/></TextBlock>
+				</Canvas>
+				<Canvas x:Name="canvas4" Width="152" Height="72" Canvas.Left="224" Canvas.Top="8" Visibility="Collapsed">
+					<Rectangle Fill="#4C000000" Stroke="#CC000000" Width="104" Height="32" Canvas.Left="0" Canvas.Top="0" RadiusX="3" RadiusY="3"/>
+					<Rectangle Fill="#CC091116" Stroke="#FF2686C7" Width="100" Height="28" Canvas.Left="2" Canvas.Top="2" RadiusX="2" RadiusY="2"/>
+					<TextBlock Width="87.001" Height="16" FontFamily="Fonts/#kroeger 05_53" Foreground="#FF26C7B6" TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="8"><Run Text="!!"/><Run Text="적이 옵니다"/><Run Text="!!"/></TextBlock>
+				</Canvas>
 			</Canvas>
 		</Canvas>
 		<ProgressBar x:Name="power_Progress" Width="256" Height="16" Canvas.Left="376" Canvas.Top="32" Style="{DynamicResource ProgressBarStyle1}"/>
