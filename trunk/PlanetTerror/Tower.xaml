@@ -4023,8 +4023,8 @@
 			    </TransformGroup>
 		    </TextBlock.RenderTransform><Run Text="-"/><Run Text=" 5"/></TextBlock>
 		</Canvas>
-		<Canvas x:Name="menu_Canvas" Width="2.334" Height="5.333" Background="#00000000" Canvas.Left="12.916" Canvas.Top="26.167">
-			<Canvas x:Name="rangeview" Width="301" Height="301" Canvas.Left="-125.666" Canvas.Top="-136.167" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
+		<Canvas x:Name="menu_Canvas" Width="2.334" Height="5.333" Background="#00000000" Canvas.Left="12.916" Canvas.Top="16.167">
+			<Canvas x:Name="rangeview" Width="301" Height="301" Canvas.Left="-125.666" Canvas.Top="-133.167" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
 				<Canvas.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
