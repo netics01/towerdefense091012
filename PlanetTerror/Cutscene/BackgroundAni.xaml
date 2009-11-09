@@ -10,9 +10,9 @@
 	<UserControl.Resources>
 		<Storyboard x:Key="BackgroundAni_Storyboard">
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Opacity)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.8"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.6"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3500000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.8"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 	</UserControl.Resources>
