@@ -141,6 +141,10 @@ namespace PlanetTerror
 		//	사운드 재생
 		public bool Play(string soundPath)
 		{
+			PlaySound(soundPath, new System.IntPtr(), PlaySoundFlags.SND_ASYNC|PlaySoundFlags.SND_FILENAME);
+			return true;
+  
+
 			//재생중이 아닌 플레이어가 없으면 재생 안한다.
 			for( int i = 0; i < sounds.Count; ++i )
 			{
@@ -167,5 +171,23 @@ namespace PlanetTerror
 			musicPlayer.Open(new Uri(music, UriKind.Relative));
 			musicPlayer.Play();			
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	NativeMethod
+        [System.Runtime.InteropServices.DllImport("winmm.DLL", EntryPoint = "PlaySound", SetLastError = true)]
+        private static extern bool PlaySound(string szSound, System.IntPtr hMod, PlaySoundFlags flags);
+
+        [System.Flags] 
+        public enum PlaySoundFlags : int
+        {
+            SND_SYNC = 0x0000,
+            SND_ASYNC = 0x0001, 
+            SND_NODEFAULT = 0x0002, 
+            SND_LOOP = 0x0008, 
+            SND_NOSTOP = 0x0010,
+            SND_NOWAIT = 0x00002000, 
+            SND_FILENAME = 0x00020000, 
+            SND_RESOURCE = 0x00040004 
+        }
+
 	}
 }
