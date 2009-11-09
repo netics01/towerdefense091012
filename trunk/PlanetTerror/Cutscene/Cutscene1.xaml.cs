@@ -66,6 +66,7 @@ namespace PlanetTerror
 		{
 			Activate(true);
 			vsm.SetState("GameStart_State");
+			Game.SoundPlayer.Music = "Sound/Music/Title.mp3";
 		}
 
 		//===============================================================================================================================================
