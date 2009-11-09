@@ -784,10 +784,102 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
-		<Storyboard x:Key="Talk_UPG1_Storyboard"/>
-		<Storyboard x:Key="Talk_UPG2_Storyboard"/>
-		<Storyboard x:Key="Talk_UPG3_Storyboard"/>
-		<Storyboard x:Key="Talk_CoreAttack_Storyboard"/>
+		<Storyboard x:Key="Talk_UPG1_Storyboard">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_UPG1" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="talk_Text7" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_UPG1" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="Talk_UPG2_Storyboard">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_UPG1" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="talk_Text9" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_UPG1" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="Talk_UPG3_Storyboard">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_UPG1" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="talk_Text10" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path8" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.769"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path8" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-12"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_UPG1" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-11"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-2"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="Talk_CoreAttack_Storyboard">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_CoreAttack" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05.2000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_CoreAttack" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path9" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="5.876"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-6.481"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="5.876"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-6.481"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="5.876"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="-6.481"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="-0.002"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.4000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="5.876"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="-6.481"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="5.876"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="-6.481"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.1000000" Value="5.876"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="-6.481"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.3000000" Value="-0.002"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
 		<Storyboard x:Key="Talk_NoMoneyTower_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_NoMoneyTower" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
@@ -944,9 +1036,18 @@
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Talk_UPGNotYet_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Talk_UPGNotYet" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_UPGNotYet" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.2000000" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_UPGNotYet" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 	</UserControl.Resources>
 	<UserControl.Triggers>
@@ -1566,7 +1667,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
-			<Path x:Name="path7" Fill="#CCECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 33.329439,74.547049 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5">
+			<Path x:Name="path7" Fill="#CCECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 33.329439,74.547049 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Margin="0,0,-8,0">
 				<Path.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform ScaleX="-1" ScaleY="1"/>
@@ -1576,15 +1677,15 @@
 					</TransformGroup>
 				</Path.RenderTransform>
 			</Path>
-			<Image HorizontalAlignment="Left" Margin="14,24,0,30" Width="42" Source="Resources/UI/Gold_ani001.png" Stretch="Fill"/>
-			<TextBlock x:Name="talk_Text6" Margin="64,8.667,8,16" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False"><TextBlock.RenderTransform>
+			<TextBlock x:Name="talk_Text6" Margin="72,8,0,16.667" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
 						<RotateTransform/>
 						<TranslateTransform/>
 					</TransformGroup>
-				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="아직 연구가 충분하지 않아 업그레이드를 할  수 없다네."/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="적을 충분히 연구 할 수만 있다면...으음... "/></TextBlock>
+				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="연구가 충분하지 않아 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="타워 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="업그레이드를 할 수 없다네."/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="적을 충분히 연구 할 수만 있다면...으음... "/></TextBlock>
+			<Image HorizontalAlignment="Left" Margin="0,8,0,14" Width="74" Source="Resources/UI/KimHoRim_00.png" Stretch="Fill"/>
 		</Grid>
 		<Grid x:Name="Talk_UPG1" Width="240" Height="96" Canvas.Left="208" Canvas.Top="-304" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
 			<Grid.RenderTransform>
@@ -1595,7 +1696,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
-			<Path x:Name="path8" Fill="#CCECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 33.329439,74.547049 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,-8">
+			<Path x:Name="path8" Fill="#CCECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 33.329439,74.547049 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Margin="0,0,-8,-8">
 				<Path.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform ScaleX="-1" ScaleY="1"/>
@@ -1605,8 +1706,7 @@
 					</TransformGroup>
 				</Path.RenderTransform>
 			</Path>
-			<Image HorizontalAlignment="Left" Margin="14,24,0,30" Width="42" Source="Resources\UI\Gold_ani001.png" Stretch="Fill"/>
-			<TextBlock x:Name="talk_Text7" Margin="64,8.667,8,8" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False"><TextBlock.RenderTransform>
+			<TextBlock x:Name="talk_Text7" Margin="72,10,0,6.667" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" Visibility="Collapsed"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
@@ -1614,6 +1714,32 @@
 						<TranslateTransform/>
 					</TransformGroup>
 				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="이제 1단계 업그레이드가 "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="가능하네. "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="더 많은 연구가 이루어지면 다음 단계로 업그레이드 할 수 있겠지."/></TextBlock>
+			<TextBlock x:Name="talk_Text9" Margin="72,10,0,6.667" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" Visibility="Collapsed"><TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="이제 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="2"/><Run FontSize="13.3333333333333" Foreground="Black" Text="단계 업그레이드가 "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="가능하네. "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="더 많은 연구가 이루어지면 다음 단계로 업그레이드 할 수 있겠지."/></TextBlock>
+			<TextBlock x:Name="talk_Text10" Margin="72,10,0,6.667" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" Visibility="Collapsed"><TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="이제 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="3"/><Run FontSize="13.3333333333333" Foreground="Black" Text="단계 업그레이드가 "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="가능하네. "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="더 많은 연구가 이루어지면"/><Run FontSize="13.3333333333333" Foreground="Black" Text="."/><Run FontSize="13.3333333333333" Foreground="Black" Text=".."/></TextBlock>
+			<Image x:Name="image4" Margin="0,10,0,12" Source="Resources/UI/KimHoRim_01.png" Stretch="Fill" HorizontalAlignment="Left" Width="74" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
 		</Grid>
 		<Grid x:Name="Talk_CoreAttack" Width="240" Height="96" Canvas.Left="208" Canvas.Top="-304" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
 			<Grid.RenderTransform>
@@ -1624,25 +1750,33 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
-			<Path x:Name="path9" Fill="#CCECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 33.329439,74.547049 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Margin="0,0,-16,0">
+			<Path x:Name="path9" Fill="#CCECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="-48,-32,-60,-34" Data="M287,-342 C271,-321.33327 228.69207,-318.30793 216,-331 223.19353,-295.03234 183,-274.33313 152,-273 187.33333,-269.99979 225.00488,-211.97513 231,-181.99952 247,-202.33292 335,-224.66632 407,-197.99957 407.33333,-198.33291 432.13475,-246 498,-246 483.51665,-254.69001 443.15666,-302.31326 455,-325.99995 423,-317.99992 404,-310.83324 380,-341.99999 337.33333,-315.49992 287,-341.66667&#xd;&#xa;287,-342 z" RenderTransformOrigin="0.5,0.5">
 				<Path.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform ScaleX="-1" ScaleY="1"/>
-						<SkewTransform AngleX="0" AngleY="0"/>
-						<RotateTransform Angle="0"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Path.RenderTransform>
-			</Path>
-			<Image HorizontalAlignment="Left" Margin="14,24,0,30" Width="42" Source="Resources\UI\Gold_ani001.png" Stretch="Fill"/>
-			<TextBlock x:Name="talk_Text8" Margin="64,8.667,-16,16" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontSize="13.333" FontWeight="Bold"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
 						<RotateTransform/>
 						<TranslateTransform/>
 					</TransformGroup>
-				</TextBlock.RenderTransform><Run Foreground="Black" Text="업그레이드는 "/><Run Foreground="Black" Text="여기까지"/><Run Foreground="Black" Text="!!!"/><LineBreak/><Run Foreground="Black" Text="이제 나 김호림 박사의 주말을 바친 필살기를 쓸수"/><Run Foreground="Black" Text=" "/><Run Foreground="Black" Text="있"/><Run Foreground="Black" Text="다네"/><Run Foreground="Black" Text="!!!"/><LineBreak/><Run Foreground="Black" Text="으하하하하!!!"/></TextBlock>
+				</Path.RenderTransform>
+			</Path>
+			<TextBlock x:Name="talk_Text8" Margin="57,8.667,-16,16" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontSize="14.667" FontWeight="Bold"><TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform><Run Foreground="Black" Text="업그레이드는 "/><Run Foreground="Black" Text="여기까지"/><Run Foreground="Black" Text="!!!"/><LineBreak/><Run Foreground="Black" Text="이제 나 김호림 박사의 "/><LineBreak/><Run Foreground="Black" Text="주말을 바친 "/><Run Foreground="Black" Text="                  을"/><LineBreak/><Run Foreground="Black" Text="쓸수"/><Run Foreground="Black" Text=" "/><Run Foreground="Black" Text="있"/><Run Foreground="Black" Text="다네"/><Run Foreground="Black" Text="!!!"/><LineBreak/><Run Foreground="Black" Text="으하하하하!!!"/></TextBlock>
+			<Image HorizontalAlignment="Left" Margin="-18,8,0,14" Width="74" Source="Resources/UI/KimHoRim_02.png" Stretch="Fill"/>
+			<TextBlock x:Name="talk_Text8_Copy" Margin="143,43,-6,21.667" Foreground="#FFB30B0B" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontSize="16" FontWeight="Bold" Text="코어 어택"><TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform></TextBlock>
 		</Grid>
 	</Canvas>
 </UserControl>
