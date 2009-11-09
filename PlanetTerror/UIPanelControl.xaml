@@ -1060,7 +1060,51 @@
 			</Canvas>
 		</Canvas>
 		<Canvas x:Name="path" Width="1072.5" Height="673" Canvas.Left="-24.5" Canvas.Top="-662" IsEnabled="False" IsHitTestVisible="False">
-			<Path x:Name="route1_Path" Stretch="Fill" Stroke="#FF59FF00" Width="520.5" Height="665" Data="M-16,64 L95.5,15.5 184.72929,-8.7634484 239.49977,-16.499969 247.49976,15.500029 263.49975,71.500026 303.49971,63.500027 367.5,55.5 367.5,55.5 407.5,207.5 303.5,223.5 207.5,247.5 143.5,279.5 199.5,359.5 283.80899,318.50562 386.93258,294.70787 503.49953,303.50002 503.05353,478.76448 349.73814,503.78756 255.5,559.5 231.5,639.5 423.5,647.5" Visibility="Collapsed"/>
+			<Canvas x:Name="route1" Width="520.5" Height="665">
+				<Path x:Name="route1_Path" Stretch="Fill" Width="520.5" Height="665" Data="M-16,64 L95.5,15.5 184.72929,-8.7634484 239.49977,-16.499969 247.49976,15.500029 263.49975,71.500026 303.49971,63.500027 367.5,55.5 367.5,55.5 407.5,207.5 303.5,223.5 207.5,247.5 143.5,279.5 199.5,359.5 283.80899,318.50562 386.93258,294.70787 503.49953,303.50002 503.05353,478.76448 349.73814,503.78756 255.5,559.5 231.5,639.5 423.5,647.5">
+					<Path.Stroke>
+						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+							<GradientStop Color="Black" Offset="0"/>
+							<GradientStop Color="White" Offset="1"/>
+						</LinearGradientBrush>
+					</Path.Stroke>
+				</Path>
+				<Ellipse Width="10" Height="10" Canvas.Left="9" Canvas.Top="68.5">
+					<Ellipse.Fill>
+						<DrawingBrush Viewbox="0,0,20,20" ViewboxUnits="Absolute">
+							<DrawingBrush.Drawing>
+								<DrawingGroup>
+									<GeometryDrawing Brush="LightGray">
+										<GeometryDrawing.Geometry>
+											<RectangleGeometry Rect="0,0,20,20"/>
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+									<GeometryDrawing Brush="Black">
+										<GeometryDrawing.Geometry>
+											<EllipseGeometry Center="0,0" RadiusX="10" RadiusY="10"/>
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+									<GeometryDrawing Brush="Black">
+										<GeometryDrawing.Geometry>
+											<EllipseGeometry Center="20,20" RadiusX="10" RadiusY="10"/>
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+									<GeometryDrawing Brush="White">
+										<GeometryDrawing.Geometry>
+											<EllipseGeometry Center="20,0" RadiusX="10" RadiusY="10"/>
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+									<GeometryDrawing Brush="White">
+										<GeometryDrawing.Geometry>
+											<EllipseGeometry Center="0,20" RadiusX="10" RadiusY="10"/>
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+								</DrawingGroup>
+							</DrawingBrush.Drawing>
+						</DrawingBrush>
+					</Ellipse.Fill>
+				</Ellipse>
+			</Canvas>
 			<Path x:Name="route2_Path" Stretch="Fill" Stroke="Red" Width="545.5" Height="649" Canvas.Left="511.5" Canvas.Top="24" Data="M1040,56 L887.5,7.5 751.5,7.5 735.5,79.5 791.5,95.5 759.5,167.5 847.5,183.5 919.5,207.5 983.5,239.5 895.5,287.5 815.5,351.5 743.5,327.5 647.5,303.5 559.5,287.5 511.5,303.5 495.5,471.5 631.5,495.5 724.67647,538.79412 791.5,615.5 791.5,655.5 551.5,647.5" Visibility="Collapsed"/>
 			<Path x:Name="route3_Path" Stretch="Fill" Stroke="#FF0D00FF" Width="657.5" Height="657" Canvas.Left="391.5" Canvas.Top="16" Data="M1032,64 L855.5,7.5 751.5002,-0.5 C751.5002,-0.5 735.50021,55.5 735.50021,55.5 L543.50034,31.5 375.50045,39.5 399.5,135.5 455.5,135.5 511.5,135.5 575.5,135.5 623.5,135.5 663.5,143.5 615.5,295.5 559.5,287.5 503.5,287.5 503.5,471.5 575.5,479.5 663.5,503.5 727.5,543.5 799.5,607.5 791.5,655.5 543.5,647.5" Visibility="Collapsed"/>
 			<Path x:Name="route4_Path" Stretch="Fill" Stroke="#FFFFE800" Width="432.5" Height="660.742" Data="M-8,56 L95.5,7.5 235.95742,-12.242092 267.95742,75.757908 191.5,87.5 87.5,119.5 31.5,143.5 87.5,207.5 199.5,175.5 319.5,143.5 367.5,135.5 399.5,207.5 287.5,231.5 207.5,255.5 143.5,279.5 247.5,439.5 159.5,479.5 103.5,535.5 79.5,575.5 215.5,607.5 279.5,623.5 423.5,647.5" Canvas.Left="8" Canvas.Top="4.258" Visibility="Collapsed"/>
