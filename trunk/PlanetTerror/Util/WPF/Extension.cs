@@ -4,6 +4,7 @@ using System.Text;
 using System.Diagnostics;
 using System.Collections.ObjectModel;
 using System.Windows;
+using System.Windows.Media;
 
 namespace PlanetTerror.Util
 {
@@ -409,6 +410,39 @@ namespace PlanetTerror.Util
 		public static Rect Multiply(this Rect r, Point lhs)
 		{
 			return new Rect(r.X * lhs.X, r.Y * lhs.Y, r.Width * lhs.X, r.Height * lhs.Y);
+		}
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//	WindowExtMethod
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	public static class WindowExtMethod
+	{
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	전체화면으로 전환
+		public static void SwitchFullscreen(this Window window)
+		{
+			ScaleTransform scale = new ScaleTransform();
+			scale.ScaleX = SystemParameters.PrimaryScreenWidth / window.Width;
+			scale.ScaleY = SystemParameters.PrimaryScreenHeight / window.Height;
+
+			FrameworkElement ChildElement = window.Content as FrameworkElement;
+			ChildElement.LayoutTransform = scale;
+
+			window.WindowState = WindowState.Maximized;
+			window.WindowStyle = WindowStyle.None;
+			window.ResizeMode = ResizeMode.NoResize;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	창모드(?)로 전환
+		public static void SwitchWindowed(this Window window, WindowStyle style, ResizeMode resize)
+		{
+			FrameworkElement ChildElement = window.Content as FrameworkElement;
+			ChildElement.LayoutTransform = Transform.Identity;
+
+			window.WindowState = WindowState.Normal;
+			window.WindowStyle = style;
+			window.ResizeMode = resize;
 		}
 	}
 }
