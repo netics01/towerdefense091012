@@ -25,6 +25,7 @@ namespace PlanetTerror
 		//===============================================================================================================================================
 		//	필드
 		UpdatePump pump;
+		bool bFullscreen;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -41,6 +42,7 @@ namespace PlanetTerror
 
 			pump = new UpdatePump();
 			pump.Update += new UpdatePump.UpdateHandler(pump_Update);
+			bFullscreen = false;
 
 			Loaded += new RoutedEventHandler(MainWindow_Loaded);
 			KeyDown += new KeyEventHandler(MainWindow_KeyDown);
@@ -89,6 +91,10 @@ namespace PlanetTerror
 			{
 				debug_Panel.coreTest_Button_Click(null, null);
 			}
+			if( e.Key == Key.F12 )
+			{
+				ToggleFullscreen();
+			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void pump_Update(float delta)
@@ -107,6 +113,24 @@ namespace PlanetTerror
 		public void ToggleDebugPanel()
 		{
 			debug_Panel.SetVisible(!debug_Panel.GetVisible());
+		}
+
+		//===============================================================================================================================================
+		//	전용
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	풀스크린
+		void ToggleFullscreen()
+		{
+			if( !bFullscreen )
+			{
+				this.SwitchFullscreen();
+				bFullscreen = true;
+			}
+			else
+			{
+				this.SwitchWindowed(WindowStyle.SingleBorderWindow, ResizeMode.NoResize);
+				bFullscreen = false;
+			}
 		}
 	}
 }
