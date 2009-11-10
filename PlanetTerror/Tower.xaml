@@ -3165,11 +3165,6 @@
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 	</UserControl.Resources>
-	<UserControl.Triggers>
-		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
-			<BeginStoryboard Storyboard="{StaticResource Lab_Inactive_Tower_Storyboard}"/>
-		</EventTrigger>
-	</UserControl.Triggers>
 
 	<Canvas x:Name="LayoutRoot" Cursor="Hand">
 		<VisualStateManager.VisualStateGroups>
