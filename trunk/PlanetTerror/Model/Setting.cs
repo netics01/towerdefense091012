@@ -66,7 +66,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 27;
+		public const int VERSION = 30;
 
 		public int version;
 		public bool debugMode;
@@ -82,10 +82,8 @@ namespace PlanetTerror
 		public Gold gold;
 		public class Tower
 		{
-			public int towerCost;
-			public int labCost;
+			public int buildCost;
 			public int dismantleGain;
-			public double labPower;
 			public double centerX;
 			public double centerY;
 			public double barrelLength;
@@ -103,6 +101,15 @@ namespace PlanetTerror
 			public List<Stat> stats;
 		}
 		public Tower tower;
+		public class Lab
+		{
+			public int buildCost;
+			public double powerGain;
+			public double range;
+			public double rangeSqr;
+			public double inactiveTime;
+		}
+		public Lab lab;
 
 		public class Core
 		{
@@ -158,6 +165,7 @@ namespace PlanetTerror
 		{
 			gold = new Gold();
 			tower = new Tower();
+			lab = new Lab();
 			core = new Core();
 			enemy1 = new Enemy();
 			enemy2 = new Enemy();
@@ -200,16 +208,14 @@ namespace PlanetTerror
 			version = VERSION;
 			debugMode = true;
 			title = false;
-			startGold = 1000;
+			startGold = 500;
 
 			gold.interval = 5;
-			gold.mineGold = 1;
+			gold.mineGold = 2;
 			gold.labGold = -5;
 
-			tower.towerCost = 50;
-			tower.labCost = 200;
+			tower.buildCost = 50;
 			tower.dismantleGain = -30;
-			tower.labPower = 0.5;
 			tower.centerX = 38;
 			tower.centerY = 8;
 			tower.barrelLength = 26;
@@ -220,68 +226,74 @@ namespace PlanetTerror
 			tower.stats.Add(new Tower.Stat());
 			tower.stats.Add(new Tower.Stat());
 
-			tower.stats[0].attackRange = 130;
-			tower.stats[0].attackCooldown = 1;
+			tower.stats[0].attackRange = 140;
+			tower.stats[0].attackCooldown = 0.5;
 			tower.stats[0].attackDamage = 10;			
 			tower.stats[0].projSpeed = 200;
-			tower.stats[0].turretRotSpeed = 150;
+			tower.stats[0].turretRotSpeed = 250;
 			tower.stats[0].upgCost = 150;
 			tower.stats[0].dismantleGain = 40;
 
-			tower.stats[1].attackRange = 130;
-			tower.stats[1].attackCooldown = 0.9;
+			tower.stats[1].attackRange = 150;
+			tower.stats[1].attackCooldown = 0.5;
 			tower.stats[1].attackDamage = 20;			
 			tower.stats[1].projSpeed = 200;
-			tower.stats[1].turretRotSpeed = 170;
+			tower.stats[1].turretRotSpeed = 1000;
 			tower.stats[1].upgCost = 200;
 			tower.stats[1].dismantleGain = 170;
 
-			tower.stats[2].attackRange = 180;
-			tower.stats[2].attackCooldown = 0.5;
-			tower.stats[2].attackDamage = 25;			
+			tower.stats[2].attackRange = 230;
+			tower.stats[2].attackCooldown = 2.2;
+			tower.stats[2].attackDamage = 40;			
 			tower.stats[2].projSpeed = 240;
-			tower.stats[2].turretRotSpeed = 200;
+			tower.stats[2].turretRotSpeed = 1000;
 			tower.stats[2].upgCost = 300;
 			tower.stats[2].dismantleGain = 300;
 
-			tower.stats[3].attackRange = 180;
-			tower.stats[3].attackCooldown = 1.2;
+			tower.stats[3].attackRange = 250;
+			tower.stats[3].attackCooldown = 2.5;
 			tower.stats[3].attackDamage = 100;			
-			tower.stats[3].projSpeed = 250;
+			tower.stats[3].projSpeed = 350;
 			tower.stats[3].turretRotSpeed = 210;
 			tower.stats[3].upgCost = 1000;
 			tower.stats[3].dismantleGain = 400;
 
+			lab.buildCost = 200;
+			lab.powerGain = 1;
+			lab.range = 150;
+			lab.rangeSqr = 0;
+			lab.inactiveTime = 5;
+
 			core.hitPoint = 100;
 			core.warningBefore = 5;
-			core.attackDamage = 500;
+			core.attackDamage = 700;
 			core.boomTime = 4;
 			core.boomDistance = 40;
 			core.boomLogicFrame = 0.1;
-			core.upg1Research = 100;
-			core.upg2Research = 130;
-			core.upg3Research = 160;
-			core.upg4Research = 200;
+			core.upg1Research = 50;
+			core.upg2Research = 120;
+			core.upg3Research = 200;
+			core.upg4Research = 500;
 
 			enemy1.routeTime = 35;
 			enemy1.hitPoint = 30;
-			enemy1.damage = 5;
+			enemy1.damage = 10;
 			enemy1.gold = 0;
 			enemy1.powerUp = 0.5;
 
 			enemy2.routeTime = 60;
 			enemy2.hitPoint = 200;
-			enemy2.damage = 8;
+			enemy2.damage = 15;
 			enemy2.gold = 0;
 			enemy2.powerUp = 1;
 
 			enemy3.routeTime = 15;
 			enemy3.hitPoint = 80;
-			enemy2.damage = 1;
+			enemy2.damage = 20;
 			enemy3.gold = 0;
 			enemy3.powerUp = 2;
 
-			boss.hitPoint = 500;
+			boss.hitPoint = 1500;
 
 			var w = MakeWave(17);
 			MakeBundle(w, 0.1, "Enemy1", 1, 5, 0.5);
@@ -367,6 +379,7 @@ namespace PlanetTerror
 			{
 				tower.stats[i].attackRangeSqr = tower.stats[i].attackRange * tower.stats[i].attackRange;
 			}
+			lab.rangeSqr = lab.range * lab.range;
 		}
 	}
 

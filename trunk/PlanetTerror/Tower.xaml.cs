@@ -184,7 +184,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Build_Button_Click(object sender, RoutedEventArgs e)
 		{
-			int gold = Game.Setting.tower.towerCost;
+			int gold = Game.Setting.tower.buildCost;
 			if( !Game.UI.SpendGold(gold) )
 			{
 				return;
@@ -264,7 +264,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Lab_Button_Click(object sender, RoutedEventArgs e)
 		{
-			int gold = Game.Setting.tower.labCost;
+			int gold = Game.Setting.lab.buildCost;
 			if( !Game.UI.SpendGold(gold) )
 			{
 				return;
@@ -273,6 +273,7 @@ namespace PlanetTerror
 			Game.SoundMgr.Play("Sound/Tower_Build.wav", 0.85);
 			Game.UI.LabBuilt();
 
+			cooldownTime = 0;
 			bDismantling = false;
 			notYetBuiltStory.Stop();
 			vsm.SetState(LAB_BUILT_STATE);
@@ -389,12 +390,36 @@ namespace PlanetTerror
 				}
 				break;
 			case LAB_BUILT_STATE:
+				if( !vsm.GetStateFinished() ) { return; }
 				if( vsm.GetStateJustFinished() )
 				{
+					//활성상태로 시작
+					cooldownTime = 0;
 					labStory.Begin();
 				}
-				//파워 증가
-				Game.UI.GainPower(Game.Setting.tower.labPower* delta);
+				//비활성상태면
+				if( cooldownTime > 0 )
+				{
+					cooldownTime -= delta;
+					if( cooldownTime <= 0 &&
+						!Game.World.IsThereEnemy(towerCenter, Game.Setting.lab.rangeSqr) )
+					{
+						cooldownTime = 0;
+						labStory.Begin();
+					}
+				}
+				//활성상태면
+				else
+				{
+					Game.UI.GainPower(Game.Setting.lab.powerGain * delta);
+
+					//주변에 적이 있으면 비활성이 된다.
+					if( Game.World.IsThereEnemy(towerCenter, Game.Setting.lab.rangeSqr) )
+					{
+						cooldownTime = Game.Setting.lab.inactiveTime;
+						labStory.Stop();
+					}
+				}
 				break;
 			case LAB_DISMANTLE_STATE:
 				if( vsm.GetStateFinished() )
