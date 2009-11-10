@@ -159,6 +159,21 @@ namespace PlanetTerror
 			return target;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	
+		public bool IsThereEnemy(Point pos, double rangeSqr)
+		{
+			for( int i = 0; i < enemies.Count; ++i )
+			{
+				if( enemies[i].IsInvalid ) { continue; }
+				double distSqr = enemies[i].Pos.DistanceSqaure(pos);
+				if( distSqr < rangeSqr )
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	데미지
 		public void SweepDamage(double leftX, double rightX, double damage)
 		{
@@ -214,6 +229,5 @@ namespace PlanetTerror
 // 		{
 // 			LayoutRoot.Children.Remove(enemy);
 // 		}
-
 	}
 }

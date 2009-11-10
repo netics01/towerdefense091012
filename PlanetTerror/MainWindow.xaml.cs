@@ -106,6 +106,7 @@ namespace PlanetTerror
 			}
 			if( e.Key == Key.F6 )
 			{
+				Game.UI.GainGold(1000);
 				Game.World.core.Invincible = !Game.World.core.Invincible;
 			}
 			if( e.Key == Key.F12 )
