@@ -114,6 +114,7 @@ namespace PlanetTerror
 			HitPoint -= damage;
 			if( HitPoint < 0 )
 			{
+				Game.SoundMgr.Play("Sound/Mon_Boom.wav");
 				IsDestroyed = true;
 				vsm.SetState(DESTROY_STATE);
 				Game.UI.GainGold(setting.gold);
