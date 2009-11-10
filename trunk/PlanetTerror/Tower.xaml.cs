@@ -202,7 +202,8 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Upgrade_Button_Click(object sender, RoutedEventArgs e)
 		{
-			if( !Game.UI.SpendGold(Stat.upgCost) )
+			if( !Game.UI.SpendGold(Stat.upgCost) ||
+				!Game.UI.IsUpgradable(towerLevel + 1) )
 			{
 				return;
 			}
