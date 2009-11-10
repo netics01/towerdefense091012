@@ -609,8 +609,9 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:02.9000000" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="route1_Path" Storyboard.TargetProperty="(UIElement.Opacity)" Duration="00:00:00.0010000">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="route1_Path" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="OOOOO" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
@@ -1565,7 +1566,7 @@
 					</TextBlock.RenderTransform><Run Text="!!"/><Run Text="골드가 부족합니다!!"/></TextBlock>
 			</Canvas>
 		</Canvas>
-		<Canvas x:Name="path" Width="1072.5" Height="673" Canvas.Left="-16.5" Canvas.Top="-687" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed">
+		<Canvas x:Name="path" Width="1072.5" Height="673" Canvas.Left="-16.5" Canvas.Top="-687" IsEnabled="False" IsHitTestVisible="False">
 			<Path x:Name="route1_Path" Stretch="Fill" Width="520.5" Height="665" Data="M-16,64 L95.5,15.5 184.72929,-8.7634484 239.49977,-16.499969 247.49976,15.500029 263.49975,71.500026 303.49971,63.500027 367.5,55.5 367.5,55.5 407.5,207.5 303.5,223.5 207.5,247.5 143.5,279.5 199.5,359.5 283.80899,318.50562 386.93258,294.70787 503.49953,303.50002 503.05353,478.76448 349.73814,503.78756 255.5,559.5 231.5,639.5 423.5,647.5" Visibility="Collapsed">
 				<Path.Stroke>
 					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
