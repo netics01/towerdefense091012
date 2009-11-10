@@ -70,10 +70,6 @@ namespace PlanetTerror
 				var b = AllocateBuffer();
 				PlayBuffer(b, vol);
 				buffers.Add(b);
-
-				Debug.Print("BufferCount {0}", buffers.Count);
-
-
 				return true;
 			}
 			//-----------------------------------------------------------------------------------------------------------------------------------------------

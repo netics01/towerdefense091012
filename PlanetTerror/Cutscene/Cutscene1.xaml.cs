@@ -45,6 +45,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Start_Click(object sender, RoutedEventArgs e)
 		{
+			Game.SoundMgr.Play("Sound/Button_Title.wav");
 			vsm.SetState("GameStart_Click_State");
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -54,7 +55,7 @@ namespace PlanetTerror
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void GameStart_Click_State_Storyboard_Completed(object sender, EventArgs e)
-		{
+		{			
 			Activate(false);
 		}
 
