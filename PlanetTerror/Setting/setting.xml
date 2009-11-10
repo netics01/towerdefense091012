@@ -1,63 +1,63 @@
 <?xml version="1.0"?>
 <Setting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <version>24</version>
+  <version>27</version>
   <debugMode>true</debugMode>
   <title>false</title>
-  <startGold>1000</startGold>
+  <startGold>500</startGold>
   <powerMax>100</powerMax>
   <gold>
     <interval>5</interval>
-    <mineGold>1</mineGold>
+    <mineGold>2</mineGold>
     <labGold>-5</labGold>
   </gold>
   <tower>
     <towerCost>50</towerCost>
     <labCost>200</labCost>
-    <labPower>0.5</labPower>
-    <dismantleCost>-30</dismantleCost>
+    <dismantleGain>120</dismantleGain>
+    <labPower>1</labPower>
     <centerX>38</centerX>
     <centerY>8</centerY>
-    <barrelLength>25</barrelLength>
+    <barrelLength>26</barrelLength>
     <stats>
       <Stat>
-        <attackRange>130</attackRange>
-        <attackRangeSqr>0</attackRangeSqr>
-        <attackCooldown>1</attackCooldown>
-        <attackDamage>10</attackDamage>
-        <projSpeed>200</projSpeed>
-        <turretRotSpeed>150</turretRotSpeed>
-        <upgCost>150</upgCost>
-        <dismantleCost>+40</dismantleCost>
-      </Stat>
-      <Stat>
-        <attackRange>130</attackRange>
-        <attackRangeSqr>0</attackRangeSqr>
-        <attackCooldown>0.9</attackCooldown>
-        <attackDamage>20</attackDamage>
-        <projSpeed>200</projSpeed>
-        <turretRotSpeed>170</turretRotSpeed>
-        <upgCost>200</upgCost>
-        <dismantleCost>+170</dismantleCost>
-      </Stat>
-      <Stat>
-        <attackRange>180</attackRange>
+        <attackRange>140</attackRange>
         <attackRangeSqr>0</attackRangeSqr>
         <attackCooldown>0.5</attackCooldown>
-        <attackDamage>25</attackDamage>
-        <projSpeed>240</projSpeed>
-        <turretRotSpeed>200</turretRotSpeed>
-        <upgCost>300</upgCost>
-        <dismantleCost>+300</dismantleCost>
+        <attackDamage>10</attackDamage>
+        <projSpeed>200</projSpeed>
+        <turretRotSpeed>250</turretRotSpeed>
+        <upgCost>150</upgCost>
+        <dismantleGain>40</dismantleGain>
       </Stat>
       <Stat>
-        <attackRange>180</attackRange>
+        <attackRange>150</attackRange>
         <attackRangeSqr>0</attackRangeSqr>
-        <attackCooldown>1.2</attackCooldown>
+        <attackCooldown>0.5</attackCooldown>
+        <attackDamage>20</attackDamage>
+        <projSpeed>200</projSpeed>
+        <turretRotSpeed>1000</turretRotSpeed>
+        <upgCost>200</upgCost>
+        <dismantleGain>170</dismantleGain>
+      </Stat>
+      <Stat>
+        <attackRange>230</attackRange>
+        <attackRangeSqr>0</attackRangeSqr>
+        <attackCooldown>2.2</attackCooldown>
+        <attackDamage>40</attackDamage>
+        <projSpeed>240</projSpeed>
+        <turretRotSpeed>1000</turretRotSpeed>
+        <upgCost>300</upgCost>
+        <dismantleGain>300</dismantleGain>
+      </Stat>
+      <Stat>
+        <attackRange>250</attackRange>
+        <attackRangeSqr>0</attackRangeSqr>
+        <attackCooldown>2.5</attackCooldown>
         <attackDamage>100</attackDamage>
-        <projSpeed>250</projSpeed>
+        <projSpeed>350</projSpeed>
         <turretRotSpeed>210</turretRotSpeed>
         <upgCost>1000</upgCost>
-        <dismantleCost>+400</dismantleCost>
+        <dismantleGain>400</dismantleGain>
       </Stat>
     </stats>
   </tower>
@@ -68,25 +68,29 @@
     <boomTime>4</boomTime>
     <boomDistance>40</boomDistance>
     <boomLogicFrame>0.1</boomLogicFrame>
+    <upg1Research>50</upg1Research>
+    <upg2Research>120</upg2Research>
+    <upg3Research>200</upg3Research>
+    <upg4Research>500</upg4Research>
   </core>
   <enemy1>
     <routeTime>35</routeTime>
     <hitPoint>30</hitPoint>
-    <damage>5</damage>
+    <damage>10</damage>
     <gold>0</gold>
     <powerUp>0.5</powerUp>
   </enemy1>
   <enemy2>
     <routeTime>60</routeTime>
     <hitPoint>200</hitPoint>
-    <damage>8</damage>
+    <damage>15</damage>
     <gold>0</gold>
     <powerUp>1</powerUp>
   </enemy2>
   <enemy3>
     <routeTime>15</routeTime>
     <hitPoint>80</hitPoint>
-    <damage>0</damage>
+    <damage>20</damage>
     <gold>0</gold>
     <powerUp>2</powerUp>
   </enemy3>
@@ -100,7 +104,7 @@
         <Bundle>
           <waitTime>0.1</waitTime>
           <typeName>Enemy1</typeName>
-          <pathIndex>1</pathIndex>
+          <pathIndex>5</pathIndex>
           <count>5</count>
           <interval>0.5</interval>
         </Bundle>
@@ -119,7 +123,7 @@
       </bundles>
     </Wave>
     <Wave>
-      <waitTime>17</waitTime>
+      <waitTime>25</waitTime>
       <bundles>
         <Bundle>
           <waitTime>0.1</waitTime>
@@ -263,7 +267,7 @@
           <count>15</count>
           <interval>2</interval>
         </Bundle>
-       </bundles>
+      </bundles>
     </Wave>
     <Wave>
       <waitTime>25</waitTime>
