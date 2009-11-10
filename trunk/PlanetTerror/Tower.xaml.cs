@@ -191,6 +191,7 @@ namespace PlanetTerror
 			}
 
 			Game.SoundMgr.Play("Sound/Tower_Build.wav", 0.85);
+			Game.UI.TowerBuilt();
 
 			towerLevel = 0;
 			bDismantling = false;
@@ -269,6 +270,7 @@ namespace PlanetTerror
 			}
 
 			Game.SoundMgr.Play("Sound/Tower_Build.wav", 0.85);
+			Game.UI.LabBuilt();
 
 			bDismantling = false;
 			notYetBuiltStory.Stop();
