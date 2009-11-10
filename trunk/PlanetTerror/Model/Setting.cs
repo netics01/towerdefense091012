@@ -67,13 +67,12 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 26;
+		public const int VERSION = 27;
 
 		public int version;
 		public bool debugMode;
 		public bool title;
 		public int startGold;
-		public double powerMax;
 
 		public class Gold
 		{
@@ -114,6 +113,10 @@ namespace PlanetTerror
 			public double boomTime;
 			public double boomDistance;
 			public double boomLogicFrame;
+			public double upg1Research;
+			public double upg2Research;
+			public double upg3Research;
+			public double upg4Research;
 		}
 		public Core core;
 
@@ -199,7 +202,6 @@ namespace PlanetTerror
 			debugMode = true;
 			title = false;
 			startGold = 1000;
-			powerMax = 100;
 
 			gold.interval = 5;
 			gold.mineGold = 1;
@@ -257,6 +259,10 @@ namespace PlanetTerror
 			core.boomTime = 4;
 			core.boomDistance = 40;
 			core.boomLogicFrame = 0.1;
+			core.upg1Research = 100;
+			core.upg2Research = 130;
+			core.upg3Research = 200;
+			core.upg4Research = 300;
 
 			enemy1.routeTime = 35;
 			enemy1.hitPoint = 30;
