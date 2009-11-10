@@ -159,6 +159,7 @@ namespace PlanetTerror
 		//	경고 발생
 		public void DisplayWarning(bool bBoss)
 		{
+			Game.SoundMgr.Play("Sound/Wave_Alarm.wav");
 			if( bBoss ) { bossWarningStory.Begin(); }
 			else { normalWarningStory.Begin(); }
 		}
