@@ -56,7 +56,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void MainWindow_Loaded(object sender, RoutedEventArgs e)
 		{
-			if( this.IsInDesignMode() ) { return; }
+//			if( this.IsInDesignMode() ) { return; }
 
 			Game.SoundMgr = new SoundMgr();
 			pump.Begin();
