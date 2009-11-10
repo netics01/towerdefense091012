@@ -68,7 +68,9 @@ namespace PlanetTerror
 				if( story == null )
 				{
 					MessageBox.Show(string.Format("UI : route{0}_Path_Storyboard Not Found", i + 1));
+					continue;
 				}
+				story.RepeatBehavior = new RepeatBehavior(2);
 				routeWarningStories.Add(story);
 			}
 		}
@@ -81,7 +83,7 @@ namespace PlanetTerror
 		{
 			gold = Game.Setting.startGold;
 			lastGold = gold;
-			power_Progress.Maximum = Game.Setting.powerMax;
+			power_Progress.Maximum = Game.Setting.core.upg1Research;
 			power_Progress.Minimum = 0;
 			power_Progress.Value = 0;
 			DisplayGold();
@@ -130,8 +132,6 @@ namespace PlanetTerror
 		//	게이지 변화
 		public void GainPower(double power)
 		{
-			if( upgradeLevel >= 4 ) { power *= 0.5; }
-
 			double lastValue = power_Progress.Value;
 			power_Progress.Value = power_Progress.Value + power;
 
@@ -142,16 +142,19 @@ namespace PlanetTerror
 				case 0:
 					Resources.FindStoryboard("Upg1_Completed_Storyboard").Begin();
 					power_Progress.Value = 0;
+					power_Progress.Maximum = Game.Setting.core.upg2Research;
 					upgradeLevel++;
 					break;
 				case 1:
 					Resources.FindStoryboard("Upg2_Completed_Storyboard").Begin();
 					power_Progress.Value = 0;
+					power_Progress.Maximum = Game.Setting.core.upg3Research;
 					upgradeLevel++;
  					break;
 				case 2:
 					Resources.FindStoryboard("Upg3_Completed_Storyboard").Begin();
 					power_Progress.Value = 0;
+					power_Progress.Maximum = Game.Setting.core.upg4Research;
 					upgradeLevel++;
 					break;
 				case 3:
