@@ -32,11 +32,10 @@ using PlanetTerror.Util;
 
 //연구소 비활성화 상태를 만든다.
 //보스를 만든다.
-//웨이브 경로 예고를 만든다.
 //엔딩 연결
-//효과음
 //발사체 모양 다듬는다.
 //게임플레이를 다듬는다.
+//포탄/자코 클래스 풀링
 
 
 
@@ -67,7 +66,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 27;
+		public const int VERSION = 28;
 
 		public int version;
 		public bool debugMode;
@@ -261,8 +260,8 @@ namespace PlanetTerror
 			core.boomLogicFrame = 0.1;
 			core.upg1Research = 100;
 			core.upg2Research = 130;
-			core.upg3Research = 200;
-			core.upg4Research = 300;
+			core.upg3Research = 160;
+			core.upg4Research = 200;
 
 			enemy1.routeTime = 35;
 			enemy1.hitPoint = 30;
