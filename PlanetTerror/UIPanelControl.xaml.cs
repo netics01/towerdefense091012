@@ -35,6 +35,9 @@ namespace PlanetTerror
 		Storyboard bossWarningStory;
 		Storyboard goldGainStory;
 		Storyboard goldLostStory;
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		bool bFirstTowerBuilt = false;
+		bool bFirstLabBuilt = false;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -65,6 +68,7 @@ namespace PlanetTerror
 		public void Initialize()
 		{
 			gold = Game.Setting.startGold;
+			lastGold = gold;
 			power_Progress.Maximum = Game.Setting.powerMax;
 			power_Progress.Minimum = 0;
 			power_Progress.Value = 0;
@@ -134,6 +138,26 @@ namespace PlanetTerror
 		{
 			gold_NextTime_Text.Text = string.Format("{0:F1}", leftTime);
 			gold_Next_Text.Text = (gold >= 0 ? "+" : "-") + gold.ToString();
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	타워가 지어졌다.
+		public void TowerBuilt()
+		{
+			if( !bFirstTowerBuilt )
+			{
+				bFirstTowerBuilt = true;
+				Resources.FindStoryboard("FirstTower_Storyboard").Begin();
+			}
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	연구소가 지어졌다.
+		public void LabBuilt()
+		{
+			if( !bFirstLabBuilt )
+			{
+				bFirstLabBuilt = true;
+				Resources.FindStoryboard("FirstLab_Storyboard").Begin();
+			}
 		}
 
 		//===============================================================================================================================================
