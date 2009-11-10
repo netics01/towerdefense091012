@@ -455,6 +455,8 @@ namespace PlanetTerror
 			{
 			case NOTYETBUILT_STATE:
 				return Game.Setting.gold.mineGold;
+			case TOWER_BUILT_STATE:
+				return Game.Setting.gold.towerGold;
 			case LAB_BUILT_STATE:
 				return Game.Setting.gold.labGold;
 			}
