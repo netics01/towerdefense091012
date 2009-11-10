@@ -9,7 +9,7 @@
 	x:Name="UserControl"
 	d:DesignWidth="24" d:DesignHeight="16">
 
-	<Canvas x:Name="LayoutRoot">
+	<Canvas x:Name="LayoutRoot" IsEnabled="False" IsHitTestVisible="False">
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="Projectile_StateGroup">
 				<VisualState x:Name="Projectile_Normal_State"/>
