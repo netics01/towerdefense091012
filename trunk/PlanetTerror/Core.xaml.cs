@@ -98,12 +98,12 @@ namespace PlanetTerror
 		void Attack_Beam_State_Completed(object sender, EventArgs e)
 		{
 			vsm.SetState(ATTACK_GROUP, ATTACK_NORMAL_STATE);
-			Game.UI.GainPower(-1000);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Attack_Ready_Button_Click(object sender, RoutedEventArgs e)
 		{
 			Game.SoundMgr.Play("Sound/Core_Attack.wav");
+			Game.UI.GainPower(-1000);
 			vsm.SetState(ATTACK_GROUP, ATTACK_BEAM_STATE);
 		}
 
