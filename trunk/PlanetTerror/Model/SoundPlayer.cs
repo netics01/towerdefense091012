@@ -37,32 +37,64 @@ namespace PlanetTerror
 
 			//===============================================================================================================================================
 			//	필드
-			const int BUFFER = 5;
-			int playIndex;
-			List<SoundPlayer> players;
+			const int MAX_BUFFER = 5;
+			Device soundDevice;
+			List<SecondaryBuffer> buffers;
 
 			//-----------------------------------------------------------------------------------------------------------------------------------------------
 			//	생성자
-			public Sound(string source)
+			public Sound(Device soundDevice, string source)
 			{
 				Source = source;
-				playIndex = 0;
-				players = new List<SoundPlayer>(BUFFER);
-				for( int i = 0; i < BUFFER; ++i )
-				{
-					players.Add(new SoundPlayer(Source));
-				}
+				this.soundDevice = soundDevice;
+				buffers = new List<SecondaryBuffer>();
+				buffers.Add(AllocateBuffer());
 			}
 
 			//===============================================================================================================================================
 			//	공용
 			//-----------------------------------------------------------------------------------------------------------------------------------------------
 			//	연주한다.
-			public void Play()
+			public bool Play(double volume)
 			{
-				//players[playIndex].Stop();
-				players[playIndex].Play();
-				playIndex = (playIndex + 1) % BUFFER;
+				int vol = (int)((1 - volume) * -10000);
+				for( int i = 0; i < buffers.Count; ++i )
+				{
+					if( !buffers[i].Status.Playing )
+					{
+						PlayBuffer(buffers[i], vol);
+						return true;
+					}
+				}
+				if( buffers.Count >= MAX_BUFFER ) { return false; }
+				var b = AllocateBuffer();
+				PlayBuffer(b, vol);
+				buffers.Add(b);
+
+				Debug.Print("BufferCount {0}", buffers.Count);
+
+
+				return true;
+			}
+			//-----------------------------------------------------------------------------------------------------------------------------------------------
+			public bool Play() { return Play(1); }
+
+			//===============================================================================================================================================
+			//	전용
+			//-----------------------------------------------------------------------------------------------------------------------------------------------
+			//	버퍼를 할당한다.
+			SecondaryBuffer AllocateBuffer()
+			{
+				var desc = new BufferDescription();
+				desc.ControlVolume = true;
+				return new SecondaryBuffer(Source, desc, soundDevice);
+			}
+			//-----------------------------------------------------------------------------------------------------------------------------------------------
+			//	연주한다.
+			void PlayBuffer(SecondaryBuffer buffer, int volume)
+			{
+				buffer.Volume = volume;
+				buffer.Play(0, BufferPlayFlags.Default);
 			}
 		}
 
@@ -78,7 +110,10 @@ namespace PlanetTerror
 
 		//===============================================================================================================================================
 		//	필드
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		MediaPlayer musicPlayer;
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		Device soundDevice;
 		Dictionary<string, Sound> sounds;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -87,26 +122,31 @@ namespace PlanetTerror
 		{
 			musicPlayer = new MediaPlayer();
 			sounds = new Dictionary<string, Sound>();
+
+			soundDevice = new Device();
+			soundDevice.SetCooperativeLevel(Game.MainWindow.GetHWND(), CooperativeLevel.Priority);
 		}
 
 		//===============================================================================================================================================
 		//	공용
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	재생
-		public void Play(string soundPath)
+		public void Play(string soundPath, double volume)
 		{
 			Sound sound;
 			if( sounds.TryGetValue(soundPath, out sound) )
 			{
-				sound.Play();
+				sound.Play(volume);
 			}
 			else
 			{
-				sound = new Sound(soundPath);
+				sound = new Sound(soundDevice, soundPath);
 				sounds.Add(soundPath, sound);
-				sound.Play();
+				sound.Play(volume);
 			}
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		public void Play(string soundPath) { Play(soundPath, 1); }
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	구식 방법으로 사운드 재생
 		public void PlaySystem(string soundPath)

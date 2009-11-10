@@ -42,7 +42,6 @@ namespace PlanetTerror
 			Game.MainWindow = this;
 			Game.UI = ui_Panel;
 			Game.World = world;
-			Game.SoundMgr = new SoundMgr();
 
 			pump = new UpdatePump();
 			pump.Update += new UpdatePump.UpdateHandler(pump_Update);
@@ -57,6 +56,9 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void MainWindow_Loaded(object sender, RoutedEventArgs e)
 		{
+			if( this.IsInDesignMode() ) { return; }
+
+			Game.SoundMgr = new SoundMgr();
 			pump.Begin();
 
 			ui_Panel.Initialize();
