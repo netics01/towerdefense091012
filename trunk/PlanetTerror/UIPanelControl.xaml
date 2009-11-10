@@ -901,7 +901,7 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
-		<Storyboard x:Key="Talk_UPG1_Storyboard">
+		<Storyboard x:Key="Upg1_Completed_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_UPG1" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
@@ -917,7 +917,7 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:04.2000000" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
-		<Storyboard x:Key="Talk_UPG2_Storyboard">
+		<Storyboard x:Key="Upg2_Completed_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_UPG1" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
@@ -933,7 +933,7 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:04.2000000" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
-		<Storyboard x:Key="Talk_UPG3_Storyboard">
+		<Storyboard x:Key="Upg3_Completed_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_UPG1" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000" Value="{x:Static Visibility.Visible}"/>
@@ -961,7 +961,7 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-2"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
-		<Storyboard x:Key="Talk_CoreAttack_Storyboard">
+		<Storyboard x:Key="Upg4_Completed_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_CoreAttack" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>

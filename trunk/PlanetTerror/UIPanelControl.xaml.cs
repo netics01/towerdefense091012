@@ -29,6 +29,7 @@ namespace PlanetTerror
 		int gold;
 		int lastGold;
 		double lastPowerGauge;
+		int upgradeLevel = 0;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		Storyboard noMoneyStory;
 		Storyboard normalWarningStory;
@@ -78,11 +79,6 @@ namespace PlanetTerror
 		//	업데이트
 		public void Update(float delta)
 		{
-			if( lastPowerGauge < 100 &&
-				power_Progress.Value == 100 )
-			{
-				Game.World.core.AttackReady();
-			}
 			if( lastGold != gold )
 			{
 				if( lastGold < gold )
@@ -123,7 +119,42 @@ namespace PlanetTerror
 		//	게이지 변화
 		public void GainPower(double power)
 		{
+			double lastValue = power_Progress.Value;
 			power_Progress.Value = power_Progress.Value + power;
+
+			if( power_Progress.Value == power_Progress.Maximum &&
+				upgradeLevel < 4)
+			{
+				switch(upgradeLevel)
+				{
+				case 0:
+					Resources.FindStoryboard("Upg1_Completed_Storyboard").Begin();
+					power_Progress.Value = 0;
+					upgradeLevel++;
+					break;
+				case 1:
+					Resources.FindStoryboard("Upg2_Completed_Storyboard").Begin();
+					power_Progress.Value = 0;
+					upgradeLevel++;
+ 					break;
+				case 2:
+					Resources.FindStoryboard("Upg3_Completed_Storyboard").Begin();
+					power_Progress.Value = 0;
+					upgradeLevel++;
+					break;
+				case 3:
+					Resources.FindStoryboard("Upg4_Completed_Storyboard").Begin();
+					Game.World.core.AttackReady();
+					upgradeLevel++;
+					break;
+				case 4:
+					if( lastValue < power_Progress.Maximum )
+					{
+						Game.World.core.AttackReady();	
+					}
+					break;
+				}
+			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	경고 발생
