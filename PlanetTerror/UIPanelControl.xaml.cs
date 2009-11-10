@@ -119,6 +119,8 @@ namespace PlanetTerror
 		//	게이지 변화
 		public void GainPower(double power)
 		{
+			if( upgradeLevel >= 4 ) { power *= 0.5; }
+
 			double lastValue = power_Progress.Value;
 			power_Progress.Value = power_Progress.Value + power;
 
