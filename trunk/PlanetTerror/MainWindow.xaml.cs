@@ -104,6 +104,10 @@ namespace PlanetTerror
 			{
 				debug_Panel.coreTest_Button_Click(null, null);
 			}
+			if( e.Key == Key.F6 )
+			{
+				Game.World.core.Invincible = !Game.World.core.Invincible;
+			}
 			if( e.Key == Key.F12 )
 			{
 				ToggleFullscreen();

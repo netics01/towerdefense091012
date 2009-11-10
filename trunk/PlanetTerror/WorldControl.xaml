@@ -47,7 +47,7 @@
 		<local:Tower Canvas.Left="790" Canvas.Top="15.5" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="894" Canvas.Top="33" Panel.ZIndex="10"/>
 		<local:Tower Canvas.Left="79.167" Canvas.Top="194.5" Panel.ZIndex="10"/>
-		<local:Boss1 x:Name="testBoss1" Width="50" Height="50" Canvas.Left="0" Canvas.Top="0" Panel.ZIndex="200"/>
+		<local:Boss2 x:Name="testBoss1" Width="50" Height="50" Canvas.Left="0" Canvas.Top="0" Panel.ZIndex="200"/>
 		<local:Core x:Name="core" Width="176" Height="128" Canvas.Left="423" Canvas.Top="478" Panel.ZIndex="105" RenderTransformOrigin="0.227,0.333"/>
 		<Image Width="1024" Height="720" Source="Resources/Field/backgroundImage.png" Stretch="Fill" Panel.ZIndex="-2000"/>
 		<Image Width="1024" Height="720" Stretch="Fill" Panel.ZIndex="5" Source="Resources/Field/roofImage.png"/>

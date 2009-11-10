@@ -40,6 +40,7 @@ namespace PlanetTerror
 		//===============================================================================================================================================
 		//	프로퍼티
 		public double HitPoint { get; protected set; }
+		public bool Invincible { get; set; }
 		
 		//===============================================================================================================================================
 		//	필드
@@ -114,11 +115,13 @@ namespace PlanetTerror
 		public void Initialize()
 		{
 			HitPoint = Game.Setting.core.hitPoint;
+			Invincible = false;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	데미지를 입는다.
 		public void TakeDamage(double damage)
 		{
+			if( Invincible ) { return; }
 			HitPoint -= damage;
 
 			if( vsm.GetState() != HP0_STATE )
