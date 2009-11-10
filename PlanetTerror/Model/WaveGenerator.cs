@@ -69,7 +69,7 @@ namespace PlanetTerror
 					if( WaveTimeLeft - delta <= Game.Setting.core.warningBefore &&
 						Game.Setting.core.warningBefore <= WaveTimeLeft )
 					{
-						Game.UI.DisplayWarning(false);
+						Game.UI.DisplayWarning(curWave.bundles[0].pathIndex, false);
 					}
 					WaveTimeLeft -= delta;
 					if( WaveTimeLeft < 0 )

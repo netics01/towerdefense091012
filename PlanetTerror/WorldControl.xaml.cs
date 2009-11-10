@@ -182,6 +182,7 @@ namespace PlanetTerror
 		//	패스를 가공한 후 삭제한다.
 		private void PreparePath()
 		{
+			if( this.IsInDesignMode() ) { return; }
 			for( int i = 0; i < LayoutRoot.Children.Count; ++i )
 			{
 				var path = LayoutRoot.Children[i] as Path;

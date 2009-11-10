@@ -33,6 +33,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		Storyboard noMoneyStory;
 		Storyboard normalWarningStory;
+		List<Storyboard> routeWarningStories;
 		Storyboard bossWarningStory;
 		Storyboard goldGainStory;
 		Storyboard goldLostStory;
@@ -48,6 +49,7 @@ namespace PlanetTerror
 
 			noMoneyStory = Resources.FindStoryboard("NoMoney_Storyboard");
 			normalWarningStory = Resources.FindStoryboard("Warning_Enemy_Storyboard");
+			routeWarningStories = new List<Storyboard>();
 			bossWarningStory = Resources.FindStoryboard("Warning_Boss_Storyboard");
 			goldGainStory = Resources.FindStoryboard("Gold_Gain_Storyboard");
 			goldLostStory = Resources.FindStoryboard("Gold_Lost_Storyboard");
@@ -60,6 +62,15 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void UIPanelControl_Loaded(object sender, RoutedEventArgs e)
 		{
+			for( int i = 0; i < Game.World.Routes.Count; ++i )
+			{
+				var story = Resources.FindStoryboard(string.Format("route{0}_Path_Storyboard", i + 1));
+				if( story == null )
+				{
+					MessageBox.Show(string.Format("UI : route{0}_Path_Storyboard Not Found", i + 1));
+				}
+				routeWarningStories.Add(story);
+			}
 		}
 
 		//===============================================================================================================================================
@@ -159,9 +170,12 @@ namespace PlanetTerror
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	경고 발생
-		public void DisplayWarning(bool bBoss)
+		public void DisplayWarning(int route, bool bBoss)
 		{
 			Game.SoundMgr.Play("Sound/Wave_Alarm.wav");
+
+			routeWarningStories[route].Begin();
+
 			if( bBoss ) { bossWarningStory.Begin(); }
 			else { normalWarningStory.Begin(); }
 		}
