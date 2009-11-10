@@ -907,8 +907,10 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="talk_Text7" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text7" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.1000000" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_UPG1" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
@@ -923,8 +925,10 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="talk_Text9" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text9" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.1000000" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_UPG1" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
@@ -939,8 +943,10 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="talk_Text10" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text10" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.1000000" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path8" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.769"/>
@@ -965,14 +971,14 @@
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_CoreAttack" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:05.2000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:08" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:08.2000000" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_CoreAttack" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.2000000" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path9" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
@@ -985,16 +991,76 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="5.876"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="-6.481"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="-0.002"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.4000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="5.876"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="-6.481"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="5.876"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="-6.481"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:05.1000000" Value="5.876"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="-6.481"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:05.3000000" Value="-0.002"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.4000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.5000000" Value="5.876"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.6000000" Value="-6.481"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.7000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.8000000" Value="5.876"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.9000000" Value="-6.481"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.1000000" Value="5.876"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.2000000" Value="-6.481"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08.3000000" Value="-0.002"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text8" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.1000000" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text8_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.1000000" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text8_Copy1" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.1000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:08" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path10" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.1000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:08" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path10" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.2000000" Value="-2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="0.053"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.4000000" Value="-1.948"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="0.106"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="-2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="0.053"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="-1.948"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="0.106"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="-2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.1000000" Value="0.053"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.2000000" Value="-1.948"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.3000000" Value="0.106"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.4000000" Value="-2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="0.053"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.6000000" Value="-1.948"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.7000000" Value="0.106"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="-2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.9000000" Value="0.053"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="-1.948"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.1000000" Value="0.106"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.2000000" Value="-2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.3000000" Value="0.053"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.4000000" Value="-1.948"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.5000000" Value="0.106"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.6000000" Value="0.053"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.7000000" Value="-1.948"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.8000000" Value="0.106"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06.9000000" Value="-2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07" Value="0.053"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.1000000" Value="-1.948"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.2000000" Value="0.106"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.3000000" Value="0.053"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.4000000" Value="-1.948"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.5000000" Value="0.106"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.6000000" Value="-2"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.7000000" Value="0.053"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.8000000" Value="-1.948"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07.9000000" Value="0.106"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:08" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="FirstTower_Storyboard">
@@ -1203,8 +1269,8 @@
 				<GradientStop Color="#00000000" Offset="0.534"/>
 			</LinearGradientBrush>
 		</Canvas.Background>
-		<Canvas x:Name="gold_ani" Width="42" Height="42" Canvas.Left="720">
-			<Image x:Name="image3" Width="44" Height="44" Canvas.Left="-14" Canvas.Top="15" Source="Resources/UI/Gold.png" Stretch="Fill" Cursor="Hand"/>
+		<Canvas x:Name="gold_ani" Width="42" Height="42" Canvas.Left="705">
+			<Image x:Name="image3" Width="44" Height="44" Canvas.Left="-14.5" Canvas.Top="15" Source="Resources/UI/Gold.png" Stretch="Fill" Cursor="Hand"/>
 			<Image x:Name="image1" Width="16" Height="16" Source="Resources/UI/Gold_ani001.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" Canvas.Left="10.75" Canvas.Top="-3.5" IsEnabled="False" IsHitTestVisible="False">
 				<Image.RenderTransform>
 					<TransformGroup>
@@ -1265,14 +1331,18 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Image x:Name="Image_Gold_Time" Width="34" Height="34" Canvas.Left="107.167" Canvas.Top="22" Source="Resources/UI/Gold_Time.png" Stretch="Fill" Cursor="Hand"/>
+			<Image x:Name="Image_Gold_Time" Width="34" Height="34" Canvas.Left="122.667" Canvas.Top="22" Source="Resources/UI/Gold_Time.png" Stretch="Fill" Cursor="Hand"/>
+			<Rectangle x:Name="bg01" Fill="#CC000000" Width="68" Height="16" Canvas.Left="30.834" Canvas.Top="35" RadiusX="4" RadiusY="4"/>
+			<Rectangle x:Name="bg01_Copy" Fill="#CC000000" RadiusX="4" RadiusY="4" Width="35.333" Height="16" Canvas.Left="156.167" Canvas.Top="35"/>
+			<Rectangle x:Name="bg01_Copy1" Fill="#CC000000" RadiusX="4" RadiusY="4" Width="43.666" Height="16" Canvas.Left="195.922" Canvas.Top="35"/>
+			<Rectangle x:Name="bg01_Copy2" Fill="#CC000000" RadiusX="4" RadiusY="4" Width="43.666" Height="5" Canvas.Left="187.525" Canvas.Top="40.661"/>
 		</Canvas>
-		<TextBlock x:Name="gold_Text" Width="56" Height="24" Text="1200" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="Fonts/#kroeger 05_53" FontSize="14.667" Canvas.Left="752" Canvas.Top="32"/>
-		<TextBlock x:Name="gold_NextTime_Text" Width="56" Height="24" Text="00:15" TextWrapping="Wrap" Foreground="#FF747474" FontFamily="Fonts/#kroeger 05_53" FontSize="14.667" Canvas.Left="863.357" Canvas.Top="32"/>
-		<TextBlock x:Name="gold_Next_Text" Width="56" Height="24" TextWrapping="Wrap" Foreground="#FF946D40" FontFamily="Fonts/#kroeger 05_53" FontSize="14.667" Canvas.Left="912.857" Canvas.Top="32"><Run Text="185"/><LineBreak/><Run Text=""/></TextBlock>
+		<TextBlock x:Name="gold_Text" Width="72" Height="24" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="728.83" Canvas.Top="32" TextAlignment="Right"><Run Text="55"/><Run Text="200"/></TextBlock>
+		<TextBlock x:Name="gold_NextTime_Text" Width="56" Height="24" Text="0:5" TextWrapping="Wrap" Foreground="#FF747474" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="864.607" Canvas.Top="32"/>
+		<TextBlock x:Name="gold_Next_Text" Width="56" Height="24" TextWrapping="Wrap" Foreground="#FF946D40" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="885.943" Canvas.Top="32" TextAlignment="Right"><Run Text="5"/><Run Text="85"/><LineBreak/><Run Text=""/></TextBlock>
 		<Image x:Name="image" Width="64" Height="64" Canvas.Left="301" Canvas.Top="8" Source="Resources/UI/Icon_Core.png" Stretch="Fill" Cursor="Hand"/>
 		<Grid x:Name="talk_Core" Width="184" Height="56" Canvas.Left="139.333" Canvas.Top="-8" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed">
-			<Path x:Name="path1" Fill="#CCD8D09A" Stretch="Fill" Margin="-12.554,0,7.223,3.333" Data="M24.277009,0 L200.27701,0 C202.48615,1.5185146E-06 204.33322,5.3172003 204.33322,7.5263386 L204.27701,96.473977 C204.27701,98.683117 202.48615,104 200.27701,104 L30.666609,104 30.666571,104.001 8.6462092,104.00032 C8.6462092,104.00032 11.0285,100.42351 19.329416,93.851045 L20.136882,91.000276 20.277008,3.6582089 C20.277008,1.4490706 22.067869,1.5185146E-06 24.277009,0 z" Stroke="#EB1A1717" RenderTransformOrigin="0.5,0.5" StrokeThickness="2">
+			<Path x:Name="path1" Fill="#D8D8D09A" Stretch="Fill" Margin="-12.554,0,7.223,3.333" Data="M24.277009,0 L200.27701,0 C202.48615,1.5185146E-06 204.33322,5.3172003 204.33322,7.5263386 L204.27701,96.473977 C204.27701,98.683117 202.48615,104 200.27701,104 L30.666609,104 30.666571,104.001 8.6462092,104.00032 C8.6462092,104.00032 11.0285,100.42351 19.329416,93.851045 L20.136882,91.000276 20.277008,3.6582089 C20.277008,1.4490706 22.067869,1.5185146E-06 24.277009,0 z" Stroke="#EB1A1717" RenderTransformOrigin="0.5,0.5" StrokeThickness="2">
 				<Path.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform ScaleX="-1"/>
@@ -1300,7 +1370,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
-			<Path Fill="#CCECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="0,0,45,-18.833" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 38.541965,73.833001 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False"/>
+			<Path Fill="#D8ECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="0,0,45,-18.833" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 38.541965,73.833001 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False"/>
 			<TextBlock x:Name="talk_Text2" Margin="4.998,5.334,45.583,-12.834" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -1319,7 +1389,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
-			<Path Fill="#CCD8D09A" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="0,0,56,-8" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 38.541965,73.833001 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False"/>
+			<Path Fill="#D8D8D09A" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="0,0,56,-8" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 38.541965,73.833001 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False"/>
 			<TextBlock x:Name="talk_Text3" Margin="4.998,6,59.25,-13.5" Foreground="#FF372510" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" Text="다음 수익이 들어오기 까지 남은 시간과 예상되는 금액 입니다."><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -1692,7 +1762,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
-			<Path x:Name="path2" Fill="#CCECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="0,0,24,-48" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 38.541965,73.833001 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5">
+			<Path x:Name="path2" Fill="#D8ECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="0,0,24,-48" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 38.541965,73.833001 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5">
 				<Path.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -1748,7 +1818,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
-			<Path x:Name="path5" Fill="#CCECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="0,0,-32,-49" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 33.329439,74.547049 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5">
+			<Path x:Name="path5" Fill="#D8ECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="0,0,-32,-49" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 33.329439,74.547049 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5">
 				<Path.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform ScaleX="-1" ScaleY="1"/>
@@ -1795,7 +1865,7 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform><Run Foreground="Black" Text="연구소"/><Run Foreground="Black" Text=" 건설"/></TextBlock>
 		</Grid>
-		<Grid x:Name="Talk_UPGNotYet" Width="240" Height="96" Canvas.Left="208" Canvas.Top="-304" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+		<Grid x:Name="Talk_UPGNotYet" Width="240" Height="96" Canvas.Left="296" Canvas.Top="-112" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
 			<Grid.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1804,7 +1874,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
-			<Path x:Name="path7" Fill="#CCECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 33.329439,74.547049 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Margin="0,0,-8,0">
+			<Path x:Name="path7" Fill="#D8ECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 33.329439,74.547049 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Margin="0,0,-8,0">
 				<Path.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform ScaleX="-1" ScaleY="1"/>
@@ -1824,7 +1894,7 @@
 				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="연구가 충분하지 않아 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="타워 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="업그레이드를 할 수 없다네."/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="적을 충분히 연구 할 수만 있다면...으음... "/></TextBlock>
 			<Image HorizontalAlignment="Left" Margin="0,8,0,14" Width="74" Source="Resources/UI/KimHoRim_00.png" Stretch="Fill"/>
 		</Grid>
-		<Grid x:Name="Talk_UPG1" Width="240" Height="96" Canvas.Left="208" Canvas.Top="-304" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+		<Grid x:Name="Talk_UPG1" Width="240" Height="96" Canvas.Left="296" Canvas.Top="-112" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
 			<Grid.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1833,7 +1903,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
-			<Path x:Name="path8" Fill="#CCECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 33.329439,74.547049 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Margin="0,0,-8,-8">
+			<Path x:Name="path8" Fill="#D8ECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 33.329439,74.547049 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Margin="0,0,-8,-8">
 				<Path.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform ScaleX="-1" ScaleY="1"/>
@@ -1850,23 +1920,23 @@
 						<RotateTransform/>
 						<TranslateTransform/>
 					</TransformGroup>
-				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="이제 1단계 업그레이드가 "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="가능하네. "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="더 많은 연구가 이루어지면 다음 단계로 업그레이드 할 수 있겠지."/></TextBlock>
-			<TextBlock x:Name="talk_Text9" Margin="72,10,0,6.667" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" Visibility="Collapsed"><TextBlock.RenderTransform>
+				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="이제 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="공격 타워 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="1단계 업그레이드가 가능하네. "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="더 많은 연구가 이루어지면 다음 단계"/><Run FontSize="13.3333333333333" Foreground="Black" Text="를"/><Run FontSize="13.3333333333333" Foreground="Black" Text=" 할 수 있겠지."/></TextBlock>
+			<TextBlock x:Name="talk_Text9" Margin="72,10,0,6.667" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" d:IsHidden="True" Visibility="Collapsed"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
 						<RotateTransform/>
 						<TranslateTransform/>
 					</TransformGroup>
-				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="이제 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="2"/><Run FontSize="13.3333333333333" Foreground="Black" Text="단계 업그레이드가 "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="가능하네. "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="더 많은 연구가 이루어지면 다음 단계로 업그레이드 할 수 있겠지."/></TextBlock>
-			<TextBlock x:Name="talk_Text10" Margin="72,10,0,6.667" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" Visibility="Collapsed"><TextBlock.RenderTransform>
+				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="공격 타워 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="2"/><Run FontSize="13.3333333333333" Foreground="Black" Text="단계 업그레이드가 가능하네. "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="더 많은 연구가 이루어지면 다음 단계"/><Run FontSize="13.3333333333333" Foreground="Black" Text="를 할"/><Run FontSize="13.3333333333333" Foreground="Black" Text=" 수 있겠지."/></TextBlock>
+			<TextBlock x:Name="talk_Text10" Margin="72,10,0,6.667" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" d:IsHidden="True" Visibility="Collapsed"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
 						<RotateTransform/>
 						<TranslateTransform/>
 					</TransformGroup>
-				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="이제 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="3"/><Run FontSize="13.3333333333333" Foreground="Black" Text="단계 업그레이드가 "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="가능하네. "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="더 많은 연구가 이루어지면"/><Run FontSize="13.3333333333333" Foreground="Black" Text="."/><Run FontSize="13.3333333333333" Foreground="Black" Text=".."/></TextBlock>
+				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="이제 공격타워"/><Run FontSize="13.3333333333333" Foreground="Black" Text=" "/><Run FontSize="13.3333333333333" Foreground="Black" Text="3"/><Run FontSize="13.3333333333333" Foreground="Black" Text="단계 업그레이드가 가능하네. "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="더 많은 연구가 이루어지면"/><Run FontSize="13.3333333333333" Foreground="Black" Text="."/><Run FontSize="13.3333333333333" Foreground="Black" Text=".."/></TextBlock>
 			<Image x:Name="image4" Margin="0,10,0,12" Source="Resources/UI/KimHoRim_01.png" Stretch="Fill" HorizontalAlignment="Left" Width="74" RenderTransformOrigin="0.5,0.5">
 				<Image.RenderTransform>
 					<TransformGroup>
@@ -1878,7 +1948,7 @@
 				</Image.RenderTransform>
 			</Image>
 		</Grid>
-		<Grid x:Name="Talk_CoreAttack" Width="240" Height="96" Canvas.Left="208" Canvas.Top="-304" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+		<Grid x:Name="Talk_CoreAttack" Width="240" Height="96" Canvas.Left="368" Canvas.Top="-144" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
 			<Grid.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1887,7 +1957,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
-			<Path x:Name="path9" Fill="#CCECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="-48,-32,-60,-34" Data="M287,-342 C271,-321.33327 228.69207,-318.30793 216,-331 223.19353,-295.03234 183,-274.33313 152,-273 187.33333,-269.99979 225.00488,-211.97513 231,-181.99952 247,-202.33292 335,-224.66632 407,-197.99957 407.33333,-198.33291 432.13475,-246 498,-246 483.51665,-254.69001 443.15666,-302.31326 455,-325.99995 423,-317.99992 404,-310.83324 380,-341.99999 337.33333,-315.49992 287,-341.66667&#xd;&#xa;287,-342 z" RenderTransformOrigin="0.5,0.5">
+			<Path x:Name="path9" Fill="#D8ECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="-48,-32,-60,-34" Data="M287,-342 C271,-321.33327 228.69207,-318.30793 216,-331 223.19353,-295.03234 183,-274.33313 152,-273 187.33333,-269.99979 225.00488,-211.97513 231,-181.99952 247,-202.33292 335,-224.66632 407,-197.99957 407.33333,-198.33291 432.13475,-246 498,-246 483.51665,-254.69001 443.15666,-302.31326 455,-325.99995 423,-317.99992 404,-310.83324 380,-341.99999 337.33333,-315.49992 287,-341.66667&#xd;&#xa;287,-342 z" RenderTransformOrigin="0.5,0.5">
 				<Path.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -1897,7 +1967,7 @@
 					</TransformGroup>
 				</Path.RenderTransform>
 			</Path>
-			<TextBlock x:Name="talk_Text8" Margin="57,8.667,-16,16" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontSize="14.667" FontWeight="Bold"><TextBlock.RenderTransform>
+			<TextBlock x:Name="talk_Text8" Margin="57,8.667,-16,16" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontSize="14.667" FontWeight="Bold" Visibility="Collapsed"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
@@ -1906,7 +1976,7 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform><Run Foreground="Black" Text="업그레이드는 "/><Run Foreground="Black" Text="여기까지"/><Run Foreground="Black" Text="!!!"/><LineBreak/><Run Foreground="Black" Text="이제 나 김호림 박사의 "/><LineBreak/><Run Foreground="Black" Text="주말을 바친 "/><Run Foreground="Black" Text="                  을"/><LineBreak/><Run Foreground="Black" Text="쓸수"/><Run Foreground="Black" Text=" "/><Run Foreground="Black" Text="있"/><Run Foreground="Black" Text="다네"/><Run Foreground="Black" Text="!!!"/><LineBreak/><Run Foreground="Black" Text="으하하하하!!!"/></TextBlock>
 			<Image HorizontalAlignment="Left" Margin="-18,8,0,14" Width="74" Source="Resources/UI/KimHoRim_02.png" Stretch="Fill"/>
-			<TextBlock x:Name="talk_Text8_Copy" Margin="143,43,-6,21.667" Foreground="#FFB30B0B" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontSize="16" FontWeight="Bold" Text="코어 어택"><TextBlock.RenderTransform>
+			<TextBlock x:Name="talk_Text8_Copy" Margin="143,43,-6,21.667" Foreground="#FFB30B0B" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontSize="16" FontWeight="Bold" Text="코어 어택" Visibility="Collapsed"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
@@ -1914,6 +1984,24 @@
 						<TranslateTransform/>
 					</TransformGroup>
 				</TextBlock.RenderTransform></TextBlock>
+			<TextBlock x:Name="talk_Text8_Copy1" Margin="56,40.667,-15,24" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontSize="18.667" FontWeight="Bold" Visibility="Collapsed"><TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform><Run Foreground="Black" Text="자, 지금 여길 눌러 봐!!!"/><LineBreak/></TextBlock>
+			<Path x:Name="path10" Fill="#CCFF0000" Stretch="Fill" Margin="119.498,-8,88,0" VerticalAlignment="Top" Height="37.615" Data="M129,3 C125.39431,7.4485734 123.23533,10.470497 121,15.5 118.72481,20.619174 114.29289,23.5 128,23.5 131.02337,32.570099 119.64875,38.668296 138,37 142.08042,36.629053 140.5,33.302199 140.5,27.5 140.5,22.664448 142.06321,24.630617 149,24 153.06782,23.630198 150.55929,13.605902 144,6.5 136.87334,-1.2205463 141.41635,-2.4321527 129,3 z" Stroke="Black" StrokeThickness="4" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+				<Path.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Path.RenderTransform>
+			</Path>
 		</Grid>
 	</Canvas>
 </UserControl>
