@@ -381,6 +381,14 @@ namespace PlanetTerror
 				tower.stats[i].attackRangeSqr = tower.stats[i].attackRange * tower.stats[i].attackRange;
 			}
 			lab.rangeSqr = lab.range * lab.range;
+
+			for( int i = 0; i < waves.Count; ++i )
+			{
+				for( int j = 0; j < waves[i].bundles.Count; ++j )
+				{
+					waves[i].bundles[j].pathIndex--;
+				}
+			}
 		}
 	}
 
