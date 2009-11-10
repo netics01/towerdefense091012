@@ -16,7 +16,7 @@ using System.Windows.Threading;
 using System.Media;
 using NAudio.CoreAudioApi;
 using NAudio.Wave;
-//using Microsoft.DirectX.DirectSound;
+using IrrKlang;
 
 using PlanetTerror.Util;
 
@@ -39,13 +39,21 @@ namespace PlanetTerror
 
 			//===============================================================================================================================================
 			//	필드
-			const int MAX_BUFFER = 5;
-			WaveStream stream;
+			const int MAX_BUFFER = 4;
+			int playerIndex;
+			List<IWavePlayer> wavePlayers;
 
 			//-----------------------------------------------------------------------------------------------------------------------------------------------
 			//	생성자
 			public Sound(string source)
 			{
+				Source = source;
+				playerIndex = 0;
+				wavePlayers = new List<IWavePlayer>();
+				for( int i = 0; i < MAX_BUFFER; ++i )
+				{
+					CreatePlayer();
+				}
 			}
 
 			//===============================================================================================================================================
@@ -54,6 +62,8 @@ namespace PlanetTerror
 			//	연주한다.
 			public bool Play(double volume)
 			{
+				Play(wavePlayers[playerIndex], (float)volume);
+				playerIndex = (playerIndex + 1) % MAX_BUFFER;
 				return true;
 			}
 			//-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -62,9 +72,55 @@ namespace PlanetTerror
 			//===============================================================================================================================================
 			//	전용
 			//-----------------------------------------------------------------------------------------------------------------------------------------------
-			//	버퍼를 할당한다.
+			//	플레이어 생성
+			IWavePlayer CreatePlayer()
+			{
+				var p = CreateWaveOut();
+				var input = CreateInputStream();
+				p.Init(input);
+				p.PlaybackStopped +=new EventHandler(p_PlaybackStopped);
+				wavePlayers.Add(p);
+				return p;
+			}
+			void p_PlaybackStopped(object sender, EventArgs e)
+			{
+				Debug.Print("Stopped");
+			}
 			//-----------------------------------------------------------------------------------------------------------------------------------------------
-			//	연주한다.
+			//	스트림 생성
+			WaveChannel32 CreateInputStream()
+			{
+				WaveStream stream = new WaveFileReader(Source);
+				if( stream.WaveFormat.Encoding != WaveFormatEncoding.Pcm )
+				{
+					stream = WaveFormatConversionStream.CreatePcmStream(stream);
+					stream = new BlockAlignReductionStream(stream);
+				}
+				if( stream.WaveFormat.BitsPerSample != 16 )
+				{
+					var format = new WaveFormat(stream.WaveFormat.SampleRate, 16, stream.WaveFormat.Channels);
+					stream = new WaveFormatConversionStream(format, stream);
+				}
+				return new WaveChannel32(stream);
+			}
+			//-----------------------------------------------------------------------------------------------------------------------------------------------
+			//	장치 생성
+			static IWavePlayer CreateWaveOut()
+			{
+				return new WaveOut();
+				//return new WaveOut(WaveCallbackInfo.FunctionCallback());
+				//return new AsioOut();
+				//return new WasapiOut(AudioClientShareMode.Exclusive, 0);
+				//return new DirectSoundOut();
+			}
+			//-----------------------------------------------------------------------------------------------------------------------------------------------
+			//	연주
+			void Play(IWavePlayer player, float volume)
+			{
+				player.Stop();
+				player.Volume = (float)volume;
+				player.Play();
+			}
 		}
 
 		//===============================================================================================================================================
@@ -82,8 +138,8 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		MediaPlayer musicPlayer;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		IWavePlayer waveDevice;
 		Dictionary<string, Sound> sounds;
+		ISoundEngine engine;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -91,11 +147,6 @@ namespace PlanetTerror
 		{
 			musicPlayer = new MediaPlayer();
 			musicPlayer.MediaEnded += new EventHandler(musicPlayer_MediaEnded);
-
-			waveDevice = new WaveOut();
-			//waveDevice = new AsioOut();
-			//waveDevice = new WasapiOut(AudioClientShareMode.Exclusive, 0);
-			//waveDevice = new DirectSoundOut();
 			sounds = new Dictionary<string, Sound>();
 		}
 
@@ -106,42 +157,24 @@ namespace PlanetTerror
 		public bool Play(string soundPath, double volume)
 		{
 
-			try
-			{
-				WaveStream stream = new WaveFileReader(soundPath);
-				if( stream.WaveFormat.Encoding != WaveFormatEncoding.Pcm )
-				{
-					stream = WaveFormatConversionStream.CreatePcmStream(stream);
-					stream = new BlockAlignReductionStream(stream);
-				}
-				if( stream.WaveFormat.BitsPerSample != 16 )
-				{
-					var format = new WaveFormat(
-						stream.WaveFormat.SampleRate,
-					   16, stream.WaveFormat.Channels);
-					stream = new WaveFormatConversionStream(format, stream);
-				}
-				WaveChannel32 inputStream = new WaveChannel32(stream);
+			if( engine == null ) { engine = new ISoundEngine(); }
+			engine.Play2D(soundPath, false);
 
-				waveDevice.Init(inputStream);
-				waveDevice.Play();
-			}
-			catch( Exception e )
-			{
-				MessageBox.Show(e.Message);
-			}
 
 			return true;
 
-			Sound sound;
-			if( !sounds.TryGetValue(soundPath, out sound) )
+//			try
 			{
-				try { sound = new Sound(soundPath); }
-				catch( Exception ) { return false; }
-				sounds.Add(soundPath, sound);
+				Sound sound;
+				if( !sounds.TryGetValue(soundPath, out sound) )
+				{
+					sound = new Sound(soundPath);
+					sounds.Add(soundPath, sound);
+				}
+				return sound.Play(volume);
 			}
-			sound.Play(volume);
-			return true;
+//			catch(Exception e) { Debug.Print("{0}", e.Message); }
+			return false;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void Play(string soundPath) { Play(soundPath, 1); }
@@ -175,166 +208,4 @@ namespace PlanetTerror
 			musicPlayer.Play();
 		}
 	}
-
-
-/*
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	//	SoundMgr
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public class SoundMgr
-	{
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		//	Sound
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		class Sound
-		{
-			//===============================================================================================================================================
-			//	프로퍼티
-			public string Source { get; protected set; }
-
-			//===============================================================================================================================================
-			//	필드
-			const int MAX_BUFFER = 5;
-			Device soundDevice;
-			List<SecondaryBuffer> buffers;
-
-			//-----------------------------------------------------------------------------------------------------------------------------------------------
-			//	생성자
-			public Sound(Device soundDevice, string source)
-			{
-				Source = source;
-				this.soundDevice = soundDevice;
-				buffers = new List<SecondaryBuffer>();
-				buffers.Add(AllocateBuffer());
-			}
-
-			//===============================================================================================================================================
-			//	공용
-			//-----------------------------------------------------------------------------------------------------------------------------------------------
-			//	연주한다.
-			public bool Play(double volume)
-			{
-				int vol = (int)((1 - volume) * -10000);
-				for( int i = 0; i < buffers.Count; ++i )
-				{
-					if( !buffers[i].Status.Playing )
-					{
-						PlayBuffer(buffers[i], vol);
-						return true;
-					}
-				}
-				if( buffers.Count >= MAX_BUFFER ) { return false; }
-				var b = AllocateBuffer();
-				PlayBuffer(b, vol);
-				buffers.Add(b);
-				return true;
-			}
-			//-----------------------------------------------------------------------------------------------------------------------------------------------
-			public bool Play() { return Play(1); }
-
-			//===============================================================================================================================================
-			//	전용
-			//-----------------------------------------------------------------------------------------------------------------------------------------------
-			//	버퍼를 할당한다.
-			SecondaryBuffer AllocateBuffer()
-			{
-				var desc = new BufferDescription();
-				desc.ControlVolume = true;
-				return new SecondaryBuffer(Source, desc, soundDevice);
-			}
-			//-----------------------------------------------------------------------------------------------------------------------------------------------
-			//	연주한다.
-			void PlayBuffer(SecondaryBuffer buffer, int volume)
-			{
-				buffer.Volume = volume;
-				buffer.Play(0, BufferPlayFlags.Default);
-			}
-		}
-
-		//===============================================================================================================================================
-		//	프로퍼티
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		string music;
-		public string Music
-		{
-			get { return music; }
-			set { OnSetMusic(value); }
-		}
-
-		//===============================================================================================================================================
-		//	필드
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		MediaPlayer musicPlayer;
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		Device soundDevice;
-		Dictionary<string, Sound> sounds;
-
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	생성자
-		public SoundMgr()
-		{
-			musicPlayer = new MediaPlayer();
-			musicPlayer.MediaEnded += new EventHandler(musicPlayer_MediaEnded);
-			sounds = new Dictionary<string, Sound>();
-		}
-
-		//===============================================================================================================================================
-		//	공용
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	재생
-		public bool Play(string soundPath, double volume)
-		{
-			InitializeDirectSound();
-			Sound sound;
-			if( !sounds.TryGetValue(soundPath, out sound) )
-			{
-				try { sound = new Sound(soundDevice, soundPath); }
-				catch( Exception ) { return false; }
-				sounds.Add(soundPath, sound);
-			}
-			sound.Play(volume);
-			return true;
-		}
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		public void Play(string soundPath) { Play(soundPath, 1); }
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	구식 방법으로 사운드 재생
-		public void PlaySystem(string soundPath)
-		{
-			NativeMethods.PlaySound(soundPath, new System.IntPtr(), NativeMethods.PlaySoundFlags.SND_ASYNC|NativeMethods.PlaySoundFlags.SND_FILENAME);
-		}
-
-		//===============================================================================================================================================
-		//	전용
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	Music이 변경되면
-		protected void OnSetMusic(string value)
-		{
-			music = value;
-			musicPlayer.Stop();
-			if( value.Length > 0 )
-			{
-				musicPlayer.Open(new Uri(value, UriKind.Relative));
-				musicPlayer.Play();			
-			}
-		}
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	배경음악이 종료되면.
-		void musicPlayer_MediaEnded(object sender, EventArgs e)
-		{
-			//무한루핑
-			musicPlayer.Stop();
-			musicPlayer.Play();
-		}
-		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	DirectSound 초기화
-		private void InitializeDirectSound()
-		{
-			if( soundDevice != null ) { return; }
-			soundDevice = new Device();
-			soundDevice.SetCooperativeLevel(Game.MainWindow.GetHWND(), CooperativeLevel.Priority);
-		}
-
-	}
-*/
 }
