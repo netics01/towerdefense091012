@@ -164,7 +164,7 @@ namespace PlanetTerror
 		private void Create()
 		{
 			Debug.Assert( curBundle != null );
-			var pathIndex = (curBundle.pathIndex - 1) < Game.World.Routes.Count ? (curBundle.pathIndex - 1) : 0;
+			var pathIndex = curBundle.pathIndex < Game.World.Routes.Count ? curBundle.pathIndex : 0;
 			var path = Game.World.Routes[pathIndex];
 			switch( curBundle.typeName )
 			{
