@@ -1151,6 +1151,14 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="0.505"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="-2.495"/>
 			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="power_Progress" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="power_Progress" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Talk_UPGNotYet_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_UPGNotYet" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -1504,7 +1512,7 @@
 				</Canvas>
 			</Canvas>
 		</Canvas>
-		<ProgressBar x:Name="power_Progress" Width="256" Height="16" Canvas.Left="376" Canvas.Top="32" Style="{DynamicResource ProgressBarStyle1}"/>
+		<ProgressBar x:Name="power_Progress" Width="256" Height="16" Canvas.Left="376" Canvas.Top="32" Style="{DynamicResource ProgressBarStyle1}" Visibility="Collapsed"/>
 		<Button x:Name="Attack_Beam_Button" Width="128" Height="40" Content="Button" Canvas.Left="304" Canvas.Top="8" Style="{DynamicResource ButtonStyle1}" Visibility="Collapsed">
 			<Button.Resources>
 				<Style x:Key="ButtonFocusVisual">
@@ -1675,7 +1683,7 @@
 				</Style>
 			</Button.Resources>
 		</Button>
-		<Grid x:Name="Talk_NoMoneyTower" Width="184" Height="56" Canvas.Left="680" Canvas.Top="-88" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+		<Grid x:Name="Talk_NoMoneyTower" Width="184" Height="56" Canvas.Left="800" Canvas.Top="-72" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
 			<Grid.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1731,7 +1739,7 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform><Run Foreground="Black" Text="타워"/><Run Foreground="Black" Text=" 건설"/></TextBlock>
 		</Grid>
-		<Grid x:Name="Talk_NoMoneyLab" Width="184" Height="56" Canvas.Left="680" Canvas.Top="-88" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+		<Grid x:Name="Talk_NoMoneyLab" Width="184" Height="56" Canvas.Left="152" Canvas.Top="-72" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
 			<Grid.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1743,9 +1751,9 @@
 			<Path x:Name="path5" Fill="#CCECEADF" Stretch="Fill" Stroke="#EB1A1717" StrokeThickness="2" Margin="0,0,-32,-49" Data="M2.999999,1 L136,1 C137.10457,1.0000004 138,1.8954309 138,3.0000011 L138,64.833001 C138,65.937569 137.10457,66.833001 136,66.833001 L40.787083,66.833001 33.329439,74.547049 32.826958,66.833001 2.999999,66.833001 C1.8954304,66.833001 1,65.937569 1,64.833001 L1,3.0000011 C1,1.8954309 1.8954304,1.0000004 2.999999,1 z" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5">
 				<Path.RenderTransform>
 					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform/>
+						<ScaleTransform ScaleX="-1" ScaleY="1"/>
+						<SkewTransform AngleX="0" AngleY="0"/>
+						<RotateTransform Angle="0"/>
 						<TranslateTransform/>
 					</TransformGroup>
 				</Path.RenderTransform>
