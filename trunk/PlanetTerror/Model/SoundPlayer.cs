@@ -49,7 +49,7 @@ namespace PlanetTerror
 		{
 			musicPlayer = new MediaPlayer();
 			musicPlayer.MediaEnded += new EventHandler(musicPlayer_MediaEnded);
-			engine = new ISoundEngine();
+			engine = new ISoundEngine(SoundOutputDriver.AutoDetect, SoundEngineOptionFlag.PrintDebugInfoIntoDebugger);
 		}
 
 		//===============================================================================================================================================
@@ -58,7 +58,13 @@ namespace PlanetTerror
 		//	재생
 		public bool Play(string soundPath, double volume)
 		{
-			engine.Play2D(soundPath, false);
+			var sound = engine.Play2D(soundPath);
+			if( sound == null )
+			{
+				Debug.Print("No Sound File : {0}", soundPath);
+				return false;
+			}
+			sound.Volume = (float)volume;
 			return true;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
