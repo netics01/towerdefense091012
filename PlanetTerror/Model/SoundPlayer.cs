@@ -94,8 +94,8 @@ namespace PlanetTerror
 
 			//waveDevice = new WaveOut();
 			//waveDevice = new AsioOut();
-			waveDevice = new WasapiOut(AudioClientShareMode.Exclusive, 0);
-			//waveDevice = new DirectSoundOut();
+			//waveDevice = new WasapiOut(AudioClientShareMode.Exclusive, 0);
+			waveDevice = new DirectSoundOut();
 			sounds = new Dictionary<string, Sound>();
 		}
 
