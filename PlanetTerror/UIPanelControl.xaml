@@ -793,38 +793,45 @@
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route2_Path_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="route2_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="route2_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route3_Path_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="route3_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="route3_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route4_Path_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="route4_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="route4_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route5_Path_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="route5_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="route5_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route6_Path_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="route6_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="route6_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route7_Path_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="route7_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="route7_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route8_Path_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="route8_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="route8_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Upg1_Completed_Storyboard">
@@ -1892,7 +1899,7 @@
 						<RotateTransform/>
 						<TranslateTransform/>
 					</TransformGroup>
-				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="연구소를 설치하면 코어 에너지가 지속적으로 충전됩니다 ."/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="일정 시간마다  골드를 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="소모"/><Run FontSize="13.3333333333333" Foreground="Black" Text="합니다."/></TextBlock>
+				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="연구소를 설치하면 코어 에너지가 지속적으로 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="충전 된다네."/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="골드를 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="계속 쓰긴 하지만... 허허"/></TextBlock>
 			<TextBlock x:Name="talk_Text4_Copy1" Margin="37.495,1.667,2.5,0" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" VerticalAlignment="Top" Height="16" FontSize="13.333" FontWeight="Bold"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
