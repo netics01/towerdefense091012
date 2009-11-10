@@ -109,6 +109,17 @@ namespace PlanetTerror
 			lastGold = gold;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	업그레이드 가능?
+		public bool IsUpgradable(int level)
+		{
+			bool bUpgradable = upgradeLevel >= level;
+			if( !bUpgradable )
+			{
+//				Resources.FindStoryboard("")
+			}
+			return bUpgradable;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	돈 소모
 		public bool SpendGold(int requiredGold)
 		{
