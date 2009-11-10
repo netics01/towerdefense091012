@@ -122,8 +122,7 @@ namespace PlanetTerror
 			double lastValue = power_Progress.Value;
 			power_Progress.Value = power_Progress.Value + power;
 
-			if( power_Progress.Value == power_Progress.Maximum &&
-				upgradeLevel < 4)
+			if( power_Progress.Value == power_Progress.Maximum )
 			{
 				switch(upgradeLevel)
 				{
