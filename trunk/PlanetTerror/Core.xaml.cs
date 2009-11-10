@@ -103,6 +103,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Attack_Ready_Button_Click(object sender, RoutedEventArgs e)
 		{
+			Game.SoundMgr.Play("Sound/Core_Attack.wav");
 			vsm.SetState(ATTACK_GROUP, ATTACK_BEAM_STATE);
 		}
 
@@ -161,6 +162,7 @@ namespace PlanetTerror
 					vsm.SetState(HP0_STATE);
 					ring10_Story.Stop();
 					ring0_Story.Begin();
+					Game.SoundMgr.Play("Sound/Core_Boom.wav");
 				}
 				break;
 			case HP0_STATE:

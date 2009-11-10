@@ -81,7 +81,11 @@ namespace PlanetTerror
 			}
 			if( lastGold != gold )
 			{
-				if( lastGold < gold ) { goldGainStory.Begin(); }
+				if( lastGold < gold )
+				{
+					Game.SoundMgr.Play("Sound/Money_Increase.wav");
+					goldGainStory.Begin();
+				}
 				else
 				{
 					goldLostStory.Begin();
@@ -98,6 +102,7 @@ namespace PlanetTerror
 			if( requiredGold > gold )
 			{
 				noMoneyStory.Begin();
+				Game.SoundMgr.Play("Sound/Money_NoMoney.wav");
 				return false;
 			}
 

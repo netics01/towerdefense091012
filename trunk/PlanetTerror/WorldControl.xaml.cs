@@ -124,8 +124,6 @@ namespace PlanetTerror
 		//	적 생성
 		public void CreateEnemy<T>(PathGeometry path) where T : Enemy, new()
 		{
-			Game.SoundMgr.Play("Sound/Button_Tower.wav", 0.85);
-
 			var enemy = new T();
 			enemy.Initialize(path);
 			Canvas.SetZIndex(enemy, enemyLayer);

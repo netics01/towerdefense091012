@@ -127,19 +127,17 @@ namespace PlanetTerror
 		//	공용
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	재생
-		public void Play(string soundPath, double volume)
+		public bool Play(string soundPath, double volume)
 		{
 			Sound sound;
-			if( sounds.TryGetValue(soundPath, out sound) )
+			if( !sounds.TryGetValue(soundPath, out sound) )
 			{
-				sound.Play(volume);
-			}
-			else
-			{
-				sound = new Sound(soundDevice, soundPath);
+				try { sound = new Sound(soundDevice, soundPath); }
+				catch( Exception ) { return false; }
 				sounds.Add(soundPath, sound);
-				sound.Play(volume);
 			}
+			sound.Play(volume);
+			return true;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void Play(string soundPath) { Play(soundPath, 1); }
