@@ -791,64 +791,6 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas3" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:00.4000000" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:01.4000000" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:02" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:02.4000000" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:03.1000000" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas4" Storyboard.TargetProperty="(UIElement.Visibility)">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:00.4000000" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:01.4000000" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:02" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:02.4000000" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:03.1000000" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas3" Storyboard.TargetProperty="(UIElement.Opacity)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0.3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0.3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0.3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0.3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas4" Storyboard.TargetProperty="(UIElement.Opacity)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0.3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.2000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="0.3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0.3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0.3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route2_Path_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="route2_Path" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -1673,18 +1615,6 @@
 						</TransformGroup>
 					</Ellipse.RenderTransform>
 				</Ellipse>
-			</Canvas>
-			<Canvas x:Name="Warning_Enemy_Copy" Width="152" Height="104" Canvas.Top="454" Canvas.Left="352.5" IsHitTestVisible="False">
-				<Canvas x:Name="canvas3" Width="64" Height="32" Visibility="Collapsed">
-					<Path Fill="#4C000000" Stretch="Fill" Stroke="#CC000000" Width="142" Height="88.5" Data="M3.5,0.5 L138.5,0.5 C140.15685,0.5 141.5,1.8431473 141.5,3.5 L141.5,60.500001 C141.5,62.156854 140.15685,63.5 138.5,63.5 L112,63.5 112,69.250001 120,72.000001 122.5,88 112,76.249999 104,80 92.770833,63.5 3.5,63.5 C1.8431473,63.5 0.5,62.156854 0.5,60.500001 L0.5,3.5 C0.5,1.8431473 1.8431473,0.5 3.5,0.5 z"/>
-					<Rectangle Fill="#CC091116" Stroke="#FF2686C7" Width="136" Height="58" Canvas.Left="3" Canvas.Top="3" RadiusX="2" RadiusY="2"/>
-					<TextBlock Width="99.749" Height="32.681" FontFamily="Fonts/#kroeger 05_53" Foreground="#FF26C7B6" TextWrapping="Wrap" Canvas.Left="24" Canvas.Top="16" FontSize="24"><Run Text="!!"/><Run Text="경고"/><Run Text="!!"/></TextBlock>
-				</Canvas>
-				<Canvas x:Name="canvas4" Width="152" Height="72" Canvas.Left="224" Canvas.Top="8" Visibility="Collapsed">
-					<Rectangle Fill="#4C000000" Stroke="#CC000000" Width="104" Height="32" Canvas.Left="0" Canvas.Top="0" RadiusX="3" RadiusY="3"/>
-					<Rectangle Fill="#CC091116" Stroke="#FF2686C7" Width="100" Height="28" Canvas.Left="2" Canvas.Top="2" RadiusX="2" RadiusY="2"/>
-					<TextBlock Width="87.001" Height="16" FontFamily="Fonts/#kroeger 05_53" Foreground="#FF26C7B6" TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="8"><Run Text="!!"/><Run Text="적이 옵니다"/><Run Text="!!"/></TextBlock>
-				</Canvas>
 			</Canvas>
 		</Canvas>
 		<ProgressBar x:Name="power_Progress" Width="256" Height="16" Canvas.Left="384" Canvas.Top="7" Style="{DynamicResource ProgressBarStyle1}" Visibility="Collapsed"/>
