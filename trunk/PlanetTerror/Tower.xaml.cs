@@ -477,6 +477,7 @@ namespace PlanetTerror
 			p.Speed = Stat.projSpeed;
 
 			Game.World.AddProjectile(p);
+			Game.SoundMgr.Play(towerLevel >= 2 ? "Sound/Tower_Attack34.wav" : "Sound/Tower_Attack12.wav");
 
 			cooldownTime = Stat.attackCooldown;
 		}
