@@ -115,7 +115,8 @@ namespace PlanetTerror
 			bool bUpgradable = upgradeLevel >= level;
 			if( !bUpgradable )
 			{
-//				Resources.FindStoryboard("")
+				Game.SoundMgr.Play("Sound/Money_NoMoney.wav");
+				Resources.FindStoryboard("Upgrade_Not_Avaiable_Storyboard").Begin();
 			}
 			return bUpgradable;
 		}

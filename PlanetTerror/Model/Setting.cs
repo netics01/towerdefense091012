@@ -66,7 +66,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 28;
+		public const int VERSION = 27;
 
 		public int version;
 		public bool debugMode;
