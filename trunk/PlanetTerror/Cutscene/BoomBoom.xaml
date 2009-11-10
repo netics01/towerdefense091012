@@ -12,16 +12,18 @@
 	</UserControl.Resources>
 
 	<Canvas x:Name="LayoutRoot">
-		<Image Width="1024" Height="720" Canvas.Left="1" Canvas.Top="1" Source="/PlanetTerror;Component/Resources/Field/backgroundImage.png" Stretch="Fill"/>
 		<Path Stretch="Fill" Stroke="Black" Width="1024" Height="118" Data="M1013.5,171.5 L794.5,119.5 635.5,83.5 468.5,84.5 323.5,101.5 156.5,145.5 -9.5,200.5" Canvas.Left="3" Canvas.Top="80"/>
-		<Path Stretch="Fill" Stroke="Black" Width="1005.5" Height="102.5" Data="M1003,281 L764.5,205.5 593.5,182.5 391.5,179.5 193.5,214.5 -1.5,277.5" Canvas.Left="-1.5" Canvas.Top="179.5"/>
-		<Path Stretch="Fill" Stroke="Black" Width="1012.5" Height="285.5" Data="M1007,269 L850.5,379.5 627.5,336.5 331.5,363.5 221.5,393.5 268.5,476.5 139.5,553.5 -4.5,445.5" Canvas.Left="-4.5" Canvas.Top="269"/>
-		<Path Stretch="Fill" Stroke="Black" Width="608.5" Height="192" Data="M835,668 L717.5,542.5 530.5,480.5 361.5,520.5 267.5,590.5 227.5,671.5" Canvas.Left="227.5" Canvas.Top="480.5"/>
-		<Path Stretch="Fill" Stroke="Black" Width="173.5" Height="131.5" Data="M1022,506 L849.5,375.5" Canvas.Left="849.5" Canvas.Top="375.5"/>
-		<Path Stretch="Fill" Stroke="Black" Width="66.5" Height="154.5" Data="M691,183 L625.5,336.5" Canvas.Left="625.5" Canvas.Top="183"/>
-		<Path Stretch="Fill" Stroke="Black" Width="74.5" Height="192.5" Data="M351,48 L424.5,239.5" Canvas.Left="351" Canvas.Top="48"/>
-		<Path Stretch="Fill" Stroke="Black" Width="43.5" Height="85.5" Data="M814,117 L771.5,201.5" Canvas.Left="771.5" Canvas.Top="117"/>
-		<Path Stretch="Fill" Stroke="Black" Width="107.5" Height="123.5" Data="M97,353 L-9.5,230.5" Canvas.Left="-9.5" Canvas.Top="230.5"/>
-		<Path Stretch="Fill" Stroke="Black" Width="447.5" Height="173.5" Data="M426,239 L243.5,273.5 91.5,341.5 -20.5,411.5" Canvas.Left="-20.5" Canvas.Top="239"/>
+		<Path Stretch="Fill" Stroke="Black" Width="1052.5" Height="115" Data="M1041,192 L977.5,269.5 773.5,189.5 527.5,164.5 326.5,172.5 108.5,240.5 -10.5,278.5" Canvas.Left="-10.5" Canvas.Top="164.5"/>
+		<Path Stretch="Fill" Stroke="Black" Width="802.5" Height="111.5" Data="M1019,271 L845.5,369.5 620.5,329.5 217.5,381.5" Canvas.Left="217.5" Canvas.Top="271"/>
+		<Path Stretch="Fill" Stroke="Black" Width="253.5" Height="361.5" Data="M299,365 L253.5,474.5 148.5,539.5 46.5,725.5" Canvas.Left="46.5" Canvas.Top="365"/>
+		<Path Stretch="Fill" Stroke="Black" Width="135.5" Height="63.5" Data="M873,125 L738.5,187.5" Canvas.Left="738.5" Canvas.Top="125"/>
+		<Path Stretch="Fill" Stroke="Black" Width="149.5" Height="166.5" Data="M742,178 L593.5,343.5" Canvas.Left="593.5" Canvas.Top="178"/>
+		<Path Stretch="Fill" Stroke="Black" Width="65.5" Height="87.5" Data="M559,333 L494.5,419.5" Canvas.Left="494.5" Canvas.Top="333"/>
+		<Path Stretch="Fill" Stroke="Black" Width="98.5" Height="104.5" Data="M575,406 L477.5,509.5" Canvas.Left="477.5" Canvas.Top="406"/>
+		<Path Stretch="Fill" Stroke="Black" Width="580.5" Height="83" Data="M862,489 L741.5,567.5 511.5,486.5 282.5,568.5" Canvas.Left="282.5" Canvas.Top="486.5"/>
+		<Path Stretch="Fill" Stroke="Black" Width="166.5" Height="104.5" Data="M158,541 L-7.5,437.5" Canvas.Left="-7.5" Canvas.Top="437.5"/>
+		<Path Stretch="Fill" Stroke="Black" Width="450.5" Height="169.5" Data="M436,243 L251.5,278.5 28.5,378.5 -13.5,411.5" Canvas.Left="-13.5" Canvas.Top="243"/>
+		<Path Stretch="Fill" Stroke="Black" Width="137.5" Height="195.5" Data="M455,249 L318.5,54.5" Canvas.Left="318.5" Canvas.Top="54.5"/>
+		<Path Stretch="Fill" Stroke="Black" Width="196.5" Height="150.5" Data="M1031,516 L835.5,366.5" Canvas.Left="835.5" Canvas.Top="366.5"/>
 	</Canvas>
 </UserControl>

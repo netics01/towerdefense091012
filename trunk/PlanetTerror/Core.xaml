@@ -22052,8 +22052,9 @@
 							<SplineDoubleKeyFrame KeyTime="00:00:01.2030000" Value="-42.972"/>
 						</DoubleAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="boomBoom" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00.1400000" Value="{x:Static Visibility.Collapsed}"/>
-							<DiscreteObjectKeyFrame KeyTime="00:00:00.3400000" Value="{x:Static Visibility.Visible}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000" Value="{x:Static Visibility.Visible}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:15" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:01.7630000" Value="{x:Static Visibility.Visible}"/>
