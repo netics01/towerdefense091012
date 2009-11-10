@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 using PlanetTerror.Util;
 
@@ -57,6 +58,11 @@ namespace PlanetTerror
 		void MainWindow_Loaded(object sender, RoutedEventArgs e)
 		{
 			if( this.IsInDesignMode() ) { return; }
+
+			if( !Debugger.IsAttached )
+			{
+				Application.Current.DispatcherUnhandledException += new System.Windows.Threading.DispatcherUnhandledExceptionEventHandler(Application_DispatcherUnhandledException);
+			}			
 
 			Game.SoundMgr = new SoundMgr();
 			pump.Begin();
@@ -106,26 +112,24 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void pump_Update(float delta)
 		{
-			try
+			if( !bGameStart )
 			{
-				if( !bGameStart )
+				if( !cutscene.Active )
 				{
-					if( !cutscene.Active )
-					{
-						bGameStart = true;
-						Game.SoundMgr.Music = "Sound/Music/Background.mp3";
-					}
+					bGameStart = true;
+					Game.SoundMgr.Music = "Sound/Music/Background.mp3";
 				}
-				if( cutscene.Active ) { return; }
+			}
+			if( cutscene.Active ) { return; }
 
-				world.Update(delta);
-				ui_Panel.Update(delta);
-				debug_Panel.Update(delta);
-			}
-			catch( Exception e )
-			{
-				MessageBox.Show(e.Message);
-			}
+			world.Update(delta);
+			ui_Panel.Update(delta);
+			debug_Panel.Update(delta);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		void Application_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
+		{
+			MessageBox.Show(e.Exception.StackTrace, e.Exception.Message);
 		}
 
 		//===============================================================================================================================================

@@ -41,6 +41,7 @@
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>true</UseVSHostingProcess>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -51,6 +52,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="irrKlang.NET2.0, Version=1.1.3.0, Culture=neutral, PublicKeyToken=a854741bd80517c7, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\irrKlang.NET2.0.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Expression.Interactions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
     <Reference Include="NAudio, Version=1.3.8.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
