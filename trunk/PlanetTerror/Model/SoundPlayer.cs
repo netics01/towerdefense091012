@@ -117,6 +117,7 @@ namespace PlanetTerror
 		public SoundMgr()
 		{
 			musicPlayer = new MediaPlayer();
+			musicPlayer.MediaEnded += new EventHandler(musicPlayer_MediaEnded);
 			sounds = new Dictionary<string, Sound>();
 
 			soundDevice = new Device();
@@ -161,6 +162,14 @@ namespace PlanetTerror
 				musicPlayer.Open(new Uri(value, UriKind.Relative));
 				musicPlayer.Play();			
 			}
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	배경음악이 종료되면.
+		void musicPlayer_MediaEnded(object sender, EventArgs e)
+		{
+			//무한루핑
+			musicPlayer.Stop();
+			musicPlayer.Play();
 		}
 	}
 }
