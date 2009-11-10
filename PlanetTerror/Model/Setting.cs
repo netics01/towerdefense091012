@@ -30,29 +30,24 @@ using PlanetTerror.Util;
 
 //----작업----
 
+//연구소 비활성화 상태를 만든다.
 
 
-//돈이 없습니다. 표시해준다.
-//타워 업그레이드
-//합체
-//타워 방향 돌아가기
-//포탄 발사할때 이펙트
-//다양한 발사체
-//웨이브 기술
-//보스 처리
-
-
-
-
-
-//----이따가----
-//하늘 흘러가기
+//보스를 만든다.
+//웨이브 경로 예고를 만든다.
+//첫 타워 빌드시 알림
+//첫 연구소 빌드시 알림
+//엔딩 연결
 //배경음악
 //효과음
-//에네미 풀링
-//폰트 배포
-//
+//발사체 모양 다듬는다.
+//게임플레이를 다듬는다.
 
+
+
+//이지/하드모드?
+//웨이브 경로를 랜덤으로?
+//마지막 웨이브는 모든 경로로?
 
 
 
@@ -77,7 +72,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 24;
+		public const int VERSION = 26;
 
 		public int version;
 		public bool debugMode;
@@ -96,7 +91,7 @@ namespace PlanetTerror
 		{
 			public int towerCost;
 			public int labCost;
-			public int dismantleCost;
+			public int dismantleGain;
 			public double labPower;
 			public double centerX;
 			public double centerY;
@@ -110,7 +105,7 @@ namespace PlanetTerror
 				public double projSpeed;
 				public double turretRotSpeed;
 				public int upgCost;
-				public int dismantleCost;
+				public int dismantleGain;
 			}
 			public List<Stat> stats;
 		}
@@ -211,17 +206,17 @@ namespace PlanetTerror
 			startGold = 1000;
 			powerMax = 100;
 
-			gold.interval = 30;
-			gold.mineGold = 5;
+			gold.interval = 5;
+			gold.mineGold = 1;
 			gold.labGold = -5;
 
 			tower.towerCost = 50;
 			tower.labCost = 200;
-			tower.dismantleCost = -30;
+			tower.dismantleGain = -30;
 			tower.labPower = 0.5;
 			tower.centerX = 38;
 			tower.centerY = 8;
-			tower.barrelLength = 25;
+			tower.barrelLength = 26;
 
 			tower.stats = new List<Tower.Stat>();
 			tower.stats.Add(new Tower.Stat());
@@ -232,34 +227,34 @@ namespace PlanetTerror
 			tower.stats[0].attackRange = 130;
 			tower.stats[0].attackCooldown = 1;
 			tower.stats[0].attackDamage = 10;			
-			tower.stats[0].projSpeed = 100;
+			tower.stats[0].projSpeed = 200;
 			tower.stats[0].turretRotSpeed = 150;
 			tower.stats[0].upgCost = 150;
-			tower.stats[0].dismantleCost = -50;
+			tower.stats[0].dismantleGain = 40;
 
 			tower.stats[1].attackRange = 130;
 			tower.stats[1].attackCooldown = 0.9;
-			tower.stats[1].attackDamage = 15;			
-			tower.stats[1].projSpeed = 100;
+			tower.stats[1].attackDamage = 20;			
+			tower.stats[1].projSpeed = 200;
 			tower.stats[1].turretRotSpeed = 170;
 			tower.stats[1].upgCost = 200;
-			tower.stats[1].dismantleCost = -200;
+			tower.stats[1].dismantleGain = 170;
 
 			tower.stats[2].attackRange = 180;
-			tower.stats[2].attackCooldown = 0.8;
-			tower.stats[2].attackDamage = 20;			
-			tower.stats[2].projSpeed = 110;
-			tower.stats[2].turretRotSpeed = 190;
+			tower.stats[2].attackCooldown = 0.5;
+			tower.stats[2].attackDamage = 25;			
+			tower.stats[2].projSpeed = 240;
+			tower.stats[2].turretRotSpeed = 200;
 			tower.stats[2].upgCost = 300;
-			tower.stats[2].dismantleCost = -400;
+			tower.stats[2].dismantleGain = 300;
 
 			tower.stats[3].attackRange = 180;
-			tower.stats[3].attackCooldown = 0.5;
-			tower.stats[3].attackDamage = 25;			
-			tower.stats[3].projSpeed = 120;
+			tower.stats[3].attackCooldown = 1.2;
+			tower.stats[3].attackDamage = 100;			
+			tower.stats[3].projSpeed = 250;
 			tower.stats[3].turretRotSpeed = 210;
 			tower.stats[3].upgCost = 1000;
-			tower.stats[3].dismantleCost = -500;
+			tower.stats[3].dismantleGain = 400;
 
 			core.hitPoint = 100;
 			core.warningBefore = 5;
@@ -386,6 +381,6 @@ namespace PlanetTerror
 		public static UIPanelControl UI;
 		public static MainWindow MainWindow;
 		public static WaveGenerator Generator;
-		public static SoundPlayer SoundPlayer;
+		public static SoundMgr SoundMgr;
 	}
 }
