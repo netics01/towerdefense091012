@@ -66,7 +66,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 30;
+		public const int VERSION = 31;
 
 		public int version;
 		public bool debugMode;
@@ -77,6 +77,7 @@ namespace PlanetTerror
 		{
 			public double interval;
 			public int mineGold;
+			public int towerGold;
 			public int labGold;
 		}
 		public Gold gold;
@@ -212,6 +213,7 @@ namespace PlanetTerror
 
 			gold.interval = 5;
 			gold.mineGold = 2;
+			gold.towerGold = -2;
 			gold.labGold = -5;
 
 			tower.buildCost = 50;
