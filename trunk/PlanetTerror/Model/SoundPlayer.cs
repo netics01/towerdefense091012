@@ -92,10 +92,10 @@ namespace PlanetTerror
 			musicPlayer = new MediaPlayer();
 			musicPlayer.MediaEnded += new EventHandler(musicPlayer_MediaEnded);
 
-			//waveDevice = new WaveOut();
+			waveDevice = new WaveOut();
 			//waveDevice = new AsioOut();
 			//waveDevice = new WasapiOut(AudioClientShareMode.Exclusive, 0);
-			waveDevice = new DirectSoundOut();
+			//waveDevice = new DirectSoundOut();
 			sounds = new Dictionary<string, Sound>();
 		}
 
