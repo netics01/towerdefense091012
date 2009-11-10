@@ -119,9 +119,6 @@ namespace PlanetTerror
 			musicPlayer = new MediaPlayer();
 			musicPlayer.MediaEnded += new EventHandler(musicPlayer_MediaEnded);
 			sounds = new Dictionary<string, Sound>();
-
-			soundDevice = new Device();
-			soundDevice.SetCooperativeLevel(Game.MainWindow.GetHWND(), CooperativeLevel.Priority);
 		}
 
 		//===============================================================================================================================================
@@ -130,6 +127,7 @@ namespace PlanetTerror
 		//	재생
 		public bool Play(string soundPath, double volume)
 		{
+			InitializeDirectSound();
 			Sound sound;
 			if( !sounds.TryGetValue(soundPath, out sound) )
 			{
@@ -171,5 +169,14 @@ namespace PlanetTerror
 			musicPlayer.Stop();
 			musicPlayer.Play();
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	DirectSound 초기화
+		private void InitializeDirectSound()
+		{
+			if( soundDevice != null ) { return; }
+			soundDevice = new Device();
+			soundDevice.SetCooperativeLevel(Game.MainWindow.GetHWND(), CooperativeLevel.Priority);
+		}
+
 	}
 }
