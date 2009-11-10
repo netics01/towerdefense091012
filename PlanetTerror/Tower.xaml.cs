@@ -190,7 +190,7 @@ namespace PlanetTerror
 				return;
 			}
 
-			Game.SoundMgr.Play("Sound/Button_Tower.wav", 0.85);
+			Game.SoundMgr.Play("Sound/Tower_Build.wav", 0.85);
 
 			towerLevel = 0;
 			bDismantling = false;
@@ -206,7 +206,7 @@ namespace PlanetTerror
 				return;
 			}
 
-			Game.SoundMgr.Play("Sound/Button_Tower.wav", 0.85);
+			Game.SoundMgr.Play("Sound/Tower_Upgrade.wav", 0.85);
 
 			effectStories[towerLevel].Stop();
 			towerLevel++;
@@ -231,7 +231,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Dismantle_Button_Click(object sender, RoutedEventArgs e)
 		{
-			Game.SoundMgr.Play("Sound/Button_Tower.wav", 0.85);
+			Game.SoundMgr.Play("Sound/Tower_Dismantle.wav", 0.85);
 
 			int gold = Game.Setting.tower.dismantleGain;
 			if( vsm.GetState() != LAB_BUILT_STATE )
@@ -268,7 +268,7 @@ namespace PlanetTerror
 				return;
 			}
 
-			Game.SoundMgr.Play("Sound/Button_Tower.wav", 0.85);
+			Game.SoundMgr.Play("Sound/Tower_Build.wav", 0.85);
 
 			bDismantling = false;
 			notYetBuiltStory.Stop();
