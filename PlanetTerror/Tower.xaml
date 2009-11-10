@@ -226,6 +226,9 @@
 			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="color_change" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
 				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF9A1F1F"/>
 			</ColorAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="canvas3" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Lab_Tower_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="turrettower" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -1454,6 +1457,9 @@
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="Turret" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.356"/>
 			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="canvas3" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Upg2_Tower_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="notYetBuild_Canvas" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -1980,6 +1986,9 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="20"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:08" Value="20"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:10" Value="20"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.753"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Upg3_Tower_Storyboard">
@@ -2570,6 +2579,18 @@
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle_Copy1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Duration="00:00:00.0010000">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-2.362"/>
 			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.8"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.082"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF00DFFF"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#004700FF"/>
+			</ColorAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Upg_Effect_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="color_change_UPGeff" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -2610,12 +2631,18 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1.359"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1.189"/>
 			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 				<Storyboard x:Key="Upg1_Attach_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_1" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Upg2_Attach_Storyboard">
@@ -3114,7 +3141,35 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.5"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
+		<Storyboard x:Key="Lab_Inactive_Tower_Storyboard">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="labtower" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="turrettower" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="eye" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="canvas2" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="{StaticResource Enemy_lrgStroke}"/>
+			</ColorAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
 	</UserControl.Resources>
+	<UserControl.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource Lab_Inactive_Tower_Storyboard}"/>
+		</EventTrigger>
+	</UserControl.Triggers>
 
 	<Canvas x:Name="LayoutRoot" Cursor="Hand">
 		<VisualStateManager.VisualStateGroups>
@@ -3387,6 +3442,9 @@
 							<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0" KeySpline="0.5,0,1,1"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
 						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Build_Tower_Dismantle_State">
@@ -3550,6 +3608,9 @@
 							<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:00.8200000" Value="0"/>
 						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+						</ObjectAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Build_Lab_Built_State">
@@ -4857,6 +4918,23 @@
 						</TransformGroup>
 					</Ellipse.RenderTransform>
 				</Ellipse>
+				<Ellipse x:Name="ellipse2" Stroke="Black" StrokeThickness="0" Width="91.696" Height="99.198" Canvas.Left="-26.135" Canvas.Top="-42.777" RenderTransformOrigin="0.5,0.5">
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+					<Ellipse.Fill>
+						<RadialGradientBrush>
+							<GradientStop Color="#00000000" Offset="0.532"/>
+							<GradientStop Color="#FFFFA200" Offset="0.753"/>
+							<GradientStop Offset="1" Color="#00FF5B00"/>
+						</RadialGradientBrush>
+					</Ellipse.Fill>
+				</Ellipse>
 			</Canvas>
 			<Image x:Name="top" Source="Resources/Tower/TowerA0_Top.png" Width="46.25" Height="46.25" RenderTransformOrigin="0.5,0.5" Canvas.Left="18.521" Canvas.Top="-1">
 				<Image.RenderTransform>
@@ -4898,7 +4976,7 @@
 				</Ellipse.RenderTransform>
 			</Ellipse>
 		</Canvas>
-		<Canvas x:Name="labtower" Width="70.833" Height="67" Canvas.Left="-4.5" Canvas.Top="-12.5" RenderTransformOrigin="0.5,0.5" d:IsHidden="True">
+		<Canvas x:Name="labtower" Width="70.833" Height="67" Canvas.Left="-4.5" Canvas.Top="-12.5" RenderTransformOrigin="0.5,0.5">
 			<Canvas.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
