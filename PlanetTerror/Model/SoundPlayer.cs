@@ -106,24 +106,30 @@ namespace PlanetTerror
 		public bool Play(string soundPath, double volume)
 		{
 
-			WaveStream stream = new WaveFileReader(soundPath);
-			if( stream.WaveFormat.Encoding != WaveFormatEncoding.Pcm )
+			try
 			{
-				stream = WaveFormatConversionStream.CreatePcmStream(stream);
-				stream = new BlockAlignReductionStream(stream);
+				WaveStream stream = new WaveFileReader(soundPath);
+				if( stream.WaveFormat.Encoding != WaveFormatEncoding.Pcm )
+				{
+					stream = WaveFormatConversionStream.CreatePcmStream(stream);
+					stream = new BlockAlignReductionStream(stream);
+				}
+				if( stream.WaveFormat.BitsPerSample != 16 )
+				{
+					var format = new WaveFormat(
+						stream.WaveFormat.SampleRate,
+					   16, stream.WaveFormat.Channels);
+					stream = new WaveFormatConversionStream(format, stream);
+				}
+				WaveChannel32 inputStream = new WaveChannel32(stream);
+
+				waveDevice.Init(inputStream);
+				waveDevice.Play();
 			}
-			if( stream.WaveFormat.BitsPerSample != 16 )
+			catch( Exception e )
 			{
-				var format = new WaveFormat(
-					stream.WaveFormat.SampleRate,
-				   16, stream.WaveFormat.Channels);
-				stream = new WaveFormatConversionStream(format, stream);
+				MessageBox.Show(e.Message);
 			}
-			WaveChannel32 inputStream = new WaveChannel32(stream);
-
-			waveDevice.Init(inputStream);
-			waveDevice.Play();
-
 
 			return true;
 

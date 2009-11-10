@@ -106,19 +106,26 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void pump_Update(float delta)
 		{
-			if( !bGameStart )
+			try
 			{
-				if( !cutscene.Active )
+				if( !bGameStart )
 				{
-					bGameStart = true;
-					Game.SoundMgr.Music = "Sound/Music/Background.mp3";
+					if( !cutscene.Active )
+					{
+						bGameStart = true;
+						Game.SoundMgr.Music = "Sound/Music/Background.mp3";
+					}
 				}
-			}
-			if( cutscene.Active ) { return; }
+				if( cutscene.Active ) { return; }
 
-			world.Update(delta);
-			ui_Panel.Update(delta);
-			debug_Panel.Update(delta);
+				world.Update(delta);
+				ui_Panel.Update(delta);
+				debug_Panel.Update(delta);
+			}
+			catch( Exception e )
+			{
+				MessageBox.Show(e.Message);
+			}
 		}
 
 		//===============================================================================================================================================
