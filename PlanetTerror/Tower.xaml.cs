@@ -184,13 +184,14 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Build_Button_Click(object sender, RoutedEventArgs e)
 		{
-			Game.SoundMgr.Play("Sound/Button_Tower.wav");
-
 			int gold = Game.Setting.tower.towerCost;
 			if( !Game.UI.SpendGold(gold) )
 			{
 				return;
 			}
+
+			Game.SoundMgr.Play("Sound/Button_Tower.wav", 0.85);
+
 			towerLevel = 0;
 			bDismantling = false;
 			notYetBuiltStory.Stop();
@@ -200,12 +201,12 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Upgrade_Button_Click(object sender, RoutedEventArgs e)
 		{
-			Game.SoundMgr.Play("Sound/Button_Tower.wav");
-
 			if( !Game.UI.SpendGold(Stat.upgCost) )
 			{
 				return;
 			}
+
+			Game.SoundMgr.Play("Sound/Button_Tower.wav", 0.85);
 
 			effectStories[towerLevel].Stop();
 			towerLevel++;
@@ -230,7 +231,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Dismantle_Button_Click(object sender, RoutedEventArgs e)
 		{
-			Game.SoundMgr.Play("Sound/Button_Tower.wav");
+			Game.SoundMgr.Play("Sound/Button_Tower.wav", 0.85);
 
 			int gold = Game.Setting.tower.dismantleGain;
 			if( vsm.GetState() != LAB_BUILT_STATE )
@@ -261,13 +262,14 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Lab_Button_Click(object sender, RoutedEventArgs e)
 		{
-			Game.SoundMgr.Play("Sound/Button_Tower.wav");
-
 			int gold = Game.Setting.tower.labCost;
 			if( !Game.UI.SpendGold(gold) )
 			{
 				return;
 			}
+
+			Game.SoundMgr.Play("Sound/Button_Tower.wav", 0.85);
+
 			bDismantling = false;
 			notYetBuiltStory.Stop();
 			vsm.SetState(LAB_BUILT_STATE);

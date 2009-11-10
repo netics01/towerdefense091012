@@ -444,5 +444,11 @@ namespace PlanetTerror.Util
 			window.WindowStyle = style;
 			window.ResizeMode = resize;
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	핸들을 얻는다.
+		public static IntPtr GetHWND(this Window window)
+		{
+			return new System.Windows.Interop.WindowInteropHelper(window).Handle;
+		}
 	}
 }
