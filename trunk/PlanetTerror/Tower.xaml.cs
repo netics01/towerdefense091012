@@ -145,7 +145,7 @@ namespace PlanetTerror
 			case TOWER_BUILT_STATE:
 				if( vsm.GetStateFinished() )
 				{
-					Menu_Dismantle_Button.Content = Stat.dismantleCost;
+					Menu_Dismantle_Button.Content = "+" + Stat.dismantleGain.ToString();
 					switch( towerLevel )
 					{
 					case 0:
@@ -166,7 +166,7 @@ namespace PlanetTerror
 			case LAB_BUILT_STATE:
 				if( vsm.GetStateFinished() )
 				{
-					Menu_Dismantle_Button.Content = Game.Setting.tower.dismantleCost;
+					Menu_Dismantle_Button.Content = Game.Setting.tower.dismantleGain;
 					vsm.SetState(MENU_GROUP, MENU_DISMANTLE_STATE);
 				}
 				break;
@@ -184,7 +184,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Build_Button_Click(object sender, RoutedEventArgs e)
 		{
-			Game.SoundPlayer.Play("Sound/Button_Tower.wav");
+			Game.SoundMgr.Play("Sound/Button_Tower.wav");
 
 			int gold = Game.Setting.tower.towerCost;
 			if( !Game.UI.SpendGold(gold) )
@@ -200,7 +200,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Upgrade_Button_Click(object sender, RoutedEventArgs e)
 		{
-			Game.SoundPlayer.Play("Sound/Button_Tower.wav");
+			Game.SoundMgr.Play("Sound/Button_Tower.wav");
 
 			if( !Game.UI.SpendGold(Stat.upgCost) )
 			{
@@ -230,17 +230,14 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Dismantle_Button_Click(object sender, RoutedEventArgs e)
 		{
-			Game.SoundPlayer.Play("Sound/Button_Tower.wav");
+			Game.SoundMgr.Play("Sound/Button_Tower.wav");
 
-			int gold = Game.Setting.tower.dismantleCost;
+			int gold = Game.Setting.tower.dismantleGain;
 			if( vsm.GetState() != LAB_BUILT_STATE )
 			{
-				gold = Stat.dismantleCost;
+				gold = Stat.dismantleGain;
 			}
-			if( !Game.UI.SpendGold(gold) )
-			{
-				return;
-			}
+			Game.UI.GainGold(gold);
 			bDismantling = true;
 			effectStories[0].Stop();
 			labStory.Stop();
@@ -264,7 +261,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Lab_Button_Click(object sender, RoutedEventArgs e)
 		{
-			Game.SoundPlayer.Play("Sound/Button_Tower.wav");
+			Game.SoundMgr.Play("Sound/Button_Tower.wav");
 
 			int gold = Game.Setting.tower.labCost;
 			if( !Game.UI.SpendGold(gold) )
@@ -344,11 +341,15 @@ namespace PlanetTerror
 				if( target != null )
 				{
 					var dir = target.Pos - towerCenter;
-					targetAngle = NumberH.ToDegree(dir.Angle());
+					targetAngle = NumberH.ToDegree(dir.Angle());			//[-180, 180]
 
 					var transformGroup = Turret.RenderTransform as TransformGroup;
 					var rotTransform = transformGroup.Children[2] as RotateTransform;
-					var curAngle = rotTransform.Angle;
+					var curAngle = NumberH.ClampAngle180To180(rotTransform.Angle);
+
+					if( targetAngle - curAngle > 180 ) { targetAngle -= 360; }
+					else if( curAngle - targetAngle > 180 ) { curAngle -= 360; }
+
 					var maxAngleChange = stat.turretRotSpeed * delta;
 					if( Math.Abs(targetAngle - curAngle) < maxAngleChange )
 					{

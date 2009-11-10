@@ -33,7 +33,7 @@ namespace PlanetTerror.Util
 			return new Point(v.X, v.Y);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	각도 획득
+		//	각도 획득. [-PI, PI]
 		public static double Angle(this Vector v)
 		{
 			return Math.Atan2(v.Y, v.X);

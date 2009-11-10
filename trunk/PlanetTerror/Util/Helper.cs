@@ -140,6 +140,38 @@ namespace PlanetTerror.Util
 		{
 			return radian * 180 / Math.PI;
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	각도를 [-Pi, Pi] 범위로 만든다.
+		public static double ClampAnglePiToPi(double radian)
+		{
+			while( radian < -Math.PI ) { radian += 2 * Math.PI; }
+			while( Math.PI < radian ) { radian -= 2 * Math.PI; }
+			return radian;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	각도를 [0, 2*Pi] 범위로 만든다.
+		public static double ClampAngle0To2Pi(double radian)
+		{
+			while( radian < 0 ) { radian += 2 * Math.PI; }
+			while( 2 * Math.PI < radian ) { radian -= 2 * Math.PI; }
+			return radian;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	각도를 [-180, 180] 범위로 만든다.
+		public static double ClampAngle180To180(double degree)
+		{
+			while( degree < -180 ) { degree += 360; }
+			while( 180 < degree ) {	degree -= 360; }
+			return degree;
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	각도를 [0, 360] 범위로 만든다.
+		public static double ClampAngle0To360(double degree)
+		{
+			while( degree < 0 ) { degree += 360; }
+			while( 360 < degree ) { degree -= 360; }
+			return degree;
+		}
 	}
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

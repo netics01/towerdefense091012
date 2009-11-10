@@ -42,7 +42,7 @@ namespace PlanetTerror
 			Game.MainWindow = this;
 			Game.UI = ui_Panel;
 			Game.World = world;
-			Game.SoundPlayer = new SoundPlayer();
+			Game.SoundMgr = new SoundMgr();
 
 			pump = new UpdatePump();
 			pump.Update += new UpdatePump.UpdateHandler(pump_Update);
@@ -109,7 +109,7 @@ namespace PlanetTerror
 				if( !cutscene.Active )
 				{
 					bGameStart = true;
-					Game.SoundPlayer.Music = "Sound/Music/Background.mp3";
+					Game.SoundMgr.Music = "Sound/Music/Background.mp3";
 				}
 			}
 			if( cutscene.Active ) { return; }

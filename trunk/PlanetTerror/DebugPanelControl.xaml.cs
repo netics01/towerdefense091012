@@ -87,7 +87,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void wave_Button_Click(object sender, RoutedEventArgs e)
 		{
-			
+			Game.Generator.WaveTimeLeft = 0.1;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void bossTest1_Button_Click(object sender, RoutedEventArgs e)
