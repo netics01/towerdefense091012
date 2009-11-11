@@ -130,6 +130,11 @@ namespace PlanetTerror
 			world.Update(delta);
 			ui_Panel.Update(delta);
 			debug_Panel.Update(delta);
+
+			if( Game.World.core.Boomed )
+			{
+				cutscene.RunGameOver();
+			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Application_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
