@@ -749,6 +749,86 @@
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="GameOver" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock10" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-8.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock10" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock10" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.515"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.443"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock10" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-38.5"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-38.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock10" Storyboard.TargetProperty="(Block.TextAlignment)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static TextAlignment.Center}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock10" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="2.537"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock11" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="68.5"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="68.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock11" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-21.5"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-21.5"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-21.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock11" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.019"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.115"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1.019"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock11" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.638"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.638"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock11" Storyboard.TargetProperty="(Block.TextAlignment)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static TextAlignment.Center}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock11" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Block.TextAlignment)" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock11">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static TextAlignment.Center}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_ReStart" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_ReStart" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="39"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="39"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="45"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_ReStart" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Menu_ReStart" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="1.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="83"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="83"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-88"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-88"/>
+						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Ending_State">
@@ -957,33 +1037,93 @@
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="GameLoading" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock8" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-							<DiscreteObjectKeyFrame KeyTime="00:00:02.2000000" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock8" Storyboard.TargetProperty="(UIElement.Opacity)">
-							<SplineDoubleKeyFrame KeyTime="00:00:02.2000000" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
-						</DoubleAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock9" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:02.4000000" Value="{x:Static Visibility.Visible}"/>
-							<DiscreteObjectKeyFrame KeyTime="00:00:02.5000000" Value="{x:Static Visibility.Visible}"/>
-							<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Visible}"/>
-							<DiscreteObjectKeyFrame KeyTime="00:00:05.1000000" Value="{x:Static Visibility.Visible}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:00.9000000" Value="{x:Static Visibility.Visible}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock9" Storyboard.TargetProperty="(UIElement.Opacity)">
-							<SplineDoubleKeyFrame KeyTime="00:00:02.4000000" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:05.1000000" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(FrameworkElement.Width)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="10"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="380"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:03" Value="390"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="550"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="560"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:05.1000000" Value="972"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="83"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="83"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="131"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="131"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="251"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="251"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="396"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="580"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:03" Value="580"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:03.3000000" Value="679"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:03.4000000" Value="679"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:03.6000000" Value="777"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="778"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:03.8000000" Value="778"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="777"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:04" Value="972"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock9" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock9_Copy">
+							<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Visible}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:01.9000000" Value="{x:Static Visibility.Visible}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:02" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock9_Copy">
+							<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlock9_Copy">
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock9_Copy1">
+							<DiscreteObjectKeyFrame KeyTime="00:00:02" Value="{x:Static Visibility.Visible}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:02.9000000" Value="{x:Static Visibility.Visible}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock9_Copy1">
+							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:03" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlock9_Copy1">
+							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:03" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock9_Copy2">
+							<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:03.9000000" Value="{x:Static Visibility.Visible}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock9_Copy2">
+							<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlock9_Copy2">
+							<SplineDoubleKeyFrame KeyTime="00:00:03" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
@@ -1477,11 +1617,9 @@
 					</LinearGradientBrush>
 				</Rectangle.Fill>
 			</Rectangle>
-			<TextBlock Width="280" Height="24" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" Foreground="#FF616161" TextWrapping="Wrap" Canvas.Left="458.5" Canvas.Top="640" Text="맵을 생성 중입니다."/>
-			<TextBlock x:Name="textBlock8" Width="320" Height="24" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="18.667" Foreground="#FF27A6C9" TextWrapping="Wrap" Canvas.Left="384" Canvas.Top="522" Visibility="Collapsed"><Run Text="타워는 3단계까지 생성 가능 "/><Run Text="합"/><Run Text="니다."/></TextBlock>
-			<TextBlock x:Name="textBlock9" Width="576" Height="24" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="18.667" Foreground="#FF27A6C9" TextWrapping="Wrap" Canvas.Left="276.5" Canvas.Top="522" Text="코어에 게이지를 모으다 보면 강력한 공격을 사용 할 수 있습니다." Visibility="Collapsed"/>
-			<Rectangle Stroke="#76263D7C" Width="976" Height="10" Canvas.Left="29" Canvas.Top="616" RadiusX="6" RadiusY="6" d:IsLocked="True"/>
-			<Rectangle x:Name="rectangle1" Stroke="#76263D7C" RadiusX="3" RadiusY="3" Width="972" Height="6" Canvas.Left="30.334" Canvas.Top="618.001">
+			<TextBlock Width="280" Height="24" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" Foreground="#FF616161" TextWrapping="Wrap" Canvas.Left="458.5" Canvas.Top="640"><Run Text="맵을 생성하고 있습니다."/><LineBreak/><Run Text=""/><Run Text="."/></TextBlock>
+			<Rectangle Stroke="#76263D7C" Width="976" Height="10" Canvas.Left="29" Canvas.Top="616" RadiusX="6" RadiusY="6"/>
+			<Rectangle x:Name="rectangle1" Stroke="#76263D7C" RadiusX="3" RadiusY="3" Width="972" Height="6" Canvas.Left="30.334" Canvas.Top="618.001" RenderTransformOrigin="0.5,0.5">
 				<Rectangle.Fill>
 					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" MappingMode="RelativeToBoundingBox">
 						<LinearGradientBrush.RelativeTransform>
@@ -1498,11 +1636,75 @@
 						<GradientStop Color="#FF160E16"/>
 					</LinearGradientBrush>
 				</Rectangle.Fill>
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
 			</Rectangle>
+			<TextBlock x:Name="textBlock9" Width="576" Height="24" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="18.667" Foreground="#FF27A6C9" TextWrapping="Wrap" Canvas.Left="276.5" Canvas.Top="522" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5" Text="포탑을 지어 도시의 코어를 방어하세요." TextAlignment="Center">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+			<TextBlock x:Name="textBlock9_Copy" Width="576" Height="24" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="18.667" Foreground="#FF27A6C9" TextWrapping="Wrap" Canvas.Left="276.5" Canvas.Top="522" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5" Text="연구소를 짓고 연구게이지를 모아 업그레이드 타워를 지으세요." TextAlignment="Center">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+			<TextBlock x:Name="textBlock9_Copy1" Width="576" Height="24" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="18.667" Foreground="#FF27A6C9" TextWrapping="Wrap" Canvas.Left="276.5" Canvas.Top="522" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5" Text="코어 게이지가 4단계까지 업그레이드되면 궁극기가 발동됩니다." TextAlignment="Center">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+			<TextBlock x:Name="textBlock9_Copy2" Width="576" Height="24" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="18.667" Foreground="#FF27A6C9" TextWrapping="Wrap" Canvas.Left="276.5" Canvas.Top="522" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5" TextAlignment="Center"><TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform><Run Text="최후의 보스에 대비하세요."/><LineBreak/><Run Text=""/></TextBlock>
 		</Canvas>
 		<Canvas x:Name="GameOver" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="#FF0C0C0C" Visibility="Collapsed">
-			<TextBlock Width="584" Height="80" Canvas.Left="256" Canvas.Top="280" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="64" Foreground="#FFBB3131" TextWrapping="Wrap"><Run Text="Core"/><Run Text=" "/><Run Text="Destroyed. "/></TextBlock>
-			<Button x:Name="Menu_ReStart" Style="{DynamicResource ReStart}" Width="120" Height="24" Content="타이틀 화면으로" Canvas.Left="457" Canvas.Top="417" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" Foreground="#FF9B2727" Cursor="Hand">
+			<TextBlock x:Name="textBlock10" Width="584" Height="80" Canvas.Left="256" Canvas.Top="280" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="64" Foreground="#FFBB3131" TextWrapping="Wrap" Opacity="0" RenderTransformOrigin="0.5,0.5" Text="GAME OVER">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+			<TextBlock x:Name="textBlock11" Width="584" Height="80" Canvas.Left="256" Canvas.Top="280" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="64" Foreground="#FFBB3131" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform><Run Text="Core"/><Run Text=" "/><Run Text="Destroyed. "/></TextBlock>
+			<Button x:Name="Menu_ReStart" Style="{DynamicResource ReStart}" Width="120" Height="24" Content="▶타이틀 화면으로" Canvas.Left="457" Canvas.Top="417" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" Foreground="#FF9B2727" Cursor="Hand" RenderTransformOrigin="0.5,0.5">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
 						<Setter Property="Control.Template">
@@ -1593,17 +1795,25 @@
 						</Setter>
 					</Style>
 				</Button.Resources>
+				<Button.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Button.RenderTransform>
 			</Button>
-			<Path Stretch="Fill" Stroke="#FFBB3131" Width="195.835" Height="78" Data="M467,141 C457.69501,145.22954 454.1579,146.94736 447,155 441.4141,161.28414 437.88809,167.22382 434,175 427.71341,187.57317 416.81619,210.98468 453,214 482.92669,216.49389 512.37133,218 543,218 557.06563,218 571.13874,214.15511 585,213 593.68832,212.27597 598.64749,208.51438 606,203 620.4684,192.1487 632.4789,184.43547 609,159 603.5162,153.05921 600.63054,149.96743&#xd;&#xa;593,147 578.99902,141.55517 583.21842,152.14847 573,153 554.20615,154.56615 527.26794,155.85359 508,152 500.72263,150.54453 492.40654,152 484,152 473.15529,152 473.95776,146.57999 467,141 z" Canvas.Left="427.423" Canvas.Top="141" StrokeThickness="3"/>
-			<Path Stretch="Fill" Stroke="#FFBB3131" StrokeThickness="3" Width="30.251" Height="15.067" Data="M579.5,170.75 C573.68027,167.35516 569.06233,167.02892 561,170.75 557.58012,172.3284 551.57572,176.45643 565.75,180 571.96947,181.55487 578.40776,182.13168 584.25,177.75 586.71079,175.90441 582.93106,171.63444 577.75,169" Canvas.Left="555.769" Canvas.Top="167.08"/>
-			<Path Stretch="Fill" Stroke="#FFBB3131" StrokeThickness="3" Width="3.542" Height="15.239" Data="M571.62311,182.73192 C571.97757,179.18729 572.70744,169.16947 572.70744,169.16947" Canvas.Left="570.187" Canvas.Top="168.104"/>
-			<Path Stretch="Fill" Stroke="#FFBB3131" StrokeThickness="3" Width="32.468" Height="15.465" Data="M478.75,165.5 C470.70541,163.15976 465.18636,164.92922 456.75,169.75 453.44857,171.63653 448.82924,177.75 465.5,177.75 469.30823,177.75 484.64298,179.75178 484,170.75 483.6565,165.94096 482.05835,165.62445 475.5,164.75" Canvas.Left="452.552" Canvas.Top="163.475"/>
-			<Path Stretch="Fill" Stroke="#FFBB3131" StrokeThickness="3" Width="2" Height="13" Data="M468,165.5 C468,169.16667 468,172.83333 468,176.5" Canvas.Left="467" Canvas.Top="164.5"/>
-			<Path Stretch="Fill" Stroke="#FFBB3131" StrokeThickness="2" Width="7.446" Height="13.077" Data="M467,184.5 C466.51038,185.06796 461.42545,199.07455 465.75,194.75 469.63771,190.86229 471.12512,190.68769 467,184.5 z" Canvas.Left="463.02" Canvas.Top="183.5"/>
-			<Path Stretch="Fill" Stroke="#FFBB3131" StrokeThickness="2" Width="6.731" Height="13.141" Data="M464,198.5 C463.76535,198.95696 458.84126,212.04524 463.5,209.25 467.61206,206.78276 466.3447,204.03411 464.5,198.5 464.33333,198.5 464.16667,198.5 464,198.5 z" Canvas.Left="460.504" Canvas.Top="197.5"/>
-			<Path Stretch="Fill" Stroke="#FFBB3131" StrokeThickness="2" Width="6.699" Height="13.408" Data="M574.5,186 C574.20369,186.31543 568.10544,198.95387 572,197.25 575.59554,195.67695 576.18787,190.64163 574.5,186 z" Canvas.Left="569.704" Canvas.Top="185"/>
-			<Path Stretch="Fill" Stroke="#FFBB3131" StrokeThickness="2" Width="6.985" Height="12.796" Data="M573,198.5 C571.79506,200.39348 571.07581,202.06771 570.75,205 570.71906,205.27843 570.19136,211.06597 572.25,208.75 575.82042,204.73327 577.34253,203.39396 573,198.5 z" Canvas.Left="569.667" Canvas.Top="197.5"/>
-			<Path Stretch="Fill" Stroke="#FFBB3131" StrokeThickness="3" Width="48.75" Height="8.098" Data="M494,193.75 C495.07935,197.90748 494.1982,201.5544 502.5,199 505.86497,197.96462 512.46563,193.76469 515.75,194.75 520.42004,196.15101 524.64166,198.75 529.75,198.75 532.71472,198.75 535.08127,199.08375 538,198.5 540.88477,197.92305 539.46321,197.39609 540.75,195" Canvas.Left="493" Canvas.Top="192.75"/>
+			<Image x:Name="image" Width="246" Height="155" Opacity="0" Canvas.Left="305" Canvas.Top="148" Source="/PlanetTerror;Component/Resources/UI/gameover.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
 		</Canvas>
 		<Canvas x:Name="Ending" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Visibility="Collapsed">
 			<Canvas.Background>
