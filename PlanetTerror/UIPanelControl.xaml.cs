@@ -116,7 +116,7 @@ namespace PlanetTerror
 			if( !bUpgradable )
 			{
 				Game.SoundMgr.Play("Sound/Money_NoMoney.wav");
-				Resources.FindStoryboard("Upgrade_Not_Avaiable_Storyboard").Begin();
+				Resources.FindStoryboard("Upgrade_Not_Available_Storyboard").Begin();
 			}
 			return bUpgradable;
 		}
