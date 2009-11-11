@@ -86,6 +86,7 @@ namespace PlanetTerror
 			hit_Story = Resources.FindStoryboard("Hit_Storyboard");
 			//hit_Story.FillBehavior = FillBehavior.Stop;
 			Boomed = false;
+			this.SetZIndex((int)ELayer.Core);
 
 			WPFUtil.SetImageScaleMode(LayoutRoot, BitmapScalingMode.Linear);
 
@@ -105,6 +106,8 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Attack_Ready_Button_Click(object sender, RoutedEventArgs e)
 		{
+			if( vsm.GetState(ATTACK_GROUP) == ATTACK_BEAM_STATE ) { return; }
+
 			Game.SoundMgr.Play("Sound/Core_Attack.wav");
 			Game.UI.GainPower(-1000);
 			vsm.SetState(ATTACK_GROUP, ATTACK_BEAM_STATE);
@@ -120,17 +123,9 @@ namespace PlanetTerror
 			Invincible = false;
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		//	데미지를 입는다.
-		public void TakeDamage(double damage)
+		//	업데이트
+		public void Update(float delta)
 		{
-			if( Invincible ) { return; }
-			HitPoint -= damage;
-
-			if( vsm.GetState() != HP0_STATE )
-			{
-				hit_Story.Begin();
-			}			
-
 			switch( vsm.GetState() )
 			{
 			case HP100_STATE:
@@ -177,6 +172,19 @@ namespace PlanetTerror
 				}
 				break;
 			}
+		}
+
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	데미지를 입는다.
+		public void TakeDamage(double damage)
+		{
+			if( Invincible ) { return; }
+			HitPoint -= damage;
+
+			if( vsm.GetState() != HP0_STATE )
+			{
+				hit_Story.Begin();
+			}			
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	게이지가 다 찼다.

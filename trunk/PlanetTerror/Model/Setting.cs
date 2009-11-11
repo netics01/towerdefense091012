@@ -22,8 +22,9 @@ using PlanetTerror.Util;
 //	Roof				5
 //	Tower				[10, 100]
 //	Projectile			101
-//	Core				105
-//	Boss				200
+//	Boss				150
+//	Core				200
+
 
 
 
@@ -54,7 +55,9 @@ namespace PlanetTerror
 		Tower = 10,
 		TowerMax = 100,
 		SelectedTower = TowerMax,
-		Projectile = 101
+		Projectile = 101,
+		Boss = 150,
+		Core = 200,
 	}
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -65,7 +68,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 31;
+		public const int VERSION = 32;
 
 		public int version;
 		public bool debugMode;
@@ -140,6 +143,7 @@ namespace PlanetTerror
 		public class Boss
 		{
 			public double hitPoint;
+			public double damage;
 		}
 		public Boss boss;
 
@@ -295,6 +299,7 @@ namespace PlanetTerror
 			enemy3.powerUp = 2;
 
 			boss.hitPoint = 1500;
+			boss.damage = 150;
 
 			var w = MakeWave(17);
 			MakeBundle(w, 0.1, "Enemy1", 1, 5, 0.5);

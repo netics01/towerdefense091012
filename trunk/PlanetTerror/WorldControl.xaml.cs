@@ -101,6 +101,7 @@ namespace PlanetTerror
 			}
 
 			UpdateTower(delta);
+			core.Update(delta);
 
 			//객체 제거
 			for( int i = 0; i < projectiles.Count; ++i )
@@ -125,8 +126,8 @@ namespace PlanetTerror
 		public void CreateEnemy<T>(PathGeometry path) where T : Enemy, new()
 		{
 			var enemy = new T();
-			enemy.Initialize(path);
 			Canvas.SetZIndex(enemy, enemyLayer);
+			enemy.Initialize(path);			
 			enemies.Add(enemy);
 			LayoutRoot.Children.Add(enemy);
 

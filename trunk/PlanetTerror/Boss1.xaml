@@ -1,16 +1,17 @@
-﻿<UserControl
+﻿<local:Enemy
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	mc:Ignorable="d"
+    xmlns:local="clr-namespace:PlanetTerror"
 	x:Class="PlanetTerror.Boss1"
 	d:DesignWidth="344" d:DesignHeight="256" Width="50" Height="50">
 	<Canvas x:Name="LayoutRoot" Margin="0" OpacityMask="#FF351C1C">
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="Boss_StateGroup">
 				<VisualStateGroup.Transitions>
-					<VisualTransition GeneratedDuration="00:00:30"/>
+					<VisualTransition GeneratedDuration="00:00:00"/>
 				</VisualStateGroup.Transitions>
 				<VisualState x:Name="Boss_Move_State">
 					<Storyboard>
@@ -5346,4 +5347,4 @@
 			</Image.RenderTransform>
 		</Image>
 	</Canvas>
-</UserControl>
+</local:Enemy>
