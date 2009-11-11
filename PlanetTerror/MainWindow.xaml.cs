@@ -109,6 +109,10 @@ namespace PlanetTerror
 				Game.UI.GainGold(1000);
 				Game.World.core.Invincible = !Game.World.core.Invincible;
 			}
+			if( e.Key == Key.F7 )
+			{
+				Game.World.CreateEnemy<Boss1>(null);
+			}
 			if( e.Key == Key.F12 )
 			{
 				ToggleFullscreen();

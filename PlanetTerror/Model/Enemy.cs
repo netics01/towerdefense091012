@@ -48,7 +48,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		Canvas layoutRoot;
 		ResourceDictionary resources;
-		VSM vsm;
+		protected VSM vsm;
 		VisualState destroyState;
 		VisualState boomState;
 		Storyboard moveStory;		
@@ -144,15 +144,7 @@ namespace PlanetTerror
 			vsm.SetDefaultGroup("Enemy_StateGroup");
 			destroyState = layoutRoot.FindState("Enemy_Destroy_State");
 			this.boomState = layoutRoot.FindState("Enemy_Boom_State");
-
-// 			if( (this as Enemy2) != null )
-// 			{
-// 				this.moveStory = Application.Current.Resources["Enemy2_Move_Storyboard"] as Storyboard;
-// 			}
-// 			else
-			{
-				this.moveStory = resources.FindStoryboard("Move_Storyboard");
-			}
+			this.moveStory = resources.FindStoryboard("Move_Storyboard");
 
 			WPFUtil.SetImageScaleMode(layoutRoot, BitmapScalingMode.Linear);
 
