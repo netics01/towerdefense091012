@@ -317,6 +317,7 @@
     <Resource Include="Resources\UI\Gold.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Cutscene\CutsceneResources\gameover.jpg" />
     <Resource Include="Cutscene\CutsceneResources\GameStart_eye.png" />
     <Resource Include="Cutscene\CutsceneResources\GameStart_eye01.png" />
     <Resource Include="Cutscene\CutsceneResources\GameStart_eye02.png" />
@@ -329,6 +330,11 @@
       <All>True</All>
       <AutoFill>True</AutoFill>
     </BlendEmbeddedFont>
+    <Resource Include="Cutscene\CutsceneResources\op1.jpg" />
+    <Resource Include="Cutscene\CutsceneResources\op2.jpg" />
+    <Resource Include="Cutscene\CutsceneResources\op3.jpg" />
+    <Resource Include="Cutscene\CutsceneResources\op4.jpg" />
+    <Resource Include="Cutscene\CutsceneResources\title.png" />
     <Resource Include="Resources\Boss\Boss_clock.png" />
     <Resource Include="Resources\Effect\Effect_blow1.png" />
     <Resource Include="Resources\Effect\Effect_blow2.png" />
@@ -354,7 +360,6 @@
     <Resource Include="Resources\Tower\TowerA0_parts1.png" />
     <Resource Include="Resources\Tower\TowerA0_parts2.png" />
     <Resource Include="Resources\Tower\TowerA0_parts3.png" />
-    <Resource Include="Resources\UI\gameover.png" />
     <Resource Include="Resources\UI\Gold_ani001.png" />
     <Resource Include="Resources\UI\Gold_ani002.png" />
     <Resource Include="Resources\UI\Gold_Time.png" />
