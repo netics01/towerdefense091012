@@ -8,7 +8,7 @@
 	x:Name="UserControl"
 	d:DesignWidth="640" d:DesignHeight="480" Width="50" Height="50">
 	<UserControl.Resources>
-		<Storyboard x:Key="Core_Boom0_Storyboard">
+		<Storyboard x:Key="Core_Boom_Storyboard">
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
 				<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:00" Value="0.069"/>
 				<SplineDoubleKeyFrame KeySpline="0,0.5,1,1" KeyTime="00:00:01.9410000" Value="1.197"/>
