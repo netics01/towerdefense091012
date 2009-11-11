@@ -1905,7 +1905,7 @@
 				</Path.RenderTransform>
 			</Path>
 		</Grid>
-		<Grid x:Name="Talk_LabInactive" Width="184" Height="56" Canvas.Left="179.343" Canvas.Top="-91.997" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Opacity="0.95">
+		<Grid x:Name="Talk_LabInactive" Width="184" Height="56" Canvas.Left="179.343" Canvas.Top="-91.997" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Opacity="0.95" Visibility="Collapsed">
 			<Grid.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
