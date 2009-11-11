@@ -79,39 +79,39 @@
                                                 <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
                                             </ObjectAnimationUsingKeyFrames>
                                             <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle_Copy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF2B18"/>
+                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF71F41B"/>
                                             </ColorAnimationUsingKeyFrames>
                                             <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
-                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF2B18"/>
+                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF71F41B"/>
                                             </ColorAnimationUsingKeyFrames>
                                             <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF2B18"/>
+                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF71F41B"/>
                                             </ColorAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
                                     <VisualState x:Name="Pressed">
                                         <Storyboard>
-                                            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle_Copy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF2B18"/>
-                                            </ColorAnimationUsingKeyFrames>
-                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
-                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF2B18"/>
-                                            </ColorAnimationUsingKeyFrames>
-                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF2B18"/>
-                                            </ColorAnimationUsingKeyFrames>
+                                        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                        		<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                                        	</ObjectAnimationUsingKeyFrames>
+                                        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                        		<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                                        	</ObjectAnimationUsingKeyFrames>
+                                        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                        		<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                                        	</ObjectAnimationUsingKeyFrames>
+                                        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                        		<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                                        	</ObjectAnimationUsingKeyFrames>
+                                        	<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle_Copy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                                        		<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF71F41B"/>
+                                        	</ColorAnimationUsingKeyFrames>
+                                        	<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                        		<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF71F41B"/>
+                                        	</ColorAnimationUsingKeyFrames>
+                                        	<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                                        		<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF71F41B"/>
+                                        	</ColorAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
                                     <VisualState x:Name="Disabled">
@@ -133,7 +133,7 @@
                                     <VisualState x:Name="Focused"/>
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
-                            <Rectangle x:Name="rectangle_Copy" Stroke="Black" Width="Auto" Height="Auto" RadiusX="10" RadiusY="9" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#FF9F3232" Visibility="Visible" HorizontalAlignment="Stretch" Margin="-6.335,-7.002,28.168,-6.665" VerticalAlignment="Stretch">
+                            <Rectangle x:Name="rectangle_Copy" Stroke="Black" Width="63" Height="Auto" RadiusX="10" RadiusY="9" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#FF85B12A" Visibility="Visible" HorizontalAlignment="Stretch" Margin="-6.337,-7.002,23.336,-6.665" VerticalAlignment="Stretch">
                                 <Rectangle.RenderTransform>
                                     <TransformGroup>
                                         <ScaleTransform/>
@@ -153,7 +153,7 @@
                                     </TransformGroup>
                                 </Rectangle.RenderTransform>
                             </Rectangle>
-                            <Path x:Name="path" Fill="{x:Null}" Stretch="Fill" Stroke="#FF9F3232" StrokeThickness="2" HorizontalAlignment="Left" Margin="2,1,0,1" Width="12" RenderTransformOrigin="0.5,0.5" Data="M11,6 C11,8.7614237 8.7614237,11 6,11 C3.2385763,11 1,8.7614237 1,6 C1,3.2385763 3.2385763,1 6,1 C8.7614237,1 11,3.2385763 11,6 z M1.1669999,6.3329998 L10.541,6.3329998">
+                            <Path x:Name="path" Fill="{x:Null}" Stretch="Fill" Stroke="#FF85B12A" StrokeThickness="2" HorizontalAlignment="Left" Margin="2,1,0,1" Width="12" RenderTransformOrigin="0.5,0.5" Data="M11,6 C11,8.7614237 8.7614237,11 6,11 C3.2385763,11 1,8.7614237 1,6 C1,3.2385763 3.2385763,1 6,1 C8.7614237,1 11,3.2385763 11,6 z M1.1669999,6.3329998 L10.541,6.3329998">
                                 <Path.RenderTransform>
                                     <TransformGroup>
                                         <ScaleTransform/>
@@ -173,7 +173,7 @@
                                     </TransformGroup>
                                 </Rectangle.RenderTransform>
                             </Rectangle>
-                            <Rectangle x:Name="rectangle1_Copy" Fill="#FF9F3232" RadiusX="2" RadiusY="2" Width="16" Height="14" Margin="0,0,2.666,0" HorizontalAlignment="Right" Stroke="{x:Null}" Visibility="Collapsed" Cursor="Help" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
+                            <Rectangle x:Name="rectangle1_Copy" Fill="#FF85B12A" RadiusX="2" RadiusY="2" Width="16" Height="14" Margin="0,0,2.666,0" HorizontalAlignment="Right" Stroke="{x:Null}" Visibility="Collapsed" Cursor="Help" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
                                 <Rectangle.RenderTransform>
                                     <TransformGroup>
                                         <ScaleTransform/>
@@ -203,7 +203,7 @@
                                     </TransformGroup>
                                 </Path.RenderTransform>
                             </Path>
-                            <ContentPresenter HorizontalAlignment="Stretch" Margin="19,0.6,1.896,-0.38" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"  RecognizesAccessKey="True" Width="Auto" d:LayoutOverrides="Height"/>
+                            <ContentPresenter HorizontalAlignment="Stretch" Margin="17,-0.4,3.001,0.62" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"  RecognizesAccessKey="True" Width="60" d:LayoutOverrides="Height"/>
                         </Grid>
                     </ControlTemplate>
                 </Setter.Value>
@@ -617,150 +617,144 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Control}">
-                        <Grid x:Name="grid" Width="80" Height="14" RenderTransformOrigin="0.5,0.5">
-                            <Grid.RenderTransform>
-                                <TransformGroup>
-                                    <ScaleTransform/>
-                                    <SkewTransform/>
-                                    <RotateTransform/>
-                                    <TranslateTransform/>
-                                </TransformGroup>
-                            </Grid.RenderTransform>
-                            <VisualStateManager.VisualStateGroups>
-                                <VisualStateGroup x:Name="CommonStates">
-                                    <VisualState x:Name="Normal"/>
-                                    <VisualState x:Name="MouseOver">
-                                        <Storyboard>
-                                            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF1818"/>
-                                            </ColorAnimationUsingKeyFrames>
-                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF1818"/>
-                                            </ColorAnimationUsingKeyFrames>
-                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF1818"/>
-                                            </ColorAnimationUsingKeyFrames>
-                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                                                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
-                                            </DoubleAnimationUsingKeyFrames>
-                                        </Storyboard>
-                                    </VisualState>
-                                    <VisualState x:Name="Pressed">
-                                        <Storyboard>
-                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-                                                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-                                            </DoubleAnimationUsingKeyFrames>
-                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="Black"/>
-                                            </ColorAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                            	<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                            	<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                            	<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                            	<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                            	<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFD61D1D"/>
-                                            </ColorAnimationUsingKeyFrames>
-                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                            	<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFD61D1D"/>
-                                            </ColorAnimationUsingKeyFrames>
-                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                            	<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFD61D1D"/>
-                                            </ColorAnimationUsingKeyFrames>
-                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-                                            	<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
-                                            </DoubleAnimationUsingKeyFrames>
-                                        </Storyboard>
-                                    </VisualState>
-                                    <VisualState x:Name="Disabled">
-                                        <Storyboard>
-                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF4D4D4D"/>
-                                            </ColorAnimationUsingKeyFrames>
-                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
-                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF7A7A7A"/>
-                                            </ColorAnimationUsingKeyFrames>
-                                        </Storyboard>
-                                    </VisualState>
-                                </VisualStateGroup>
-                                <VisualStateGroup x:Name="FocusStates">
-                                    <VisualState x:Name="Unfocused"/>
-                                    <VisualState x:Name="Focused"/>
-                                </VisualStateGroup>
-                            </VisualStateManager.VisualStateGroups>
-                            <Rectangle x:Name="rectangle" Stroke="Black" Width="Auto" Height="Auto" RadiusX="10" RadiusY="9" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#FF961F1F" Visibility="Visible" HorizontalAlignment="Stretch" Margin="-6.335,-7.002,28.168,-6.665" VerticalAlignment="Stretch">
-                                <Rectangle.RenderTransform>
-                                    <TransformGroup>
-                                        <ScaleTransform/>
-                                        <SkewTransform/>
-                                        <RotateTransform/>
-                                        <TranslateTransform/>
-                                    </TransformGroup>
-                                </Rectangle.RenderTransform>
-                            </Rectangle>
-                            <Rectangle x:Name="rectangle1" Fill="Black" RadiusX="4" RadiusY="4" Width="16" Height="14" Margin="0,0,1,0" HorizontalAlignment="Left" d:LayoutOverrides="Width" Stroke="{x:Null}"/>
-                            <Path x:Name="path1" Fill="#FF961F1F" Stretch="Fill" HorizontalAlignment="Left" Margin="0.906,2.719,0,-0.163" Width="12.636" Data="M4.5000001,0 L11.917,0 C12.193142,8.6527166E-08 12.417,0.22386735 12.417,0.50002166 L12.417,4.1251775 C12.417,4.401332 12.193142,4.6251989 11.917,4.6251989 L8.8330951,4.6251989 8.8330636,6.8777047 8.8404474,6.8794228 C8.858706,6.8855611 8.8753901,6.89703 8.8879633,6.9134909 L11.46875,10.35982 C11.502278,10.403714 11.528533,10.467267 11.484639,10.500798 L10.19042,10.513404 C10.146527,10.546935 10.083764,10.538534 10.050236,10.494639 L8.8330359,8.9010983 8.833015,10.400797 C8.8330145,10.456033 8.788238,10.500811 8.7330041,10.500812 L7.6829033,10.500826 C7.6276693,10.500827 7.5828943,10.45605 7.582895,10.400814 L7.5829158,8.8920232 6.3556702,10.498691 C6.3221409,10.542586 6.2593782,10.550989 6.2154856,10.517461 L4.984539,10.50058 C4.9406462,10.46705 4.8730543,10.403703 4.9065833,10.359807 L7.5180426,6.9175101 C7.530616,6.9010497 7.5473003,6.8895799 7.5655589,6.8834406 L7.5829437,6.8793951 7.5829749,4.6251989 4.5000001,4.6251989 C4.2238577,4.6251989 4,4.401332 4,4.1251775 L4,2.7500001 0.20000005,2.7500001 C0.089543104,2.7500001 0,2.660457 0,2.55 L0,1.7309999 C0,1.6205431 0.089543104,1.5310001 0.20000005,1.5310002 L4,1.5310002 4,0.50002166 C4,0.22386735 4.2238577,8.6527166E-08 4.5000001,0 z"/>
-                            <ContentPresenter HorizontalAlignment="Stretch" Margin="23.5,0,5.5,0" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"  RecognizesAccessKey="True" Canvas.Left="19" Canvas.Top="0.6" Width="Auto" Content="-50"/>
-                            <Rectangle x:Name="rectangle2" Fill="#CC181B1C" Stroke="{x:Null}" HorizontalAlignment="Right" Margin="0,-3.166,-82,-15.501" Width="106.666" RadiusX="9" RadiusY="9" Visibility="Collapsed" Cursor="Help" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False">
-                                <Rectangle.RenderTransform>
-                                    <TransformGroup>
-                                        <ScaleTransform/>
-                                        <SkewTransform/>
-                                        <RotateTransform/>
-                                        <TranslateTransform/>
-                                    </TransformGroup>
-                                </Rectangle.RenderTransform>
-                            </Rectangle>
-                            <Rectangle x:Name="rectangle1_Copy" Fill="#FFD69E27" RadiusX="4" RadiusY="4" Width="16" Height="14" Margin="0,0,5.666,0" HorizontalAlignment="Right" Stroke="{x:Null}" Visibility="Collapsed" Cursor="Help" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False">
-                                <Rectangle.RenderTransform>
-                                    <TransformGroup>
-                                        <ScaleTransform/>
-                                        <SkewTransform/>
-                                        <RotateTransform/>
-                                        <TranslateTransform/>
-                                    </TransformGroup>
-                                </Rectangle.RenderTransform>
-                            </Rectangle>
-                            <Path x:Name="path" Fill="Black" Stretch="Fill" HorizontalAlignment="Right" Margin="0,2.469,8.125,0.087" Width="12.636" Data="M4.5000001,0 L11.917,0 C12.193142,8.6527166E-08 12.417,0.22386735 12.417,0.50002166 L12.417,4.1251775 C12.417,4.401332 12.193142,4.6251989 11.917,4.6251989 L8.8330951,4.6251989 8.8330636,6.8777047 8.8404474,6.8794228 C8.858706,6.8855611 8.8753901,6.89703 8.8879633,6.9134909 L11.46875,10.35982 C11.502278,10.403714 11.528533,10.467267 11.484639,10.500798 L10.19042,10.513404 C10.146527,10.546935 10.083764,10.538534 10.050236,10.494639 L8.8330359,8.9010983 8.833015,10.400797 C8.8330145,10.456033 8.788238,10.500811 8.7330041,10.500812 L7.6829033,10.500826 C7.6276693,10.500827 7.5828943,10.45605 7.582895,10.400814 L7.5829158,8.8920232 6.3556702,10.498691 C6.3221409,10.542586 6.2593782,10.550989 6.2154856,10.517461 L4.984539,10.50058 C4.9406462,10.46705 4.8730543,10.403703 4.9065833,10.359807 L7.5180426,6.9175101 C7.530616,6.9010497 7.5473003,6.8895799 7.5655589,6.8834406 L7.5829437,6.8793951 7.5829749,4.6251989 4.5000001,4.6251989 C4.2238577,4.6251989 4,4.401332 4,4.1251775 L4,2.7500001 0.20000005,2.7500001 C0.089543104,2.7500001 0,2.660457 0,2.55 L0,1.7309999 C0,1.6205431 0.089543104,1.5310001 0.20000005,1.5310002 L4,1.5310002 4,0.50002166 C4,0.22386735 4.2238577,8.6527166E-08 4.5000001,0 z" Visibility="Collapsed" Cursor="Help" RenderTransformOrigin="0.5,0.5">
-                                <Path.RenderTransform>
-                                    <TransformGroup>
-                                        <ScaleTransform/>
-                                        <SkewTransform/>
-                                        <RotateTransform/>
-                                        <TranslateTransform/>
-                                    </TransformGroup>
-                                </Path.RenderTransform>
-                            </Path>
-                            <TextBlock x:Name="textBlock1" HorizontalAlignment="Right" Margin="0,0.333,-80.333,-19.334" Width="82" Text="공격 타워를 건설합니다." TextWrapping="Wrap" FontFamily="Fonts/#아리따B" FontSize="10.667" Foreground="#FFCEDAD4" Height="33" Visibility="Collapsed" Cursor="Help" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="VerticalMargin" IsEnabled="False" IsHitTestVisible="False">
-								<TextBlock.RenderTransform>
-									<TransformGroup>
-										<ScaleTransform/>
-										<SkewTransform/>
-										<RotateTransform/>
-										<TranslateTransform/>
-									</TransformGroup>
-								</TextBlock.RenderTransform>
-							</TextBlock>
-                        </Grid>
+                        <Canvas x:Name="grid" Width="80" Height="14" RenderTransformOrigin="0.5,0.5">
+                    		<Canvas.RenderTransform>
+                    			<TransformGroup>
+                    				<ScaleTransform/>
+                    				<SkewTransform/>
+                    				<RotateTransform/>
+                    				<TranslateTransform/>
+                    			</TransformGroup>
+                    		</Canvas.RenderTransform>
+                    		<VisualStateManager.VisualStateGroups>
+                    			<VisualStateGroup x:Name="CommonStates">
+                    				<VisualState x:Name="Normal"/>
+                    				<VisualState x:Name="MouseOver">
+                    					<Storyboard>
+                    						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                    						</ObjectAnimationUsingKeyFrames>
+                    						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                    						</ObjectAnimationUsingKeyFrames>
+                    						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                    						</ObjectAnimationUsingKeyFrames>
+                    						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                    						</ObjectAnimationUsingKeyFrames>
+                    						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                    							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF1818"/>
+                    						</ColorAnimationUsingKeyFrames>
+                    						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                    							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF1818"/>
+                    						</ColorAnimationUsingKeyFrames>
+                    						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                    							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF1818"/>
+                    						</ColorAnimationUsingKeyFrames>
+                    						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                    							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
+                    						</DoubleAnimationUsingKeyFrames>
+                    					</Storyboard>
+                    				</VisualState>
+                    				<VisualState x:Name="Pressed">
+                    					<Storyboard>
+                    						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                    						</ObjectAnimationUsingKeyFrames>
+                    						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                    						</ObjectAnimationUsingKeyFrames>
+                    						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                    						</ObjectAnimationUsingKeyFrames>
+                    						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="textBlock1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                    						</ObjectAnimationUsingKeyFrames>
+                    						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                    							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF1818"/>
+                    						</ColorAnimationUsingKeyFrames>
+                    						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                    							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF1818"/>
+                    						</ColorAnimationUsingKeyFrames>
+                    						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1_Copy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                    							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF1818"/>
+                    						</ColorAnimationUsingKeyFrames>
+                    						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                    							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
+                    						</DoubleAnimationUsingKeyFrames>
+                    					</Storyboard>
+                    				</VisualState>
+                    				<VisualState x:Name="Disabled">
+                    					<Storyboard>
+                    						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                    							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF4D4D4D"/>
+                    						</ColorAnimationUsingKeyFrames>
+                    						<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                    							<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF7A7A7A"/>
+                    						</ColorAnimationUsingKeyFrames>
+                    					</Storyboard>
+                    				</VisualState>
+                    			</VisualStateGroup>
+                    			<VisualStateGroup x:Name="FocusStates">
+                    				<VisualState x:Name="Unfocused"/>
+                    				<VisualState x:Name="Focused"/>
+                    			</VisualStateGroup>
+                    		</VisualStateManager.VisualStateGroups>
+                    		<Rectangle x:Name="rectangle" Stroke="Black" Width="63" Height="27.667" RadiusX="10" RadiusY="9" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#FF961F1F" Visibility="Visible" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="-6.335" Canvas.Top="-7.002" d:LayoutOverrides="Width">
+                    			<Rectangle.RenderTransform>
+                    				<TransformGroup>
+                    					<ScaleTransform/>
+                    					<SkewTransform/>
+                    					<RotateTransform/>
+                    					<TranslateTransform/>
+                    				</TransformGroup>
+                    			</Rectangle.RenderTransform>
+                    		</Rectangle>
+                    		<Rectangle x:Name="rectangle1" Fill="Black" RadiusX="4" RadiusY="4" Width="16" Height="14" Margin="0" HorizontalAlignment="Stretch" d:LayoutOverrides="Width, Height" Stroke="{x:Null}"/>
+                    		<Path x:Name="path1" Fill="#FF961F1F" Stretch="Fill" HorizontalAlignment="Stretch" Margin="0" Width="12.636" Data="M4.5000001,0 L11.917,0 C12.193142,8.6527166E-08 12.417,0.22386735 12.417,0.50002166 L12.417,4.1251775 C12.417,4.401332 12.193142,4.6251989 11.917,4.6251989 L8.8330951,4.6251989 8.8330636,6.8777047 8.8404474,6.8794228 C8.858706,6.8855611 8.8753901,6.89703 8.8879633,6.9134909 L11.46875,10.35982 C11.502278,10.403714 11.528533,10.467267 11.484639,10.500798 L10.19042,10.513404 C10.146527,10.546935 10.083764,10.538534 10.050236,10.494639 L8.8330359,8.9010983 8.833015,10.400797 C8.8330145,10.456033 8.788238,10.500811 8.7330041,10.500812 L7.6829033,10.500826 C7.6276693,10.500827 7.5828943,10.45605 7.582895,10.400814 L7.5829158,8.8920232 6.3556702,10.498691 C6.3221409,10.542586 6.2593782,10.550989 6.2154856,10.517461 L4.984539,10.50058 C4.9406462,10.46705 4.8730543,10.403703 4.9065833,10.359807 L7.5180426,6.9175101 C7.530616,6.9010497 7.5473003,6.8895799 7.5655589,6.8834406 L7.5829437,6.8793951 7.5829749,4.6251989 4.5000001,4.6251989 C4.2238577,4.6251989 4,4.401332 4,4.1251775 L4,2.7500001 0.20000005,2.7500001 C0.089543104,2.7500001 0,2.660457 0,2.55 L0,1.7309999 C0,1.6205431 0.089543104,1.5310001 0.20000005,1.5310002 L4,1.5310002 4,0.50002166 C4,0.22386735 4.2238577,8.6527166E-08 4.5000001,0 z" Height="11.444" Canvas.Left="0.906" Canvas.Top="2.719"/>
+                    		<Rectangle x:Name="rectangle2" Fill="#CC181B1C" Stroke="{x:Null}" HorizontalAlignment="Stretch" Margin="0" Width="106.666" RadiusX="9" RadiusY="9" Visibility="Collapsed" Cursor="Help" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False" Height="32.667" Canvas.Left="55.334" Canvas.Top="-3.166">
+                    			<Rectangle.RenderTransform>
+                    				<TransformGroup>
+                    					<ScaleTransform/>
+                    					<SkewTransform/>
+                    					<RotateTransform/>
+                    					<TranslateTransform/>
+                    				</TransformGroup>
+                    			</Rectangle.RenderTransform>
+                    		</Rectangle>
+                    		<Rectangle x:Name="rectangle1_Copy" Fill="#FFD69E27" RadiusX="4" RadiusY="4" Width="16" Height="14" Margin="0" HorizontalAlignment="Stretch" Stroke="{x:Null}" Visibility="Collapsed" Cursor="Help" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False" Canvas.Left="58.334" d:LayoutOverrides="Height">
+                    			<Rectangle.RenderTransform>
+                    				<TransformGroup>
+                    					<ScaleTransform/>
+                    					<SkewTransform/>
+                    					<RotateTransform/>
+                    					<TranslateTransform/>
+                    				</TransformGroup>
+                    			</Rectangle.RenderTransform>
+                    		</Rectangle>
+                    		<Path x:Name="path" Fill="Black" Stretch="Fill" HorizontalAlignment="Stretch" Margin="0" Width="12.636" Data="M4.5000001,0 L11.917,0 C12.193142,8.6527166E-08 12.417,0.22386735 12.417,0.50002166 L12.417,4.1251775 C12.417,4.401332 12.193142,4.6251989 11.917,4.6251989 L8.8330951,4.6251989 8.8330636,6.8777047 8.8404474,6.8794228 C8.858706,6.8855611 8.8753901,6.89703 8.8879633,6.9134909 L11.46875,10.35982 C11.502278,10.403714 11.528533,10.467267 11.484639,10.500798 L10.19042,10.513404 C10.146527,10.546935 10.083764,10.538534 10.050236,10.494639 L8.8330359,8.9010983 8.833015,10.400797 C8.8330145,10.456033 8.788238,10.500811 8.7330041,10.500812 L7.6829033,10.500826 C7.6276693,10.500827 7.5828943,10.45605 7.582895,10.400814 L7.5829158,8.8920232 6.3556702,10.498691 C6.3221409,10.542586 6.2593782,10.550989 6.2154856,10.517461 L4.984539,10.50058 C4.9406462,10.46705 4.8730543,10.403703 4.9065833,10.359807 L7.5180426,6.9175101 C7.530616,6.9010497 7.5473003,6.8895799 7.5655589,6.8834406 L7.5829437,6.8793951 7.5829749,4.6251989 4.5000001,4.6251989 C4.2238577,4.6251989 4,4.401332 4,4.1251775 L4,2.7500001 0.20000005,2.7500001 C0.089543104,2.7500001 0,2.660457 0,2.55 L0,1.7309999 C0,1.6205431 0.089543104,1.5310001 0.20000005,1.5310002 L4,1.5310002 4,0.50002166 C4,0.22386735 4.2238577,8.6527166E-08 4.5000001,0 z" Visibility="Collapsed" Cursor="Help" RenderTransformOrigin="0.5,0.5" Height="11.444" Canvas.Left="59.239" Canvas.Top="2.469">
+                    			<Path.RenderTransform>
+                    				<TransformGroup>
+                    					<ScaleTransform/>
+                    					<SkewTransform/>
+                    					<RotateTransform/>
+                    					<TranslateTransform/>
+                    				</TransformGroup>
+                    			</Path.RenderTransform>
+                    		</Path>
+                    		<TextBlock x:Name="textBlock1" HorizontalAlignment="Stretch" Margin="0" Width="82" Text="공격 타워를 건설합니다." TextWrapping="Wrap" FontFamily="Fonts/#아리따B" FontSize="10.667" Foreground="#FFCEDAD4" Height="33" Visibility="Collapsed" Cursor="Help" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False" Canvas.Left="78.333" Canvas.Top="0.333">
+                    			<TextBlock.RenderTransform>
+                    				<TransformGroup>
+                    					<ScaleTransform/>
+                    					<SkewTransform/>
+                    					<RotateTransform/>
+                    					<TranslateTransform/>
+                    				</TransformGroup>
+                    			</TextBlock.RenderTransform>
+                    		</TextBlock>
+                    		<ContentPresenter HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"  RecognizesAccessKey="True" Width="59.104" Content="-50" Canvas.Left="19" Canvas.Top="0.1"/>
+                    	</Canvas>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
@@ -848,7 +842,7 @@
                                     <VisualState x:Name="Focused"/>
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
-                            <Rectangle x:Name="rectangle" Stroke="Black" Width="Auto" Height="Auto" RadiusX="10" RadiusY="9" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#FFA35123" Visibility="Visible" HorizontalAlignment="Stretch" Margin="-6.335,-7.002,28.168,-6.665" VerticalAlignment="Stretch">
+                            <Rectangle x:Name="rectangle" Stroke="Black" Width="63" Height="Auto" RadiusX="10" RadiusY="9" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#FFA35123" Visibility="Visible" HorizontalAlignment="Stretch" Margin="-6.335,-7.002,23.335,-6.665" VerticalAlignment="Stretch">
                                 <Rectangle.RenderTransform>
                                     <TransformGroup>
                                         <ScaleTransform/>
@@ -860,7 +854,7 @@
                             </Rectangle>
                             <Rectangle x:Name="rectangle1" Fill="Black" RadiusX="2" RadiusY="2" Width="16" Height="14" Margin="0,0,1,0" HorizontalAlignment="Left" d:LayoutOverrides="Width" Stroke="{x:Null}"/>
                             <Rectangle x:Name="rectangle4" Fill="{x:Null}" RadiusX="4" RadiusY="4" HorizontalAlignment="Left" Margin="2.917,2.5,0,2.283" Width="10.666" Stroke="#FFA35123" StrokeThickness="3"/>
-                            <ContentPresenter HorizontalAlignment="Stretch" Margin="18.141,0,32,0" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Content="-200" RecognizesAccessKey="True"/>
+                            <ContentPresenter HorizontalAlignment="Stretch" Margin="18.141,0,24,0" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Content="-200" RecognizesAccessKey="True"/>
                             <Rectangle x:Name="rectangle2" Fill="#CC202221" Stroke="{x:Null}" RadiusX="2" RadiusY="2" HorizontalAlignment="Right" Margin="0,-3.166,-85,-51.501" Width="106.666" Visibility="Collapsed" Cursor="Help" Height="Auto" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False" IsEnabled="False">
                                 <Rectangle.RenderTransform>
                                     <TransformGroup>
@@ -1013,7 +1007,7 @@
                                     <VisualState x:Name="Focused"/>
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
-                            <Rectangle x:Name="rectangle_Copy" Stroke="Black" Width="58.167" Height="27.667" RadiusX="10" RadiusY="9" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#FF9D411F" Visibility="Visible" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="-6.335" Canvas.Top="-7.002">
+                            <Rectangle x:Name="rectangle_Copy" Stroke="Black" Width="63" Height="27.667" RadiusX="10" RadiusY="9" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#FF9D411F" Visibility="Visible" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="-6.335" Canvas.Top="-7.002">
                                 <Rectangle.RenderTransform>
                                     <TransformGroup>
                                         <ScaleTransform/>
@@ -1025,7 +1019,7 @@
                             </Rectangle>
                             <Rectangle x:Name="rectangle" Fill="Black" RadiusX="2" RadiusY="2" Width="16" Height="14" Canvas.Left="0" Canvas.Top="0" Stroke="{x:Null}"/>
                             <Path x:Name="path1" Fill="#FF9D411F" Stretch="Fill" Stroke="{x:Null}" Width="8.333" Height="10.75" Canvas.Left="3.583" Canvas.Top="3.5" Data="M4.0830004,0 L8.3330007,4.7500001 6.1660001,4.7283307 6.1660001,10.65 C6.1660001,10.705229 6.1212285,10.75 6.066,10.75 L2.3490001,10.75 C2.2937716,10.75 2.2490001,10.705229 2.2490001,10.65 L2.2490001,4.6891618 0,4.6666725 z"/>
-                            <ContentPresenter HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"  RecognizesAccessKey="True" Canvas.Left="19" Canvas.Top="0.6" Width="59.104"/>
+                            <ContentPresenter HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"  RecognizesAccessKey="True" Canvas.Left="18.5" Canvas.Top="0.1" Width="59.104"/>
                             <Rectangle x:Name="rectangle2" Fill="#CC1A1C1B" Stroke="{x:Null}" RadiusX="2" RadiusY="2" HorizontalAlignment="Stretch" Margin="0" Width="106.666" Visibility="Collapsed" Height="59.166" Canvas.Left="58.334" Canvas.Top="-3.166" Cursor="Help" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False">
                                 <Rectangle.RenderTransform>
                                     <TransformGroup>
@@ -1194,7 +1188,7 @@
                                     <VisualState x:Name="Focused"/>
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
-                            <Rectangle x:Name="rectangle_Copy" Stroke="Black" Width="58.167" Height="27.667" RadiusX="10" RadiusY="9" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#FFD69E27" Visibility="Visible" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="-6.335" Canvas.Top="-7.002">
+                            <Rectangle x:Name="rectangle_Copy" Stroke="Black" Width="63" Height="27.667" RadiusX="10" RadiusY="9" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#FFD69E27" Visibility="Visible" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="-6.335" Canvas.Top="-7.002">
                                 <Rectangle.RenderTransform>
                                     <TransformGroup>
                                         <ScaleTransform/>
@@ -1206,7 +1200,7 @@
                             </Rectangle>
                             <Rectangle x:Name="rectangle" Fill="Black" RadiusX="2" RadiusY="2" Width="16" Height="14" Canvas.Left="0" Canvas.Top="0" Stroke="{x:Null}"/>
                             <Path x:Name="path1" Fill="#FFD69E27" Stretch="Fill" Stroke="{x:Null}" Width="8.333" Height="10.75" Canvas.Left="3.583" Canvas.Top="3.5" Data="M4.0830004,0 L8.3330007,4.7500001 6.1660001,4.7283307 6.1660001,10.65 C6.1660001,10.705229 6.1212285,10.75 6.066,10.75 L2.3490001,10.75 C2.2937716,10.75 2.2490001,10.705229 2.2490001,10.65 L2.2490001,4.6891618 0,4.6666725 z"/>
-                            <ContentPresenter HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"  RecognizesAccessKey="True" Canvas.Left="19" Canvas.Top="0.6" Width="59.104"/>
+                            <ContentPresenter HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"  RecognizesAccessKey="True" Canvas.Left="19" Canvas.Top="0.1" Width="59.104"/>
                             <Rectangle x:Name="rectangle2" Fill="#CC1A1C1B" Stroke="{x:Null}" RadiusX="2" RadiusY="2" HorizontalAlignment="Stretch" Margin="0" Width="106.666" Visibility="Collapsed" Height="59.166" Canvas.Left="58.334" Canvas.Top="-3.166" Cursor="Help" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False">
                                 <Rectangle.RenderTransform>
                                     <TransformGroup>
@@ -1375,7 +1369,7 @@
                                     <VisualState x:Name="Focused"/>
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
-                        	<Rectangle x:Name="rectangle_Copy" Stroke="Black" Width="58.167" Height="27.667" RadiusX="10" RadiusY="9" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#FF238CA1" Visibility="Visible" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="-6.335" Canvas.Top="-7.002">
+                        	<Rectangle x:Name="rectangle_Copy" Stroke="Black" Width="63" Height="27.667" RadiusX="10" RadiusY="9" RenderTransformOrigin="0.5,0.5" StrokeThickness="2.5" Fill="#FF238CA1" Visibility="Visible" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Canvas.Left="-6.335" Canvas.Top="-7.002">
                         		<Rectangle.RenderTransform>
                         			<TransformGroup>
                         				<ScaleTransform/>
@@ -1387,7 +1381,7 @@
                         	</Rectangle>
                         	<Rectangle x:Name="rectangle" Fill="Black" RadiusX="2" RadiusY="2" Width="16" Height="14" Canvas.Left="0" Canvas.Top="0" Stroke="{x:Null}"/>
                         	<Path x:Name="path1" Fill="#FF238CA1" Stretch="Fill" Stroke="{x:Null}" Width="8.333" Height="10.75" Canvas.Left="3.583" Canvas.Top="3.5" Data="M4.0830004,0 L8.3330007,4.7500001 6.1660001,4.7283307 6.1660001,10.65 C6.1660001,10.705229 6.1212285,10.75 6.066,10.75 L2.3490001,10.75 C2.2937716,10.75 2.2490001,10.705229 2.2490001,10.65 L2.2490001,4.6891618 0,4.6666725 z"/>
-                        	<ContentPresenter HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"  RecognizesAccessKey="True" Canvas.Left="19" Canvas.Top="0.6" Width="59.104"/>
+                        	<ContentPresenter HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"  RecognizesAccessKey="True" Canvas.Left="19" Canvas.Top="0.1" Width="59.104"/>
                         	<Rectangle x:Name="rectangle2" Fill="#CC1A1C1B" Stroke="{x:Null}" RadiusX="2" RadiusY="2" HorizontalAlignment="Stretch" Margin="0" Width="106.666" Visibility="Collapsed" Height="59.166" Canvas.Left="58.334" Canvas.Top="-3.166" Cursor="Help" RenderTransformOrigin="0.5,0.5" IsEnabled="False" IsHitTestVisible="False">
                         		<Rectangle.RenderTransform>
                         			<TransformGroup>
