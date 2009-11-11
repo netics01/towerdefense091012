@@ -219,24 +219,6 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:02.7000000" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.087"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-65.485"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.124"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="37.655"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-3.33"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="2.67"/>
-			</DoubleAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="canvas2" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="0"/>
@@ -244,16 +226,6 @@
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="NoMoney" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-2"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-2"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Gold_Gain_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -607,25 +579,35 @@
 		<Storyboard x:Key="route1_Path_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Path1" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.8000000" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:01.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.8000000" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:02" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:02.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:02.8000000" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:03.5000000" Value="{x:Static Visibility.Collapsed}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:03.8000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.8000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05.8000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:06" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:07" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Path1" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.7"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01.8000000" Value="0.7"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.8000000" Value="0.7"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.8000000" Value="0.7"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.8000000" Value="0.7"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.8000000" Value="0.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route2_Path_Storyboard">
@@ -638,7 +620,11 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:02.5000000" Value="{x:Static Visibility.Collapsed}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03.5000000" Value="{x:Static Visibility.Collapsed}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:07" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Path2" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
@@ -649,7 +635,11 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route3_Path_Storyboard">
@@ -662,7 +652,11 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Path3" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
@@ -673,7 +667,11 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:02.5000000" Value="{x:Static Visibility.Collapsed}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03.5000000" Value="{x:Static Visibility.Collapsed}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:07" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route4_Path_Storyboard">
@@ -686,7 +684,11 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:02.5000000" Value="{x:Static Visibility.Collapsed}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03.5000000" Value="{x:Static Visibility.Collapsed}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:07" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Path4" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
@@ -697,7 +699,11 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route5_Path_Storyboard">
@@ -710,7 +716,11 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Patr5" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
@@ -721,7 +731,11 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:02.5000000" Value="{x:Static Visibility.Collapsed}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03.5000000" Value="{x:Static Visibility.Collapsed}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:07" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route6_Path_Storyboard">
@@ -734,7 +748,11 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Path6" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
@@ -745,7 +763,11 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:02.5000000" Value="{x:Static Visibility.Collapsed}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03.5000000" Value="{x:Static Visibility.Collapsed}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:07" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route7_Path_Storyboard">
@@ -758,7 +780,11 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Path7" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
@@ -769,7 +795,11 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:02.5000000" Value="{x:Static Visibility.Collapsed}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03.5000000" Value="{x:Static Visibility.Collapsed}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:07" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="route8_Path_Storyboard">
@@ -782,7 +812,11 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:02.5000000" Value="{x:Static Visibility.Collapsed}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03.5000000" Value="{x:Static Visibility.Collapsed}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:05.5000000" Value="{x:Static Visibility.Collapsed}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:07" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Path8" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
@@ -793,7 +827,11 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05.5000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:07" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Upg1_Completed_Storyboard">
@@ -966,13 +1004,13 @@
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="FirstTower_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_NoMoneyTower" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_MoneyTower" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:05.2000000" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_NoMoneyTower" Storyboard.TargetProperty="(UIElement.Opacity)">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_MoneyTower" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
@@ -980,78 +1018,16 @@
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="FirstLab_Storyboard">
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_NoMoneyLab" Storyboard.TargetProperty="(UIElement.Visibility)">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_Lab" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:04.9000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:09.8000000" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_NoMoneyLab" Storyboard.TargetProperty="(UIElement.Opacity)">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_Lab" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:05.1000000" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse10" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.3000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="-3"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="-3"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.346"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0.346"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0.346"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0.346"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="0.346"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.3000000" Value="0.346"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="0.346"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="0.346"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-2.495"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.505"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-2.495"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.9000000" Value="-2.495"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0.505"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.3000000" Value="-2.495"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="-2.495"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0.505"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:01.9000000" Value="-2.495"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.1000000" Value="-2.495"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.3000000" Value="0.505"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.5000000" Value="-2.495"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.7000000" Value="-2.495"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0.505"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.1000000" Value="-2.495"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.3000000" Value="-2.495"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.5000000" Value="0.505"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.7000000" Value="-2.495"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="-2.495"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.1000000" Value="0.505"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="-2.495"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.5000000" Value="-2.495"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.7000000" Value="0.505"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04.9000000" Value="-2.495"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:09.8000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:10" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="power_Progress" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
@@ -1061,6 +1037,14 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
 			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text5" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04.9000000" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_Text5_Copy" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:05" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:09.8000000" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Upgrade_Not_Available_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_UPGNotYet" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -1075,6 +1059,12 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:04.2000000" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="FirstLab_Inactive_Storyboard">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_LabInactive" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:03.9000000" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 	</UserControl.Resources>
 	<UserControl.Triggers>
@@ -1095,6 +1085,9 @@
 		</EventTrigger>
 		<EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="Image_Gold_Time">
 			<BeginStoryboard x:Name="GoldT_MouseLeave_Storyboard_BeginStoryboard" Storyboard="{StaticResource GoldT_MouseLeave_Storyboard}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource FirstLab_Inactive_Storyboard}"/>
 		</EventTrigger>
 	</UserControl.Triggers>
 
@@ -1120,7 +1113,7 @@
 						</TransformGroup>
 					</Path.RenderTransform>
 				</Path>
-				<Path x:Name="_1_1" Fill="#CCFF3800" Stretch="Fill" StrokeThickness="4" Width="700.506" Height="377.594" RenderTransformOrigin="0.012417516210502,0.931140323588558" Data="M8.6985397,358.5921 L15.382551,364.61974 15.382551,377.59412 8.4865575,372.70171 2.0145393,377.59412 2.0145393,364.61974 z M622.40901,347.72841 L630.48836,351.69481 627.3752,360.13971 615.32936,364.95966 617.30977,356.73969 610.36318,352.54835 z M8.6985397,342.09211 L15.382551,348.11973 15.382551,361.0941 8.4865575,356.20172 2.0145393,361.0941 2.0145393,348.11973 z M637.72817,341.5987 L645.80751,345.5651 642.69435,354.01001 630.64852,358.82995 632.62892,350.60998 625.68233,346.41863 z M582.74367,307.43153 L590.75929,317.63368 589.22731,326.50281 580.24758,325.8925 572.23195,315.69034 580.67702,315.277 z M6.684021,303.22414 L13.36799,309.25177 13.36799,322.22614 6.4720182,317.33381 0,322.22614 0,309.25177 z M286.43062,299.22704 L298.98546,302.49968 303.13222,310.48795 295.61354,315.43543 283.0587,312.16279 289.5323,306.72382 z M664.41872,297.85324 L668.045,306.09083 662.72737,317.92538 658.4424,310.63642 650.53377,312.44637 655.8514,300.61184 z M270.46413,295.06512 L283.01897,298.33774 287.16573,306.32601 279.64705,311.27349 267.09221,308.00085 273.56581,302.5619 z M572.54988,294.45706 L580.56551,304.65921 579.03352,313.52834 570.05379,312.91805 562.03816,302.71587 570.48323,302.30252 z M339.36965,289.36649 L347.11858,293.94497 343.36253,302.12425 330.98045,305.99956 333.58974,297.95707 326.98757,293.24182 z M6.6840105,286.72414 L13.36799,292.75177 13.36799,305.72615 6.4720182,300.83377 0,305.72615 0,292.75177 z M355.11641,284.43809 L362.86534,289.01657 359.10933,297.19582 346.72725,301.07117 349.3365,293.02867 342.73433,288.31342 z M671.18135,282.80276 L674.80769,291.04037 669.49001,302.87492 665.20503,295.58597 657.2964,297.39592 662.61409,285.56137 z M271.7538,252.24313 L273.5117,265.09786 267.70604,271.97552 260.26698,266.90912 258.50908,254.05438 266.00435,257.96729 z M8.0641799,246.42087 L14.390009,252.82339 13.642936,265.77623 7.0400839,260.49489 0.29711723,265.00648 1.0441901,252.05361 z M566.48384,244.08195 L568.26912,256.93288 562.47811,263.82291 555.02828,258.77232 553.243,245.92138 560.74654,249.81831 z M690.11696,239.20512 L693.74324,247.44273 688.42561,259.27727 684.14058,251.98831 676.23201,253.79827 681.54964,241.96373 z M269.51821,235.89529 L271.27611,248.75002 265.47045,255.62768 258.03139,250.56124 256.27348,237.70652 263.76875,241.61945 z M367.19313,232.54056 L373.62206,238.83955 373.08531,251.8028 366.39763,246.62935 359.72875,251.24979 360.26549,238.28652 z M9.0142789,229.94827 L15.340108,236.35075 14.593035,249.30359 7.9901929,244.02227 1.2471847,248.53385 1.9942784,235.58101 z M564.2134,227.73888 L565.99867,240.58984 560.20766,247.47987 552.75783,242.42929 550.97255,229.57832 558.47615,233.47527 z M696.87959,224.15466 L700.50594,232.39226 695.18825,244.2268 690.90328,236.93786 682.99465,238.7478 688.31233,226.91326 z M367.87575,216.05468 L374.30464,222.35367 373.7679,235.31693 367.08022,230.14346 360.41136,234.76389 360.94811,221.80064 z M267.55388,187.90996 L273.19051,194.21219 280.58775,190.88004 277.70513,203.53012 269.84899,207.92206 264.67125,200.56004 z M14.529017,185.998 L20.350517,192.86227 18.622219,205.72101 12.439394,199.95364 5.3733714,203.94029 7.1016703,191.08154 z M551.82503,173.11751 L557.73885,179.16045 564.97908,175.49971 562.66701,188.2664 555.01589,193.00645 549.51302,185.88422 z M271.2198,171.82236 L276.85646,178.12459 284.25368,174.79243 281.37108,187.44252 273.51491,191.83446 268.33717,184.47244 z M16.726937,169.64503 L22.548448,176.50931 20.820159,189.36806 14.637325,183.60068 7.5712914,187.58733 9.2995696,174.72859 z M372.43669,157.27759 L378.20097,164.18999 376.36592,177.03392 370.23122,171.21539 363.13228,175.1432 364.96733,162.29926 z M554.76534,156.88161 L560.67915,162.92455 567.91939,159.26379 565.60732,172.0305 557.95619,176.77055 552.45332,169.6483 z M374.7704,140.94345 L380.53465,147.85585 378.6996,160.6998 372.5649,154.88126 365.46599,158.80907 367.30104,145.96513 z M34.923749,128.22882 L37.838972,136.74408 31.537591,148.08545 27.885692,140.45961 19.852138,141.59288 26.15352,130.25151 z M286.14101,115.02379 L291.83016,121.27869 299.19927,117.88481 296.4225,130.55855 288.60335,135.01601 283.36424,127.69754 z M42.937452,113.80556 L45.852685,122.32082 39.551313,133.66219 35.899393,126.03635 27.865848,127.16962 34.16723,115.82825 z M574.56618,100.86293 L575.62929,113.79367 569.46163,120.34871 562.30623,114.88902 561.24312,101.95828 568.5168,106.26915 z M289.67232,98.906113 L295.36147,105.161 302.73058,101.76712 299.95381,114.44086 292.13466,118.89832 286.89556,111.57985 z M383.65953,87.250107 L387.60518,95.3396 382.75435,107.37303 378.18764,100.2572 370.35582,102.37503 375.20668,90.341599 z M573.21419,84.418396 L574.2773,97.349152 568.10964,103.90419 560.95424,98.444504 559.89113,85.513763 567.16481,89.824631 z M64.190332,76.797516 L67.105554,85.312775 60.804182,96.654144 57.152261,89.028305 49.118707,90.161591 55.420103,78.820221 z M389.82851,71.946716 L393.77419,80.036224 388.92336,92.069641 384.35661,84.953827 376.52483,87.07164 381.37566,75.038208 z M72.20405,62.374268 L75.119279,70.889496 68.81788,82.230896 65.165983,74.605042 57.13241,75.738312 63.433824,64.396942 z M278.01756,51.174591 L286.12401,61.304718 284.6714,70.187164 275.68657,69.657135 267.58009,59.527008 276.02113,59.038208 z M267.70824,38.291718 L275.81471,48.421844 274.36208,57.304291 265.37724,56.774261 257.27078,46.644135 265.71181,46.155334 z M538.49861,37.383087 L548.82924,45.232452 549.58492,54.201111 540.74178,55.876495 530.41115,48.027161 538.47859,45.496155 z M422.13884,30.614136 L423.75649,39.468018 415.83989,49.747192 413.36159,41.663391 405.24883,41.590393 413.16545,31.311218 z M91.620065,28.078217 L100.43057,29.917542 99.508493,38.870636 89.033884,46.526794 88.914339,38.072449 81.145448,35.734375 z M525.36073,27.400787 L535.69142,35.250122 536.44704,44.218811 527.6039,45.894196 517.27327,38.044861 525.34078,35.513855 z M214.66304,26.169159 L227.40036,28.637878 232.04605,36.34671 224.85674,41.761658 212.1194,39.292908 218.23454,33.453827 z M198.46448,23.029572 L211.20181,25.498291 215.84751,33.207123 208.65817,38.62207 195.92085,36.153351 202.036,30.31424 z M104.94102,18.341614 L113.75155,20.180908 112.82946,29.134003 102.35486,36.790161 102.23531,28.335846 94.466424,25.997742 z M432.20671,17.541687 L433.82433,26.395569 425.90773,36.674774 423.42946,28.590942 415.3167,28.517975 423.23329,18.2388 z M156.78925,13.308441 L169.52657,15.777191 174.17226,23.485992 166.98294,28.90094 154.24561,26.43222 160.36075,20.59314 z M140.5907,10.168854 L153.32802,12.637604 157.97371,20.346405 150.78438,25.761353 138.04706,23.292633 144.1622,17.453552 z M479.76317,5.3435364 L492.03832,9.5452881 495.57649,17.821136 487.70909,22.192871 475.43392,17.991119 482.29592,13.051147 z M464.15239,0 L476.42754,4.2017517 479.96571,12.4776 472.09828,16.849335 459.82314,12.647552 466.68514,7.7076111 z" Canvas.Left="27.353" Canvas.Top="-323.846">
+				<Path x:Name="_1_1" Fill="#CCFFAD00" Stretch="Fill" StrokeThickness="4" Width="700.506" Height="377.594" RenderTransformOrigin="0.012417516210502,0.931140323588558" Data="M8.6985397,358.5921 L15.382551,364.61974 15.382551,377.59412 8.4865575,372.70171 2.0145393,377.59412 2.0145393,364.61974 z M622.40901,347.72841 L630.48836,351.69481 627.3752,360.13971 615.32936,364.95966 617.30977,356.73969 610.36318,352.54835 z M8.6985397,342.09211 L15.382551,348.11973 15.382551,361.0941 8.4865575,356.20172 2.0145393,361.0941 2.0145393,348.11973 z M637.72817,341.5987 L645.80751,345.5651 642.69435,354.01001 630.64852,358.82995 632.62892,350.60998 625.68233,346.41863 z M582.74367,307.43153 L590.75929,317.63368 589.22731,326.50281 580.24758,325.8925 572.23195,315.69034 580.67702,315.277 z M6.684021,303.22414 L13.36799,309.25177 13.36799,322.22614 6.4720182,317.33381 0,322.22614 0,309.25177 z M286.43062,299.22704 L298.98546,302.49968 303.13222,310.48795 295.61354,315.43543 283.0587,312.16279 289.5323,306.72382 z M664.41872,297.85324 L668.045,306.09083 662.72737,317.92538 658.4424,310.63642 650.53377,312.44637 655.8514,300.61184 z M270.46413,295.06512 L283.01897,298.33774 287.16573,306.32601 279.64705,311.27349 267.09221,308.00085 273.56581,302.5619 z M572.54988,294.45706 L580.56551,304.65921 579.03352,313.52834 570.05379,312.91805 562.03816,302.71587 570.48323,302.30252 z M339.36965,289.36649 L347.11858,293.94497 343.36253,302.12425 330.98045,305.99956 333.58974,297.95707 326.98757,293.24182 z M6.6840105,286.72414 L13.36799,292.75177 13.36799,305.72615 6.4720182,300.83377 0,305.72615 0,292.75177 z M355.11641,284.43809 L362.86534,289.01657 359.10933,297.19582 346.72725,301.07117 349.3365,293.02867 342.73433,288.31342 z M671.18135,282.80276 L674.80769,291.04037 669.49001,302.87492 665.20503,295.58597 657.2964,297.39592 662.61409,285.56137 z M271.7538,252.24313 L273.5117,265.09786 267.70604,271.97552 260.26698,266.90912 258.50908,254.05438 266.00435,257.96729 z M8.0641799,246.42087 L14.390009,252.82339 13.642936,265.77623 7.0400839,260.49489 0.29711723,265.00648 1.0441901,252.05361 z M566.48384,244.08195 L568.26912,256.93288 562.47811,263.82291 555.02828,258.77232 553.243,245.92138 560.74654,249.81831 z M690.11696,239.20512 L693.74324,247.44273 688.42561,259.27727 684.14058,251.98831 676.23201,253.79827 681.54964,241.96373 z M269.51821,235.89529 L271.27611,248.75002 265.47045,255.62768 258.03139,250.56124 256.27348,237.70652 263.76875,241.61945 z M367.19313,232.54056 L373.62206,238.83955 373.08531,251.8028 366.39763,246.62935 359.72875,251.24979 360.26549,238.28652 z M9.0142789,229.94827 L15.340108,236.35075 14.593035,249.30359 7.9901929,244.02227 1.2471847,248.53385 1.9942784,235.58101 z M564.2134,227.73888 L565.99867,240.58984 560.20766,247.47987 552.75783,242.42929 550.97255,229.57832 558.47615,233.47527 z M696.87959,224.15466 L700.50594,232.39226 695.18825,244.2268 690.90328,236.93786 682.99465,238.7478 688.31233,226.91326 z M367.87575,216.05468 L374.30464,222.35367 373.7679,235.31693 367.08022,230.14346 360.41136,234.76389 360.94811,221.80064 z M267.55388,187.90996 L273.19051,194.21219 280.58775,190.88004 277.70513,203.53012 269.84899,207.92206 264.67125,200.56004 z M14.529017,185.998 L20.350517,192.86227 18.622219,205.72101 12.439394,199.95364 5.3733714,203.94029 7.1016703,191.08154 z M551.82503,173.11751 L557.73885,179.16045 564.97908,175.49971 562.66701,188.2664 555.01589,193.00645 549.51302,185.88422 z M271.2198,171.82236 L276.85646,178.12459 284.25368,174.79243 281.37108,187.44252 273.51491,191.83446 268.33717,184.47244 z M16.726937,169.64503 L22.548448,176.50931 20.820159,189.36806 14.637325,183.60068 7.5712914,187.58733 9.2995696,174.72859 z M372.43669,157.27759 L378.20097,164.18999 376.36592,177.03392 370.23122,171.21539 363.13228,175.1432 364.96733,162.29926 z M554.76534,156.88161 L560.67915,162.92455 567.91939,159.26379 565.60732,172.0305 557.95619,176.77055 552.45332,169.6483 z M374.7704,140.94345 L380.53465,147.85585 378.6996,160.6998 372.5649,154.88126 365.46599,158.80907 367.30104,145.96513 z M34.923749,128.22882 L37.838972,136.74408 31.537591,148.08545 27.885692,140.45961 19.852138,141.59288 26.15352,130.25151 z M286.14101,115.02379 L291.83016,121.27869 299.19927,117.88481 296.4225,130.55855 288.60335,135.01601 283.36424,127.69754 z M42.937452,113.80556 L45.852685,122.32082 39.551313,133.66219 35.899393,126.03635 27.865848,127.16962 34.16723,115.82825 z M574.56618,100.86293 L575.62929,113.79367 569.46163,120.34871 562.30623,114.88902 561.24312,101.95828 568.5168,106.26915 z M289.67232,98.906113 L295.36147,105.161 302.73058,101.76712 299.95381,114.44086 292.13466,118.89832 286.89556,111.57985 z M383.65953,87.250107 L387.60518,95.3396 382.75435,107.37303 378.18764,100.2572 370.35582,102.37503 375.20668,90.341599 z M573.21419,84.418396 L574.2773,97.349152 568.10964,103.90419 560.95424,98.444504 559.89113,85.513763 567.16481,89.824631 z M64.190332,76.797516 L67.105554,85.312775 60.804182,96.654144 57.152261,89.028305 49.118707,90.161591 55.420103,78.820221 z M389.82851,71.946716 L393.77419,80.036224 388.92336,92.069641 384.35661,84.953827 376.52483,87.07164 381.37566,75.038208 z M72.20405,62.374268 L75.119279,70.889496 68.81788,82.230896 65.165983,74.605042 57.13241,75.738312 63.433824,64.396942 z M278.01756,51.174591 L286.12401,61.304718 284.6714,70.187164 275.68657,69.657135 267.58009,59.527008 276.02113,59.038208 z M267.70824,38.291718 L275.81471,48.421844 274.36208,57.304291 265.37724,56.774261 257.27078,46.644135 265.71181,46.155334 z M538.49861,37.383087 L548.82924,45.232452 549.58492,54.201111 540.74178,55.876495 530.41115,48.027161 538.47859,45.496155 z M422.13884,30.614136 L423.75649,39.468018 415.83989,49.747192 413.36159,41.663391 405.24883,41.590393 413.16545,31.311218 z M91.620065,28.078217 L100.43057,29.917542 99.508493,38.870636 89.033884,46.526794 88.914339,38.072449 81.145448,35.734375 z M525.36073,27.400787 L535.69142,35.250122 536.44704,44.218811 527.6039,45.894196 517.27327,38.044861 525.34078,35.513855 z M214.66304,26.169159 L227.40036,28.637878 232.04605,36.34671 224.85674,41.761658 212.1194,39.292908 218.23454,33.453827 z M198.46448,23.029572 L211.20181,25.498291 215.84751,33.207123 208.65817,38.62207 195.92085,36.153351 202.036,30.31424 z M104.94102,18.341614 L113.75155,20.180908 112.82946,29.134003 102.35486,36.790161 102.23531,28.335846 94.466424,25.997742 z M432.20671,17.541687 L433.82433,26.395569 425.90773,36.674774 423.42946,28.590942 415.3167,28.517975 423.23329,18.2388 z M156.78925,13.308441 L169.52657,15.777191 174.17226,23.485992 166.98294,28.90094 154.24561,26.43222 160.36075,20.59314 z M140.5907,10.168854 L153.32802,12.637604 157.97371,20.346405 150.78438,25.761353 138.04706,23.292633 144.1622,17.453552 z M479.76317,5.3435364 L492.03832,9.5452881 495.57649,17.821136 487.70909,22.192871 475.43392,17.991119 482.29592,13.051147 z M464.15239,0 L476.42754,4.2017517 479.96571,12.4776 472.09828,16.849335 459.82314,12.647552 466.68514,7.7076111 z" Canvas.Left="27.353" Canvas.Top="-323.846">
 					<Path.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform/>
@@ -1368,9 +1361,9 @@
 			<Rectangle x:Name="bg01" Fill="#7F000000" Width="68" Height="16" Canvas.Left="30.834" Canvas.Top="35" RadiusX="4" RadiusY="4"/>
 			<Path x:Name="bg01_Copy" Fill="#7F000000" Stretch="Fill" Width="83.421" Height="16" Data="M3.9999995,0 L31.333,0 C33.542137,3.8851107E-07 35.333,1.7908614 35.333,4.0000009 L35.333,5.6617893 35.358002,5.6610006 39.755001,5.6610006 39.755001,4.0000009 C39.755001,1.7908614 41.54586,3.8851107E-07 43.755001,0 L79.420998,0 C81.630142,3.8851107E-07 83.420998,1.7908614 83.420998,4.0000009 L83.420998,11.999999 C83.420998,14.209139 81.630142,16 79.420998,16 L43.755001,16 C41.54586,16 39.755001,14.209139 39.755001,11.999999 L39.755001,10.661001 35.358002,10.661001 35.333,10.660212 35.333,11.999999 C35.333,14.209139 33.542137,16 31.333,16 L3.9999995,16 C1.790861,16 0,14.209139 0,11.999999 L0,4.0000009 C0,1.7908614 1.790861,3.8851107E-07 3.9999995,0 z" Canvas.Left="156.167" Canvas.Top="35"/>
 		</Canvas>
-		<TextBlock x:Name="gold_Text" Width="72" Height="24" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="736.83" Canvas.Top="7" TextAlignment="Right"><Run Text="55"/><Run Text="200"/></TextBlock>
-		<TextBlock x:Name="gold_NextTime_Text" Width="56" Height="24" Text="0:5" TextWrapping="Wrap" Foreground="#FF747474" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="872.607" Canvas.Top="7"/>
-		<TextBlock x:Name="gold_Next_Text" Width="56" Height="24" TextWrapping="Wrap" Foreground="#FF946D40" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="893.943" Canvas.Top="7" TextAlignment="Right"><Run Text="5"/><Run Text="85"/><LineBreak/><Run Text=""/></TextBlock>
+		<TextBlock x:Name="gold_Text" Width="72" Height="24" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="734.334" Canvas.Top="8" TextAlignment="Right" FontStyle="Italic" FontWeight="Bold"><Run Text="55"/><Run Text="200"/></TextBlock>
+		<TextBlock x:Name="gold_NextTime_Text" Width="56" Height="24" Text="0:5" TextWrapping="Wrap" Foreground="#FF747474" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="870.607" Canvas.Top="7" FontWeight="Bold" FontStyle="Italic"/>
+		<TextBlock x:Name="gold_Next_Text" Width="56" Height="24" TextWrapping="Wrap" Foreground="#FF946D40" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="891.943" Canvas.Top="7" TextAlignment="Right" FontWeight="Bold" FontStyle="Italic"><Run Text="5"/><Run Text="85"/><LineBreak/><Run Text=""/></TextBlock>
 		<Image x:Name="image" Width="64" Height="64" Canvas.Left="309" Canvas.Top="-17" Source="Resources/UI/Icon_Core.png" Stretch="Fill" Cursor="Hand"/>
 		<Grid x:Name="talk_Core" Width="184" Height="56" Canvas.Left="192" Canvas.Top="-56" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed">
 			<Path x:Name="path5_Copy2" Fill="Black" Stretch="Fill" Stroke="Black" StrokeThickness="2" Data="M10,2.3333333 C5.6831257,7.8563931 -1.9047877,12.142909 -4.6666667,17.666667 -3.5846555,17.486331 -2.9212211,17.127277 -2,16.666667 -0.94372637,18.779214 -4.2781032,20 0,20 -0.11111111,19.888889 -0.22222222,19.777778 -0.33333333,19.666667 0.52820869,19.379486 1.1850518,19.074141 2,18.666667 2.1986531,20.255892 1.1411696,26.819649 0.66666667,29.666667 -0.17706815,34.729076 1.1922541,39.153524 2,44 3.5285517,53.17131 1.6666667,62.531736&#xa;1.6666667,71.666667 1.6666667,73.986506 1.5064629,76.082648 1.3333333,78.333333 1.1870876,80.234527 -1.8572948,79.810436 -2.3333333,82.666667 -2.8252852,85.618378 -7.8621289,83.735602 -3.3333333,86 -1.0840421,87.124646 1.1600492,88.182771 3.3333333,89.333333 8.7510931,92.201559 13.713983,98.063089 17.666667,103.33333 17.99141,103.76632 22.937845,104.54236 21.333333,101.33333 19.780194,98.227054 19.266745,94.706777 17.333333,92 32.745755,99.706211&#xa;43.161448,92.666667 60.666667,92.666667 74.513074,92.666667 88.429933,93.666667 102,93.666667 113.73744,93.666667 128.89861,89.077313 139.66667,92.666667 147.89846,95.410599 157.4685,93.687461 166,95 173.43454,96.143775 172.33333,89.755561 172.33333,102.33333 182.81914,104.43049 181.00024,102.69074 181.00024,116 181.00024,116.33333 181.60066,117.96617 187.33333,113.66667 189.83867,111.78766 192.7597,110.59689 195.33333,108.66667&#xa;195.33333,117.06223 195.57524,127.48381 199.33333,135 199.33333,126.19208 199.0826,117.08845 200.33333,108.33333 200.65996,106.04694 203.66694,100.33333 203.66694,100.33333 203.66694,101.32003 197.28174,101.11018 196.33333,101.33333 195.58428,101.50958 195.26359,101.20924 196,99 196.64446,97.066621 195.63733,95.509338 196,93.333333 203.61372,93.333333 210.80889,94.376566 217.66667,95 224.2493,95.598422 232.68355,94.108296&#xa;239.33333,93 235.18142,93.830383 232.58959,96.862165 230.33333,100.33333 230.03626,100.79037 230.44084,102.14184 230.66667,103 231.0527,104.46693 230.49337,105.08665 233.33333,103.66667 235.86724,102.39971 237.75362,100.51594 240.33333,100 239.71458,101.03125 239.20238,101.79762 238.33333,102.66667 239.14642,102.26012 239.94946,102.02527 240.66667,101.66667 239.33333,103 238,104.33333 236.66667,105.66667 241.00593,103.49704&#xa;245.88626,103.22748 248.33333,98.333333 250.3814,94.237206 252.55706,93.109608 255.66667,90 255.07562,88.522395 254.66667,87.090095 254.66667,85.333333 253.14521,86.474428 251.55739,87.554638 250,88.333333 249.09809,86.529514 248.40116,84.720932 246.66667,83.333333 247.97841,82.396377 248.77221,81.561126 250,80.333333 247.38362,77.71695 247.70643,69.810527 247.33333,65.333333 246.82567,59.241358 246.33333,53.188323 246.33333,47&#xa;246.33333,36.533346 242.65725,20.352175 247.33333,11 249.51486,15.363061 247.04391,17.142116 253,18.333333 252.74306,17.819456 251.92774,16.036359 252.33333,15.333333 252.68239,14.728308 254.04132,15.648562 255,16.333333 255.81063,15.928017 256.46871,15.62154 257.33333,15.333333 254.71071,11.661663 249.2893,10.056587 247.66667,6 247.44444,6 247.22222,6 247,6 245.65265,1.9579466 241.29522,-0.84129172&#xa;239,-4.6666667 238.12506,-6.1248971 228.53259,-11.890132 234.66667,-1.6666667 233.77778,-1.6666667 232.88889,-1.6666667 232,-1.6666667 233.1175,-0.26978656 234.20861,0.75055622 235,2.3333333 232.9737,3.4912173 232.32885,1.6621837 230,-0.66666667 229.90867,-0.53880079 229.7268,-0.478507 229.66667,-0.33333333 229.58163,-0.12802677 229.84019,0.19451221 229.66667,0.33333333 211.25142,0.33333333 192.95928,2 174.66667,2 165.71533,2&#xa;158.31838,-0.66666667 149.33333,-0.66666667 138.6144,-0.66666667 128.37029,0.66666667 117.66667,0.66666667 98.264631,0.66666667 78.109122,2.6065316 59,-0.33333333 50.049454,-1.7103404 40.485565,-1.3333333 31.333333,-1.3333333 27.2247,-1.3333333 23.654506,-0.33333333 19.666667,-0.33333333 15.115907,-0.33333333 20.704411,-0.83466476 19,-4 18.33198,-5.2406079 15.447028,-3.1864445 14.666667,-3.6666667 13.111985,-2.1119849 11.589987,-0.51879395 10,1&#xa;" RenderTransformOrigin="0.5,0.5" Margin="-11.333,-7.273,24,-8" d:LayoutOverrides="VerticalAlignment">
@@ -1383,7 +1376,7 @@
 					</TransformGroup>
 				</Path.RenderTransform>
 			</Path>
-			<Path x:Name="path7_Copy2" Fill="#FFECE5CE" Stretch="Fill" StrokeThickness="2" Data="M15.333333,3.6666667 C11.307507,8.2450577 6.9605732,11.706093 2.6666667,16 4.6867477,16.67336 4.133063,15.772847 5,17.333333 6.2079426,16.608568 7.4969841,15.918175 8.6666667,15.333333 7.8579685,19.376824 5.3333333,20.775714 5.3333333,25.333333 5.3333333,29.511886 5.6502406,33.13622 6,37.333333 6.3546183,41.588753 6.3333333,45.954971 6.3333333,50.333333 6.3333333,53.94135 7.3686958,53.018203 8.3333333,55.333333 9.0289594,57.002836 6.3333333,59.003259&#xa;6.3333333,61 5.7305631,59.995383 5.3710828,58.939221 4.6666667,58 4.6666667,62.574709 4.1812117,67.08727 5,72 5.3811108,74.286665 5,76.123391 5,78.333333 5,80.844649 7.5967364,81.193473 8.6666667,83.333333 7.6651409,83.834096 6.9201325,83.666667 5.6666667,83.666667 9.140644,87.140644 12.284954,89.379939 15,93 17.112579,90.359277 16.666667,92.659828 16.666667,88.666667 17.361165,88.527767&#xa;17.638835,88.472233 18.333333,88.333333 19.063247,91.9829 19.107863,89.332821 23.333333,90 26.180705,90.449585 29.348619,91 32.333333,91 39.005285,91 44.668748,89.333333 51,89.333333 63.148566,89.333333 74.674038,91.666052 86.666667,90.666667 101.89662,89.397504 117.0693,86.333333 132.66667,86.333333 137.04289,86.333333 138.85823,84.406117 142,88.333333 144.50137,91.46004 146.55898,91 151.33333,91&#xa;160.72825,91 169.33268,92.555665 178.66667,91 178.66667,98.678516 170.73506,99.333333 185.33333,99.333333 185.33333,103.6478 183.66667,107.02141 183.66667,111 186.08188,109.18859 189.12839,107.86148 192,107 196.0045,105.79865 197.33333,102.02348 197.33333,111.66667 197.88277,108.91946 199.33333,106.18907 199.33333,103.33333 197.54438,103.33333 195.99394,103.66667 194.33333,103.66667 194.75634,102.82065 194.66667,102.40562&#xa;194.66667,101.33333 193.05392,102.1397 192.03191,102.02307 193,97.666667 193.4149,95.799621 192.66667,92.801489 192.66667,90.666667 201.17021,92.083923 210.94101,92.246522 219.66667,91 224.15192,90.359249 228.53112,90.739595 233,90.333333 237.71551,89.904651 238.58549,87.243528 235.66667,96 240.79496,96 243.49967,94.500992 245.66667,88 244.77778,88 243.88889,88 243,88 243.38956,86.052192&#xa;242.25103,84.983521 242.33333,83.666667 242.40603,82.503473 244.54819,81.63657 244.66667,80.333333 245.05157,76.099363 244.33589,72.030654 244,68 243.39292,60.715019 241.33333,53.958626 241.33333,46.333333 241.33333,38.398553 240.46617,30.469919 241.66667,22.666667 242.27994,18.6804 241.04638,14.411602 241.66667,11 242.92669,4.0698793 238.23432,8.0857887 236.33333,3.3333333 234.68011,4.3252697 233.94091,6.1215144 231.66667,5.6666667&#xa;229.6287,5.2590735 228.62773,3.5194677 226.33333,4.6666667 221.33141,2.1657045 210.6904,4 204.66667,4 196.6285,4 188.81753,4.6666667 180.66667,4.6666667 163.73482,4.6666667 145.81627,7.8027113 129,5 110.64606,1.9410093 94.666224,3.3333333 76,3.3333333 63.710532,3.3333333 51.620985,3.6666667 39.333333,3.6666667 32.643828,3.6666667 24.073905,-1.4072386 18.333333,4.3333333 18.333333,3.5555556 18.333333,2.7777778&#xa;18.333333,2 16.579273,2 16.105171,3.4659888 15.333333,3.6666667 z" RenderTransformOrigin="0.5,0.5" Margin="-5.217,1,32,8" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment">
+			<Path x:Name="path7_Copy2" Fill="White" Stretch="Fill" StrokeThickness="2" Data="M15.333333,3.6666667 C11.307507,8.2450577 6.9605732,11.706093 2.6666667,16 4.6867477,16.67336 4.133063,15.772847 5,17.333333 6.2079426,16.608568 7.4969841,15.918175 8.6666667,15.333333 7.8579685,19.376824 5.3333333,20.775714 5.3333333,25.333333 5.3333333,29.511886 5.6502406,33.13622 6,37.333333 6.3546183,41.588753 6.3333333,45.954971 6.3333333,50.333333 6.3333333,53.94135 7.3686958,53.018203 8.3333333,55.333333 9.0289594,57.002836 6.3333333,59.003259&#xa;6.3333333,61 5.7305631,59.995383 5.3710828,58.939221 4.6666667,58 4.6666667,62.574709 4.1812117,67.08727 5,72 5.3811108,74.286665 5,76.123391 5,78.333333 5,80.844649 7.5967364,81.193473 8.6666667,83.333333 7.6651409,83.834096 6.9201325,83.666667 5.6666667,83.666667 9.140644,87.140644 12.284954,89.379939 15,93 17.112579,90.359277 16.666667,92.659828 16.666667,88.666667 17.361165,88.527767&#xa;17.638835,88.472233 18.333333,88.333333 19.063247,91.9829 19.107863,89.332821 23.333333,90 26.180705,90.449585 29.348619,91 32.333333,91 39.005285,91 44.668748,89.333333 51,89.333333 63.148566,89.333333 74.674038,91.666052 86.666667,90.666667 101.89662,89.397504 117.0693,86.333333 132.66667,86.333333 137.04289,86.333333 138.85823,84.406117 142,88.333333 144.50137,91.46004 146.55898,91 151.33333,91&#xa;160.72825,91 169.33268,92.555665 178.66667,91 178.66667,98.678516 170.73506,99.333333 185.33333,99.333333 185.33333,103.6478 183.66667,107.02141 183.66667,111 186.08188,109.18859 189.12839,107.86148 192,107 196.0045,105.79865 197.33333,102.02348 197.33333,111.66667 197.88277,108.91946 199.33333,106.18907 199.33333,103.33333 197.54438,103.33333 195.99394,103.66667 194.33333,103.66667 194.75634,102.82065 194.66667,102.40562&#xa;194.66667,101.33333 193.05392,102.1397 192.03191,102.02307 193,97.666667 193.4149,95.799621 192.66667,92.801489 192.66667,90.666667 201.17021,92.083923 210.94101,92.246522 219.66667,91 224.15192,90.359249 228.53112,90.739595 233,90.333333 237.71551,89.904651 238.58549,87.243528 235.66667,96 240.79496,96 243.49967,94.500992 245.66667,88 244.77778,88 243.88889,88 243,88 243.38956,86.052192&#xa;242.25103,84.983521 242.33333,83.666667 242.40603,82.503473 244.54819,81.63657 244.66667,80.333333 245.05157,76.099363 244.33589,72.030654 244,68 243.39292,60.715019 241.33333,53.958626 241.33333,46.333333 241.33333,38.398553 240.46617,30.469919 241.66667,22.666667 242.27994,18.6804 241.04638,14.411602 241.66667,11 242.92669,4.0698793 238.23432,8.0857887 236.33333,3.3333333 234.68011,4.3252697 233.94091,6.1215144 231.66667,5.6666667&#xa;229.6287,5.2590735 228.62773,3.5194677 226.33333,4.6666667 221.33141,2.1657045 210.6904,4 204.66667,4 196.6285,4 188.81753,4.6666667 180.66667,4.6666667 163.73482,4.6666667 145.81627,7.8027113 129,5 110.64606,1.9410093 94.666224,3.3333333 76,3.3333333 63.710532,3.3333333 51.620985,3.6666667 39.333333,3.6666667 32.643828,3.6666667 24.073905,-1.4072386 18.333333,4.3333333 18.333333,3.5555556 18.333333,2.7777778&#xa;18.333333,2 16.579273,2 16.105171,3.4659888 15.333333,3.6666667 z" RenderTransformOrigin="0.5,0.5" Margin="-5.217,1,32,8" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment">
 				<Path.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform ScaleX="1" ScaleY="1"/>
@@ -1421,7 +1414,7 @@
 					</TransformGroup>
 				</Path.RenderTransform>
 			</Path>
-			<Path x:Name="path7_Copy1" Fill="#FFECE5CE" Stretch="Fill" StrokeThickness="2" Data="M15.333333,3.6666667 C11.307507,8.2450577 6.9605732,11.706093 2.6666667,16 4.6867477,16.67336 4.133063,15.772847 5,17.333333 6.2079426,16.608568 7.4969841,15.918175 8.6666667,15.333333 7.8579685,19.376824 3.8131141,22.166858 3.8131141,26.724477 3.8131141,30.90303 4.1300214,34.527364 4.4797808,38.724477 4.8343991,42.979897 4.3793335,44.1945 4.3793335,48.572862 4.3793335,52.180879 3.414696,53.165763 4.3793335,55.480893 5.0749596,57.150396 6.3333333,59.003259&#xd;&#xa;6.3333333,61 5.7305631,59.995383 5.3710828,58.939221 4.6666667,58 4.3793335,59.625712 4.1812117,67.08727 5,72 5.3811108,74.286665 5,76.123391 5,78.333333 5,80.844649 7.5967364,81.193473 8.6666667,83.333333 7.6651409,83.834096 6.9201325,83.666667 5.6666667,83.666667 9.140644,87.140644 12.284954,89.379939 15,93 17.112579,90.359277 16.666667,92.659828 16.666667,88.666667 17.361165,88.527767&#xd;&#xa;17.638835,88.472233 18.333333,88.333333 19.063247,91.9829 19.107863,89.332821 23.333333,90 26.180705,90.449585 29.348619,91 32.333333,91 39.005285,91 44.668748,89.333333 51,89.333333 63.148566,89.333333 74.674038,91.666052 86.666667,90.666667 101.89662,89.397504 117.0693,86.333333 132.66667,86.333333 137.04289,86.333333 138.85823,84.406117 142,88.333333 144.50137,91.46004 146.55898,91 151.33333,91&#xd;&#xa;160.72825,91 169.33268,92.555665 178.66667,91 178.66667,98.678516 170.73506,99.333333 185.33333,99.333333 185.33333,103.6478 183.66667,107.02141 183.66667,111 186.08188,109.18859 189.12839,107.86148 192,107 196.0045,105.79865 197.33333,102.02348 197.33333,111.66667 197.88277,108.91946 199.33333,106.18907 199.33333,103.33333 197.54438,103.33333 195.99394,103.66667 194.33333,103.66667 194.75634,102.82065 194.66667,102.40562&#xd;&#xa;194.66667,101.33333 193.05392,102.1397 192.03191,102.02307 193,97.666667 193.4149,95.799621 192.66667,92.801489 192.66667,90.666667 201.17021,92.083923 210.94101,92.246522 219.66667,91 224.15192,90.359249 228.53112,90.739595 233,90.333333 237.71551,89.904651 238.58549,87.243528 235.66667,96 240.79496,96 243.49967,94.500992 245.66667,88 244.77778,88 243.88889,88 243,88 243.38956,86.052192&#xd;&#xa;242.25103,84.983521 242.33333,83.666667 242.40603,82.503473 244.54819,81.63657 244.66667,80.333333 245.05157,76.099363 244.33589,72.030654 244,68 243.39292,60.715019 241.33333,53.958626 241.33333,46.333333 241.33333,38.398553 240.46617,30.469919 241.66667,22.666667 242.27994,18.6804 241.04638,14.411602 241.66667,11 242.92669,4.0698793 238.23432,8.0857887 236.33333,3.3333333 234.68011,4.3252697 233.94091,6.1215144 231.66667,5.6666667&#xd;&#xa;229.6287,5.2590735 228.62773,3.5194677 226.33333,4.6666667 221.33141,2.1657045 210.6904,4 204.66667,4 196.6285,4 188.81753,4.6666667 180.66667,4.6666667 163.73482,4.6666667 145.81627,7.8027113 129,5 110.64606,1.9410093 94.666224,3.3333333 76,3.3333333 63.710532,3.3333333 51.620985,3.6666667 39.333333,3.6666667 32.643828,3.6666667 24.073905,-1.4072386 18.333333,4.3333333 18.333333,3.5555556 18.333333,2.7777778&#xd;&#xa;18.333333,2 16.579273,2 16.105171,3.4659888 15.333333,3.6666667 z" RenderTransformOrigin="0.5,0.5" Margin="-0.217,1.332,42.333,-25" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment">
+			<Path x:Name="path7_Copy1" Fill="White" Stretch="Fill" StrokeThickness="2" Data="M15.333333,3.6666667 C11.307507,8.2450577 6.9605732,11.706093 2.6666667,16 4.6867477,16.67336 4.133063,15.772847 5,17.333333 6.2079426,16.608568 7.4969841,15.918175 8.6666667,15.333333 7.8579685,19.376824 3.8131141,22.166858 3.8131141,26.724477 3.8131141,30.90303 4.1300214,34.527364 4.4797808,38.724477 4.8343991,42.979897 4.3793335,44.1945 4.3793335,48.572862 4.3793335,52.180879 3.414696,53.165763 4.3793335,55.480893 5.0749596,57.150396 6.3333333,59.003259&#xd;&#xa;6.3333333,61 5.7305631,59.995383 5.3710828,58.939221 4.6666667,58 4.3793335,59.625712 4.1812117,67.08727 5,72 5.3811108,74.286665 5,76.123391 5,78.333333 5,80.844649 7.5967364,81.193473 8.6666667,83.333333 7.6651409,83.834096 6.9201325,83.666667 5.6666667,83.666667 9.140644,87.140644 12.284954,89.379939 15,93 17.112579,90.359277 16.666667,92.659828 16.666667,88.666667 17.361165,88.527767&#xd;&#xa;17.638835,88.472233 18.333333,88.333333 19.063247,91.9829 19.107863,89.332821 23.333333,90 26.180705,90.449585 29.348619,91 32.333333,91 39.005285,91 44.668748,89.333333 51,89.333333 63.148566,89.333333 74.674038,91.666052 86.666667,90.666667 101.89662,89.397504 117.0693,86.333333 132.66667,86.333333 137.04289,86.333333 138.85823,84.406117 142,88.333333 144.50137,91.46004 146.55898,91 151.33333,91&#xd;&#xa;160.72825,91 169.33268,92.555665 178.66667,91 178.66667,98.678516 170.73506,99.333333 185.33333,99.333333 185.33333,103.6478 183.66667,107.02141 183.66667,111 186.08188,109.18859 189.12839,107.86148 192,107 196.0045,105.79865 197.33333,102.02348 197.33333,111.66667 197.88277,108.91946 199.33333,106.18907 199.33333,103.33333 197.54438,103.33333 195.99394,103.66667 194.33333,103.66667 194.75634,102.82065 194.66667,102.40562&#xd;&#xa;194.66667,101.33333 193.05392,102.1397 192.03191,102.02307 193,97.666667 193.4149,95.799621 192.66667,92.801489 192.66667,90.666667 201.17021,92.083923 210.94101,92.246522 219.66667,91 224.15192,90.359249 228.53112,90.739595 233,90.333333 237.71551,89.904651 238.58549,87.243528 235.66667,96 240.79496,96 243.49967,94.500992 245.66667,88 244.77778,88 243.88889,88 243,88 243.38956,86.052192&#xd;&#xa;242.25103,84.983521 242.33333,83.666667 242.40603,82.503473 244.54819,81.63657 244.66667,80.333333 245.05157,76.099363 244.33589,72.030654 244,68 243.39292,60.715019 241.33333,53.958626 241.33333,46.333333 241.33333,38.398553 240.46617,30.469919 241.66667,22.666667 242.27994,18.6804 241.04638,14.411602 241.66667,11 242.92669,4.0698793 238.23432,8.0857887 236.33333,3.3333333 234.68011,4.3252697 233.94091,6.1215144 231.66667,5.6666667&#xd;&#xa;229.6287,5.2590735 228.62773,3.5194677 226.33333,4.6666667 221.33141,2.1657045 210.6904,4 204.66667,4 196.6285,4 188.81753,4.6666667 180.66667,4.6666667 163.73482,4.6666667 145.81627,7.8027113 129,5 110.64606,1.9410093 94.666224,3.3333333 76,3.3333333 63.710532,3.3333333 51.620985,3.6666667 39.333333,3.6666667 32.643828,3.6666667 24.073905,-1.4072386 18.333333,4.3333333 18.333333,3.5555556 18.333333,2.7777778&#xd;&#xa;18.333333,2 16.579273,2 16.105171,3.4659888 15.333333,3.6666667 z" RenderTransformOrigin="0.5,0.5" Margin="-0.217,1.332,42.333,-25" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment">
 				<Path.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform ScaleX="-1" ScaleY="1"/>
@@ -1459,7 +1452,7 @@
 					</TransformGroup>
 				</Path.RenderTransform>
 			</Path>
-			<Path x:Name="path7_Copy" Fill="#FFECE5CE" Stretch="Fill" StrokeThickness="2" Margin="2.224,-0.332,30.142,-7.336" Data="M15.333333,3.6666667 C11.307507,8.2450577 6.9605732,11.706093 2.6666667,16 4.6867477,16.67336 4.133063,15.772847 5,17.333333 6.2079426,16.608568 7.4969841,15.918175 8.6666667,15.333333 7.8579685,19.376824 5.3333333,20.775714 5.3333333,25.333333 5.3333333,29.511886 5.6502406,33.13622 6,37.333333 6.3546183,41.588753 6.3333333,45.954971 6.3333333,50.333333 6.3333333,53.94135 7.3686958,53.018203 8.3333333,55.333333 9.0289594,57.002836 6.3333333,59.003259&#xa;6.3333333,61 5.7305631,59.995383 5.3710828,58.939221 4.6666667,58 4.6666667,62.574709 4.1812117,67.08727 5,72 5.3811108,74.286665 5,76.123391 5,78.333333 5,80.844649 7.5967364,81.193473 8.6666667,83.333333 7.6651409,83.834096 6.9201325,83.666667 5.6666667,83.666667 9.140644,87.140644 12.284954,89.379939 15,93 17.112579,90.359277 16.666667,92.659828 16.666667,88.666667 17.361165,88.527767&#xa;17.638835,88.472233 18.333333,88.333333 19.063247,91.9829 19.107863,89.332821 23.333333,90 26.180705,90.449585 29.348619,91 32.333333,91 39.005285,91 44.668748,89.333333 51,89.333333 63.148566,89.333333 74.674038,91.666052 86.666667,90.666667 101.89662,89.397504 117.0693,86.333333 132.66667,86.333333 137.04289,86.333333 138.85823,84.406117 142,88.333333 144.50137,91.46004 146.55898,91 151.33333,91&#xa;160.72825,91 169.33268,92.555665 178.66667,91 178.66667,98.678516 170.73506,99.333333 185.33333,99.333333 185.33333,103.6478 183.66667,107.02141 183.66667,111 186.08188,109.18859 189.12839,107.86148 192,107 196.0045,105.79865 197.33333,102.02348 197.33333,111.66667 197.88277,108.91946 199.33333,106.18907 199.33333,103.33333 197.54438,103.33333 195.99394,103.66667 194.33333,103.66667 194.75634,102.82065 194.66667,102.40562&#xa;194.66667,101.33333 193.05392,102.1397 192.03191,102.02307 193,97.666667 193.4149,95.799621 192.66667,92.801489 192.66667,90.666667 201.17021,92.083923 210.94101,92.246522 219.66667,91 224.15192,90.359249 228.53112,90.739595 233,90.333333 237.71551,89.904651 238.58549,87.243528 235.66667,96 240.79496,96 243.49967,94.500992 245.66667,88 244.77778,88 243.88889,88 243,88 243.38956,86.052192&#xa;242.25103,84.983521 242.33333,83.666667 242.40603,82.503473 244.54819,81.63657 244.66667,80.333333 245.05157,76.099363 244.33589,72.030654 244,68 243.39292,60.715019 241.33333,53.958626 241.33333,46.333333 241.33333,38.398553 240.46617,30.469919 241.66667,22.666667 242.27994,18.6804 241.04638,14.411602 241.66667,11 242.92669,4.0698793 238.23432,8.0857887 236.33333,3.3333333 234.68011,4.3252697 233.94091,6.1215144 231.66667,5.6666667&#xa;229.6287,5.2590735 228.62773,3.5194677 226.33333,4.6666667 221.33141,2.1657045 210.6904,4 204.66667,4 196.6285,4 188.81753,4.6666667 180.66667,4.6666667 163.73482,4.6666667 145.81627,7.8027113 129,5 110.64606,1.9410093 94.666224,3.3333333 76,3.3333333 63.710532,3.3333333 51.620985,3.6666667 39.333333,3.6666667 32.643828,3.6666667 24.073905,-1.4072386 18.333333,4.3333333 18.333333,3.5555556 18.333333,2.7777778&#xa;18.333333,2 16.579273,2 16.105171,3.4659888 15.333333,3.6666667 z" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment, GridBox">
+			<Path x:Name="path7_Copy" Fill="White" Stretch="Fill" StrokeThickness="2" Margin="2.224,-0.332,30.142,-7.336" Data="M15.333333,3.6666667 C11.307507,8.2450577 6.9605732,11.706093 2.6666667,16 4.6867477,16.67336 4.133063,15.772847 5,17.333333 6.2079426,16.608568 7.4969841,15.918175 8.6666667,15.333333 7.8579685,19.376824 5.3333333,20.775714 5.3333333,25.333333 5.3333333,29.511886 5.6502406,33.13622 6,37.333333 6.3546183,41.588753 6.3333333,45.954971 6.3333333,50.333333 6.3333333,53.94135 7.3686958,53.018203 8.3333333,55.333333 9.0289594,57.002836 6.3333333,59.003259&#xa;6.3333333,61 5.7305631,59.995383 5.3710828,58.939221 4.6666667,58 4.6666667,62.574709 4.1812117,67.08727 5,72 5.3811108,74.286665 5,76.123391 5,78.333333 5,80.844649 7.5967364,81.193473 8.6666667,83.333333 7.6651409,83.834096 6.9201325,83.666667 5.6666667,83.666667 9.140644,87.140644 12.284954,89.379939 15,93 17.112579,90.359277 16.666667,92.659828 16.666667,88.666667 17.361165,88.527767&#xa;17.638835,88.472233 18.333333,88.333333 19.063247,91.9829 19.107863,89.332821 23.333333,90 26.180705,90.449585 29.348619,91 32.333333,91 39.005285,91 44.668748,89.333333 51,89.333333 63.148566,89.333333 74.674038,91.666052 86.666667,90.666667 101.89662,89.397504 117.0693,86.333333 132.66667,86.333333 137.04289,86.333333 138.85823,84.406117 142,88.333333 144.50137,91.46004 146.55898,91 151.33333,91&#xa;160.72825,91 169.33268,92.555665 178.66667,91 178.66667,98.678516 170.73506,99.333333 185.33333,99.333333 185.33333,103.6478 183.66667,107.02141 183.66667,111 186.08188,109.18859 189.12839,107.86148 192,107 196.0045,105.79865 197.33333,102.02348 197.33333,111.66667 197.88277,108.91946 199.33333,106.18907 199.33333,103.33333 197.54438,103.33333 195.99394,103.66667 194.33333,103.66667 194.75634,102.82065 194.66667,102.40562&#xa;194.66667,101.33333 193.05392,102.1397 192.03191,102.02307 193,97.666667 193.4149,95.799621 192.66667,92.801489 192.66667,90.666667 201.17021,92.083923 210.94101,92.246522 219.66667,91 224.15192,90.359249 228.53112,90.739595 233,90.333333 237.71551,89.904651 238.58549,87.243528 235.66667,96 240.79496,96 243.49967,94.500992 245.66667,88 244.77778,88 243.88889,88 243,88 243.38956,86.052192&#xa;242.25103,84.983521 242.33333,83.666667 242.40603,82.503473 244.54819,81.63657 244.66667,80.333333 245.05157,76.099363 244.33589,72.030654 244,68 243.39292,60.715019 241.33333,53.958626 241.33333,46.333333 241.33333,38.398553 240.46617,30.469919 241.66667,22.666667 242.27994,18.6804 241.04638,14.411602 241.66667,11 242.92669,4.0698793 238.23432,8.0857887 236.33333,3.3333333 234.68011,4.3252697 233.94091,6.1215144 231.66667,5.6666667&#xa;229.6287,5.2590735 228.62773,3.5194677 226.33333,4.6666667 221.33141,2.1657045 210.6904,4 204.66667,4 196.6285,4 188.81753,4.6666667 180.66667,4.6666667 163.73482,4.6666667 145.81627,7.8027113 129,5 110.64606,1.9410093 94.666224,3.3333333 76,3.3333333 63.710532,3.3333333 51.620985,3.6666667 39.333333,3.6666667 32.643828,3.6666667 24.073905,-1.4072386 18.333333,4.3333333 18.333333,3.5555556 18.333333,2.7777778&#xa;18.333333,2 16.579273,2 16.105171,3.4659888 15.333333,3.6666667 z" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment, GridBox">
 				<Path.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform ScaleX="-1" ScaleY="1"/>
@@ -1478,79 +1471,19 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform></TextBlock>
 		</Grid>
-		<Canvas x:Name="Warning_Enemy" Width="152" Height="104" Canvas.Top="-233" Canvas.Left="360" IsHitTestVisible="False" Visibility="Collapsed">
+		<Canvas x:Name="Warning_Enemy" Width="152" Height="104" Canvas.Top="-233" Canvas.Left="328" IsHitTestVisible="False" Visibility="Collapsed">
 			<Canvas x:Name="canvas" Width="64" Height="32">
-				<Path Fill="Black" Stretch="Fill" Stroke="Black" StrokeThickness="2" Data="M10,2.3333333 C5.6831257,7.8563931 -1.9047877,12.142909 -4.6666667,17.666667 -3.5846555,17.486331 -2.9212211,17.127277 -2,16.666667 -0.94372637,18.779214 -4.2781032,20 0,20 -0.11111111,19.888889 -0.22222222,19.777778 -0.33333333,19.666667 0.52820869,19.379486 1.1850518,19.074141 2,18.666667 2.1986531,20.255892 1.1411696,26.819649 0.66666667,29.666667 -0.17706815,34.729076 1.1922541,39.153524 2,44 3.5285517,53.17131 1.6666667,62.531736&#xa;1.6666667,71.666667 1.6666667,73.986506 1.5064629,76.082648 1.3333333,78.333333 1.1870876,80.234527 -1.8572948,79.810436 -2.3333333,82.666667 -2.8252852,85.618378 -7.8621289,83.735602 -3.3333333,86 -1.0840421,87.124646 1.1600492,88.182771 3.3333333,89.333333 8.7510931,92.201559 13.713983,98.063089 17.666667,103.33333 17.99141,103.76632 22.937845,104.54236 21.333333,101.33333 19.780194,98.227054 19.266745,94.706777 17.333333,92 32.745755,99.706211&#xa;43.161448,92.666667 60.666667,92.666667 74.513074,92.666667 88.429933,93.666667 102,93.666667 113.73744,93.666667 128.89861,89.077313 139.66667,92.666667 147.89846,95.410599 157.4685,93.687461 166,95 172.85664,96.054867 210.80889,94.376566 217.66667,95 224.2493,95.598422 232.68355,94.108296 239.33333,93 235.18142,93.830383 232.58959,96.862165 230.33333,100.33333 230.03626,100.79037 230.44084,102.14184 230.66667,103&#xa;231.0527,104.46693 230.49337,105.08665 233.33333,103.66667 235.86724,102.39971 237.75362,100.51594 240.33333,100 239.71458,101.03125 239.20238,101.79762 238.33333,102.66667 239.14642,102.26012 239.94946,102.02527 240.66667,101.66667 239.33333,103 238,104.33333 236.66667,105.66667 241.00593,103.49704 245.88626,103.22748 248.33333,98.333333 250.3814,94.237206 252.55706,93.109608 255.66667,90 255.07562,88.522395 254.66667,87.090095&#xa;254.66667,85.333333 253.14521,86.474428 251.55739,87.554638 250,88.333333 249.09809,86.529514 248.40116,84.720932 246.66667,83.333333 247.97841,82.396377 248.77221,81.561126 250,80.333333 247.38362,77.71695 247.70643,69.810527 247.33333,65.333333 246.82567,59.241358 246.33333,53.188323 246.33333,47 246.33333,36.533346 242.65725,20.352175 247.33333,11 249.51486,15.363061 247.04391,17.142116 253,18.333333 252.74306,17.819456&#xa;251.92774,16.036359 252.33333,15.333333 252.68239,14.728308 254.04132,15.648562 255,16.333333 255.81063,15.928017 256.46871,15.62154 257.33333,15.333333 254.71071,11.661663 249.2893,10.056587 247.66667,6 247.44444,6 247.22222,6 247,6 245.65265,1.9579466 241.29522,-0.84129172 239,-4.6666667 238.12506,-6.1248971 228.53259,-11.890132 234.66667,-1.6666667 233.77778,-1.6666667 232.88889,-1.6666667 232,-1.6666667&#xa;233.1175,-0.26978656 234.20861,0.75055622 235,2.3333333 232.9737,3.4912173 232.32885,1.6621837 230,-0.66666667 229.90867,-0.53880079 229.7268,-0.478507 229.66667,-0.33333333 229.58163,-0.12802677 229.84019,0.19451221 229.66667,0.33333333 211.25142,0.33333333 192.95928,2 174.66667,2 165.71533,2 158.31838,-0.66666667 149.33333,-0.66666667 138.6144,-0.66666667 128.37029,0.66666667 117.66667,0.66666667 98.264631,0.66666667 78.109122,2.6065316&#xa;59,-0.33333333 50.049454,-1.7103404 40.485565,-1.3333333 31.333333,-1.3333333 27.2247,-1.3333333 23.654506,-0.33333333 19.666667,-0.33333333 15.115907,-0.33333333 20.704411,-0.83466476 19,-4 18.33198,-5.2406079 15.447028,-3.1864445 14.666667,-3.6666667 13.111985,-2.1119849 11.589987,-0.51879395 10,1" RenderTransformOrigin="0.5,0.5" Width="123.984" Height="52.898" Canvas.Left="-4.644" Canvas.Top="-5.398">
-					<Path.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform ScaleX="-1" ScaleY="1"/>
-							<SkewTransform AngleX="0" AngleY="0"/>
-							<RotateTransform Angle="0"/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</Path.RenderTransform>
-				</Path>
-				<Path Fill="White" Stretch="Fill" StrokeThickness="2" Data="M15.333333,3.6666667 C11.307507,8.2450577 6.9605732,11.706093 2.6666667,16 4.6867477,16.67336 4.133063,15.772847 5,17.333333 6.2079426,16.608568 7.4969841,15.918175 8.6666667,15.333333 7.8579685,19.376824 5.3333333,20.775714 5.3333333,25.333333 5.3333333,29.511886 5.6502406,33.13622 6,37.333333 6.3546183,41.588753 6.3333333,45.954971 6.3333333,50.333333 6.3333333,53.94135 5.5697885,52.357473 6.534426,54.672603 7.2300521,56.342106 7.3293889,59.125208&#xa;7.3293889,61.121949 6.7266187,60.117332 7.5038297,67.316193 6.7994136,66.376972 6.7994136,70.951681 6.7272388,76.483803 6.7272388,78.693745 6.7272388,81.205061 7.5967364,81.193473 8.6666667,83.333333 7.6651409,83.834096 6.9201325,83.666667 5.6666667,83.666667 9.140644,87.140644 12.284954,89.379939 15,93 17.112579,90.359277 16.666667,92.659828 16.666667,88.666667 17.361165,88.527767 17.638835,88.472233 18.333333,88.333333 19.063247,91.9829&#xa;19.107863,89.332821 23.333333,90 26.180705,90.449585 29.348619,91 32.333333,91 39.005285,91 44.668748,89.333333 51,89.333333 63.148566,89.333333 74.674038,91.666052 86.666667,90.666667 101.89662,89.397504 117.0693,86.333333 132.66667,86.333333 137.04289,86.333333 138.85823,84.406117 142,88.333333 144.50137,91.46004 146.55898,91 151.33333,91 160.72825,91 210.94101,92.246522 219.66667,91&#xa;224.15192,90.359249 228.53112,90.739595 233,90.333333 237.71551,89.904651 238.58549,87.243528 235.66667,96 240.79496,96 243.49967,94.500992 245.66667,88 244.77778,88 243.88889,88 243,88 243.38956,86.052192 242.25103,84.983521 242.33333,83.666667 242.40603,82.503473 244.54819,81.63657 244.66667,80.333333 245.05157,76.099363 244.33589,72.030654 244,68 243.39292,60.715019 241.33333,53.958626&#xa;241.33333,46.333333 241.33333,38.398553 240.46617,30.469919 241.66667,22.666667 242.27994,18.6804 241.04638,14.411602 241.66667,11 242.92669,4.0698793 238.23432,8.0857887 236.33333,3.3333333 234.68011,4.3252697 233.94091,6.1215144 231.66667,5.6666667 229.6287,5.2590735 228.62773,3.5194677 226.33333,4.6666667 221.33141,2.1657045 210.6904,4 204.66667,4 196.6285,4 188.81753,4.6666667 180.66667,4.6666667 163.73482,4.6666667&#xa;145.81627,7.8027113 129,5 110.64606,1.9410093 94.666224,3.3333333 76,3.3333333 63.710532,3.3333333 51.620985,3.6666667 39.333333,3.6666667 32.643828,3.6666667 24.073905,-1.4072386 18.333333,4.3333333 18.333333,3.5555556 18.333333,2.7777778 18.333333,2 16.579273,2 16.105171,3.4659888 15.333333,3.6666667 z" RenderTransformOrigin="0.5,0.5" Width="107.84" Height="38.547" Canvas.Left="3.22" Canvas.Top="0.953">
-					<Path.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform ScaleX="-1" ScaleY="1"/>
-							<SkewTransform AngleX="0" AngleY="0"/>
-							<RotateTransform Angle="0"/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</Path.RenderTransform>
-				</Path>
-				<TextBlock Width="99.749" Height="32.681" FontFamily="Fonts/#kroeger 05_53" Foreground="Black" TextWrapping="Wrap" Canvas.Left="8.5" Canvas.Top="2" FontSize="26.667"><Run Text="!!"/><Run Text="경고"/><Run Text="!!"/></TextBlock>
+				<Image Width="192" Height="105" Canvas.Left="0" Canvas.Top="0" Source="Resources/Tower/core_message4.png" Stretch="Fill"/>
 			</Canvas>
-			<Canvas x:Name="canvas1" Width="152" Height="72" Canvas.Left="224" Canvas.Top="8">
-				<Path Fill="Black" Stretch="Fill" Stroke="Black" StrokeThickness="2" Data="M10,2.3333333 C5.6831257,7.8563931 -1.9047877,12.142909 -4.6666667,17.666667 -3.5846555,17.486331 -2.9212211,17.127277 -2,16.666667 -0.94372637,18.779214 -4.2781032,20 0,20 -0.11111111,19.888889 -0.22222222,19.777778 -0.33333333,19.666667 0.52820869,19.379486 1.1850518,19.074141 2,18.666667 2.1986531,20.255892 1.1411696,26.819649 0.66666667,29.666667 -0.17706815,34.729076 1.1922541,39.153524 2,44 3.5285517,53.17131 1.6666667,62.531736&#xa;1.6666667,71.666667 1.6666667,73.986506 1.5064629,76.082648 1.3333333,78.333333 1.1870876,80.234527 -1.8572948,79.810436 -2.3333333,82.666667 -2.8252852,85.618378 -7.8621289,83.735602 -3.3333333,86 -1.0840421,87.124646 1.1600492,88.182771 3.3333333,89.333333 8.7510931,92.201559 13.713983,98.063089 17.666667,103.33333 17.99141,103.76632 22.937845,104.54236 21.333333,101.33333 19.780194,98.227054 19.266745,94.706777 17.333333,92 32.745755,99.706211&#xa;43.161448,92.666667 60.666667,92.666667 74.513074,92.666667 88.429933,93.666667 102,93.666667 113.73744,93.666667 128.89861,89.077313 139.66667,92.666667 147.89846,95.410599 157.4685,93.687461 166,95 172.85664,96.054867 210.80889,94.376566 217.66667,95 224.2493,95.598422 232.68355,94.108296 239.33333,93 235.18142,93.830383 232.58959,96.862165 230.33333,100.33333 230.03626,100.79037 230.44084,102.14184 230.66667,103&#xa;231.0527,104.46693 230.49337,105.08665 233.33333,103.66667 235.86724,102.39971 237.75362,100.51594 240.33333,100 239.71458,101.03125 239.20238,101.79762 238.33333,102.66667 239.14642,102.26012 239.94946,102.02527 240.66667,101.66667 239.33333,103 238,104.33333 236.66667,105.66667 241.00593,103.49704 245.88626,103.22748 248.33333,98.333333 250.3814,94.237206 252.55706,93.109608 255.66667,90 255.07562,88.522395 254.66667,87.090095&#xa;254.66667,85.333333 253.14521,86.474428 251.55739,87.554638 250,88.333333 249.09809,86.529514 248.40116,84.720932 246.66667,83.333333 247.97841,82.396377 248.77221,81.561126 250,80.333333 247.38362,77.71695 247.70643,69.810527 247.33333,65.333333 246.82567,59.241358 246.33333,53.188323 246.33333,47 246.33333,36.533346 242.65725,20.352175 247.33333,11 249.51486,15.363061 247.04391,17.142116 253,18.333333 252.74306,17.819456&#xa;251.92774,16.036359 252.33333,15.333333 252.68239,14.728308 254.04132,15.648562 255,16.333333 255.81063,15.928017 256.46871,15.62154 257.33333,15.333333 254.71071,11.661663 249.2893,10.056587 247.66667,6 247.44444,6 247.22222,6 247,6 245.65265,1.9579466 241.29522,-0.84129172 239,-4.6666667 238.12506,-6.1248971 228.53259,-11.890132 234.66667,-1.6666667 233.77778,-1.6666667 232.88889,-1.6666667 232,-1.6666667&#xa;233.1175,-0.26978656 234.20861,0.75055622 235,2.3333333 232.9737,3.4912173 232.32885,1.6621837 230,-0.66666667 229.90867,-0.53880079 229.7268,-0.478507 229.66667,-0.33333333 229.58163,-0.12802677 229.84019,0.19451221 229.66667,0.33333333 211.25142,0.33333333 192.95928,2 174.66667,2 165.71533,2 158.31838,-0.66666667 149.33333,-0.66666667 138.6144,-0.66666667 128.37029,0.66666667 117.66667,0.66666667 98.264631,0.66666667 78.109122,2.6065316&#xa;59,-0.33333333 50.049454,-1.7103404 40.485565,-1.3333333 31.333333,-1.3333333 27.2247,-1.3333333 23.654506,-0.33333333 19.666667,-0.33333333 15.115907,-0.33333333 20.704411,-0.83466476 19,-4 18.33198,-5.2406079 15.447028,-3.1864445 14.666667,-3.6666667 13.111985,-2.1119849 11.589987,-0.51879395 10,1" RenderTransformOrigin="0.5,0.5" Width="112.696" Height="34.398" Canvas.Left="-3.144" Canvas.Top="-0.398">
-					<Path.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform ScaleX="-1" ScaleY="1"/>
-							<SkewTransform AngleX="0" AngleY="0"/>
-							<RotateTransform Angle="0"/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</Path.RenderTransform>
-				</Path>
-				<Path Fill="White" Stretch="Fill" StrokeThickness="2" Data="M15.333333,3.6666667 C11.307507,8.2450577 6.9605732,11.706093 2.6666667,16 4.6867477,16.67336 4.133063,15.772847 5,17.333333 6.2079426,16.608568 7.4969841,15.918175 8.6666667,15.333333 7.8579685,19.376824 5.3333333,20.775714 5.3333333,25.333333 5.3333333,29.511886 5.6502406,33.13622 6,37.333333 6.3546183,41.588753 6.3333333,45.954971 6.3333333,50.333333 6.3333333,53.94135 5.5697885,52.357473 6.534426,54.672603 7.2300521,56.342106 7.3293889,59.125208&#xa;7.3293889,61.121949 6.7266187,60.117332 7.5038297,67.316193 6.7994136,66.376972 6.7994136,70.951681 6.7272388,76.483803 6.7272388,78.693745 6.7272388,81.205061 7.5967364,81.193473 8.6666667,83.333333 7.6651409,83.834096 6.9201325,83.666667 5.6666667,83.666667 9.140644,87.140644 12.284954,89.379939 15,93 17.112579,90.359277 16.666667,92.659828 16.666667,88.666667 17.361165,88.527767 17.638835,88.472233 18.333333,88.333333 19.063247,91.9829&#xa;19.107863,89.332821 23.333333,90 26.180705,90.449585 29.348619,91 32.333333,91 39.005285,91 44.668748,89.333333 51,89.333333 63.148566,89.333333 74.674038,91.666052 86.666667,90.666667 101.89662,89.397504 117.0693,86.333333 132.66667,86.333333 137.04289,86.333333 138.85823,84.406117 142,88.333333 144.50137,91.46004 146.55898,91 151.33333,91 160.72825,91 210.94101,92.246522 219.66667,91&#xa;224.15192,90.359249 228.53112,90.739595 233,90.333333 237.71551,89.904651 238.58549,87.243528 235.66667,96 240.79496,96 243.49967,94.500992 245.66667,88 244.77778,88 243.88889,88 243,88 243.38956,86.052192 242.25103,84.983521 242.33333,83.666667 242.40603,82.503473 244.54819,81.63657 244.66667,80.333333 245.05157,76.099363 244.33589,72.030654 244,68 243.39292,60.715019 241.33333,53.958626&#xa;241.33333,46.333333 241.33333,38.398553 240.46617,30.469919 241.66667,22.666667 242.27994,18.6804 241.04638,14.411602 241.66667,11 242.92669,4.0698793 238.23432,8.0857887 236.33333,3.3333333 234.68011,4.3252697 233.94091,6.1215144 231.66667,5.6666667 229.6287,5.2590735 228.62773,3.5194677 226.33333,4.6666667 221.33141,2.1657045 210.6904,4 204.66667,4 196.6285,4 188.81753,4.6666667 180.66667,4.6666667 163.73482,4.6666667&#xa;145.81627,7.8027113 129,5 110.64606,1.9410093 94.666224,3.3333333 76,3.3333333 63.710532,3.3333333 51.620985,3.6666667 39.333333,3.6666667 32.643828,3.6666667 24.073905,-1.4072386 18.333333,4.3333333 18.333333,3.5555556 18.333333,2.7777778 18.333333,2 16.579273,2 16.105171,3.4659888 15.333333,3.6666667 z" RenderTransformOrigin="0.5,0.5" Width="102.28" Height="22.047" Canvas.Left="2.72" Canvas.Top="4.953">
-					<Path.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform ScaleX="-1" ScaleY="1"/>
-							<SkewTransform AngleX="0" AngleY="0"/>
-							<RotateTransform Angle="0"/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</Path.RenderTransform>
-				</Path>
-				<TextBlock Width="87.001" Height="16" FontFamily="Fonts/#kroeger 05_53" Foreground="Black" TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="8" FontWeight="Bold"><Run Text="!!"/><Run Text="적이 옵니다"/><Run Text="!!"/></TextBlock>
+			<Canvas x:Name="canvas1" Width="152" Height="72" Canvas.Left="288" Canvas.Top="81">
+				<Image Width="154" Height="72" Canvas.Top="1" Source="Resources/Tower/core_message3.png" Stretch="Fill"/>
 			</Canvas>
 		</Canvas>
-		<Canvas x:Name="WarningBoss" Width="312" Height="208" Canvas.Left="352" Canvas.Top="-241" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed">
+		<Canvas x:Name="WarningBoss" Width="312" Height="208" Canvas.Left="256" Canvas.Top="-240" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed">
 			<Canvas x:Name="canvas_Copy" Width="64" Height="32">
-				<Path Fill="Black" Stretch="Fill" Stroke="Black" StrokeThickness="2" Data="M10,2.3333333 C5.6831257,7.8563931 -1.9047877,12.142909 -4.6666667,17.666667 -3.5846555,17.486331 -2.9212211,17.127277 -2,16.666667 -0.94372637,18.779214 -4.2781032,20 0,20 -0.11111111,19.888889 -0.22222222,19.777778 -0.33333333,19.666667 0.52820869,19.379486 1.1850518,19.074141 2,18.666667 2.1986531,20.255892 1.1411696,26.819649 0.66666667,29.666667 -0.17706815,34.729076 1.1922541,39.153524 2,44 3.5285517,53.17131 1.6666667,62.531736&#xa;1.6666667,71.666667 1.6666667,73.986506 1.5064629,76.082648 1.3333333,78.333333 1.1870876,80.234527 -1.8572948,79.810436 -2.3333333,82.666667 -2.8252852,85.618378 -7.8621289,83.735602 -3.3333333,86 -1.0840421,87.124646 1.1600492,88.182771 3.3333333,89.333333 8.7510931,92.201559 13.713983,98.063089 17.666667,103.33333 17.99141,103.76632 22.937845,104.54236 21.333333,101.33333 19.780194,98.227054 19.266745,94.706777 17.333333,92 32.745755,99.706211&#xa;43.161448,92.666667 60.666667,92.666667 74.513074,92.666667 88.429933,93.666667 102,93.666667 113.73744,93.666667 128.89861,89.077313 139.66667,92.666667 147.89846,95.410599 157.4685,93.687461 166,95 172.85664,96.054867 210.80889,94.376566 217.66667,95 224.2493,95.598422 232.68355,94.108296 239.33333,93 235.18142,93.830383 232.58959,96.862165 230.33333,100.33333 230.03626,100.79037 230.44084,102.14184 230.66667,103&#xa;231.0527,104.46693 230.49337,105.08665 233.33333,103.66667 235.86724,102.39971 237.75362,100.51594 240.33333,100 239.71458,101.03125 239.20238,101.79762 238.33333,102.66667 239.14642,102.26012 239.94946,102.02527 240.66667,101.66667 239.33333,103 238,104.33333 236.66667,105.66667 241.00593,103.49704 245.88626,103.22748 248.33333,98.333333 250.3814,94.237206 252.55706,93.109608 255.66667,90 255.07562,88.522395 254.66667,87.090095&#xa;254.66667,85.333333 253.14521,86.474428 251.55739,87.554638 250,88.333333 249.09809,86.529514 248.40116,84.720932 246.66667,83.333333 247.97841,82.396377 248.77221,81.561126 250,80.333333 247.38362,77.71695 247.70643,69.810527 247.33333,65.333333 246.82567,59.241358 246.33333,53.188323 246.33333,47 246.33333,36.533346 242.65725,20.352175 247.33333,11 249.51486,15.363061 247.04391,17.142116 253,18.333333 252.74306,17.819456&#xa;251.92774,16.036359 252.33333,15.333333 252.68239,14.728308 254.04132,15.648562 255,16.333333 255.81063,15.928017 256.46871,15.62154 257.33333,15.333333 254.71071,11.661663 249.2893,10.056587 247.66667,6 247.44444,6 247.22222,6 247,6 245.65265,1.9579466 241.29522,-0.84129172 239,-4.6666667 238.12506,-6.1248971 228.53259,-11.890132 234.66667,-1.6666667 233.77778,-1.6666667 232.88889,-1.6666667 232,-1.6666667&#xa;233.1175,-0.26978656 234.20861,0.75055622 235,2.3333333 232.9737,3.4912173 232.32885,1.6621837 230,-0.66666667 229.90867,-0.53880079 229.7268,-0.478507 229.66667,-0.33333333 229.58163,-0.12802677 229.84019,0.19451221 229.66667,0.33333333 211.25142,0.33333333 192.95928,2 174.66667,2 165.71533,2 158.31838,-0.66666667 149.33333,-0.66666667 138.6144,-0.66666667 128.37029,0.66666667 117.66667,0.66666667 98.264631,0.66666667 78.109122,2.6065316&#xa;59,-0.33333333 50.049454,-1.7103404 40.485565,-1.3333333 31.333333,-1.3333333 27.2247,-1.3333333 23.654506,-0.33333333 19.666667,-0.33333333 15.115907,-0.33333333 20.704411,-0.83466476 19,-4 18.33198,-5.2406079 15.447028,-3.1864445 14.666667,-3.6666667 13.111985,-2.1119849 11.589987,-0.51879395 10,1" RenderTransformOrigin="0.5,0.5" Width="216.908" Height="83.432" Canvas.Left="-60.627" Canvas.Top="-16.723">
-					<Path.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform ScaleX="-1" ScaleY="1"/>
-							<SkewTransform AngleX="0" AngleY="0"/>
-							<RotateTransform Angle="0"/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</Path.RenderTransform>
-				</Path>
-				<Path Fill="#FFFFAE02" Stretch="Fill" StrokeThickness="2" Data="M15.333333,3.6666667 C11.307507,8.2450577 6.9605732,11.706093 2.6666667,16 4.6867477,16.67336 4.133063,15.772847 5,17.333333 6.2079426,16.608568 7.4969841,15.918175 8.6666667,15.333333 7.8579685,19.376824 5.3333333,20.775714 5.3333333,25.333333 5.3333333,29.511886 5.6502406,33.13622 6,37.333333 6.3546183,41.588753 6.3333333,45.954971 6.3333333,50.333333 6.3333333,53.94135 5.5697885,52.357473 6.534426,54.672603 7.2300521,56.342106 7.3293889,59.125208&#xa;7.3293889,61.121949 6.7266187,60.117332 7.5038297,67.316193 6.7994136,66.376972 6.7994136,70.951681 6.7272388,76.483803 6.7272388,78.693745 6.7272388,81.205061 7.5967364,81.193473 8.6666667,83.333333 7.6651409,83.834096 6.9201325,83.666667 5.6666667,83.666667 9.140644,87.140644 12.284954,89.379939 15,93 17.112579,90.359277 16.666667,92.659828 16.666667,88.666667 17.361165,88.527767 17.638835,88.472233 18.333333,88.333333 19.063247,91.9829&#xa;19.107863,89.332821 23.333333,90 26.180705,90.449585 29.348619,91 32.333333,91 39.005285,91 44.668748,89.333333 51,89.333333 63.148566,89.333333 74.674038,91.666052 86.666667,90.666667 101.89662,89.397504 117.0693,86.333333 132.66667,86.333333 137.04289,86.333333 138.85823,84.406117 142,88.333333 144.50137,91.46004 146.55898,91 151.33333,91 160.72825,91 210.94101,92.246522 219.66667,91&#xa;224.15192,90.359249 228.53112,90.739595 233,90.333333 237.71551,89.904651 238.58549,87.243528 235.66667,96 240.79496,96 243.49967,94.500992 245.66667,88 244.77778,88 243.88889,88 243,88 243.38956,86.052192 242.25103,84.983521 242.33333,83.666667 242.40603,82.503473 244.54819,81.63657 244.66667,80.333333 245.05157,76.099363 244.33589,72.030654 244,68 243.39292,60.715019 241.33333,53.958626&#xa;241.33333,46.333333 241.33333,38.398553 240.46617,30.469919 241.66667,22.666667 242.27994,18.6804 241.04638,14.411602 241.66667,11 242.92669,4.0698793 238.23432,8.0857887 236.33333,3.3333333 234.68011,4.3252697 233.94091,6.1215144 231.66667,5.6666667 229.6287,5.2590735 228.62773,3.5194677 226.33333,4.6666667 221.33141,2.1657045 210.6904,4 204.66667,4 196.6285,4 188.81753,4.6666667 180.66667,4.6666667 163.73482,4.6666667&#xa;145.81627,7.8027113 129,5 110.64606,1.9410093 94.666224,3.3333333 76,3.3333333 63.710532,3.3333333 51.620985,3.6666667 39.333333,3.6666667 32.643828,3.6666667 24.073905,-1.4072386 18.333333,4.3333333 18.333333,3.5555556 18.333333,2.7777778 18.333333,2 16.579273,2 16.105171,3.4659888 15.333333,3.6666667 z" RenderTransformOrigin="0.5,0.5" Width="193.741" Height="64.397" Canvas.Left="-48" Canvas.Top="-7.397">
-					<Path.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform ScaleX="-1" ScaleY="1"/>
-							<SkewTransform AngleX="0" AngleY="0"/>
-							<RotateTransform Angle="0"/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</Path.RenderTransform>
-				</Path>
-				<TextBlock Width="176" Height="72" FontFamily="Fonts/#kroeger 05_53" Foreground="Black" TextWrapping="Wrap" Canvas.Left="-40" Canvas.Top="-8" FontSize="48"><Run Text="!!"/><Run Text="경고"/><Run Text="!!"/></TextBlock>
+				<Image Width="288" Height="153" Canvas.Left="0" Canvas.Top="0" Source="Resources/Tower/core_message4.png" Stretch="Fill"/>
 			</Canvas>
-			<Canvas x:Name="canvas1_Copy" Width="152" Height="72" Canvas.Left="216" Canvas.Top="24">
+			<Canvas x:Name="canvas1_Copy" Width="152" Height="72" Canvas.Left="320" Canvas.Top="24">
 				<Path Fill="Black" Stretch="Fill" Stroke="Black" StrokeThickness="2" Data="M10,2.3333333 C5.6831257,7.8563931 -1.9047877,12.142909 -4.6666667,17.666667 -3.5846555,17.486331 -2.9212211,17.127277 -2,16.666667 -0.94372637,18.779214 -4.2781032,20 0,20 -0.11111111,19.888889 -0.22222222,19.777778 -0.33333333,19.666667 0.52820869,19.379486 1.1850518,19.074141 2,18.666667 2.1986531,20.255892 1.1411696,26.819649 0.66666667,29.666667 -0.17706815,34.729076 1.1922541,39.153524 2,44 3.5285517,53.17131 1.6666667,62.531736&#xd;&#xa;1.6666667,71.666667 1.6666667,73.986506 1.5064629,76.082648 1.3333333,78.333333 1.1870876,80.234527 -1.8572948,79.810436 -2.3333333,82.666667 -2.8252852,85.618378 -7.8621289,83.735602 -3.3333333,86 -1.0840421,87.124646 1.1600492,88.182771 3.3333333,89.333333 8.7510931,92.201559 13.713983,98.063089 17.666667,103.33333 17.99141,103.76632 22.937845,104.54236 21.333333,101.33333 19.780194,98.227054 19.266745,94.706777 17.333333,92 32.745755,99.706211&#xd;&#xa;43.161448,92.666667 60.666667,92.666667 74.513074,92.666667 88.429933,93.666667 102,93.666667 113.73744,93.666667 128.89861,89.077313 139.66667,92.666667 147.89846,95.410599 157.4685,93.687461 166,95 172.85664,96.054867 210.80889,94.376566 217.66667,95 224.2493,95.598422 232.68355,94.108296 239.33333,93 235.18142,93.830383 232.58959,96.862165 230.33333,100.33333 230.03626,100.79037 230.44084,102.14184 230.66667,103&#xd;&#xa;231.0527,104.46693 230.49337,105.08665 233.33333,103.66667 235.86724,102.39971 237.75362,100.51594 240.33333,100 239.71458,101.03125 239.20238,101.79762 238.33333,102.66667 239.14642,102.26012 239.94946,102.02527 240.66667,101.66667 239.33333,103 238,104.33333 236.66667,105.66667 241.00593,103.49704 245.88626,103.22748 248.33333,98.333333 250.3814,94.237206 252.55706,93.109608 255.66667,90 255.07562,88.522395 254.66667,87.090095&#xd;&#xa;254.66667,85.333333 253.14521,86.474428 251.55739,87.554638 250,88.333333 249.09809,86.529514 248.40116,84.720932 246.66667,83.333333 247.97841,82.396377 248.77221,81.561126 250,80.333333 247.38362,77.71695 247.70643,69.810527 247.33333,65.333333 246.82567,59.241358 246.33333,53.188323 246.33333,47 246.33333,36.533346 242.65725,20.352175 247.33333,11 249.51486,15.363061 247.04391,17.142116 253,18.333333 252.74306,17.819456&#xd;&#xa;251.92774,16.036359 252.33333,15.333333 252.68239,14.728308 254.04132,15.648562 255,16.333333 255.81063,15.928017 256.46871,15.62154 257.33333,15.333333 254.71071,11.661663 249.2893,10.056587 247.66667,6 247.44444,6 247.22222,6 247,6 245.65265,1.9579466 241.29522,-0.84129172 239,-4.6666667 238.12506,-6.1248971 228.53259,-11.890132 234.66667,-1.6666667 233.77778,-1.6666667 232.88889,-1.6666667 232,-1.6666667&#xd;&#xa;233.1175,-0.26978656 234.20861,0.75055622 235,2.3333333 232.9737,3.4912173 232.32885,1.6621837 230,-0.66666667 229.90867,-0.53880079 229.7268,-0.478507 229.66667,-0.33333333 229.58163,-0.12802677 229.84019,0.19451221 229.66667,0.33333333 211.25142,0.33333333 192.95928,2 174.66667,2 165.71533,2 158.31838,-0.66666667 149.33333,-0.66666667 138.6144,-0.66666667 128.37029,0.66666667 117.66667,0.66666667 98.264631,0.66666667 78.109122,2.6065316&#xd;&#xa;59,-0.33333333 50.049454,-1.7103404 40.485565,-1.3333333 31.333333,-1.3333333 27.2247,-1.3333333 23.654506,-0.33333333 19.666667,-0.33333333 15.115907,-0.33333333 20.704411,-0.83466476 19,-4 18.33198,-5.2406079 15.447028,-3.1864445 14.666667,-3.6666667 13.111985,-2.1119849 11.589987,-0.51879395 10,1" RenderTransformOrigin="0.5,0.5" Width="214.465" Height="55.314" Canvas.Left="-6.465" Canvas.Top="1">
 					<Path.RenderTransform>
 						<TransformGroup>
@@ -1574,38 +1507,9 @@
 				<TextBlock Width="193.882" Height="28" FontFamily="Fonts/#kroeger 05_53" Foreground="Black" TextWrapping="Wrap" Canvas.Left="14.118" Canvas.Top="14" FontSize="18.667" FontWeight="Bold"><Run Text="!!"/><Run Text="강한 "/><Run Text="적이 옵니다"/><Run Text="!!"/></TextBlock>
 			</Canvas>
 		</Canvas>
-		<Canvas x:Name="NoMoney" Width="152" Height="104" Canvas.Top="-72" Canvas.Left="688" IsHitTestVisible="False" IsEnabled="False" Visibility="Collapsed">
+		<Canvas x:Name="NoMoney" Width="152" Height="104" Canvas.Top="-80" Canvas.Left="720" IsHitTestVisible="False" IsEnabled="False" Visibility="Collapsed">
 			<Canvas x:Name="canvas2" Width="64" Height="32">
-				<Path x:Name="path1" Fill="Black" Stretch="Fill" Stroke="Black" StrokeThickness="2" Data="M10,2.3333333 C5.6831257,7.8563931 -1.9047877,12.142909 -4.6666667,17.666667 -3.5846555,17.486331 -2.9212211,17.127277 -2,16.666667 -0.94372637,18.779214 -4.2781032,20 0,20 -0.11111111,19.888889 -0.22222222,19.777778 -0.33333333,19.666667 0.52820869,19.379486 1.1850518,19.074141 2,18.666667 2.1986531,20.255892 1.1411696,26.819649 0.66666667,29.666667 -0.17706815,34.729076 1.1922541,39.153524 2,44 3.5285517,53.17131 1.6666667,62.531736&#xd;&#xa;1.6666667,71.666667 1.6666667,73.986506 1.5064629,76.082648 1.3333333,78.333333 1.1870876,80.234527 -1.8572948,79.810436 -2.3333333,82.666667 -2.8252852,85.618378 -7.8621289,83.735602 -3.3333333,86 -1.0840421,87.124646 1.1600492,88.182771 3.3333333,89.333333 8.7510931,92.201559 13.713983,98.063089 17.666667,103.33333 17.99141,103.76632 22.937845,104.54236 21.333333,101.33333 19.780194,98.227054 19.266745,94.706777 17.333333,92 32.745755,99.706211&#xd;&#xa;43.161448,92.666667 60.666667,92.666667 74.513074,92.666667 88.429933,93.666667 102,93.666667 113.73744,93.666667 128.89861,89.077313 139.66667,92.666667 147.89846,95.410599 157.4685,93.687461 166,95 173.43454,96.143775 172.33333,89.755561 172.33333,102.33333 182.81914,104.43049 181.00024,102.69074 181.00024,116 181.00024,116.33333 179.99472,122.43029 185.72739,118.13079 188.23273,116.25178 185.86729,131.82048 188.44092,129.89026&#xd;&#xa;188.44092,138.28582 196.91491,137.05767 200.673,144.57386 200.673,135.76594 199.0826,117.08845 200.33333,108.33333 200.65996,106.04694 203.66694,100.33333 203.66694,100.33333 203.66694,101.32003 197.28174,101.11018 196.33333,101.33333 195.58428,101.50958 207.02068,94.126881 207.75709,91.917641 208.40155,89.984262 201.63859,94.093646 202.00126,91.917641 209.61498,91.917641 210.80889,94.376566 217.66667,95 224.2493,95.598422 232.68355,94.108296&#xd;&#xa;239.33333,93 235.18142,93.830383 232.58959,96.862165 230.33333,100.33333 230.03626,100.79037 230.44084,102.14184 230.66667,103 231.0527,104.46693 230.49337,105.08665 233.33333,103.66667 235.86724,102.39971 237.75362,100.51594 240.33333,100 239.71458,101.03125 239.20238,101.79762 238.33333,102.66667 239.14642,102.26012 239.94946,102.02527 240.66667,101.66667 239.33333,103 238,104.33333 236.66667,105.66667 241.00593,103.49704&#xd;&#xa;245.88626,103.22748 248.33333,98.333333 250.3814,94.237206 252.55706,93.109608 255.66667,90 255.07562,88.522395 254.66667,87.090095 254.66667,85.333333 253.14521,86.474428 251.55739,87.554638 250,88.333333 249.09809,86.529514 248.40116,84.720932 246.66667,83.333333 247.97841,82.396377 248.77221,81.561126 250,80.333333 247.38362,77.71695 247.70643,69.810527 247.33333,65.333333 246.82567,59.241358 246.33333,53.188323 246.33333,47&#xd;&#xa;246.33333,36.533346 242.65725,20.352175 247.33333,11 249.51486,15.363061 247.04391,17.142116 253,18.333333 252.74306,17.819456 251.92774,16.036359 252.33333,15.333333 252.68239,14.728308 254.04132,15.648562 255,16.333333 255.81063,15.928017 256.46871,15.62154 257.33333,15.333333 254.71071,11.661663 249.2893,10.056587 247.66667,6 247.44444,6 247.22222,6 247,6 245.65265,1.9579466 241.29522,-0.84129172&#xd;&#xa;239,-4.6666667 238.12506,-6.1248971 228.53259,-11.890132 234.66667,-1.6666667 233.77778,-1.6666667 232.88889,-1.6666667 232,-1.6666667 233.1175,-0.26978656 234.20861,0.75055622 235,2.3333333 232.9737,3.4912173 232.32885,1.6621837 230,-0.66666667 229.90867,-0.53880079 229.7268,-0.478507 229.66667,-0.33333333 229.58163,-0.12802677 229.84019,0.19451221 229.66667,0.33333333 211.25142,0.33333333 192.95928,2 174.66667,2 165.71533,2&#xd;&#xa;158.31838,-0.66666667 149.33333,-0.66666667 138.6144,-0.66666667 128.37029,0.66666667 117.66667,0.66666667 98.264631,0.66666667 78.109122,2.6065316 59,-0.33333333 50.049454,-1.7103404 40.485565,-1.3333333 31.333333,-1.3333333 27.2247,-1.3333333 23.654506,-0.33333333 19.666667,-0.33333333 15.115907,-0.33333333 20.704411,-0.83466476 19,-4 18.33198,-5.2406079 15.447028,-3.1864445 14.666667,-3.6666667 13.111985,-2.1119849 11.589987,-0.51879395 10,1&#xd;&#xa;" RenderTransformOrigin="0.5,0.5" Width="199.657" Height="65.581" Canvas.Left="-6.324" Canvas.Top="2.419">
-					<Path.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform ScaleX="-1" ScaleY="1"/>
-							<SkewTransform AngleX="0" AngleY="0"/>
-							<RotateTransform Angle="0"/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</Path.RenderTransform>
-				</Path>
-				<Path x:Name="path2" Fill="Red" Stretch="Fill" StrokeThickness="2" Data="M15.333333,3.6666667 C11.307507,8.2450577 6.9605732,11.706093 2.6666667,16 4.6867477,16.67336 4.133063,15.772847 5,17.333333 6.2079426,16.608568 7.4969841,15.918175 8.6666667,15.333333 7.8579685,19.376824 5.3333333,20.775714 5.3333333,25.333333 5.3333333,29.511886 5.6502406,33.13622 6,37.333333 6.3546183,41.588753 6.3333333,45.954971 6.3333333,50.333333 6.3333333,53.94135 5.5697885,52.357473 6.534426,54.672603 7.2300521,56.342106 7.3293889,59.125208&#xd;&#xa;7.3293889,61.121949 6.7266187,60.117332 7.5038297,67.316193 6.7994136,66.376972 6.7994136,70.951681 6.7272388,76.483803 6.7272388,78.693745 6.7272388,81.205061 7.5967364,81.193473 8.6666667,83.333333 7.6651409,83.834096 6.9201325,83.666667 5.6666667,83.666667 9.140644,87.140644 12.284954,89.379939 15,93 17.112579,90.359277 16.666667,92.659828 16.666667,88.666667 17.361165,88.527767 17.638835,88.472233 18.333333,88.333333 19.063247,91.9829&#xd;&#xa;19.107863,89.332821 23.333333,90 26.180705,90.449585 29.348619,91 32.333333,91 39.005285,91 44.668748,89.333333 51,89.333333 63.148566,89.333333 74.674038,91.666052 86.666667,90.666667 101.89662,89.397504 117.0693,86.333333 132.66667,86.333333 137.04289,86.333333 138.85823,84.406117 142,88.333333 144.50137,91.46004 146.55898,91 151.33333,91 160.72825,91 169.33268,92.555665 178.66667,91&#xd;&#xa;178.66667,98.678516 187.47408,111.66742 187.47408,122.84075 187.47408,127.15522 192.90959,121.90993 192.90959,125.88852 194.09029,137.86428 197.16441,142.86744 197.16441,152.51063 197.71385,149.76342 199.33333,106.18907 199.33333,103.33333 197.54438,103.33333 191.9415,116.02382 192.90959,111.66742 193.32449,109.80037 192.66667,92.801489 192.66667,90.666667 201.17021,92.083923 210.94101,92.246522 219.66667,91 224.15192,90.359249 228.53112,90.739595&#xd;&#xa;233,90.333333 237.71551,89.904651 238.58549,87.243528 235.66667,96 240.79496,96 243.49967,94.500992 245.66667,88 244.77778,88 243.88889,88 243,88 243.38956,86.052192 242.25103,84.983521 242.33333,83.666667 242.40603,82.503473 244.54819,81.63657 244.66667,80.333333 245.05157,76.099363 244.33589,72.030654 244,68 243.39292,60.715019 241.33333,53.958626 241.33333,46.333333 241.33333,38.398553&#xd;&#xa;240.46617,30.469919 241.66667,22.666667 242.27994,18.6804 241.04638,14.411602 241.66667,11 242.92669,4.0698793 238.23432,8.0857887 236.33333,3.3333333 234.68011,4.3252697 233.94091,6.1215144 231.66667,5.6666667 229.6287,5.2590735 228.62773,3.5194677 226.33333,4.6666667 221.33141,2.1657045 210.6904,4 204.66667,4 196.6285,4 188.81753,4.6666667 180.66667,4.6666667 163.73482,4.6666667 145.81627,7.8027113 129,5&#xd;&#xa;110.64606,1.9410093 94.666224,3.3333333 76,3.3333333 63.710532,3.3333333 51.620985,3.6666667 39.333333,3.6666667 32.643828,3.6666667 24.073905,-1.4072386 18.333333,4.3333333 18.333333,3.5555556 18.333333,2.7777778 18.333333,2 16.579273,2 16.105171,3.4659888 15.333333,3.6666667 z" RenderTransformOrigin="0.5,0.5" Width="178.824" Height="49.524" Canvas.Left="5.176" Canvas.Top="11.879">
-					<Path.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform ScaleX="-1" ScaleY="1"/>
-							<SkewTransform AngleX="0" AngleY="0"/>
-							<RotateTransform Angle="0"/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</Path.RenderTransform>
-				</Path>
-				<TextBlock x:Name="textBlock" Width="163.5" Height="23" FontFamily="Fonts/#kroeger 05_53" TextWrapping="Wrap" Canvas.Left="8" Canvas.Top="16" RenderTransformOrigin="0.5,0.5" FontSize="16" FontWeight="Bold"><TextBlock.Foreground>
-						<SolidColorBrush Color="{DynamicResource Enemy_lrgStroke}"/>
-					</TextBlock.Foreground><TextBlock.RenderTransform>
-						<TransformGroup>
-							<ScaleTransform/>
-							<SkewTransform/>
-							<RotateTransform/>
-							<TranslateTransform/>
-						</TransformGroup>
-					</TextBlock.RenderTransform><Run Text="!!"/><Run Text="골드가 부족합니다!!"/></TextBlock>
+				<Image Width="184" Height="88" Canvas.Left="0" Canvas.Top="0" Source="Resources/Tower/core_message5.png" Stretch="Fill"/>
 			</Canvas>
 		</Canvas>
 		<ProgressBar x:Name="power_Progress" Width="256" Height="16" Canvas.Left="384" Canvas.Top="7" Style="{DynamicResource ProgressBarStyle1}" Visibility="Collapsed"/>
@@ -1779,7 +1683,7 @@
 				</Style>
 			</Button.Resources>
 		</Button>
-		<Grid x:Name="Talk_NoMoneyTower" Width="184" Height="56" Canvas.Left="820.677" Canvas.Top="-128" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+		<Grid x:Name="Talk_MoneyTower" Width="184" Height="56" Canvas.Left="820.677" Canvas.Top="-128" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
 			<Grid.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1808,17 +1712,17 @@
 					</TransformGroup>
 				</Path.RenderTransform>
 			</Path>
-			<TextBlock x:Name="talk_Text4" Margin="-44.677,0,23.995,-40" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontWeight="Bold" VerticalAlignment="Bottom" Height="63.333"><TextBlock.RenderTransform>
+			<TextBlock x:Name="talk_Text4" Margin="-36.673,0,15.991,-41.334" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontWeight="Bold" VerticalAlignment="Bottom" Height="63.333"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
 						<RotateTransform/>
 						<TranslateTransform/>
 					</TransformGroup>
-				</TextBlock.RenderTransform><Run Text="타워를 걸설하면 수입이 줄어 든다네."/><LineBreak/><Run Text="적을 막기 위해선 어쩔 수 없지만...."/><LineBreak/><Run Text="채굴소로 복구하면 다시 돈을 버니"/><LineBreak/><Run Text="너무 걱정 말게"/></TextBlock>
-			<Image HorizontalAlignment="Left" Margin="-118.677,24,0,-42" Width="74" Source="Resources/UI/KimHoRim_00.png" Stretch="Fill"/>
+				</TextBlock.RenderTransform><Run Text="타워를 "/><Run Text="건"/><Run Text="설하면 "/><Run Text="유지비용이"/><Run Text=" 든다네."/><LineBreak/><LineBreak/><Run Text="채굴소로 복구하면 다시 돈을 버니"/><LineBreak/><Run Text="너무 걱정 말게"/></TextBlock>
+			<Image HorizontalAlignment="Left" Margin="-110.673,26.668,0,-44.668" Width="74" Source="Resources/UI/KimHoRim_00.png" Stretch="Fill"/>
 		</Grid>
-		<Grid x:Name="Talk_NoMoneyLab" Width="184" Height="56" Canvas.Left="160" Canvas.Top="-113" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+		<Grid x:Name="Talk_Lab" Width="184" Height="56" Canvas.Left="179.343" Canvas.Top="-91.997" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Opacity="0.95" Visibility="Collapsed">
 			<Grid.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1827,46 +1731,27 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
-			<Path Fill="Black" Stretch="Fill" Stroke="Black" StrokeThickness="2" Data="M10,2.3333333 C5.6831257,7.8563931 -1.9047877,12.142909 -4.6666667,17.666667 -3.5846555,17.486331 -2.9212211,17.127277 -2,16.666667 -0.94372637,18.779214 -4.2781032,20 0,20 -0.11111111,19.888889 -0.22222222,19.777778 -0.33333333,19.666667 0.52820869,19.379486 1.1850518,19.074141 2,18.666667 2.1986531,20.255892 1.1411696,26.819649 0.66666667,29.666667 -0.17706815,34.729076 1.1922541,39.153524 2,44 3.5285517,53.17131 1.6666667,62.531736&#xa;1.6666667,71.666667 1.6666667,73.986506 1.5064629,76.082648 1.3333333,78.333333 1.1870876,80.234527 -1.8572948,79.810436 -2.3333333,82.666667 -2.8252852,85.618378 -7.8621289,83.735602 -3.3333333,86 -1.0840421,87.124646 1.1600492,88.182771 3.3333333,89.333333 8.7510931,92.201559 13.713983,98.063089 17.666667,103.33333 17.99141,103.76632 22.937845,104.54236 21.333333,101.33333 19.780194,98.227054 19.266745,94.706777 17.333333,92 32.745755,99.706211&#xa;43.161448,92.666667 60.666667,92.666667 74.513074,92.666667 88.429933,93.666667 102,93.666667 113.73744,93.666667 128.89861,89.077313 139.66667,92.666667 147.89846,95.410599 157.4685,93.687461 166,95 173.43454,96.143775 172.33333,89.755561 172.33333,102.33333 182.81914,104.43049 181.00024,102.69074 181.00024,116 181.00024,116.33333 181.60066,117.96617 187.33333,113.66667 189.83867,111.78766 192.7597,110.59689 195.33333,108.66667&#xa;195.33333,117.06223 195.57524,127.48381 199.33333,135 199.33333,126.19208 199.0826,117.08845 200.33333,108.33333 200.65996,106.04694 203.66694,100.33333 203.66694,100.33333 203.66694,101.32003 197.28174,101.11018 196.33333,101.33333 195.58428,101.50958 195.26359,101.20924 196,99 196.64446,97.066621 195.63733,95.509338 196,93.333333 203.61372,93.333333 210.80889,94.376566 217.66667,95 224.2493,95.598422 232.68355,94.108296&#xa;239.33333,93 235.18142,93.830383 232.58959,96.862165 230.33333,100.33333 230.03626,100.79037 230.44084,102.14184 230.66667,103 231.0527,104.46693 230.49337,105.08665 233.33333,103.66667 235.86724,102.39971 237.75362,100.51594 240.33333,100 239.71458,101.03125 239.20238,101.79762 238.33333,102.66667 239.14642,102.26012 239.94946,102.02527 240.66667,101.66667 239.33333,103 238,104.33333 236.66667,105.66667 241.00593,103.49704&#xa;245.88626,103.22748 248.33333,98.333333 250.3814,94.237206 252.55706,93.109608 255.66667,90 255.07562,88.522395 254.66667,87.090095 254.66667,85.333333 253.14521,86.474428 251.55739,87.554638 250,88.333333 249.09809,86.529514 248.40116,84.720932 246.66667,83.333333 247.97841,82.396377 248.77221,81.561126 250,80.333333 247.38362,77.71695 247.70643,69.810527 247.33333,65.333333 246.82567,59.241358 246.33333,53.188323 246.33333,47&#xa;246.33333,36.533346 242.65725,20.352175 247.33333,11 249.51486,15.363061 247.04391,17.142116 253,18.333333 252.74306,17.819456 251.92774,16.036359 252.33333,15.333333 252.68239,14.728308 254.04132,15.648562 255,16.333333 255.81063,15.928017 256.46871,15.62154 257.33333,15.333333 254.71071,11.661663 249.2893,10.056587 247.66667,6 247.44444,6 247.22222,6 247,6 245.65265,1.9579466 241.29522,-0.84129172&#xa;239,-4.6666667 238.12506,-6.1248971 228.53259,-11.890132 234.66667,-1.6666667 233.77778,-1.6666667 232.88889,-1.6666667 232,-1.6666667 233.1175,-0.26978656 234.20861,0.75055622 235,2.3333333 232.9737,3.4912173 232.32885,1.6621837 230,-0.66666667 229.90867,-0.53880079 229.7268,-0.478507 229.66667,-0.33333333 229.58163,-0.12802677 229.84019,0.19451221 229.66667,0.33333333 211.25142,0.33333333 192.95928,2 174.66667,2 165.71533,2&#xa;158.31838,-0.66666667 149.33333,-0.66666667 138.6144,-0.66666667 128.37029,0.66666667 117.66667,0.66666667 98.264631,0.66666667 78.109122,2.6065316 59,-0.33333333 50.049454,-1.7103404 40.485565,-1.3333333 31.333333,-1.3333333 27.2247,-1.3333333 23.654506,-0.33333333 19.666667,-0.33333333 15.115907,-0.33333333 20.704411,-0.83466476 19,-4 18.33198,-5.2406079 15.447028,-3.1864445 14.666667,-3.6666667 13.111985,-2.1119849 11.589987,-0.51879395 10,1&#xa;" Margin="-14.208,-20.645,-49.333,-72"/>
-			<Path Fill="#FFECE5CE" Stretch="Fill" StrokeThickness="2" Data="M15.333333,3.6666667 C11.307507,8.2450577 6.9605732,11.706093 2.6666667,16 4.6867477,16.67336 4.133063,15.772847 5,17.333333 6.2079426,16.608568 7.4969841,15.918175 8.6666667,15.333333 7.8579685,19.376824 5.3333333,20.775714 5.3333333,25.333333 5.3333333,29.511886 5.6502406,33.13622 6,37.333333 6.3546183,41.588753 6.3333333,45.954971 6.3333333,50.333333 6.3333333,53.94135 5.5697885,52.357473 6.534426,54.672603 7.2300521,56.342106 7.3293889,59.125208&#xa;7.3293889,61.121949 6.7266187,60.117332 7.5038297,67.316193 6.7994136,66.376972 6.7994136,70.951681 6.7272388,76.483803 6.7272388,78.693745 6.7272388,81.205061 7.5967364,81.193473 8.6666667,83.333333 7.6651409,83.834096 6.9201325,83.666667 5.6666667,83.666667 9.140644,87.140644 12.284954,89.379939 15,93 17.112579,90.359277 16.666667,92.659828 16.666667,88.666667 17.361165,88.527767 17.638835,88.472233 18.333333,88.333333 19.063247,91.9829&#xa;19.107863,89.332821 23.333333,90 26.180705,90.449585 29.348619,91 32.333333,91 39.005285,91 44.668748,89.333333 51,89.333333 63.148566,89.333333 74.674038,91.666052 86.666667,90.666667 101.89662,89.397504 117.0693,86.333333 132.66667,86.333333 137.04289,86.333333 138.85823,84.406117 142,88.333333 144.50137,91.46004 146.55898,91 151.33333,91 160.72825,91 169.33268,92.555665 178.66667,91&#xa;178.66667,98.678516 170.73506,99.333333 185.33333,99.333333 185.33333,103.6478 183.66667,107.02141 183.66667,111 186.08188,109.18859 189.12839,107.86148 192,107 196.0045,105.79865 197.33333,102.02348 197.33333,111.66667 197.88277,108.91946 199.33333,106.18907 199.33333,103.33333 197.54438,103.33333 195.99394,103.66667 194.33333,103.66667 194.75634,102.82065 194.66667,102.40562 194.66667,101.33333 193.05392,102.1397 192.03191,102.02307&#xa;193,97.666667 193.4149,95.799621 192.66667,92.801489 192.66667,90.666667 201.17021,92.083923 210.94101,92.246522 219.66667,91 224.15192,90.359249 228.53112,90.739595 233,90.333333 237.71551,89.904651 238.58549,87.243528 235.66667,96 240.79496,96 243.49967,94.500992 245.66667,88 244.77778,88 243.88889,88 243,88 243.38956,86.052192 242.25103,84.983521 242.33333,83.666667 242.40603,82.503473&#xa;244.54819,81.63657 244.66667,80.333333 245.05157,76.099363 244.33589,72.030654 244,68 243.39292,60.715019 241.33333,53.958626 241.33333,46.333333 241.33333,38.398553 240.46617,30.469919 241.66667,22.666667 242.27994,18.6804 241.04638,14.411602 241.66667,11 242.92669,4.0698793 238.23432,8.0857887 236.33333,3.3333333 234.68011,4.3252697 233.94091,6.1215144 231.66667,5.6666667 229.6287,5.2590735 228.62773,3.5194677 226.33333,4.6666667&#xa;221.33141,2.1657045 210.6904,4 204.66667,4 196.6285,4 188.81753,4.6666667 180.66667,4.6666667 163.73482,4.6666667 145.81627,7.8027113 129,5 110.64606,1.9410093 94.666224,3.3333333 76,3.3333333 63.710532,3.3333333 51.620985,3.6666667 39.333333,3.6666667 32.643828,3.6666667 24.073905,-1.4072386 18.333333,4.3333333 18.333333,3.5555556 18.333333,2.7777778 18.333333,2 16.579273,2 16.105171,3.4659888&#xa;15.333333,3.6666667 z" Margin="-3.335,-9.668,-33.522,-44.733"/>
-			<Ellipse x:Name="ellipse10" Fill="#FF181501" StrokeThickness="2" HorizontalAlignment="Left" Margin="5.325,-6.01,0,0" VerticalAlignment="Top" Width="28.673" Height="26" RenderTransformOrigin="0.5,0.5">
-				<Ellipse.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform/>
-						<RotateTransform Angle="0.53800000000000026"/>
-						<TranslateTransform/>
-					</TransformGroup>
-				</Ellipse.RenderTransform>
-			</Ellipse>
-			<Path x:Name="path6" Fill="#FFFFD800" Stretch="Fill" StrokeThickness="2" HorizontalAlignment="Left" Margin="15.072,-3.232,0,0" VerticalAlignment="Top" Width="9.927" Height="18.891" RenderTransformOrigin="0.5,0.5" Data="M10.518967,40.280001 C20.542878,54.468958 10.842908,54.266176 4.5187767,53.77973 0.80153027,53.493803 1.1157853,52.16823 0.51864976,49.77981 -0.035678744,47.562612 -0.29777896,46.262575 0.51864976,44.27992 2.7966393,38.747949 6.877876,40.854879 10.518967,40.280001 z M6.7454903,0.0012584401 C8.9944465,-0.028023348 12.276738,0.45303875 17.072084,1.5135344 26.119024,3.5142668 23.284799,7.8098835 17.072084,22.099016 12.669738,32.224314 21.119228,37.934 3.8531463,37.934 3.8531466,37.582109 3.8531466,37.230226 3.8531463,36.878336 0.87040064,26.930906 0.74050263,20.945944 1.6499906,10.486692 2.2084789,4.0640315 0.52778649,0.082213468 6.7454903,0.0012584401 z" d:LayoutOverrides="VerticalAlignment">
-				<Path.RenderTransform>
-					<TransformGroup>
-						<ScaleTransform/>
-						<SkewTransform AngleY="3.735"/>
-						<RotateTransform Angle="0.53800000000000026"/>
-						<TranslateTransform X="0.34621241684184723" Y="0.5054113085626063"/>
-					</TransformGroup>
-				</Path.RenderTransform>
-			</Path>
-			<TextBlock x:Name="talk_Text5" Margin="5.999,23.333,-29.999,-30.666" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False"><TextBlock.RenderTransform>
+			<Path Fill="Black" Stretch="Fill" Stroke="Black" StrokeThickness="2" Data="M10,2.3333333 C5.6831257,7.8563931 -1.9047877,12.142909 -4.6666667,17.666667 -3.5846555,17.486331 -2.9212211,17.127277 -2,16.666667 -0.94372637,18.779214 -4.2781032,20 0,20 -0.11111111,19.888889 -0.22222222,19.777778 -0.33333333,19.666667 0.52820869,19.379486 1.1850518,19.074141 2,18.666667 2.1986531,20.255892 1.1411696,26.819649 0.66666667,29.666667 -0.17706815,34.729076 1.1922541,39.153524 2,44 3.5285517,53.17131 1.6666667,62.531736&#xd;&#xa;1.6666667,71.666667 1.6666667,73.986506 1.5064629,76.082648 1.3333333,78.333333 1.1870876,80.234527 -1.8572948,79.810436 -2.3333333,82.666667 -2.8252852,85.618378 -7.8621289,83.735602 -3.3333333,86 -1.0840421,87.124646 1.1600492,88.182771 3.3333333,89.333333 8.7510931,92.201559 13.713983,98.063089 17.666667,103.33333 17.99141,103.76632 22.937845,104.54236 21.333333,101.33333 19.780194,98.227054 19.266745,94.706777 17.333333,92 32.745755,99.706211&#xd;&#xa;43.161448,92.666667 60.666667,92.666667 74.513074,92.666667 88.429933,93.666667 102,93.666667 113.73744,93.666667 128.89861,89.077313 139.66667,92.666667 147.89846,95.410599 157.4685,93.687461 166,95 173.43454,96.143775 172.33333,89.755561 172.33333,102.33333 182.81914,104.43049 184.67219,98.287076 181.00024,116 180.93258,116.32639 192.7597,110.59689 195.33333,108.66667 196.66415,108.74092 214.96766,118.70854 214.96766,119.43787&#xd;&#xa;214.96766,116.52052 201.50301,105.82357 201.50301,104.85112 201.50301,102.54151 203.66694,100.33333 203.66694,100.33333 203.66694,101.32003 195.63733,95.509338 196,93.333333 203.61372,93.333333 210.80889,94.376566 217.66667,95 224.2493,95.598422 232.68355,94.108296 239.33333,93 235.18142,93.830383 232.58959,96.862165 230.33333,100.33333 230.03626,100.79037 230.44084,102.14184 230.66667,103 231.0527,104.46693 230.49337,105.08665&#xd;&#xa;233.33333,103.66667 235.86724,102.39971 237.75362,100.51594 240.33333,100 239.71458,101.03125 239.20238,101.79762 238.33333,102.66667 239.14642,102.26012 239.94946,102.02527 240.66667,101.66667 239.33333,103 238,104.33333 236.66667,105.66667 241.00593,103.49704 245.88626,103.22748 248.33333,98.333333 250.3814,94.237206 252.55706,93.109608 255.66667,90 255.07562,88.522395 254.66667,87.090095 254.66667,85.333333 253.14521,86.474428&#xd;&#xa;251.55739,87.554638 250,88.333333 249.09809,86.529514 248.40116,84.720932 246.66667,83.333333 247.97841,82.396377 248.77221,81.561126 250,80.333333 247.38362,77.71695 247.70643,69.810527 247.33333,65.333333 246.82567,59.241358 246.33333,53.188323 246.33333,47 246.33333,36.533346 242.65725,20.352175 247.33333,11 249.51486,15.363061 247.04391,17.142116 253,18.333333 252.74306,17.819456 251.92774,16.036359 252.33333,15.333333&#xd;&#xa;252.68239,14.728308 254.04132,15.648562 255,16.333333 255.81063,15.928017 256.46871,15.62154 257.33333,15.333333 254.71071,11.661663 249.2893,10.056587 247.66667,6 247.44444,6 247.22222,6 247,6 245.65265,1.9579466 241.29522,-0.84129172 239,-4.6666667 238.12506,-6.1248971 228.53259,-11.890132 234.66667,-1.6666667 233.77778,-1.6666667 232.88889,-1.6666667 232,-1.6666667 233.1175,-0.26978656 234.20861,0.75055622&#xd;&#xa;235,2.3333333 232.9737,3.4912173 232.32885,1.6621837 230,-0.66666667 229.90867,-0.53880079 229.7268,-0.478507 229.66667,-0.33333333 229.58163,-0.12802677 229.84019,0.19451221 229.66667,0.33333333 211.25142,0.33333333 192.95928,2 174.66667,2 165.71533,2 158.31838,-0.66666667 149.33333,-0.66666667 138.6144,-0.66666667 128.37029,0.66666667 117.66667,0.66666667 98.264631,0.66666667 78.109122,2.6065316 59,-0.33333333 50.049454,-1.7103404&#xd;&#xa;40.485565,-1.3333333 31.333333,-1.3333333 27.2247,-1.3333333 23.654506,-0.33333333 19.666667,-0.33333333 15.115907,-0.33333333 20.704411,-0.83466476 19,-4 18.33198,-5.2406079 15.447028,-3.1864445 14.666667,-3.6666667 13.111985,-2.1119849 11.589987,-0.51879395 10,1" Margin="-17.977,-20.645,-112,-55.997"/>
+			<Path Fill="#FFECE5CE" Stretch="Fill" StrokeThickness="2" Data="M15.333333,3.6666667 C11.307507,8.2450577 6.9605732,11.706093 2.6666667,16 4.6867477,16.67336 4.133063,15.772847 5,17.333333 6.2079426,16.608568 7.4969841,15.918175 8.6666667,15.333333 7.8579685,19.376824 5.3333333,20.775714 5.3333333,25.333333 5.3333333,29.511886 5.6502406,33.13622 6,37.333333 6.3546183,41.588753 6.3333333,45.954971 6.3333333,50.333333 6.3333333,53.94135 5.5697885,52.357473 6.534426,54.672603 7.2300521,56.342106 7.3293889,59.125208&#xd;&#xa;7.3293889,61.121949 6.7266187,60.117332 7.5038297,67.316193 6.7994136,66.376972 6.7994136,70.951681 6.7272388,76.483803 6.7272388,78.693745 6.7272388,81.205061 7.5967364,81.193473 8.6666667,83.333333 7.6651409,83.834096 6.9201325,83.666667 5.6666667,83.666667 9.140644,87.140644 12.284954,89.379939 15,93 17.112579,90.359277 16.666667,92.659828 16.666667,88.666667 17.361165,88.527767 17.638835,88.472233 18.333333,88.333333 19.063247,91.9829&#xd;&#xa;19.107863,89.332821 23.333333,90 26.180705,90.449585 29.348619,91 32.333333,91 39.005285,91 44.668748,89.333333 51,89.333333 63.148566,89.333333 74.674038,91.666052 86.666667,90.666667 101.89662,89.397504 117.0693,86.333333 132.66667,86.333333 137.04289,86.333333 138.85823,84.406117 142,88.333333 144.50137,91.46004 146.55898,91 151.33333,91 160.72825,91 169.33268,92.555665 178.66667,91&#xd;&#xa;178.66667,98.678516 170.73506,99.333333 185.33333,99.333333 185.33333,103.6478 183.66667,107.02141 183.66667,111 186.08188,109.18859 189.12839,107.86148 192,107 196.0045,105.79865 197.68573,107.27751 202.32826,110.2682 202.8777,107.52099 199.33333,106.18907 199.33333,103.33333 197.54438,103.33333 195.99394,103.66667 194.33333,103.66667 194.75634,102.82065 194.66667,102.40562 194.66667,101.33333 193.05392,102.1397 192.03191,102.02307&#xd;&#xa;193,97.666667 193.4149,95.799621 192.66667,92.801489 192.66667,90.666667 201.17021,92.083923 210.94101,92.246522 219.66667,91 224.15192,90.359249 228.53112,90.739595 233,90.333333 237.71551,89.904651 238.58549,87.243528 235.66667,96 240.79496,96 243.49967,94.500992 245.66667,88 244.77778,88 243.88889,88 243,88 243.38956,86.052192 242.25103,84.983521 242.33333,83.666667 242.40603,82.503473&#xd;&#xa;244.54819,81.63657 244.66667,80.333333 245.05157,76.099363 244.33589,72.030654 244,68 243.39292,60.715019 241.33333,53.958626 241.33333,46.333333 241.33333,38.398553 240.46617,30.469919 241.66667,22.666667 242.27994,18.6804 241.04638,14.411602 241.66667,11 242.92669,4.0698793 238.23432,8.0857887 236.33333,3.3333333 234.68011,4.3252697 233.94091,6.1215144 231.66667,5.6666667 229.6287,5.2590735 228.62773,3.5194677 226.33333,4.6666667&#xd;&#xa;221.33141,2.1657045 210.6904,4 204.66667,4 196.6285,4 188.81753,4.6666667 180.66667,4.6666667 163.73482,4.6666667 145.81627,7.8027113 129,5 110.64606,1.9410093 94.666224,3.3333333 76,3.3333333 63.710532,3.3333333 51.620985,3.6666667 39.333333,3.6666667 32.643828,3.6666667 24.073905,-1.4072386 18.333333,4.3333333 18.333333,3.5555556 18.333333,2.7777778 18.333333,2 16.579273,2 16.105171,3.4659888&#xd;&#xa;15.333333,3.6666667 z" Margin="-7.882,-9.001,-96,-44.731"/>
+			<TextBlock x:Name="talk_Text5" Margin="65.362,7.325,-89.362,-14.658" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontWeight="Bold" Visibility="Collapsed"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
 						<RotateTransform/>
 						<TranslateTransform/>
 					</TransformGroup>
-				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="연구소를 설치하면 코어 에너지가 지속적으로 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="충전 된다네."/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="골드를 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="계속 쓰긴 하지만... 허허"/></TextBlock>
-			<TextBlock x:Name="talk_Text4_Copy1" Margin="37.495,1.667,2.5,0" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" VerticalAlignment="Top" Height="16" FontSize="13.333" FontWeight="Bold"><TextBlock.RenderTransform>
+				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="연구소를 설치하면 코어 에너지가 지속적으로 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="충전 된다네."/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="유지비는 들지만 더 강한 공격을 할 수 있으니 부탁하네."/></TextBlock>
+			<Image Margin="-8.016,4.986,0,-22.986" Source="Resources/UI/KimHoRim_00.png" Stretch="Fill" HorizontalAlignment="Left" Width="74"/>
+			<TextBlock x:Name="talk_Text5_Copy" Margin="65.362,11.327,-89.362,-18.66" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontWeight="Bold" Visibility="Collapsed"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
 						<RotateTransform/>
 						<TranslateTransform/>
 					</TransformGroup>
-				</TextBlock.RenderTransform><Run Foreground="Black" Text="연구소"/><Run Foreground="Black" Text=" 건설"/></TextBlock>
+				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="근처에 적이 있으면 "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="연구원들이 대피해서 연구가 중단되니 주의 하게나."/></TextBlock>
 		</Grid>
-		<Grid x:Name="Talk_UPGNotYet" Width="240" Height="96" Canvas.Left="256" Canvas.Top="-160" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+		<Grid x:Name="Talk_UPGNotYet" Width="240" Height="96" Canvas.Left="278.678" Canvas.Top="-160" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
 			<Grid.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -2019,6 +1904,27 @@
 					</TransformGroup>
 				</Path.RenderTransform>
 			</Path>
+		</Grid>
+		<Grid x:Name="Talk_LabInactive" Width="184" Height="56" Canvas.Left="179.343" Canvas.Top="-91.997" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Opacity="0.95">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<Path Fill="Black" Stretch="Fill" Stroke="Black" StrokeThickness="2" Data="M10,2.3333333 C5.6831257,7.8563931 -1.9047877,12.142909 -4.6666667,17.666667 -3.5846555,17.486331 -2.9212211,17.127277 -2,16.666667 -0.94372637,18.779214 -4.2781032,20 0,20 -0.11111111,19.888889 -0.22222222,19.777778 -0.33333333,19.666667 0.52820869,19.379486 1.1850518,19.074141 2,18.666667 2.1986531,20.255892 1.1411696,26.819649 0.66666667,29.666667 -0.17706815,34.729076 1.1922541,39.153524 2,44 3.5285517,53.17131 1.6666667,62.531736&#xa;1.6666667,71.666667 1.6666667,73.986506 1.5064629,76.082648 1.3333333,78.333333 1.1870876,80.234527 -1.8572948,79.810436 -2.3333333,82.666667 -2.8252852,85.618378 -7.8621289,83.735602 -3.3333333,86 -1.0840421,87.124646 1.1600492,88.182771 3.3333333,89.333333 8.7510931,92.201559 13.713983,98.063089 17.666667,103.33333 17.99141,103.76632 22.937845,104.54236 21.333333,101.33333 19.780194,98.227054 19.266745,94.706777 17.333333,92 32.745755,99.706211&#xa;43.161448,92.666667 60.666667,92.666667 74.513074,92.666667 88.429933,93.666667 102,93.666667 113.73744,93.666667 128.89861,89.077313 139.66667,92.666667 147.89846,95.410599 157.4685,93.687461 166,95 173.43454,96.143775 172.33333,89.755561 172.33333,102.33333 182.81914,104.43049 184.67219,98.287076 181.00024,116 180.93258,116.32639 192.7597,110.59689 195.33333,108.66667 196.66415,108.74092 214.96766,118.70854 214.96766,119.43787&#xa;214.96766,116.52052 201.50301,105.82357 201.50301,104.85112 201.50301,102.54151 203.66694,100.33333 203.66694,100.33333 203.66694,101.32003 195.63733,95.509338 196,93.333333 203.61372,93.333333 210.80889,94.376566 217.66667,95 224.2493,95.598422 232.68355,94.108296 239.33333,93 235.18142,93.830383 232.58959,96.862165 230.33333,100.33333 230.03626,100.79037 230.44084,102.14184 230.66667,103 231.0527,104.46693 230.49337,105.08665&#xa;233.33333,103.66667 235.86724,102.39971 237.75362,100.51594 240.33333,100 239.71458,101.03125 239.20238,101.79762 238.33333,102.66667 239.14642,102.26012 239.94946,102.02527 240.66667,101.66667 239.33333,103 238,104.33333 236.66667,105.66667 241.00593,103.49704 245.88626,103.22748 248.33333,98.333333 250.3814,94.237206 252.55706,93.109608 255.66667,90 255.07562,88.522395 254.66667,87.090095 254.66667,85.333333 253.14521,86.474428&#xa;251.55739,87.554638 250,88.333333 249.09809,86.529514 248.40116,84.720932 246.66667,83.333333 247.97841,82.396377 248.77221,81.561126 250,80.333333 247.38362,77.71695 247.70643,69.810527 247.33333,65.333333 246.82567,59.241358 246.33333,53.188323 246.33333,47 246.33333,36.533346 242.65725,20.352175 247.33333,11 249.51486,15.363061 247.04391,17.142116 253,18.333333 252.74306,17.819456 251.92774,16.036359 252.33333,15.333333&#xa;252.68239,14.728308 254.04132,15.648562 255,16.333333 255.81063,15.928017 256.46871,15.62154 257.33333,15.333333 254.71071,11.661663 249.2893,10.056587 247.66667,6 247.44444,6 247.22222,6 247,6 245.65265,1.9579466 241.29522,-0.84129172 239,-4.6666667 238.12506,-6.1248971 228.53259,-11.890132 234.66667,-1.6666667 233.77778,-1.6666667 232.88889,-1.6666667 232,-1.6666667 233.1175,-0.26978656 234.20861,0.75055622&#xa;235,2.3333333 232.9737,3.4912173 232.32885,1.6621837 230,-0.66666667 229.90867,-0.53880079 229.7268,-0.478507 229.66667,-0.33333333 229.58163,-0.12802677 229.84019,0.19451221 229.66667,0.33333333 211.25142,0.33333333 192.95928,2 174.66667,2 165.71533,2 158.31838,-0.66666667 149.33333,-0.66666667 138.6144,-0.66666667 128.37029,0.66666667 117.66667,0.66666667 98.264631,0.66666667 78.109122,2.6065316 59,-0.33333333 50.049454,-1.7103404&#xa;40.485565,-1.3333333 31.333333,-1.3333333 27.2247,-1.3333333 23.654506,-0.33333333 19.666667,-0.33333333 15.115907,-0.33333333 20.704411,-0.83466476 19,-4 18.33198,-5.2406079 15.447028,-3.1864445 14.666667,-3.6666667 13.111985,-2.1119849 11.589987,-0.51879395 10,1" Margin="-17.977,-20.645,-112,-55.997"/>
+			<Path Fill="#FFECE5CE" Stretch="Fill" StrokeThickness="2" Data="M15.333333,3.6666667 C11.307507,8.2450577 6.9605732,11.706093 2.6666667,16 4.6867477,16.67336 4.133063,15.772847 5,17.333333 6.2079426,16.608568 7.4969841,15.918175 8.6666667,15.333333 7.8579685,19.376824 5.3333333,20.775714 5.3333333,25.333333 5.3333333,29.511886 5.6502406,33.13622 6,37.333333 6.3546183,41.588753 6.3333333,45.954971 6.3333333,50.333333 6.3333333,53.94135 5.5697885,52.357473 6.534426,54.672603 7.2300521,56.342106 7.3293889,59.125208&#xa;7.3293889,61.121949 6.7266187,60.117332 7.5038297,67.316193 6.7994136,66.376972 6.7994136,70.951681 6.7272388,76.483803 6.7272388,78.693745 6.7272388,81.205061 7.5967364,81.193473 8.6666667,83.333333 7.6651409,83.834096 6.9201325,83.666667 5.6666667,83.666667 9.140644,87.140644 12.284954,89.379939 15,93 17.112579,90.359277 16.666667,92.659828 16.666667,88.666667 17.361165,88.527767 17.638835,88.472233 18.333333,88.333333 19.063247,91.9829&#xa;19.107863,89.332821 23.333333,90 26.180705,90.449585 29.348619,91 32.333333,91 39.005285,91 44.668748,89.333333 51,89.333333 63.148566,89.333333 74.674038,91.666052 86.666667,90.666667 101.89662,89.397504 117.0693,86.333333 132.66667,86.333333 137.04289,86.333333 138.85823,84.406117 142,88.333333 144.50137,91.46004 146.55898,91 151.33333,91 160.72825,91 169.33268,92.555665 178.66667,91&#xa;178.66667,98.678516 170.73506,99.333333 185.33333,99.333333 185.33333,103.6478 183.66667,107.02141 183.66667,111 186.08188,109.18859 189.12839,107.86148 192,107 196.0045,105.79865 197.68573,107.27751 202.32826,110.2682 202.8777,107.52099 199.33333,106.18907 199.33333,103.33333 197.54438,103.33333 195.99394,103.66667 194.33333,103.66667 194.75634,102.82065 194.66667,102.40562 194.66667,101.33333 193.05392,102.1397 192.03191,102.02307&#xa;193,97.666667 193.4149,95.799621 192.66667,92.801489 192.66667,90.666667 201.17021,92.083923 210.94101,92.246522 219.66667,91 224.15192,90.359249 228.53112,90.739595 233,90.333333 237.71551,89.904651 238.58549,87.243528 235.66667,96 240.79496,96 243.49967,94.500992 245.66667,88 244.77778,88 243.88889,88 243,88 243.38956,86.052192 242.25103,84.983521 242.33333,83.666667 242.40603,82.503473&#xa;244.54819,81.63657 244.66667,80.333333 245.05157,76.099363 244.33589,72.030654 244,68 243.39292,60.715019 241.33333,53.958626 241.33333,46.333333 241.33333,38.398553 240.46617,30.469919 241.66667,22.666667 242.27994,18.6804 241.04638,14.411602 241.66667,11 242.92669,4.0698793 238.23432,8.0857887 236.33333,3.3333333 234.68011,4.3252697 233.94091,6.1215144 231.66667,5.6666667 229.6287,5.2590735 228.62773,3.5194677 226.33333,4.6666667&#xa;221.33141,2.1657045 210.6904,4 204.66667,4 196.6285,4 188.81753,4.6666667 180.66667,4.6666667 163.73482,4.6666667 145.81627,7.8027113 129,5 110.64606,1.9410093 94.666224,3.3333333 76,3.3333333 63.710532,3.3333333 51.620985,3.6666667 39.333333,3.6666667 32.643828,3.6666667 24.073905,-1.4072386 18.333333,4.3333333 18.333333,3.5555556 18.333333,2.7777778 18.333333,2 16.579273,2 16.105171,3.4659888&#xa;15.333333,3.6666667 z" Margin="-7.882,-9.001,-96,-44.731"/>
+			<TextBlock x:Name="talk_Text11" Margin="65.362,7.325,-89.362,-14.658" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontWeight="Bold"><TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="적들이 와서 연구원들이 피신 했다네!!"/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="연구소를 이동하게!!"/></TextBlock>
+			<Image HorizontalAlignment="Left" Margin="-8.016,4.986,0,-22.986" Width="74" Source="Resources\UI\KimHoRim_00.png" Stretch="Fill"/>
 		</Grid>
 	</Canvas>
 </UserControl>
