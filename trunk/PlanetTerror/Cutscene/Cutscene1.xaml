@@ -1501,7 +1501,7 @@
 			</Rectangle>
 		</Canvas>
 		<Canvas x:Name="GameOver" Width="1024" Height="720" Canvas.Left="0" Canvas.Top="0" Background="#FF0C0C0C" Visibility="Collapsed">
-			<TextBlock Width="584" Height="80" Canvas.Left="256" Canvas.Top="280" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="64" Foreground="#FFBB3131" TextWrapping="Wrap"><Run Text="Core"/><Run Text=" is"/><Run Text=" Dismantle"/><Run Text="..."/></TextBlock>
+			<TextBlock Width="584" Height="80" Canvas.Left="256" Canvas.Top="280" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="64" Foreground="#FFBB3131" TextWrapping="Wrap"><Run Text="Core"/><Run Text=" "/><Run Text="Destroyed. "/></TextBlock>
 			<Button x:Name="Menu_ReStart" Style="{DynamicResource ReStart}" Width="120" Height="24" Content="타이틀 화면으로" Canvas.Left="457" Canvas.Top="417" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="14.667" Foreground="#FF9B2727" Cursor="Hand">
 				<Button.Resources>
 					<Style x:Key="ButtonFocusVisual">
