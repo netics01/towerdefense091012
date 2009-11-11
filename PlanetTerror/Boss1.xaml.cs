@@ -72,11 +72,12 @@ namespace PlanetTerror
 			switch( vsm.GetState() )
 			{
 			case "Boss_Move_State":
-				var bodyCenter = body.GetCenter();
-				var bodyCanvasPos = body_canvas.GetLeftTop();
-				Pos = new Point(bodyCenter.X + bodyCanvasPos.X, bodyCenter.Y + bodyCanvasPos.Y);
+				var bodyPos = new Point(body.ActualWidth * 0.5, body.ActualHeight * 0.5);
+				var bodyTransPos = ExtractTranslation(body.RenderTransform, 3);
 
-				Debug.Print("{0}", Pos);
+				var bodyCanvasPos = body_canvas.GetLeftTop();
+				var bodyCanvasTransPos = ExtractTranslation(body_canvas.RenderTransform, 3);
+				Pos = Add(Add(bodyPos, bodyTransPos), Add(bodyCanvasPos, bodyCanvasTransPos));
 
 				if( vsm.GetStateJustFinished() )
 				{
@@ -111,6 +112,23 @@ namespace PlanetTerror
 		public override void TakeDamage(double damage)
 		{
 			HitPoint -= damage;
+		}
+
+		//===============================================================================================================================================
+		//	전용
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	렌더트랜스폼에서 트랜슬레이션을 가져온다.
+		Point ExtractTranslation(Transform renderTransform, int i)
+		{
+			var transformGroup = renderTransform as TransformGroup;
+			var translateTransform = transformGroup.Children[i] as TranslateTransform;
+			return new Point(translateTransform.X, translateTransform.Y);
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	Point 덧셈. 나 원 별걸 다 만들어야 하네
+		Point Add(Point a, Point b)
+		{
+			return new Point(a.X + b.X, a.Y + b.Y);
 		}
 	}
 }

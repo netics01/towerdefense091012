@@ -68,7 +68,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 32;
+		public const int VERSION = 33;
 
 		public int version;
 		public bool debugMode;
@@ -272,8 +272,8 @@ namespace PlanetTerror
 			core.hitPoint = 100;
 			core.warningBefore = 5;
 			core.attackDamage = 700;
-			core.boomTime = 4;
-			core.boomDistance = 40;
+			core.boomTime = 2;
+			core.boomDistance = 130;
 			core.boomLogicFrame = 0.1;
 			core.upg1Research = 50;
 			core.upg2Research = 120;
