@@ -37,7 +37,8 @@ namespace PlanetTerror
 
 			Menu_Start.Click += new RoutedEventHandler(Menu_Start_Click);
 			GameStart_State.Storyboard.Completed += new EventHandler(GameStart_State_Storyboard_Completed);
-			GameStart_Click_State.Storyboard.Completed +=new EventHandler(GameStart_Click_State_Storyboard_Completed);
+			GameOver_State.Storyboard.Completed +=new EventHandler(GameStart_Click_State_Storyboard_Completed);
+			GameStart_Click_State.Storyboard.Completed +=new EventHandler(GameStart_Click_State_Storyboard_Completed);			
 		}
 
 		//===============================================================================================================================================
