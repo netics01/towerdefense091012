@@ -177,6 +177,9 @@ namespace PlanetTerror
 			case "Enemy3":
 				Game.World.CreateEnemy<Enemy3>(path);
 				break;
+			case "Boss1":
+				Game.World.CreateEnemy<Boss1>(path);
+				break;
 			}
 		}
 	}
