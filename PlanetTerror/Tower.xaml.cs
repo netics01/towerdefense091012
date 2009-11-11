@@ -67,9 +67,10 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		VSM vsm;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
-		List<Storyboard> effectStories;
 		Storyboard notYetBuiltStory;
-		Storyboard labStory;
+		Storyboard activeLabStory;
+		Storyboard inactiveLabStory;
+		List<Storyboard> effectStories;
 		Storyboard upgEffectStory;
 		bool bDismantling;
 		Storyboard upg1AttachtStory;
@@ -85,6 +86,13 @@ namespace PlanetTerror
 			vsm = new VSM(this, LayoutRoot);
 			vsm.SetDefaultGroup(BUILD_GROUP);
 
+			notYetBuiltStory = Resources.FindStoryboard("NotYetBuilt_Storyboard");
+			notYetBuiltStory.RepeatForever();
+			activeLabStory = Resources.FindStoryboard("Lab_Tower_Storyboard");
+			activeLabStory.RepeatForever();
+			inactiveLabStory = Resources.FindStoryboard("Lab_Inactive_Tower_Storyboard");
+			inactiveLabStory.RepeatForever();
+
 			effectStories = new List<Storyboard>();
 			effectStories.Add(Resources.FindStoryboard("Upg0_Tower_Storyboard"));
 			effectStories.Add(Resources.FindStoryboard("Upg1_Tower_Storyboard"));
@@ -94,12 +102,8 @@ namespace PlanetTerror
 			{
 				effectStories[i].RepeatForever();
 			}
-
-			notYetBuiltStory = Resources.FindStoryboard("NotYetBuilt_Storyboard");
-			notYetBuiltStory.RepeatForever();
-			labStory = Resources.FindStoryboard("Lab_Tower_Storyboard");
-			labStory.RepeatForever();
 			upgEffectStory = Resources.FindStoryboard("Upg_Effect_Storyboard");
+
 			bDismantling = false;
 			upg1AttachtStory = Resources.FindStoryboard("Upg1_Attach_Storyboard");
 			upg1AttachtStory.Completed += new EventHandler(upg1AttachtStory_Completed);
@@ -243,7 +247,8 @@ namespace PlanetTerror
 			Game.UI.GainGold(gold);
 			bDismantling = true;
 			effectStories[0].Stop();
-			labStory.Stop();
+			activeLabStory.Stop();
+			inactiveLabStory.Stop();
 
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 
@@ -395,7 +400,7 @@ namespace PlanetTerror
 				{
 					//활성상태로 시작
 					cooldownTime = 0;
-					labStory.Begin();
+					activeLabStory.Begin();
 				}
 				//비활성상태면
 				if( cooldownTime > 0 )
@@ -405,7 +410,8 @@ namespace PlanetTerror
 						!Game.World.IsThereEnemy(towerCenter, Game.Setting.lab.rangeSqr) )
 					{
 						cooldownTime = 0;
-						labStory.Begin();
+						inactiveLabStory.Stop();
+						activeLabStory.Begin();
 					}
 				}
 				//활성상태면
@@ -417,7 +423,8 @@ namespace PlanetTerror
 					if( Game.World.IsThereEnemy(towerCenter, Game.Setting.lab.rangeSqr) )
 					{
 						cooldownTime = Game.Setting.lab.inactiveTime;
-						labStory.Stop();
+						activeLabStory.Stop();
+						inactiveLabStory.Begin();
 					}
 				}
 				break;
