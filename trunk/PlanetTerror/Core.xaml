@@ -22892,7 +22892,7 @@
 				</Canvas>
 			</Canvas>
 			<Canvas x:Name="Button" Width="120" Height="112" Canvas.Left="26.25" Canvas.Top="22.5">
-				<Button x:Name="button_Attack_Normal" Style="{DynamicResource ButtonStyle1}" Width="120" Height="112" Content="아직 필살기를 사용 할 수 없습니다." FontFamily="Fonts/#아리따B" Foreground="#FF37EFFF" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5" FontSize="10.667">
+				<Button x:Name="button_Attack_Normal" Style="{DynamicResource ButtonStyle1}" Width="120" Height="112" Content="아직 필살기를 사용 할 수 없습니다." FontFamily="Fonts/#아리따B" Foreground="#FF37EFFF" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5" FontSize="10.667" Cursor="Hand">
 					<Button.Resources>
 						<Style x:Key="ButtonFocusVisual">
 							<Setter Property="Control.Template">
@@ -23820,7 +23820,7 @@
 						</TransformGroup>
 					</Button.RenderTransform>
 				</Button>
-				<Button x:Name="Attack_Ready_Button" Style="{DynamicResource ButtonStyle1}" Width="120" Height="112" Content="!!필살기 사용 할 수 있습니다!!" FontFamily="Fonts/#아리따B" Foreground="#FFFFB10C" RenderTransformOrigin="0.5,0.5">
+				<Button x:Name="Attack_Ready_Button" Style="{DynamicResource ButtonStyle1}" Width="120" Height="112" Content="!!필살기 사용 할 수 있습니다!!" FontFamily="Fonts/#아리따B" Foreground="#FFFFB10C" RenderTransformOrigin="0.5,0.5" Cursor="Hand">
 					<Button.Resources>
 						<Style x:Key="ButtonFocusVisual">
 							<Setter Property="Control.Template">
