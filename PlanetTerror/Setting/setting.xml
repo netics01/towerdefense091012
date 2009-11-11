@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <Setting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <version>31</version>
+  <version>33</version>
   <debugMode>true</debugMode>
-  <title>false</title>
-  <startGold>500</startGold>
+  <title>true</title>
+  <startGold>1000</startGold>
   <gold>
     <interval>5</interval>
     <mineGold>1</mineGold>
@@ -35,7 +35,7 @@
         <projSpeed>200</projSpeed>
         <turretRotSpeed>1000</turretRotSpeed>
         <upgCost>200</upgCost>
-        <dismantleGain>170</dismantleGain>
+        <dismantleGain>180</dismantleGain>
       </Stat>
       <Stat>
         <attackRange>230</attackRange>
@@ -45,7 +45,7 @@
         <projSpeed>240</projSpeed>
         <turretRotSpeed>1000</turretRotSpeed>
         <upgCost>300</upgCost>
-        <dismantleGain>300</dismantleGain>
+        <dismantleGain>360</dismantleGain>
       </Stat>
       <Stat>
         <attackRange>250</attackRange>
@@ -55,7 +55,7 @@
         <projSpeed>350</projSpeed>
         <turretRotSpeed>210</turretRotSpeed>
         <upgCost>1000</upgCost>
-        <dismantleGain>400</dismantleGain>
+        <dismantleGain>600</dismantleGain>
       </Stat>
     </stats>
   </tower>
@@ -70,13 +70,13 @@
     <hitPoint>100</hitPoint>
     <warningBefore>5</warningBefore>
     <attackDamage>700</attackDamage>
-    <boomTime>4</boomTime>
-    <boomDistance>40</boomDistance>
+    <boomTime>2</boomTime>
+    <boomDistance>130</boomDistance>
     <boomLogicFrame>0.1</boomLogicFrame>
     <upg1Research>50</upg1Research>
-    <upg2Research>120</upg2Research>
-    <upg3Research>200</upg3Research>
-    <upg4Research>500</upg4Research>
+    <upg2Research>100</upg2Research>
+    <upg3Research>150</upg3Research>
+    <upg4Research>400</upg4Research>
   </core>
   <enemy1>
     <routeTime>35</routeTime>
@@ -88,19 +88,20 @@
   <enemy2>
     <routeTime>60</routeTime>
     <hitPoint>200</hitPoint>
-    <damage>20</damage>
+    <damage>10</damage>
     <gold>0</gold>
     <powerUp>1</powerUp>
   </enemy2>
   <enemy3>
     <routeTime>15</routeTime>
     <hitPoint>80</hitPoint>
-    <damage>0</damage>
+    <damage>10</damage>
     <gold>0</gold>
     <powerUp>2</powerUp>
   </enemy3>
   <boss>
     <hitPoint>1500</hitPoint>
+    <damage>150</damage>
   </boss>
   <waves>
     <Wave>
@@ -111,19 +112,19 @@
           <typeName>Enemy1</typeName>
           <pathIndex>1</pathIndex>
           <count>5</count>
-          <interval>0.5</interval>
+          <interval>1</interval>
         </Bundle>
       </bundles>
     </Wave>
     <Wave>
-      <waitTime>17</waitTime>
+      <waitTime>30</waitTime>
       <bundles>
         <Bundle>
           <waitTime>0.1</waitTime>
           <typeName>Enemy1</typeName>
           <pathIndex>1</pathIndex>
           <count>10</count>
-          <interval>0.5</interval>
+          <interval>1</interval>
         </Bundle>
       </bundles>
     </Wave>
@@ -132,14 +133,14 @@
       <bundles>
         <Bundle>
           <waitTime>0.1</waitTime>
-          <typeName>Enemy2</typeName>
+          <typeName>Enemy1</typeName>
           <pathIndex>2</pathIndex>
           <count>10</count>
           <interval>0.5</interval>
         </Bundle>
         <Bundle>
           <waitTime>5</waitTime>
-          <typeName>Enemy1</typeName>
+          <typeName>Enemy2</typeName>
           <pathIndex>2</pathIndex>
           <count>5</count>
           <interval>1.5</interval>
@@ -151,14 +152,14 @@
       <bundles>
         <Bundle>
           <waitTime>0.1</waitTime>
-          <typeName>Enemy2</typeName>
+          <typeName>Enemy1</typeName>
           <pathIndex>1</pathIndex>
           <count>5</count>
           <interval>0.5</interval>
         </Bundle>
         <Bundle>
           <waitTime>5</waitTime>
-          <typeName>Enemy1</typeName>
+          <typeName>Enemy2</typeName>
           <pathIndex>1</pathIndex>
           <count>10</count>
           <interval>1.5</interval>
