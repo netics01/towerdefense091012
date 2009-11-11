@@ -69,6 +69,14 @@ namespace PlanetTerror
 			vsm.SetState("GameStart_State");
 			Game.SoundMgr.Music = "Sound/Music/Title.mp3";
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	게임 오버
+		public void RunGameOver()
+		{
+			Activate(true);
+			vsm.SetState("GameOver_State");
+			Game.SoundMgr.Music = "Sound/Music/GameOver.mp3";
+		}
 
 		//===============================================================================================================================================
 		//	전용
