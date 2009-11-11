@@ -41,6 +41,7 @@ namespace PlanetTerror
 		//	프로퍼티
 		public double HitPoint { get; protected set; }
 		public bool Invincible { get; set; }
+		public bool Boomed { get; protected set; }
 		
 		//===============================================================================================================================================
 		//	필드
@@ -84,6 +85,7 @@ namespace PlanetTerror
 
 			hit_Story = Resources.FindStoryboard("Hit_Storyboard");
 			//hit_Story.FillBehavior = FillBehavior.Stop;
+			Boomed = false;
 
 			WPFUtil.SetImageScaleMode(LayoutRoot, BitmapScalingMode.Linear);
 
@@ -169,6 +171,10 @@ namespace PlanetTerror
 				}
 				break;
 			case HP0_STATE:
+				if( vsm.GetStateJustFinished() )
+				{
+					Boomed = true;
+				}
 				break;
 			}
 		}
