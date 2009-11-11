@@ -37,7 +37,7 @@ namespace PlanetTerror
 			this.InitializeComponent();
 
 			Done = false;
-			story = Resources["Core_Boom0_Storyboard"] as Storyboard;
+			story = Resources["Core_Boom_Storyboard"] as Storyboard;
 			story.Completed += new EventHandler(story_Completed);
 
 			IsVisibleChanged += new DependencyPropertyChangedEventHandler(boom_IsVisibleChanged);
