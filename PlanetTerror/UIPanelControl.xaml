@@ -64,6 +64,37 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.053"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="image9">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:02.9000000" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-301"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-344.852"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-332.352"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-214"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-238.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-237.377"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.796"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.127"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.582"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.127"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="CoreIcon_OnMouseLeave">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_system_Core" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -90,6 +121,25 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 			</DoubleAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="baloon">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="image9">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Duration="00:00:00.0010000" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-332.352"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Duration="00:00:00.0010000" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-237.377"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Duration="00:00:00.0010000" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Duration="00:00:00.0010000" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image9">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
@@ -1545,7 +1595,16 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image Width="67.333" Height="83" Canvas.Left="358" Canvas.Top="187.833" Source="Resources/UI/Icon_Rob.png" Stretch="Fill" Visibility="Collapsed"/>
+		<Image x:Name="image9" Width="67.333" Height="83" Canvas.Left="358" Canvas.Top="187.833" Source="Resources/UI/Icon_Rob.png" Stretch="Fill" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
 		<Canvas x:Name="path" Width="1024" Height="673" Canvas.Left="0" Canvas.Top="-681" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5">
 			<Canvas.RenderTransform>
 				<TransformGroup>
@@ -1762,7 +1821,7 @@
 		<TextBlock x:Name="gold_Next_Text" Width="56" Height="24" TextWrapping="Wrap" Foreground="#FF946D40" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="891.943" Canvas.Top="3" TextAlignment="Right" FontWeight="Bold" FontStyle="Italic"><Run Text="5"/><Run Text="85"/><LineBreak/><Run Text=""/></TextBlock>
 		<Image Width="64" Height="64" Canvas.Left="286.5" Canvas.Top="-22" Source="Resources/UI/Icon_Core_MAX.png" Stretch="Fill" Visibility="Collapsed"/>
 		<Image x:Name="image" Width="64" Height="64" Canvas.Left="286.5" Canvas.Top="-22" Source="Resources/UI/Icon_Core.png" Stretch="Fill" Cursor="Help"/>
-		<Grid x:Name="talk_system_Core" Width="184" Height="56" Canvas.Left="66" Canvas.Top="-33.5" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+		<Grid x:Name="talk_system_Core" Width="184" Height="56" Canvas.Left="74" Canvas.Top="-33.5" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
 			<Grid.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
