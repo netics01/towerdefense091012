@@ -1041,6 +1041,35 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="-3.5"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0.092"/>
 			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image9" Storyboard.TargetProperty="(UIElement.Visibility)" Duration="00:00:00.0010000">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="83.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.766"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1800000" Value="11.766"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.8800000" Value="11.766"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-239.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-253.25"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1800000" Value="-248.25"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.8800000" Value="-248.25"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.8800000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.042"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.042"/>
+			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Gold_MouseLeave_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_system_Gold" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -1071,6 +1100,20 @@
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Duration="00:00:00.0010000" Storyboard.TargetName="baloon">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.394"/>
 			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Duration="00:00:00.0010000" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="11.766"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Duration="00:00:00.0010000" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-248.25"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1200000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image9" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.1200000" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="GoldT_MouseOver_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="baloon">
@@ -1141,6 +1184,39 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="image9" Duration="00:00:00.0010000">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="212.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="125.454"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="142.454"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="142.454"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-248"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-246.333"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-244.853"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="-244.853"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.151"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.042"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="1.042"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image9">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.151"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.042"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.9000000" Value="1.042"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="GoldT_MouseLeave_Storyboard">
@@ -1609,6 +1685,12 @@
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image10" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image14" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.667"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image15" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.667"/>
+						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Research1_State">
@@ -1672,6 +1754,48 @@
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
 		<Image Width="1024" Height="59" Source="Resources/UI/underline.png" Stretch="Fill" Canvas.Top="-17" Canvas.Left="0"/>
+		<Canvas x:Name="Icon_UPG" Width="128" Height="40" Canvas.Left="160" Canvas.Top="-8" IsEnabled="False" IsHitTestVisible="False">
+			<Image x:Name="image17" Width="80" Height="20" RenderTransformOrigin="0.5,0.5" Canvas.Left="-55.334" Canvas.Top="6.083" Source="Resources/UI/t_TowerResearch.png" Stretch="Fill">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform AngleX="-17.65"/>
+						<RotateTransform/>
+						<TranslateTransform X="3.182"/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Canvas x:Name="Lv3" Width="40" Height="40" Canvas.Left="96" Canvas.Top="-4">
+				<Image x:Name="image10" Width="40" Height="40" Source="Resources/UI/Icon_UPGResearch03_Pass.png" Stretch="Fill" Visibility="Collapsed"/>
+				<Image x:Name="image11" Width="40" Height="40" Canvas.Left="0" Canvas.Top="0" Source="Resources/UI/Icon_UPGResearch03_NotYet.png" Stretch="Fill"/>
+			</Canvas>
+			<Canvas x:Name="Lv2" Width="40" Height="40" Canvas.Left="58.999" Canvas.Top="-6.583">
+				<Image x:Name="image12" Width="40" Height="40" Source="Resources/UI/Icon_UPGResearch02_Pass.png" Stretch="Fill" Visibility="Collapsed"/>
+				<Image x:Name="image13" Width="40" Height="40" Canvas.Left="0" Canvas.Top="0" Source="Resources/UI/Icon_UPGResearch02_NotYet.png" Stretch="Fill"/>
+			</Canvas>
+			<Canvas x:Name="Lv1" Width="32" Height="32" Canvas.Left="27.75">
+				<Image x:Name="image14" Width="32" Height="32" Source="Resources/UI/Icon_UPGResearch01_Pass.png" Stretch="Fill" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+					<Image.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Image.RenderTransform>
+				</Image>
+				<Image x:Name="image15" Width="32" Height="32" Canvas.Left="0" Canvas.Top="0" Source="Resources/UI/Icon_UPGResearch01_NotYet.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+					<Image.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Image.RenderTransform>
+				</Image>
+			</Canvas>
+		</Canvas>
 		<Image x:Name="baloon" Width="235" Height="65.712" RenderTransformOrigin="0.5,0.5" Canvas.Left="384" Canvas.Top="198.894" Source="Resources/UI/bl.png" Stretch="Fill" Visibility="Collapsed">
 			<Image.RenderTransform>
 				<TransformGroup>
@@ -1908,20 +2032,6 @@
 		<TextBlock x:Name="gold_Next_Text" Width="56" Height="24" TextWrapping="Wrap" Foreground="#FF946D40" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="891.943" Canvas.Top="3" TextAlignment="Right" FontWeight="Bold" FontStyle="Italic"><Run Text="5"/><Run Text="85"/><LineBreak/><Run Text=""/></TextBlock>
 		<Image x:Name="image" Width="64" Height="64" Canvas.Left="286.5" Canvas.Top="-22" Source="Resources/UI/Icon_Core.png" Stretch="Fill" Cursor="Help"/>
 		<Image x:Name="image16" Width="64" Height="64" Canvas.Left="286.5" Canvas.Top="-22" Source="Resources/UI/Icon_Core_MAX.png" Stretch="Fill" Visibility="Collapsed"/>
-		<Canvas x:Name="Icon_UPG" Width="128" Height="40" Canvas.Left="160" Canvas.Top="-8" IsEnabled="False" IsHitTestVisible="False">
-			<Canvas x:Name="Lv3" Width="40" Height="40" Canvas.Left="88">
-				<Image x:Name="image10" Width="40" Height="40" Source="Resources/UI/Icon_UPGResearch03_Pass.png" Stretch="Fill" Visibility="Collapsed"/>
-				<Image x:Name="image11" Width="40" Height="40" Canvas.Left="0" Canvas.Top="0" Source="Resources/UI/Icon_UPGResearch03_NotYet.png" Stretch="Fill" Visibility="Collapsed"/>
-			</Canvas>
-			<Canvas x:Name="Lv2" Width="40" Height="40" Canvas.Left="41.332">
-				<Image x:Name="image12" Width="40" Height="40" Source="Resources/UI/Icon_UPGResearch02_Pass.png" Stretch="Fill" Visibility="Collapsed"/>
-				<Image x:Name="image13" Width="40" Height="40" Canvas.Left="0" Canvas.Top="0" Source="Resources/UI/Icon_UPGResearch02_NotYet.png" Stretch="Fill" Visibility="Collapsed"/>
-			</Canvas>
-			<Canvas x:Name="Lv1" Width="32" Height="32" Canvas.Top="8">
-				<Image x:Name="image14" Width="32" Height="32" Source="Resources/UI/Icon_UPGResearch01_Pass.png" Stretch="Fill" Visibility="Collapsed"/>
-				<Image x:Name="image15" Width="32" Height="32" Canvas.Left="0" Canvas.Top="0" Source="Resources/UI/Icon_UPGResearch01_NotYet.png" Stretch="Fill" Visibility="Collapsed"/>
-			</Canvas>
-		</Canvas>
 		<ProgressBar x:Name="power_Progress" Width="256" Height="16" Canvas.Left="384" Canvas.Top="7" Style="{DynamicResource ProgressBarStyle1}" Visibility="Collapsed"/>
 		<Button x:Name="Attack_Beam_Button" Width="128" Height="40" Canvas.Left="312" Canvas.Top="-17" Style="{DynamicResource ButtonStyle1}" Visibility="Collapsed">
 			<Button.Resources>
@@ -2120,16 +2230,16 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
-			<TextBlock x:Name="talk_Text2" Margin="-28.502,6.834,-34.667,-14.334" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontSize="13.333" TextAlignment="Center" FontWeight="Bold"><TextBlock.RenderTransform>
+			<TextBlock x:Name="talk_Text2" Margin="-34.663,2.686,-28.506,-10.186" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontSize="13.333" TextAlignment="Right" FontWeight="Bold"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
 						<RotateTransform/>
 						<TranslateTransform/>
 					</TransformGroup>
-				</TextBlock.RenderTransform><Run Text="채굴소에서 주기적으로"/><Run Text=" "/><Run Text="획득하는"/><LineBreak/><Run Text="골드 입니다."/><LineBreak/><Run Text="타워와 연구소를 짓는데 사용"/><Run Text="합니다."/></TextBlock>
+				</TextBlock.RenderTransform><Run Text="채굴소에서 주기적으로"/><Run Text=" "/><Run Text="획득하는"/><LineBreak/><Run Text="골드 입니다."/><LineBreak/><Run Text="타워와 연구소를 짓는데"/><LineBreak/><Run Text="사용"/><Run Text="합니다."/></TextBlock>
 		</Grid>
-		<Grid x:Name="talk_system_GoldTime" Width="184" Height="56" Canvas.Left="423.5" Canvas.Top="-44" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+		<Grid x:Name="talk_system_GoldTime" Width="184" Height="56" Canvas.Left="431.5" Canvas.Top="-51.333" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
 			<Grid.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -2138,7 +2248,7 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
-			<TextBlock x:Name="talk_Text3" Margin="20.248,9.556,-43.036,-17.056" Foreground="#FF372510" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontWeight="Bold" FontSize="13.333"><TextBlock.RenderTransform>
+			<TextBlock x:Name="talk_Text3" Margin="-3.782,8.963,-19.006,-16.463" Foreground="#FF372510" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontWeight="Bold" FontSize="13.333" TextAlignment="Center"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
@@ -2477,6 +2587,5 @@
 				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="적이 와서 연구원들이 피신 했네!!"/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="연구소를 이동하게!!"/></TextBlock>
 			<Image HorizontalAlignment="Left" Margin="-8.016,4.986,0,-22.986" Width="74" Source="Resources\UI\KimHoRim_00.png" Stretch="Fill"/>
 		</Grid>
-		<TextBlock Width="64" Height="14.667" FontFamily="Fonts/#아리따B" Foreground="#FFE78117" TextWrapping="Wrap" Canvas.Left="92.995" Canvas.Top="11.659"><Run Text="타워 연구"/><Run Text=" "/><Run Text="▶"/></TextBlock>
 	</Canvas>
 </UserControl>
