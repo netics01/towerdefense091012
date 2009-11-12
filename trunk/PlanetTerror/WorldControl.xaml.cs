@@ -36,10 +36,10 @@ namespace PlanetTerror
 		List<Projectile> projectiles;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		List<InstantProjectile> instantProjectiles;
-		ClassPool<Projectile0> proj0Pool;
-		ClassPool<Projectile1> proj1Pool;
-		ClassPool<Projectile2> proj2Pool;
-		ClassPool<Projectile3> proj3Pool;
+// 		ClassPool<Projectile0> proj0Pool;
+// 		ClassPool<Projectile1> proj1Pool;
+// 		ClassPool<Projectile2> proj2Pool;
+// 		ClassPool<Projectile3> proj3Pool;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		int enemyLayer = 0;
 		RefreshTimer goldTimer;
@@ -64,10 +64,10 @@ namespace PlanetTerror
 			}
 			projectiles = new List<Projectile>();
 			instantProjectiles = new List<InstantProjectile>();
-			proj0Pool = new ClassPool<Projectile0>(30);
-			proj1Pool = new ClassPool<Projectile1>(30);
-			proj2Pool = new ClassPool<Projectile2>(30);
-			proj3Pool = new ClassPool<Projectile3>(30);
+// 			proj0Pool = new ClassPool<Projectile0>(30);
+// 			proj1Pool = new ClassPool<Projectile1>(30);
+// 			proj2Pool = new ClassPool<Projectile2>(30);
+// 			proj3Pool = new ClassPool<Projectile3>(30);
 
 			PreparePath();
 

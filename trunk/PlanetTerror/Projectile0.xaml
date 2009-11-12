@@ -5,13 +5,14 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:PlanetTerror"
 	mc:Ignorable="d"
+	xmlns:ic="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
 	x:Class="PlanetTerror.Projectile0"
 	x:Name="UserControl"
 	d:DesignWidth="24" d:DesignHeight="16">
 
     <Canvas x:Name="LayoutRoot" IsHitTestVisible="False" IsEnabled="False">
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:Name="Projectile_StateGroup">
+            <VisualStateGroup x:Name="Projectile_StateGroup" ic:ExtendedVisualStateManager.UseFluidLayout="True">
                 <VisualState x:Name="Projectile_Normal_State">
                     <Storyboard>
                         <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="boom" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -494,6 +495,9 @@
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
+    	<VisualStateManager.CustomVisualStateManager>
+    		<ic:ExtendedVisualStateManager/>
+    	</VisualStateManager.CustomVisualStateManager>
         <Canvas x:Name="fire" Width="29.833" Height="44.167" Canvas.Left="-7.167" Canvas.Top="-11.5" RenderTransformOrigin="0.5,0.5">
             <Canvas.RenderTransform>
                 <TransformGroup>
