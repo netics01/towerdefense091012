@@ -32,18 +32,21 @@ using PlanetTerror.Util;
 //----작업----
 
 
+//타워 업그레이드 버튼 바로 안뜨는 문제
+//코어 공격 버튼에 문제가 있다.
+
+
 //보스 공격시 데미지 타임 조절
 
 
 //발사체 모양 다듬는다.
 //게임플레이를 다듬는다.
-//포탄/자코 클래스 풀링
 
 
 //이지/하드모드?
 //웨이브 경로를 랜덤으로?
 //마지막 웨이브는 모든 경로로?
-
+//포탄/자코 클래스 풀링
 
 
 
@@ -71,7 +74,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 33;
+		public const int VERSION = 34;
 
 		public int version;
 		public bool debugMode;
@@ -251,16 +254,16 @@ namespace PlanetTerror
 			tower.stats[1].dismantleGain = 190;
 
 			tower.stats[2].attackRange = 230;
-			tower.stats[2].attackCooldown = 2.5;
-			tower.stats[2].attackDamage = 50;			
+			tower.stats[2].attackCooldown = 2.4;
+			tower.stats[2].attackDamage = 100;
 			tower.stats[2].projSpeed = 240;
 			tower.stats[2].turretRotSpeed = 1000;
 			tower.stats[2].upgCost = 300;
 			tower.stats[2].dismantleGain = 380;
 
 			tower.stats[3].attackRange = 250;
-			tower.stats[3].attackCooldown = 1.2;
-			tower.stats[3].attackDamage = 60;			
+			tower.stats[3].attackCooldown = 1.0;
+			tower.stats[3].attackDamage = 55;
 			tower.stats[3].projSpeed = 350;
 			tower.stats[3].turretRotSpeed = 210;
 			tower.stats[3].upgCost = 1000;
@@ -291,7 +294,7 @@ namespace PlanetTerror
 
 			enemy2.routeTime = 50;
 			enemy2.hitPoint = 200;
-			enemy2.damage = 20;
+			enemy2.damage = 10;
 			enemy2.gold = 0;
 			enemy2.powerUp = 1;
 
@@ -301,7 +304,7 @@ namespace PlanetTerror
 			enemy3.gold = 0;
 			enemy3.powerUp = 2;
 
-			boss.hitPoint = 1500;
+			boss.hitPoint = 2000;
 			boss.damage = 150;
 
 			var w = MakeWave(17);
@@ -331,15 +334,15 @@ namespace PlanetTerror
 
 			w = MakeWave(30);
 			MakeBundle(w, 0.1, "Enemy1", 7, 20, 1.5);
-			MakeBundle(w, 4, "Enemy1", 7, 20, 1);
+			MakeBundle(w, 4, "Enemy2", 7, 20, 1);
 			MakeBundle(w, 4, "Enemy1", 7, 20, 1);
 			MakeBundle(w, 4, "Enemy1", 7, 20, 1);
 
 			w = MakeWave(30);
 			MakeBundle(w, 0.1, "Enemy2", 8, 20, 1.5);
-			MakeBundle(w, 4, "Enemy3", 8, 20, 1);
+			MakeBundle(w, 4, "Enemy3", 8, 10, 1);
 			MakeBundle(w, 4, "Enemy2", 8, 20, 1.5);
-			MakeBundle(w, 4, "Enemy3", 8, 20, 1);
+			MakeBundle(w, 4, "Enemy3", 8, 15, 1);
 
 			w = MakeWave(30);
 			MakeBundle(w, 0.1, "Enemy2", 7, 30, 1.5);
