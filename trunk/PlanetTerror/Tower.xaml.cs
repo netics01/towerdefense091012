@@ -206,8 +206,8 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Upgrade_Button_Click(object sender, RoutedEventArgs e)
 		{
-			if( !Game.UI.SpendGold(Stat.upgCost) ||
-				!Game.UI.IsUpgradable(towerLevel + 1) )
+			if( !Game.UI.IsUpgradable(towerLevel + 1) ||
+				!Game.UI.SpendGold(Stat.upgCost) )
 			{
 				return;
 			}
@@ -216,13 +216,16 @@ namespace PlanetTerror
 
 			effectStories[towerLevel].Stop();
 			towerLevel++;
-			effectStories[towerLevel].Begin();
+			
 			upgEffectStory.Begin();
 			vsm.SetState(MENU_GROUP, MENU_NOMENU_STATE);
 
 			var attachStory = towerLevel == 1 ? upg1AttachtStory : (towerLevel == 2 ? upg2AttachtStory : upg3AttachtStory);
 			attachStory.AutoReverse = false;
 			attachStory.Begin();
+
+			//attachStory 와 같은 값을 건드리는 경우 무엇을 먼저 재생하느냐가 결과에 영향을 미친다. WPF 그지같다.
+			effectStories[towerLevel].Begin();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Menu_Upgrade2_Button_Click(object sender, RoutedEventArgs e)
@@ -434,7 +437,7 @@ namespace PlanetTerror
 					vsm.SetState(NOTYETBUILT_STATE);
 				}
 				break;
-			}			
+			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	골드타임
