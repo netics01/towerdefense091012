@@ -1005,38 +1005,6 @@
 							<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Visible}"/>
 							<DiscreteObjectKeyFrame KeyTime="00:00:03.4000000" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.891"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1.8458709677419356"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1.800741935483871"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:16" Value="0.492"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:58.1000000" Value="0.492"/>
-							<SplineDoubleKeyFrame KeyTime="00:01:00" Value="0.492"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.891"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="1.8450645161290322"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1.7991290322580644"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:16" Value="0.467"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:58.1000000" Value="0.467"/>
-							<SplineDoubleKeyFrame KeyTime="00:01:00" Value="0.467"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:16" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:58.1000000" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:01:00" Value="0"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-0.414"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="-0.40064516129032257"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:02" Value="-0.38729032258064516"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:16" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:00:58.1000000" Value="0"/>
-							<SplineDoubleKeyFrame KeyTime="00:01:00" Value="0"/>
-						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image7" Storyboard.TargetProperty="(UIElement.Opacity)">
 							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
@@ -1078,6 +1046,38 @@
 							<DiscreteObjectKeyFrame KeyTime="00:00:30.7000000" Value="{x:Static Visibility.Collapsed}"/>
 							<DiscreteObjectKeyFrame KeyTime="00:00:31" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="text" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:01" Value="{x:Static Visibility.Visible}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:16" Value="{x:Static Visibility.Visible}"/>
+							<DiscreteObjectKeyFrame KeyTime="00:00:16.7000000" Value="{x:Static Visibility.Collapsed}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:15.9000000" Value="-1184"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.586"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.586"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="-172"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="19.754"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+							<SplineDoubleKeyFrame KeyTime="00:00:01" Value="-248"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="textBlock7" Storyboard.TargetProperty="(UIElement.Opacity)">
+							<SplineDoubleKeyFrame KeyTime="00:00:12" Value="1"/>
+							<SplineDoubleKeyFrame KeyTime="00:00:16" Value="0"/>
+						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="GameStart_Click_State">
@@ -2171,6 +2171,40 @@
 				<TextBlock x:Name="textBlock6" Width="296" Height="121" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" FontSize="96" Foreground="White" TextWrapping="Wrap" FontWeight="Bold" Text="YOU..." Canvas.Left="112"/>
 			</Canvas>
 			<Rectangle x:Name="_0x000000" Fill="Black" Stroke="Black" Width="1024" Height="720"/>
+			<Canvas x:Name="text" Width="312" Height="1056" Canvas.Left="664" Canvas.Top="576" Visibility="Collapsed">
+				<TextBlock x:Name="textBlock7" Width="312" Height="944" FontFamily="/PlanetTerror;Component/Fonts/#아리따B" Foreground="#FF515151" TextWrapping="Wrap" FontSize="11.333" Canvas.Top="32" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</TextBlock.RenderTransform><Span><Run Text="[byuckdal]- "/></Span><Span><Run Text="집중모드님의"/></Span><Span><Run Text=" "/></Span><Span><Run Text="말"/></Span><Span><Run Text=":"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="볼륨을"/></Span><Span><Run Text=" "/></Span><Span><Run Text="높이세요"/></Span><LineBreak/><LineBreak/><Span><Run Text="[byuckdal]- "/></Span><Span><Run Text="집중모드님의"/></Span><Span><Run Text=" "/></Span><Span><Run Text="말"/></Span><Span><Run Text=":"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="헤드폰"/></Span><Span><Run Text=" "/></Span><Span><Run Text="없이"/></Span><Span><Run Text=" 5.1ch"/></Span><Span><Run Text="에서"/></Span><Span><Run Text=" "/></Span><Span><Run Text="플레이"/></Span><Span><Run Text=" "/></Span><Span><Run Text="하는"/></Span><Span><Run Text=" "/></Span><Span><Run Text="분을"/></Span><Span><Run Text=" "/></Span><Span><Run Text="고려해서"/></Span><LineBreak/><LineBreak/><Span><Run Text="[cellintheshell]"/></Span><Span><Run Text="님의"/></Span><Span><Run Text=" "/></Span><Span><Run Text="말"/></Span><Span><Run Text=":"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="없다구요"/></Span><Span><Run Text=".."/></Span><LineBreak/><LineBreak/><Span><Run Text="[byuckdal]- "/></Span><Span><Run Text="집중모드님의"/></Span><Span><Run Text=" "/></Span><Span><Run Text="말"/></Span><Span><Run Text=":"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="우리"/></Span><Span><Run Text=" "/></Span><Span><Run Text="게임은"/></Span><Span><Run Text=" 5.1ch"/></Span><Span><Run Text="을"/></Span><Span><Run Text=" "/></Span><Span><Run Text="지원하지"/></Span><Span><Run Text=" "/></Span><Span><Run Text="않습니다"/></Span><Span><Run Text="."/></Span><LineBreak/><LineBreak/><Span><Run Text="[netics]"/></Span><Span><Run Text="님의말"/></Span><Span><Run Text=":"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="오히려"/></Span><Span><Run Text=" "/></Span><Span><Run Text="반대로"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="이"/></Span><Span><Run Text=" "/></Span><Span><Run Text="게임을"/></Span><Span><Run Text=" "/></Span><Span><Run Text="최고의"/></Span><Span><Run Text=" "/></Span><Span><Run Text="음질로"/></Span><Span><Run Text=" "/></Span><Span><Run Text="즐기고"/></Span><Span><Run Text=" "/></Span><Span><Run Text="싶으시다면"/></Span><Span><Run Text=" 5.1 ch "/></Span><Span><Run Text="과"/></Span><Span><Run Text=" "/></Span><Span><Run Text="광케이블"/></Span><Span><Run Text=" "/></Span><Span><Run Text="연결을"/></Span><Span><Run Text=" "/></Span><Span><Run Text="반드시"/></Span><Span><Run Text=" "/></Span><Span><Run Text="장비하세요"/></Span><LineBreak/><LineBreak/><Span><Run Text="타워"/></Span><Span><Run Text=" "/></Span><Span><Run Text="연구"/></Span><Span><Run Text=" "/></Span><Span><Run Text="한글"/></Span><Span><Run Text=" "/></Span><Span><Run Text="폰트"/></Span><Span><Run Text=" "/></Span><Span><Run Text="못만들겠음"/></Span><Span><Run Text="..."/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="크흑"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="난"/></Span><Span><Run Text=" "/></Span><Span><Run Text="루저"/></Span><LineBreak/><LineBreak/><Span><Run Text="[cellintheshell]"/></Span><Span><Run Text="님의"/></Span><Span><Run Text=" "/></Span><Span><Run Text="말"/></Span><Span><Run Text=":"/></Span><LineBreak/><Span><Run Text=" 180"/></Span><Span><Run Text="초만에"/></Span><Span><Run Text=" "/></Span><Span><Run Text="못만들면"/></Span><LineBreak/><LineBreak/><Span><Run Text="[byuckdal]- "/></Span><Span><Run Text="집중모드님의"/></Span><Span><Run Text=" "/></Span><Span><Run Text="말"/></Span><Span><Run Text=":"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="아"/></Span><Span><Run Text=" "/></Span><Span><Run Text="도트로"/></Span><Span><Run Text=" "/></Span><Span><Run Text="찍음"/></Span><Span><Run Text=" "/></Span><Span><Run Text="되겠구나"/></Span><Span><Run Text=" -_-"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="왜"/></Span><Span><Run Text=" "/></Span><Span><Run Text="그리고"/></Span><Span><Run Text=" "/></Span><Span><Run Text="있었지"/></Span><Span><Run Text=".."/></Span><LineBreak/><LineBreak/><LineBreak/><Span><Run Text="[netics]"/></Span><Span><Run Text="님의말"/></Span><Span><Run Text=":"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="우리"/></Span><Span><Run Text=" "/></Span><Span><Run Text="적"/></Span><Span><Run Text=" "/></Span><Span><Run Text="하나"/></Span><Span><Run Text=" "/></Span><Span><Run Text="더"/></Span><Span><Run Text=" "/></Span><Span><Run Text="만들면"/></Span><Span><Run Text=" "/></Span><Span><Run Text="어때요"/></Span><Span><Run Text="?"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="레이저"/></Span><Span><Run Text=" "/></Span><Span><Run Text="타워가"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="한방에"/></Span><Span><Run Text=" "/></Span><Span><Run Text="박살낼만한"/></Span><Span><Run Text=" "/></Span><Span><Run Text="정도의"/></Span><Span><Run Text=" "/></Span><Span><Run Text="적당한"/></Span><Span><Run Text=" HP "/></Span><Span><Run Text="를"/></Span><Span><Run Text=" "/></Span><Span><Run Text="가진"/></Span><Span><Run Text=" "/></Span><Span><Run Text="애를"/></Span><Span><Run Text=" "/></Span><Span><Run Text="추가해보려고"/></Span><Span><Run Text=" "/></Span><Span><Run Text="한건데"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="어려울거"/></Span><Span><Run Text=" "/></Span><Span><Run Text="같으면"/></Span><Span><Run Text=" "/></Span><Span><Run Text="말고요"/></Span><LineBreak/><LineBreak/><Span><Run Text="[cellintheshell]"/></Span><Span><Run Text="님의"/></Span><Span><Run Text=" "/></Span><Span><Run Text="말"/></Span><Span><Run Text=":"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="추가는"/></Span><Span><Run Text=" "/></Span><Span><Run Text="간단할듯"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="근데"/></Span><Span><Run Text=" "/></Span><Span><Run Text="추가하면"/></Span><Span><Run Text=" "/></Span><Span><Run Text="루트랑"/></Span><Span><Run Text=" "/></Span><Span><Run Text="웨이브"/></Span><Span><Run Text=" "/></Span><Span><Run Text="새로"/></Span><Span><Run Text=" "/></Span><Span><Run Text="짜야잖아요"/></Span><LineBreak/><LineBreak/><Span><Run Text="[netics]"/></Span><Span><Run Text="님의말"/></Span><Span><Run Text=":"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="루트는"/></Span><Span><Run Text=" "/></Span><Span><Run Text="안고쳐도"/></Span><Span><Run Text=" "/></Span><Span><Run Text="되고"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="웨이브에"/></Span><LineBreak/><LineBreak/><Span><Run Text="[byuckdal]- "/></Span><Span><Run Text="집중모드님의"/></Span><Span><Run Text=" "/></Span><Span><Run Text="말"/></Span><Span><Run Text=":"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="타입만"/></Span><Span><Run Text=" "/></Span><Span><Run Text="하나"/></Span><Span><Run Text=" "/></Span><Span><Run Text="추가"/></Span><Span><Run Text=" "/></Span><Span><Run Text="되는"/></Span><Span><Run Text=" "/></Span><Span><Run Text="거니까"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="비용은"/></Span><Span><Run Text=" "/></Span><Span><Run Text="저렴"/></Span><Span><Run Text=" "/></Span><Span><Run Text="할"/></Span><Span><Run Text=" "/></Span><Span><Run Text="듯"/></Span><LineBreak/><LineBreak/><Span><Run Text="[byuckdal]- "/></Span><Span><Run Text="집중모드님의"/></Span><Span><Run Text=" "/></Span><Span><Run Text="말"/></Span><Span><Run Text=":"/></Span><LineBreak/><Span><Run Text="1"/></Span><Span><Run Text="기준으로"/></Span><LineBreak/><Span><Run Text=" 1"/></Span><Span><Run Text="이"/></Span><Span><Run Text=" "/></Span><Span><Run Text="지금"/></Span><Span><Run Text=" "/></Span><Span><Run Text="제일"/></Span><Span><Run Text=" "/></Span><Span><Run Text="약한데"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="이게"/></Span><Span><Run Text=" "/></Span><Span><Run Text="좀"/></Span><Span><Run Text=" "/></Span><Span><Run Text="강해져서"/></Span><Span><Run Text=" "/></Span><Span><Run Text="나와요"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="형이야"/></Span><LineBreak/><LineBreak/><Span><Run Text="[netics]"/></Span><Span><Run Text="님의말"/></Span><Span><Run Text=":"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="폭탄을"/></Span><Span><Run Text=" 2"/></Span><Span><Run Text="개"/></Span><Span><Run Text=" "/></Span><Span><Run Text="달고"/></Span><Span><Run Text=" "/></Span><Span><Run Text="있음"/></Span><Span><Run Text=" -_-;"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="경단처럼"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="머리가"/></Span><Span><Run Text=" "/></Span><Span><Run Text="길어서"/></Span><Span><Run Text=" "/></Span><Span><Run Text="뒤뚱대면"/></Span><Span><Run Text=" "/></Span><Span><Run Text="재미있겠지만"/></Span><Span><Run Text=".... "/></Span><Span><Run Text="힘들테고"/></Span><Span><Run Text="......"/></Span><LineBreak/><LineBreak/><Span><Run Text="[cellintheshell]"/></Span><Span><Run Text="님의"/></Span><Span><Run Text=" "/></Span><Span><Run Text="말"/></Span><Span><Run Text=":"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="버섯"/></Span><Span><Run Text=" "/></Span><Span><Run Text="달고"/></Span><Span><Run Text=" "/></Span><Span><Run Text="나오죠"/></Span><LineBreak/><LineBreak/><LineBreak/><Span><Run Text="[netics]"/></Span><Span><Run Text="님의말"/></Span><Span><Run Text=":"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="이런"/></Span><Span><Run Text=" "/></Span><Span><Run Text="대회"/></Span><Span><Run Text=" "/></Span><Span><Run Text="있으면"/></Span><Span><Run Text=" "/></Span><Span><Run Text="좋을듯"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="프로그램을"/></Span><Span><Run Text=" "/></Span><Span><Run Text="하나"/></Span><Span><Run Text=" "/></Span><Span><Run Text="만들어서"/></Span><Span><Run Text=" "/></Span><Span><Run Text="아티스트들에게"/></Span><Span><Run Text=" "/></Span><Span><Run Text="나누어"/></Span><Span><Run Text=" "/></Span><Span><Run Text="주면"/></Span><LineBreak/><Span><Run Text=" "/></Span><Span><Run Text="아티스트들이"/></Span><Span><Run Text=" "/></Span><Span><Run Text="리소스만"/></Span><Span><Run Text=" "/></Span><Span><Run Text="교체해서"/></Span><Span><Run Text=" "/></Span><Span><Run Text="서로"/></Span><Span><Run Text=" "/></Span><Span><Run Text="다른"/></Span><Span><Run Text=" "/></Span><Span><Run Text="분위기로"/></Span><Span><Run Text=" "/></Span><Span><Run Text="만들기"/></Span><LineBreak/></TextBlock>
+				<Rectangle x:Name="rectangle3" Width="352" Height="432" Canvas.Left="-24" Canvas.Top="-616" RenderTransformOrigin="0.5,0.5">
+					<Rectangle.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform/>
+							<SkewTransform/>
+							<RotateTransform/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Rectangle.RenderTransform>
+					<Rectangle.Fill>
+						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+							<GradientStop Color="Black" Offset="0.852"/>
+							<GradientStop Color="#00000000" Offset="1"/>
+						</LinearGradientBrush>
+					</Rectangle.Fill>
+				</Rectangle>
+				<Rectangle Width="352" Height="104" Canvas.Left="-24" Canvas.Top="88">
+					<Rectangle.Fill>
+						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+							<GradientStop Color="Black" Offset="0.387"/>
+							<GradientStop Color="#00000000"/>
+						</LinearGradientBrush>
+					</Rectangle.Fill>
+				</Rectangle>
+			</Canvas>
 			<Canvas x:Name="p6" Width="448" Height="32" RenderTransformOrigin="0.5,0.5" Canvas.Left="312" Canvas.Top="584" Visibility="Collapsed">
 				<Canvas.RenderTransform>
 					<TransformGroup>
