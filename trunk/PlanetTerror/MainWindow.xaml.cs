@@ -79,6 +79,11 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void MainWindow_KeyDown(object sender, KeyEventArgs e)
 		{
+			if( e.Key == Key.F12 )
+			{
+				ToggleFullscreen();
+			}
+
 			if( !Game.Setting.debugMode ) { return; }
 			if( e.Key == Key.F8 )
 			{
@@ -112,10 +117,6 @@ namespace PlanetTerror
 			if( e.Key == Key.F7 )
 			{
 				Game.World.CreateEnemy<Boss1>(null);
-			}
-			if( e.Key == Key.F12 )
-			{
-				ToggleFullscreen();
 			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
