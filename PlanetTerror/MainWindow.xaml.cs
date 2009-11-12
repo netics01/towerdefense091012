@@ -62,7 +62,7 @@ namespace PlanetTerror
 			if( !Debugger.IsAttached )
 			{
 				Application.Current.DispatcherUnhandledException += new System.Windows.Threading.DispatcherUnhandledExceptionEventHandler(Application_DispatcherUnhandledException);
-			}			
+			}
 
 			Game.SoundMgr = new SoundMgr();
 			pump.Begin();

@@ -33,8 +33,10 @@ using PlanetTerror.Util;
 
 
 //세팅파일 연결
-//연사속도
 //Y 축 정렬
+//보스 공격시 데미지 타임 조절
+//보스등장시에도 경고가 나옴. 보스경고는 안나오고
+
 
 
 //엔딩 연결
@@ -57,6 +59,8 @@ namespace PlanetTerror
 	//	Enum
 	enum ELayer
 	{
+		EnemyMin = -1000,
+		EnemyMax = 0,
 		Tower = 10,
 		TowerMax = 100,
 		SelectedTower = TowerMax,

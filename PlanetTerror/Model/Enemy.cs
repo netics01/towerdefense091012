@@ -170,6 +170,7 @@ namespace PlanetTerror
 			path.GetPointAtFractionLength(routeTime, out pos, out tangent);
 			Pos = pos;
 			this.SetCenter(pos);
+			this.SetZIndex((int)pos.Y + (int)ELayer.EnemyMin);
 		}
 	}
 }
