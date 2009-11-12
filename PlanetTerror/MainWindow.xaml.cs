@@ -139,6 +139,11 @@ namespace PlanetTerror
 			{
 				cutscene.RunGameOver();
 			}
+			if( Game.Generator.State == WaveGenerator.EState.WaveOver &&
+				Game.World.NoEnemy )
+			{
+				cutscene.RunEnding();
+			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		void Application_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
