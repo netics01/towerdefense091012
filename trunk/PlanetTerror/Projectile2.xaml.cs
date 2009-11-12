@@ -19,7 +19,7 @@ namespace PlanetTerror
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//	Projectile2
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public partial class Projectile2 : Projectile
+	public partial class Projectile2 : InstantProjectile
 	{
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -39,9 +39,13 @@ namespace PlanetTerror
 		//	공용
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	초기화
-		public override void Initialize(Enemy target, Point pos, double angle)
+		public override void Initialize(Enemy target, Point pos, double angle, bool bBegin)
 		{
-			Initialize(target, pos, angle, LayoutRoot, Resources);
+			Initialize(target, pos, angle, bBegin, LayoutRoot);
 		}
+// 		public override void Initialize(Enemy target, Point pos, double angle)
+// 		{
+// 			Initialize(target, pos, angle, LayoutRoot, Resources);
+// 		}
 	}
 }

@@ -201,7 +201,7 @@ namespace PlanetTerror
 		public void DisplayIncome(double leftTime, int gold)
 		{
 			gold_NextTime_Text.Text = string.Format("{0:F1}", leftTime);
-			gold_Next_Text.Text = (gold >= 0 ? "+" : "-") + gold.ToString();
+			gold_Next_Text.Text = (gold >= 0) ? "+" + gold.ToString() : gold.ToString();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	타워가 지어졌다.
