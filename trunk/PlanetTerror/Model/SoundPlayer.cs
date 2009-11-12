@@ -49,7 +49,8 @@ namespace PlanetTerror
 		{
 			musicPlayer = new MediaPlayer();
 			musicPlayer.MediaEnded += new EventHandler(musicPlayer_MediaEnded);
-			engine = new ISoundEngine(SoundOutputDriver.AutoDetect, SoundEngineOptionFlag.PrintDebugInfoIntoDebugger);
+			//engine = new ISoundEngine(SoundOutputDriver.AutoDetect, SoundEngineOptionFlag.DefaultOptions | SoundEngineOptionFlag.PrintDebugInfoIntoDebugger);
+			engine = new ISoundEngine(SoundOutputDriver.AutoDetect);
 		}
 
 		//===============================================================================================================================================
@@ -67,6 +68,8 @@ namespace PlanetTerror
 			sound.Volume = (float)volume;
 			return true;
 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	스트리밍으로 재생
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void Play(string soundPath) { Play(soundPath, 1); }
 		//-----------------------------------------------------------------------------------------------------------------------------------------------

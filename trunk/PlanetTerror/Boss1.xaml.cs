@@ -64,6 +64,7 @@ namespace PlanetTerror
 			vsm = new VSM(this, LayoutRoot);
 			vsm.SetDefaultGroup("Boss_StateGroup");
 			vsm.SetState("Boss_Move_State");
+			Game.SoundMgr.Play("Sound/Boss_Move.mp3");
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	업데이트
@@ -85,10 +86,12 @@ namespace PlanetTerror
 					if( HitPoint < 0 )
 					{
 						vsm.SetState("Boss_Ending_State");
+						Game.SoundMgr.Play("Sound/Boss_ending.mp3");
 					}
 					else
 					{
 						vsm.SetState("Boss_GameOver_State");
+						Game.SoundMgr.Play("Sound/Boss_GameOver.wav");
 					}
 				}
 				break;
