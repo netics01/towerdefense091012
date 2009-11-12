@@ -1181,11 +1181,11 @@
 			</DoubleAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image9">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1200000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image9" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:00.1200000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="GoldT_MouseOver_Storyboard">
@@ -2251,33 +2251,6 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:03.8460000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="baloon2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-				<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:00" Value="-75.667"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1540000" Value="333"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.2310000" Value="320"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.6920000" Value="320"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.8460000" Value="336"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="26"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="baloon2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1540000" Value="-4" KeySpline="0,1,1,1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.6920000" Value="-4"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.8460000" Value="-5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="-1"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="baloon2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
-				<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:00" Value="1.442"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1540000" Value="1.047"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="baloon2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1540000" Value="0.897" KeySpline="0,1,1,1"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="baloon2" Storyboard.TargetProperty="(UIElement.Opacity)">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1540000" Value="1" KeySpline="0,1,1,1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03.8460000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_MoneyTower" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-205"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.1540000" Value="0"/>
@@ -2294,6 +2267,36 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:03.8460000" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
 			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="baloon2_Copy3">
+				<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:00" Value="-75.667"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1540000" Value="333"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2310000" Value="320"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.6920000" Value="320"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.8460000" Value="336"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="26"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="baloon2_Copy3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1540000" Value="-4" KeySpline="0,1,1,1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.6920000" Value="-4"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.8460000" Value="-5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="-1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="baloon2_Copy3">
+				<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:00" Value="1.442"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1540000" Value="1.047"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="baloon2_Copy3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1540000" Value="0.897" KeySpline="0,1,1,1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="baloon2_Copy3">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1540000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03.8460000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Visibility)" Duration="00:00:00.0010000" Storyboard.TargetName="baloon2_Copy3">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="FirstLab_Storyboard">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_Lab" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -2323,33 +2326,33 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:06" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="baloon2">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="baloon2_Copy2">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="baloon2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="baloon2_Copy2">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.095"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.0490000" Value="1.043"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.1230000" Value="0.94"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:05.9140000" Value="0.94"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="baloon2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="baloon2_Copy2">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="52.5"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.0490000" Value="-2.5"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.1230000" Value="-4.5"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:05.9140000" Value="-4.5"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="baloon2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="baloon2_Copy2">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.0490000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:05.9140000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:06" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="baloon2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="baloon2_Copy2">
 				<SplineDoubleKeyFrame KeyTime="00:00:00.0490000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.1230000" Value="0.991"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:05.9140000" Value="0.991"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="baloon2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="baloon2_Copy2">
 				<SplineDoubleKeyFrame KeyTime="00:00:00.0490000" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.1230000" Value="1.5"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:05.9140000" Value="1.5"/>
@@ -2371,33 +2374,33 @@
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="talk_Text6" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="baloon2">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="baloon2_Copy1">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="baloon2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="baloon2_Copy1">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.095"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.0570000" Value="1.043"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.1430000" Value="0.94"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0.94"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="baloon2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="baloon2_Copy1">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="52.5"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.0570000" Value="-2.5"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.1430000" Value="-4.5"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="-4.5"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="baloon2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="baloon2_Copy1">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.0570000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="baloon2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="baloon2_Copy1">
 				<SplineDoubleKeyFrame KeyTime="00:00:00.0570000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.1430000" Value="0.991"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0.991"/>
 			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="baloon2">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="baloon2_Copy1">
 				<SplineDoubleKeyFrame KeyTime="00:00:00.0570000" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.1430000" Value="1.5"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="1.5"/>
@@ -2408,42 +2411,42 @@
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Collapsed}"/>
 			</ObjectAnimationUsingKeyFrames>
-			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="baloon2">
-				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-			</ObjectAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="baloon2">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.095"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0570000" Value="1.043"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1430000" Value="0.94"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0.94"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="baloon2">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="52.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0570000" Value="-2.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1430000" Value="-4.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="-4.5"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="baloon2">
-				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0570000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="0"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="baloon2">
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0570000" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1430000" Value="0.991"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0.991"/>
-			</DoubleAnimationUsingKeyFrames>
-			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="baloon2">
-				<SplineDoubleKeyFrame KeyTime="00:00:00.0570000" Value="0"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1430000" Value="1.5"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="1.5"/>
-			</DoubleAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Talk_LabInactive" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:00.0770000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="baloon2_Copy">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="baloon2_Copy">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.095"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.0570000" Value="1.043"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1430000" Value="0.94"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0.94"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="baloon2_Copy">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="52.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.0570000" Value="-2.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1430000" Value="-4.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="-4.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="baloon2_Copy">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.0570000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="baloon2_Copy">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.0570000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1430000" Value="0.991"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0.991"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="baloon2_Copy">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.0570000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1430000" Value="1.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02.9000000" Value="1.5"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 	</UserControl.Resources>
@@ -2471,41 +2474,11 @@
 	<Canvas x:Name="LayoutRoot" Height="30" Width="1024" Margin="0,28,0,2">
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="Tower_Research_StateGroup">
-				<VisualState x:Name="Research0_State">
-					<Storyboard>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image11" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image13" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image15" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image14" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image12" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image10" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image14" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.667"/>
-						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image15" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-							<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.667"/>
-						</DoubleAnimationUsingKeyFrames>
-					</Storyboard>
-				</VisualState>
+				<VisualState x:Name="Research0_State"/>
 				<VisualState x:Name="Research1_State">
 					<Storyboard>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image11" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image13" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image15" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
 						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image14" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
@@ -2514,46 +2487,67 @@
 				</VisualState>
 				<VisualState x:Name="Research2_State">
 					<Storyboard>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image11" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image14" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image15" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image12" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image13" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
 						</ObjectAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Research3_State">
 					<Storyboard>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image16" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image15" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image14" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image13" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
 						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image12" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image11" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image10" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image16" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
 						</ObjectAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="Research4_State">
 					<Storyboard>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image14" Storyboard.TargetProperty="(UIElement.Visibility)">
-							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image12" Storyboard.TargetProperty="(UIElement.Visibility)">
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image16" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image10" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
 						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image16" Storyboard.TargetProperty="(UIElement.Visibility)">
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image11" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image12" Storyboard.TargetProperty="(UIElement.Visibility)">
 							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image13" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image14" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image15" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
 						</ObjectAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
@@ -2706,7 +2700,7 @@
 			<Path x:Name="route8_Path_Copy" Stretch="Fill" Stroke="#FF5300FF" Width="953.5" Height="661.667" Data="M1040,72 L911.5,23.5 712.16667,2.8333333 643.5,62.833636 791.5,111.5 879.5,119.5 991.5,143.5 1036.8333,185.50024 976.16667,254.83354 911.5,223.5 799.5,183.5 674.83333,168.16692 511.5,135.50027 391.5,151.50026 391.5,199.50023 335.5,223.50022 207.5,247.50021 143.5,287.50019 239.5,431.50011 159.5,479.50009 103.5,543.50006 87.5,591.50004 223.5,615.50002 287.5,647.50001&#xa;471.5,663.5" Canvas.Left="87.5" Canvas.Top="2.833" Visibility="Collapsed"/>
 		</Canvas>
 		<Canvas x:Name="Icon_UPG" Width="128" Height="40" Canvas.Left="160" Canvas.Top="-8" IsEnabled="False" IsHitTestVisible="False">
-			<Image x:Name="image17" Width="80" Height="20" RenderTransformOrigin="0.5,0.5" Canvas.Left="-55.334" Canvas.Top="6.083" Source="Resources/UI/t_TowerResearch.png" Stretch="Fill">
+			<Image x:Name="image17" Width="80" Height="20" RenderTransformOrigin="0.5,0.5" Canvas.Left="-52.834" Canvas.Top="18.333" Source="Resources/UI/t_TowerResearch.png" Stretch="Fill">
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -2716,15 +2710,15 @@
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
-			<Canvas x:Name="Lv3" Width="40" Height="40" Canvas.Left="96" Canvas.Top="-4">
+			<Canvas x:Name="Lv3" Width="40" Height="40" Canvas.Left="96" Canvas.Top="-0.25">
 				<Image x:Name="image10" Width="40" Height="40" Source="Resources/UI/Icon_UPGResearch03_Pass.png" Stretch="Fill" Visibility="Collapsed"/>
 				<Image x:Name="image11" Width="40" Height="40" Canvas.Left="0" Canvas.Top="0" Source="Resources/UI/Icon_UPGResearch03_NotYet.png" Stretch="Fill"/>
 			</Canvas>
-			<Canvas x:Name="Lv2" Width="40" Height="40" Canvas.Left="58.999" Canvas.Top="-6.583">
+			<Canvas x:Name="Lv2" Width="40" Height="40" Canvas.Left="61.249" Canvas.Top="-0.583">
 				<Image x:Name="image12" Width="40" Height="40" Source="Resources/UI/Icon_UPGResearch02_Pass.png" Stretch="Fill" Visibility="Collapsed"/>
 				<Image x:Name="image13" Width="40" Height="40" Canvas.Left="0" Canvas.Top="0" Source="Resources/UI/Icon_UPGResearch02_NotYet.png" Stretch="Fill"/>
 			</Canvas>
-			<Canvas x:Name="Lv1" Width="32" Height="32" Canvas.Left="27.75">
+			<Canvas x:Name="Lv1" Width="32" Height="32" Canvas.Left="32.5" Canvas.Top="7.5">
 				<Image x:Name="image14" Width="32" Height="32" Source="Resources/UI/Icon_UPGResearch01_Pass.png" Stretch="Fill" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
 					<Image.RenderTransform>
 						<TransformGroup>
@@ -3179,6 +3173,16 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
+			<Rectangle x:Name="baloon2_Copy3" Fill="White" Stroke="Black" StrokeThickness="2" RadiusX="19" RadiusY="19" Width="342.5" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" HorizontalAlignment="Left" Margin="-460,8.5,0,-68.5">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
+			</Rectangle>
 			<TextBlock x:Name="talk_Text4" Margin="-60.503,0,-28.823,-41.334" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontWeight="Bold" VerticalAlignment="Bottom" Height="63.333" FontSize="16"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -3198,6 +3202,16 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
+			<Rectangle x:Name="baloon2_Copy2" Fill="White" Stroke="Black" StrokeThickness="2" RadiusX="19" RadiusY="19" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" Margin="-30,-9,-128.5,-51">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
+			</Rectangle>
 			<TextBlock x:Name="talk_Text5" Margin="66.657,12.992,-123.362,-20.325" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontWeight="Bold" Visibility="Collapsed" FontSize="16"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -3225,6 +3239,16 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
+			<Rectangle x:Name="baloon2_Copy1" Fill="White" Stroke="Black" StrokeThickness="2" RadiusX="19" RadiusY="19" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" Margin="-52.5,-10.5,-50,-9.5">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
+			</Rectangle>
 			<TextBlock x:Name="talk_Text6" Margin="77.988,4.002,-30.666,9.665" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontWeight="Bold" Visibility="Collapsed" FontSize="16"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
@@ -3366,6 +3390,16 @@
 					<TranslateTransform/>
 				</TransformGroup>
 			</Grid.RenderTransform>
+			<Rectangle x:Name="baloon2_Copy" Fill="White" Stroke="Black" StrokeThickness="2" RadiusX="19" RadiusY="19" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" Margin="-24,-18,-134.5,-42">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
+			</Rectangle>
 			<TextBlock x:Name="talk_Text11" Margin="79.362,4.325,-133.362,-28" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontWeight="Bold" FontSize="16"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
