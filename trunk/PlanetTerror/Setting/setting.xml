@@ -68,7 +68,7 @@
   </lab>
   <core>
     <hitPoint>100</hitPoint>
-    <warningBefore>7</warningBefore>
+    <warningBefore>8</warningBefore>
     <attackDamage>700</attackDamage>
     <boomTime>2</boomTime>
     <boomDistance>130</boomDistance>
@@ -93,7 +93,7 @@
     <powerUp>1</powerUp>
   </enemy2>
   <enemy3>
-    <routeTime>22</routeTime>
+    <routeTime>18</routeTime>
     <hitPoint>80</hitPoint>
     <damage>10</damage>
     <gold>0</gold>
@@ -141,7 +141,7 @@
       </bundles>
     </Wave>
     <Wave>
-      <waitTime>35</waitTime>
+      <waitTime>30</waitTime>
       <bundles>
         <Bundle>
           <waitTime>0.1</waitTime>
@@ -160,7 +160,7 @@
       </bundles>
     </Wave>
     <Wave>
-      <waitTime>35</waitTime>
+      <waitTime>30</waitTime>
       <bundles>
         <Bundle>
           <waitTime>0.1</waitTime>
@@ -179,7 +179,7 @@
       </bundles>
     </Wave>
     <Wave>
-      <waitTime>35</waitTime>
+      <waitTime>30</waitTime>
       <bundles>
         <Bundle>
           <waitTime>0.1</waitTime>
@@ -217,7 +217,7 @@
       </bundles>
     </Wave>
     <Wave>
-      <waitTime>35</waitTime>
+      <waitTime>30</waitTime>
       <bundles>
         <Bundle>
           <waitTime>0.1</waitTime>
@@ -250,7 +250,7 @@
       </bundles>
     </Wave>
     <Wave>
-      <waitTime>35</waitTime>
+      <waitTime>30</waitTime>
       <bundles>
         <Bundle>
           <waitTime>0.1</waitTime>
@@ -360,12 +360,12 @@
           <waitTime>2</waitTime>
           <typeName>Enemy3</typeName>
           <pathIndex>4</pathIndex>
-          <count>40</count>
+          <count>30</count>
           <interval>1</interval>
         </Bundle>
         <Bundle>
           <waitTime>2</waitTime>
-          <typeName>Enemy1</typeName>
+          <typeName>Enemy3</typeName>
           <pathIndex>4</pathIndex>
           <count>20</count>
           <interval>1</interval>
@@ -373,7 +373,7 @@
       </bundles>
     </Wave>
     <Wave>
-      <waitTime>30</waitTime>
+      <waitTime>20</waitTime>
       <bundles>
         <Bundle>
           <waitTime>0.1</waitTime>
