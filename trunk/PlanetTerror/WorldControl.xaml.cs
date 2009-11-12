@@ -151,20 +151,28 @@ namespace PlanetTerror
 			switch( towerLevel )
 			{
 			case 0:
-				beginProj = proj0Pool.Allocate();
-				endProj = proj0Pool.Allocate();
+// 				beginProj = proj0Pool.Allocate();
+// 				endProj = proj0Pool.Allocate();
+				beginProj = new Projectile0();
+				endProj = new Projectile0();
 				break;
 			case 1:
-				beginProj = proj1Pool.Allocate();
-				endProj = proj1Pool.Allocate();
+// 				beginProj = proj1Pool.Allocate();
+// 				endProj = proj1Pool.Allocate();
+				beginProj = new Projectile1();
+				endProj = new Projectile1();
 				break;
 			case 2:
-				beginProj = proj2Pool.Allocate();
-				endProj = proj2Pool.Allocate();
+// 				beginProj = proj2Pool.Allocate();
+// 				endProj = proj2Pool.Allocate();
+				beginProj = new Projectile2();
+				endProj = new Projectile2();
 				break;
 			default:
-				beginProj = proj3Pool.Allocate();
-				endProj = proj3Pool.Allocate();
+// 				beginProj = proj3Pool.Allocate();
+// 				endProj = proj3Pool.Allocate();
+				beginProj = new Projectile3();
+				endProj = new Projectile3();
 				break;
 			}
 			beginProj.Initialize(target, firePos, angle, true);
@@ -281,14 +289,14 @@ namespace PlanetTerror
 				LayoutRoot.Children.Remove(proj);
 				instantProjectiles.RemoveAt(i);
 
-				var proj0 = proj as Projectile0;
-				if( proj0 != null ) { proj0Pool.Deallocate(proj0); }
-				var proj1 = proj as Projectile1;
-				if( proj1 != null ) { proj1Pool.Deallocate(proj1); }
-				var proj2 = proj as Projectile2;
-				if( proj2 != null ) { proj2Pool.Deallocate(proj2); }
-				var proj3 = proj as Projectile3;
-				if( proj3 != null ) { proj3Pool.Deallocate(proj3); }
+// 				var proj0 = proj as Projectile0;
+// 				if( proj0 != null ) { proj0Pool.Deallocate(proj0); }
+// 				var proj1 = proj as Projectile1;
+// 				if( proj1 != null ) { proj1Pool.Deallocate(proj1); }
+// 				var proj2 = proj as Projectile2;
+// 				if( proj2 != null ) { proj2Pool.Deallocate(proj2); }
+// 				var proj3 = proj as Projectile3;
+// 				if( proj3 != null ) { proj3Pool.Deallocate(proj3); }
 			}
 			for( int i = 0; i < enemies.Count; ++i )
 			{
