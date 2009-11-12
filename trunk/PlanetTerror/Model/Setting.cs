@@ -220,16 +220,16 @@ namespace PlanetTerror
 		{
 			version = VERSION;
 			debugMode = true;
-			title = false;
+			title = true;
 			startGold = 500;
 
 			gold.interval = 5;
-			gold.mineGold = 2;
-			gold.towerGold = -2;
+			gold.mineGold = 1;
+			gold.towerGold = -3;
 			gold.labGold = -5;
 
 			tower.buildCost = 50;
-			tower.dismantleGain = -30;
+			tower.dismantleGain = 190;
 			tower.centerX = 38;
 			tower.centerY = 8;
 			tower.barrelLength = 26;
@@ -246,7 +246,7 @@ namespace PlanetTerror
 			tower.stats[0].projSpeed = 200;
 			tower.stats[0].turretRotSpeed = 250;
 			tower.stats[0].upgCost = 150;
-			tower.stats[0].dismantleGain = 40;
+			tower.stats[0].dismantleGain = 45;
 
 			tower.stats[1].attackRange = 150;
 			tower.stats[1].attackCooldown = 0.5;
@@ -254,23 +254,23 @@ namespace PlanetTerror
 			tower.stats[1].projSpeed = 200;
 			tower.stats[1].turretRotSpeed = 1000;
 			tower.stats[1].upgCost = 200;
-			tower.stats[1].dismantleGain = 170;
+			tower.stats[1].dismantleGain = 190;
 
 			tower.stats[2].attackRange = 230;
-			tower.stats[2].attackCooldown = 2.2;
-			tower.stats[2].attackDamage = 40;			
+			tower.stats[2].attackCooldown = 2.5;
+			tower.stats[2].attackDamage = 50;			
 			tower.stats[2].projSpeed = 240;
 			tower.stats[2].turretRotSpeed = 1000;
 			tower.stats[2].upgCost = 300;
-			tower.stats[2].dismantleGain = 300;
+			tower.stats[2].dismantleGain = 380;
 
 			tower.stats[3].attackRange = 250;
-			tower.stats[3].attackCooldown = 2.5;
-			tower.stats[3].attackDamage = 100;			
+			tower.stats[3].attackCooldown = 1.2;
+			tower.stats[3].attackDamage = 60;			
 			tower.stats[3].projSpeed = 350;
 			tower.stats[3].turretRotSpeed = 210;
 			tower.stats[3].upgCost = 1000;
-			tower.stats[3].dismantleGain = 400;
+			tower.stats[3].dismantleGain = 640;
 
 			lab.buildCost = 200;
 			lab.powerGain = 1;
@@ -279,7 +279,7 @@ namespace PlanetTerror
 			lab.inactiveTime = 5;
 
 			core.hitPoint = 100;
-			core.warningBefore = 5;
+			core.warningBefore = 8;
 			core.attackDamage = 700;
 			core.boomTime = 2;
 			core.boomDistance = 130;
@@ -295,15 +295,15 @@ namespace PlanetTerror
 			enemy1.gold = 0;
 			enemy1.powerUp = 0.5;
 
-			enemy2.routeTime = 60;
+			enemy2.routeTime = 50;
 			enemy2.hitPoint = 200;
-			enemy2.damage = 15;
+			enemy2.damage = 20;
 			enemy2.gold = 0;
 			enemy2.powerUp = 1;
 
-			enemy3.routeTime = 15;
+			enemy3.routeTime = 18;
 			enemy3.hitPoint = 80;
-			enemy2.damage = 20;
+			enemy2.damage = 10;
 			enemy3.gold = 0;
 			enemy3.powerUp = 2;
 
@@ -311,56 +311,70 @@ namespace PlanetTerror
 			boss.damage = 150;
 
 			var w = MakeWave(17);
-			MakeBundle(w, 0.1, "Enemy1", 1, 5, 0.5);
+			MakeBundle(w, 0.1, "Enemy1", 1, 5, 1);
 
-			w = MakeWave(17);
-			MakeBundle(w, 0.1, "Enemy1", 1, 10, 0.5);
+			w = MakeWave(30);
+			MakeBundle(w, 0.1, "Enemy1", 1, 10, 1);
 
-			w = MakeWave(25);
-			MakeBundle(w, 0.1, "Enemy1", 2, 10, 0.5);
-			MakeBundle(w, 5, "Enemy2", 2, 5, 1.5);
+			w = MakeWave(30);
+			MakeBundle(w, 0.1, "Enemy2", 2, 5, 1.5);
 
-			w = MakeWave(25);
-			MakeBundle(w, 0.1, "Enemy1", 1, 5, 0.5);
-			MakeBundle(w, 5, "Enemy2", 1, 10, 1.5);
+			w = MakeWave(30);
+			MakeBundle(w, 0.1, "Enemy2", 3, 5, 1.5);
+			MakeBundle(w, 5, "Enemy1", 3, 5, 1);
 
-			w = MakeWave(25);
-			MakeBundle(w, 0.1, "Enemy3", 3, 5, 0.5);
-
-			w = MakeWave(25);
-			MakeBundle(w, 0.1, "Enemy1", 4, 5, 1);
-			MakeBundle(w, 5, "Enemy2", 4, 10, 1.5);
+			w = MakeWave(30);
+			MakeBundle(w, 0.1, "Enemy2", 4, 10, 1.5);
 			MakeBundle(w, 5, "Enemy1", 4, 10, 1);
 
-			w = MakeWave(25);
-			MakeBundle(w, 0.1, "Enemy1", 3, 10, 1);
-			MakeBundle(w, 5, "Enemy2", 3, 7, 1.5);
-			MakeBundle(w, 5, "Enemy1", 3, 10, 1);
-			MakeBundle(w, 5, "Enemy2", 3, 7, 1.5);
-			MakeBundle(w, 5, "Enemy1", 3, 10, 1);
+			w = MakeWave(30);
+			MakeBundle(w, 0.1, "Enemy3", 5, 5, 1);
 
 			w = MakeWave(25);
-			MakeBundle(w, 0.1, "Enemy3", 1, 7, 0.5);
+			MakeBundle(w, 0.1, "Enemy2", 6, 15, 1.5);
+			MakeBundle(w, 5, "Enemy1", 6, 15, 1);
+			MakeBundle(w, 5, "Enemy1", 6, 15, 1);
+
+			w = MakeWave(30);
+			MakeBundle(w, 0.1, "Enemy1", 7, 20, 1.5);
+			MakeBundle(w, 4, "Enemy1", 7, 20, 1);
+			MakeBundle(w, 4, "Enemy1", 7, 20, 1);
+			MakeBundle(w, 4, "Enemy1", 7, 20, 1);
+
+			w = MakeWave(30);
+			MakeBundle(w, 0.1, "Enemy2", 8, 20, 1.5);
+			MakeBundle(w, 4, "Enemy3", 8, 20, 1);
+			MakeBundle(w, 4, "Enemy2", 8, 20, 1.5);
+			MakeBundle(w, 4, "Enemy3", 8, 20, 1);
+
+			w = MakeWave(30);
+			MakeBundle(w, 0.1, "Enemy2", 7, 30, 1.5);
+			MakeBundle(w, 3, "Enemy3", 7, 30, 1);
+			MakeBundle(w, 3, "Enemy2", 7, 5, 1);
+
+			w = MakeWave(30);
+			MakeBundle(w, 0.1, "Enemy2", 6, 30, 1.5);
+			MakeBundle(w, 3, "Enemy2", 6, 35, 1);
+			MakeBundle(w, 3, "Enemy3", 6, 10, 1);
 
 			w = MakeWave(25);
-			MakeBundle(w, 0.1, "Enemy1", 1, 15, 1.5);
-			MakeBundle(w, 5, "Enemy2", 1, 15, 2);
+			MakeBundle(w, 3, "Enemy3", 5, 30, 1);
 
-			w = MakeWave(25);
-			MakeBundle(w, 0.1, "Enemy1", 2, 15, 1.5);
-			MakeBundle(w, 5, "Enemy2", 2, 15, 2);
-			MakeBundle(w, 5, "Enemy1", 2, 15, 0.5);
-			MakeBundle(w, 5, "Enemy2", 2, 15, 1.5);
-			MakeBundle(w, 5, "Enemy3", 2, 10, 0.5);
+			w = MakeWave(20);
+			MakeBundle(w, 0.1, "Enemy2", 4, 40, 1.5);
+			MakeBundle(w, 2, "Enemy3", 4, 30, 1);
+			MakeBundle(w, 2, "Enemy3", 4, 20, 1);
 
-			w = MakeWave(25);
-			MakeBundle(w, 0.1, "Enemy1", 3, 15, 1.5);
-			MakeBundle(w, 5, "Enemy2", 3, 15, 2);
-			MakeBundle(w, 5, "Enemy1", 3, 20, 0.5);
-			MakeBundle(w, 5, "Enemy2", 3, 20, 1.5);
-			MakeBundle(w, 4, "Enemy3", 3, 10, 0.5);
-			MakeBundle(w, 3, "Enemy2", 3, 15, 0.5);
-			MakeBundle(w, 5, "Enemy3", 3, 10, 0.5);
+			w = MakeWave(20);
+			MakeBundle(w, 0.1, "Enemy2", 3, 40, 1);
+			MakeBundle(w, 1, "Enemy3", 3, 30, 0.5);
+			MakeBundle(w, 1, "Enemy1", 3, 20, 1);
+			MakeBundle(w, 1, "Enemy2", 3, 40, 1);
+			MakeBundle(w, 1, "Enemy3", 3, 40, 0.6);
+			MakeBundle(w, 1, "Enemy1", 3, 20, 1);
+
+			w = MakeWave(40);
+			MakeBundle(w, 3, "Boss1", 1, 1, 0.5);
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	웨이브 생성
