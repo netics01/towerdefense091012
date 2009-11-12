@@ -1332,100 +1332,90 @@
 									<Canvas Margin="0">
 										<VisualStateManager.VisualStateGroups>
 											<VisualStateGroup x:Name="CommonStates">
-												<VisualState x:Name="Normal">
-													<Storyboard>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-															<SplineDoubleKeyFrame KeyTime="00:01:01" Value="720"/>
-														</DoubleAnimationUsingKeyFrames>
-													</Storyboard>
-												</VisualState>
+												<VisualState x:Name="Normal"/>
 												<VisualState x:Name="MouseOver">
 													<Storyboard>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Opacity)">
-															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-														</DoubleAnimationUsingKeyFrames>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.Opacity)">
-															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-														</DoubleAnimationUsingKeyFrames>
 														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.Opacity)">
-															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.5"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.5"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:00.1500000" Value="1"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0.5" KeySpline="1,0,1,1"/>
 														</DoubleAnimationUsingKeyFrames>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image3" Storyboard.TargetProperty="(UIElement.Opacity)">
-															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.Opacity)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.7"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:01.5000000" Value="0.8"/>
 														</DoubleAnimationUsingKeyFrames>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-3"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="2"/>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-2.25"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:00.1200000" Value="-0.75"/>
+															<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:00.2400000" Value="-11.451"/>
 														</DoubleAnimationUsingKeyFrames>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-3"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="2"/>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-4.5"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:00.1200000" Value="-3.5"/>
+															<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:00.2400000" Value="70.86"/>
 														</DoubleAnimationUsingKeyFrames>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
-															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-3"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="2"/>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.849"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:00.1200000" Value="0.904"/>
+															<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:00.2400000" Value="0.904"/>
 														</DoubleAnimationUsingKeyFrames>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image3" Storyboard.TargetProperty="(FrameworkElement.Width)">
-															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="140"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="120"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="140"/>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00.1200000" Value="1"/>
+															<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:00.2400000" Value="-0.724"/>
 														</DoubleAnimationUsingKeyFrames>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image3" Storyboard.TargetProperty="(FrameworkElement.Height)">
-															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="34"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="28"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="34"/>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00.1200000" Value="0"/>
+															<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:00.2400000" Value="-18.156"/>
 														</DoubleAnimationUsingKeyFrames>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
-															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="12"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path1" Storyboard.TargetProperty="(UIElement.Opacity)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00.1200000" Value="1"/>
+															<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:00.2400000" Value="0.5"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
 														</DoubleAnimationUsingKeyFrames>
 													</Storyboard>
 												</VisualState>
 												<VisualState x:Name="Pressed">
 													<Storyboard>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.Opacity)">
-															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-														</DoubleAnimationUsingKeyFrames>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.Opacity)">
-															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-														</DoubleAnimationUsingKeyFrames>
 														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.Opacity)">
 															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.6"/>
-														</DoubleAnimationUsingKeyFrames>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image3" Storyboard.TargetProperty="(UIElement.Opacity)">
-															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0.6"/>
 														</DoubleAnimationUsingKeyFrames>
 														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image2" Storyboard.TargetProperty="(FrameworkElement.Width)">
 															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="152"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="200"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:02" Value="200"/>
 														</DoubleAnimationUsingKeyFrames>
 														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image2" Storyboard.TargetProperty="(FrameworkElement.Height)">
 															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="152"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="200"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:02" Value="200"/>
 														</DoubleAnimationUsingKeyFrames>
 														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
 															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-24"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:02" Value="-24"/>
 														</DoubleAnimationUsingKeyFrames>
 														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-25"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:02" Value="-25"/>
 														</DoubleAnimationUsingKeyFrames>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image4">
 															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="3"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:02" Value="360" KeySpline="0,1,1,1"/>
 														</DoubleAnimationUsingKeyFrames>
-														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1.298"/>
+														</DoubleAnimationUsingKeyFrames>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1.298"/>
+														</DoubleAnimationUsingKeyFrames>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
 															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-															<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="3"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:02" Value="-1.5"/>
+														</DoubleAnimationUsingKeyFrames>
+														<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+															<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+															<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
 														</DoubleAnimationUsingKeyFrames>
 													</Storyboard>
 												</VisualState>
@@ -1436,8 +1426,8 @@
 												<VisualState x:Name="Focused"/>
 											</VisualStateGroup>
 										</VisualStateManager.VisualStateGroups>
-										<Image Width="171.5" Height="171.5" Canvas.Left="-9" Canvas.Top="-10.5" Source="/PlanetTerror;Component/Resources/Tower/TowerA0_parts2.png" Stretch="Fill"/>
-										<Image x:Name="image" Width="128" Height="128" Canvas.Left="13" Canvas.Top="12" Source="CutsceneResources/GameStart_eye.png" Stretch="Fill" Opacity="0.5" RenderTransformOrigin="0.5,0.5">
+										<Ellipse Fill="Black" Stroke="Black" StrokeThickness="0" Width="124.5" Height="125" Canvas.Left="14.5" Canvas.Top="13.5" Opacity="0.5"/>
+										<Image x:Name="image4" Width="171.5" Height="171.5" Canvas.Left="-9" Canvas.Top="-10.5" Source="/PlanetTerror;Component/Resources/Tower/TowerA0_parts2.png" Stretch="Fill" Opacity="0.5" RenderTransformOrigin="0.5,0.5">
 											<Image.RenderTransform>
 												<TransformGroup>
 													<ScaleTransform/>
@@ -1447,7 +1437,17 @@
 												</TransformGroup>
 											</Image.RenderTransform>
 										</Image>
-										<Image x:Name="image1" Width="116" Height="116" Canvas.Left="18" Canvas.Top="17" Source="CutsceneResources/GameStart_eye01.png" Stretch="Fill" Opacity="0.5" RenderTransformOrigin="0.5,0.5">
+										<Image x:Name="image" Width="128" Height="128" Canvas.Left="13" Canvas.Top="12" Source="CutsceneResources/GameStart_eye.png" Stretch="Fill" Opacity="0.6" RenderTransformOrigin="0.5,0.5">
+											<Image.RenderTransform>
+												<TransformGroup>
+													<ScaleTransform/>
+													<SkewTransform/>
+													<RotateTransform/>
+													<TranslateTransform/>
+												</TransformGroup>
+											</Image.RenderTransform>
+										</Image>
+										<Image x:Name="image1" Width="116" Height="116" Canvas.Left="18" Canvas.Top="17" Source="CutsceneResources/GameStart_eye01.png" Stretch="Fill" Opacity="0.8" RenderTransformOrigin="0.5,0.5">
 											<Image.RenderTransform>
 												<TransformGroup>
 													<ScaleTransform/>
@@ -1477,6 +1477,26 @@
 												</TransformGroup>
 											</Image.RenderTransform>
 										</Image>
+										<Path x:Name="path" Fill="White" Stretch="None" Stroke="Black" Width="54.5" Height="111.503" Opacity="0" RenderTransformOrigin="0.5,0.5" Data="M7.5,17.5 C6.1357592,19.546361 6.3980333,18.509833 6,20.5 C8.8969843,6.0150787 21.541976,6.4790122 34.5,0 C26.881378,7.6186221 25,18.550076 25,31 C25,43.069541 23.240568,53.042462 26,65 C30.774667,85.690225 32.590988,97.954593 53.5,110.5 C35.917867,110.5 27.60177,111.10177 13,96.5 C21.17189,96.5 26.894946,103.94813 22,86 C19.922687,78.383187 17.103479,71.724353 16,64 C14.88847,56.219289 12.754051,49.524307 11.5,42 C9.9207341,32.524404 11.484979,31.992489 1.5,27 C0.91652139,27.291739 0.51727524,28.08618 0,28.5 C1.5645284,23.806415 3.9769096,21.316681 7.5,17.5 z" Canvas.Left="26" Canvas.Top="20">
+											<Path.RenderTransform>
+												<TransformGroup>
+													<ScaleTransform/>
+													<SkewTransform/>
+													<RotateTransform/>
+													<TranslateTransform/>
+												</TransformGroup>
+											</Path.RenderTransform>
+										</Path>
+										<Path x:Name="path1" Fill="White" Stretch="None" Stroke="Black" StrokeThickness="0" Width="34" Height="109" Opacity="0" RenderTransformOrigin="0.5,0.5" Data="M0,25.5 C5.4279489,12.985562 11.831294,9.6687058 21.5,0 C21.666667,0.16666667 21.833333,0.33333333 22,0.5 C12.790744,18.918511 8.3120046,35.060023 13,58.5 C15.057367,68.786836 14.773722,79.092699 20,88.5 C23.693544,95.148379 28.921591,101.20265 33,108 C20.485718,105.91429 10.018984,99.037968 3.5,86 C7.6082387,90.108239 12,96.577678 12,78.5 C12,71.773568 10.203183,65.617505 9,59 C7.8304012,52.567207 7,45.770177 7,39 C7,27.793949 10.439035,29.811775 0,25.5 z" Canvas.Left="28" Canvas.Top="23.5">
+											<Path.RenderTransform>
+												<TransformGroup>
+													<ScaleTransform/>
+													<SkewTransform/>
+													<RotateTransform/>
+													<TranslateTransform/>
+												</TransformGroup>
+											</Path.RenderTransform>
+										</Path>
 									</Canvas>
 									<ControlTemplate.Triggers>
 										<Trigger Property="IsKeyboardFocused" Value="true"/>
