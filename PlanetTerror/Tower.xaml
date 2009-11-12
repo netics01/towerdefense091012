@@ -4990,19 +4990,19 @@
 					</TransformGroup>
 				</Ellipse.RenderTransform>
 			</Ellipse>
-			<Rectangle x:Name="_1" RadiusX="2" RadiusY="2" Width="8" Height="8" Canvas.Left="19.333" Canvas.Top="-29.496" Stroke="Black" Visibility="Collapsed">
-				<Rectangle.Fill>
-					<SolidColorBrush Color="{DynamicResource FFFFFF}"/>
-				</Rectangle.Fill>
-			</Rectangle>
-			<Rectangle x:Name="_2" RadiusX="2" RadiusY="2" Width="8" Height="8" Canvas.Left="19.333" Canvas.Top="-22.331" Stroke="Black" Visibility="Collapsed">
-				<Rectangle.Fill>
-					<SolidColorBrush Color="{DynamicResource Boom_Fill01}"/>
-				</Rectangle.Fill>
-			</Rectangle>
-			<Rectangle x:Name="_3" RadiusX="2" RadiusY="2" Width="8" Height="8" Canvas.Left="19.333" Canvas.Top="-15.166" Stroke="Black" Visibility="Collapsed">
+			<Rectangle x:Name="_1" RadiusX="2" RadiusY="2" Width="8" Height="8" Canvas.Left="19.458" Canvas.Top="-27.246" Stroke="Black" Visibility="Collapsed">
 				<Rectangle.Fill>
 					<SolidColorBrush Color="{DynamicResource Boom_Fill03}"/>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Rectangle x:Name="_2" RadiusX="2" RadiusY="2" Width="8" Height="8" Canvas.Left="19.458" Canvas.Top="-20.081" Stroke="Black" Visibility="Collapsed">
+				<Rectangle.Fill>
+					<SolidColorBrush Color="#FFFFF512"/>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Rectangle x:Name="_3" RadiusX="2" RadiusY="2" Width="8" Height="8" Canvas.Left="19.458" Canvas.Top="-12.916" Stroke="Black" Visibility="Collapsed">
+				<Rectangle.Fill>
+					<SolidColorBrush Color="#FF10FFF1"/>
 				</Rectangle.Fill>
 			</Rectangle>
 		</Canvas>
@@ -5389,17 +5389,17 @@
 			</Image>
 		</Canvas>
 		<Canvas x:Name="Menu_Num" Width="32" Height="16" Canvas.Left="9" Canvas.Top="37" IsEnabled="False" IsHitTestVisible="False">
-			<Rectangle x:Name="UP01" Fill="#FFFFDA5E" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-23" Canvas.Top="-31" Visibility="Collapsed">
+			<Rectangle x:Name="UP01" Fill="#FFFF4400" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-23" Canvas.Top="-31" Visibility="Collapsed">
 				<Rectangle.Stroke>
 					<SolidColorBrush Color="{StaticResource Enemy_lrgStroke}"/>
 				</Rectangle.Stroke>
 			</Rectangle>
-			<Rectangle x:Name="UP02" Fill="#FFFF7F28" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-15" Canvas.Top="-31" Visibility="Collapsed">
+			<Rectangle x:Name="UP02" Fill="#FFFFD828" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-15" Canvas.Top="-31" Visibility="Collapsed">
 				<Rectangle.Stroke>
 					<SolidColorBrush Color="{StaticResource Enemy_lrgStroke}"/>
 				</Rectangle.Stroke>
 			</Rectangle>
-			<Rectangle x:Name="UP03" Fill="Red" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-7" Canvas.Top="-31" Visibility="Collapsed">
+			<Rectangle x:Name="UP03" Fill="#FF00FFFC" RadiusX="1" RadiusY="1" Width="8" Height="8" Canvas.Left="-7" Canvas.Top="-31" Visibility="Collapsed">
 				<Rectangle.Stroke>
 					<SolidColorBrush Color="{StaticResource Enemy_lrgStroke}"/>
 				</Rectangle.Stroke>
