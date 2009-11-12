@@ -285,7 +285,7 @@ namespace PlanetTerror
 			core.boomLogicFrame = 0.1;
 			core.upg1Research = 50;
 			core.upg2Research = 120;
-			core.upg3Research = 200;
+			core.upg3Research = 250;
 			core.upg4Research = 500;
 
 			enemy1.routeTime = 35;

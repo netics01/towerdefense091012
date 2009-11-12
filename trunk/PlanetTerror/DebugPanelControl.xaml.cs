@@ -73,6 +73,7 @@ namespace PlanetTerror
 		public void enemy1_Button_Click(object sender, RoutedEventArgs e)
 		{
 			EnemyTest<Enemy1>();
+			EnemyTest<Enemy4>();
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void enemy2_Button_Click(object sender, RoutedEventArgs e)
@@ -92,7 +93,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void bossTest1_Button_Click(object sender, RoutedEventArgs e)
 		{
-			Game.World.testBoss1.TestState("Boss_Move_State");
+			//Game.World.testBoss1.TestState("Boss_Move_State");
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		public void coreTest_Button_Click(object sender, RoutedEventArgs e)
