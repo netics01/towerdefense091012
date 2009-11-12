@@ -1535,7 +1535,7 @@
 
 	<Canvas x:Name="LayoutRoot" Height="30" Width="1024" Margin="0,28,0,2">
 		<Image Width="1024" Height="59" Source="Resources/UI/underline.png" Stretch="Fill" Canvas.Top="-17" Canvas.Left="0"/>
-		<Image x:Name="baloon" Width="235" Height="65.712" RenderTransformOrigin="0.5,0.5" Canvas.Left="384" Canvas.Top="198.894" Source="Resources/UI/bl.png" Stretch="Fill">
+		<Image x:Name="baloon" Width="235" Height="65.712" RenderTransformOrigin="0.5,0.5" Canvas.Left="384" Canvas.Top="198.894" Source="Resources/UI/bl.png" Stretch="Fill" Visibility="Collapsed">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -1545,7 +1545,7 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
-		<Image Width="67.333" Height="83" Canvas.Left="358" Canvas.Top="187.833" Source="Resources/UI/Icon_Rob.png" Stretch="Fill"/>
+		<Image Width="67.333" Height="83" Canvas.Left="358" Canvas.Top="187.833" Source="Resources/UI/Icon_Rob.png" Stretch="Fill" Visibility="Collapsed"/>
 		<Canvas x:Name="path" Width="1024" Height="673" Canvas.Left="0" Canvas.Top="-681" IsEnabled="False" IsHitTestVisible="False" RenderTransformOrigin="0.5,0.5">
 			<Canvas.RenderTransform>
 				<TransformGroup>
