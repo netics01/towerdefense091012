@@ -264,7 +264,7 @@ namespace PlanetTerror
 			tower.stats[2].dismantleGain = 380;
 
 			tower.stats[3].attackRange = 250;
-			tower.stats[3].attackCooldown = 1.0;
+			tower.stats[3].attackCooldown = 1.2;
 			tower.stats[3].attackDamage = 55;
 			tower.stats[3].projSpeed = 350;
 			tower.stats[3].turretRotSpeed = 210;
