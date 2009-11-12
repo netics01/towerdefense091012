@@ -1734,7 +1734,7 @@
 					</TransformGroup>
 				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="코어 에너지 연구를 시작하지."/><Run FontSize="13.3333333333333" Foreground="Black" Text="  "/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="수입이 "/><Run FontSize="13.3333333333333" Foreground="Black" Text="줄겠지만"/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="타워 업그레이드가 가능해 질거야"/></TextBlock>
 			<Image Margin="-17.016,4.986,0,-22.986" Source="Resources/UI/KimHoRim_00.png" Stretch="Fill" HorizontalAlignment="Left" Width="74"/>
-			<TextBlock x:Name="talk_Text5_Copy" Margin="65.362,11.327,-89.362,-18.66" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontWeight="Bold"><TextBlock.RenderTransform>
+			<TextBlock x:Name="talk_Text5_Copy" Margin="65.362,11.327,-89.362,-18.66" Foreground="#FF180D00" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" IsHitTestVisible="False" FontWeight="Bold" Visibility="Collapsed"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
