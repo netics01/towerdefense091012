@@ -428,6 +428,7 @@ namespace PlanetTerror
 						cooldownTime = Game.Setting.lab.inactiveTime;
 						activeLabStory.Stop();
 						inactiveLabStory.Begin();
+						Game.UI.LabInactive();
 					}
 				}
 				break;
