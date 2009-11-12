@@ -74,7 +74,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 35;
+		public const int VERSION = 36;
 
 		public int version;
 		public bool debugMode;
@@ -256,7 +256,7 @@ namespace PlanetTerror
 			tower.stats[1].dismantleGain = 190;
 
 			tower.stats[2].attackRange = 230;
-			tower.stats[2].attackCooldown = 2.4;
+			tower.stats[2].attackCooldown = 2.5;
 			tower.stats[2].attackDamage = 100;
 			tower.stats[2].projSpeed = 240;
 			tower.stats[2].turretRotSpeed = 1000;
@@ -284,7 +284,7 @@ namespace PlanetTerror
 			core.boomDistance = 130;
 			core.boomLogicFrame = 0.1;
 			core.upg1Research = 50;
-			core.upg2Research = 120;
+			core.upg2Research = 130;
 			core.upg3Research = 250;
 			core.upg4Research = 500;
 
@@ -302,15 +302,15 @@ namespace PlanetTerror
 
 			enemy3.routeTime = 18;
 			enemy3.hitPoint = 80;
-			enemy2.damage = 10;
+			enemy3.damage = 10;
 			enemy3.gold = 0;
 			enemy3.powerUp = 2;
 
 			enemy4.routeTime = 27;
-			enemy3.hitPoint = 110;
-			enemy2.damage = 10;
-			enemy3.gold = 0;
-			enemy3.powerUp = 1;
+			enemy4.hitPoint = 10;
+			enemy4.damage = 1;
+			enemy4.gold = 0;
+			enemy4.powerUp = 5;
 
 			boss.hitPoint = 2000;
 			boss.damage = 150;
