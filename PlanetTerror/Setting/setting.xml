@@ -88,14 +88,14 @@
   <enemy2>
     <routeTime>50</routeTime>
     <hitPoint>200</hitPoint>
-    <damage>20</damage>
+    <damage>10</damage>
     <gold>0</gold>
     <powerUp>1</powerUp>
   </enemy2>
   <enemy3>
     <routeTime>18</routeTime>
     <hitPoint>80</hitPoint>
-    <damage>10</damage>
+    <damage>0</damage>
     <gold>0</gold>
     <powerUp>2</powerUp>
   </enemy3>
@@ -228,7 +228,7 @@
         </Bundle>
         <Bundle>
           <waitTime>4</waitTime>
-          <typeName>Enemy1</typeName>
+          <typeName>Enemy2</typeName>
           <pathIndex>7</pathIndex>
           <count>20</count>
           <interval>1</interval>
@@ -263,7 +263,7 @@
           <waitTime>4</waitTime>
           <typeName>Enemy3</typeName>
           <pathIndex>8</pathIndex>
-          <count>20</count>
+          <count>10</count>
           <interval>1</interval>
         </Bundle>
         <Bundle>
@@ -277,7 +277,7 @@
           <waitTime>4</waitTime>
           <typeName>Enemy3</typeName>
           <pathIndex>8</pathIndex>
-          <count>20</count>
+          <count>15</count>
           <interval>1</interval>
         </Bundle>
       </bundles>
