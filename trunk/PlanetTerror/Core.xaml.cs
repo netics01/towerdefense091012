@@ -110,6 +110,7 @@ namespace PlanetTerror
 
 			Game.SoundMgr.Play("Sound/Core_Attack.wav");
 			Game.UI.GainPower(-1000);
+			Game.UI.CoreAttackUsed();
 			vsm.SetState(ATTACK_GROUP, ATTACK_BEAM_STATE);
 		}
 

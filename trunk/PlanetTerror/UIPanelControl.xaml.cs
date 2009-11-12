@@ -180,8 +180,8 @@ namespace PlanetTerror
 				case 3:
 					Resources.FindStoryboard("Upg4_Completed_Storyboard").Begin();
 					Game.World.core.AttackReady();
-					upgradeLevel++;
 					vsm.SetState("Research4_State");
+					upgradeLevel++;					
 					break;
 				case 4:
 					if( lastValue < power_Progress.Maximum )
@@ -241,6 +241,12 @@ namespace PlanetTerror
 				bFirstLabInactive = true;
 				Resources.FindStoryboard("FirstLab_Inactive_Storyboard").Begin();
 			}
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	코어어택을 사용하였다.
+		public void CoreAttackUsed()
+		{
+			vsm.SetState("Research3_State");
 		}
 
 		//===============================================================================================================================================
