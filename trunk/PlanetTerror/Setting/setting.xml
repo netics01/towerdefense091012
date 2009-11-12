@@ -7,12 +7,12 @@
   <gold>
     <interval>5</interval>
     <mineGold>1</mineGold>
-    <towerGold>-2</towerGold>
+    <towerGold>-5</towerGold>
     <labGold>-5</labGold>
   </gold>
   <tower>
     <buildCost>50</buildCost>
-    <dismantleGain>-30</dismantleGain>
+    <dismantleGain>45</dismantleGain>
     <centerX>38</centerX>
     <centerY>8</centerY>
     <barrelLength>26</barrelLength>
@@ -25,7 +25,7 @@
         <projSpeed>200</projSpeed>
         <turretRotSpeed>250</turretRotSpeed>
         <upgCost>150</upgCost>
-        <dismantleGain>40</dismantleGain>
+        <dismantleGain>45</dismantleGain>
       </Stat>
       <Stat>
         <attackRange>150</attackRange>
@@ -35,13 +35,13 @@
         <projSpeed>200</projSpeed>
         <turretRotSpeed>1000</turretRotSpeed>
         <upgCost>200</upgCost>
-        <dismantleGain>180</dismantleGain>
+        <dismantleGain>170</dismantleGain>
       </Stat>
       <Stat>
         <attackRange>230</attackRange>
         <attackRangeSqr>0</attackRangeSqr>
-        <attackCooldown>2.2</attackCooldown>
-        <attackDamage>40</attackDamage>
+        <attackCooldown>1.1</attackCooldown>
+        <attackDamage>30</attackDamage>
         <projSpeed>240</projSpeed>
         <turretRotSpeed>1000</turretRotSpeed>
         <upgCost>300</upgCost>
@@ -50,8 +50,8 @@
       <Stat>
         <attackRange>250</attackRange>
         <attackRangeSqr>0</attackRangeSqr>
-        <attackCooldown>2.5</attackCooldown>
-        <attackDamage>100</attackDamage>
+        <attackCooldown>1.3</attackCooldown>
+        <attackDamage>70</attackDamage>
         <projSpeed>350</projSpeed>
         <turretRotSpeed>210</turretRotSpeed>
         <upgCost>1000</upgCost>
@@ -61,7 +61,7 @@
   </tower>
   <lab>
     <buildCost>200</buildCost>
-    <powerGain>1</powerGain>
+    <powerGain>0.5</powerGain>
     <range>150</range>
     <rangeSqr>0</rangeSqr>
     <inactiveTime>5</inactiveTime>
@@ -74,9 +74,9 @@
     <boomDistance>130</boomDistance>
     <boomLogicFrame>0.1</boomLogicFrame>
     <upg1Research>50</upg1Research>
-    <upg2Research>100</upg2Research>
-    <upg3Research>150</upg3Research>
-    <upg4Research>400</upg4Research>
+    <upg2Research>120</upg2Research>
+    <upg3Research>200</upg3Research>
+    <upg4Research>500</upg4Research>
   </core>
   <enemy1>
     <routeTime>35</routeTime>
@@ -88,12 +88,12 @@
   <enemy2>
     <routeTime>60</routeTime>
     <hitPoint>200</hitPoint>
-    <damage>10</damage>
+    <damage>20</damage>
     <gold>0</gold>
     <powerUp>1</powerUp>
   </enemy2>
   <enemy3>
-    <routeTime>15</routeTime>
+    <routeTime>22</routeTime>
     <hitPoint>80</hitPoint>
     <damage>10</damage>
     <gold>0</gold>
@@ -129,17 +129,10 @@
       </bundles>
     </Wave>
     <Wave>
-      <waitTime>25</waitTime>
+      <waitTime>30</waitTime>
       <bundles>
         <Bundle>
           <waitTime>0.1</waitTime>
-          <typeName>Enemy1</typeName>
-          <pathIndex>2</pathIndex>
-          <count>10</count>
-          <interval>0.5</interval>
-        </Bundle>
-        <Bundle>
-          <waitTime>5</waitTime>
           <typeName>Enemy2</typeName>
           <pathIndex>2</pathIndex>
           <count>5</count>
@@ -148,48 +141,29 @@
       </bundles>
     </Wave>
     <Wave>
-      <waitTime>25</waitTime>
+      <waitTime>30</waitTime>
       <bundles>
         <Bundle>
           <waitTime>0.1</waitTime>
-          <typeName>Enemy1</typeName>
-          <pathIndex>1</pathIndex>
-          <count>5</count>
-          <interval>0.5</interval>
-        </Bundle>
-        <Bundle>
-          <waitTime>5</waitTime>
           <typeName>Enemy2</typeName>
-          <pathIndex>1</pathIndex>
-          <count>10</count>
-          <interval>1.5</interval>
-        </Bundle>
-      </bundles>
-    </Wave>
-    <Wave>
-      <waitTime>25</waitTime>
-      <bundles>
-        <Bundle>
-          <waitTime>0.1</waitTime>
-          <typeName>Enemy3</typeName>
           <pathIndex>3</pathIndex>
           <count>5</count>
-          <interval>0.5</interval>
+          <interval>1.5</interval>
         </Bundle>
-      </bundles>
-    </Wave>
-    <Wave>
-      <waitTime>25</waitTime>
-      <bundles>
         <Bundle>
-          <waitTime>0.1</waitTime>
+          <waitTime>5</waitTime>
           <typeName>Enemy1</typeName>
-          <pathIndex>4</pathIndex>
+          <pathIndex>3</pathIndex>
           <count>5</count>
           <interval>1</interval>
         </Bundle>
+      </bundles>
+    </Wave>
+    <Wave>
+      <waitTime>30</waitTime>
+      <bundles>
         <Bundle>
-          <waitTime>5</waitTime>
+          <waitTime>0.1</waitTime>
           <typeName>Enemy2</typeName>
           <pathIndex>4</pathIndex>
           <count>10</count>
@@ -205,53 +179,13 @@
       </bundles>
     </Wave>
     <Wave>
-      <waitTime>25</waitTime>
-      <bundles>
-        <Bundle>
-          <waitTime>0.1</waitTime>
-          <typeName>Enemy1</typeName>
-          <pathIndex>3</pathIndex>
-          <count>10</count>
-          <interval>1</interval>
-        </Bundle>
-        <Bundle>
-          <waitTime>5</waitTime>
-          <typeName>Enemy2</typeName>
-          <pathIndex>3</pathIndex>
-          <count>7</count>
-          <interval>1.5</interval>
-        </Bundle>
-        <Bundle>
-          <waitTime>5</waitTime>
-          <typeName>Enemy1</typeName>
-          <pathIndex>3</pathIndex>
-          <count>10</count>
-          <interval>1</interval>
-        </Bundle>
-        <Bundle>
-          <waitTime>5</waitTime>
-          <typeName>Enemy2</typeName>
-          <pathIndex>3</pathIndex>
-          <count>7</count>
-          <interval>1.5</interval>
-        </Bundle>
-        <Bundle>
-          <waitTime>5</waitTime>
-          <typeName>Enemy1</typeName>
-          <pathIndex>3</pathIndex>
-          <count>10</count>
-          <interval>1</interval>
-        </Bundle>
-      </bundles>
-    </Wave>
-    <Wave>
-      <waitTime>25</waitTime>
+      <waitTime>30</waitTime>
       <bundles>
         <Bundle>
           <waitTime>0.1</waitTime>
           <typeName>Enemy3</typeName>
-          <pathIndex>1</pathIndex>
-          <count>7</count>
+          <pathIndex>5</pathIndex>
+          <count>5</count>
           <interval>0.5</interval>
         </Bundle>
       </bundles>
@@ -261,17 +195,24 @@
       <bundles>
         <Bundle>
           <waitTime>0.1</waitTime>
-          <typeName>Enemy1</typeName>
-          <pathIndex>1</pathIndex>
+          <typeName>Enemy2</typeName>
+          <pathIndex>6</pathIndex>
           <count>15</count>
           <interval>1.5</interval>
         </Bundle>
         <Bundle>
           <waitTime>5</waitTime>
-          <typeName>Enemy2</typeName>
-          <pathIndex>1</pathIndex>
+          <typeName>Enemy1</typeName>
+          <pathIndex>6</pathIndex>
           <count>15</count>
-          <interval>2</interval>
+          <interval>1</interval>
+        </Bundle>
+        <Bundle>
+          <waitTime>5</waitTime>
+          <typeName>Enemy1</typeName>
+          <pathIndex>6</pathIndex>
+          <count>15</count>
+          <interval>1</interval>
         </Bundle>
       </bundles>
     </Wave>
@@ -281,90 +222,212 @@
         <Bundle>
           <waitTime>0.1</waitTime>
           <typeName>Enemy1</typeName>
-          <pathIndex>2</pathIndex>
-          <count>15</count>
-          <interval>1.5</interval>
-        </Bundle>
-        <Bundle>
-          <waitTime>5</waitTime>
-          <typeName>Enemy2</typeName>
-          <pathIndex>2</pathIndex>
-          <count>15</count>
-          <interval>2</interval>
-        </Bundle>
-        <Bundle>
-          <waitTime>5</waitTime>
-          <typeName>Enemy1</typeName>
-          <pathIndex>2</pathIndex>
-          <count>15</count>
-          <interval>0.5</interval>
-        </Bundle>
-        <Bundle>
-          <waitTime>5</waitTime>
-          <typeName>Enemy2</typeName>
-          <pathIndex>2</pathIndex>
-          <count>15</count>
-          <interval>1.5</interval>
-        </Bundle>
-        <Bundle>
-          <waitTime>5</waitTime>
-          <typeName>Enemy3</typeName>
-          <pathIndex>2</pathIndex>
-          <count>10</count>
-          <interval>0.5</interval>
-        </Bundle>
-      </bundles>
-    </Wave>
-    <Wave>
-      <waitTime>25</waitTime>
-      <bundles>
-        <Bundle>
-          <waitTime>0.1</waitTime>
-          <typeName>Enemy1</typeName>
-          <pathIndex>3</pathIndex>
-          <count>15</count>
-          <interval>1.5</interval>
-        </Bundle>
-        <Bundle>
-          <waitTime>5</waitTime>
-          <typeName>Enemy2</typeName>
-          <pathIndex>3</pathIndex>
-          <count>15</count>
-          <interval>2</interval>
-        </Bundle>
-        <Bundle>
-          <waitTime>5</waitTime>
-          <typeName>Enemy1</typeName>
-          <pathIndex>3</pathIndex>
-          <count>20</count>
-          <interval>0.5</interval>
-        </Bundle>
-        <Bundle>
-          <waitTime>5</waitTime>
-          <typeName>Enemy2</typeName>
-          <pathIndex>3</pathIndex>
+          <pathIndex>7</pathIndex>
           <count>20</count>
           <interval>1.5</interval>
         </Bundle>
         <Bundle>
           <waitTime>4</waitTime>
-          <typeName>Enemy3</typeName>
-          <pathIndex>3</pathIndex>
-          <count>10</count>
-          <interval>0.5</interval>
+          <typeName>Enemy1</typeName>
+          <pathIndex>7</pathIndex>
+          <count>20</count>
+          <interval>1</interval>
+        </Bundle>
+        <Bundle>
+          <waitTime>4</waitTime>
+          <typeName>Enemy1</typeName>
+          <pathIndex>7</pathIndex>
+          <count>20</count>
+          <interval>1</interval>
+        </Bundle>
+        <Bundle>
+          <waitTime>4</waitTime>
+          <typeName>Enemy1</typeName>
+          <pathIndex>7</pathIndex>
+          <count>20</count>
+          <interval>1</interval>
+        </Bundle>
+      </bundles>
+    </Wave>
+    <Wave>
+      <waitTime>25</waitTime>
+      <bundles>
+        <Bundle>
+          <waitTime>0.1</waitTime>
+          <typeName>Enemy2</typeName>
+          <pathIndex>8</pathIndex>
+          <count>20</count>
+          <interval>1.5</interval>
+        </Bundle>
+        <Bundle>
+          <waitTime>4</waitTime>
+          <typeName>Enemy1</typeName>
+          <pathIndex>8</pathIndex>
+          <count>20</count>
+          <interval>1</interval>
+        </Bundle>
+        <Bundle>
+          <waitTime>4</waitTime>
+          <typeName>Enemy2</typeName>
+          <pathIndex>8</pathIndex>
+          <count>20</count>
+          <interval>1.5</interval>
+        </Bundle>
+        <Bundle>
+          <waitTime>4</waitTime>
+          <typeName>Enemy1</typeName>
+          <pathIndex>8</pathIndex>
+          <count>20</count>
+          <interval>1</interval>
+        </Bundle>
+      </bundles>
+    </Wave>
+    <Wave>
+      <waitTime>20</waitTime>
+      <bundles>
+        <Bundle>
+          <waitTime>0.1</waitTime>
+          <typeName>Enemy2</typeName>
+          <pathIndex>7</pathIndex>
+          <count>30</count>
+          <interval>1.5</interval>
         </Bundle>
         <Bundle>
           <waitTime>3</waitTime>
-          <typeName>Enemy2</typeName>
-          <pathIndex>3</pathIndex>
-          <count>15</count>
-          <interval>0.5</interval>
+          <typeName>Enemy1</typeName>
+          <pathIndex>7</pathIndex>
+          <count>30</count>
+          <interval>1</interval>
         </Bundle>
         <Bundle>
-          <waitTime>5</waitTime>
+          <waitTime>3</waitTime>
           <typeName>Enemy3</typeName>
-          <pathIndex>3</pathIndex>
+          <pathIndex>7</pathIndex>
+          <count>5</count>
+          <interval>0.5</interval>
+        </Bundle>
+      </bundles>
+    </Wave>
+    <Wave>
+      <waitTime>20</waitTime>
+      <bundles>
+        <Bundle>
+          <waitTime>0.1</waitTime>
+          <typeName>Enemy2</typeName>
+          <pathIndex>6</pathIndex>
+          <count>30</count>
+          <interval>1.5</interval>
+        </Bundle>
+        <Bundle>
+          <waitTime>3</waitTime>
+          <typeName>Enemy1</typeName>
+          <pathIndex>6</pathIndex>
+          <count>35</count>
+          <interval>1</interval>
+        </Bundle>
+        <Bundle>
+          <waitTime>3</waitTime>
+          <typeName>Enemy3</typeName>
+          <pathIndex>6</pathIndex>
           <count>10</count>
+          <interval>0.5</interval>
+        </Bundle>
+      </bundles>
+    </Wave>
+    <Wave>
+      <waitTime>30</waitTime>
+      <bundles>
+        <Bundle>
+          <waitTime>3</waitTime>
+          <typeName>Enemy3</typeName>
+          <pathIndex>5</pathIndex>
+          <count>30</count>
+          <interval>0.5</interval>
+        </Bundle>
+      </bundles>
+    </Wave>
+    <Wave>
+      <waitTime>20</waitTime>
+      <bundles>
+        <Bundle>
+          <waitTime>0.1</waitTime>
+          <typeName>Enemy2</typeName>
+          <pathIndex>4</pathIndex>
+          <count>40</count>
+          <interval>1.5</interval>
+        </Bundle>
+        <Bundle>
+          <waitTime>2</waitTime>
+          <typeName>Enemy1</typeName>
+          <pathIndex>4</pathIndex>
+          <count>40</count>
+          <interval>1</interval>
+        </Bundle>
+        <Bundle>
+          <waitTime>2</waitTime>
+          <typeName>Enemy3</typeName>
+          <pathIndex>4</pathIndex>
+          <count>20</count>
+          <interval>0.5</interval>
+        </Bundle>
+      </bundles>
+    </Wave>
+    <Wave>
+      <waitTime>20</waitTime>
+      <bundles>
+        <Bundle>
+          <waitTime>0.1</waitTime>
+          <typeName>Enemy2</typeName>
+          <pathIndex>4</pathIndex>
+          <count>40</count>
+          <interval>1.5</interval>
+        </Bundle>
+        <Bundle>
+          <waitTime>2</waitTime>
+          <typeName>Enemy1</typeName>
+          <pathIndex>4</pathIndex>
+          <count>40</count>
+          <interval>1</interval>
+        </Bundle>
+        <Bundle>
+          <waitTime>2</waitTime>
+          <typeName>Enemy3</typeName>
+          <pathIndex>4</pathIndex>
+          <count>20</count>
+          <interval>0.5</interval>
+        </Bundle>
+      <bundles>
+        <Bundle>
+          <waitTime>0.1</waitTime>
+          <typeName>Enemy2</typeName>
+          <pathIndex>4</pathIndex>
+          <count>40</count>
+          <interval>1.5</interval>
+        </Bundle>
+        <Bundle>
+          <waitTime>2</waitTime>
+          <typeName>Enemy1</typeName>
+          <pathIndex>4</pathIndex>
+          <count>40</count>
+          <interval>1</interval>
+        </Bundle>
+        <Bundle>
+          <waitTime>2</waitTime>
+          <typeName>Enemy3</typeName>
+          <pathIndex>4</pathIndex>
+          <count>20</count>
+          <interval>0.5</interval>
+        </Bundle>
+      </bundles>
+    </Wave>
+    <Wave>
+      <waitTime>30</waitTime>
+      <bundles>
+        <Bundle>
+          <waitTime>3</waitTime>
+          <typeName>Boss1</typeName>
+          <pathIndex>1</pathIndex>
+          <count>1</count>
           <interval>0.5</interval>
         </Bundle>
       </bundles>
