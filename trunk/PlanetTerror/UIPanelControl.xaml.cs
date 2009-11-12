@@ -31,6 +31,7 @@ namespace PlanetTerror
 		double lastPowerGauge;
 		int upgradeLevel = 0;
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		VSM vsm;
 		Storyboard noMoneyStory;
 		Storyboard normalWarningStory;
 		List<Storyboard> routeWarningStories;
@@ -48,6 +49,7 @@ namespace PlanetTerror
 		{
 			this.InitializeComponent();
 
+			vsm = new VSM(this, LayoutRoot);
 			noMoneyStory = Resources.FindStoryboard("NoMoney_Storyboard");
 			normalWarningStory = Resources.FindStoryboard("Warning_Enemy_Storyboard");
 			routeWarningStories = new List<Storyboard>();
@@ -88,6 +90,8 @@ namespace PlanetTerror
 			power_Progress.Minimum = 0;
 			power_Progress.Value = 0;
 			DisplayGold();
+
+			vsm.SetState("Research0_State");
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	업데이트
@@ -157,23 +161,27 @@ namespace PlanetTerror
 					power_Progress.Value = 0;
 					power_Progress.Maximum = Game.Setting.core.upg2Research;
 					upgradeLevel++;
+					vsm.SetState("Research1_State");
 					break;
 				case 1:
 					Resources.FindStoryboard("Upg2_Completed_Storyboard").Begin();
 					power_Progress.Value = 0;
 					power_Progress.Maximum = Game.Setting.core.upg3Research;
 					upgradeLevel++;
+					vsm.SetState("Research2_State");
  					break;
 				case 2:
 					Resources.FindStoryboard("Upg3_Completed_Storyboard").Begin();
 					power_Progress.Value = 0;
 					power_Progress.Maximum = Game.Setting.core.upg4Research;
 					upgradeLevel++;
+					vsm.SetState("Research3_State");
 					break;
 				case 3:
 					Resources.FindStoryboard("Upg4_Completed_Storyboard").Begin();
 					Game.World.core.AttackReady();
 					upgradeLevel++;
+					vsm.SetState("Research4_State");
 					break;
 				case 4:
 					if( lastValue < power_Progress.Maximum )
