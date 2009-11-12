@@ -159,6 +159,7 @@ namespace PlanetTerror
 			//routeTime = Math.Min(1.0, routeTime);
 			if( routeTime >= 1.0 )
 			{
+				Game.SoundMgr.Play("Sound/Mon_Boom2.wav");
 				vsm.SetState(BOOM_STATE, true);
 				Game.World.core.TakeDamage(setting.damage);
 				IsDestroyed = true;
