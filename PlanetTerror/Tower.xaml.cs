@@ -387,7 +387,8 @@ namespace PlanetTerror
 				if( target != null &&
 					bAim )
 				{
-					FireProjectile(targetAngle, firePos);
+					//FireProjectile(targetAngle, firePos);
+					FireInstantProjectile(targetAngle, firePos);
 				}
 				break;
 			case TOWER_DISMANTLE_STATE:
@@ -493,31 +494,38 @@ namespace PlanetTerror
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	발사체 생성
-		void FireProjectile(double angle, Point firePos)
+// 		void FireProjectile(double angle, Point firePos)
+// 		{
+// 			Projectile p;
+// 			switch( towerLevel )
+// 			{
+// 			case 0:
+// 				p = new Projectile0();
+// 				break;
+// 			case 1:
+// 				p = new Projectile1();
+// 				break;
+// 			case 2:
+// 				p = new Projectile2();
+// 				break;
+// 			default:
+// 				p = new Projectile3();
+// 				break;
+// 			}
+// 			p.Initialize(target, firePos, angle);
+// 			p.Damage = Stat.attackDamage;
+// 			p.Speed = Stat.projSpeed;
+// 
+// 			Game.World.AddProjectile(p);
+// 			Game.SoundMgr.Play(towerLevel >= 2 ? "Sound/Tower_Attack34.wav" : "Sound/Tower_Attack12.wav");
+// 
+// 			cooldownTime = Stat.attackCooldown;
+// 		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	발사체 생성
+		void FireInstantProjectile(double angle, Point firePos)
 		{
-			Projectile p;
-			switch( towerLevel )
-			{
-			case 0:
-				p = new Projectile0();
-				break;
-			case 1:
-				p = new Projectile1();
-				break;
-			case 2:
-				p = new Projectile2();
-				break;
-			default:
-				p = new Projectile3();
-				break;
-			}
-			p.Initialize(target, firePos, angle);
-			p.Damage = Stat.attackDamage;
-			p.Speed = Stat.projSpeed;
-
-			Game.World.AddProjectile(p);
-			Game.SoundMgr.Play(towerLevel >= 2 ? "Sound/Tower_Attack34.wav" : "Sound/Tower_Attack12.wav");
-
+			Game.World.CreateInstantProjectile(target, firePos, angle, towerLevel, Stat.attackDamage);
 			cooldownTime = Stat.attackCooldown;
 		}
 	}
