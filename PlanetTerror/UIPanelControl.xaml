@@ -1584,6 +1584,87 @@
 	</UserControl.Triggers>
 
 	<Canvas x:Name="LayoutRoot" Height="30" Width="1024" Margin="0,28,0,2">
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="Tower_Research_StateGroup">
+				<VisualState x:Name="Research0_State">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image11" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image13" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image15" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image14" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image12" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image10" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Research1_State">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image11" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image13" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image14" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Research2_State">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image11" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image14" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image12" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Research3_State">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image14" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image12" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image10" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Research4_State">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image14" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image12" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image10" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="image16" Storyboard.TargetProperty="(UIElement.Visibility)">
+							<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
 		<Image Width="1024" Height="59" Source="Resources/UI/underline.png" Stretch="Fill" Canvas.Top="-17" Canvas.Left="0"/>
 		<Image x:Name="baloon" Width="235" Height="65.712" RenderTransformOrigin="0.5,0.5" Canvas.Left="384" Canvas.Top="198.894" Source="Resources/UI/bl.png" Stretch="Fill" Visibility="Collapsed">
 			<Image.RenderTransform>
@@ -1819,8 +1900,8 @@
 		<TextBlock x:Name="gold_Text" Width="72" Height="24" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="734.334" Canvas.Top="4" TextAlignment="Right" FontStyle="Italic" FontWeight="Bold"><Run Text="55"/><Run Text="200"/></TextBlock>
 		<TextBlock x:Name="gold_NextTime_Text" Width="56" Height="24" Text="0:5" TextWrapping="Wrap" Foreground="#FF747474" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="870.607" Canvas.Top="3" FontWeight="Bold" FontStyle="Italic"/>
 		<TextBlock x:Name="gold_Next_Text" Width="56" Height="24" TextWrapping="Wrap" Foreground="#FF946D40" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="891.943" Canvas.Top="3" TextAlignment="Right" FontWeight="Bold" FontStyle="Italic"><Run Text="5"/><Run Text="85"/><LineBreak/><Run Text=""/></TextBlock>
-		<Image Width="64" Height="64" Canvas.Left="286.5" Canvas.Top="-22" Source="Resources/UI/Icon_Core_MAX.png" Stretch="Fill" Visibility="Collapsed"/>
 		<Image x:Name="image" Width="64" Height="64" Canvas.Left="286.5" Canvas.Top="-22" Source="Resources/UI/Icon_Core.png" Stretch="Fill" Cursor="Help"/>
+		<Image x:Name="image16" Width="64" Height="64" Canvas.Left="286.5" Canvas.Top="-22" Source="Resources/UI/Icon_Core_MAX.png" Stretch="Fill" Visibility="Collapsed"/>
 		<Grid x:Name="talk_system_Core" Width="184" Height="56" Canvas.Left="74" Canvas.Top="-33.5" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
 			<Grid.RenderTransform>
 				<TransformGroup>
@@ -2376,5 +2457,20 @@
 				</TextBlock.RenderTransform><Run FontSize="13.3333333333333" Foreground="Black" Text="적이 와서 연구원들이 피신 했네!!"/><LineBreak/><Run FontSize="13.3333333333333" Foreground="Black" Text="연구소를 이동하게!!"/></TextBlock>
 			<Image HorizontalAlignment="Left" Margin="-8.016,4.986,0,-22.986" Width="74" Source="Resources\UI\KimHoRim_00.png" Stretch="Fill"/>
 		</Grid>
+		<Canvas Width="128" Height="40" Canvas.Left="160" Canvas.Top="-8" IsEnabled="False" IsHitTestVisible="False">
+			<Canvas x:Name="Lv3" Width="40" Height="40" Canvas.Left="88">
+				<Image x:Name="image10" Width="40" Height="40" Source="Resources/UI/Icon_UPGResearch03_Pass.png" Stretch="Fill" Visibility="Collapsed"/>
+				<Image x:Name="image11" Width="40" Height="40" Canvas.Left="0" Canvas.Top="0" Source="Resources/UI/Icon_UPGResearch03_NotYet.png" Stretch="Fill" Visibility="Collapsed"/>
+			</Canvas>
+			<Canvas x:Name="Lv2" Width="40" Height="40" Canvas.Left="40">
+				<Image x:Name="image12" Width="40" Height="40" Source="Resources/UI/Icon_UPGResearch02_Pass.png" Stretch="Fill" Visibility="Collapsed"/>
+				<Image x:Name="image13" Width="40" Height="40" Canvas.Left="0" Canvas.Top="0" Source="Resources/UI/Icon_UPGResearch02_NotYet.png" Stretch="Fill" Visibility="Collapsed"/>
+			</Canvas>
+			<Canvas x:Name="Lv1" Width="32" Height="32" Canvas.Top="8">
+				<Image x:Name="image14" Width="32" Height="32" Source="Resources/UI/Icon_UPGResearch01_Pass.png" Stretch="Fill" Visibility="Collapsed"/>
+				<Image x:Name="image15" Width="32" Height="32" Canvas.Left="0" Canvas.Top="0" Source="Resources/UI/Icon_UPGResearch01_NotYet.png" Stretch="Fill" Visibility="Collapsed"/>
+			</Canvas>
+		</Canvas>
+		<TextBlock Width="64" Height="14.667" FontFamily="Fonts/#아리따B" Foreground="#FFE78117" TextWrapping="Wrap" Canvas.Left="92.995" Canvas.Top="11.659"><Run Text="타워 연구"/><Run Text=" "/><Run Text="▶"/></TextBlock>
 	</Canvas>
 </UserControl>
