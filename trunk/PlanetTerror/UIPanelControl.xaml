@@ -20,15 +20,75 @@
 				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
 				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
 			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="baloon" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:02" Value="{x:Static Visibility.Collapsed}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="baloon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-301"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-344.852"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-332.352"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="baloon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-214"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-238.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-237.377"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="baloon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.796"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.127"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="baloon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.582"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.127"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="baloon" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_system_Core" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-18.5"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.474"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_system_Core" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.053"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="CoreIcon_OnMouseLeave">
 			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_system_Core" Storyboard.TargetProperty="(UIElement.Visibility)">
 				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
-				<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000" Value="{x:Static Visibility.Visible}"/>
 			</ObjectAnimationUsingKeyFrames>
 			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="talk_system_Core" Storyboard.TargetProperty="(UIElement.Opacity)">
 				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="baloon" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="baloon">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-332.352"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="baloon">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="-237.377"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="baloon">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="baloon">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="baloon">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
 			</DoubleAnimationUsingKeyFrames>
 		</Storyboard>
 		<Storyboard x:Key="Warning_Enemy_Storyboard">
@@ -1089,6 +1149,16 @@
 
 	<Canvas x:Name="LayoutRoot" Height="30" Width="1024" Margin="0,28,0,2">
 		<Image Width="1024" Height="45" Source="Resources/UI/underline.png" Stretch="Fill" Canvas.Top="-15" Canvas.Left="0"/>
+		<Image x:Name="baloon" Width="235" Height="65.712" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" Canvas.Left="384" Canvas.Top="198.894" Source="Resources/UI/bl.png" Stretch="Fill">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
 		<Canvas x:Name="path" Width="1024" Height="673" Canvas.Left="0" Canvas.Top="-681" IsEnabled="False" IsHitTestVisible="False">
 			<Path Fill="#CCFF3800" Stretch="Fill" StrokeThickness="4" Width="13.368" Height="35.502" RenderTransformOrigin="0.500000057824461,0.267618880711134" Data="M6.6840016,16.500009 L13.368002,22.527639 13.368002,35.502006 6.4720131,30.609634 1.5870633E-06,35.502006 1.5870633E-06,22.527639 z M6.6839997,0 L13.368,6.0276308 13.368,19.002 6.4720122,14.109629 0,19.002 0,6.0276308 z" Canvas.Left="-68.868" Canvas.Top="23"/>
 			<Path Fill="#99FF0000" Stretch="Fill" StrokeThickness="4" Width="9.469" Height="86.072" RenderTransformOrigin="0.500000079057248,0.121644936611041" Data="M5.0000004,47.999999 L10,56.256553 10,87.999999 0,87.999999 0,56.256553 z M5.0000004,0 L10,8.2565565 10,40.000003 0,40.000003 0,8.2565565 z" Canvas.Left="-65.469" Canvas.Top="401">
@@ -1295,10 +1365,18 @@
 		<TextBlock x:Name="gold_Text" Width="72" Height="24" TextWrapping="Wrap" Foreground="#FFF4C138" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="734.334" Canvas.Top="4" TextAlignment="Right" FontStyle="Italic" FontWeight="Bold"><Run Text="55"/><Run Text="200"/></TextBlock>
 		<TextBlock x:Name="gold_NextTime_Text" Width="56" Height="24" Text="0:5" TextWrapping="Wrap" Foreground="#FF747474" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="870.607" Canvas.Top="3" FontWeight="Bold" FontStyle="Italic"/>
 		<TextBlock x:Name="gold_Next_Text" Width="56" Height="24" TextWrapping="Wrap" Foreground="#FF946D40" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="891.943" Canvas.Top="3" TextAlignment="Right" FontWeight="Bold" FontStyle="Italic"><Run Text="5"/><Run Text="85"/><LineBreak/><Run Text=""/></TextBlock>
+		<Image Width="64" Height="64" Canvas.Left="286.5" Canvas.Top="-22" Source="Resources/UI/Icon_Core_MAX.png" Stretch="Fill" Visibility="Collapsed"/>
 		<Image x:Name="image" Width="64" Height="64" Canvas.Left="286.5" Canvas.Top="-22" Source="Resources/UI/Icon_Core.png" Stretch="Fill" Cursor="Help"/>
-		<Image Width="64" Height="64" Canvas.Left="286.5" Canvas.Top="-22" Source="Resources/UI/Icon_Core_MAX.png" Stretch="Fill"/>
-		<Grid x:Name="talk_system_Core" Width="184" Height="56" Canvas.Left="192" Canvas.Top="-56" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed">
-			<TextBlock x:Name="talk_Text1" Margin="-0.002,5.334,32,16" Foreground="Black" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" FontWeight="Bold"><TextBlock.RenderTransform>
+		<Grid x:Name="talk_system_Core" Width="184" Height="56" Canvas.Left="66" Canvas.Top="-33.5" IsEnabled="False" IsHitTestVisible="False" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<TextBlock x:Name="talk_Text1" Margin="-1.002,12.334,11.5,4.5" Foreground="Black" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" FontFamily="Fonts/#아리따B" FontWeight="Bold" FontSize="13.333" TextAlignment="Right"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform/>
