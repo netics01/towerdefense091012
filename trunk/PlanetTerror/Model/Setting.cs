@@ -74,7 +74,7 @@ namespace PlanetTerror
 	{
 		//===============================================================================================================================================
 		//	필드
-		public const int VERSION = 34;
+		public const int VERSION = 35;
 
 		public int version;
 		public bool debugMode;
@@ -146,6 +146,7 @@ namespace PlanetTerror
 		public Enemy enemy1;
 		public Enemy enemy2;
 		public Enemy enemy3;
+		public Enemy enemy4;
 		public class Boss
 		{
 			public double hitPoint;
@@ -180,6 +181,7 @@ namespace PlanetTerror
 			enemy1 = new Enemy();
 			enemy2 = new Enemy();
 			enemy3 = new Enemy();
+			enemy4 = new Enemy();
 			boss = new Boss();
 
 			waves = new List<Wave>();
@@ -303,6 +305,12 @@ namespace PlanetTerror
 			enemy2.damage = 10;
 			enemy3.gold = 0;
 			enemy3.powerUp = 2;
+
+			enemy4.routeTime = 27;
+			enemy3.hitPoint = 110;
+			enemy2.damage = 10;
+			enemy3.gold = 0;
+			enemy3.powerUp = 1;
 
 			boss.hitPoint = 2000;
 			boss.damage = 150;
