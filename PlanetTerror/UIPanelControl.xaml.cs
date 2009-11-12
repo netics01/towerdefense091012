@@ -188,11 +188,12 @@ namespace PlanetTerror
 		public void DisplayWarning(int route, bool bBoss)
 		{
 			Game.SoundMgr.Play("Sound/Wave_Alarm.wav");
-
-			routeWarningStories[route].Begin();
-
 			if( bBoss ) { bossWarningStory.Begin(); }
-			else { normalWarningStory.Begin(); }
+			else
+			{
+				normalWarningStory.Begin();
+				routeWarningStories[route].Begin();
+			}
 		}
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	다음 수입 예상 표시
