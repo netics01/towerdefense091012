@@ -186,7 +186,8 @@ namespace PlanetTerror
 				case 4:
 					if( lastValue < power_Progress.Maximum )
 					{
-						Game.World.core.AttackReady();	
+						Game.World.core.AttackReady();
+						vsm.SetState("Research4_State");
 					}
 					break;
 				}
