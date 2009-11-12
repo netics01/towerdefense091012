@@ -40,6 +40,7 @@ namespace PlanetTerror
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		bool bFirstTowerBuilt = false;
 		bool bFirstLabBuilt = false;
+		bool bFirstLabInactive = false;
 
 		//-----------------------------------------------------------------------------------------------------------------------------------------------
 		//	생성자
@@ -220,6 +221,16 @@ namespace PlanetTerror
 			{
 				bFirstLabBuilt = true;
 				Resources.FindStoryboard("FirstLab_Storyboard").Begin();
+			}
+		}
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
+		//	연구소화 비활성화 되었다.
+		public void LabInactive()
+		{
+			if( !bFirstLabInactive )
+			{
+				bFirstLabInactive = true;
+				Resources.FindStoryboard("FirstLab_Inactive_Storyboard").Begin();
 			}
 		}
 
