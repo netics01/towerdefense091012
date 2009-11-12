@@ -1908,12 +1908,12 @@
 		<TextBlock x:Name="gold_Next_Text" Width="56" Height="24" TextWrapping="Wrap" Foreground="#FF946D40" FontFamily="Fonts/#kroeger 05_53" FontSize="16" Canvas.Left="891.943" Canvas.Top="3" TextAlignment="Right" FontWeight="Bold" FontStyle="Italic"><Run Text="5"/><Run Text="85"/><LineBreak/><Run Text=""/></TextBlock>
 		<Image x:Name="image" Width="64" Height="64" Canvas.Left="286.5" Canvas.Top="-22" Source="Resources/UI/Icon_Core.png" Stretch="Fill" Cursor="Help"/>
 		<Image x:Name="image16" Width="64" Height="64" Canvas.Left="286.5" Canvas.Top="-22" Source="Resources/UI/Icon_Core_MAX.png" Stretch="Fill" Visibility="Collapsed"/>
-		<Canvas Width="128" Height="40" Canvas.Left="160" Canvas.Top="-8" IsEnabled="False" IsHitTestVisible="False">
+		<Canvas x:Name="Icon_UPG" Width="128" Height="40" Canvas.Left="160" Canvas.Top="-8" IsEnabled="False" IsHitTestVisible="False">
 			<Canvas x:Name="Lv3" Width="40" Height="40" Canvas.Left="88">
 				<Image x:Name="image10" Width="40" Height="40" Source="Resources/UI/Icon_UPGResearch03_Pass.png" Stretch="Fill" Visibility="Collapsed"/>
 				<Image x:Name="image11" Width="40" Height="40" Canvas.Left="0" Canvas.Top="0" Source="Resources/UI/Icon_UPGResearch03_NotYet.png" Stretch="Fill" Visibility="Collapsed"/>
 			</Canvas>
-			<Canvas x:Name="Lv2" Width="40" Height="40" Canvas.Left="40">
+			<Canvas x:Name="Lv2" Width="40" Height="40" Canvas.Left="41.332">
 				<Image x:Name="image12" Width="40" Height="40" Source="Resources/UI/Icon_UPGResearch02_Pass.png" Stretch="Fill" Visibility="Collapsed"/>
 				<Image x:Name="image13" Width="40" Height="40" Canvas.Left="0" Canvas.Top="0" Source="Resources/UI/Icon_UPGResearch02_NotYet.png" Stretch="Fill" Visibility="Collapsed"/>
 			</Canvas>
