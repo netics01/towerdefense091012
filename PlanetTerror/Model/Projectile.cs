@@ -192,7 +192,7 @@ namespace PlanetTerror
 			case FIRE_STATE:
 				if( vsm.GetStateFinished() )
 				{
-					vsm.SetState(NORMAL_STATE);
+					//vsm.SetState(NORMAL_STATE);
 					IsDeleted = true;
 				}
 				break;
@@ -201,7 +201,7 @@ namespace PlanetTerror
 			case BOOM_STATE:
 				if( vsm.GetStateFinished() )
 				{
-					vsm.SetState(NORMAL_STATE);
+					//vsm.SetState(NORMAL_STATE);
 					IsDeleted = true;
 				}
 				break;
@@ -224,6 +224,7 @@ namespace PlanetTerror
 			this.RenderTransform = new RotateTransform(angle);
 		
 			vsm.SetState(bBegin ? FIRE_STATE : BOOM_STATE);
+			//vsm.DefaultGroup.State.Storyboard.AutoReverse = false;
 		}
 	}
 }
